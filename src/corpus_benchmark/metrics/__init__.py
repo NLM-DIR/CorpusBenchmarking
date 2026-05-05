@@ -57,6 +57,7 @@ from corpus_benchmark.metrics.overlaps import (
 
 from corpus_benchmark.metrics.metadata_distribution import (
     journal_distribution,
+    journal_topic_distribution,
     publication_year_distribution,
 )
 
@@ -105,6 +106,7 @@ __all__ = [
     "mention_token_overlap",
     "identifier_overlap",
     "journal_distribution",
+    "journal_topic_distribution",
     "publication_year_distribution",
     "high_level_concept_counts",
     "concept_depth_counts",

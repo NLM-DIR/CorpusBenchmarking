@@ -22,7 +22,6 @@ from pathlib import Path
 from corpus_benchmark.metadata.journal_topics import (
     ALL_TOPICS,
     TOPIC_COLORS,
-    compute_topic_dist,
 )
 
 
@@ -207,7 +206,7 @@ def attach_overlaps(corpora, overlaps):
 # ── Metadata helpers ──────────────────────────────────────────────────────────
 
 
-def _process_metadata(jd_raw, yd_raw):
+def _process_metadata(jd_raw, yd_raw, td_raw):
     j_clean = {
         k: v for k, v in (jd_raw or {}).items() if k not in ("Unknown", None) and v
     }
@@ -249,7 +248,16 @@ def _process_metadata(jd_raw, yd_raw):
             },
         }
 
-    topic_dist = compute_topic_dist(j_clean) if j_clean else None
+    topic_clean = {
+        k: float(v)
+        for k, v in (td_raw or {}).items()
+        if k not in ("Unknown", None) and v
+    }
+    topic_dist = (
+        {topic: round(topic_clean.get(topic, 0.0) * 100, 1) for topic in ALL_TOPICS}
+        if topic_clean
+        else None
+    )
 
     return {
         "journal": journal,
@@ -280,7 +288,15 @@ def load_metadata(path):
             ),
             {},
         )
-        result[_norm(corpus_name)] = _process_metadata(jd, yd)
+        td = next(
+            (
+                m.get("value", {})
+                for m in metrics
+                if m.get("metric_name") == "journal_topic_distribution"
+            ),
+            {},
+        )
+        result[_norm(corpus_name)] = _process_metadata(jd, yd, td)
     return result
 
 

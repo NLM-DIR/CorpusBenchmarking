@@ -5,6 +5,7 @@ from collections import Counter
 from typing import Dict, Any
 
 from corpus_benchmark.context import MetricTarget, get_documents
+from corpus_benchmark.metadata.journal_topics import classify_journal
 from corpus_benchmark.registry import register_subset_metric
 from corpus_benchmark.results import SubsetMetricResult
 from corpus_benchmark.context import get_metadata_for_target
@@ -43,6 +44,27 @@ def journal_distribution(target: MetricTarget, result_name: str) -> SubsetMetric
     return SubsetMetricResult(
         result_name=result_name,
         metric_name="journal_distribution",
+        value=calculate_proportions(counts),
+        subset_name=target.name,
+        details={"counts": normalize_counts(counts), "total": counts.total()},
+    )
+
+
+@register_subset_metric("journal_topic_distribution")
+def journal_topic_distribution(
+    target: MetricTarget, result_name: str
+) -> SubsetMetricResult:
+    metadata = get_metadata_for_target(target)
+
+    topics = []
+    for doc in get_documents(target):
+        meta = metadata.get(doc.document_id, {})
+        topics.append(classify_journal(meta.get("journal") or "Unknown"))
+
+    counts = Counter(topics)
+    return SubsetMetricResult(
+        result_name=result_name,
+        metric_name="journal_topic_distribution",
         value=calculate_proportions(counts),
         subset_name=target.name,
         details={"counts": normalize_counts(counts), "total": counts.total()},
