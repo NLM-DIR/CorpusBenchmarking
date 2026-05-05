@@ -41,7 +41,7 @@ class GlobalWorkspace:
         self,
         document_store: JsonRecordStore,
         workspace_config: WorkspaceConfig,
-        journal_store: JsonRecordStore,
+        journal_store: JsonRecordStore | None = None,
     ):
         self.document_store = document_store
         self.journal_store = journal_store
@@ -182,9 +182,7 @@ class GlobalWorkspace:
             document_record = self.document_store.upsert(identifiers=identifiers, data=data)
             journal_record = self._upsert_journal_metadata(journal_metadata)
             if journal_record is not None:
-                document_data = {"journal_id": journal_record.record_id}
-                if "name" in journal_record.data:
-                    document_data["journal"] = journal_record.data["name"]
+                document_data = self._document_journal_link_data(document_record, journal_record)
                 document_record = self.document_store.upsert(
                     identifiers=document_record.identifiers,
                     data=document_data,
@@ -276,6 +274,14 @@ class GlobalWorkspace:
         data = self._journal_data_from_metadata(journal_metadata)
 
         if identifiers:
+            if existing is not None:
+                merged_identifiers: dict[str, list[Any]] = {
+                    key: list(values)
+                    for key, values in existing.identifiers.items()
+                }
+                for key, values in identifiers.items():
+                    merged_identifiers.setdefault(key, []).extend(self._as_list(values))
+                return self.journal_store.upsert(identifiers=merged_identifiers, data=data)
             return self.journal_store.upsert(identifiers=identifiers, data=data)
         return existing
 
@@ -375,6 +381,21 @@ class GlobalWorkspace:
             "name_variants": [journal],
         }
 
+    def _document_journal_link_data(
+        self,
+        document_record: StoredRecord,
+        journal_record: StoredRecord,
+    ) -> dict[str, Any]:
+        document_data: dict[str, Any] = {"journal_id": journal_record.record_id}
+        journal_name = self._clean_text(journal_record.data.get("name"))
+        document_journal = self._clean_text(document_record.data.get("journal"))
+        if journal_name and (
+            not document_journal
+            or self._normalize_journal_match_text(journal_name) == self._normalize_journal_match_text(document_journal)
+        ):
+            document_data["journal"] = journal_record.data["name"]
+        return document_data
+
     def _attach_journal_ids_from_store(self, document_records: list[StoredRecord]) -> None:
         if self.journal_store is None:
             return
@@ -392,9 +413,7 @@ class GlobalWorkspace:
             if journal_record is None:
                 continue
 
-            document_data = {"journal_id": journal_record.record_id}
-            if "name" in journal_record.data:
-                document_data["journal"] = journal_record.data["name"]
+            document_data = self._document_journal_link_data(current_record, journal_record)
             self.document_store.upsert(
                 identifiers=current_record.identifiers,
                 data=document_data,

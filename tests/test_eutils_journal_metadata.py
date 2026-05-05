@@ -11,7 +11,7 @@ from corpus_benchmark.metadata.eutils_journal_fetchers import (
 )
 from corpus_benchmark.models.corpus import DocumentIdentifierType
 
-EXAMPLES = Path(__file__).resolve().parents[1] / "eUtils_examples"
+EXAMPLES = Path(__file__).resolve().parents[1] / "tests/data"
 
 
 def test_pubmed_efetch_parser_returns_article_mesh_and_journal_metadata() -> None:

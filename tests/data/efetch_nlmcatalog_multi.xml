@@ -1,0 +1,210 @@
+<?xml version="1.0" ?>
+<!DOCTYPE NLMCatalogRecordSet PUBLIC "-//NLM//DTD NLMCatalogRecordSet, 1st June 2017//EN" "https://www.nlm.nih.gov/databases/dtd/nlmcatalogrecordset_170601.dtd">
+<NLMCatalogRecordSet><NLMCatalogRecord Owner="NLM" Status="Completed">
+    <NlmUniqueID>100941354</NlmUniqueID>
+    <DateCreated>
+        <Year>2000</Year>
+        <Month>03</Month>
+        <Day>21</Day>
+    </DateCreated>
+    <DateRevised>
+        <Year>2026</Year>
+        <Month>04</Month>
+        <Day>24</Day>
+    </DateRevised>
+    <DateAuthorized>
+        <Year>2000</Year>
+        <Month>09</Month>
+        <Day>14</Day>
+    </DateAuthorized>
+    <DateCompleted>
+        <Year>2000</Year>
+        <Month>09</Month>
+        <Day>14</Day>
+    </DateCompleted>
+    <DateRevisedMajor>
+        <Year>2026</Year>
+        <Month>03</Month>
+        <Day>16</Day>
+    </DateRevisedMajor>
+    <TitleMain>
+        <Title Sort="0">Nature immunology.</Title>
+    </TitleMain>
+    <MedlineTA>Nat Immunol</MedlineTA>
+    <TitleAlternate Owner="NCBI" TitleType="Other">
+        <Title Sort="N">Nature Immun.</Title>
+    </TitleAlternate>
+    <ResourceInfo>
+        <TypeOfResource>Serial</TypeOfResource>
+        <Issuance>continuing</Issuance>
+        <ResourceUnit>remote electronic resource</ResourceUnit>
+        <ResourceUnit>text</ResourceUnit>
+        <Resource>
+            <ContentType>text</ContentType>
+            <MediaType>unmediated</MediaType>
+            <CarrierType>volume</CarrierType>
+        </Resource>
+    </ResourceInfo>
+    <PublicationTypeList>
+        <PublicationType>Periodical</PublicationType>
+    </PublicationTypeList>
+    <PublicationInfo>
+        <Country>United States</Country>
+        <PlaceCode Authority="MARC">nyu</PlaceCode>
+        <Imprint ImprintType="Original" FunctionType="Publication">
+            <Place>New York, NY :</Place>
+            <Entity>Nature America Inc.</Entity>
+            <DateIssued>c2000-</DateIssued>
+            <ImprintFull>New York, NY : Nature America Inc. c2000-</ImprintFull>
+        </Imprint>
+        <PublicationFirstYear>2000</PublicationFirstYear>
+        <PublicationEndYear>9999</PublicationEndYear>
+        <DatesOfSerialPublication>Vol. 1, no. 1 (July 2000)-</DatesOfSerialPublication>
+        <Frequency FrequencyType="Current">Monthly</Frequency>
+    </PublicationInfo>
+    <Language LangType="Primary">eng</Language>
+    <PhysicalDescription>
+        <Extent>v.</Extent>
+    </PhysicalDescription>
+    <IndexingSourceList>
+        <IndexingSource>
+            <IndexingSourceName IndexingTreatment="Full" IndexingStatus="Currently-indexed">MEDLINE</IndexingSourceName>
+            <Coverage>v1n1, July 2000-</Coverage>
+        </IndexingSource>
+        <IndexingSource>
+            <IndexingSourceName IndexingTreatment="Full" IndexingStatus="Currently-indexed">PubMed</IndexingSourceName>
+            <Coverage>v1n1, July 2000-</Coverage>
+        </IndexingSource>
+        <IndexingSource>
+            <IndexingSourceName IndexingTreatment="Full">Index medicus</IndexingSourceName>
+        </IndexingSource>
+    </IndexingSourceList>
+    <GeneralNote Owner="NLM">Title from cover.</GeneralNote>
+    <GeneralNote Owner="NLM">Also available online. Subscription required for access and full text.</GeneralNote>
+    <LocalNote LocalNoteType="PreservationAction">v. 1, no. 1 (July 2000)20010309 Notice published Printed on acid-free paper</LocalNote>
+    <MeshHeadingList>
+        <MeshHeading>
+            <DescriptorName MajorTopicYN="N">Immune System</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+            <DescriptorName MajorTopicYN="Y">Immunity</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+            <DescriptorName MajorTopicYN="N">Immunotherapy</DescriptorName>
+        </MeshHeading>
+    </MeshHeadingList>
+    <Classification NLMCallNumberYN="Y" Authority="NLM" CallNumberType="NLMClass">W1 NA812K</Classification>
+    <ELocationList>
+        <ELocation>
+            <ELocationID EIdType="url" ValidYN="Y">http://www.nature.com/ni/</ELocationID>
+        </ELocation>
+    </ELocationList>
+    <LCCN ValidYN="Y">00211732</LCCN>
+    <ISSN ValidYN="Y" IssnType="Print">1529-2908</ISSN>
+    <ISSN ValidYN="Y" IssnType="Electronic">1529-2916</ISSN>
+    <ISSN ValidYN="N" IssnType="Undetermined">1529-2908</ISSN>
+    <ISSNLinking ValidYN="Y">1529-2908</ISSNLinking>
+    <Coden>NIAMCZ</Coden>
+    <OtherID Prefix="(OCoLC)" Source="OCLC">43678239</OtherID>
+</NLMCatalogRecord>
+
+<NLMCatalogRecord Owner="NLM" Status="Completed">
+    <NlmUniqueID>101528555</NlmUniqueID>
+    <DateCreated>
+        <Year>2010</Year>
+        <Month>04</Month>
+        <Day>13</Day>
+    </DateCreated>
+    <DateRevised>
+        <Year>2026</Year>
+        <Month>05</Month>
+        <Day>03</Day>
+    </DateRevised>
+    <DateAuthorized>
+        <Year>2010</Year>
+        <Month>04</Month>
+        <Day>27</Day>
+    </DateAuthorized>
+    <DateCompleted>
+        <Year>2010</Year>
+        <Month>04</Month>
+        <Day>27</Day>
+    </DateCompleted>
+    <DateRevisedMajor>
+        <Year>2026</Year>
+        <Month>03</Month>
+        <Day>16</Day>
+    </DateRevisedMajor>
+    <TitleMain>
+        <Title Sort="0">Nature communications.</Title>
+    </TitleMain>
+    <MedlineTA>Nat Commun</MedlineTA>
+    <ResourceInfo>
+        <TypeOfResource>Serial</TypeOfResource>
+        <Issuance>continuing</Issuance>
+        <ResourceUnit>remote electronic resource</ResourceUnit>
+        <ResourceUnit>text</ResourceUnit>
+        <Resource>
+            <ContentType>text</ContentType>
+            <MediaType>computer</MediaType>
+            <CarrierType>online resource</CarrierType>
+        </Resource>
+    </ResourceInfo>
+    <PublicationTypeList>
+        <PublicationType>Periodical</PublicationType>
+    </PublicationTypeList>
+    <PublicationInfo>
+        <Country>England</Country>
+        <PlaceCode Authority="MARC">enk</PlaceCode>
+        <Imprint ImprintType="Original" FunctionType="Publication">
+            <Place>[London] :</Place>
+            <Entity>Nature Pub. Group</Entity>
+            <ImprintFull>[London] : Nature Pub. Group</ImprintFull>
+        </Imprint>
+        <PublicationFirstYear>2010</PublicationFirstYear>
+        <PublicationEndYear>9999</PublicationEndYear>
+        <DatesOfSerialPublication>Began with Apr. 2010.</DatesOfSerialPublication>
+        <Frequency FrequencyType="Current">Bimonthly</Frequency>
+    </PublicationInfo>
+    <Language LangType="Primary">eng</Language>
+    <PhysicalDescription>
+        <Form>electronic</Form>
+    </PhysicalDescription>
+    <IndexingSourceList>
+        <IndexingSource>
+            <IndexingSourceName IndexingTreatment="Full" IndexingStatus="Currently-indexed">MEDLINE</IndexingSourceName>
+            <Coverage>v1, 2010-</Coverage>
+        </IndexingSource>
+        <IndexingSource>
+            <IndexingSourceName IndexingTreatment="Unknown" IndexingStatus="Currently-indexed">PubMed</IndexingSourceName>
+            <Coverage>v1, 2010-</Coverage>
+        </IndexingSource>
+        <IndexingSource>
+            <IndexingSourceName IndexingTreatment="Unknown">PMC</IndexingSourceName>
+        </IndexingSource>
+    </IndexingSourceList>
+    <GeneralNote Owner="NLM">Description based on: Apr. 2010; title from HTML header (publisher's Web site, viewed Apr. 22, 2010).</GeneralNote>
+    <GeneralNote Owner="NLM">Latest issue consulted: Apr. 2010 (viewed Apr. 22, 2010).</GeneralNote>
+    <GeneralNote Owner="NLM">Mode of access: World Wide Web.</GeneralNote>
+    <MeshHeadingList>
+        <MeshHeading>
+            <DescriptorName MajorTopicYN="Y">Biological Science Disciplines</DescriptorName>
+        </MeshHeading>
+    </MeshHeadingList>
+    <Classification NLMCallNumberYN="N" Authority="NLM" CallNumberType="NLMClass">W1</Classification>
+    <ELocationList>
+        <ELocation>
+            <ELocationID EIdType="url" ValidYN="Y">http://www.nature.com/ncomms/index.html</ELocationID>
+        </ELocation>
+        <ELocation>
+            <ELocationID EIdType="url" ValidYN="Y">https://pmc.ncbi.nlm.nih.gov/journals/?term=101528555</ELocationID>
+        </ELocation>
+    </ELocationList>
+    <LCCN ValidYN="Y">2010243380</LCCN>
+    <ISSN ValidYN="Y" IssnType="Electronic">2041-1723</ISSN>
+    <ISSNLinking ValidYN="Y">2041-1723</ISSNLinking>
+    <OtherID Prefix="(OCoLC)" Source="OCLC">614340895</OtherID>
+</NLMCatalogRecord>
+
+
+</NLMCatalogRecordSet>
