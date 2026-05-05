@@ -19,12 +19,6 @@ import sys
 import webbrowser
 from pathlib import Path
 
-from corpus_benchmark.metadata.journal_topics import (
-    ALL_TOPICS,
-    TOPIC_COLORS,
-)
-
-
 # ── Colour palette ────────────────────────────────────────────────────────────
 
 PALETTE = [
@@ -47,6 +41,44 @@ OV_COLS = {
 }
 BAR_SCALE = 0.65
 logger = logging.getLogger(__name__)
+
+JOURNAL_TOPIC_ORDER = [
+    "Diseases",
+    "Chemicals and Drugs",
+    "Psychiatry and Psychology",
+    "Anatomy",
+    "Biological Sciences",
+    "Analytical, Diagnostic and Therapeutic Techniques and Equipment",
+    "Organisms",
+    "Health Care",
+    "Technology and Food and Beverages",
+    "Physical Sciences",
+    "Anthropology, Education, Sociology and Social Phenomena",
+    "Information Science",
+    "Humanities",
+    "Persons",
+    "Publication Characteristics",
+    "Geographic Locations",
+]
+
+JOURNAL_TOPIC_COLORS = {
+    "Diseases": "#E24B4A",
+    "Chemicals and Drugs": "#378ADD",
+    "Psychiatry and Psychology": "#D4537E",
+    "Anatomy": "#7F77DD",
+    "Biological Sciences": "#639922",
+    "Analytical, Diagnostic and Therapeutic Techniques and Equipment": "#D85A30",
+    "Organisms": "#1D9E75",
+    "Health Care": "#888780",
+    "Technology and Food and Beverages": "#BA7517",
+    "Physical Sciences": "#5DCAA5",
+    "Anthropology, Education, Sociology and Social Phenomena": "#AFA9EC",
+    "Information Science": "#8CA252",
+    "Humanities": "#BD9E39",
+    "Persons": "#AD494A",
+    "Publication Characteristics": "#6B6ECF",
+    "Geographic Locations": "#D3D1C7",
+}
 
 
 # ── Corpus statistics helpers ─────────────────────────────────────────────────
@@ -254,7 +286,7 @@ def _process_metadata(jd_raw, yd_raw, td_raw):
         if k not in ("Unknown", None) and v
     }
     topic_dist = (
-        {topic: round(topic_clean.get(topic, 0.0) * 100, 1) for topic in ALL_TOPICS}
+        {topic: round(frac * 100, 1) for topic, frac in sorted(topic_clean.items())}
         if topic_clean
         else None
     )
@@ -318,6 +350,12 @@ def build_topic_table(corpora) -> str:
         return "<p style='color:var(--color-text-secondary);font-size:13px'>No topic data available.</p>"
 
     corp_names = [c["name"] for c in with_td]
+    observed_topics = {
+        topic for c in with_td for topic in c["metadata"]["topic_dist"].keys()
+    }
+    ordered_topics = [
+        topic for topic in JOURNAL_TOPIC_ORDER if topic in observed_topics
+    ] + sorted(observed_topics - set(JOURNAL_TOPIC_ORDER))
 
     # Header
     th_cells = '<th class="l">Topic</th>' + "".join(
@@ -326,11 +364,11 @@ def build_topic_table(corpora) -> str:
 
     # Rows — only topics with at least 1% in at least one corpus
     rows = []
-    for topic in ALL_TOPICS:
+    for topic in ordered_topics:
         vals = [c["metadata"]["topic_dist"].get(topic, 0.0) for c in with_td]
         if max(vals) < 1.0:
             continue
-        col = TOPIC_COLORS.get(topic, "#D3D1C7")
+        col = JOURNAL_TOPIC_COLORS.get(topic, "#D3D1C7")
         mx = max(vals)
         td_cells = "".join(
             f'<td class="r" style="font-weight:{"600" if v == mx and v >= 1 else "400"};'
@@ -349,7 +387,7 @@ def build_topic_table(corpora) -> str:
     for c in with_td:
         shown = sum(
             c["metadata"]["topic_dist"].get(t, 0)
-            for t in ALL_TOPICS
+            for t in ordered_topics
             if max(cc["metadata"]["topic_dist"].get(t, 0) for cc in with_td) >= 1.0
         )
         total_cells += f'<td class="r" style="font-weight:600">{shown:.0f}%</td>'
@@ -561,12 +599,10 @@ def build_metadata_panels(corpora, colours):
   <p class="sec">Journal topic distribution per corpus (%)</p>
   {topic_table}
   <div class="fn">
-    Topics assigned by matching journal names against a priority-ordered keyword ruleset,
-    with exact-match lookup for common ambiguous journals (e.g. "Nature" → Multidisciplinary,
-    "Cell" → Cell &amp; Dev Biology). The first matching rule wins; "Other" catches journals
-    that matched no rule. Only topics with ≥ 1% share in at least one corpus are shown.
-    Dominant value per row is bold. Percentages may not sum to exactly 100 due to rounding.
-    Corpora without journal metadata are excluded.
+    Topics are MeSH treetop categories resolved from the journal record's NLM Catalog
+    MeSH topics. Only topics with ≥ 1% share in at least one corpus are shown. Dominant
+    value per row is bold. Percentages may not sum to exactly 100 due to rounding.
+    Corpora without journal topic metadata are excluded.
   </div>
 </div>
 

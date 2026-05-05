@@ -1409,35 +1409,43 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 94,
-          "Cardiology & Vasc": 32,
-          "Cell & Dev Biology": 47,
-          "Chemistry & Materials": 17,
-          "Clinical Medicine": 168,
-          "Genetics & Genomics": 32,
-          "Immunology": 11,
-          "Multidisciplinary": 95,
-          "Neuroscience": 58,
-          "Oncology": 220,
-          "Other": 405,
-          "Pharmacology & Toxicology": 33
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 114,
+          "Anatomy": 79,
+          "Anthropology, Education, Sociology and Social Phenomena": 8,
+          "Biological Sciences": 126,
+          "Chemicals and Drugs": 76,
+          "Diseases": 294,
+          "Geographic Locations": 9,
+          "Health Care": 44,
+          "Humanities": 2,
+          "Information Science": 16,
+          "Organisms": 19,
+          "Persons": 5,
+          "Physical Sciences": 611,
+          "Psychiatry and Psychology": 26,
+          "Technology and Food and Beverages": 26,
+          "Unknown": 202
         },
-        "total": 1212
+        "total": 1657
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.07755776,
-        "Cardiology & Vasc": 0.02640264,
-        "Cell & Dev Biology": 0.03877888,
-        "Chemistry & Materials": 0.0140264,
-        "Clinical Medicine": 0.13861386,
-        "Genetics & Genomics": 0.02640264,
-        "Immunology": 0.00907591,
-        "Multidisciplinary": 0.07838284,
-        "Neuroscience": 0.04785479,
-        "Oncology": 0.18151815,
-        "Other": 0.33415842,
-        "Pharmacology & Toxicology": 0.02722772
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.06879903,
+        "Anatomy": 0.04767652,
+        "Anthropology, Education, Sociology and Social Phenomena": 0.004828,
+        "Biological Sciences": 0.07604104,
+        "Chemicals and Drugs": 0.04586602,
+        "Diseases": 0.17742909,
+        "Geographic Locations": 0.0054315,
+        "Health Care": 0.02655401,
+        "Humanities": 0.001207,
+        "Information Science": 0.009656,
+        "Organisms": 0.01146651,
+        "Persons": 0.0030175,
+        "Physical Sciences": 0.36873868,
+        "Psychiatry and Psychology": 0.01569101,
+        "Technology and Food and Beverages": 0.01569101,
+        "Unknown": 0.12190706
       }
     },
     {
@@ -2951,35 +2959,39 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 31,
-          "Cardiology & Vasc": 84,
-          "Cell & Dev Biology": 4,
-          "Chemistry & Materials": 6,
-          "Clinical Medicine": 364,
-          "Genetics & Genomics": 3,
-          "Immunology": 11,
-          "Multidisciplinary": 7,
-          "Neuroscience": 264,
-          "Oncology": 81,
-          "Other": 398,
-          "Pharmacology & Toxicology": 247
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 206,
+          "Anatomy": 114,
+          "Anthropology, Education, Sociology and Social Phenomena": 8,
+          "Biological Sciences": 104,
+          "Chemicals and Drugs": 81,
+          "Diseases": 356,
+          "Geographic Locations": 3,
+          "Health Care": 48,
+          "Organisms": 5,
+          "Persons": 43,
+          "Physical Sciences": 959,
+          "Psychiatry and Psychology": 162,
+          "Technology and Food and Beverages": 11,
+          "Unknown": 57
         },
-        "total": 1500
+        "total": 2157
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.02066667,
-        "Cardiology & Vasc": 0.056,
-        "Cell & Dev Biology": 0.00266667,
-        "Chemistry & Materials": 0.004,
-        "Clinical Medicine": 0.24266667,
-        "Genetics & Genomics": 0.002,
-        "Immunology": 0.00733333,
-        "Multidisciplinary": 0.00466667,
-        "Neuroscience": 0.176,
-        "Oncology": 0.054,
-        "Other": 0.26533333,
-        "Pharmacology & Toxicology": 0.16466667
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.09550301,
+        "Anatomy": 0.05285118,
+        "Anthropology, Education, Sociology and Social Phenomena": 0.00370885,
+        "Biological Sciences": 0.04821511,
+        "Chemicals and Drugs": 0.03755216,
+        "Diseases": 0.16504404,
+        "Geographic Locations": 0.00139082,
+        "Health Care": 0.02225313,
+        "Organisms": 0.00231803,
+        "Persons": 0.0199351,
+        "Physical Sciences": 0.44459898,
+        "Psychiatry and Psychology": 0.07510431,
+        "Technology and Food and Beverages": 0.00509968,
+        "Unknown": 0.02642559
       }
     },
     {
@@ -3131,27 +3143,21 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 2884,
-          "Cell & Dev Biology": 1357,
-          "Chemistry & Materials": 82,
-          "Genetics & Genomics": 187,
-          "Immunology": 133,
-          "Multidisciplinary": 1493,
-          "Neuroscience": 192,
-          "Other": 7369
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 133,
+          "Anatomy": 685,
+          "Biological Sciences": 3449,
+          "Diseases": 52,
+          "Physical Sciences": 13512
         },
-        "total": 13697
+        "total": 17831
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.21055706,
-        "Cell & Dev Biology": 0.09907279,
-        "Chemistry & Materials": 0.00598671,
-        "Genetics & Genomics": 0.01365262,
-        "Immunology": 0.00971016,
-        "Multidisciplinary": 0.10900197,
-        "Neuroscience": 0.01401767,
-        "Other": 0.53800102
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.00745892,
+        "Anatomy": 0.03841624,
+        "Biological Sciences": 0.19342718,
+        "Diseases": 0.00291627,
+        "Physical Sciences": 0.75778139
       }
     },
     {
@@ -3625,33 +3631,41 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 856,
-          "Cardiology & Vasc": 2,
-          "Cell & Dev Biology": 94,
-          "Chemistry & Materials": 3360,
-          "Clinical Medicine": 707,
-          "Genetics & Genomics": 106,
-          "Multidisciplinary": 71,
-          "Neuroscience": 350,
-          "Oncology": 62,
-          "Other": 1515,
-          "Pharmacology & Toxicology": 2877
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 1956,
+          "Anatomy": 327,
+          "Anthropology, Education, Sociology and Social Phenomena": 91,
+          "Biological Sciences": 1996,
+          "Chemicals and Drugs": 3333,
+          "Diseases": 574,
+          "Geographic Locations": 72,
+          "Health Care": 225,
+          "Information Science": 60,
+          "Organisms": 336,
+          "Persons": 2,
+          "Physical Sciences": 7143,
+          "Psychiatry and Psychology": 183,
+          "Technology and Food and Beverages": 2270,
+          "Unknown": 296
         },
-        "total": 10000
+        "total": 18864
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.0856,
-        "Cardiology & Vasc": 0.0002,
-        "Cell & Dev Biology": 0.0094,
-        "Chemistry & Materials": 0.336,
-        "Clinical Medicine": 0.0707,
-        "Genetics & Genomics": 0.0106,
-        "Multidisciplinary": 0.0071,
-        "Neuroscience": 0.035,
-        "Oncology": 0.0062,
-        "Other": 0.1515,
-        "Pharmacology & Toxicology": 0.2877
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.10368957,
+        "Anatomy": 0.01733461,
+        "Anthropology, Education, Sociology and Social Phenomena": 0.004824,
+        "Biological Sciences": 0.10581001,
+        "Chemicals and Drugs": 0.17668575,
+        "Diseases": 0.03042833,
+        "Geographic Locations": 0.00381679,
+        "Health Care": 0.01192748,
+        "Information Science": 0.00318066,
+        "Organisms": 0.0178117,
+        "Persons": 0.00010602,
+        "Physical Sciences": 0.37865776,
+        "Psychiatry and Psychology": 0.00970102,
+        "Technology and Food and Beverages": 0.12033503,
+        "Unknown": 0.01569126
       }
     },
     {
@@ -3741,27 +3755,29 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 7,
-          "Cell & Dev Biology": 13,
-          "Clinical Medicine": 1,
-          "Genetics & Genomics": 29,
-          "Multidisciplinary": 30,
-          "Neuroscience": 9,
-          "Oncology": 4,
-          "Other": 4
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 9,
+          "Anatomy": 11,
+          "Biological Sciences": 8,
+          "Chemicals and Drugs": 7,
+          "Diseases": 19,
+          "Health Care": 1,
+          "Information Science": 5,
+          "Physical Sciences": 71,
+          "Technology and Food and Beverages": 4
         },
-        "total": 97
+        "total": 135
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.07216495,
-        "Cell & Dev Biology": 0.13402062,
-        "Clinical Medicine": 0.01030928,
-        "Genetics & Genomics": 0.29896907,
-        "Multidisciplinary": 0.30927835,
-        "Neuroscience": 0.09278351,
-        "Oncology": 0.04123711,
-        "Other": 0.04123711
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.06666667,
+        "Anatomy": 0.08148148,
+        "Biological Sciences": 0.05925926,
+        "Chemicals and Drugs": 0.05185185,
+        "Diseases": 0.14074074,
+        "Health Care": 0.00740741,
+        "Information Science": 0.03703704,
+        "Physical Sciences": 0.52592593,
+        "Technology and Food and Beverages": 0.02962963
       }
     },
     {
@@ -4587,35 +4603,41 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 68,
-          "Cardiology & Vasc": 6,
-          "Cell & Dev Biology": 197,
-          "Chemistry & Materials": 15,
-          "Clinical Medicine": 93,
-          "Genetics & Genomics": 90,
-          "Immunology": 227,
-          "Multidisciplinary": 668,
-          "Neuroscience": 104,
-          "Oncology": 68,
-          "Other": 460,
-          "Pharmacology & Toxicology": 7
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 108,
+          "Anatomy": 226,
+          "Anthropology, Education, Sociology and Social Phenomena": 5,
+          "Biological Sciences": 546,
+          "Chemicals and Drugs": 47,
+          "Diseases": 422,
+          "Health Care": 26,
+          "Humanities": 1,
+          "Information Science": 47,
+          "Organisms": 10,
+          "Persons": 4,
+          "Physical Sciences": 1266,
+          "Psychiatry and Psychology": 14,
+          "Technology and Food and Beverages": 43,
+          "Unknown": 46
         },
-        "total": 2003
+        "total": 2811
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.03394908,
-        "Cardiology & Vasc": 0.00299551,
-        "Cell & Dev Biology": 0.09835247,
-        "Chemistry & Materials": 0.00748877,
-        "Clinical Medicine": 0.04643035,
-        "Genetics & Genomics": 0.0449326,
-        "Immunology": 0.11333,
-        "Multidisciplinary": 0.33349975,
-        "Neuroscience": 0.05192212,
-        "Oncology": 0.03394908,
-        "Other": 0.22965552,
-        "Pharmacology & Toxicology": 0.00349476
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.03842049,
+        "Anatomy": 0.08039843,
+        "Anthropology, Education, Sociology and Social Phenomena": 0.00177873,
+        "Biological Sciences": 0.19423693,
+        "Chemicals and Drugs": 0.01672003,
+        "Diseases": 0.15012451,
+        "Health Care": 0.00924938,
+        "Humanities": 0.00035575,
+        "Information Science": 0.01672003,
+        "Organisms": 0.00355745,
+        "Persons": 0.00142298,
+        "Physical Sciences": 0.45037353,
+        "Psychiatry and Psychology": 0.00498043,
+        "Technology and Food and Beverages": 0.01529705,
+        "Unknown": 0.01636428
       }
     },
     {
@@ -5517,35 +5539,41 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 401,
-          "Cardiology & Vasc": 24,
-          "Cell & Dev Biology": 164,
-          "Chemistry & Materials": 2,
-          "Clinical Medicine": 306,
-          "Genetics & Genomics": 40,
-          "Immunology": 472,
-          "Multidisciplinary": 142,
-          "Neuroscience": 20,
-          "Oncology": 187,
-          "Other": 611,
-          "Pharmacology & Toxicology": 35
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 69,
+          "Anatomy": 94,
+          "Anthropology, Education, Sociology and Social Phenomena": 7,
+          "Biological Sciences": 287,
+          "Chemicals and Drugs": 114,
+          "Diseases": 257,
+          "Geographic Locations": 7,
+          "Health Care": 5,
+          "Information Science": 7,
+          "Organisms": 140,
+          "Persons": 3,
+          "Physical Sciences": 1318,
+          "Psychiatry and Psychology": 16,
+          "Technology and Food and Beverages": 4,
+          "Unknown": 531
         },
-        "total": 2404
+        "total": 2859
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.16680532,
-        "Cardiology & Vasc": 0.00998336,
-        "Cell & Dev Biology": 0.06821963,
-        "Chemistry & Materials": 0.00083195,
-        "Clinical Medicine": 0.12728785,
-        "Genetics & Genomics": 0.01663894,
-        "Immunology": 0.19633943,
-        "Multidisciplinary": 0.05906822,
-        "Neuroscience": 0.00831947,
-        "Oncology": 0.07778702,
-        "Other": 0.25415973,
-        "Pharmacology & Toxicology": 0.01455907
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.02413431,
+        "Anatomy": 0.03287863,
+        "Anthropology, Education, Sociology and Social Phenomena": 0.00244841,
+        "Biological Sciences": 0.10038475,
+        "Chemicals and Drugs": 0.03987408,
+        "Diseases": 0.08989157,
+        "Geographic Locations": 0.00244841,
+        "Health Care": 0.00174886,
+        "Information Science": 0.00244841,
+        "Organisms": 0.04896817,
+        "Persons": 0.00104932,
+        "Physical Sciences": 0.46100035,
+        "Psychiatry and Psychology": 0.00559636,
+        "Technology and Food and Beverages": 0.00139909,
+        "Unknown": 0.18572928
       }
     },
     {
@@ -5817,33 +5845,35 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 26,
-          "Cardiology & Vasc": 1,
-          "Cell & Dev Biology": 16,
-          "Clinical Medicine": 92,
-          "Genetics & Genomics": 482,
-          "Immunology": 8,
-          "Multidisciplinary": 94,
-          "Neuroscience": 22,
-          "Oncology": 18,
-          "Other": 33,
-          "Pharmacology & Toxicology": 1
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 34,
+          "Anatomy": 6,
+          "Biological Sciences": 101,
+          "Chemicals and Drugs": 3,
+          "Diseases": 25,
+          "Humanities": 1,
+          "Information Science": 29,
+          "Organisms": 6,
+          "Persons": 1,
+          "Physical Sciences": 705,
+          "Psychiatry and Psychology": 2,
+          "Unknown": 55
         },
-        "total": 793
+        "total": 968
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.03278689,
-        "Cardiology & Vasc": 0.00126103,
-        "Cell & Dev Biology": 0.02017654,
-        "Clinical Medicine": 0.11601513,
-        "Genetics & Genomics": 0.60781841,
-        "Immunology": 0.01008827,
-        "Multidisciplinary": 0.1185372,
-        "Neuroscience": 0.02774275,
-        "Oncology": 0.02269861,
-        "Other": 0.04161412,
-        "Pharmacology & Toxicology": 0.00126103
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.03512397,
+        "Anatomy": 0.00619835,
+        "Biological Sciences": 0.10433884,
+        "Chemicals and Drugs": 0.00309917,
+        "Diseases": 0.02582645,
+        "Humanities": 0.00103306,
+        "Information Science": 0.02995868,
+        "Organisms": 0.00619835,
+        "Persons": 0.00103306,
+        "Physical Sciences": 0.72830579,
+        "Psychiatry and Psychology": 0.00206612,
+        "Unknown": 0.05681818
       }
     },
     {
@@ -6043,31 +6073,35 @@
     {
       "details": {
         "counts": {
-          "Biochemistry & Mol Bio": 23,
-          "Cell & Dev Biology": 1,
-          "Chemistry & Materials": 21,
-          "Clinical Medicine": 6,
-          "Genetics & Genomics": 3,
-          "Multidisciplinary": 52,
-          "Neuroscience": 5,
-          "Oncology": 9,
-          "Other": 29,
-          "Pharmacology & Toxicology": 1
+          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 6,
+          "Anatomy": 11,
+          "Biological Sciences": 29,
+          "Chemicals and Drugs": 5,
+          "Diseases": 21,
+          "Health Care": 6,
+          "Information Science": 2,
+          "Organisms": 2,
+          "Physical Sciences": 106,
+          "Psychiatry and Psychology": 14,
+          "Technology and Food and Beverages": 8,
+          "Unknown": 13
         },
-        "total": 150
+        "total": 223
       },
       "metric_name": "journal_topic_distribution",
       "value": {
-        "Biochemistry & Mol Bio": 0.15333333,
-        "Cell & Dev Biology": 0.00666667,
-        "Chemistry & Materials": 0.14,
-        "Clinical Medicine": 0.04,
-        "Genetics & Genomics": 0.02,
-        "Multidisciplinary": 0.34666667,
-        "Neuroscience": 0.03333333,
-        "Oncology": 0.06,
-        "Other": 0.19333333,
-        "Pharmacology & Toxicology": 0.00666667
+        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.02690583,
+        "Anatomy": 0.04932735,
+        "Biological Sciences": 0.13004484,
+        "Chemicals and Drugs": 0.02242152,
+        "Diseases": 0.0941704,
+        "Health Care": 0.02690583,
+        "Information Science": 0.00896861,
+        "Organisms": 0.00896861,
+        "Physical Sciences": 0.47533632,
+        "Psychiatry and Psychology": 0.06278027,
+        "Technology and Food and Beverages": 0.03587444,
+        "Unknown": 0.05829596
       }
     },
     {

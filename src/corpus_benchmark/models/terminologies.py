@@ -5,6 +5,7 @@ import logging
 from typing import Dict, List, Optional
 
 logger = logging.getLogger(__name__)
+_NAME_INDEX_CACHE: Dict[int, tuple[int, Dict[str, List[str]]]] = {}
 
 
 @dataclass(slots=True)
@@ -28,6 +29,27 @@ class TerminologyResource:
     def get_concept(self, ui: str) -> Optional[TerminologyConcept]:
 
         return self.concepts.get(ui)
+
+    @staticmethod
+    def _normalize_name(name: str) -> str:
+        return " ".join(name.split()).casefold()
+
+    def _name_index(self) -> Dict[str, List[str]]:
+        cache_key = id(self)
+        concept_count = len(self.concepts)
+        cached = _NAME_INDEX_CACHE.get(cache_key)
+        if cached is not None and cached[0] == concept_count:
+            return cached[1]
+
+        index: Dict[str, List[str]] = {}
+        for concept in self.concepts.values():
+            index.setdefault(self._normalize_name(concept.name), []).append(concept.ui)
+        _NAME_INDEX_CACHE[cache_key] = (concept_count, index)
+        return index
+
+    def get_concept_ids_by_name(self, name: str) -> List[str]:
+        """Return concept identifiers whose preferred name exactly matches name."""
+        return list(self._name_index().get(self._normalize_name(name), []))
 
     def resolve_to_tree_concepts(self, ui: str) -> List[TerminologyConcept]:
         """

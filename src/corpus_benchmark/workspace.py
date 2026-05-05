@@ -371,6 +371,15 @@ class GlobalWorkspace:
         except (KeyError, TypeError, ValueError):
             return False
 
+    def get_journal_metadata_by_id(self, record_id: Any) -> dict[str, Any] | None:
+        if self.journal_store is None or record_id is None:
+            return None
+        try:
+            record = self.journal_store.get_by_record_id(int(record_id))
+        except (KeyError, TypeError, ValueError):
+            return None
+        return self._format_stored_record(record)
+
     def _journal_info_from_document_data(self, data: dict[str, Any]) -> dict[str, Any] | None:
         journal = self._clean_text(data.get("journal"))
         if not journal or journal == "Unknown":
