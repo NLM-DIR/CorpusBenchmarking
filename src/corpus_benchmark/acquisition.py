@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import unquote, urlparse
 
-from corpus_benchmark.models.config import BenchmarkConfig, WorkspaceConfig
+from corpus_benchmark.models.config import BenchmarkConfig, WorkspaceConfig, APP_NAME_VER
 from corpus_benchmark.registry import CONVERTERS
 from utils.download import download_file
 
@@ -83,7 +83,7 @@ class AcquisitionManager:
             if not dest_path.exists():
                 logger.info("  Downloading %s -> %s", url, dest_path)
                 # NOTE: some repos (e.g. Zenodo) insist on a meaningful user_agent
-                download_file(url, dest_path, user_agent="CorpusBenchmarking/0.1")
+                download_file(url, dest_path, user_agent=APP_NAME_VER)
             else:
                 logger.info("  Reusing downloaded file %s", dest_path)
 

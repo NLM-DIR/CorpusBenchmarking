@@ -8,6 +8,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from corpus_benchmark.models.config import APP_NAME_VER
 from corpus_benchmark.models.corpus import DocumentIdentifierType
 from corpus_benchmark.metadata.document_fetcher import DocumentMetadataFetcher
 from corpus_benchmark.metadata.eutils_journal_fetchers import ISSN
@@ -35,7 +36,7 @@ class CrossrefDOIFetcher(DocumentMetadataFetcher):
         self,
         *,
         mailto: Optional[str] = None,
-        user_agent: str = "CorpusBenchmarking/0.1",
+        user_agent: str = APP_NAME_VER,
         batch_size: int = DEFAULT_BATCH_SIZE,
         wait_seconds: float = DEFAULT_WAIT_SECONDS,
         timeout: int = 30,

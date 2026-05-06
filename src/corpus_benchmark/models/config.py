@@ -8,6 +8,7 @@ from typing import Any
 
 logger = logging.getLogger(__name__)
 
+APP_NAME_VER = "CorpusBenchmarking/0.1"
 
 @dataclass(slots=True)
 class LoaderSpec:

@@ -6,6 +6,8 @@ import urllib.request
 import xml.etree.ElementTree as ET
 import logging
 
+from corpus_benchmark.models.config import APP_NAME_VER
+
 logger = logging.getLogger(__name__)
 
 CHUNK_SIZE = 250
@@ -22,7 +24,7 @@ class EUtilsClient:
         self,
         *,
         api_key: str | None = None,
-        tool: str = "CorpusBenchmarking",
+        tool: str = APP_NAME_VER,
         email: str | None = None,
         wait_seconds: float = WAIT_SECONDS,
         timeout: int = 30,
