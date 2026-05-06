@@ -275,8 +275,10 @@ class GlobalWorkspace:
         if self.journal_store is None or not isinstance(journal_metadata, dict):
             return None
 
-        existing = self._find_journal_record_for_info(journal_metadata)
         identifiers = self._journal_identifiers_from_metadata(journal_metadata)
+        if len(identifiers) == 0:
+            raise ValueError("Journal must have known identifiers")
+        existing = self._find_journal_record_for_identifiers(journal_metadata)
         data = self._journal_data_from_metadata(journal_metadata)
 
         if identifiers:
@@ -330,6 +332,37 @@ class GlobalWorkspace:
         values.extend(self._as_list(data.get("name_variants")))
         return self._dedupe_strings(values)
 
+    def _find_journal_record_for_identifiers(self, journal_metadata: dict[str, Any]) -> StoredRecord | None:
+        if self.journal_store is None:
+            return None
+
+        matching_record_ids: set[int] = set()
+        identifiers = self._journal_identifiers_from_metadata(journal_metadata)
+        for id_type, values in identifiers.items():
+            for value in self._as_list(values):
+                try:
+                    record = self.journal_store.get(id_type, value)
+                except ValueError:
+                    continue
+                if record is not None:
+                    matching_record_ids.add(record.record_id)
+
+        if len(matching_record_ids) == 1:
+            return self.journal_store.get_by_record_id(next(iter(matching_record_ids)))
+        if len(matching_record_ids) > 1:
+            warning_key = tuple(sorted(matching_record_ids))
+            if warning_key not in self._ambiguous_journal_match_warnings:
+                self._ambiguous_journal_match_warnings.add(warning_key)
+                # TODO Figure out why this error goes away if we rerun it
+                logger.warning(
+                    "Journal metadata matched multiple journal records: %s",
+                    sorted(matching_record_ids),
+                )
+                logger.warning(f"TEST Ambiguous journal by ID; journal_metadata = {journal_metadata}")
+                logger.warning(f"TEST Ambiguous journal by ID; identifiers = {identifiers}")
+                logger.warning(f"TEST Ambiguous journal by ID; matching_record_ids = {matching_record_ids}")
+        return None
+
     def _find_journal_record_for_info(self, journal_metadata: dict[str, Any]) -> StoredRecord | None:
         if self.journal_store is None:
             return None
@@ -345,12 +378,21 @@ class GlobalWorkspace:
                 if record is not None:
                     matching_record_ids.add(record.record_id)
 
-        target_texts = {self._normalize_journal_match_text(value) for value in self._journal_text_values_from_metadata(journal_metadata)}
-        if target_texts:
-            for record in self.journal_store:
-                record_texts = {self._normalize_journal_match_text(value) for value in self._journal_text_values_from_record(record)}
-                if target_texts & record_texts:
-                    matching_record_ids.add(record.record_id)
+        target_texts = None
+        if len(matching_record_ids) < 1:
+            # TESTING Only try the journal text if we don't already have the record
+            # FIXME : this is causing ambiguous errors AND slowing us down
+            # TODO after pulling identifiers, if we have it, return it
+            # TODO ONLY after recognizing we don't have the identifiers do we check names
+            # TODO OR... what if we require an identifier for the journal?
+            target_texts = {self._normalize_journal_match_text(value) for value in self._journal_text_values_from_metadata(journal_metadata)}
+            if target_texts:
+                for record in self.journal_store:
+                    record_texts = {self._normalize_journal_match_text(value) for value in self._journal_text_values_from_record(record)}
+                    if target_texts & record_texts:
+                        matching_record_ids.add(record.record_id)
+            if len(matching_record_ids) > 0:
+                logger.warning("TEST journal found by text; journal_metadata = {journal_metadata}")
 
         if len(matching_record_ids) == 1:
             return self.journal_store.get_by_record_id(next(iter(matching_record_ids)))
@@ -363,6 +405,10 @@ class GlobalWorkspace:
                     "Journal metadata matched multiple journal records: %s",
                     sorted(matching_record_ids),
                 )
+                logger.warning(f"TEST Ambiguous journal by info; journal_metadata = {journal_metadata}")
+                logger.warning(f"TEST Ambiguous journal by info; identifiers = {identifiers}")
+                logger.warning(f"TEST Ambiguous journal by info; target_texts = {target_texts}")
+                logger.warning(f"TEST Ambiguous journal by info; matching_record_ids = {matching_record_ids}")
         return None
 
     def _journal_record_id_exists(self, record_id: Any) -> bool:
@@ -528,6 +574,7 @@ class GlobalWorkspace:
         self.journal_store.save()
 
     def get_document_metadata(self, documents: list[Document]) -> Dict[str, Dict[str, Any]]:
+        # TODO REfactor this so that it runs one Fetcher at a time, resolving all of the documents it can
         self._attach_known_document_identifiers(documents)
         missing_ids = {id_type: set() for id_type in self.fetchers.keys()}
         # 1. Check store
