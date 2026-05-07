@@ -1451,6 +1451,60 @@
     {
       "details": {
         "counts": {
+          "Cell & developmental biology": 63.18333333333334,
+          "Chemistry / Materials Science": 49.23611111111112,
+          "Clinical specialties by organ system": 117.60277777777779,
+          "Diagnostics / pathology / radiology": 47.072222222222216,
+          "General / internal medicine": 161.0840277777778,
+          "General biology / anatomy / physiology": 80.84652777777777,
+          "General natural sciences": 19.577777777777776,
+          "Genetics/genomics": 48.02777777777777,
+          "Health disciplines": 35.81666666666666,
+          "Immunology": 12.7,
+          "Microbiology/pathogenesis": 35.395833333333336,
+          "Molecular biology / biochemistry": 89.53333333333333,
+          "Multidisciplinary": 63.083333333333336,
+          "Neuroscience & neurology": 29.17361111111111,
+          "Nutrition, metabolism, and food science": 6.895833333333333,
+          "Oncology": 162.24999999999997,
+          "Pediatrics / reproductive / developmental medicine": 17.308333333333337,
+          "Pharmacology": 33.80833333333334,
+          "Psychiatry & psychology": 23.346296296296295,
+          "Public health / health services": 38.310648148148154,
+          "Surgery / anesthesia / perioperative": 64.93055555555554,
+          "Toxicology": 11.283333333333333
+        },
+        "total": 1210.4666666666667
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.0521975,
+        "Chemistry / Materials Science": 0.04067531,
+        "Clinical specialties by organ system": 0.09715491,
+        "Diagnostics / pathology / radiology": 0.03888766,
+        "General / internal medicine": 0.13307597,
+        "General biology / anatomy / physiology": 0.06678955,
+        "General natural sciences": 0.01617374,
+        "Genetics/genomics": 0.03967708,
+        "Health disciplines": 0.02958914,
+        "Immunology": 0.01049182,
+        "Microbiology/pathogenesis": 0.02924148,
+        "Molecular biology / biochemistry": 0.07396596,
+        "Multidisciplinary": 0.05211489,
+        "Neuroscience & neurology": 0.02410113,
+        "Nutrition, metabolism, and food science": 0.00569684,
+        "Oncology": 0.13403921,
+        "Pediatrics / reproductive / developmental medicine": 0.01429889,
+        "Pharmacology": 0.02793,
+        "Psychiatry & psychology": 0.01928702,
+        "Public health / health services": 0.03164949,
+        "Surgery / anesthesia / perioperative": 0.05364093,
+        "Toxicology": 0.00932147
+      }
+    },
+    {
+      "details": {
+        "counts": {
           "1971": 1,
           "1975": 5,
           "1976": 5,
@@ -2997,6 +3051,62 @@
     {
       "details": {
         "counts": {
+          "Cell & developmental biology": 6.266666666666666,
+          "Chemistry / Materials Science": 5.834523809523809,
+          "Clinical specialties by organ system": 238.8993055555556,
+          "Diagnostics / pathology / radiology": 49.93750000000001,
+          "General / internal medicine": 307.972371031746,
+          "General biology / anatomy / physiology": 40.326388888888886,
+          "General natural sciences": 1.7944444444444443,
+          "Genetics/genomics": 1.75,
+          "Health disciplines": 29.069444444444446,
+          "Immunology": 13.118055555555555,
+          "Microbiology/pathogenesis": 13.015625,
+          "Molecular biology / biochemistry": 30.78333333333332,
+          "Multidisciplinary": 17.766666666666666,
+          "Neuroscience & neurology": 150.97500000000002,
+          "Nutrition, metabolism, and food science": 2.580357142857143,
+          "Oncology": 53.95833333333334,
+          "Pediatrics / reproductive / developmental medicine": 52.060714285714276,
+          "Pharmacology": 140.2896825396824,
+          "Psychiatry & psychology": 106.48293650793654,
+          "Public health / health services": 11.185317460317462,
+          "Surgery / anesthesia / perioperative": 178.91666666666669,
+          "Toxicology": 42.03333333333334,
+          "Unknown": 2.0
+        },
+        "total": 1497.0166666666667
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.0041861,
+        "Chemistry / Materials Science": 0.00389743,
+        "Clinical specialties by organ system": 0.1595836,
+        "Diagnostics / pathology / radiology": 0.03335801,
+        "General / internal medicine": 0.20572408,
+        "General biology / anatomy / physiology": 0.02693784,
+        "General natural sciences": 0.00119868,
+        "Genetics/genomics": 0.00116899,
+        "Health disciplines": 0.01941825,
+        "Immunology": 0.0087628,
+        "Microbiology/pathogenesis": 0.00869438,
+        "Molecular biology / biochemistry": 0.02056312,
+        "Multidisciplinary": 0.01186805,
+        "Neuroscience & neurology": 0.10085058,
+        "Nutrition, metabolism, and food science": 0.00172367,
+        "Oncology": 0.03604391,
+        "Pediatrics / reproductive / developmental medicine": 0.03477631,
+        "Pharmacology": 0.09371284,
+        "Psychiatry & psychology": 0.07113009,
+        "Public health / health services": 0.00747174,
+        "Surgery / anesthesia / perioperative": 0.11951548,
+        "Toxicology": 0.02807807,
+        "Unknown": 0.00133599
+      }
+    },
+    {
+      "details": {
+        "counts": {
           "1968": 1,
           "1972": 1,
           "1974": 1,
@@ -3158,6 +3268,38 @@
         "Biological Sciences": 0.19342718,
         "Diseases": 0.00291627,
         "Physical Sciences": 0.75778139
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "Cell & developmental biology": 1399.3333333333294,
+          "General / internal medicine": 907.8333333333645,
+          "General biology / anatomy / physiology": 730.5208333333353,
+          "General natural sciences": 18.25,
+          "Genetics/genomics": 1072.6666666666997,
+          "Immunology": 262.58333333333405,
+          "Microbiology/pathogenesis": 417.3125,
+          "Molecular biology / biochemistry": 8450.166666666395,
+          "Multidisciplinary": 229.0,
+          "Neuroscience & neurology": 192.0,
+          "Nutrition, metabolism, and food science": 17.33333333333334
+        },
+        "total": 13696.99999999979
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.10216349,
+        "General / internal medicine": 0.06627972,
+        "General biology / anatomy / physiology": 0.05333437,
+        "General natural sciences": 0.00133241,
+        "Genetics/genomics": 0.07831399,
+        "Immunology": 0.01917086,
+        "Microbiology/pathogenesis": 0.03046744,
+        "Molecular biology / biochemistry": 0.61693558,
+        "Multidisciplinary": 0.01671899,
+        "Neuroscience & neurology": 0.01401767,
+        "Nutrition, metabolism, and food science": 0.00126548
       }
     },
     {
@@ -3671,6 +3813,60 @@
     {
       "details": {
         "counts": {
+          "Cell & developmental biology": 110.85714285714282,
+          "Chemistry / Materials Science": 2214.7547619047436,
+          "Clinical specialties by organ system": 353.66666666666686,
+          "Diagnostics / pathology / radiology": 2.0,
+          "General / internal medicine": 320.0000000000001,
+          "General biology / anatomy / physiology": 793.6208333333327,
+          "General natural sciences": 172.79464285714295,
+          "Genetics/genomics": 197.23214285714286,
+          "Health disciplines": 105.57916666666661,
+          "Immunology": 1.125,
+          "Microbiology/pathogenesis": 6.5,
+          "Molecular biology / biochemistry": 1149.7988095238143,
+          "Multidisciplinary": 41.25,
+          "Neuroscience & neurology": 58.08333333333334,
+          "Nutrition, metabolism, and food science": 532.741666666667,
+          "Oncology": 0.5,
+          "Pediatrics / reproductive / developmental medicine": 23.333333333333332,
+          "Pharmacology": 2529.1333333333378,
+          "Psychiatry & psychology": 133.43750000000034,
+          "Public health / health services": 153.44166666666663,
+          "Toxicology": 1090.1499999999978,
+          "Unknown": 10.0
+        },
+        "total": 9999.999999999989
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.01108571,
+        "Chemistry / Materials Science": 0.22147548,
+        "Clinical specialties by organ system": 0.03536667,
+        "Diagnostics / pathology / radiology": 0.0002,
+        "General / internal medicine": 0.032,
+        "General biology / anatomy / physiology": 0.07936208,
+        "General natural sciences": 0.01727946,
+        "Genetics/genomics": 0.01972321,
+        "Health disciplines": 0.01055792,
+        "Immunology": 0.0001125,
+        "Microbiology/pathogenesis": 0.00065,
+        "Molecular biology / biochemistry": 0.11497988,
+        "Multidisciplinary": 0.004125,
+        "Neuroscience & neurology": 0.00580833,
+        "Nutrition, metabolism, and food science": 0.05327417,
+        "Oncology": 5e-05,
+        "Pediatrics / reproductive / developmental medicine": 0.00233333,
+        "Pharmacology": 0.25291333,
+        "Psychiatry & psychology": 0.01334375,
+        "Public health / health services": 0.01534417,
+        "Toxicology": 0.109015,
+        "Unknown": 0.001
+      }
+    },
+    {
+      "details": {
+        "counts": {
           "2013": 9770,
           "2014": 129,
           "2015": 86,
@@ -3778,6 +3974,42 @@
         "Information Science": 0.03703704,
         "Physical Sciences": 0.52592593,
         "Technology and Food and Beverages": 0.02962963
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "Cell & developmental biology": 12.666666666666666,
+          "Chemistry / Materials Science": 0.26666666666666666,
+          "Clinical specialties by organ system": 6.0,
+          "Diagnostics / pathology / radiology": 0.3333333333333333,
+          "General / internal medicine": 5.25,
+          "General biology / anatomy / physiology": 24.333333333333332,
+          "General natural sciences": 0.6,
+          "Genetics/genomics": 28.633333333333333,
+          "Molecular biology / biochemistry": 7.666666666666666,
+          "Multidisciplinary": 1.0,
+          "Neuroscience & neurology": 6.75,
+          "Oncology": 3.0,
+          "Public health / health services": 0.5
+        },
+        "total": 97.0
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.13058419,
+        "Chemistry / Materials Science": 0.00274914,
+        "Clinical specialties by organ system": 0.06185567,
+        "Diagnostics / pathology / radiology": 0.00343643,
+        "General / internal medicine": 0.05412371,
+        "General biology / anatomy / physiology": 0.25085911,
+        "General natural sciences": 0.00618557,
+        "Genetics/genomics": 0.295189,
+        "Molecular biology / biochemistry": 0.0790378,
+        "Multidisciplinary": 0.01030928,
+        "Neuroscience & neurology": 0.06958763,
+        "Oncology": 0.03092784,
+        "Public health / health services": 0.00515464
       }
     },
     {
@@ -3951,7 +4183,6 @@
           "EMBO J": 3,
           "EMBO Mol Med": 7,
           "EMBO Rep": 3,
-          "Elife": 69,
           "Emerg Microbes Infect": 2,
           "Endocrinology": 1,
           "Epigenetics": 1,
@@ -4198,7 +4429,7 @@
           "Wound Repair Regen": 1,
           "Zhonghua Gan Zang Bing Za Zhi": 1,
           "Zool Res": 1,
-          "eLife": 25,
+          "eLife": 94,
           "eNeuro": 14,
           "mBio": 3,
           "mSphere": 3
@@ -4349,7 +4580,6 @@
         "EMBO J": 0.00149775,
         "EMBO Mol Med": 0.00349476,
         "EMBO Rep": 0.00149775,
-        "Elife": 0.03444833,
         "Emerg Microbes Infect": 0.0009985,
         "Endocrinology": 0.00049925,
         "Epigenetics": 0.00049925,
@@ -4596,7 +4826,7 @@
         "Wound Repair Regen": 0.00049925,
         "Zhonghua Gan Zang Bing Za Zhi": 0.00049925,
         "Zool Res": 0.00049925,
-        "eLife": 0.01248128,
+        "eLife": 0.04692961,
         "eNeuro": 0.00698952,
         "mBio": 0.00149775,
         "mSphere": 0.00149775
@@ -4640,6 +4870,62 @@
         "Psychiatry and Psychology": 0.00530973,
         "Technology and Food and Beverages": 0.01699115,
         "Unknown": 0.01097345
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "Cell & developmental biology": 193.2666666666668,
+          "Chemistry / Materials Science": 174.42777777777752,
+          "Clinical specialties by organ system": 76.55208333333334,
+          "Diagnostics / pathology / radiology": 18.500000000000004,
+          "General / internal medicine": 221.1552083333333,
+          "General biology / anatomy / physiology": 391.91249999999985,
+          "General natural sciences": 122.90277777777776,
+          "Genetics/genomics": 95.1583333333333,
+          "Health disciplines": 19.044444444444448,
+          "Immunology": 234.93750000000003,
+          "Microbiology/pathogenesis": 35.359375,
+          "Molecular biology / biochemistry": 123.30555555555527,
+          "Multidisciplinary": 132.16666666666666,
+          "Neuroscience & neurology": 80.78749999999998,
+          "Nutrition, metabolism, and food science": 1.6833333333333331,
+          "Oncology": 35.53125,
+          "Pediatrics / reproductive / developmental medicine": 6.281249999999999,
+          "Pharmacology": 5.483333333333333,
+          "Psychiatry & psychology": 5.308333333333334,
+          "Public health / health services": 6.302777777777776,
+          "Surgery / anesthesia / perioperative": 5.166666666666666,
+          "Toxicology": 1.6666666666666665,
+          "Unknown": 4.0
+        },
+        "total": 1990.8999999999994
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.09707502,
+        "Chemistry / Materials Science": 0.08761253,
+        "Clinical specialties by organ system": 0.03845099,
+        "Diagnostics / pathology / radiology": 0.00929228,
+        "General / internal medicine": 0.11108303,
+        "General biology / anatomy / physiology": 0.19685193,
+        "General natural sciences": 0.06173227,
+        "Genetics/genomics": 0.04779664,
+        "Health disciplines": 0.00956575,
+        "Immunology": 0.11800568,
+        "Microbiology/pathogenesis": 0.0177605,
+        "Molecular biology / biochemistry": 0.06193458,
+        "Multidisciplinary": 0.06638539,
+        "Neuroscience & neurology": 0.04057838,
+        "Nutrition, metabolism, and food science": 0.00084551,
+        "Oncology": 0.01784683,
+        "Pediatrics / reproductive / developmental medicine": 0.00315498,
+        "Pharmacology": 0.0027542,
+        "Psychiatry & psychology": 0.0026663,
+        "Public health / health services": 0.00316579,
+        "Surgery / anesthesia / perioperative": 0.00259514,
+        "Toxicology": 0.00083714,
+        "Unknown": 0.00200914
       }
     },
     {
@@ -5581,6 +5867,60 @@
     {
       "details": {
         "counts": {
+          "Cell & developmental biology": 147.26250000000002,
+          "Chemistry / Materials Science": 104.72638888888888,
+          "Clinical specialties by organ system": 109.18923611111111,
+          "Diagnostics / pathology / radiology": 18.75,
+          "General / internal medicine": 322.874045138889,
+          "General biology / anatomy / physiology": 118.93055555555553,
+          "General natural sciences": 19.972222222222214,
+          "Genetics/genomics": 110.18055555555557,
+          "Health disciplines": 3.092447916666667,
+          "Immunology": 520.2534722222222,
+          "Microbiology/pathogenesis": 178.17968750000006,
+          "Molecular biology / biochemistry": 388.0874999999999,
+          "Multidisciplinary": 164.08333333333334,
+          "Neuroscience & neurology": 8.791666666666668,
+          "Nutrition, metabolism, and food science": 1.5,
+          "Oncology": 91.45833333333334,
+          "Pediatrics / reproductive / developmental medicine": 15.541666666666666,
+          "Pharmacology": 35.87222222222223,
+          "Psychiatry & psychology": 13.104166666666668,
+          "Public health / health services": 2.8333333333333335,
+          "Surgery / anesthesia / perioperative": 18.583333333333336,
+          "Toxicology": 9.583333333333334
+        },
+        "total": 2402.85
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.0612866,
+        "Chemistry / Materials Science": 0.04358424,
+        "Clinical specialties by organ system": 0.04544155,
+        "Diagnostics / pathology / radiology": 0.00780323,
+        "General / internal medicine": 0.13437129,
+        "General biology / anatomy / physiology": 0.04949562,
+        "General natural sciences": 0.00831189,
+        "Genetics/genomics": 0.04585411,
+        "Health disciplines": 0.00128699,
+        "Immunology": 0.21651517,
+        "Microbiology/pathogenesis": 0.07415348,
+        "Molecular biology / biochemistry": 0.16151133,
+        "Multidisciplinary": 0.06828696,
+        "Neuroscience & neurology": 0.00365885,
+        "Nutrition, metabolism, and food science": 0.00062426,
+        "Oncology": 0.03806244,
+        "Pediatrics / reproductive / developmental medicine": 0.00646801,
+        "Pharmacology": 0.01492903,
+        "Psychiatry & psychology": 0.00545359,
+        "Public health / health services": 0.00117916,
+        "Surgery / anesthesia / perioperative": 0.00773387,
+        "Toxicology": 0.00398832
+      }
+    },
+    {
+      "details": {
+        "counts": {
           "1978": 5,
           "1979": 4,
           "1980": 6,
@@ -5881,6 +6221,56 @@
     {
       "details": {
         "counts": {
+          "Cell & developmental biology": 17.366666666666667,
+          "Chemistry / Materials Science": 7.222222222222218,
+          "Clinical specialties by organ system": 14.0,
+          "Diagnostics / pathology / radiology": 4.333333333333333,
+          "General / internal medicine": 68.66666666666666,
+          "General biology / anatomy / physiology": 10.583333333333332,
+          "General natural sciences": 5.555555555555553,
+          "Genetics/genomics": 472.9555555555555,
+          "Health disciplines": 0.5,
+          "Immunology": 8.5,
+          "Microbiology/pathogenesis": 1.9999999999999998,
+          "Molecular biology / biochemistry": 23.166666666666664,
+          "Multidisciplinary": 94.91666666666666,
+          "Neuroscience & neurology": 24.75,
+          "Nutrition, metabolism, and food science": 1.0,
+          "Oncology": 12.5,
+          "Pediatrics / reproductive / developmental medicine": 18.0,
+          "Psychiatry & psychology": 0.9,
+          "Public health / health services": 0.8333333333333333,
+          "Surgery / anesthesia / perioperative": 5.25
+        },
+        "total": 792.9999999999999
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.02189996,
+        "Chemistry / Materials Science": 0.00910747,
+        "Clinical specialties by organ system": 0.01765448,
+        "Diagnostics / pathology / radiology": 0.00546448,
+        "General / internal medicine": 0.086591,
+        "General biology / anatomy / physiology": 0.01334594,
+        "General natural sciences": 0.00700574,
+        "Genetics/genomics": 0.59641306,
+        "Health disciplines": 0.00063052,
+        "Immunology": 0.01071879,
+        "Microbiology/pathogenesis": 0.00252207,
+        "Molecular biology / biochemistry": 0.02921396,
+        "Multidisciplinary": 0.11969315,
+        "Neuroscience & neurology": 0.03121059,
+        "Nutrition, metabolism, and food science": 0.00126103,
+        "Oncology": 0.01576293,
+        "Pediatrics / reproductive / developmental medicine": 0.02269861,
+        "Psychiatry & psychology": 0.00113493,
+        "Public health / health services": 0.00105086,
+        "Surgery / anesthesia / perioperative": 0.00662043
+      }
+    },
+    {
+      "details": {
+        "counts": {
           "1975": 6,
           "1976": 7,
           "1977": 3,
@@ -6104,6 +6494,58 @@
         "Psychiatry and Psychology": 0.06278027,
         "Technology and Food and Beverages": 0.03587444,
         "Unknown": 0.05829596
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "Cell & developmental biology": 3.444444444444444,
+          "Chemistry / Materials Science": 46.83333333333332,
+          "Clinical specialties by organ system": 2.0,
+          "Diagnostics / pathology / radiology": 1.0,
+          "General / internal medicine": 16.666666666666668,
+          "General biology / anatomy / physiology": 7.111111111111109,
+          "General natural sciences": 1.3333333333333333,
+          "Genetics/genomics": 4.444444444444445,
+          "Health disciplines": 3.333333333333333,
+          "Immunology": 0.125,
+          "Microbiology/pathogenesis": 2.0,
+          "Molecular biology / biochemistry": 30.166666666666654,
+          "Multidisciplinary": 13.166666666666668,
+          "Neuroscience & neurology": 5.75,
+          "Nutrition, metabolism, and food science": 0.6666666666666666,
+          "Oncology": 4.0,
+          "Pharmacology": 1.3333333333333333,
+          "Psychiatry & psychology": 3.166666666666666,
+          "Public health / health services": 1.8749999999999998,
+          "Surgery / anesthesia / perioperative": 1.0,
+          "Toxicology": 0.25
+        },
+        "total": 149.66666666666663
+      },
+      "metric_name": "journal_MeSH_topic_distribution",
+      "value": {
+        "Cell & developmental biology": 0.02301411,
+        "Chemistry / Materials Science": 0.31291759,
+        "Clinical specialties by organ system": 0.01336303,
+        "Diagnostics / pathology / radiology": 0.00668151,
+        "General / internal medicine": 0.11135857,
+        "General biology / anatomy / physiology": 0.04751299,
+        "General natural sciences": 0.00890869,
+        "Genetics/genomics": 0.02969562,
+        "Health disciplines": 0.02227171,
+        "Immunology": 0.00083519,
+        "Microbiology/pathogenesis": 0.01336303,
+        "Molecular biology / biochemistry": 0.20155902,
+        "Multidisciplinary": 0.08797327,
+        "Neuroscience & neurology": 0.03841871,
+        "Nutrition, metabolism, and food science": 0.00445434,
+        "Oncology": 0.02672606,
+        "Pharmacology": 0.00890869,
+        "Psychiatry & psychology": 0.02115813,
+        "Public health / health services": 0.01252784,
+        "Surgery / anesthesia / perioperative": 0.00668151,
+        "Toxicology": 0.00167038
       }
     },
     {
