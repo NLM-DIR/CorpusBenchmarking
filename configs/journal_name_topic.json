@@ -1,0 +1,535 @@
+{
+  "The Journal of Biological Chemistry": [
+    "Molecular biology / biochemistry",
+    "Chemistry / Materials Science"
+  ],
+  "Journal of immunology (Baltimore, Md. : 1950)": [
+    "Immunology"
+  ],
+  "Fitoterapia": [
+    "Pharmacology",
+    "General biology / anatomy / physiology"
+  ],
+  "Cancer research": [
+    "Oncology"
+  ],
+  "The Journal of experimental medicine": [
+    "General / internal medicine",
+    "Immunology"
+  ],
+  "Biochemical Journal": [
+    "Molecular biology / biochemistry"
+  ],
+  "Journal of medical genetics": [
+    "Genetics/genomics"
+  ],
+  "Journal of neurochemistry": [
+    "Neuroscience & neurology",
+    "Molecular biology / biochemistry"
+  ],
+  "Journal of molecular biology": [
+    "Molecular biology / biochemistry",
+    "General biology / anatomy / physiology"
+  ],
+  "Lancet (London, England)": [
+    "General / internal medicine"
+  ],
+  "Epilepsia": [
+    "Neuroscience & neurology"
+  ],
+  "Japanese journal of pharmacology": [
+    "Pharmacology"
+  ],
+  "BMC Public Health": [
+    "Public health / health services"
+  ],
+  "Journal of neurology, neurosurgery, and psychiatry": [
+    "Neuroscience & neurology",
+    "Psychiatry & psychology"
+  ],
+  "Medicine": [
+    "General / internal medicine"
+  ],
+  "Zhonghua nei ke za zhi": [
+    "General / internal medicine"
+  ],
+  "Klinische Wochenschrift": [
+    "General / internal medicine"
+  ],
+  "Cancer Research Communications": [
+    "Oncology",
+    "Multidisciplinary"
+  ],
+  "Gut": [
+    "Clinical specialties by organ system"
+  ],
+  "Journal of Cardiovascular Magnetic Resonance": [
+    "Diagnostics / pathology / radiology",
+    "Clinical specialties by organ system"
+  ],
+  "Sheng li xue bao : [Acta physiologica Sinica]": [
+    "General biology / anatomy / physiology"
+  ],
+  "Acta poloniae pharmaceutica": [
+    "Pharmacology"
+  ],
+  "Advanced functional materials": [
+    "Chemistry / Materials Science"
+  ],
+  "Allergy, Asthma, and Clinical Immunology : Official Journal of the Canadian Society of Allergy and Clinical Immunology": [
+    "Immunology",
+    "Clinical specialties by organ system"
+  ],
+  "BMC Complementary and Alternative Medicine": [
+    "General / internal medicine",
+    "Pharmacology"
+  ],
+  "BMC Health Services Research": [
+    "Public health / health services"
+  ],
+  "BMC Microbiology": [
+    "Microbiology/pathogenesis",
+    "General biology / anatomy / physiology"
+  ],
+  "Experimental Diabetes Research": [
+    "Nutrition, metabolism, and food science"
+  ],
+  "Indian Journal of Occupational and Environmental Medicine": [
+    "Public health / health services",
+    "General / internal medicine"
+  ],
+  "Indian Journal of Orthopaedics": [
+    "Surgery / anesthesia / perioperative"
+  ],
+  "Indian Journal of Urology : IJU : Journal of the Urological Society of India": [
+    "Surgery / anesthesia / perioperative",
+    "Clinical specialties by organ system"
+  ],
+  "International Journal of Health Geographics": [
+    "Public health / health services"
+  ],
+  "Journal of Experimental Botany": [
+    "General biology / anatomy / physiology"
+  ],
+  "Klinicheskaia meditsina": [
+    "General / internal medicine"
+  ],
+  "The Journal of General Physiology": [
+    "General biology / anatomy / physiology"
+  ],
+  "Therapeutics and Clinical Risk Management": [
+    "Pharmacology",
+    "Toxicology"
+  ],
+  "AIDS Research and Therapy": [
+    "Microbiology/pathogenesis"
+  ],
+  "Acta Crystallographica Section F: Structural Biology and Crystallization Communications": [
+    "Chemistry / Materials Science",
+    "General biology / anatomy / physiology"
+  ],
+  "Acta Orthopaedica": [
+    "Surgery / anesthesia / perioperative"
+  ],
+  "Acta biochimica Polonica": [
+    "Molecular biology / biochemistry"
+  ],
+  "Advances in Health Sciences Education": [
+    "Health disciplines"
+  ],
+  "Anesthesiology Research and Practice": [
+    "Surgery / anesthesia / perioperative",
+    "Multidisciplinary"
+  ],
+  "Angewandte Chemie": [
+    "Chemistry / Materials Science"
+  ],
+  "Annals of Medicine": [
+    "General / internal medicine"
+  ],
+  "Archives of physical medicine and rehabilitation": [
+    "Health disciplines",
+    "General / internal medicine"
+  ],
+  "Artha vijñāna : journal of the Gokhale Institute of Politics and Economics, Poona (India) = Artha vijñāna : Gokhale Artha Śāstra Samsthā Dvārā Prakāśita Traimēsika Pātrikā": [
+    "Public health / health services"
+  ],
+  "BMC Medical Research Methodology": [
+    "Multidisciplinary"
+  ],
+  "BMC Nephrology": [
+    "Clinical specialties by organ system"
+  ],
+  "BMC Nursing": [
+    "Health disciplines"
+  ],
+  "BMC Oral Health": [
+    "Clinical specialties by organ system"
+  ],
+  "BMC Plant Biology": [
+    "General biology / anatomy / physiology"
+  ],
+  "BMC Pregnancy and Childbirth": [
+    "Pediatrics / reproductive / developmental medicine"
+  ],
+  "BMC Proceedings": [
+    "Multidisciplinary"
+  ],
+  "BMC Women's Health": [
+    "Pediatrics / reproductive / developmental medicine"
+  ],
+  "Behavioral Ecology and Sociobiology": [
+    "Psychiatry & psychology",
+    "General biology / anatomy / physiology"
+  ],
+  "Biological Procedures Online": [
+    "General biology / anatomy / physiology"
+  ],
+  "Biomaterials advances": [
+    "Chemistry / Materials Science"
+  ],
+  "Biomedical Optics Express": [
+    "General natural sciences"
+  ],
+  "British journal of urology": [
+    "Surgery / anesthesia / perioperative",
+    "Clinical specialties by organ system"
+  ],
+  "Cardiovascular Ultrasound": [
+    "Diagnostics / pathology / radiology",
+    "Clinical specialties by organ system"
+  ],
+  "Case Reports in Gastroenterology": [
+    "Clinical specialties by organ system"
+  ],
+  "Case Reports in Medicine": [
+    "General / internal medicine"
+  ],
+  "Cases Journal": [
+    "General / internal medicine"
+  ],
+  "Cell Genomics": [
+    "Genetics/genomics",
+    "Cell & developmental biology"
+  ],
+  "Cell Reports Methods": [
+    "Cell & developmental biology",
+    "Multidisciplinary"
+  ],
+  "Cell and Tissue Banking": [
+    "Cell & developmental biology"
+  ],
+  "Chem": [
+    "Chemistry / Materials Science"
+  ],
+  "Chemical engineering journal": [
+    "Chemistry / Materials Science"
+  ],
+  "Chemical engineering science": [
+    "Chemistry / Materials Science"
+  ],
+  "Clinical Ophthalmology (Auckland, N.Z.)": [
+    "Clinical specialties by organ system",
+    "General / internal medicine"
+  ],
+  "Clinical Research in Cardiology": [
+    "Clinical specialties by organ system",
+    "General / internal medicine"
+  ],
+  "Clinics": [
+    "General / internal medicine"
+  ],
+  "Cost effectiveness and resource allocation : C/E": [
+    "Public health / health services"
+  ],
+  "Current Cardiology Reviews": [
+    "Clinical specialties by organ system"
+  ],
+  "Current Gerontology and Geriatrics Research": [
+    "Clinical specialties by organ system",
+    "General / internal medicine"
+  ],
+  "Current Neuropharmacology": [
+    "Neuroscience & neurology",
+    "Pharmacology"
+  ],
+  "Dermatology Research and Practice": [
+    "Clinical specialties by organ system",
+    "Multidisciplinary"
+  ],
+  "Dialogues in Clinical Neuroscience": [
+    "Neuroscience & neurology",
+    "General / internal medicine"
+  ],
+  "Emerging Infectious Diseases": [
+    "Microbiology/pathogenesis"
+  ],
+  "Europace": [
+    "Clinical specialties by organ system"
+  ],
+  "EvoDevo": [
+    "Cell & developmental biology",
+    "General biology / anatomy / physiology"
+  ],
+  "Evolutionary Bioinformatics Online": [
+    "Genetics/genomics",
+    "General biology / anatomy / physiology"
+  ],
+  "Fems Microbiology Reviews": [
+    "Microbiology/pathogenesis",
+    "General biology / anatomy / physiology"
+  ],
+  "Frontiers in Aging Neuroscience": [
+    "Neuroscience & neurology"
+  ],
+  "Frontiers in Human Neuroscience": [
+    "Neuroscience & neurology"
+  ],
+  "Frontiers in Microbiology": [
+    "Microbiology/pathogenesis",
+    "General biology / anatomy / physiology"
+  ],
+  "Frontiers in Physiology": [
+    "General biology / anatomy / physiology"
+  ],
+  "Frontiers in Zoology": [
+    "General biology / anatomy / physiology"
+  ],
+  "GMS Psycho-Social Medicine": [
+    "Psychiatry & psychology",
+    "General / internal medicine"
+  ],
+  "Global Health Action": [
+    "Public health / health services"
+  ],
+  "Headache": [
+    "Neuroscience & neurology"
+  ],
+  "Health & Place": [
+    "Public health / health services"
+  ],
+  "Health physics": [
+    "Public health / health services",
+    "General natural sciences"
+  ],
+  "Human Resources for Health": [
+    "Public health / health services"
+  ],
+  "Indian Journal of Anaesthesia": [
+    "Surgery / anesthesia / perioperative"
+  ],
+  "Indian Journal of Human Genetics": [
+    "Genetics/genomics"
+  ],
+  "Interdisciplinary Perspectives on Infectious Diseases": [
+    "Microbiology/pathogenesis"
+  ],
+  "International Journal of Biomedical Imaging": [
+    "Diagnostics / pathology / radiology"
+  ],
+  "International Journal of Hypertension": [
+    "Clinical specialties by organ system"
+  ],
+  "Irish Veterinary Journal": [
+    "General biology / anatomy / physiology"
+  ],
+  "Janasamkhya": [
+    "Public health / health services"
+  ],
+  "Journal of Cell Communication and Signaling": [
+    "Cell & developmental biology"
+  ],
+  "Journal of Clinical Microbiology": [
+    "Microbiology/pathogenesis",
+    "General biology / anatomy / physiology"
+  ],
+  "Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology": [
+    "Neuroscience & neurology",
+    "General biology / anatomy / physiology"
+  ],
+  "Journal of Ethnobiology and Ethnomedicine": [
+    "General biology / anatomy / physiology",
+    "Pharmacology"
+  ],
+  "Journal of Global Infectious Diseases": [
+    "Microbiology/pathogenesis"
+  ],
+  "Journal of Indian Society of Periodontology": [
+    "Surgery / anesthesia / perioperative",
+    "Clinical specialties by organ system"
+  ],
+  "Journal of Negative Results in Biomedicine": [
+    "Health disciplines",
+    "General / internal medicine"
+  ],
+  "Journal of Neurogastroenterology and Motility": [
+    "Neuroscience & neurology",
+    "Clinical specialties by organ system"
+  ],
+  "Journal of Neurosciences in Rural Practice": [
+    "Neuroscience & neurology"
+  ],
+  "Journal of Oncology": [
+    "Oncology"
+  ],
+  "Journal of Pathology Informatics": [
+    "Diagnostics / pathology / radiology"
+  ],
+  "Journal of Periodontal & Implant Science": [
+    "Surgery / anesthesia / perioperative",
+    "Clinical specialties by organ system"
+  ],
+  "Journal of bacteriology": [
+    "Microbiology/pathogenesis"
+  ],
+  "Journal of dairy science": [
+    "Nutrition, metabolism, and food science"
+  ],
+  "Journal of economic entomology": [
+    "General biology / anatomy / physiology"
+  ],
+  "Journal of pharmaceutical sciences": [
+    "Pharmacology"
+  ],
+  "Korean Journal of Ophthalmology : KJO": [
+    "Clinical specialties by organ system"
+  ],
+  "Korean Journal of Radiology": [
+    "Diagnostics / pathology / radiology"
+  ],
+  "Laboratornoe delo": [
+    "Diagnostics / pathology / radiology"
+  ],
+  "Medical History": [
+    "Health disciplines"
+  ],
+  "Mediterranean Journal of Nutrition and Metabolism": [
+    "Nutrition, metabolism, and food science"
+  ],
+  "Microbiology": [
+    "Microbiology/pathogenesis"
+  ],
+  "Neuropsychiatric Disease and Treatment": [
+    "Neuroscience & neurology",
+    "Psychiatry & psychology"
+  ],
+  "Organic process research & development": [
+    "Chemistry / Materials Science"
+  ],
+  "Osteoporosis International": [
+    "Clinical specialties by organ system"
+  ],
+  "PPAR Research": [
+    "Molecular biology / biochemistry",
+    "Pharmacology"
+  ],
+  "Pathology Research International": [
+    "Diagnostics / pathology / radiology"
+  ],
+  "Pharmacognosy Magazine": [
+    "Pharmacology"
+  ],
+  "Pharmacognosy Research": [
+    "Pharmacology"
+  ],
+  "Population et avenir": [
+    "Public health / health services"
+  ],
+  "Preventing Chronic Disease": [
+    "Public health / health services"
+  ],
+  "Protein Engineering, Design and Selection": [
+    "Molecular biology / biochemistry"
+  ],
+  "Psychological Injury and Law": [
+    "Psychiatry & psychology"
+  ],
+  "Radiation Oncology (London, England)": [
+    "Oncology",
+    "Diagnostics / pathology / radiology"
+  ],
+  "Rinsho byori. The Japanese journal of clinical pathology": [
+    "Diagnostics / pathology / radiology",
+    "General / internal medicine"
+  ],
+  "Sarcoma": [
+    "Oncology"
+  ],
+  "Scottish medical journal": [
+    "General / internal medicine"
+  ],
+  "Sheng wu hua xue yu sheng wu wu li xue bao Acta biochimica et biophysica Sinica": [
+    "Molecular biology / biochemistry"
+  ],
+  "Social sciences in China": [
+    "Public health / health services"
+  ],
+  "Srpski arhiv za celokupno lekarstvo": [
+    "General / internal medicine"
+  ],
+  "Strategies in Trauma and Limb Reconstruction": [
+    "Surgery / anesthesia / perioperative"
+  ],
+  "Surface and interface analysis : SIA": [
+    "Chemistry / Materials Science"
+  ],
+  "Surgical Neurology International": [
+    "Neuroscience & neurology",
+    "Surgery / anesthesia / perioperative"
+  ],
+  "Terapevticheskii arkhiv": [
+    "General / internal medicine"
+  ],
+  "The Annals of thoracic surgery": [
+    "Surgery / anesthesia / perioperative"
+  ],
+  "The BMJ": [
+    "General / internal medicine"
+  ],
+  "The Journal of organic chemistry": [
+    "Chemistry / Materials Science"
+  ],
+  "The Medical clinics of North America": [
+    "General / internal medicine"
+  ],
+  "The Open Medical Informatics Journal": [
+    "Health disciplines",
+    "Public health / health services"
+  ],
+  "The Pan African Medical Journal": [
+    "General / internal medicine",
+    "Public health / health services"
+  ],
+  "The Yale Journal of Biology and Medicine": [
+    "General biology / anatomy / physiology",
+    "General / internal medicine"
+  ],
+  "The open cardiovascular medicine journal": [
+    "Clinical specialties by organ system",
+    "General / internal medicine"
+  ],
+  "World Journal of Surgical Oncology": [
+    "Oncology",
+    "Surgery / anesthesia / perioperative"
+  ],
+  "Zeitschrift fur die gesamte innere Medizin und ihre Grenzgebiete": [
+    "General / internal medicine"
+  ],
+  "Zentralblatt fur Gynakologie": [
+    "Pediatrics / reproductive / developmental medicine"
+  ],
+  "ZooKeys": [
+    "General biology / anatomy / physiology"
+  ],
+  "[Hokkaido igaku zasshi] The Hokkaido journal of medical science": [
+    "General / internal medicine"
+  ],
+  "[Rinsho ketsueki] The Japanese journal of clinical hematology": [
+    "Clinical specialties by organ system",
+    "Diagnostics / pathology / radiology"
+  ],
+  "[Zasshi] [Journal]. Nihon Kyobu Geka Gakkai": [
+    "Surgery / anesthesia / perioperative",
+    "Clinical specialties by organ system"
+  ]
+}

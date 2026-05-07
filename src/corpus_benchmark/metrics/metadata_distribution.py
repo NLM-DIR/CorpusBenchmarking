@@ -14,21 +14,14 @@ logger = logging.getLogger(__name__)
 
 PRECISION = 8  # Number of decimal places
 
+
 def calculate_proportions(counts: Counter[Any, int]) -> dict[str, float]:
     total = counts.total()
-    return {
-        str(label) if label is not None else "null": (
-            round(count / total, PRECISION) if total else 0.0
-        )
-        for label, count in counts.items()
-    }
+    return {str(label) if label is not None else "null": (round(count / total, PRECISION) if total else 0.0) for label, count in counts.items()}
 
 
 def normalize_counts(counts: Counter[Any, int]) -> dict[str, int]:
-    return {
-        str(label) if label is not None else "null": count
-        for label, count in counts.items()
-    }
+    return {str(label) if label is not None else "null": count for label, count in counts.items()}
 
 
 @register_subset_metric("journal_distribution")
@@ -51,9 +44,7 @@ def journal_distribution(target: MetricTarget, result_name: str) -> SubsetMetric
 
 
 @register_subset_metric("journal_topic_distribution")
-def journal_topic_distribution(
-    target: MetricTarget, result_name: str, terminology_name: str = "mesh"
-) -> SubsetMetricResult:
+def journal_topic_distribution(target: MetricTarget, result_name: str, terminology_name: str = "mesh") -> SubsetMetricResult:
     workspace = get_workspace(target)
     terminology = _get_terminology(workspace.terminologies, terminology_name)
     metadata = get_metadata_for_target(target)
@@ -83,29 +74,19 @@ def journal_topic_distribution(
     )
 
 
-def _get_terminology(
-    terminologies: dict[str, TerminologyResource], terminology_name: str | None
-) -> TerminologyResource:
+def _get_terminology(terminologies: dict[str, TerminologyResource], terminology_name: str | None) -> TerminologyResource:
     if terminology_name and terminology_name in terminologies:
         return terminologies[terminology_name]
     if terminology_name:
         available = ", ".join(sorted(terminologies)) or "<none>"
-        raise ValueError(
-            f"journal_topic_distribution requires loaded terminology "
-            f"{terminology_name!r}. Available terminologies: {available}"
-        )
+        raise ValueError(f"journal_topic_distribution requires loaded terminology " f"{terminology_name!r}. Available terminologies: {available}")
     if len(terminologies) == 1:
         return next(iter(terminologies.values()))
     available = ", ".join(sorted(terminologies)) or "<none>"
-    raise ValueError(
-        "journal_topic_distribution requires terminology_name when multiple "
-        f"terminologies are loaded. Available terminologies: {available}"
-    )
+    raise ValueError("journal_topic_distribution requires terminology_name when multiple " f"terminologies are loaded. Available terminologies: {available}")
 
 
-def _mesh_topic_treetop_names(
-    terminology: TerminologyResource, mesh_topic_name: str
-) -> list[str]:
+def _mesh_topic_treetop_names(terminology: TerminologyResource, mesh_topic_name: str) -> list[str]:
     treetop_names: set[str] = set()
     for ui in terminology.get_concept_ids_by_name(mesh_topic_name):
         for concept in terminology.resolve_to_tree_concepts(ui):
