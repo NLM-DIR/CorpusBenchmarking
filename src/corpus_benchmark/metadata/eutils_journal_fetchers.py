@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 
 from corpus_benchmark.metadata.eutils_client import EUtilsClient
 from corpus_benchmark.metadata.journal_fetcher import JournalMetadataFetcher
-from corpus_benchmark.metadata.json_record_store import normalize_issn
+from corpus_benchmark.metadata.normalizers import normalize_issn
 
 logger = logging.getLogger(__name__)
 
@@ -69,28 +69,12 @@ def parse_nlm_catalog_record(element: ET.Element) -> dict[str, Any] | None:
             issns.append(_clean_text(issn_element.text))
     issns.extend(_clean_text(element.text) for element in element.findall("./ISSNLinking"))
 
-    alternate_titles = [
-        _clean_title(title_element.text)
-        for title_element in element.findall("./TitleAlternate/Title")
-    ]
+    alternate_titles = [_clean_title(title_element.text) for title_element in element.findall("./TitleAlternate/Title")]
     variants = _dedupe_preserve_order(alternate_titles)
-    canonical_values = {
-        _normalize_match_text(value)
-        for value in (name, abbreviation)
-        if value
-    }
-    variants = [
-        variant
-        for variant in variants
-        if _normalize_match_text(variant) not in canonical_values
-    ]
+    canonical_values = {_normalize_match_text(value) for value in (name, abbreviation) if value}
+    variants = [variant for variant in variants if _normalize_match_text(variant) not in canonical_values]
 
-    mesh_topics = _dedupe_preserve_order(
-        [
-            descriptor.text
-            for descriptor in element.findall("./MeshHeadingList/MeshHeading/DescriptorName")
-        ]
-    )
+    mesh_topics = _dedupe_preserve_order([descriptor.text for descriptor in element.findall("./MeshHeadingList/MeshHeading/DescriptorName")])
 
     record = {
         "identifiers": {
@@ -110,11 +94,7 @@ def parse_nlm_catalog_records(root: ET.Element) -> list[dict[str, Any]]:
         record_elements = [root]
     else:
         record_elements = root.findall("./NLMCatalogRecord")
-    return [
-        record
-        for record in (parse_nlm_catalog_record(element) for element in record_elements)
-        if record is not None
-    ]
+    return [record for record in (parse_nlm_catalog_record(element) for element in record_elements) if record is not None]
 
 
 class NlmCatalogNlmUniqueIDFetcher(JournalMetadataFetcher):
@@ -133,10 +113,7 @@ class NlmCatalogNlmUniqueIDFetcher(JournalMetadataFetcher):
             return []
 
         results: list[dict[str, Any]] = []
-        chunks = [
-            ids[i : i + CATALOG_FETCH_CHUNK_SIZE]
-            for i in range(0, len(ids), CATALOG_FETCH_CHUNK_SIZE)
-        ]
+        chunks = [ids[i : i + CATALOG_FETCH_CHUNK_SIZE] for i in range(0, len(ids), CATALOG_FETCH_CHUNK_SIZE)]
 
         for i, chunk in enumerate(chunks):
             try:
@@ -189,10 +166,7 @@ class _NlmCatalogSearchFetcher(JournalMetadataFetcher):
             return []
 
         nlm_ids: list[str] = []
-        chunks = [
-            values[i : i + CATALOG_SEARCH_CHUNK_SIZE]
-            for i in range(0, len(values), CATALOG_SEARCH_CHUNK_SIZE)
-        ]
+        chunks = [values[i : i + CATALOG_SEARCH_CHUNK_SIZE] for i in range(0, len(values), CATALOG_SEARCH_CHUNK_SIZE)]
         for i, chunk in enumerate(chunks):
             try:
                 root = self.client.get_xml(
@@ -204,11 +178,7 @@ class _NlmCatalogSearchFetcher(JournalMetadataFetcher):
                         "term": self._or_query(chunk),
                     },
                 )
-                nlm_ids.extend(
-                    id_element.text
-                    for id_element in root.findall("./IdList/Id")
-                    if id_element.text
-                )
+                nlm_ids.extend(id_element.text for id_element in root.findall("./IdList/Id") if id_element.text)
                 logger.info(
                     "NLM catalog %s search fetcher: processed chunk %s/%s",
                     self.search_field,

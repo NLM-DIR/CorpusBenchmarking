@@ -7,8 +7,8 @@ from typing import Any, Callable, Dict
 
 from corpus_benchmark.models.corpus import CorpusSubset, Document, Passage, Annotation, IdentifierLink
 from corpus_benchmark.models.filters import AnnotationFilter
-from corpus_benchmark.parsing import extract_sentences_from_texts, extract_tokens_from_texts
 from corpus_benchmark.workspace import GlobalWorkspace
+from utils.text_utils import extract_tokens_from_texts, extract_sentences_from_texts
 
 logger = logging.getLogger(__name__)
 

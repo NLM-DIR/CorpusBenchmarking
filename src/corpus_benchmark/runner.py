@@ -16,7 +16,8 @@ from corpus_benchmark.registry import (
     TERMINOLOGY_METRICS,
 )
 from corpus_benchmark.workspace import GlobalWorkspace
-from corpus_benchmark.metadata.json_record_store import JsonRecordStore, normalize_issn, normalize_nlm_unique_id
+from corpus_benchmark.metadata.json_record_store import JsonRecordStore
+from corpus_benchmark.metadata.journal_metadata import create_journal_record_store
 
 logger = logging.getLogger(__name__)
 
@@ -93,44 +94,15 @@ def _create_document_record_store(document_store_filename: str) -> JsonRecordSto
     return document_store
 
 
-def _create_journal_record_store(journal_store_filename: str) -> JsonRecordStore:
-    journal_store_path = Path(journal_store_filename)
-    journal_store_path.parent.mkdir(parents=True, exist_ok=True)
-    journal_store = JsonRecordStore(
-        journal_store_path,
-        identifier_types={
-            "NLMUNIQUEID",
-            "ISSN",
-        },
-        fields={
-            "name",
-            "abbreviation",
-            "name_variants",
-            "mesh_topics",
-        },
-        field_policies={
-            "name": "replace",
-            "abbreviation": "replace",
-            "name_variants": "set_union",
-            "mesh_topics": "set_union",
-        },
-        identifier_normalizers={
-            "NLMUNIQUEID": normalize_nlm_unique_id,
-            "ISSN": normalize_issn,
-        },
-    )
-    return journal_store
-
-
 def run_benchmark(battery_config: BatteryConfig) -> list[Any]:
     register_builtins()
     battery_config.validate()
 
     document_store = _create_document_record_store(battery_config.workspace.document_store_filename)
-    journal_store = _create_journal_record_store(battery_config.workspace.journal_store_filename)
+    journal_record_store = create_journal_record_store(battery_config.workspace.journal_store_filename)
     workspace = GlobalWorkspace(
         document_store=document_store,
-        journal_store=journal_store,
+        journal_record_store=journal_record_store,
         workspace_config=battery_config.workspace,
     )
     # Initialize terminologies
@@ -266,7 +238,7 @@ def run_benchmark(battery_config: BatteryConfig) -> list[Any]:
             raise ValueError(f"Unknown metric '{metric_spec.metric_name}'. Available metrics: {available}")
 
     document_store.save()
-    journal_store.save()
+    journal_record_store.save()
 
     # Display context usage
     logger.debug("Context usage:")

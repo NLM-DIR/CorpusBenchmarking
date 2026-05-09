@@ -1,31 +1,14 @@
 from __future__ import annotations
 import logging
-import re
 from dataclasses import dataclass
 
-from nltk.tokenize import sent_tokenize
 
 from corpus_benchmark.models.types import LinkRelation, MatchType
+from utils.text_utils import str_to_bool
 
 logger = logging.getLogger(__name__)
 
-
-def extract_sentences_from_texts(texts: list[str]) -> list[str]:
-    sentences: list[str] = list()
-    for text in texts:
-        sentences.extend(sent_tokenize(text))
-    return sentences
-
-
-def parse_tokens(text: str) -> list[str]:
-    return re.findall(r"\b\w+\b", text.replace("_", " ").lower())
-
-
-def extract_tokens_from_texts(texts: list[str]) -> list[str]:
-    tokens: list[str] = list()
-    for text in texts:
-        tokens.extend(parse_tokens(text))
-    return tokens
+# TODO Move these to an identifier helper in loaders
 
 
 @dataclass(slots=True)
@@ -53,18 +36,6 @@ def parse_identifier_format(id_format: list[str]) -> IdentifierFormat:
     relation = LinkRelation(id_format[1])
     qualifier_allowed = str_to_bool(id_format[2])
     return IdentifierFormat(delimiter, relation, qualifier_allowed)
-
-
-def str_to_bool(val):
-    """Convert a string representation of truth to True or False."""
-    val = val.lower()
-    if val in ("y", "yes", "t", "true", "on", "1"):
-        return True
-    elif val in ("n", "no", "f", "false", "off", "0"):
-        return False
-    else:
-        logger.warning("Invalid boolean value encountered: %s", val)
-        raise ValueError(f"Invalid boolean value: {val}")
 
 
 def parse_qualifier_map(qualifier_map: dict[str, str]) -> dict[str, MatchType]:

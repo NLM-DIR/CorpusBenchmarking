@@ -65,7 +65,7 @@ def journal_topic_distribution(target: MetricTarget, result_name: str, terminolo
     topics = []
     for doc in get_documents(target):
         meta = metadata.get(doc.document_id, {})
-        journal_record = workspace.get_journal_metadata_by_id(meta.get("journal_id"))
+        journal_record = workspace.journal_record_store.get_journal_metadata_by_id(meta.get("journal_id"))
         journal_treetops: set[str] = set()
         for mesh_topic in (journal_record or {}).get("mesh_topics", []):
             if mesh_topic not in topic_treetop_cache:
@@ -108,7 +108,7 @@ def journal_MeSH_topic_distribution(
     counts: Counter[str] = Counter()
     for doc in get_documents(target):
         meta = metadata.get(doc.document_id, {})
-        journal_record = workspace.get_journal_metadata_by_id(meta.get("journal_id"))
+        journal_record = workspace.journal_record_store.get_journal_metadata_by_id(meta.get("journal_id"))
         if journal_record is None:
             counts["Unknown"] += 1.0
             continue
