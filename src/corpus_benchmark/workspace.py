@@ -141,7 +141,7 @@ class GlobalWorkspace:
         if metadata.get("journal") is None and metadata.get("journal_id") is not None:
             journal_record = self.journal_record_store.get_journal_metadata_by_id(metadata["journal_id"])
             if journal_record:
-                metadata["journal"] = journal_record.get("abbreviation")
+                metadata["journal"] = journal_record.get("name")
 
         return metadata
 
