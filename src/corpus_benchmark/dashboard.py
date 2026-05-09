@@ -19,6 +19,8 @@ import sys
 import webbrowser
 from pathlib import Path
 
+import yaml
+
 # ── Colour palette ────────────────────────────────────────────────────────────
 
 PALETTE = [
@@ -41,6 +43,7 @@ OV_COLS = {
 }
 BAR_SCALE = 0.65
 logger = logging.getLogger(__name__)
+DEFAULT_DASHBOARD_CONFIG = Path("configs/dashboard.yaml")
 
 JOURNAL_TOPIC_ORDER = [
     "Multidisciplinary",
@@ -129,6 +132,14 @@ def _entropy(data):
     return -sum(p * math.log2(p) for p in probs)
 
 
+def _entropy_from_counts(counts):
+    total = sum(counts.values())
+    if total <= 0:
+        return 0.0
+    probs = [v / total for v in counts.values() if v and v > 0]
+    return -sum(p * math.log2(p) for p in probs)
+
+
 def _id_info(data):
     dist = _get(data, "identifier_resource_distribution") or {}
     named = sorted([k for k in dist if k not in ("null", "<NIL>", None)])
@@ -157,6 +168,7 @@ def _total_ann(data):
 
 def summarise(name, data):
     ld = _get(data, "label_distribution") or {}
+    label_counts = (_get(data, "label_distribution", "details") or {}).get("counts", {})
     info = _id_info(data)
     return dict(
         name=name.replace("_corpus", "").replace("_", "-"),
@@ -165,6 +177,7 @@ def summarise(name, data):
         token_count=_get(data, "token_count", default=0),
         n_types=len(ld),
         types=list(ld.keys()),
+        label_counts=label_counts,
         entropy=round(_entropy(data), 2),
         total_ann=_total_ann(data),
         ann_per_doc=round(_stat(data, "annotations_per_document_stats", "mean", 0), 2),
@@ -782,6 +795,12 @@ HTML = """\
   .leg{{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}}
   .li{{display:flex;align-items:center;gap:5px;font-size:12px;color:#555}}
   .lc{{width:10px;height:10px;border-radius:2px;flex-shrink:0}}
+  .scope{{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 1.25rem}}
+  .scope-label{{font-size:12px;color:#666;margin-right:2px}}
+  .scope-btn{{border:1px solid #ddd;background:#fff;color:#555;border-radius:7px;padding:6px 10px;
+        font:500 12px system-ui,-apple-system,sans-serif;cursor:pointer}}
+  .scope-btn.sel{{border-color:#7F77DD;color:#111;background:#f0eefb}}
+  .scope-note{{font-size:12px;color:#666;margin:-.75rem 0 1.25rem;line-height:1.5}}
   .tabs{{display:flex;flex-wrap:wrap;border-bottom:1px solid #ddd;margin-bottom:1.5rem}}
   .tab{{padding:8px 14px;font-size:13px;cursor:pointer;border:none;background:none;
          color:#666;border-bottom:2px solid transparent;margin-bottom:-1px;
@@ -822,6 +841,8 @@ HTML = """\
     table{{background:#2a2a28;border-color:#3a3a38}} thead tr{{background:#333330}} th{{color:#aaa}}
     tfoot tr{{background:#2a2a28}}
     tbody tr:hover{{background:#333330}} .tabs{{border-color:#3a3a38}}
+    .scope-label,.scope-note{{color:#aaa}} .scope-btn{{background:#2a2a28;border-color:#3a3a38;color:#aaa}}
+    .scope-btn.sel{{background:#363348;border-color:#7F77DD;color:#e8e6e0}}
     .note{{border-left-color:#444;color:#aaa}} .fn{{color:#aaa;border-top-color:#3a3a38}}
     td.na{{color:#555}} .bar-bg{{background:#3a3a38}} .bar-val{{color:#ccc}}
     .p-yes{{background:#0f3d1e;color:#6fcf97}} .p-part{{background:#3d2e00;color:#f0c040}}
@@ -834,13 +855,17 @@ HTML = """\
 <p class="sub-h">Biomedical named entity annotation corpora — comparative analysis</p>
 
 <div class="mg">
-  <div class="mc"><p class="ml">Corpora analyzed</p><p class="mv">{n_corpora}</p></div>
-  <div class="mc"><p class="ml">With concept identifiers</p><p class="mv">{n_with_ids} / {n_corpora}</p></div>
-  <div class="mc"><p class="ml">Ann/doc range</p><p class="mv">{ann_min} – {ann_max}</p></div>
+  <div class="mc"><p class="ml">Corpora analyzed</p><p class="mv" id="kpiCorpora">{n_corpora}</p></div>
+  <div class="mc"><p class="ml">With concept identifiers</p><p class="mv" id="kpiIds">{n_with_ids} / {n_corpora}</p></div>
+  <div class="mc"><p class="ml">Ann/doc range</p><p class="mv" id="kpiAnn">{ann_min} – {ann_max}</p></div>
   <div class="mc"><p class="ml">Ambiguity range</p><p class="mv">{amb_min} – {amb_max}</p></div>
 </div>
 
-<div class="leg">{legend_html}</div>
+<div class="leg" id="corpusLegend">{legend_html}</div>
+<div class="scope" id="scopeControls">
+  <span class="scope-label">Entity scope</span>{scope_controls}
+</div>
+<p class="scope-note" id="scopeNote">{scope_note}</p>
 
 <div class="tabs" id="tabs">
   <button class="tab sel" data-p="p1">Annotation density</button>
@@ -861,7 +886,7 @@ HTML = """\
 </div>
 
 <div class="panel" id="p2">
-  <div style="margin-bottom:12px;font-size:13px">{id_status_html}</div>
+  <div id="idStatusHtml" style="margin-bottom:12px;font-size:13px">{id_status_html}</div>
   <div class="cw" style="height:{h_ann}px">
     <canvas id="c2" role="img" aria-label="Unique identifiers per document.">
       Three corpora have no concept identifiers.
@@ -932,7 +957,7 @@ HTML = """\
       <th class="r">Entropy<sup>c</sup></th>
     </tr>
   </thead>
-  <tbody>{table_rows}</tbody>
+  <tbody id="summaryRows">{table_rows}</tbody>
   </table>
   </div>
   <div class="fn">
@@ -951,6 +976,39 @@ HTML = """\
 const dk = matchMedia('(prefers-color-scheme:dark)').matches;
 const tc = dk ? 'rgba(255,255,255,0.55)' : 'rgba(0,0,0,0.45)';
 const gc = dk ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.05)';
+const ENTITY_PROFILES = {entity_profiles};
+let currentScope = 'all';
+const chartRefs = {{}};
+const SCOPE_CAVEAT = 'Label-derived views update by entity scope. Identifier, ambiguity, variation, overlap, terminology, and metadata panels remain corpus-level unless filtered metric outputs are generated.';
+
+function prof() {{ return ENTITY_PROFILES[currentScope] || ENTITY_PROFILES.all; }}
+function setMetric(el, value) {{ const node=document.getElementById(el); if(node) node.textContent=value; }}
+function setHtml(el, value) {{ const node=document.getElementById(el); if(node) node.innerHTML=value; }}
+function applyChart(chart, payload) {{
+  if(!chart || !payload) return;
+  chart.data.labels = payload.labels;
+  chart.data.datasets[0].data = payload.data;
+  chart.data.datasets[0].backgroundColor = payload.bg;
+  chart.update();
+}}
+function applyScope(key) {{
+  currentScope = key;
+  const p = prof();
+  document.querySelectorAll('.scope-btn').forEach(b=>b.classList.toggle('sel', b.dataset.scope===key));
+  setMetric('kpiCorpora', `${{p.nCorpora}} / {n_corpora}`);
+  setMetric('kpiIds', `${{p.nWithIds}} / ${{p.nCorpora}}`);
+  setMetric('kpiAnn', `${{p.annMin}} – ${{p.annMax}}`);
+  setHtml('corpusLegend', p.legendHtml);
+  setHtml('idStatusHtml', p.idStatusHtml);
+  setHtml('summaryRows', p.tableRows);
+  setHtml('scopeNote', p.description ? `${{p.description}} ${{SCOPE_CAVEAT}}` : SCOPE_CAVEAT);
+  applyChart(chartRefs.c1, p.ann);
+  applyChart(chartRefs.c2, p.ids);
+  applyChart(chartRefs.c3, p.amb);
+  applyChart(chartRefs.c4, p.variation);
+  applyChart(chartRefs.c5, p.types);
+  applyChart(chartRefs.c6, p.entropy);
+}}
 
 function hbar(el, labels, data, bg, xLabel, xOpts={{}}) {{
   return new Chart(el, {{
@@ -970,7 +1028,7 @@ function hbar(el, labels, data, bg, xLabel, xOpts={{}}) {{
   }});
 }}
 
-new Chart('c1', {{
+chartRefs.c1 = new Chart('c1', {{
   type:'bar',
   data:{{ labels:{c1_labels}, datasets:[{{ data:{c1_data}, backgroundColor:{c1_bg},
     borderWidth:0, borderRadius:3 }}] }},
@@ -989,11 +1047,11 @@ new Chart('c1', {{
 }});
 
 const inited={{}};
-function initC2(){{ hbar('c2',{c2_labels},{c2_data},{c2_bg},'Mean unique identifiers per document'); }}
+function initC2(){{ chartRefs.c2 = hbar('c2',prof().ids.labels,prof().ids.data,prof().ids.bg,'Mean unique identifiers per document'); }}
 function initC3(){{
-  new Chart('c3', {{
+  chartRefs.c3 = new Chart('c3', {{
     type:'bar',
-    data:{{ labels:{c3_labels}, datasets:[{{ data:{c3_data}, backgroundColor:{c3_bg},
+    data:{{ labels:prof().amb.labels, datasets:[{{ data:prof().amb.data, backgroundColor:prof().amb.bg,
       borderWidth:0, borderRadius:3 }}] }},
     options:{{ responsive:true, maintainAspectRatio:false, indexAxis:'y',
       plugins:{{ legend:{{display:false}},
@@ -1006,10 +1064,10 @@ function initC3(){{
     }}
   }});
 }}
-function initC4(){{ hbar('c4',{c4_labels},{c4_data},{c4_bg},'Mean surface forms per concept'); }}
-function initC5(){{ hbar('c5',{c5_labels},{c5_data},{c5_bg},'Distinct entity type labels',
+function initC4(){{ chartRefs.c4 = hbar('c4',prof().variation.labels,prof().variation.data,prof().variation.bg,'Mean surface forms per concept'); }}
+function initC5(){{ chartRefs.c5 = hbar('c5',prof().types.labels,prof().types.data,prof().types.bg,'Distinct entity type labels',
   {{ticks:{{stepSize:1,color:tc,font:{{size:11}}}}}}); }}
-function initC6(){{ hbar('c6',{c6_labels},{c6_data},{c6_bg},'Shannon entropy (bits)'); }}
+function initC6(){{ chartRefs.c6 = hbar('c6',prof().entropy.labels,prof().entropy.data,prof().entropy.bg,'Shannon entropy (bits)'); }}
 
 const cascadeDatasets = {cascade_datasets};
 function initC7(){{
@@ -1051,6 +1109,12 @@ document.getElementById('tabs').addEventListener('click', e=>{{
   document.getElementById(pid).classList.add('sel');
   if(panels[pid]&&!inited[pid]){{inited[pid]=true;panels[pid]();}}
 }});
+document.getElementById('scopeControls').addEventListener('click', e=>{{
+  const btn=e.target.closest('.scope-btn');
+  if(!btn) return;
+  applyScope(btn.dataset.scope);
+}});
+applyScope(currentScope);
 </script>
 </body>
 </html>
@@ -1098,6 +1162,122 @@ def _variation_data(corpora, colours):
         json.dumps([round(p[1], 2) for p in pairs]),
         json.dumps([p[2] for p in pairs]),
     )
+
+
+def load_dashboard_config(path: str | Path | None) -> dict:
+    if path is None:
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        config = yaml.safe_load(f) or {}
+    if not isinstance(config, dict):
+        raise ValueError(f"{path} must contain a YAML mapping")
+    return config
+
+
+def _entity_scopes(config: dict | None) -> list[dict]:
+    raw_scopes = (config or {}).get("entity_scopes", {})
+    if not isinstance(raw_scopes, dict):
+        raw_scopes = {}
+    if "all" not in raw_scopes:
+        raw_scopes = {"all": {"label": "All annotations", "include_all": True}, **raw_scopes}
+
+    scopes = []
+    for key, raw_scope in raw_scopes.items():
+        if not isinstance(raw_scope, dict):
+            continue
+        scopes.append(
+            {
+                "key": str(key),
+                "label": str(raw_scope.get("label") or key).strip(),
+                "description": str(raw_scope.get("description") or "").strip(),
+                "include_all": bool(raw_scope.get("include_all", False)),
+                "labels": {str(label) for label in raw_scope.get("labels", [])},
+            }
+        )
+    return scopes
+
+
+def _scope_label_counts(corpus, scope):
+    counts = dict(corpus.get("label_counts") or {})
+    if scope.get("include_all"):
+        return counts
+    labels = scope.get("labels") or set()
+    return {label: count for label, count in counts.items() if label in labels}
+
+
+def _scope_corpus(corpus, scope):
+    scoped_counts = _scope_label_counts(corpus, scope)
+    total_ann = sum(scoped_counts.values())
+    scoped = dict(corpus)
+    scoped["n_types"] = len(scoped_counts)
+    scoped["types"] = list(scoped_counts)
+    scoped["total_ann"] = total_ann
+    scoped["ann_per_doc"] = round(total_ann / corpus["doc_count"], 2) if corpus["doc_count"] else 0
+    scoped["entropy"] = round(_entropy_from_counts(scoped_counts), 2)
+    return scoped
+
+
+def _scoped_corpora(corpora, scope):
+    scoped = [_scope_corpus(corpus, scope) for corpus in corpora]
+    if scope.get("include_all"):
+        return scoped
+    return [corpus for corpus in scoped if corpus["total_ann"] > 0]
+
+
+def _hbar_payload(corpora, key, colours, *, sorted_values=True, include_null=False):
+    pairs = [
+        (c["name"], c.get(key), colours[c["color_index"] % len(colours)])
+        for c in corpora
+        if include_null or c.get(key) is not None
+    ]
+    if sorted_values:
+        pairs.sort(key=lambda x: (x[1] is None, -(x[1] or 0)))
+    return {
+        "labels": [p[0] for p in pairs],
+        "data": [p[1] if p[1] is not None else 0 for p in pairs],
+        "bg": [
+            col if (val is not None and val > 0) else col + "33"
+            for _, val, col in pairs
+        ],
+    }
+
+
+def _scope_controls(scopes):
+    return "".join(
+        f'<button class="scope-btn{" sel" if i == 0 else ""}" data-scope="{scope["key"]}">{scope["label"]}</button>'
+        for i, scope in enumerate(scopes)
+    )
+
+
+def _entity_profile_data(corpora, colours, config):
+    scopes = _entity_scopes(config)
+    data = {}
+    for scope in scopes:
+        scoped = _scoped_corpora(corpora, scope)
+        for corpus in scoped:
+            corpus["color_index"] = next(
+                (i for i, original in enumerate(corpora) if original["raw_name"] == corpus["raw_name"]),
+                0,
+            )
+
+        data[scope["key"]] = {
+            "label": scope["label"],
+            "description": scope["description"],
+            "nCorpora": len(scoped),
+            "nWithIds": sum(1 for c in scoped if c["has_ids"]),
+            "annMin": f"{min((c['ann_per_doc'] for c in scoped), default=0):.1f}",
+            "annMax": f"{max((c['ann_per_doc'] for c in scoped), default=0):.1f}",
+            "legendHtml": build_legend_html(scoped, colours, use_color_index=True),
+            "idStatusHtml": build_id_status_html(scoped),
+            "tableRows": build_table_rows(scoped),
+            "ann": _hbar_payload(scoped, "ann_per_doc", colours),
+            "ids": _hbar_payload(scoped, "ids_per_doc", colours),
+            "amb": _hbar_payload(scoped, "ambiguity", colours, sorted_values=False),
+            "variation": _hbar_payload(scoped, "variation", colours),
+            "types": _hbar_payload(scoped, "n_types", colours),
+            "entropy": _hbar_payload(scoped, "entropy", colours),
+        }
+    return data
 
 
 def _bar_td(val, col):
@@ -1189,9 +1369,9 @@ def build_overlap_panels(corpora):
     return tabs, panels
 
 
-def build_legend_html(corpora, colours):
+def build_legend_html(corpora, colours, *, use_color_index=False):
     return "".join(
-        f'<span class="li"><span class="lc" style="background:{colours[i % len(colours)]}"></span>'
+        f'<span class="li"><span class="lc" style="background:{colours[(c.get("color_index", i) if use_color_index else i) % len(colours)]}"></span>'
         f'{c["name"]}</span>'
         for i, c in enumerate(corpora)
     )
@@ -1236,8 +1416,13 @@ def build_table_rows(corpora):
 # ── Main build ────────────────────────────────────────────────────────────────
 
 
-def build_html(corpora):
+def build_html(corpora, dashboard_config=None):
     colours = PALETTE[:]
+    for i, corpus in enumerate(corpora):
+        corpus["color_index"] = i
+    entity_profiles = _entity_profile_data(corpora, colours, dashboard_config or {})
+    scopes = _entity_scopes(dashboard_config or {})
+    default_profile = entity_profiles.get("all") or next(iter(entity_profiles.values()))
     n = len(corpora)
     has_ov = any(c.get("overlap") for c in corpora)
     has_meta = any(c.get("metadata") for c in corpora)
@@ -1295,6 +1480,9 @@ def build_html(corpora):
         amb_max_scale=amb_hi,
         h_ann=h_ann,
         legend_html=build_legend_html(corpora, colours),
+        scope_controls=_scope_controls(scopes),
+        scope_note=default_profile.get("description") or "Label-derived views update by entity scope. Identifier, ambiguity, variation, overlap, terminology, and metadata panels remain corpus-level unless filtered metric outputs are generated.",
+        entity_profiles=json.dumps(entity_profiles),
         id_status_html=build_id_status_html(corpora),
         table_rows=build_table_rows(corpora),
         overlap_tabs=ov_tabs,
@@ -2028,6 +2216,12 @@ def main():
         help="Optional terminology coverage statistics JSON file",
     )
     parser.add_argument(
+        "--dashboard-config",
+        default=None,
+        metavar="FILE",
+        help="Optional dashboard configuration YAML file (default: configs/dashboard.yaml if present)",
+    )
+    parser.add_argument(
         "--output",
         "-o",
         default=None,
@@ -2092,8 +2286,17 @@ def main():
         except (FileNotFoundError, json.JSONDecodeError) as e:
             logger.warning("Warning: terminology - %s", e)
 
+    dashboard_config = {}
+    dashboard_config_path = Path(args.dashboard_config) if args.dashboard_config else DEFAULT_DASHBOARD_CONFIG
+    if dashboard_config_path.exists():
+        logger.info("Loading dashboard config: %s", dashboard_config_path)
+        try:
+            dashboard_config = load_dashboard_config(dashboard_config_path)
+        except (OSError, yaml.YAMLError, ValueError) as e:
+            logger.warning("Warning: dashboard config - %s", e)
+
     logger.info("Corpora: %s (%s)", len(corpora), ", ".join(c["name"] for c in corpora))
-    out_path.write_text(build_html(corpora), encoding="utf-8")
+    out_path.write_text(build_html(corpora, dashboard_config), encoding="utf-8")
     logger.info("Written: %s", out_path)
     if args.open:
         webbrowser.open(out_path.resolve().as_uri())
