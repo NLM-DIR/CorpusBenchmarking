@@ -34,9 +34,14 @@ def token_overlap(target1: MetricTarget, target2: MetricTarget, result_name: str
 
 
 @register_cross_metric("mention_overlap")
-def mention_overlap(target1: MetricTarget, target2: MetricTarget, result_name: str) -> CrossSubsetMetricResult:
-    mentions1 = set(get_mentions(target1))
-    mentions2 = set(get_mentions(target2))
+def mention_overlap(
+    target1: MetricTarget,
+    target2: MetricTarget,
+    result_name: str,
+    annotation_filter_name: str | None = None,
+) -> CrossSubsetMetricResult:
+    mentions1 = set(get_mentions(target1, annotation_filter_name))
+    mentions2 = set(get_mentions(target2, annotation_filter_name))
     intersection = mentions1.intersection(mentions2)
     union = mentions1.union(mentions2)
     jaccard = len(intersection) / len(union) if len(union) > 0 else 0.0
@@ -56,9 +61,14 @@ def mention_overlap(target1: MetricTarget, target2: MetricTarget, result_name: s
 
 
 @register_cross_metric("mention_token_overlap")
-def mention_token_overlap(target1: MetricTarget, target2: MetricTarget, result_name: str) -> CrossSubsetMetricResult:
-    mention_tokens1 = set(get_mention_tokens(target1))
-    mention_tokens2 = set(get_mention_tokens(target2))
+def mention_token_overlap(
+    target1: MetricTarget,
+    target2: MetricTarget,
+    result_name: str,
+    annotation_filter_name: str | None = None,
+) -> CrossSubsetMetricResult:
+    mention_tokens1 = set(get_mention_tokens(target1, annotation_filter_name))
+    mention_tokens2 = set(get_mention_tokens(target2, annotation_filter_name))
     intersection = mention_tokens1.intersection(mention_tokens2)
     union = mention_tokens1.union(mention_tokens2)
     jaccard = len(intersection) / len(union) if len(union) > 0 else 0.0
@@ -78,9 +88,14 @@ def mention_token_overlap(target1: MetricTarget, target2: MetricTarget, result_n
 
 
 @register_cross_metric("identifier_overlap")
-def identifier_overlap(target1: MetricTarget, target2: MetricTarget, result_name: str) -> CrossSubsetMetricResult:
-    identifiers1 = set(get_identifiers(target1))
-    identifiers2 = set(get_identifiers(target2))
+def identifier_overlap(
+    target1: MetricTarget,
+    target2: MetricTarget,
+    result_name: str,
+    annotation_filter_name: str | None = None,
+) -> CrossSubsetMetricResult:
+    identifiers1 = set(get_identifiers(target1, annotation_filter_name))
+    identifiers2 = set(get_identifiers(target2, annotation_filter_name))
     intersection = identifiers1.intersection(identifiers2)
     union = identifiers1.union(identifiers2)
     jaccard = len(intersection) / len(union) if len(union) > 0 else 0.0

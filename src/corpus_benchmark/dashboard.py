@@ -99,10 +99,15 @@ JOURNAL_TOPIC_COLORS = {
 # ── Corpus statistics helpers ─────────────────────────────────────────────────
 
 
-def _get(data, metric, field="value", default=None):
+def _get(data, metric, field="value", default=None, scope: str | None = None):
     for item in data:
         if item.get("metric_name") == metric:
-            v = item.get(field, item.get("value", default))
+            source = item
+            if scope and scope != "all":
+                source = (item.get("scopes") or {}).get(scope)
+                if not source:
+                    return default
+            v = source.get(field, source.get("value", default))
             if v is None:
                 return default
             if isinstance(v, float) and math.isnan(v):
@@ -111,8 +116,8 @@ def _get(data, metric, field="value", default=None):
     return default
 
 
-def _stat(data, metric, stat, default=None):
-    val = _get(data, metric)
+def _stat(data, metric, stat, default=None, scope: str | None = None):
+    val = _get(data, metric, scope=scope)
     if not isinstance(val, dict):
         return default
     v = val.get(stat, default)
@@ -126,8 +131,8 @@ def _stat(data, metric, stat, default=None):
     return v
 
 
-def _entropy(data):
-    dist = _get(data, "label_distribution") or {}
+def _entropy(data, scope: str | None = None):
+    dist = _get(data, "label_distribution", scope=scope) or {}
     probs = [v for v in dist.values() if v and v > 0]
     return -sum(p * math.log2(p) for p in probs)
 
@@ -140,8 +145,8 @@ def _entropy_from_counts(counts):
     return -sum(p * math.log2(p) for p in probs)
 
 
-def _id_info(data):
-    dist = _get(data, "identifier_resource_distribution") or {}
+def _id_info(data, scope: str | None = None):
+    dist = _get(data, "identifier_resource_distribution", scope=scope) or {}
     named = sorted([k for k in dist if k not in ("null", "<NIL>", None)])
     null_frac = dist.get("null", 0) + dist.get("<NIL>", 0)
     if not named:
@@ -156,8 +161,8 @@ def _id_info(data):
     return dict(has_ids=True, partial=False, label=", ".join(named), css_class="yes")
 
 
-def _total_ann(data):
-    details = _get(data, "label_distribution", "details") or {}
+def _total_ann(data, scope: str | None = None):
+    details = _get(data, "label_distribution", "details", scope=scope) or {}
     counts = details.get("counts", {})
     if counts:
         return sum(counts.values())
@@ -173,6 +178,7 @@ def summarise(name, data):
     return dict(
         name=name.replace("_corpus", "").replace("_", "-"),
         raw_name=name,
+        metric_results=data,
         doc_count=_get(data, "document_count", default=0),
         token_count=_get(data, "token_count", default=0),
         n_types=len(ld),
@@ -181,6 +187,9 @@ def summarise(name, data):
         entropy=round(_entropy(data), 2),
         total_ann=_total_ann(data),
         ann_per_doc=round(_stat(data, "annotations_per_document_stats", "mean", 0), 2),
+        ann_per_1k=round(
+            _stat(data, "annotations_per_1000_tokens_stats", "mean", 0), 2
+        ),
         men_per_doc=round(
             _stat(data, "unique_mentions_per_document_stats", "mean", 0), 2
         ),
@@ -214,10 +223,15 @@ def _corpus_from_key(key):
     return m.group(1) if m else key.strip("()")
 
 
-def _ov_val(metrics, name):
+def _ov_val(metrics, name, scope: str | None = None):
     for m in metrics:
         if m["metric_name"] == name:
-            v = m.get("value")
+            source = m
+            if scope and scope != "all":
+                source = (m.get("scopes") or {}).get(scope)
+                if not source:
+                    return None
+            v = source.get("value")
             if v is None or (isinstance(v, float) and math.isnan(v)):
                 return None
             return v
@@ -244,6 +258,23 @@ def load_overlaps(path):
     for key, metrics in raw.items():
         nk = _norm(_corpus_from_key(key))
         tr, te = _split_sizes(metrics)
+        scope_keys = sorted(
+            {
+                scope_key
+                for metric in metrics
+                for scope_key in (metric.get("scopes") or {})
+            }
+        )
+        scopes = {}
+        for scope_key in scope_keys:
+            scopes[scope_key] = {
+                "token_overlap": _ov_val(metrics, "token_overlap"),
+                "mention_token_overlap": _ov_val(metrics, "mention_token_overlap", scope_key),
+                "mention_overlap": _ov_val(metrics, "mention_overlap", scope_key),
+                "identifier_overlap": _ov_val(metrics, "identifier_overlap", scope_key),
+                "train_size": tr,
+                "test_size": te,
+            }
         result[nk] = {
             "token_overlap": _ov_val(metrics, "token_overlap"),
             "mention_token_overlap": _ov_val(metrics, "mention_token_overlap"),
@@ -251,6 +282,7 @@ def load_overlaps(path):
             "identifier_overlap": _ov_val(metrics, "identifier_overlap"),
             "train_size": tr,
             "test_size": te,
+            "scopes": scopes,
         }
     return result
 
@@ -877,9 +909,16 @@ HTML = """\
 </div>
 
 <div class="panel sel" id="p1">
+  <p class="sec">Annotations per thousand tokens</p>
   <div class="cw" style="height:{h_ann}px">
-    <canvas id="c1" role="img" aria-label="Mean annotations per document, log scale.">
-      Annotation density varies widely across corpora.
+    <canvas id="c1" role="img" aria-label="Mean annotations per thousand tokens, log scale.">
+      Annotation density per thousand tokens varies widely across corpora.
+    </canvas>
+  </div>
+  <p class="sec" style="margin-top:1.5rem">Annotations per document</p>
+  <div class="cw" style="height:{h_ann}px">
+    <canvas id="c1b" role="img" aria-label="Mean annotations per document, log scale.">
+      Annotation density per document varies widely across corpora.
     </canvas>
   </div>
   <p class="note">Log scale. NLM-Chem annotates full-text articles; BioID uses figure captions.</p>
@@ -979,7 +1018,7 @@ const gc = dk ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.05)';
 const ENTITY_PROFILES = {entity_profiles};
 let currentScope = 'all';
 const chartRefs = {{}};
-const SCOPE_CAVEAT = 'Label-derived views update by entity scope. Identifier, ambiguity, variation, overlap, terminology, and metadata panels remain corpus-level unless filtered metric outputs are generated.';
+const SCOPE_CAVEAT = 'Annotation, identifier, difficulty, and overlap views update by entity scope where scoped metric outputs are available. Terminology and metadata panels remain corpus-level.';
 
 function prof() {{ return ENTITY_PROFILES[currentScope] || ENTITY_PROFILES.all; }}
 function setMetric(el, value) {{ const node=document.getElementById(el); if(node) node.textContent=value; }}
@@ -991,6 +1030,16 @@ function applyChart(chart, payload) {{
   chart.data.datasets[0].backgroundColor = payload.bg;
   chart.update();
 }}
+function applyCascade(datasets) {{
+  const leg=document.getElementById('cascLeg');
+  if(leg) leg.innerHTML=(datasets||[]).map(d=>
+    `<span class="li"><span class="lc" style="background:${{d.borderColor}}"></span>${{d.label}}</span>`
+  ).join('');
+  if(chartRefs.c7) {{
+    chartRefs.c7.data.datasets = datasets || [];
+    chartRefs.c7.update();
+  }}
+}}
 function applyScope(key) {{
   currentScope = key;
   const p = prof();
@@ -1001,13 +1050,16 @@ function applyScope(key) {{
   setHtml('corpusLegend', p.legendHtml);
   setHtml('idStatusHtml', p.idStatusHtml);
   setHtml('summaryRows', p.tableRows);
+  setHtml('overlapRows', p.overlapRows || '');
   setHtml('scopeNote', p.description ? `${{p.description}} ${{SCOPE_CAVEAT}}` : SCOPE_CAVEAT);
-  applyChart(chartRefs.c1, p.ann);
+  applyChart(chartRefs.c1, p.ann1k);
+  applyChart(chartRefs.c1b, p.ann);
   applyChart(chartRefs.c2, p.ids);
   applyChart(chartRefs.c3, p.amb);
   applyChart(chartRefs.c4, p.variation);
   applyChart(chartRefs.c5, p.types);
   applyChart(chartRefs.c6, p.entropy);
+  applyCascade(p.cascadeDatasets);
 }}
 
 function hbar(el, labels, data, bg, xLabel, xOpts={{}}) {{
@@ -1029,6 +1081,24 @@ function hbar(el, labels, data, bg, xLabel, xOpts={{}}) {{
 }}
 
 chartRefs.c1 = new Chart('c1', {{
+  type:'bar',
+  data:{{ labels:{c1k_labels}, datasets:[{{ data:{c1k_data}, backgroundColor:{c1k_bg},
+    borderWidth:0, borderRadius:3 }}] }},
+  options:{{
+    responsive:true, maintainAspectRatio:false, indexAxis:'y',
+    plugins:{{ legend:{{display:false}},
+      tooltip:{{ callbacks:{{ label: ctx=>` ${{ctx.parsed.x.toFixed(1)}}` }} }} }},
+    scales:{{
+      x:{{ type:'logarithmic',
+           title:{{display:true,text:'Mean annotations per thousand tokens (log scale)',color:tc,font:{{size:11}}}},
+           ticks:{{color:tc,font:{{size:11}},callback:v=>[0.1,1,10,100,1000].includes(v)?v:''}},
+           grid:{{color:gc}} }},
+      y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+    }}
+  }}
+}});
+
+chartRefs.c1b = new Chart('c1b', {{
   type:'bar',
   data:{{ labels:{c1_labels}, datasets:[{{ data:{c1_data}, backgroundColor:{c1_bg},
     borderWidth:0, borderRadius:3 }}] }},
@@ -1071,15 +1141,16 @@ function initC6(){{ chartRefs.c6 = hbar('c6',prof().entropy.labels,prof().entrop
 
 const cascadeDatasets = {cascade_datasets};
 function initC7(){{
-  if (!cascadeDatasets.length) return;
+  const datasets = prof().cascadeDatasets || [];
+  if (!datasets.length) return;
   const leg=document.getElementById('cascLeg');
-  if(leg) leg.innerHTML=cascadeDatasets.map(d=>
+  if(leg) leg.innerHTML=datasets.map(d=>
     `<span class="li"><span class="lc" style="background:${{d.borderColor}}"></span>${{d.label}}</span>`
   ).join('');
-  new Chart('c7', {{
+  chartRefs.c7 = new Chart('c7', {{
     type:'line',
     data:{{ labels:['Token vocab','Mention tokens','Mention strings','Identifiers'],
-             datasets:cascadeDatasets }},
+             datasets:datasets }},
     options:{{ responsive:true, maintainAspectRatio:false,
       plugins:{{ legend:{{display:false}},
         tooltip:{{ callbacks:{{ label: ctx=>
@@ -1198,6 +1269,17 @@ def _entity_scopes(config: dict | None) -> list[dict]:
 
 
 def _scope_label_counts(corpus, scope):
+    scope_key = None if scope.get("include_all") else scope.get("key")
+    if scope_key:
+        details = _get(
+            corpus.get("metric_results") or [],
+            "label_distribution",
+            "details",
+            scope=scope_key,
+        ) or {}
+        counts = details.get("counts", {})
+        if counts:
+            return counts
     counts = dict(corpus.get("label_counts") or {})
     if scope.get("include_all"):
         return counts
@@ -1206,13 +1288,71 @@ def _scope_label_counts(corpus, scope):
 
 
 def _scope_corpus(corpus, scope):
+    scope_key = None if scope.get("include_all") else scope.get("key")
+    metrics = corpus.get("metric_results") or []
     scoped_counts = _scope_label_counts(corpus, scope)
     total_ann = sum(scoped_counts.values())
     scoped = dict(corpus)
     scoped["n_types"] = len(scoped_counts)
     scoped["types"] = list(scoped_counts)
+    scoped["label_counts"] = scoped_counts
     scoped["total_ann"] = total_ann
-    scoped["ann_per_doc"] = round(total_ann / corpus["doc_count"], 2) if corpus["doc_count"] else 0
+    scoped["ann_per_doc"] = round(
+        _stat(
+            metrics,
+            "annotations_per_document_stats",
+            "mean",
+            total_ann / corpus["doc_count"] if corpus["doc_count"] else 0,
+            scope=scope_key,
+        ),
+        2,
+    )
+    scoped["ann_per_1k"] = round(
+        _stat(metrics, "annotations_per_1000_tokens_stats", "mean", 0, scope=scope_key),
+        2,
+    )
+    scoped["men_per_doc"] = round(
+        _stat(
+            metrics,
+            "unique_mentions_per_document_stats",
+            "mean",
+            scoped.get("men_per_doc", 0),
+            scope=scope_key,
+        ),
+        2,
+    )
+    scoped["ids_per_doc"] = round(
+        _stat(
+            metrics,
+            "unique_identifiers_per_document_stats",
+            "mean",
+            scoped.get("ids_per_doc", 0) or 0,
+            scope=scope_key,
+        ),
+        2,
+    )
+    info = _id_info(metrics, scope=scope_key)
+    if metrics and any(m.get("metric_name") == "identifier_resource_distribution" for m in metrics):
+        scoped["id_vocab"] = info["label"]
+        scoped["id_class"] = info["css_class"]
+        scoped["has_ids"] = info["has_ids"]
+    scoped["ambiguity"] = round(
+        _stat(metrics, "ambiguity_degree_stats", "mean", scoped.get("ambiguity"), scope=scope_key),
+        3,
+    )
+    scoped["variation"] = _stat(
+        metrics,
+        "variation_degree_stats",
+        "mean",
+        scoped.get("variation"),
+        scope=scope_key,
+    )
+    if not scoped["has_ids"]:
+        scoped["variation"] = None
+    if scope_key and corpus.get("overlap"):
+        scoped["overlap"] = (corpus["overlap"].get("scopes") or {}).get(scope_key)
+    else:
+        scoped["overlap"] = corpus.get("overlap")
     scoped["entropy"] = round(_entropy_from_counts(scoped_counts), 2)
     return scoped
 
@@ -1270,10 +1410,22 @@ def _entity_profile_data(corpora, colours, config):
             "legendHtml": build_legend_html(scoped, colours, use_color_index=True),
             "idStatusHtml": build_id_status_html(scoped),
             "tableRows": build_table_rows(scoped),
+            "overlapRows": build_overlap_rows(scoped),
+            "cascadeDatasets": cascade_datasets(scoped, colours),
+            "ann1k": _hbar_payload(scoped, "ann_per_1k", colours),
             "ann": _hbar_payload(scoped, "ann_per_doc", colours),
             "ids": _hbar_payload(scoped, "ids_per_doc", colours),
-            "amb": _hbar_payload(scoped, "ambiguity", colours, sorted_values=False),
-            "variation": _hbar_payload(scoped, "variation", colours),
+            "amb": _hbar_payload(
+                [c for c in scoped if c["has_ids"]],
+                "ambiguity",
+                colours,
+                sorted_values=False,
+            ),
+            "variation": _hbar_payload(
+                [c for c in scoped if c["has_ids"]],
+                "variation",
+                colours,
+            ),
             "types": _hbar_payload(scoped, "n_types", colours),
             "entropy": _hbar_payload(scoped, "entropy", colours),
         }
@@ -1292,7 +1444,7 @@ def _bar_td(val, col):
     )
 
 
-def cascade_datasets_js(corpora, colours):
+def cascade_datasets(corpora, colours):
     with_ov = [c for c in corpora if c.get("overlap")]
     ds = []
     for i, c in enumerate(with_ov):
@@ -1304,18 +1456,28 @@ def cascade_datasets_js(corpora, colours):
             ov.get("identifier_overlap"),
         ]
         pct = [round(v * 100, 1) if v is not None else None for v in pts]
-        col = colours[i % len(colours)]
+        col = colours[c.get("color_index", i) % len(colours)]
         ds.append(
-            "{"
-            + f"label:{json.dumps(c['name'])},data:{json.dumps(pct)},"
-            + f"borderColor:{json.dumps(col)},backgroundColor:{json.dumps(col)},"
-            + f"pointRadius:{json.dumps([4 if v is not None else 0 for v in pts])},"
-            + "pointHoverRadius:[6,6,6,6],borderWidth:2,spanGaps:false,tension:0.1}"
+            {
+                "label": c["name"],
+                "data": pct,
+                "borderColor": col,
+                "backgroundColor": col,
+                "pointRadius": [4 if v is not None else 0 for v in pts],
+                "pointHoverRadius": [6, 6, 6, 6],
+                "borderWidth": 2,
+                "spanGaps": False,
+                "tension": 0.1,
+            }
         )
-    return "[" + ",\n".join(ds) + "]"
+    return ds
 
 
-def build_overlap_panels(corpora):
+def cascade_datasets_js(corpora, colours):
+    return json.dumps(cascade_datasets(corpora, colours))
+
+
+def build_overlap_rows(corpora):
     with_ov = sorted(
         [c for c in corpora if c.get("overlap")],
         key=lambda c: -(c["overlap"].get("token_overlap") or 0),
@@ -1335,6 +1497,10 @@ def build_overlap_panels(corpora):
             + f"<td><span class='pill p-{c['id_class']}'>{c['id_vocab']}</span></td>"
             "</tr>"
         )
+    return "".join(rows)
+
+
+def build_overlap_panels(corpora):
     oc = OV_COLS
     tabs = (
         '\n  <button class="tab" data-p="p6">Train-test overlap</button>'
@@ -1355,7 +1521,7 @@ def build_overlap_panels(corpora):
         f'<th>Mention strings<span class="sub">Jaccard</span></th>'
         f'<th>Identifiers<span class="sub">Jaccard</span></th>'
         f"<th>ID vocab</th></tr></thead>"
-        f'<tbody>{"".join(rows)}</tbody></table></div>'
+        f'<tbody id="overlapRows">{build_overlap_rows(corpora)}</tbody></table></div>'
         f'<div class="fn">All values are Jaccard similarity (intersection / union) between splits.</div></div>\n'
         f'<div class="panel" id="p7">'
         f'<div class="leg" id="cascLeg"></div>'
@@ -1433,6 +1599,7 @@ def build_html(corpora, dashboard_config=None):
     amb_lo = round(max(0.95, min(amb_vals) - 0.02), 2)
     amb_hi = round(max(amb_vals) + 0.02, 2)
 
+    c1k_l, c1k_d, c1k_b = _sorted_hbar(corpora, "ann_per_1k", colours)
     c1_l, c1_d, c1_b = _sorted_hbar(corpora, "ann_per_doc", colours)
     c2_l, c2_d, c2_b = _sorted_hbar(corpora, "ids_per_doc", colours)
     c3_l, c3_d, c3_b = _all_hbar(corpora, "ambiguity", colours)
@@ -1481,7 +1648,7 @@ def build_html(corpora, dashboard_config=None):
         h_ann=h_ann,
         legend_html=build_legend_html(corpora, colours),
         scope_controls=_scope_controls(scopes),
-        scope_note=default_profile.get("description") or "Label-derived views update by entity scope. Identifier, ambiguity, variation, overlap, terminology, and metadata panels remain corpus-level unless filtered metric outputs are generated.",
+        scope_note=default_profile.get("description") or "Annotation, identifier, difficulty, and overlap views update by entity scope where scoped metric outputs are available. Terminology and metadata panels remain corpus-level.",
         entity_profiles=json.dumps(entity_profiles),
         id_status_html=build_id_status_html(corpora),
         table_rows=build_table_rows(corpora),
@@ -1494,6 +1661,9 @@ def build_html(corpora, dashboard_config=None):
         term_panels=term_panels,
         term_panel_js=term_panel_js,
         cascade_datasets=cascade_ds,
+        c1k_labels=c1k_l,
+        c1k_data=c1k_d,
+        c1k_bg=c1k_b,
         c1_labels=c1_l,
         c1_data=c1_d,
         c1_bg=c1_b,

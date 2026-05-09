@@ -179,6 +179,7 @@ class BatteryConfig:
     comparison_suites: dict[str, ComparisonSuite] = field(default_factory=dict)
     metrics: list[MetricSpec] = field(default_factory=list)
     output_path: str | None = None
+    entity_scope_config: str | None = None
 
     def __post_init__(self):
         # Ensure all metric result_names are unique

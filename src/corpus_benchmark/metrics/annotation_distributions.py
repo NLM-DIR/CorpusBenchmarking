@@ -30,8 +30,10 @@ def normalize_counts(counts: Counter[Any, int]) -> dict[str, int]:
 
 
 @register_subset_metric("label_distribution")
-def label_distribution(target: MetricTarget, result_name: str) -> SubsetMetricResult:
-    counts = Counter(get_labels(target))
+def label_distribution(
+    target: MetricTarget, result_name: str, annotation_filter_name: str | None = None
+) -> SubsetMetricResult:
+    counts = Counter(get_labels(target, annotation_filter_name))
     return SubsetMetricResult(
         result_name=result_name,
         metric_name="label_distribution",
@@ -45,8 +47,10 @@ def label_distribution(target: MetricTarget, result_name: str) -> SubsetMetricRe
 
 
 @register_subset_metric("identifier_resource_distribution")
-def identifier_resource_distribution(target: MetricTarget, result_name: str) -> SubsetMetricResult:
-    counts = Counter(get_identifier_resources(target))
+def identifier_resource_distribution(
+    target: MetricTarget, result_name: str, annotation_filter_name: str | None = None
+) -> SubsetMetricResult:
+    counts = Counter(get_identifier_resources(target, annotation_filter_name))
     return SubsetMetricResult(
         result_name=result_name,
         metric_name="identifier_resource_distribution",

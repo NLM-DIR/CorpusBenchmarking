@@ -57,3 +57,78 @@ def test_entity_profile_data_filters_and_recomputes_label_metrics() -> None:
     assert profiles["disease"]["ann"]["data"] == [3.0]
     assert profiles["disease"]["types"]["data"] == [1]
     assert "ChemicalOnly" not in profiles["disease"]["tableRows"]
+
+
+def test_entity_profile_data_uses_nested_scoped_metrics() -> None:
+    corpora = [
+        _corpus("Mixed", {"Disease": 30, "Chemical": 70}, doc_count=10),
+        _corpus("TextOnly", {"Disease": 5}, doc_count=5, has_ids=False),
+    ]
+    corpora[0]["metric_results"] = [
+        {
+            "metric_name": "label_distribution",
+            "value": {"Disease": 0.3, "Chemical": 0.7},
+            "details": {"counts": {"Disease": 30, "Chemical": 70}, "total": 100},
+            "scopes": {
+                "disease": {
+                    "value": {"Disease": 1.0},
+                    "details": {"counts": {"Disease": 30}, "total": 30},
+                }
+            },
+        },
+        {
+            "metric_name": "annotations_per_document_stats",
+            "value": {"mean": 10.0},
+            "scopes": {"disease": {"value": {"mean": 3.0}}},
+        },
+        {
+            "metric_name": "annotations_per_1000_tokens_stats",
+            "value": {"mean": 100.0},
+            "scopes": {"disease": {"value": {"mean": 30.0}}},
+        },
+        {
+            "metric_name": "unique_identifiers_per_document_stats",
+            "value": {"mean": 5.0},
+            "scopes": {"disease": {"value": {"mean": 2.0}}},
+        },
+        {
+            "metric_name": "identifier_resource_distribution",
+            "value": {"MESH": 1.0},
+            "scopes": {"disease": {"value": {"MESH": 1.0}}},
+        },
+        {
+            "metric_name": "ambiguity_degree_stats",
+            "value": {"mean": 1.0},
+            "scopes": {"disease": {"value": {"mean": 1.25}}},
+        },
+        {
+            "metric_name": "variation_degree_stats",
+            "value": {"mean": 2.0},
+            "scopes": {"disease": {"value": {"mean": 3.5}}},
+        },
+    ]
+    corpora[1]["metric_results"] = [
+        {
+            "metric_name": "identifier_resource_distribution",
+            "value": {},
+            "scopes": {"disease": {"value": {}}},
+        }
+    ]
+    for index, corpus in enumerate(corpora):
+        corpus["color_index"] = index
+
+    config = {
+        "entity_scopes": {
+            "all": {"label": "All annotations", "include_all": True},
+            "disease": {"label": "Diseases", "labels": ["Disease"]},
+        }
+    }
+
+    profiles = _entity_profile_data(corpora, PALETTE, config)
+
+    assert profiles["disease"]["ann"]["data"] == [3.0, 1.0]
+    assert profiles["disease"]["ann1k"]["data"] == [30.0, 0]
+    assert profiles["disease"]["ids"]["data"] == [2.0, 0]
+    assert profiles["disease"]["amb"]["labels"] == ["Mixed"]
+    assert profiles["disease"]["amb"]["data"] == [1.25]
+    assert profiles["disease"]["variation"]["data"] == [3.5]

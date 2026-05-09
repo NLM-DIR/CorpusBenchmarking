@@ -15,6 +15,7 @@ class SubsetMetricResult:
     subset_name: str
     value: Any
     details: dict[str, Any] = field(default_factory=dict)
+    scopes: dict[str, dict[str, Any]] = field(default_factory=dict)
 
     def result_key(self) -> str:
         return self.subset_name
@@ -26,6 +27,8 @@ class SubsetMetricResult:
         }
         if len(self.details) > 0:
             result["details"] = self.details
+        if self.scopes:
+            result["scopes"] = self.scopes
         return result
 
 @dataclass(slots=True)
@@ -36,6 +39,7 @@ class CrossSubsetMetricResult:
     subset_name1: str
     subset_name2: str
     details: dict[str, Any] = field(default_factory=dict)
+    scopes: dict[str, dict[str, Any]] = field(default_factory=dict)
 
     def result_key(self) -> str:
         return f"({self.subset_name1}, {self.subset_name2})"
@@ -47,4 +51,6 @@ class CrossSubsetMetricResult:
         }
         if len(self.details) > 0:
             result["details"] = self.details
+        if self.scopes:
+            result["scopes"] = self.scopes
         return result

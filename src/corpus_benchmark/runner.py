@@ -5,10 +5,13 @@ from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Any
 
+import yaml
+
 from corpus_benchmark.builtins import register_builtins
 from corpus_benchmark.context import BenchmarkContext, MetricTarget, get_metadata_for_target
 from corpus_benchmark.models.config import BatteryConfig, DatasetBundle, BenchmarkConfig, MetricSpec
 from corpus_benchmark.models.corpus import BenchmarkCorpus, DocumentIdentifierType
+from corpus_benchmark.models.filters import AnnotationFilter
 from corpus_benchmark.registry import (
     LOADERS,
     TERMINOLOGY_LOADERS,
@@ -21,6 +24,23 @@ from corpus_benchmark.metadata.json_record_store import JsonRecordStore
 from corpus_benchmark.metadata.journal_metadata import create_journal_record_store
 
 logger = logging.getLogger(__name__)
+
+SCOPED_SUBSET_METRICS = {
+    "label_distribution",
+    "identifier_resource_distribution",
+    "annotations_per_document_stats",
+    "annotations_per_1000_tokens_stats",
+    "unique_mentions_per_document_stats",
+    "unique_identifiers_per_document_stats",
+    "variation_degree_stats",
+    "ambiguity_degree_stats",
+}
+
+SCOPED_CROSS_METRICS = {
+    "mention_token_overlap",
+    "mention_overlap",
+    "identifier_overlap",
+}
 
 
 @dataclass(slots=True)
@@ -195,6 +215,65 @@ def _metric_requires_metadata(metric: Any) -> bool:
     return bool(getattr(metric, "requires_metadata", False))
 
 
+def _load_entity_scope_filters(path: str | None) -> dict[str, AnnotationFilter]:
+    if not path:
+        return {}
+    with open(path, "r", encoding="utf-8") as fp:
+        config = yaml.safe_load(fp) or {}
+    raw_scopes = config.get("entity_scopes", {})
+    if not isinstance(raw_scopes, dict):
+        return {}
+    filters = {}
+    for key, scope in raw_scopes.items():
+        if not isinstance(scope, dict) or scope.get("include_all"):
+            continue
+        labels = {str(label) for label in scope.get("labels", [])}
+        if labels:
+            filters[str(key)] = AnnotationFilter(labels=labels)
+    return filters
+
+
+def _scope_payload(result: Any) -> dict[str, Any]:
+    payload = {"value": result.value}
+    if result.details:
+        payload["details"] = result.details
+    return payload
+
+
+def _attach_scoped_results(
+    result: Any,
+    execution: PlannedMetricExecution,
+    scoped_filters: dict[str, AnnotationFilter],
+) -> Any:
+    if not scoped_filters:
+        return result
+
+    metric_name = execution.metric_spec.metric_name
+    if len(execution.targets) == 1:
+        if metric_name not in SCOPED_SUBSET_METRICS:
+            return result
+    elif len(execution.targets) == 2:
+        if metric_name not in SCOPED_CROSS_METRICS:
+            return result
+    else:
+        return result
+
+    params = dict(execution.params)
+    if "annotation_filter_name" in params:
+        return result
+
+    scopes = {}
+    for scope_key in scoped_filters:
+        scoped_result = execution.metric(
+            *execution.targets,
+            execution.metric_spec.result_name,
+            **{**params, "annotation_filter_name": scope_key},
+        )
+        scopes[scope_key] = _scope_payload(scoped_result)
+    result.scopes.update(scopes)
+    return result
+
+
 def _resolve_terminology_metric_params(
     metric_spec: Any,
     workspace: GlobalWorkspace,
@@ -296,6 +375,7 @@ def _warm_metadata_cache(planned_executions: list[PlannedMetricExecution]) -> No
 def run_benchmark(battery_config: BatteryConfig) -> list[Any]:
     register_builtins()
     battery_config.validate()
+    scoped_filters = _load_entity_scope_filters(battery_config.entity_scope_config)
 
     document_store = _create_document_record_store(battery_config.workspace.document_store_filename)
     journal_record_store = create_journal_record_store(battery_config.workspace.journal_store_filename)
@@ -334,7 +414,7 @@ def run_benchmark(battery_config: BatteryConfig) -> list[Any]:
         corpora[benchmark_name] = benchmark_corpus
         contexts[benchmark_name] = BenchmarkContext(
             workspace=workspace,
-            annotation_filters=benchmark_config.annotation_filters,
+            annotation_filters={**benchmark_config.annotation_filters, **scoped_filters},
         )
 
     logger.info(
@@ -354,6 +434,7 @@ def run_benchmark(battery_config: BatteryConfig) -> list[Any]:
             metric_spec.result_name,
             **execution.params,
         )
+        result = _attach_scoped_results(result, execution, scoped_filters)
         logger.debug("... metric calculated")
         results.append(result)
 

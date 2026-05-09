@@ -95,6 +95,7 @@ def load_battery_config(path: str | Path) -> BatteryConfig:
         comparison_suites=comparison_suites,
         metrics=[MetricSpec(**metric) for metric in raw_config.get("metrics", [])],
         output_path=raw_config.get("output_path"),
+        entity_scope_config=raw_config.get("entity_scope_config"),
     )
 
 def group_results(results, result_dicts: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:

@@ -1,6 +1,8 @@
 logging:
     level: INFO
 
+entity_scope_config: configs/dashboard.yaml
+
 corpora:
     AnatEM: configs/AnatEM.yaml
     BC5CDR: configs/BC5CDR.yaml
