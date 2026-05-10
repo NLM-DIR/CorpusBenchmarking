@@ -20,7 +20,7 @@ from corpus_benchmark.context import (
 )
 from corpus_benchmark.registry import register_subset_metric
 from corpus_benchmark.results import SubsetMetricResult
-from utils.text_utils import extract_tokens_from_texts
+from utils.text_utils import extract_tokens_from_texts, extract_sentences_from_texts
 
 logger = logging.getLogger(__name__)
 
@@ -68,12 +68,34 @@ def passages_per_document_stats(target: MetricTarget, result_name: str) -> Subse
     )
 
 
-# TODO Add sentences per document
-# TODO Add sentences per passage
-# TODO Add tokens per document
-# TODO Add tokens per passage
-# TODO Add tokens per sentence
-# TODO Add tokens per mention
+@register_subset_metric("sentences_per_document_stats")
+def sentences_per_document_stats(target: MetricTarget, result_name: str) -> SubsetMetricResult:
+    counts = []
+    for document in get_documents(target):
+        sentences = extract_sentences_from_texts([passage.text for passage in document.passages])
+        counts.append(len(sentences))
+    stats, distribution = calculate_stats(counts)
+    return SubsetMetricResult(
+        result_name=result_name,
+        metric_name="sentences_per_document_stats",
+        value=stats,
+        subset_name=target.name,
+    )
+
+
+@register_subset_metric("tokens_per_document_stats")
+def tokens_per_document_stats(target: MetricTarget, result_name: str) -> SubsetMetricResult:
+    counts = []
+    for document in get_documents(target):
+        tokens = extract_tokens_from_texts([passage.text for passage in document.passages])
+        counts.append(len(tokens))
+    stats, distribution = calculate_stats(counts)
+    return SubsetMetricResult(
+        result_name=result_name,
+        metric_name="tokens_per_document_stats",
+        value=stats,
+        subset_name=target.name,
+    )
 
 
 @register_subset_metric("annotations_per_document_stats", supports_annotation_scope=True)

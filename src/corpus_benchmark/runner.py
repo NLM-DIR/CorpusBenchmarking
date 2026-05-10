@@ -25,6 +25,7 @@ from corpus_benchmark.metadata.journal_metadata import create_journal_record_sto
 
 logger = logging.getLogger(__name__)
 
+
 @dataclass(slots=True)
 class PlannedMetricExecution:
     metric_spec: Any
@@ -414,7 +415,7 @@ def run_benchmark(battery_config: BatteryConfig) -> list[Any]:
             **execution.params,
         )
         result = _attach_scoped_results(result, execution, scoped_filters)
-        logger.debug("... metric calculated")
+        logger.debug("Metric %s calculated", metric_spec.result_name)
         results.append(result)
 
     document_store.save()
