@@ -64,6 +64,17 @@ class GlobalWorkspace:
             return
         self.journal_record_store.journal_fetchers = value
 
+    def get_terminology(self, terminology_name: str | None = None) -> TerminologyResource:
+        if terminology_name and terminology_name in self.terminologies:
+            return self.terminologies[terminology_name]
+        if terminology_name:
+            available = ", ".join(sorted(self.terminologies)) or "<none>"
+            raise ValueError(f"Loaded terminology {terminology_name!r} is required. Available terminologies: {available}")
+        if len(self.terminologies) == 1:
+            return next(iter(self.terminologies.values()))
+        available = ", ".join(sorted(self.terminologies)) or "<none>"
+        raise ValueError("terminology_name is required when multiple terminologies are loaded. " f"Available terminologies: {available}")
+
     def get_document_metadata(self, documents: list[Document]) -> Dict[str, Dict[str, Any]]:
         # TODO REfactor this so that it runs one Fetcher at a time, resolving all of the documents it can
         self._attach_known_document_identifiers(documents)

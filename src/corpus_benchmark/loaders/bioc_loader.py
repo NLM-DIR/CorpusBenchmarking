@@ -22,7 +22,7 @@ from corpus_benchmark.models.corpus import (
 )
 from corpus_benchmark.models.types import MatchType
 from corpus_benchmark.registry import register_loader
-from corpus_benchmark.parsing import parse_identifier_format_list, parse_qualifier_map, IdentifierFormat
+from corpus_benchmark.loaders.parsing import parse_identifier_format_list, parse_qualifier_map, IdentifierFormat
 from corpus_benchmark.loaders.splits import apply_document_split
 
 logger = logging.getLogger(__name__)

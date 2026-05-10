@@ -1409,48 +1409,6 @@
     {
       "details": {
         "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 114,
-          "Anatomy": 79,
-          "Anthropology, Education, Sociology and Social Phenomena": 8,
-          "Biological Sciences": 126,
-          "Chemicals and Drugs": 76,
-          "Diseases": 294,
-          "Geographic Locations": 9,
-          "Health Care": 44,
-          "Humanities": 2,
-          "Information Science": 16,
-          "Organisms": 19,
-          "Persons": 5,
-          "Physical Sciences": 611,
-          "Psychiatry and Psychology": 26,
-          "Technology and Food and Beverages": 26,
-          "Unknown": 202
-        },
-        "total": 1657
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.06879903,
-        "Anatomy": 0.04767652,
-        "Anthropology, Education, Sociology and Social Phenomena": 0.004828,
-        "Biological Sciences": 0.07604104,
-        "Chemicals and Drugs": 0.04586602,
-        "Diseases": 0.17742909,
-        "Geographic Locations": 0.0054315,
-        "Health Care": 0.02655401,
-        "Humanities": 0.001207,
-        "Information Science": 0.009656,
-        "Organisms": 0.01146651,
-        "Persons": 0.0030175,
-        "Physical Sciences": 0.36873868,
-        "Psychiatry and Psychology": 0.01569101,
-        "Technology and Food and Beverages": 0.01569101,
-        "Unknown": 0.12190706
-      }
-    },
-    {
-      "details": {
-        "counts": {
           "Cell & developmental biology": 63.18333333333334,
           "Chemistry / Materials Science": 49.23611111111112,
           "Clinical specialties by organ system": 117.60277777777779,
@@ -3011,44 +2969,6 @@
     {
       "details": {
         "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 206,
-          "Anatomy": 114,
-          "Anthropology, Education, Sociology and Social Phenomena": 8,
-          "Biological Sciences": 104,
-          "Chemicals and Drugs": 81,
-          "Diseases": 356,
-          "Geographic Locations": 3,
-          "Health Care": 48,
-          "Organisms": 5,
-          "Persons": 43,
-          "Physical Sciences": 959,
-          "Psychiatry and Psychology": 162,
-          "Technology and Food and Beverages": 11,
-          "Unknown": 57
-        },
-        "total": 2157
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.09550301,
-        "Anatomy": 0.05285118,
-        "Anthropology, Education, Sociology and Social Phenomena": 0.00370885,
-        "Biological Sciences": 0.04821511,
-        "Chemicals and Drugs": 0.03755216,
-        "Diseases": 0.16504404,
-        "Geographic Locations": 0.00139082,
-        "Health Care": 0.02225313,
-        "Organisms": 0.00231803,
-        "Persons": 0.0199351,
-        "Physical Sciences": 0.44459898,
-        "Psychiatry and Psychology": 0.07510431,
-        "Technology and Food and Beverages": 0.00509968,
-        "Unknown": 0.02642559
-      }
-    },
-    {
-      "details": {
-        "counts": {
           "Cell & developmental biology": 6.266666666666666,
           "Chemistry / Materials Science": 5.834523809523809,
           "Clinical specialties by organ system": 238.8993055555556,
@@ -3246,26 +3166,6 @@
         "PLoS Pathogens": 0.04431627,
         "The EMBO journal": 0.38344163,
         "The Journal of cell biology": 0.05585165
-      }
-    },
-    {
-      "details": {
-        "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 133,
-          "Anatomy": 685,
-          "Biological Sciences": 3449,
-          "Diseases": 52,
-          "Physical Sciences": 13512
-        },
-        "total": 17831
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.00745892,
-        "Anatomy": 0.03841624,
-        "Biological Sciences": 0.19342718,
-        "Diseases": 0.00291627,
-        "Physical Sciences": 0.75778139
       }
     },
     {
@@ -3771,46 +3671,6 @@
     {
       "details": {
         "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 1956,
-          "Anatomy": 327,
-          "Anthropology, Education, Sociology and Social Phenomena": 91,
-          "Biological Sciences": 1996,
-          "Chemicals and Drugs": 3333,
-          "Diseases": 574,
-          "Geographic Locations": 72,
-          "Health Care": 225,
-          "Information Science": 60,
-          "Organisms": 336,
-          "Persons": 2,
-          "Physical Sciences": 7143,
-          "Psychiatry and Psychology": 183,
-          "Technology and Food and Beverages": 2270,
-          "Unknown": 296
-        },
-        "total": 18864
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.10368957,
-        "Anatomy": 0.01733461,
-        "Anthropology, Education, Sociology and Social Phenomena": 0.004824,
-        "Biological Sciences": 0.10581001,
-        "Chemicals and Drugs": 0.17668575,
-        "Diseases": 0.03042833,
-        "Geographic Locations": 0.00381679,
-        "Health Care": 0.01192748,
-        "Information Science": 0.00318066,
-        "Organisms": 0.0178117,
-        "Persons": 0.00010602,
-        "Physical Sciences": 0.37865776,
-        "Psychiatry and Psychology": 0.00970102,
-        "Technology and Food and Beverages": 0.12033503,
-        "Unknown": 0.01569126
-      }
-    },
-    {
-      "details": {
-        "counts": {
           "Cell & developmental biology": 110.85714285714282,
           "Chemistry / Materials Science": 2214.7547619047436,
           "Clinical specialties by organ system": 353.66666666666686,
@@ -3944,34 +3804,6 @@
         "PLoS ONE": 0.01030928,
         "PLoS medicine": 0.01030928,
         "Respiratory Research": 0.01030928
-      }
-    },
-    {
-      "details": {
-        "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 9,
-          "Anatomy": 11,
-          "Biological Sciences": 8,
-          "Chemicals and Drugs": 7,
-          "Diseases": 19,
-          "Health Care": 1,
-          "Information Science": 5,
-          "Physical Sciences": 71,
-          "Technology and Food and Beverages": 4
-        },
-        "total": 135
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.06666667,
-        "Anatomy": 0.08148148,
-        "Biological Sciences": 0.05925926,
-        "Chemicals and Drugs": 0.05185185,
-        "Diseases": 0.14074074,
-        "Health Care": 0.00740741,
-        "Information Science": 0.03703704,
-        "Physical Sciences": 0.52592593,
-        "Technology and Food and Beverages": 0.02962963
       }
     },
     {
@@ -4828,46 +4660,6 @@
         "eNeuro": 0.00698952,
         "mBio": 0.00149775,
         "mSphere": 0.00149775
-      }
-    },
-    {
-      "details": {
-        "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 113,
-          "Anatomy": 228,
-          "Anthropology, Education, Sociology and Social Phenomena": 5,
-          "Biological Sciences": 549,
-          "Chemicals and Drugs": 49,
-          "Diseases": 426,
-          "Health Care": 26,
-          "Humanities": 1,
-          "Information Science": 48,
-          "Organisms": 10,
-          "Persons": 4,
-          "Physical Sciences": 1272,
-          "Psychiatry and Psychology": 15,
-          "Technology and Food and Beverages": 48,
-          "Unknown": 31
-        },
-        "total": 2825
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.04,
-        "Anatomy": 0.08070796,
-        "Anthropology, Education, Sociology and Social Phenomena": 0.00176991,
-        "Biological Sciences": 0.19433628,
-        "Chemicals and Drugs": 0.01734513,
-        "Diseases": 0.15079646,
-        "Health Care": 0.00920354,
-        "Humanities": 0.00035398,
-        "Information Science": 0.01699115,
-        "Organisms": 0.00353982,
-        "Persons": 0.00141593,
-        "Physical Sciences": 0.45026549,
-        "Psychiatry and Psychology": 0.00530973,
-        "Technology and Food and Beverages": 0.01699115,
-        "Unknown": 0.01097345
       }
     },
     {
@@ -5823,46 +5615,6 @@
     {
       "details": {
         "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 69,
-          "Anatomy": 94,
-          "Anthropology, Education, Sociology and Social Phenomena": 7,
-          "Biological Sciences": 287,
-          "Chemicals and Drugs": 114,
-          "Diseases": 257,
-          "Geographic Locations": 7,
-          "Health Care": 5,
-          "Information Science": 7,
-          "Organisms": 140,
-          "Persons": 3,
-          "Physical Sciences": 1318,
-          "Psychiatry and Psychology": 16,
-          "Technology and Food and Beverages": 4,
-          "Unknown": 531
-        },
-        "total": 2859
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.02413431,
-        "Anatomy": 0.03287863,
-        "Anthropology, Education, Sociology and Social Phenomena": 0.00244841,
-        "Biological Sciences": 0.10038475,
-        "Chemicals and Drugs": 0.03987408,
-        "Diseases": 0.08989157,
-        "Geographic Locations": 0.00244841,
-        "Health Care": 0.00174886,
-        "Information Science": 0.00244841,
-        "Organisms": 0.04896817,
-        "Persons": 0.00104932,
-        "Physical Sciences": 0.46100035,
-        "Psychiatry and Psychology": 0.00559636,
-        "Technology and Food and Beverages": 0.00139909,
-        "Unknown": 0.18572928
-      }
-    },
-    {
-      "details": {
-        "counts": {
           "Cell & developmental biology": 147.26250000000002,
           "Chemistry / Materials Science": 104.72638888888888,
           "Clinical specialties by organ system": 109.18923611111111,
@@ -6183,40 +5935,6 @@
     {
       "details": {
         "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 34,
-          "Anatomy": 6,
-          "Biological Sciences": 101,
-          "Chemicals and Drugs": 3,
-          "Diseases": 25,
-          "Humanities": 1,
-          "Information Science": 29,
-          "Organisms": 6,
-          "Persons": 1,
-          "Physical Sciences": 705,
-          "Psychiatry and Psychology": 2,
-          "Unknown": 55
-        },
-        "total": 968
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.03512397,
-        "Anatomy": 0.00619835,
-        "Biological Sciences": 0.10433884,
-        "Chemicals and Drugs": 0.00309917,
-        "Diseases": 0.02582645,
-        "Humanities": 0.00103306,
-        "Information Science": 0.02995868,
-        "Organisms": 0.00619835,
-        "Persons": 0.00103306,
-        "Physical Sciences": 0.72830579,
-        "Psychiatry and Psychology": 0.00206612,
-        "Unknown": 0.05681818
-      }
-    },
-    {
-      "details": {
-        "counts": {
           "Cell & developmental biology": 17.366666666666667,
           "Chemistry / Materials Science": 7.222222222222218,
           "Clinical specialties by organ system": 14.0,
@@ -6456,40 +6174,6 @@
         "The Scientific World Journal": 0.02,
         "The journal of headache and pain": 0.00666667,
         "Veterinary world": 0.00666667
-      }
-    },
-    {
-      "details": {
-        "counts": {
-          "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 6,
-          "Anatomy": 11,
-          "Biological Sciences": 29,
-          "Chemicals and Drugs": 5,
-          "Diseases": 21,
-          "Health Care": 6,
-          "Information Science": 2,
-          "Organisms": 2,
-          "Physical Sciences": 106,
-          "Psychiatry and Psychology": 14,
-          "Technology and Food and Beverages": 8,
-          "Unknown": 13
-        },
-        "total": 223
-      },
-      "metric_name": "journal_topic_distribution",
-      "value": {
-        "Analytical, Diagnostic and Therapeutic Techniques and Equipment": 0.02690583,
-        "Anatomy": 0.04932735,
-        "Biological Sciences": 0.13004484,
-        "Chemicals and Drugs": 0.02242152,
-        "Diseases": 0.0941704,
-        "Health Care": 0.02690583,
-        "Information Science": 0.00896861,
-        "Organisms": 0.00896861,
-        "Physical Sciences": 0.47533632,
-        "Psychiatry and Psychology": 0.06278027,
-        "Technology and Food and Beverages": 0.03587444,
-        "Unknown": 0.05829596
       }
     },
     {

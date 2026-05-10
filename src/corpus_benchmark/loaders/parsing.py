@@ -1,14 +1,12 @@
 from __future__ import annotations
+
 import logging
 from dataclasses import dataclass
-
 
 from corpus_benchmark.models.types import LinkRelation, MatchType
 from utils.text_utils import str_to_bool
 
 logger = logging.getLogger(__name__)
-
-# TODO Move these to an identifier helper in loaders
 
 
 @dataclass(slots=True)
@@ -28,7 +26,6 @@ def parse_identifier_format_list(
 
 
 def parse_identifier_format(id_format: list[str]) -> IdentifierFormat:
-
     logger.debug("Parsing identifier format %s", id_format)
     if len(id_format) != 3:
         raise ValueError()
@@ -39,5 +36,4 @@ def parse_identifier_format(id_format: list[str]) -> IdentifierFormat:
 
 
 def parse_qualifier_map(qualifier_map: dict[str, str]) -> dict[str, MatchType]:
-
     return {qualifier_text: MatchType(match_type_text) for qualifier_text, match_type_text in qualifier_map.items()}

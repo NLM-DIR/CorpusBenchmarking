@@ -70,7 +70,6 @@ from corpus_benchmark.metrics.terminology_coverage import (
     concept_depth_counts,
 )
 
-
 __all__ = [
     "document_count",
     "passage_count",

@@ -7,14 +7,14 @@ from pathlib import Path
 import sys
 from typing import Any
 
-import yaml
-
 from corpus_benchmark.builtins import register_builtins
 from corpus_benchmark.cli import load_battery_config
-from corpus_benchmark.metadata.journal_MeSH_topics import JournalMeSHTopicRootCounter
 from corpus_benchmark.metadata.journal_topics import classify_journal
-from corpus_benchmark.metrics.metadata_distribution import _mesh_topic_treetop_names
 from corpus_benchmark.models.config import LoaderSpec, WorkspaceConfig
+from corpus_benchmark.models.terminologies import TerminologyTopicAnchorCounter
+from corpus_benchmark.models.terminologies import load_name_topic_fallbacks
+from corpus_benchmark.models.terminologies import load_topic_term_overrides
+from corpus_benchmark.models.terminologies import topic_treetop_names
 from corpus_benchmark.models.terminologies import TerminologyResource
 from corpus_benchmark.registry import TERMINOLOGY_LOADERS
 
@@ -31,47 +31,11 @@ def _load_json_records(path: Path) -> list[dict[str, Any]]:
 
 
 def load_mesh_term_overrides(path: Path) -> dict[str, str]:
-    with path.open("r", encoding="utf-8") as fp:
-        payload = yaml.safe_load(fp)
-
-    if not isinstance(payload, dict):
-        raise ValueError(f"{path} must contain a YAML mapping of journal topics to MeSH terms")
-
-    overrides: dict[str, str] = {}
-    for topic, mesh_terms in payload.items():
-        if not isinstance(topic, str):
-            raise ValueError(f"{path} contains a non-string journal topic: {topic!r}")
-        if not isinstance(mesh_terms, list):
-            raise ValueError(f"{path} topic {topic!r} must contain a list of MeSH terms")
-        for mesh_term in mesh_terms:
-            if not isinstance(mesh_term, str):
-                raise ValueError(f"{path} topic {topic!r} contains a non-string MeSH term: {mesh_term!r}")
-            existing_topic = overrides.get(mesh_term)
-            if existing_topic is not None and existing_topic != topic:
-                raise ValueError(f"{path} maps MeSH term {mesh_term!r} to both {existing_topic!r} and {topic!r}")
-            overrides[mesh_term] = topic
-    return overrides
+    return load_topic_term_overrides(path)
 
 
 def load_journal_name_topics(path: Path) -> dict[str, list[str]]:
-    with path.open("r", encoding="utf-8") as fp:
-        payload = json.load(fp)
-
-    if not isinstance(payload, dict):
-        raise ValueError(f"{path} must contain a JSON mapping of journal names to topic lists")
-
-    journal_topics: dict[str, list[str]] = {}
-    for journal_name, topics in payload.items():
-        if not isinstance(journal_name, str):
-            raise ValueError(f"{path} contains a non-string journal name: {journal_name!r}")
-        if not isinstance(topics, list) or not topics:
-            raise ValueError(f"{path} journal {journal_name!r} must contain a non-empty list of topics")
-        journal_topics[journal_name] = []
-        for topic in topics:
-            if not isinstance(topic, str):
-                raise ValueError(f"{path} journal {journal_name!r} contains a non-string topic: {topic!r}")
-            journal_topics[journal_name].append(topic)
-    return journal_topics
+    return load_name_topic_fallbacks(path)
 
 
 def _load_terminology(
@@ -97,10 +61,10 @@ def build_journal_topic_audit(
     journal_name_topics: dict[str, list[str]],
 ) -> list[dict[str, Any]]:
     journal_id_counts = Counter(record.get("data", {}).get("journal_id") for record in metadata_records if record.get("data", {}).get("journal_id") is not None)
-    root_counter = JournalMeSHTopicRootCounter(
+    root_counter = TerminologyTopicAnchorCounter(
         terminology,
-        mesh_term_overrides,
-        journal_name_topics,
+        term_overrides=mesh_term_overrides,
+        fallback_name_topics=journal_name_topics,
     )
     mesh_treetop_cache: dict[str, list[str]] = {}
 
@@ -113,12 +77,12 @@ def build_journal_topic_audit(
         mesh_topics = journal_data.get("mesh_topics", [])
         for mesh_topic in mesh_topics or []:
             if mesh_topic not in mesh_treetop_cache:
-                mesh_treetop_cache[mesh_topic] = _mesh_topic_treetop_names(
+                mesh_treetop_cache[mesh_topic] = topic_treetop_names(
                     terminology,
                     mesh_topic,
                 )
 
-        mesh_root_counts = root_counter.root_counts(full_name, mesh_topics or [])
+        mesh_root_counts = root_counter.counts_for_record_topics(full_name, mesh_topics or [])
 
         audit_records.append(
             {
@@ -154,10 +118,10 @@ def _build_weighted_mesh_topic_counts(
     journal_name_topics: dict[str, list[str]],
 ) -> dict[str, float]:
     journal_id_counts = Counter(record.get("data", {}).get("journal_id") for record in metadata_records if record.get("data", {}).get("journal_id") is not None)
-    root_counter = JournalMeSHTopicRootCounter(
+    root_counter = TerminologyTopicAnchorCounter(
         terminology,
-        mesh_term_overrides,
-        journal_name_topics,
+        term_overrides=mesh_term_overrides,
+        fallback_name_topics=journal_name_topics,
     )
     total_counts: dict[str, float] = {}
 
@@ -169,7 +133,7 @@ def _build_weighted_mesh_topic_counts(
         mesh_topics = record.get("data", {}).get("mesh_topics", []) or []
         journal_data = record.get("data", {})
         full_name = journal_data.get("name") or journal_data.get("abbreviation") or "Unknown"
-        journal_counts = root_counter.root_counts(full_name, mesh_topics)
+        journal_counts = root_counter.counts_for_record_topics(full_name, mesh_topics)
         _add_weighted_counts(total_counts, journal_counts, float(journal_usage_count))
 
     return {
@@ -204,10 +168,9 @@ def build_mesh_term_root_frequencies(
     mesh_term_overrides: dict[str, str],
 ) -> dict[str, dict[str, Any]]:
     journal_id_counts = Counter(record.get("data", {}).get("journal_id") for record in metadata_records if record.get("data", {}).get("journal_id") is not None)
-    root_counter = JournalMeSHTopicRootCounter(
+    root_counter = TerminologyTopicAnchorCounter(
         terminology,
-        mesh_term_overrides,
-        {},
+        term_overrides=mesh_term_overrides,
     )
     total_counts: dict[str, dict[str, Any]] = {}
 
@@ -230,7 +193,7 @@ def build_mesh_term_root_frequencies(
                 },
             )
             topic_counts["frequency"] += topic_weight
-            root_counts = root_counter.mesh_topic_root_counts(mesh_topic)
+            root_counts = root_counter.topic_anchor_counts(mesh_topic)
             _add_weighted_counts(topic_counts["roots"], root_counts, topic_weight)
 
     return {
