@@ -4492,10 +4492,271 @@
             "resource_aliases": [
               "MONDO"
             ],
-            "term_overrides_path": null,
+            "term_overrides_path": "configs/MONDO_disease_mappings.yaml",
             "terminology": "mondo"
           },
-          "value": []
+          "value": [
+            {
+              "branch_code": "Auditory and otorhinolaryngologic",
+              "count": 0.0,
+              "label": "Auditory and otorhinolaryngologic",
+              "mesh_total_count": 8.95,
+              "proportion": 0.0,
+              "terminology_total_count": 8.95,
+              "treetop": "Auditory and otorhinolaryngologic",
+              "treetop_name": "Auditory and otorhinolaryngologic"
+            },
+            {
+              "branch_code": "Breast",
+              "count": 0.0,
+              "label": "Breast",
+              "mesh_total_count": 2.75,
+              "proportion": 0.0,
+              "terminology_total_count": 2.75,
+              "treetop": "Breast",
+              "treetop_name": "Breast"
+            },
+            {
+              "branch_code": "Cancer and benign tumors",
+              "count": 0.0,
+              "label": "Cancer and benign tumors",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cancer and benign tumors",
+              "treetop_name": "Cancer and benign tumors"
+            },
+            {
+              "branch_code": "Cardiovascular",
+              "count": 0.0,
+              "label": "Cardiovascular",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cardiovascular",
+              "treetop_name": "Cardiovascular"
+            },
+            {
+              "branch_code": "Connective tissue",
+              "count": 0.0,
+              "label": "Connective tissue",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Connective tissue",
+              "treetop_name": "Connective tissue"
+            },
+            {
+              "branch_code": "Developmental, congenital, and perinatal",
+              "count": 0.0,
+              "label": "Developmental, congenital, and perinatal",
+              "mesh_total_count": 21.08611111,
+              "proportion": 0.0,
+              "terminology_total_count": 21.08611111,
+              "treetop": "Developmental, congenital, and perinatal",
+              "treetop_name": "Developmental, congenital, and perinatal"
+            },
+            {
+              "branch_code": "Digestive and oral",
+              "count": 0.0,
+              "label": "Digestive and oral",
+              "mesh_total_count": 18.2880291,
+              "proportion": 0.0,
+              "terminology_total_count": 18.2880291,
+              "treetop": "Digestive and oral",
+              "treetop_name": "Digestive and oral"
+            },
+            {
+              "branch_code": "Endocrine",
+              "count": 0.0,
+              "label": "Endocrine",
+              "mesh_total_count": 6.875,
+              "proportion": 0.0,
+              "terminology_total_count": 6.875,
+              "treetop": "Endocrine",
+              "treetop_name": "Endocrine"
+            },
+            {
+              "branch_code": "Extrinsic, toxic, and occupational",
+              "count": 0.0,
+              "label": "Extrinsic, toxic, and occupational",
+              "mesh_total_count": 12.83333333,
+              "proportion": 0.0,
+              "terminology_total_count": 12.83333333,
+              "treetop": "Extrinsic, toxic, and occupational",
+              "treetop_name": "Extrinsic, toxic, and occupational"
+            },
+            {
+              "branch_code": "Genetic and genomic",
+              "count": 0.0,
+              "label": "Genetic and genomic",
+              "mesh_total_count": 401.07827381,
+              "proportion": 0.0,
+              "terminology_total_count": 401.07827381,
+              "treetop": "Genetic and genomic",
+              "treetop_name": "Genetic and genomic"
+            },
+            {
+              "branch_code": "Hematologic",
+              "count": 0.0,
+              "label": "Hematologic",
+              "mesh_total_count": 14.275,
+              "proportion": 0.0,
+              "terminology_total_count": 14.275,
+              "treetop": "Hematologic",
+              "treetop_name": "Hematologic"
+            },
+            {
+              "branch_code": "Idiopathic",
+              "count": 0.0,
+              "label": "Idiopathic",
+              "mesh_total_count": 37.70833333,
+              "proportion": 0.0,
+              "terminology_total_count": 37.70833333,
+              "treetop": "Idiopathic",
+              "treetop_name": "Idiopathic"
+            },
+            {
+              "branch_code": "Immune",
+              "count": 0.0,
+              "label": "Immune",
+              "mesh_total_count": 12.14166667,
+              "proportion": 0.0,
+              "terminology_total_count": 12.14166667,
+              "treetop": "Immune",
+              "treetop_name": "Immune"
+            },
+            {
+              "branch_code": "Infectious and post-infectious",
+              "count": 0.0,
+              "label": "Infectious and post-infectious",
+              "mesh_total_count": 67.04444444,
+              "proportion": 0.0,
+              "terminology_total_count": 67.04444444,
+              "treetop": "Infectious and post-infectious",
+              "treetop_name": "Infectious and post-infectious"
+            },
+            {
+              "branch_code": "Inflammatory",
+              "count": 0.0,
+              "label": "Inflammatory",
+              "mesh_total_count": 27.29166667,
+              "proportion": 0.0,
+              "terminology_total_count": 27.29166667,
+              "treetop": "Inflammatory",
+              "treetop_name": "Inflammatory"
+            },
+            {
+              "branch_code": "Integumentary",
+              "count": 0.0,
+              "label": "Integumentary",
+              "mesh_total_count": 16.79166667,
+              "proportion": 0.0,
+              "terminology_total_count": 16.79166667,
+              "treetop": "Integumentary",
+              "treetop_name": "Integumentary"
+            },
+            {
+              "branch_code": "Metabolic and nutritional",
+              "count": 0.0,
+              "label": "Metabolic and nutritional",
+              "mesh_total_count": 23.12460317,
+              "proportion": 0.0,
+              "terminology_total_count": 23.12460317,
+              "treetop": "Metabolic and nutritional",
+              "treetop_name": "Metabolic and nutritional"
+            },
+            {
+              "branch_code": "Musculoskeletal",
+              "count": 0.0,
+              "label": "Musculoskeletal",
+              "mesh_total_count": 11.875,
+              "proportion": 0.0,
+              "terminology_total_count": 11.875,
+              "treetop": "Musculoskeletal",
+              "treetop_name": "Musculoskeletal"
+            },
+            {
+              "branch_code": "Nervous system",
+              "count": 0.0,
+              "label": "Nervous system",
+              "mesh_total_count": 8.06944444,
+              "proportion": 0.0,
+              "terminology_total_count": 8.06944444,
+              "treetop": "Nervous system",
+              "treetop_name": "Nervous system"
+            },
+            {
+              "branch_code": "Psychiatric and sleep",
+              "count": 0.0,
+              "label": "Psychiatric and sleep",
+              "mesh_total_count": 3.5,
+              "proportion": 0.0,
+              "terminology_total_count": 3.5,
+              "treetop": "Psychiatric and sleep",
+              "treetop_name": "Psychiatric and sleep"
+            },
+            {
+              "branch_code": "Reproductive",
+              "count": 0.0,
+              "label": "Reproductive",
+              "mesh_total_count": 2.33333333,
+              "proportion": 0.0,
+              "terminology_total_count": 2.33333333,
+              "treetop": "Reproductive",
+              "treetop_name": "Reproductive"
+            },
+            {
+              "branch_code": "Respiratory",
+              "count": 0.0,
+              "label": "Respiratory",
+              "mesh_total_count": 9.46111111,
+              "proportion": 0.0,
+              "terminology_total_count": 9.46111111,
+              "treetop": "Respiratory",
+              "treetop_name": "Respiratory"
+            },
+            {
+              "branch_code": "Syndromic",
+              "count": 0.0,
+              "label": "Syndromic",
+              "mesh_total_count": 86.1547619,
+              "proportion": 0.0,
+              "terminology_total_count": 86.1547619,
+              "treetop": "Syndromic",
+              "treetop_name": "Syndromic"
+            },
+            {
+              "branch_code": "Ulcer disease",
+              "count": 0.0,
+              "label": "Ulcer disease",
+              "mesh_total_count": 2.16666667,
+              "proportion": 0.0,
+              "terminology_total_count": 2.16666667,
+              "treetop": "Ulcer disease",
+              "treetop_name": "Ulcer disease"
+            },
+            {
+              "branch_code": "Urinary",
+              "count": 0.0,
+              "label": "Urinary",
+              "mesh_total_count": 2.0,
+              "proportion": 0.0,
+              "terminology_total_count": 2.0,
+              "treetop": "Urinary",
+              "treetop_name": "Urinary"
+            },
+            {
+              "branch_code": "Visual system",
+              "count": 0.0,
+              "label": "Visual system",
+              "mesh_total_count": 10.62777778,
+              "proportion": 0.0,
+              "terminology_total_count": 10.62777778,
+              "treetop": "Visual system",
+              "treetop_name": "Visual system"
+            }
+          ]
         },
         "chemical": {
           "details": {
@@ -12302,10 +12563,271 @@
             "resource_aliases": [
               "MONDO"
             ],
-            "term_overrides_path": null,
+            "term_overrides_path": "configs/MONDO_disease_mappings.yaml",
             "terminology": "mondo"
           },
-          "value": []
+          "value": [
+            {
+              "branch_code": "Auditory and otorhinolaryngologic",
+              "count": 0.0,
+              "label": "Auditory and otorhinolaryngologic",
+              "mesh_total_count": 8.95,
+              "proportion": 0.0,
+              "terminology_total_count": 8.95,
+              "treetop": "Auditory and otorhinolaryngologic",
+              "treetop_name": "Auditory and otorhinolaryngologic"
+            },
+            {
+              "branch_code": "Breast",
+              "count": 0.0,
+              "label": "Breast",
+              "mesh_total_count": 2.75,
+              "proportion": 0.0,
+              "terminology_total_count": 2.75,
+              "treetop": "Breast",
+              "treetop_name": "Breast"
+            },
+            {
+              "branch_code": "Cancer and benign tumors",
+              "count": 0.0,
+              "label": "Cancer and benign tumors",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cancer and benign tumors",
+              "treetop_name": "Cancer and benign tumors"
+            },
+            {
+              "branch_code": "Cardiovascular",
+              "count": 0.0,
+              "label": "Cardiovascular",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cardiovascular",
+              "treetop_name": "Cardiovascular"
+            },
+            {
+              "branch_code": "Connective tissue",
+              "count": 0.0,
+              "label": "Connective tissue",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Connective tissue",
+              "treetop_name": "Connective tissue"
+            },
+            {
+              "branch_code": "Developmental, congenital, and perinatal",
+              "count": 0.0,
+              "label": "Developmental, congenital, and perinatal",
+              "mesh_total_count": 21.08611111,
+              "proportion": 0.0,
+              "terminology_total_count": 21.08611111,
+              "treetop": "Developmental, congenital, and perinatal",
+              "treetop_name": "Developmental, congenital, and perinatal"
+            },
+            {
+              "branch_code": "Digestive and oral",
+              "count": 0.0,
+              "label": "Digestive and oral",
+              "mesh_total_count": 18.2880291,
+              "proportion": 0.0,
+              "terminology_total_count": 18.2880291,
+              "treetop": "Digestive and oral",
+              "treetop_name": "Digestive and oral"
+            },
+            {
+              "branch_code": "Endocrine",
+              "count": 0.0,
+              "label": "Endocrine",
+              "mesh_total_count": 6.875,
+              "proportion": 0.0,
+              "terminology_total_count": 6.875,
+              "treetop": "Endocrine",
+              "treetop_name": "Endocrine"
+            },
+            {
+              "branch_code": "Extrinsic, toxic, and occupational",
+              "count": 0.0,
+              "label": "Extrinsic, toxic, and occupational",
+              "mesh_total_count": 12.83333333,
+              "proportion": 0.0,
+              "terminology_total_count": 12.83333333,
+              "treetop": "Extrinsic, toxic, and occupational",
+              "treetop_name": "Extrinsic, toxic, and occupational"
+            },
+            {
+              "branch_code": "Genetic and genomic",
+              "count": 0.0,
+              "label": "Genetic and genomic",
+              "mesh_total_count": 401.07827381,
+              "proportion": 0.0,
+              "terminology_total_count": 401.07827381,
+              "treetop": "Genetic and genomic",
+              "treetop_name": "Genetic and genomic"
+            },
+            {
+              "branch_code": "Hematologic",
+              "count": 0.0,
+              "label": "Hematologic",
+              "mesh_total_count": 14.275,
+              "proportion": 0.0,
+              "terminology_total_count": 14.275,
+              "treetop": "Hematologic",
+              "treetop_name": "Hematologic"
+            },
+            {
+              "branch_code": "Idiopathic",
+              "count": 0.0,
+              "label": "Idiopathic",
+              "mesh_total_count": 37.70833333,
+              "proportion": 0.0,
+              "terminology_total_count": 37.70833333,
+              "treetop": "Idiopathic",
+              "treetop_name": "Idiopathic"
+            },
+            {
+              "branch_code": "Immune",
+              "count": 0.0,
+              "label": "Immune",
+              "mesh_total_count": 12.14166667,
+              "proportion": 0.0,
+              "terminology_total_count": 12.14166667,
+              "treetop": "Immune",
+              "treetop_name": "Immune"
+            },
+            {
+              "branch_code": "Infectious and post-infectious",
+              "count": 0.0,
+              "label": "Infectious and post-infectious",
+              "mesh_total_count": 67.04444444,
+              "proportion": 0.0,
+              "terminology_total_count": 67.04444444,
+              "treetop": "Infectious and post-infectious",
+              "treetop_name": "Infectious and post-infectious"
+            },
+            {
+              "branch_code": "Inflammatory",
+              "count": 0.0,
+              "label": "Inflammatory",
+              "mesh_total_count": 27.29166667,
+              "proportion": 0.0,
+              "terminology_total_count": 27.29166667,
+              "treetop": "Inflammatory",
+              "treetop_name": "Inflammatory"
+            },
+            {
+              "branch_code": "Integumentary",
+              "count": 0.0,
+              "label": "Integumentary",
+              "mesh_total_count": 16.79166667,
+              "proportion": 0.0,
+              "terminology_total_count": 16.79166667,
+              "treetop": "Integumentary",
+              "treetop_name": "Integumentary"
+            },
+            {
+              "branch_code": "Metabolic and nutritional",
+              "count": 0.0,
+              "label": "Metabolic and nutritional",
+              "mesh_total_count": 23.12460317,
+              "proportion": 0.0,
+              "terminology_total_count": 23.12460317,
+              "treetop": "Metabolic and nutritional",
+              "treetop_name": "Metabolic and nutritional"
+            },
+            {
+              "branch_code": "Musculoskeletal",
+              "count": 0.0,
+              "label": "Musculoskeletal",
+              "mesh_total_count": 11.875,
+              "proportion": 0.0,
+              "terminology_total_count": 11.875,
+              "treetop": "Musculoskeletal",
+              "treetop_name": "Musculoskeletal"
+            },
+            {
+              "branch_code": "Nervous system",
+              "count": 0.0,
+              "label": "Nervous system",
+              "mesh_total_count": 8.06944444,
+              "proportion": 0.0,
+              "terminology_total_count": 8.06944444,
+              "treetop": "Nervous system",
+              "treetop_name": "Nervous system"
+            },
+            {
+              "branch_code": "Psychiatric and sleep",
+              "count": 0.0,
+              "label": "Psychiatric and sleep",
+              "mesh_total_count": 3.5,
+              "proportion": 0.0,
+              "terminology_total_count": 3.5,
+              "treetop": "Psychiatric and sleep",
+              "treetop_name": "Psychiatric and sleep"
+            },
+            {
+              "branch_code": "Reproductive",
+              "count": 0.0,
+              "label": "Reproductive",
+              "mesh_total_count": 2.33333333,
+              "proportion": 0.0,
+              "terminology_total_count": 2.33333333,
+              "treetop": "Reproductive",
+              "treetop_name": "Reproductive"
+            },
+            {
+              "branch_code": "Respiratory",
+              "count": 0.0,
+              "label": "Respiratory",
+              "mesh_total_count": 9.46111111,
+              "proportion": 0.0,
+              "terminology_total_count": 9.46111111,
+              "treetop": "Respiratory",
+              "treetop_name": "Respiratory"
+            },
+            {
+              "branch_code": "Syndromic",
+              "count": 0.0,
+              "label": "Syndromic",
+              "mesh_total_count": 86.1547619,
+              "proportion": 0.0,
+              "terminology_total_count": 86.1547619,
+              "treetop": "Syndromic",
+              "treetop_name": "Syndromic"
+            },
+            {
+              "branch_code": "Ulcer disease",
+              "count": 0.0,
+              "label": "Ulcer disease",
+              "mesh_total_count": 2.16666667,
+              "proportion": 0.0,
+              "terminology_total_count": 2.16666667,
+              "treetop": "Ulcer disease",
+              "treetop_name": "Ulcer disease"
+            },
+            {
+              "branch_code": "Urinary",
+              "count": 0.0,
+              "label": "Urinary",
+              "mesh_total_count": 2.0,
+              "proportion": 0.0,
+              "terminology_total_count": 2.0,
+              "treetop": "Urinary",
+              "treetop_name": "Urinary"
+            },
+            {
+              "branch_code": "Visual system",
+              "count": 0.0,
+              "label": "Visual system",
+              "mesh_total_count": 10.62777778,
+              "proportion": 0.0,
+              "terminology_total_count": 10.62777778,
+              "treetop": "Visual system",
+              "treetop_name": "Visual system"
+            }
+          ]
         },
         "chemical": {
           "details": {
@@ -19912,10 +20434,271 @@
             "resource_aliases": [
               "MONDO"
             ],
-            "term_overrides_path": null,
+            "term_overrides_path": "configs/MONDO_disease_mappings.yaml",
             "terminology": "mondo"
           },
-          "value": []
+          "value": [
+            {
+              "branch_code": "Auditory and otorhinolaryngologic",
+              "count": 0.0,
+              "label": "Auditory and otorhinolaryngologic",
+              "mesh_total_count": 8.95,
+              "proportion": 0.0,
+              "terminology_total_count": 8.95,
+              "treetop": "Auditory and otorhinolaryngologic",
+              "treetop_name": "Auditory and otorhinolaryngologic"
+            },
+            {
+              "branch_code": "Breast",
+              "count": 0.0,
+              "label": "Breast",
+              "mesh_total_count": 2.75,
+              "proportion": 0.0,
+              "terminology_total_count": 2.75,
+              "treetop": "Breast",
+              "treetop_name": "Breast"
+            },
+            {
+              "branch_code": "Cancer and benign tumors",
+              "count": 0.0,
+              "label": "Cancer and benign tumors",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cancer and benign tumors",
+              "treetop_name": "Cancer and benign tumors"
+            },
+            {
+              "branch_code": "Cardiovascular",
+              "count": 0.0,
+              "label": "Cardiovascular",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cardiovascular",
+              "treetop_name": "Cardiovascular"
+            },
+            {
+              "branch_code": "Connective tissue",
+              "count": 0.0,
+              "label": "Connective tissue",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Connective tissue",
+              "treetop_name": "Connective tissue"
+            },
+            {
+              "branch_code": "Developmental, congenital, and perinatal",
+              "count": 0.0,
+              "label": "Developmental, congenital, and perinatal",
+              "mesh_total_count": 21.08611111,
+              "proportion": 0.0,
+              "terminology_total_count": 21.08611111,
+              "treetop": "Developmental, congenital, and perinatal",
+              "treetop_name": "Developmental, congenital, and perinatal"
+            },
+            {
+              "branch_code": "Digestive and oral",
+              "count": 0.0,
+              "label": "Digestive and oral",
+              "mesh_total_count": 18.2880291,
+              "proportion": 0.0,
+              "terminology_total_count": 18.2880291,
+              "treetop": "Digestive and oral",
+              "treetop_name": "Digestive and oral"
+            },
+            {
+              "branch_code": "Endocrine",
+              "count": 0.0,
+              "label": "Endocrine",
+              "mesh_total_count": 6.875,
+              "proportion": 0.0,
+              "terminology_total_count": 6.875,
+              "treetop": "Endocrine",
+              "treetop_name": "Endocrine"
+            },
+            {
+              "branch_code": "Extrinsic, toxic, and occupational",
+              "count": 0.0,
+              "label": "Extrinsic, toxic, and occupational",
+              "mesh_total_count": 12.83333333,
+              "proportion": 0.0,
+              "terminology_total_count": 12.83333333,
+              "treetop": "Extrinsic, toxic, and occupational",
+              "treetop_name": "Extrinsic, toxic, and occupational"
+            },
+            {
+              "branch_code": "Genetic and genomic",
+              "count": 0.0,
+              "label": "Genetic and genomic",
+              "mesh_total_count": 401.07827381,
+              "proportion": 0.0,
+              "terminology_total_count": 401.07827381,
+              "treetop": "Genetic and genomic",
+              "treetop_name": "Genetic and genomic"
+            },
+            {
+              "branch_code": "Hematologic",
+              "count": 0.0,
+              "label": "Hematologic",
+              "mesh_total_count": 14.275,
+              "proportion": 0.0,
+              "terminology_total_count": 14.275,
+              "treetop": "Hematologic",
+              "treetop_name": "Hematologic"
+            },
+            {
+              "branch_code": "Idiopathic",
+              "count": 0.0,
+              "label": "Idiopathic",
+              "mesh_total_count": 37.70833333,
+              "proportion": 0.0,
+              "terminology_total_count": 37.70833333,
+              "treetop": "Idiopathic",
+              "treetop_name": "Idiopathic"
+            },
+            {
+              "branch_code": "Immune",
+              "count": 0.0,
+              "label": "Immune",
+              "mesh_total_count": 12.14166667,
+              "proportion": 0.0,
+              "terminology_total_count": 12.14166667,
+              "treetop": "Immune",
+              "treetop_name": "Immune"
+            },
+            {
+              "branch_code": "Infectious and post-infectious",
+              "count": 0.0,
+              "label": "Infectious and post-infectious",
+              "mesh_total_count": 67.04444444,
+              "proportion": 0.0,
+              "terminology_total_count": 67.04444444,
+              "treetop": "Infectious and post-infectious",
+              "treetop_name": "Infectious and post-infectious"
+            },
+            {
+              "branch_code": "Inflammatory",
+              "count": 0.0,
+              "label": "Inflammatory",
+              "mesh_total_count": 27.29166667,
+              "proportion": 0.0,
+              "terminology_total_count": 27.29166667,
+              "treetop": "Inflammatory",
+              "treetop_name": "Inflammatory"
+            },
+            {
+              "branch_code": "Integumentary",
+              "count": 0.0,
+              "label": "Integumentary",
+              "mesh_total_count": 16.79166667,
+              "proportion": 0.0,
+              "terminology_total_count": 16.79166667,
+              "treetop": "Integumentary",
+              "treetop_name": "Integumentary"
+            },
+            {
+              "branch_code": "Metabolic and nutritional",
+              "count": 0.0,
+              "label": "Metabolic and nutritional",
+              "mesh_total_count": 23.12460317,
+              "proportion": 0.0,
+              "terminology_total_count": 23.12460317,
+              "treetop": "Metabolic and nutritional",
+              "treetop_name": "Metabolic and nutritional"
+            },
+            {
+              "branch_code": "Musculoskeletal",
+              "count": 0.0,
+              "label": "Musculoskeletal",
+              "mesh_total_count": 11.875,
+              "proportion": 0.0,
+              "terminology_total_count": 11.875,
+              "treetop": "Musculoskeletal",
+              "treetop_name": "Musculoskeletal"
+            },
+            {
+              "branch_code": "Nervous system",
+              "count": 0.0,
+              "label": "Nervous system",
+              "mesh_total_count": 8.06944444,
+              "proportion": 0.0,
+              "terminology_total_count": 8.06944444,
+              "treetop": "Nervous system",
+              "treetop_name": "Nervous system"
+            },
+            {
+              "branch_code": "Psychiatric and sleep",
+              "count": 0.0,
+              "label": "Psychiatric and sleep",
+              "mesh_total_count": 3.5,
+              "proportion": 0.0,
+              "terminology_total_count": 3.5,
+              "treetop": "Psychiatric and sleep",
+              "treetop_name": "Psychiatric and sleep"
+            },
+            {
+              "branch_code": "Reproductive",
+              "count": 0.0,
+              "label": "Reproductive",
+              "mesh_total_count": 2.33333333,
+              "proportion": 0.0,
+              "terminology_total_count": 2.33333333,
+              "treetop": "Reproductive",
+              "treetop_name": "Reproductive"
+            },
+            {
+              "branch_code": "Respiratory",
+              "count": 0.0,
+              "label": "Respiratory",
+              "mesh_total_count": 9.46111111,
+              "proportion": 0.0,
+              "terminology_total_count": 9.46111111,
+              "treetop": "Respiratory",
+              "treetop_name": "Respiratory"
+            },
+            {
+              "branch_code": "Syndromic",
+              "count": 0.0,
+              "label": "Syndromic",
+              "mesh_total_count": 86.1547619,
+              "proportion": 0.0,
+              "terminology_total_count": 86.1547619,
+              "treetop": "Syndromic",
+              "treetop_name": "Syndromic"
+            },
+            {
+              "branch_code": "Ulcer disease",
+              "count": 0.0,
+              "label": "Ulcer disease",
+              "mesh_total_count": 2.16666667,
+              "proportion": 0.0,
+              "terminology_total_count": 2.16666667,
+              "treetop": "Ulcer disease",
+              "treetop_name": "Ulcer disease"
+            },
+            {
+              "branch_code": "Urinary",
+              "count": 0.0,
+              "label": "Urinary",
+              "mesh_total_count": 2.0,
+              "proportion": 0.0,
+              "terminology_total_count": 2.0,
+              "treetop": "Urinary",
+              "treetop_name": "Urinary"
+            },
+            {
+              "branch_code": "Visual system",
+              "count": 0.0,
+              "label": "Visual system",
+              "mesh_total_count": 10.62777778,
+              "proportion": 0.0,
+              "terminology_total_count": 10.62777778,
+              "treetop": "Visual system",
+              "treetop_name": "Visual system"
+            }
+          ]
         },
         "chemical": {
           "details": {
@@ -34022,10 +34805,271 @@
             "resource_aliases": [
               "MONDO"
             ],
-            "term_overrides_path": null,
+            "term_overrides_path": "configs/MONDO_disease_mappings.yaml",
             "terminology": "mondo"
           },
-          "value": []
+          "value": [
+            {
+              "branch_code": "Auditory and otorhinolaryngologic",
+              "count": 0.0,
+              "label": "Auditory and otorhinolaryngologic",
+              "mesh_total_count": 8.95,
+              "proportion": 0.0,
+              "terminology_total_count": 8.95,
+              "treetop": "Auditory and otorhinolaryngologic",
+              "treetop_name": "Auditory and otorhinolaryngologic"
+            },
+            {
+              "branch_code": "Breast",
+              "count": 0.0,
+              "label": "Breast",
+              "mesh_total_count": 2.75,
+              "proportion": 0.0,
+              "terminology_total_count": 2.75,
+              "treetop": "Breast",
+              "treetop_name": "Breast"
+            },
+            {
+              "branch_code": "Cancer and benign tumors",
+              "count": 0.0,
+              "label": "Cancer and benign tumors",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cancer and benign tumors",
+              "treetop_name": "Cancer and benign tumors"
+            },
+            {
+              "branch_code": "Cardiovascular",
+              "count": 0.0,
+              "label": "Cardiovascular",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cardiovascular",
+              "treetop_name": "Cardiovascular"
+            },
+            {
+              "branch_code": "Connective tissue",
+              "count": 0.0,
+              "label": "Connective tissue",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Connective tissue",
+              "treetop_name": "Connective tissue"
+            },
+            {
+              "branch_code": "Developmental, congenital, and perinatal",
+              "count": 0.0,
+              "label": "Developmental, congenital, and perinatal",
+              "mesh_total_count": 21.08611111,
+              "proportion": 0.0,
+              "terminology_total_count": 21.08611111,
+              "treetop": "Developmental, congenital, and perinatal",
+              "treetop_name": "Developmental, congenital, and perinatal"
+            },
+            {
+              "branch_code": "Digestive and oral",
+              "count": 0.0,
+              "label": "Digestive and oral",
+              "mesh_total_count": 18.2880291,
+              "proportion": 0.0,
+              "terminology_total_count": 18.2880291,
+              "treetop": "Digestive and oral",
+              "treetop_name": "Digestive and oral"
+            },
+            {
+              "branch_code": "Endocrine",
+              "count": 0.0,
+              "label": "Endocrine",
+              "mesh_total_count": 6.875,
+              "proportion": 0.0,
+              "terminology_total_count": 6.875,
+              "treetop": "Endocrine",
+              "treetop_name": "Endocrine"
+            },
+            {
+              "branch_code": "Extrinsic, toxic, and occupational",
+              "count": 0.0,
+              "label": "Extrinsic, toxic, and occupational",
+              "mesh_total_count": 12.83333333,
+              "proportion": 0.0,
+              "terminology_total_count": 12.83333333,
+              "treetop": "Extrinsic, toxic, and occupational",
+              "treetop_name": "Extrinsic, toxic, and occupational"
+            },
+            {
+              "branch_code": "Genetic and genomic",
+              "count": 0.0,
+              "label": "Genetic and genomic",
+              "mesh_total_count": 401.07827381,
+              "proportion": 0.0,
+              "terminology_total_count": 401.07827381,
+              "treetop": "Genetic and genomic",
+              "treetop_name": "Genetic and genomic"
+            },
+            {
+              "branch_code": "Hematologic",
+              "count": 0.0,
+              "label": "Hematologic",
+              "mesh_total_count": 14.275,
+              "proportion": 0.0,
+              "terminology_total_count": 14.275,
+              "treetop": "Hematologic",
+              "treetop_name": "Hematologic"
+            },
+            {
+              "branch_code": "Idiopathic",
+              "count": 0.0,
+              "label": "Idiopathic",
+              "mesh_total_count": 37.70833333,
+              "proportion": 0.0,
+              "terminology_total_count": 37.70833333,
+              "treetop": "Idiopathic",
+              "treetop_name": "Idiopathic"
+            },
+            {
+              "branch_code": "Immune",
+              "count": 0.0,
+              "label": "Immune",
+              "mesh_total_count": 12.14166667,
+              "proportion": 0.0,
+              "terminology_total_count": 12.14166667,
+              "treetop": "Immune",
+              "treetop_name": "Immune"
+            },
+            {
+              "branch_code": "Infectious and post-infectious",
+              "count": 0.0,
+              "label": "Infectious and post-infectious",
+              "mesh_total_count": 67.04444444,
+              "proportion": 0.0,
+              "terminology_total_count": 67.04444444,
+              "treetop": "Infectious and post-infectious",
+              "treetop_name": "Infectious and post-infectious"
+            },
+            {
+              "branch_code": "Inflammatory",
+              "count": 0.0,
+              "label": "Inflammatory",
+              "mesh_total_count": 27.29166667,
+              "proportion": 0.0,
+              "terminology_total_count": 27.29166667,
+              "treetop": "Inflammatory",
+              "treetop_name": "Inflammatory"
+            },
+            {
+              "branch_code": "Integumentary",
+              "count": 0.0,
+              "label": "Integumentary",
+              "mesh_total_count": 16.79166667,
+              "proportion": 0.0,
+              "terminology_total_count": 16.79166667,
+              "treetop": "Integumentary",
+              "treetop_name": "Integumentary"
+            },
+            {
+              "branch_code": "Metabolic and nutritional",
+              "count": 0.0,
+              "label": "Metabolic and nutritional",
+              "mesh_total_count": 23.12460317,
+              "proportion": 0.0,
+              "terminology_total_count": 23.12460317,
+              "treetop": "Metabolic and nutritional",
+              "treetop_name": "Metabolic and nutritional"
+            },
+            {
+              "branch_code": "Musculoskeletal",
+              "count": 0.0,
+              "label": "Musculoskeletal",
+              "mesh_total_count": 11.875,
+              "proportion": 0.0,
+              "terminology_total_count": 11.875,
+              "treetop": "Musculoskeletal",
+              "treetop_name": "Musculoskeletal"
+            },
+            {
+              "branch_code": "Nervous system",
+              "count": 0.0,
+              "label": "Nervous system",
+              "mesh_total_count": 8.06944444,
+              "proportion": 0.0,
+              "terminology_total_count": 8.06944444,
+              "treetop": "Nervous system",
+              "treetop_name": "Nervous system"
+            },
+            {
+              "branch_code": "Psychiatric and sleep",
+              "count": 0.0,
+              "label": "Psychiatric and sleep",
+              "mesh_total_count": 3.5,
+              "proportion": 0.0,
+              "terminology_total_count": 3.5,
+              "treetop": "Psychiatric and sleep",
+              "treetop_name": "Psychiatric and sleep"
+            },
+            {
+              "branch_code": "Reproductive",
+              "count": 0.0,
+              "label": "Reproductive",
+              "mesh_total_count": 2.33333333,
+              "proportion": 0.0,
+              "terminology_total_count": 2.33333333,
+              "treetop": "Reproductive",
+              "treetop_name": "Reproductive"
+            },
+            {
+              "branch_code": "Respiratory",
+              "count": 0.0,
+              "label": "Respiratory",
+              "mesh_total_count": 9.46111111,
+              "proportion": 0.0,
+              "terminology_total_count": 9.46111111,
+              "treetop": "Respiratory",
+              "treetop_name": "Respiratory"
+            },
+            {
+              "branch_code": "Syndromic",
+              "count": 0.0,
+              "label": "Syndromic",
+              "mesh_total_count": 86.1547619,
+              "proportion": 0.0,
+              "terminology_total_count": 86.1547619,
+              "treetop": "Syndromic",
+              "treetop_name": "Syndromic"
+            },
+            {
+              "branch_code": "Ulcer disease",
+              "count": 0.0,
+              "label": "Ulcer disease",
+              "mesh_total_count": 2.16666667,
+              "proportion": 0.0,
+              "terminology_total_count": 2.16666667,
+              "treetop": "Ulcer disease",
+              "treetop_name": "Ulcer disease"
+            },
+            {
+              "branch_code": "Urinary",
+              "count": 0.0,
+              "label": "Urinary",
+              "mesh_total_count": 2.0,
+              "proportion": 0.0,
+              "terminology_total_count": 2.0,
+              "treetop": "Urinary",
+              "treetop_name": "Urinary"
+            },
+            {
+              "branch_code": "Visual system",
+              "count": 0.0,
+              "label": "Visual system",
+              "mesh_total_count": 10.62777778,
+              "proportion": 0.0,
+              "terminology_total_count": 10.62777778,
+              "treetop": "Visual system",
+              "treetop_name": "Visual system"
+            }
+          ]
         },
         "chemical": {
           "details": {
@@ -41532,10 +42576,271 @@
             "resource_aliases": [
               "MONDO"
             ],
-            "term_overrides_path": null,
+            "term_overrides_path": "configs/MONDO_disease_mappings.yaml",
             "terminology": "mondo"
           },
-          "value": []
+          "value": [
+            {
+              "branch_code": "Auditory and otorhinolaryngologic",
+              "count": 0.0,
+              "label": "Auditory and otorhinolaryngologic",
+              "mesh_total_count": 8.95,
+              "proportion": 0.0,
+              "terminology_total_count": 8.95,
+              "treetop": "Auditory and otorhinolaryngologic",
+              "treetop_name": "Auditory and otorhinolaryngologic"
+            },
+            {
+              "branch_code": "Breast",
+              "count": 0.0,
+              "label": "Breast",
+              "mesh_total_count": 2.75,
+              "proportion": 0.0,
+              "terminology_total_count": 2.75,
+              "treetop": "Breast",
+              "treetop_name": "Breast"
+            },
+            {
+              "branch_code": "Cancer and benign tumors",
+              "count": 0.0,
+              "label": "Cancer and benign tumors",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cancer and benign tumors",
+              "treetop_name": "Cancer and benign tumors"
+            },
+            {
+              "branch_code": "Cardiovascular",
+              "count": 0.0,
+              "label": "Cardiovascular",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cardiovascular",
+              "treetop_name": "Cardiovascular"
+            },
+            {
+              "branch_code": "Connective tissue",
+              "count": 0.0,
+              "label": "Connective tissue",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Connective tissue",
+              "treetop_name": "Connective tissue"
+            },
+            {
+              "branch_code": "Developmental, congenital, and perinatal",
+              "count": 0.0,
+              "label": "Developmental, congenital, and perinatal",
+              "mesh_total_count": 21.08611111,
+              "proportion": 0.0,
+              "terminology_total_count": 21.08611111,
+              "treetop": "Developmental, congenital, and perinatal",
+              "treetop_name": "Developmental, congenital, and perinatal"
+            },
+            {
+              "branch_code": "Digestive and oral",
+              "count": 0.0,
+              "label": "Digestive and oral",
+              "mesh_total_count": 18.2880291,
+              "proportion": 0.0,
+              "terminology_total_count": 18.2880291,
+              "treetop": "Digestive and oral",
+              "treetop_name": "Digestive and oral"
+            },
+            {
+              "branch_code": "Endocrine",
+              "count": 0.0,
+              "label": "Endocrine",
+              "mesh_total_count": 6.875,
+              "proportion": 0.0,
+              "terminology_total_count": 6.875,
+              "treetop": "Endocrine",
+              "treetop_name": "Endocrine"
+            },
+            {
+              "branch_code": "Extrinsic, toxic, and occupational",
+              "count": 0.0,
+              "label": "Extrinsic, toxic, and occupational",
+              "mesh_total_count": 12.83333333,
+              "proportion": 0.0,
+              "terminology_total_count": 12.83333333,
+              "treetop": "Extrinsic, toxic, and occupational",
+              "treetop_name": "Extrinsic, toxic, and occupational"
+            },
+            {
+              "branch_code": "Genetic and genomic",
+              "count": 0.0,
+              "label": "Genetic and genomic",
+              "mesh_total_count": 401.07827381,
+              "proportion": 0.0,
+              "terminology_total_count": 401.07827381,
+              "treetop": "Genetic and genomic",
+              "treetop_name": "Genetic and genomic"
+            },
+            {
+              "branch_code": "Hematologic",
+              "count": 0.0,
+              "label": "Hematologic",
+              "mesh_total_count": 14.275,
+              "proportion": 0.0,
+              "terminology_total_count": 14.275,
+              "treetop": "Hematologic",
+              "treetop_name": "Hematologic"
+            },
+            {
+              "branch_code": "Idiopathic",
+              "count": 0.0,
+              "label": "Idiopathic",
+              "mesh_total_count": 37.70833333,
+              "proportion": 0.0,
+              "terminology_total_count": 37.70833333,
+              "treetop": "Idiopathic",
+              "treetop_name": "Idiopathic"
+            },
+            {
+              "branch_code": "Immune",
+              "count": 0.0,
+              "label": "Immune",
+              "mesh_total_count": 12.14166667,
+              "proportion": 0.0,
+              "terminology_total_count": 12.14166667,
+              "treetop": "Immune",
+              "treetop_name": "Immune"
+            },
+            {
+              "branch_code": "Infectious and post-infectious",
+              "count": 0.0,
+              "label": "Infectious and post-infectious",
+              "mesh_total_count": 67.04444444,
+              "proportion": 0.0,
+              "terminology_total_count": 67.04444444,
+              "treetop": "Infectious and post-infectious",
+              "treetop_name": "Infectious and post-infectious"
+            },
+            {
+              "branch_code": "Inflammatory",
+              "count": 0.0,
+              "label": "Inflammatory",
+              "mesh_total_count": 27.29166667,
+              "proportion": 0.0,
+              "terminology_total_count": 27.29166667,
+              "treetop": "Inflammatory",
+              "treetop_name": "Inflammatory"
+            },
+            {
+              "branch_code": "Integumentary",
+              "count": 0.0,
+              "label": "Integumentary",
+              "mesh_total_count": 16.79166667,
+              "proportion": 0.0,
+              "terminology_total_count": 16.79166667,
+              "treetop": "Integumentary",
+              "treetop_name": "Integumentary"
+            },
+            {
+              "branch_code": "Metabolic and nutritional",
+              "count": 0.0,
+              "label": "Metabolic and nutritional",
+              "mesh_total_count": 23.12460317,
+              "proportion": 0.0,
+              "terminology_total_count": 23.12460317,
+              "treetop": "Metabolic and nutritional",
+              "treetop_name": "Metabolic and nutritional"
+            },
+            {
+              "branch_code": "Musculoskeletal",
+              "count": 0.0,
+              "label": "Musculoskeletal",
+              "mesh_total_count": 11.875,
+              "proportion": 0.0,
+              "terminology_total_count": 11.875,
+              "treetop": "Musculoskeletal",
+              "treetop_name": "Musculoskeletal"
+            },
+            {
+              "branch_code": "Nervous system",
+              "count": 0.0,
+              "label": "Nervous system",
+              "mesh_total_count": 8.06944444,
+              "proportion": 0.0,
+              "terminology_total_count": 8.06944444,
+              "treetop": "Nervous system",
+              "treetop_name": "Nervous system"
+            },
+            {
+              "branch_code": "Psychiatric and sleep",
+              "count": 0.0,
+              "label": "Psychiatric and sleep",
+              "mesh_total_count": 3.5,
+              "proportion": 0.0,
+              "terminology_total_count": 3.5,
+              "treetop": "Psychiatric and sleep",
+              "treetop_name": "Psychiatric and sleep"
+            },
+            {
+              "branch_code": "Reproductive",
+              "count": 0.0,
+              "label": "Reproductive",
+              "mesh_total_count": 2.33333333,
+              "proportion": 0.0,
+              "terminology_total_count": 2.33333333,
+              "treetop": "Reproductive",
+              "treetop_name": "Reproductive"
+            },
+            {
+              "branch_code": "Respiratory",
+              "count": 0.0,
+              "label": "Respiratory",
+              "mesh_total_count": 9.46111111,
+              "proportion": 0.0,
+              "terminology_total_count": 9.46111111,
+              "treetop": "Respiratory",
+              "treetop_name": "Respiratory"
+            },
+            {
+              "branch_code": "Syndromic",
+              "count": 0.0,
+              "label": "Syndromic",
+              "mesh_total_count": 86.1547619,
+              "proportion": 0.0,
+              "terminology_total_count": 86.1547619,
+              "treetop": "Syndromic",
+              "treetop_name": "Syndromic"
+            },
+            {
+              "branch_code": "Ulcer disease",
+              "count": 0.0,
+              "label": "Ulcer disease",
+              "mesh_total_count": 2.16666667,
+              "proportion": 0.0,
+              "terminology_total_count": 2.16666667,
+              "treetop": "Ulcer disease",
+              "treetop_name": "Ulcer disease"
+            },
+            {
+              "branch_code": "Urinary",
+              "count": 0.0,
+              "label": "Urinary",
+              "mesh_total_count": 2.0,
+              "proportion": 0.0,
+              "terminology_total_count": 2.0,
+              "treetop": "Urinary",
+              "treetop_name": "Urinary"
+            },
+            {
+              "branch_code": "Visual system",
+              "count": 0.0,
+              "label": "Visual system",
+              "mesh_total_count": 10.62777778,
+              "proportion": 0.0,
+              "terminology_total_count": 10.62777778,
+              "treetop": "Visual system",
+              "treetop_name": "Visual system"
+            }
+          ]
         },
         "chemical": {
           "details": {
@@ -48876,10 +50181,271 @@
             "resource_aliases": [
               "MONDO"
             ],
-            "term_overrides_path": null,
+            "term_overrides_path": "configs/MONDO_disease_mappings.yaml",
             "terminology": "mondo"
           },
-          "value": []
+          "value": [
+            {
+              "branch_code": "Auditory and otorhinolaryngologic",
+              "count": 0.0,
+              "label": "Auditory and otorhinolaryngologic",
+              "mesh_total_count": 8.95,
+              "proportion": 0.0,
+              "terminology_total_count": 8.95,
+              "treetop": "Auditory and otorhinolaryngologic",
+              "treetop_name": "Auditory and otorhinolaryngologic"
+            },
+            {
+              "branch_code": "Breast",
+              "count": 0.0,
+              "label": "Breast",
+              "mesh_total_count": 2.75,
+              "proportion": 0.0,
+              "terminology_total_count": 2.75,
+              "treetop": "Breast",
+              "treetop_name": "Breast"
+            },
+            {
+              "branch_code": "Cancer and benign tumors",
+              "count": 0.0,
+              "label": "Cancer and benign tumors",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cancer and benign tumors",
+              "treetop_name": "Cancer and benign tumors"
+            },
+            {
+              "branch_code": "Cardiovascular",
+              "count": 0.0,
+              "label": "Cardiovascular",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Cardiovascular",
+              "treetop_name": "Cardiovascular"
+            },
+            {
+              "branch_code": "Connective tissue",
+              "count": 0.0,
+              "label": "Connective tissue",
+              "mesh_total_count": 1.0,
+              "proportion": 0.0,
+              "terminology_total_count": 1.0,
+              "treetop": "Connective tissue",
+              "treetop_name": "Connective tissue"
+            },
+            {
+              "branch_code": "Developmental, congenital, and perinatal",
+              "count": 0.0,
+              "label": "Developmental, congenital, and perinatal",
+              "mesh_total_count": 21.08611111,
+              "proportion": 0.0,
+              "terminology_total_count": 21.08611111,
+              "treetop": "Developmental, congenital, and perinatal",
+              "treetop_name": "Developmental, congenital, and perinatal"
+            },
+            {
+              "branch_code": "Digestive and oral",
+              "count": 0.0,
+              "label": "Digestive and oral",
+              "mesh_total_count": 18.2880291,
+              "proportion": 0.0,
+              "terminology_total_count": 18.2880291,
+              "treetop": "Digestive and oral",
+              "treetop_name": "Digestive and oral"
+            },
+            {
+              "branch_code": "Endocrine",
+              "count": 0.0,
+              "label": "Endocrine",
+              "mesh_total_count": 6.875,
+              "proportion": 0.0,
+              "terminology_total_count": 6.875,
+              "treetop": "Endocrine",
+              "treetop_name": "Endocrine"
+            },
+            {
+              "branch_code": "Extrinsic, toxic, and occupational",
+              "count": 0.0,
+              "label": "Extrinsic, toxic, and occupational",
+              "mesh_total_count": 12.83333333,
+              "proportion": 0.0,
+              "terminology_total_count": 12.83333333,
+              "treetop": "Extrinsic, toxic, and occupational",
+              "treetop_name": "Extrinsic, toxic, and occupational"
+            },
+            {
+              "branch_code": "Genetic and genomic",
+              "count": 0.0,
+              "label": "Genetic and genomic",
+              "mesh_total_count": 401.07827381,
+              "proportion": 0.0,
+              "terminology_total_count": 401.07827381,
+              "treetop": "Genetic and genomic",
+              "treetop_name": "Genetic and genomic"
+            },
+            {
+              "branch_code": "Hematologic",
+              "count": 0.0,
+              "label": "Hematologic",
+              "mesh_total_count": 14.275,
+              "proportion": 0.0,
+              "terminology_total_count": 14.275,
+              "treetop": "Hematologic",
+              "treetop_name": "Hematologic"
+            },
+            {
+              "branch_code": "Idiopathic",
+              "count": 0.0,
+              "label": "Idiopathic",
+              "mesh_total_count": 37.70833333,
+              "proportion": 0.0,
+              "terminology_total_count": 37.70833333,
+              "treetop": "Idiopathic",
+              "treetop_name": "Idiopathic"
+            },
+            {
+              "branch_code": "Immune",
+              "count": 0.0,
+              "label": "Immune",
+              "mesh_total_count": 12.14166667,
+              "proportion": 0.0,
+              "terminology_total_count": 12.14166667,
+              "treetop": "Immune",
+              "treetop_name": "Immune"
+            },
+            {
+              "branch_code": "Infectious and post-infectious",
+              "count": 0.0,
+              "label": "Infectious and post-infectious",
+              "mesh_total_count": 67.04444444,
+              "proportion": 0.0,
+              "terminology_total_count": 67.04444444,
+              "treetop": "Infectious and post-infectious",
+              "treetop_name": "Infectious and post-infectious"
+            },
+            {
+              "branch_code": "Inflammatory",
+              "count": 0.0,
+              "label": "Inflammatory",
+              "mesh_total_count": 27.29166667,
+              "proportion": 0.0,
+              "terminology_total_count": 27.29166667,
+              "treetop": "Inflammatory",
+              "treetop_name": "Inflammatory"
+            },
+            {
+              "branch_code": "Integumentary",
+              "count": 0.0,
+              "label": "Integumentary",
+              "mesh_total_count": 16.79166667,
+              "proportion": 0.0,
+              "terminology_total_count": 16.79166667,
+              "treetop": "Integumentary",
+              "treetop_name": "Integumentary"
+            },
+            {
+              "branch_code": "Metabolic and nutritional",
+              "count": 0.0,
+              "label": "Metabolic and nutritional",
+              "mesh_total_count": 23.12460317,
+              "proportion": 0.0,
+              "terminology_total_count": 23.12460317,
+              "treetop": "Metabolic and nutritional",
+              "treetop_name": "Metabolic and nutritional"
+            },
+            {
+              "branch_code": "Musculoskeletal",
+              "count": 0.0,
+              "label": "Musculoskeletal",
+              "mesh_total_count": 11.875,
+              "proportion": 0.0,
+              "terminology_total_count": 11.875,
+              "treetop": "Musculoskeletal",
+              "treetop_name": "Musculoskeletal"
+            },
+            {
+              "branch_code": "Nervous system",
+              "count": 0.0,
+              "label": "Nervous system",
+              "mesh_total_count": 8.06944444,
+              "proportion": 0.0,
+              "terminology_total_count": 8.06944444,
+              "treetop": "Nervous system",
+              "treetop_name": "Nervous system"
+            },
+            {
+              "branch_code": "Psychiatric and sleep",
+              "count": 0.0,
+              "label": "Psychiatric and sleep",
+              "mesh_total_count": 3.5,
+              "proportion": 0.0,
+              "terminology_total_count": 3.5,
+              "treetop": "Psychiatric and sleep",
+              "treetop_name": "Psychiatric and sleep"
+            },
+            {
+              "branch_code": "Reproductive",
+              "count": 0.0,
+              "label": "Reproductive",
+              "mesh_total_count": 2.33333333,
+              "proportion": 0.0,
+              "terminology_total_count": 2.33333333,
+              "treetop": "Reproductive",
+              "treetop_name": "Reproductive"
+            },
+            {
+              "branch_code": "Respiratory",
+              "count": 0.0,
+              "label": "Respiratory",
+              "mesh_total_count": 9.46111111,
+              "proportion": 0.0,
+              "terminology_total_count": 9.46111111,
+              "treetop": "Respiratory",
+              "treetop_name": "Respiratory"
+            },
+            {
+              "branch_code": "Syndromic",
+              "count": 0.0,
+              "label": "Syndromic",
+              "mesh_total_count": 86.1547619,
+              "proportion": 0.0,
+              "terminology_total_count": 86.1547619,
+              "treetop": "Syndromic",
+              "treetop_name": "Syndromic"
+            },
+            {
+              "branch_code": "Ulcer disease",
+              "count": 0.0,
+              "label": "Ulcer disease",
+              "mesh_total_count": 2.16666667,
+              "proportion": 0.0,
+              "terminology_total_count": 2.16666667,
+              "treetop": "Ulcer disease",
+              "treetop_name": "Ulcer disease"
+            },
+            {
+              "branch_code": "Urinary",
+              "count": 0.0,
+              "label": "Urinary",
+              "mesh_total_count": 2.0,
+              "proportion": 0.0,
+              "terminology_total_count": 2.0,
+              "treetop": "Urinary",
+              "treetop_name": "Urinary"
+            },
+            {
+              "branch_code": "Visual system",
+              "count": 0.0,
+              "label": "Visual system",
+              "mesh_total_count": 10.62777778,
+              "proportion": 0.0,
+              "terminology_total_count": 10.62777778,
+              "treetop": "Visual system",
+              "treetop_name": "Visual system"
+            }
+          ]
         },
         "chemical": {
           "details": {
