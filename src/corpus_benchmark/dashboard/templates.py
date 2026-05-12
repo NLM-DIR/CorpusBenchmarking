@@ -58,14 +58,14 @@ HTML = """\
   .topic-heatmap{{min-width:760px;font-size:12px}}
   .hm-head,.hm-row,.hm-total{{display:grid;align-items:stretch}}
   .hm-head{{position:sticky;top:0;z-index:1;background:#f1efe8;border-bottom:1.5px solid #ccc}}
-  .hm-corner,.hm-col,.hm-topic,.hm-cell,.hm-total-cell,.hm-total>div:first-child{{padding:8px 10px}}
+  .hm-corner,.hm-col,.hm-topic,.hm-total-cell,.hm-total>div:first-child{{padding:5px 10px}}
   .hm-corner,.hm-col{{font-weight:500;color:#555;line-height:1.25}}
   .hm-col{{text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
   .hm-row{{border-bottom:.5px solid #eee}}
   .hm-row:hover{{background:#fafafa}}
   .hm-topic{{display:flex;align-items:center;color:#333;min-width:0}}
-  .hm-cell{{display:flex;align-items:center;justify-content:center;margin:3px;border-radius:4px;
-            color:#111;font-variant-numeric:tabular-nums;min-height:32px}}
+  .hm-cell{{display:flex;align-items:center;justify-content:center;margin:2px 3px;border-radius:4px;
+            color:#111;font-variant-numeric:tabular-nums;min-height:24px;padding:2px 10px}}
   .hm-zero{{background:#f2f1ed;color:#aaa;font-weight:400}}
   .hm-total{{background:#f8f7f4;border-top:1.5px solid #ccc;font-weight:600;color:#555}}
   .hm-total-cell{{text-align:center;font-variant-numeric:tabular-nums}}
