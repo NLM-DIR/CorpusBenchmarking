@@ -1,16 +1,21 @@
 name: CellLink
 
+cache_filename: corpora/CellLink.json.gz
+
+acquisition:
+  source_url: "https://zenodo.org/api/records/18090009/files/data.zip/content"
+  format: "zip"
+
 loader:
   name: bioc_xml
   params:
     paths:
-      train: corpora/CellLink/train.xml 
-      dev: corpora/CellLink/val.xml 
-      test: corpora/CellLink/test.xml 
+      train: corpora/CellLink/splits/NLM-CellLink-corpus-train.xml  
+      dev: corpora/CellLink/splits/NLM-CellLink-corpus-val.xml  
     label_infon_key: type
     id_format_list: [[";", "distributive", "True"], [",", "related_set", "True"]]
     qualifier_map: {"(skos:exact)": "exact", "(skos:related)": "related"}
-    nil_labels: { "-" }
+    nil_labels: [ "-" ]
     doc_id_map:
         pmid: ["__HEADER_INFON__", "article-id_pmid"]
         pmcid: ["__HEADER_INFON__", "article-id_pmc"]

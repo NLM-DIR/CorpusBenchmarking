@@ -1,13 +1,16 @@
 name: AnatEM
 
+cache_filename: corpora/AnatEM.json.gz
+
+acquisition:
+  source_url: "https://github.com/openbiocorpora/anatem/archive/refs/heads/master.zip"
+  format: "zip"
+
+
 loader:
-  name: bioc_xml
+  name: AnatEM_standoff
   params:
     paths:
-      train: corpora/AnatEM/trainData_allEntities.xml 
-      dev: corpora/AnatEM/develData_allEntities.xml 
-      test: corpora/AnatEM/testData_allEntities.xml 
-    label_infon_key: type
-    doc_id_map:
-        pmid: ["__HEADER_INFON__", "article-id_pmid"]
-        pmcid: ["__HEADER_INFON__", "article-id_pmc"]
+      train: corpora/AnatEM/anatem-master/original-data/standoff/train
+      dev: corpora/AnatEM/anatem-master/original-data/standoff/devel
+      test: corpora/AnatEM/anatem-master/original-data/standoff/test

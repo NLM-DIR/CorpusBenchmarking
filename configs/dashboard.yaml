@@ -1,0 +1,66 @@
+entity_scopes:
+  all:
+    label: All annotations
+    include_all: true
+    description: "Every annotation label reported by the corpus."
+  disease:
+    label: Diseases
+    labels:
+      - Cancer
+      - Disease
+      - Pathological_formation
+    description: "Disease-like labels. CRAFT Disease is sourced from MONDO annotations, so the scope is comparable to disease corpora but not identical to MeSH disease entity typing."
+  chemical:
+    label: Chemicals
+    labels:
+      - Chemical
+      - chemical
+    description: "Chemical labels across corpora."
+  cell:
+    label: Cells and cell states
+    labels:
+      - Cell
+      - cell_line
+      - cell_type
+      - cell_hetero
+      - cell_phenotype
+      - cell_vague
+    description: "Cell, cell line, cell type, and CellLink cell-state labels."
+  anatomy:
+    label: Anatomy
+    labels:
+      - Anatomical_system
+      - Cellular_component
+      - Developing_anatomical_structure
+      - Immaterial_anatomical_entity
+      - Multi-tissue_structure
+      - Organ
+      - Organism_subdivision
+      - Organism_substance
+      - Tissue
+      - anatomical_entity
+      - anatomy
+    description: "Anatomical entities and related anatomical components."
+  gene_protein_sequence:
+    label: Genes, proteins, and sequences
+    labels:
+      - DNA
+      - Gene
+      - RNA
+      - Sequence
+      - gene
+      - protein
+    description: "Gene, protein, nucleic acid, and sequence labels."
+  species:
+    label: Species
+    labels:
+      - species
+    description: "Organism/species labels."
+  function_process:
+    label: Functions and processes
+    labels:
+      - Biological_process
+      - GO term
+      - molecular_function
+      - molecular_process
+    description: "GO-like biological function and process labels."

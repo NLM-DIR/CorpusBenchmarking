@@ -1,3 +1,8 @@
+logging:
+    level: INFO
+
+entity_scope_config: configs/dashboard.yaml
+
 corpora:
     AnatEM: configs/AnatEM.yaml
     BC5CDR: configs/BC5CDR.yaml
@@ -43,9 +48,9 @@ bundles:
   CellLink_train:
     - corpus_name: CellLink
       subset_name: train
-  CellLink_test:
+  CellLink_dev:
     - corpus_name: CellLink
-      subset_name: test
+      subset_name: dev
   JNLPBA_train:
     - corpus_name: JNLPBA
       subset_name: train
@@ -77,7 +82,7 @@ comparison_suites:
   CRAFT_TrainVsTest:
     - ["CRAFT_train", "CRAFT_test"]
   CellLink_TrainVsTest:
-    - ["CellLink_train", "CellLink_test"]
+    - ["CellLink_train", "CellLink_dev"]
   JNLPBA_TrainVsTest:
     - ["JNLPBA_train", "JNLPBA_test"]
   NCBI_Disease_TrainVsTest:
@@ -194,6 +199,5 @@ metrics:
   - result_name: NLM_Chem_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: NLM_Chem_TrainVsTest
-
 
 output_path: "output/overlap_stats.json"

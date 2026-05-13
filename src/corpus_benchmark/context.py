@@ -2,18 +2,22 @@ from __future__ import annotations
 
 from collections import Counter
 from dataclasses import dataclass, field
-from typing import Any, Callable
+import logging
+from typing import Any, Callable, Dict
 
 from corpus_benchmark.models.corpus import CorpusSubset, Document, Passage, Annotation, IdentifierLink
 from corpus_benchmark.models.filters import AnnotationFilter
-from corpus_benchmark.parsing import extract_sentences_from_texts, extract_tokens_from_texts
-from src.corpus_benchmark.metadata_handler import MetadataCache, PMCFetcher, PubMedFetcher
+from corpus_benchmark.workspace import GlobalWorkspace
+from utils.text_utils import extract_tokens_from_texts, extract_sentences_from_texts
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass(slots=True)
 class BenchmarkContext:
     """Shared context for metrics, including a cache for expensive computations."""
 
+    workspace: GlobalWorkspace
     cache: dict[str, Any] = field(default_factory=dict)
     usage_counts: Counter[str:int] = field(default_factory=Counter)
     annotation_filters: dict[str, AnnotationFilter] = field(default_factory=dict)
@@ -29,14 +33,25 @@ class BenchmarkContext:
     def get_or_compute(self, key: str, factory: Callable[[], Any]) -> Any:
         self.usage_counts[key] += 1
         if key not in self.cache:
+            logger.debug("Cache miss for %s", key)
             self.cache[key] = factory()
+        else:
+            logger.debug("Cache hit for %s", key)
         return self.cache[key]
+
+
+def get_workspace(target: MetricTarget) -> GlobalWorkspace:
+    """Extracts the global workspace from the target's first component context."""
+    if not target.components:
+        raise ValueError("Cannot extract workspace from an empty MetricTarget")
+    return target.components[0][1].workspace
 
 
 @dataclass(slots=True)
 class MetricTarget:
     """Wraps multiple CorpusSubsets and their Contexts to appear as a single target."""
 
+    # TODO Move workspace out of BenchmarkContext to here
     name: str
     components: list[tuple[CorpusSubset, BenchmarkContext]] = field(default_factory=list)
 
@@ -72,9 +87,7 @@ def get_sentences(target: MetricTarget) -> list[str]:
     for subset, context in target.components:
         subset_sentences = context.get_or_compute(
             f"sentences({subset.name})",
-            lambda: extract_sentences_from_texts(
-                [passage.text for passage in get_passages(SingleMetricTarget(subset, context))]
-            ),
+            lambda: extract_sentences_from_texts([passage.text for passage in get_passages(SingleMetricTarget(subset, context))]),
         )
         sentences.extend(subset_sentences)
     return sentences
@@ -85,9 +98,7 @@ def get_tokens(target: MetricTarget) -> list[str]:
     for subset, context in target.components:
         subset_tokens = context.get_or_compute(
             f"tokens({subset.name})",
-            lambda: extract_tokens_from_texts(
-                [passage.text for passage in get_passages(SingleMetricTarget(subset, context))]
-            ),
+            lambda: extract_tokens_from_texts([passage.text for passage in get_passages(SingleMetricTarget(subset, context))]),
         )
         tokens.extend(subset_tokens)
     return tokens
@@ -100,30 +111,18 @@ def get_annotations(target: MetricTarget, annotation_filter_name: str | None = N
         if annotation_filter is None:
             subset_annotations = context.get_or_compute(
                 f"annotations({subset.name}, {annotation_filter_name})",
-                lambda: [
-                    annotation
-                    for passage in get_passages(SingleMetricTarget(subset, context))
-                    for annotation in passage.annotations
-                ],
+                lambda: [annotation for passage in get_passages(SingleMetricTarget(subset, context)) for annotation in passage.annotations],
             )
         else:
             subset_annotations = context.get_or_compute(
                 f"annotations({subset.name}, {annotation_filter_name})",
-                lambda: annotation_filter.filter_annotations(
-                    [
-                        annotation
-                        for passage in get_passages(SingleMetricTarget(subset, context))
-                        for annotation in passage.annotations
-                    ]
-                ),
+                lambda: annotation_filter.filter_annotations([annotation for passage in get_passages(SingleMetricTarget(subset, context)) for annotation in passage.annotations]),
             )
         annotations.extend(subset_annotations)
     return annotations
 
 
-def _internal_get_annotations_per_document(
-    subset: CorpusSubset, context: BenchmarkContext, annotation_filter_name: str | None = None
-) -> list[Annotation]:
+def _internal_get_annotations_per_document(subset: CorpusSubset, context: BenchmarkContext, annotation_filter_name: str | None = None) -> list[Annotation]:
     annotations_per_document = []
     annotation_filter = context.get_filter(annotation_filter_name)
     for document in get_documents(SingleMetricTarget(subset, context)):
@@ -151,10 +150,7 @@ def get_labels(target: MetricTarget, annotation_filter_name: str | None = None) 
     for subset, context in target.components:
         subset_labels = context.get_or_compute(
             f"labels({subset.name}, {annotation_filter_name})",
-            lambda: [
-                annotation.label
-                for annotation in get_annotations(SingleMetricTarget(subset, context), annotation_filter_name)
-            ],
+            lambda: [annotation.label for annotation in get_annotations(SingleMetricTarget(subset, context), annotation_filter_name)],
         )
         labels.extend(subset_labels)
     return labels
@@ -165,10 +161,7 @@ def get_spans(target: MetricTarget, annotation_filter_name: str | None = None) -
     for subset, context in target.components:
         subset_spans = context.get_or_compute(
             f"spans({subset.name}, {annotation_filter_name})",
-            lambda: [
-                annotation.spans
-                for annotation in get_annotations(SingleMetricTarget(subset, context), annotation_filter_name)
-            ],
+            lambda: [annotation.spans for annotation in get_annotations(SingleMetricTarget(subset, context), annotation_filter_name)],
         )
         spans.extend(subset_spans)
     return spans
@@ -179,10 +172,7 @@ def get_mentions(target: MetricTarget, annotation_filter_name: str | None = None
     for subset, context in target.components:
         subset_mentions = context.get_or_compute(
             f"mentions({subset.name}, {annotation_filter_name})",
-            lambda: [
-                annotation.text
-                for annotation in get_annotations(SingleMetricTarget(subset, context), annotation_filter_name)
-            ],
+            lambda: [annotation.text for annotation in get_annotations(SingleMetricTarget(subset, context), annotation_filter_name)],
         )
         mentions.extend(subset_mentions)
     return mentions
@@ -193,9 +183,7 @@ def get_mention_tokens(target: MetricTarget, annotation_filter_name: str | None 
     for subset, context in target.components:
         subset_mention_tokens = context.get_or_compute(
             f"mention_tokens({subset.name}, {annotation_filter_name})",
-            lambda: extract_tokens_from_texts(
-                get_mentions(SingleMetricTarget(subset, context), annotation_filter_name)
-            ),
+            lambda: extract_tokens_from_texts(get_mentions(SingleMetricTarget(subset, context), annotation_filter_name)),
         )
         mention_tokens.extend(subset_mention_tokens)
     return mention_tokens
@@ -221,10 +209,7 @@ def get_identifiers(target: MetricTarget, annotation_filter_name: str | None = N
     for subset, context in target.components:
         subset_identifiers = context.get_or_compute(
             f"identifiers({subset.name}, {annotation_filter_name})",
-            lambda: [
-                identifier_link.identifier
-                for identifier_link in get_identifier_links(SingleMetricTarget(subset, context), annotation_filter_name)
-            ],
+            lambda: [identifier_link.identifier for identifier_link in get_identifier_links(SingleMetricTarget(subset, context), annotation_filter_name)],
         )
         identifiers.extend(subset_identifiers)
     return identifiers
@@ -235,10 +220,7 @@ def get_identifier_resources(target: MetricTarget, annotation_filter_name: str |
     for subset, context in target.components:
         subset_resources = context.get_or_compute(
             f"identifier_resources({subset.name}, {annotation_filter_name})",
-            lambda: [
-                identifier_link.resource
-                for identifier_link in get_identifier_links(SingleMetricTarget(subset, context), annotation_filter_name)
-            ],
+            lambda: [identifier_link.resource for identifier_link in get_identifier_links(SingleMetricTarget(subset, context), annotation_filter_name)],
         )
         resources.extend(subset_resources)
     return resources
@@ -249,45 +231,20 @@ def get_match_types(target: MetricTarget, annotation_filter_name: str | None = N
     for subset, context in target.components:
         subset_match_types = context.get_or_compute(
             f"match_types({subset.name}, {annotation_filter_name})",
-            lambda: [
-                identifier_link.match_type
-                for identifier_link in get_identifier_links(SingleMetricTarget(subset, context), annotation_filter_name)
-            ],
+            lambda: [identifier_link.match_type for identifier_link in get_identifier_links(SingleMetricTarget(subset, context), annotation_filter_name)],
         )
         match_types.extend(subset_match_types)
     return match_types
 
 
-def get_loaded_cache(target: MetricTarget, cache_path: str) -> MetadataCache:
-    cache = MetadataCache(cache_path)
-    documents = get_documents(target)
-
-    missing_pmids = []
-    missing_pmcids = []
-
-    # 1. Sort IDs into 'found in cache' or 'needs fetching'
-    for doc in documents:
-        pmid = doc.infons.get("pmid")
-        pmcid = doc.infons.get("pmcid")
-
-        if pmid and not cache.get_by_pmid(pmid):
-            missing_pmids.append(pmid)
-        elif pmcid and not cache.get_by_pmcid(pmcid):
-            missing_pmcids.append(pmcid)
-
-    print(f"Target {target.name} metadata: pmid missing = {len(missing_pmids)} pmcid missing = {len(missing_pmcids)}")
-
-    # 2. Fetch missing PubMed metadata
-    if missing_pmids:
-        pubmed_fetcher = PubMedFetcher()
-        new_records = pubmed_fetcher.fetch(list(set(missing_pmids)))
-        cache.add_records(new_records)
-
-    # 3. Fetch missing PMC metadata (for docs that don't have a PMID or weren't found)
-    # Re-check PMCIDs after PubMed fetch in case a PMID fetch filled a PMC record
-    still_missing_pmcids = [p for p in set(missing_pmcids) if not cache.get_by_pmcid(p)]
-    if still_missing_pmcids:
-        pmc_fetcher = PMCFetcher()
-        new_records = pmc_fetcher.fetch(still_missing_pmcids)
-        cache.add_records(new_records)
-    return cache
+def get_metadata_for_target(target: MetricTarget) -> Dict[str, Dict[str, Any]]:
+    """
+    Retrieves metadata for all documents in a target.
+    Returns a dictionary mapping document_id to its metadata record.
+    """
+    workspace = get_workspace(target)
+    metadata = dict()
+    for subset, context in target.components:
+        subset_metadata = context.get_or_compute(f"metadata({subset.name})", lambda: workspace.get_document_metadata(subset.documents))
+        metadata.update(subset_metadata)
+    return metadata

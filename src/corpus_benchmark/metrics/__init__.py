@@ -1,5 +1,10 @@
 """Benchmark metrics."""
 
+import logging
+
+logger = logging.getLogger(__name__)
+logger.debug("Imported corpus_benchmark.metrics package")
+
 # Import metrics so they register themselves.
 from corpus_benchmark.metrics.basic_counts import (
     document_count,
@@ -12,6 +17,9 @@ from corpus_benchmark.metrics.basic_counts import (
 )
 from corpus_benchmark.metrics.basic_stats import (
     passages_per_document_stats,
+    annotations_per_document_stats,
+    annotations_per_1000_tokens_stats,
+    unique_mentions_per_document_stats,
     unique_identifiers_per_document_stats,
     spans_per_annotation_stats,
     identifiers_per_annotation_stats,
@@ -37,24 +45,31 @@ from corpus_benchmark.metrics.unique_counts import (
     unique_mention_tokens,
     unique_identifiers,
 )
-from src.corpus_benchmark.metrics.annotation_distributions import (
+from corpus_benchmark.metrics.annotation_distributions import (
     label_distribution,
     identifier_resource_distribution,
     match_type_distribution,
 )
 
-from src.corpus_benchmark.metrics.overlaps import (
+from corpus_benchmark.metrics.overlaps import (
     token_overlap,
     mention_overlap,
     mention_token_overlap,
     identifier_overlap,
 )
 
-from src.corpus_benchmark.metrics.metadata_distribution import (
+from corpus_benchmark.metrics.metadata_distribution import (
+    article_MeSH_topic_distribution,
     journal_distribution,
+    journal_MeSH_topic_distribution,
+    journal_topic_distribution,
     publication_year_distribution,
 )
 
+from corpus_benchmark.metrics.terminology_coverage import (
+    high_level_concept_counts,
+    concept_depth_counts,
+)
 
 __all__ = [
     "document_count",
@@ -65,6 +80,9 @@ __all__ = [
     "mention_token_count",
     "identifier_count",
     "passages_per_document_stats",
+    "annotations_per_document_stats",
+    "annotations_per_1000_tokens_stats",
+    "unique_mentions_per_document_stats",
     "unique_identifiers_per_document_stats",
     "spans_per_annotation_stats",
     "identifiers_per_annotation_stats",
@@ -94,6 +112,11 @@ __all__ = [
     "mention_overlap",
     "mention_token_overlap",
     "identifier_overlap",
+    "article_MeSH_topic_distribution",
     "journal_distribution",
+    "journal_MeSH_topic_distribution",
+    "journal_topic_distribution",
     "publication_year_distribution",
+    "high_level_concept_counts",
+    "concept_depth_counts",
 ]

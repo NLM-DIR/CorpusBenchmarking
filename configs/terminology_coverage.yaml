@@ -1,0 +1,126 @@
+logging:
+    level: INFO
+
+entity_scope_config: configs/dashboard.yaml
+
+terminologies:
+  mesh:
+    name: mesh_xml
+    params:
+      year: 2026
+      resource_aliases: ["MESH", "MeSH", "mesh"]
+  cell_ontology:
+    name: obo
+    params:
+      name: cell_ontology
+      url: https://purl.obolibrary.org/obo/cl.obo
+      prefix: CL
+      resource_aliases: ["CL", "cell"]
+  mondo:
+    name: obo
+    params:
+      name: mondo
+      url: https://purl.obolibrary.org/obo/mondo.obo
+      prefix: MONDO
+      resource_aliases: ["MONDO"]
+  chebi:
+    name: obo
+    params:
+      name: chebi
+      url: https://purl.obolibrary.org/obo/chebi.obo
+      prefix: CHEBI
+      resource_aliases: ["CHEBI"]
+
+corpora:
+    BC5CDR: configs/BC5CDR.yaml
+    BioID: configs/BioID.yaml
+    CRAFT: configs/CRAFT.yaml
+    CellLink: configs/CellLink.yaml
+    NCBI_Disease: configs/NCBI_Disease.yaml
+    NLM_Chem: configs/NLM_Chem.yaml
+
+bundles:
+  BC5CDR_corpus:
+    - corpus_name: BC5CDR
+      subset_name: train
+    - corpus_name: BC5CDR
+      subset_name: dev
+    - corpus_name: BC5CDR
+      subset_name: test
+  BioID_corpus:
+    - corpus_name: BioID
+      subset_name: train
+    - corpus_name: BioID
+      subset_name: dev
+  CRAFT_corpus:
+    - corpus_name: CRAFT
+      subset_name: train
+    - corpus_name: CRAFT
+      subset_name: dev
+    - corpus_name: CRAFT
+      subset_name: test
+  CellLink_corpus:
+    - corpus_name: CellLink
+      subset_name: train
+    - corpus_name: CellLink
+      subset_name: dev
+  NCBI_Disease_corpus:
+    - corpus_name: NCBI_Disease
+      subset_name: train
+    - corpus_name: NCBI_Disease
+      subset_name: dev
+    - corpus_name: NCBI_Disease
+      subset_name: test
+  NLM_Chem_corpus:
+    - corpus_name: NLM_Chem
+      subset_name: train
+    - corpus_name: NLM_Chem
+      subset_name: dev
+    - corpus_name: NLM_Chem
+      subset_name: test
+
+metrics:
+  - result_name: mesh_high_level_concept_counts
+    metric_name: high_level_concept_counts
+    target_bundles: &terminology_bundles ["BC5CDR_corpus", "BioID_corpus", "CRAFT_corpus", "CellLink_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    params:
+      terminology_name: mesh
+      term_override_paths_by_entity_scope:
+        disease: configs/MeSH_disease_mappings.yaml
+        chemical: configs/MeSH_chemical_mappings.yaml
+  - result_name: mesh_concept_depth_counts
+    metric_name: concept_depth_counts
+    target_bundles: *terminology_bundles
+    params: {terminology_name: mesh}
+  - result_name: cell_ontology_high_level_concept_counts
+    metric_name: high_level_concept_counts
+    target_bundles: *terminology_bundles
+    params:
+      terminology_name: cell_ontology
+      term_override_paths_by_entity_scope:
+        cell: configs/cell_ontology_mappings.yaml
+  - result_name: cell_ontology_concept_depth_counts
+    metric_name: concept_depth_counts
+    target_bundles: *terminology_bundles
+    params: {terminology_name: cell_ontology}
+  - result_name: mondo_high_level_concept_counts
+    metric_name: high_level_concept_counts
+    target_bundles: *terminology_bundles
+    params:
+      terminology_name: mondo
+      term_override_paths_by_entity_scope:
+        disease: configs/MONDO_disease_mappings.yaml
+  - result_name: mondo_concept_depth_counts
+    metric_name: concept_depth_counts
+    target_bundles: *terminology_bundles
+    params: {terminology_name: mondo}
+  - result_name: chebi_high_level_concept_counts
+    metric_name: high_level_concept_counts
+    target_bundles: *terminology_bundles
+    params: {terminology_name: chebi}
+  - result_name: chebi_concept_depth_counts
+    metric_name: concept_depth_counts
+    target_bundles: *terminology_bundles
+    params: {terminology_name: chebi}
+
+output_path: "output/terminology_coverage_stats.json"

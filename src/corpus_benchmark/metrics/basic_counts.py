@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import logging
+
 from corpus_benchmark.context import (
     MetricTarget,
     get_documents,
@@ -12,6 +14,8 @@ from corpus_benchmark.context import (
 )
 from corpus_benchmark.registry import register_subset_metric
 from corpus_benchmark.results import SubsetMetricResult
+
+logger = logging.getLogger(__name__)
 
 
 @register_subset_metric("document_count")

@@ -1,5 +1,12 @@
 name: BC5CDR
 
+cache_filename: corpora/BC5CDR.json.gz
+
+acquisition:
+  source_url: "https://ftp.ncbi.nlm.nih.gov/pub/lu/BC5CDR/CDR_Data.zip"
+  format: "zip"
+  converter: "bc5cdr_converter"
+  
 loader:
   name: bioc_xml
   params:
@@ -11,7 +18,8 @@ loader:
     id_infon_key: MESH
     id_format_list: [["|", "distributive", "False"]]
     qualifier_map: {}
-    nil_labels: { -1 }
+    nil_labels: [ -1 ]
+    default_resource: MESH
     doc_id_map:
         pmid: "__DOCUMENT_ID__"
 

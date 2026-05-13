@@ -1,5 +1,11 @@
 name: NCBI_Disease
 
+cache_filename: corpora/NCBI_Disease.json.gz
+
+acquisition:
+  source_urls: [https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBItrainset_corpus.zip, "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBIdevelopset_corpus.zip", "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBItestset_corpus.zip"]
+  format: "zip"
+
 loader:
   name: pubtator
   params:
@@ -9,5 +15,6 @@ loader:
       test: corpora/NCBI_Disease/NCBItestset_corpus.txt
     id_format_list: [["+", "intersective", "False"], ["|", "distributive", "False"]]
     label_map: {"SpecificDisease": "Disease", "DiseaseClass": "Disease", "Modifier": "Disease", "CompositeMention": "Disease"}
+    default_resource: MESH
     doc_id_map:
         pmid: __DOCUMENT_ID__

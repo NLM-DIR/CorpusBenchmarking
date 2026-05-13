@@ -1,9 +1,15 @@
 name: JNLPBA
 
+cache_filename: corpora/JNLPBA.json.gz
+
+acquisition:
+  source_url: "https://github.com/spyysalo/jnlpba/archive/refs/heads/master.zip"
+  format: "zip"
+
 loader:
-  name: bioc_xml
+  name: JNLPBA_standoff
   params:
     paths:
-      train: corpora/JNLPBA/traindata_allentities.xml 
-      test: corpora/JNLPBA/testData_allEntities.xml 
-    label_infon_key: type
+      train: corpora/JNLPBA/jnlpba-master/standoff/train
+      test: corpora/JNLPBA/jnlpba-master/standoff/test
+    MUID_PMID_map_path: corpora/JNLPBA/jnlpba-master/conversion/MUID-PMID-map.txt 

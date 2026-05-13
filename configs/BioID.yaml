@@ -1,14 +1,29 @@
 name: BioID
 
+cache_filename: corpora/BioID.json.gz
+
+acquisition:
+  format: auto
+  source_urls:
+    - "https://ftp.ncbi.nlm.nih.gov/pub/lu/BC6-BioID/BioIDtraining_2.tar.gz"
+    - "https://ftp.ncbi.nlm.nih.gov/pub/lu/BC6-BioID/train_pmcids.txt"
+    - "https://ftp.ncbi.nlm.nih.gov/pub/lu/BC6-BioID/holdout_pmcids.txt"
+  converter: "bioid_converter"
+
 loader:
   name: bioc_xml
   params:
     paths:
-      train: corpora/BioID/training.xml 
-      dev: corpora/BioID/holdout.xml 
+      all: corpora/BioID/BioIDtraining_2/caption_bioc
     label_infon_key: type
     id_format_list: [[",", "distributive", "False"]]
     doc_id_map:
         doi: ["__DOCUMENT_INFON__", "doi"]
         pmcid: ["__DOCUMENT_INFON__", "pmc_id"]
+    split:
+      source: files
+      id_type: pmcid
+      files:
+        train: corpora/BioID/train_pmcids.txt
+        dev: corpora/BioID/holdout_pmcids.txt
 

@@ -1,5 +1,11 @@
 name: CHEMDNER
 
+cache_filename: corpora/CHEMDNER.json.gz
+
+acquisition:
+  source_url: "https://ftp.ncbi.nlm.nih.gov/pub/lu/BC7-NLM-Chem-track/BC7T2-CHEMDNER-corpus_v2.BioC.xml.gz"
+  format: "tar"
+
 loader:
   name: bioc_xml
   params:

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import statistics
 import math
 from collections import Counter, defaultdict
@@ -19,6 +20,9 @@ from corpus_benchmark.context import (
 )
 from corpus_benchmark.registry import register_subset_metric
 from corpus_benchmark.results import SubsetMetricResult
+from utils.text_utils import extract_tokens_from_texts, extract_sentences_from_texts
+
+logger = logging.getLogger(__name__)
 
 PRECISION = 8  # Number of decimal places
 
@@ -64,15 +68,37 @@ def passages_per_document_stats(target: MetricTarget, result_name: str) -> Subse
     )
 
 
-# TODO Add sentences per document
-# TODO Add sentences per passage
-# TODO Add tokens per document
-# TODO Add tokens per passage
-# TODO Add tokens per sentence
-# TODO Add tokens per mention
+@register_subset_metric("sentences_per_document_stats")
+def sentences_per_document_stats(target: MetricTarget, result_name: str) -> SubsetMetricResult:
+    counts = []
+    for document in get_documents(target):
+        sentences = extract_sentences_from_texts([passage.text for passage in document.passages])
+        counts.append(len(sentences))
+    stats, distribution = calculate_stats(counts)
+    return SubsetMetricResult(
+        result_name=result_name,
+        metric_name="sentences_per_document_stats",
+        value=stats,
+        subset_name=target.name,
+    )
 
 
-@register_subset_metric("annotations_per_document_stats")
+@register_subset_metric("tokens_per_document_stats")
+def tokens_per_document_stats(target: MetricTarget, result_name: str) -> SubsetMetricResult:
+    counts = []
+    for document in get_documents(target):
+        tokens = extract_tokens_from_texts([passage.text for passage in document.passages])
+        counts.append(len(tokens))
+    stats, distribution = calculate_stats(counts)
+    return SubsetMetricResult(
+        result_name=result_name,
+        metric_name="tokens_per_document_stats",
+        value=stats,
+        subset_name=target.name,
+    )
+
+
+@register_subset_metric("annotations_per_document_stats", supports_annotation_scope=True)
 def annotations_per_document_stats(
     target: MetricTarget, result_name: str, annotation_filter_name: str | None = None
 ) -> SubsetMetricResult:
@@ -94,7 +120,27 @@ def annotations_per_document_stats(
     )
 
 
-@register_subset_metric("unique_mentions_per_document_stats")
+@register_subset_metric("annotations_per_1000_tokens_stats", supports_annotation_scope=True)
+def annotations_per_1000_tokens_stats(
+    target: MetricTarget, result_name: str, annotation_filter_name: str | None = None
+) -> SubsetMetricResult:
+    counts = []
+    for document, annotations_for_document in zip(
+        get_documents(target),
+        get_annotations_per_document(target, annotation_filter_name),
+    ):
+        token_count = len(extract_tokens_from_texts([passage.text for passage in document.passages]))
+        counts.append(len(annotations_for_document) / token_count * 1000 if token_count else 0)
+    stats, distribution = calculate_stats(counts)
+    return SubsetMetricResult(
+        result_name=result_name,
+        metric_name="annotations_per_1000_tokens_stats",
+        value=stats,
+        subset_name=target.name,
+    )
+
+
+@register_subset_metric("unique_mentions_per_document_stats", supports_annotation_scope=True)
 def unique_mentions_per_document_stats(
     target: MetricTarget, result_name: str, annotation_filter_name: str | None = None
 ) -> SubsetMetricResult:
@@ -115,7 +161,7 @@ def unique_mentions_per_document_stats(
     )
 
 
-@register_subset_metric("unique_identifiers_per_document_stats")
+@register_subset_metric("unique_identifiers_per_document_stats", supports_annotation_scope=True)
 def unique_identifiers_per_document_stats(
     target: MetricTarget, result_name: str, annotation_filter_name: str | None = None
 ) -> SubsetMetricResult:
@@ -376,10 +422,12 @@ def identifier_redundancy_stats(
     )
 
 
-@register_subset_metric("variation_degree_stats")
-def variation_degree_stats(target: MetricTarget, result_name: str) -> SubsetMetricResult:
+@register_subset_metric("variation_degree_stats", supports_annotation_scope=True)
+def variation_degree_stats(
+    target: MetricTarget, result_name: str, annotation_filter_name: str | None = None
+) -> SubsetMetricResult:
     ll2texts: defaultdict[str, set[str]] = defaultdict(set)
-    for annotation in get_annotations(target):
+    for annotation in get_annotations(target, annotation_filter_name):
         ll2texts[(annotation.label, str(annotation.link))].add(annotation.text)
     counts = [len(texts) for texts in ll2texts.values()]
     stats, distribution = calculate_stats(counts)
@@ -395,10 +443,12 @@ def variation_degree_stats(target: MetricTarget, result_name: str) -> SubsetMetr
     )
 
 
-@register_subset_metric("ambiguity_degree_stats")
-def ambiguity_degree_stats(target: MetricTarget, result_name: str) -> SubsetMetricResult:
+@register_subset_metric("ambiguity_degree_stats", supports_annotation_scope=True)
+def ambiguity_degree_stats(
+    target: MetricTarget, result_name: str, annotation_filter_name: str | None = None
+) -> SubsetMetricResult:
     text2lls: defaultdict[str, set[str]] = defaultdict(set)
-    for annotation in get_annotations(target):
+    for annotation in get_annotations(target, annotation_filter_name):
         text2lls[annotation.text].add((annotation.label, str(annotation.link)))
     counts = [len(lls) for lls in text2lls.values()]
     stats, distribution = calculate_stats(counts)

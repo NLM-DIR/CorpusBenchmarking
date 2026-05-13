@@ -1,3 +1,8 @@
+logging:
+    level: INFO
+
+entity_scope_config: configs/dashboard.yaml
+
 corpora:
     AnatEM: configs/AnatEM.yaml
     BC5CDR: configs/BC5CDR.yaml
@@ -48,8 +53,6 @@ bundles:
       subset_name: train
     - corpus_name: CellLink
       subset_name: dev
-    - corpus_name: CellLink
-      subset_name: test
   JNLPBA_corpus:
     - corpus_name: JNLPBA
       subset_name: train
@@ -86,6 +89,8 @@ metrics:
   - metric_name: identifier_resource_distribution
     target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
   - metric_name: annotations_per_document_stats
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+  - metric_name: annotations_per_1000_tokens_stats
     target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
   - metric_name: unique_mentions_per_document_stats
     target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]

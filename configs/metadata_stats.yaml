@@ -1,3 +1,20 @@
+logging:
+    level: INFO
+
+workspace:
+    document_store_filename: "data/metadata.json"
+    document_fetchers:
+      pmid:
+        - name: pubmed_eutils
+      pmcid:
+        - name: pmc_eutils_efetch
+
+terminologies:
+  mesh:
+    name: mesh_xml
+    params:
+      year: 2026
+
 corpora:
     AnatEM: configs/AnatEM.yaml
     BC5CDR: configs/BC5CDR.yaml
@@ -48,8 +65,6 @@ bundles:
       subset_name: train
     - corpus_name: CellLink
       subset_name: dev
-    - corpus_name: CellLink
-      subset_name: test
   JNLPBA_corpus:
     - corpus_name: JNLPBA
       subset_name: train
@@ -73,11 +88,20 @@ bundles:
 metrics:
   - metric_name: journal_distribution
     target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
-    params:
-      metadata_cache_filename: "data/metadata_cache.json"    
-  - metric_name: publication_year_distribution
+  - metric_name: journal_MeSH_topic_distribution
     target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
     params:
-      metadata_cache_filename: "data/metadata_cache.json"    
+      terminology_name: mesh
+      journal_topics_path: configs/journal_topics.yaml
+      journal_name_topics_path: configs/journal_name_topic.json
+  - metric_name: article_MeSH_topic_distribution
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    params:
+      terminology_name: mesh
+      article_topic_path: configs/article_topics.yaml
+      journal_topics_path: configs/journal_topics.yaml
+      journal_name_topics_path: configs/journal_name_topic.json
+  - metric_name: publication_year_distribution
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
 
 output_path: "output/metadata_stats.json"

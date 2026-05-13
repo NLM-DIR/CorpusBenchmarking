@@ -1,0 +1,5463 @@
+{
+  "Toxicology": {
+    "frequency": 977.85,
+    "roots": {
+      "Toxicology": 977.85
+    }
+  },
+  "Molecular Biology": {
+    "frequency": 883.6905,
+    "roots": {
+      "Molecular biology / biochemistry": 883.6905
+    }
+  },
+  "Chemistry, Pharmaceutical": {
+    "frequency": 680.25,
+    "roots": {
+      "Pharmacology": 680.25
+    }
+  },
+  "Pharmacology": {
+    "frequency": 596.0167,
+    "roots": {
+      "Pharmacology": 596.0167
+    }
+  },
+  "Chemistry": {
+    "frequency": 555.5833,
+    "roots": {
+      "Chemistry / Materials Science": 555.5833
+    }
+  },
+  "Biochemistry": {
+    "frequency": 469.25,
+    "roots": {
+      "Molecular biology / biochemistry": 469.25
+    }
+  },
+  "Medicine": {
+    "frequency": 416.3762,
+    "roots": {
+      "General / internal medicine": 416.3762
+    }
+  },
+  "Biological Science Disciplines": {
+    "frequency": 413.6667,
+    "roots": {
+      "General biology / anatomy / physiology": 413.6667
+    }
+  },
+  "Chemistry, Physical": {
+    "frequency": 403.0,
+    "roots": {
+      "Chemistry / Materials Science": 403.0
+    }
+  },
+  "Science": {
+    "frequency": 363.5,
+    "roots": {
+      "Multidisciplinary": 363.5
+    }
+  },
+  "Pharmaceutical Preparations": {
+    "frequency": 313.1,
+    "roots": {
+      "Pharmacology": 313.1
+    }
+  },
+  "Nanotechnology": {
+    "frequency": 284.1667,
+    "roots": {
+      "Chemistry / Materials Science": 284.1667
+    }
+  },
+  "Genetics, Medical": {
+    "frequency": 280.9,
+    "roots": {
+      "Genetics/genomics": 280.9
+    }
+  },
+  "Endocrinology": {
+    "frequency": 280.7,
+    "roots": {
+      "General / internal medicine": 140.35,
+      "General biology / anatomy / physiology": 140.35
+    }
+  },
+  "Cell Biology": {
+    "frequency": 272.4167,
+    "roots": {
+      "Cell & developmental biology": 272.4167
+    }
+  },
+  "Autonomic Agents": {
+    "frequency": 246.0,
+    "roots": {
+      "Pharmacology": 246.0
+    }
+  },
+  "Neoplasms": {
+    "frequency": 240.4,
+    "roots": {
+      "Oncology": 240.4
+    }
+  },
+  "Food": {
+    "frequency": 235.8333,
+    "roots": {
+      "General biology / anatomy / physiology": 117.9167,
+      "Nutrition, metabolism, and food science": 117.9167
+    }
+  },
+  "Food Analysis": {
+    "frequency": 224.5,
+    "roots": {
+      "Nutrition, metabolism, and food science": 224.5
+    }
+  },
+  "Hematology": {
+    "frequency": 205.5,
+    "roots": {
+      "General / internal medicine": 205.5
+    }
+  },
+  "Drug Therapy": {
+    "frequency": 205.1667,
+    "roots": {
+      "General / internal medicine": 205.1667
+    }
+  },
+  "Diabetes Mellitus": {
+    "frequency": 197.8333,
+    "roots": {
+      "Clinical specialties by organ system": 197.8333
+    }
+  },
+  "Genetics": {
+    "frequency": 182.1667,
+    "roots": {
+      "Genetics/genomics": 182.1667
+    }
+  },
+  "Allergy and Immunology": {
+    "frequency": 181.5167,
+    "roots": {
+      "Immunology": 181.5167
+    }
+  },
+  "Biology": {
+    "frequency": 180.5667,
+    "roots": {
+      "General biology / anatomy / physiology": 180.5667
+    }
+  },
+  "Psychopharmacology": {
+    "frequency": 177.0,
+    "roots": {
+      "Psychiatry & psychology": 118.0,
+      "Pharmacology": 59.0
+    }
+  },
+  "Drug Design": {
+    "frequency": 151.6,
+    "roots": {
+      "Pharmacology": 151.6
+    }
+  },
+  "Technology, Pharmaceutical": {
+    "frequency": 150.25,
+    "roots": {
+      "Pharmacology": 150.25
+    }
+  },
+  "Plants, Medicinal": {
+    "frequency": 145.3333,
+    "roots": {
+      "General biology / anatomy / physiology": 145.3333
+    }
+  },
+  "Oncogenes": {
+    "frequency": 129.0,
+    "roots": {
+      "Genetics/genomics": 129.0
+    }
+  },
+  "Pharmacognosy": {
+    "frequency": 129.0,
+    "roots": {
+      "General biology / anatomy / physiology": 64.5,
+      "Pharmacology": 64.5
+    }
+  },
+  "Nucleic Acids": {
+    "frequency": 125.9167,
+    "roots": {
+      "Molecular biology / biochemistry": 125.9167
+    }
+  },
+  "Neurology": {
+    "frequency": 125.7833,
+    "roots": {
+      "Neuroscience & neurology": 125.7833
+    }
+  },
+  "Chemistry, Organic": {
+    "frequency": 125.6667,
+    "roots": {
+      "Chemistry / Materials Science": 125.6667
+    }
+  },
+  "Biological Factors": {
+    "frequency": 125.0,
+    "roots": {
+      "Molecular biology / biochemistry": 125.0
+    }
+  },
+  "Colloids": {
+    "frequency": 122.5,
+    "roots": {
+      "Chemistry / Materials Science": 61.25,
+      "Pharmacology": 61.25
+    }
+  },
+  "Surface Properties": {
+    "frequency": 120.0,
+    "roots": {
+      "Chemistry / Materials Science": 120.0
+    }
+  },
+  "Physics": {
+    "frequency": 117.75,
+    "roots": {
+      "General natural sciences": 117.75
+    }
+  },
+  "Viruses": {
+    "frequency": 116.0,
+    "roots": {
+      "Microbiology/pathogenesis": 116.0
+    }
+  },
+  "Biological Products": {
+    "frequency": 111.0,
+    "roots": {
+      "Chemistry / Materials Science": 111.0
+    }
+  },
+  "Immune System Diseases": {
+    "frequency": 100.6667,
+    "roots": {
+      "Immunology": 100.6667
+    }
+  },
+  "Natural Science Disciplines": {
+    "frequency": 99.5,
+    "roots": {
+      "General natural sciences": 99.5
+    }
+  },
+  "Research": {
+    "frequency": 97.5,
+    "roots": {
+      "Multidisciplinary": 97.5
+    }
+  },
+  "Immune System Phenomena": {
+    "frequency": 92.5,
+    "roots": {
+      "Immunology": 92.5
+    }
+  },
+  "Miniaturization": {
+    "frequency": 92.1667,
+    "roots": {
+      "Health disciplines": 92.1667
+    }
+  },
+  "Bone Diseases, Metabolic": {
+    "frequency": 88.0,
+    "roots": {
+      "Clinical specialties by organ system": 44.0,
+      "Nutrition, metabolism, and food science": 44.0
+    }
+  },
+  "Macromolecular Substances": {
+    "frequency": 84.5833,
+    "roots": {
+      "Molecular biology / biochemistry": 84.5833
+    }
+  },
+  "Environmental Pollutants": {
+    "frequency": 83.6833,
+    "roots": {
+      "Toxicology": 83.6833
+    }
+  },
+  "Metabolism": {
+    "frequency": 80.7667,
+    "roots": {
+      "Molecular biology / biochemistry": 80.7667
+    }
+  },
+  "Cells": {
+    "frequency": 80.4571,
+    "roots": {
+      "Cell & developmental biology": 80.4571
+    }
+  },
+  "Food-Processing Industry": {
+    "frequency": 76.7,
+    "roots": {
+      "Nutrition, metabolism, and food science": 76.7
+    }
+  },
+  "Plant Extracts": {
+    "frequency": 76.3333,
+    "roots": {
+      "Chemistry / Materials Science": 38.1667,
+      "Pharmacology": 38.1667
+    }
+  },
+  "Chemical Industry": {
+    "frequency": 76.0,
+    "roots": {
+      "Chemistry / Materials Science": 76.0
+    }
+  },
+  "Food Additives": {
+    "frequency": 76.0,
+    "roots": {
+      "Chemistry / Materials Science": 38.0,
+      "General biology / anatomy / physiology": 19.0,
+      "Nutrition, metabolism, and food science": 19.0
+    }
+  },
+  "Cytogenetics": {
+    "frequency": 73.0,
+    "roots": {
+      "Genetics/genomics": 73.0
+    }
+  },
+  "Anesthesiology": {
+    "frequency": 71.5,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 71.5
+    }
+  },
+  "Biomedical Research": {
+    "frequency": 69.8333,
+    "roots": {
+      "Multidisciplinary": 69.8333
+    }
+  },
+  "Hormones": {
+    "frequency": 68.8333,
+    "roots": {
+      "Pharmacology": 68.8333
+    }
+  },
+  "Polymers": {
+    "frequency": 68.6667,
+    "roots": {
+      "Chemistry / Materials Science": 68.6667
+    }
+  },
+  "Medical Oncology": {
+    "frequency": 66.6667,
+    "roots": {
+      "General / internal medicine": 66.6667
+    }
+  },
+  "Biophysics": {
+    "frequency": 66.5,
+    "roots": {
+      "General biology / anatomy / physiology": 33.25,
+      "General natural sciences": 33.25
+    }
+  },
+  "Biotechnology": {
+    "frequency": 65.1667,
+    "roots": {
+      "General biology / anatomy / physiology": 65.1667
+    }
+  },
+  "Biomedical and Dental Materials": {
+    "frequency": 64.0,
+    "roots": {
+      "Chemistry / Materials Science": 64.0
+    }
+  },
+  "Manufactured Materials": {
+    "frequency": 64.0,
+    "roots": {
+      "Chemistry / Materials Science": 64.0
+    }
+  },
+  "Stem Cells": {
+    "frequency": 64.0,
+    "roots": {
+      "Cell & developmental biology": 64.0
+    }
+  },
+  "Genomics": {
+    "frequency": 63.3,
+    "roots": {
+      "Genetics/genomics": 63.3
+    }
+  },
+  "Pathology": {
+    "frequency": 62.5833,
+    "roots": {
+      "Diagnostics / pathology / radiology": 62.5833
+    }
+  },
+  "Biopharmaceutics": {
+    "frequency": 62.5,
+    "roots": {
+      "Pharmacology": 62.5
+    }
+  },
+  "Immunity": {
+    "frequency": 62.2667,
+    "roots": {
+      "Immunology": 62.2667
+    }
+  },
+  "Occupational Medicine": {
+    "frequency": 62.2,
+    "roots": {
+      "Public health / health services": 62.2
+    }
+  },
+  "Trace Elements": {
+    "frequency": 57.0,
+    "roots": {
+      "Chemistry / Materials Science": 28.5,
+      "Pharmacology": 14.25,
+      "General biology / anatomy / physiology": 7.125,
+      "Nutrition, metabolism, and food science": 7.125
+    }
+  },
+  "Water Pollutants": {
+    "frequency": 54.0,
+    "roots": {
+      "Toxicology": 54.0
+    }
+  },
+  "Psychiatry": {
+    "frequency": 50.8,
+    "roots": {
+      "Psychiatry & psychology": 50.8
+    }
+  },
+  "Environmental Pollution": {
+    "frequency": 50.5833,
+    "roots": {
+      "Public health / health services": 50.5833
+    }
+  },
+  "Toxins, Biological": {
+    "frequency": 50.5,
+    "roots": {
+      "Molecular biology / biochemistry": 50.5
+    }
+  },
+  "Endocrine System Diseases": {
+    "frequency": 50.4167,
+    "roots": {
+      "Clinical specialties by organ system": 50.4167
+    }
+  },
+  "Ophthalmology": {
+    "frequency": 49.2,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 49.2
+    }
+  },
+  "Genetic Phenomena": {
+    "frequency": 49.1667,
+    "roots": {
+      "Genetics/genomics": 49.1667
+    }
+  },
+  "Cardiology": {
+    "frequency": 47.75,
+    "roots": {
+      "Clinical specialties by organ system": 47.75
+    }
+  },
+  "Nervous System Diseases": {
+    "frequency": 45.1667,
+    "roots": {
+      "Neuroscience & neurology": 45.1667
+    }
+  },
+  "Pediatrics": {
+    "frequency": 43.1667,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 43.1667
+    }
+  },
+  "Virology": {
+    "frequency": 43.0,
+    "roots": {
+      "Microbiology/pathogenesis": 43.0
+    }
+  },
+  "Physiology": {
+    "frequency": 42.0833,
+    "roots": {
+      "General biology / anatomy / physiology": 42.0833
+    }
+  },
+  "Leukemia": {
+    "frequency": 42.0,
+    "roots": {
+      "Clinical specialties by organ system": 21.0,
+      "Oncology": 21.0
+    }
+  },
+  "Endocrine Glands": {
+    "frequency": 40.75,
+    "roots": {
+      "Clinical specialties by organ system": 40.75
+    }
+  },
+  "Herbal Medicine": {
+    "frequency": 39.3333,
+    "roots": {
+      "Pharmacology": 29.5,
+      "General biology / anatomy / physiology": 9.8333
+    }
+  },
+  "Biochemical Phenomena": {
+    "frequency": 38.6667,
+    "roots": {
+      "Chemistry / Materials Science": 38.6667
+    }
+  },
+  "DNA Repair": {
+    "frequency": 37.0,
+    "roots": {
+      "Chemistry / Materials Science": 18.5,
+      "Genetics/genomics": 18.5
+    }
+  },
+  "Delayed-Action Preparations": {
+    "frequency": 36.6667,
+    "roots": {
+      "General / internal medicine": 18.3333,
+      "Pharmacology": 18.3333
+    }
+  },
+  "Dosage Forms": {
+    "frequency": 36.6667,
+    "roots": {
+      "Pharmacology": 36.6667
+    }
+  },
+  "Steroids": {
+    "frequency": 36.5,
+    "roots": {
+      "Chemistry / Materials Science": 36.5
+    }
+  },
+  "Drug Industry": {
+    "frequency": 36.0,
+    "roots": {
+      "Pharmacology": 36.0
+    }
+  },
+  "Computational Biology": {
+    "frequency": 34.5,
+    "roots": {
+      "General biology / anatomy / physiology": 17.25,
+      "General natural sciences": 17.25
+    }
+  },
+  "Nervous System": {
+    "frequency": 34.45,
+    "roots": {
+      "Neuroscience & neurology": 34.45
+    }
+  },
+  "Kidney Diseases": {
+    "frequency": 33.4833,
+    "roots": {
+      "Clinical specialties by organ system": 33.4833
+    }
+  },
+  "Cardiovascular System": {
+    "frequency": 33.0833,
+    "roots": {
+      "Clinical specialties by organ system": 33.0833
+    }
+  },
+  "Aging": {
+    "frequency": 32.1667,
+    "roots": {
+      "General / internal medicine": 32.1667
+    }
+  },
+  "Gastroenterology": {
+    "frequency": 32.0,
+    "roots": {
+      "General / internal medicine": 32.0
+    }
+  },
+  "Poisons": {
+    "frequency": 32.0,
+    "roots": {
+      "Chemistry / Materials Science": 16.0,
+      "Toxicology": 16.0
+    }
+  },
+  "Reproduction": {
+    "frequency": 31.0833,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 31.0833
+    }
+  },
+  "Clinical Medicine": {
+    "frequency": 31.0,
+    "roots": {
+      "General / internal medicine": 31.0
+    }
+  },
+  "Arthritis": {
+    "frequency": 29.0,
+    "roots": {
+      "Clinical specialties by organ system": 29.0
+    }
+  },
+  "Ultrasonics": {
+    "frequency": 28.0,
+    "roots": {
+      "General natural sciences": 28.0
+    }
+  },
+  "Neurosciences": {
+    "frequency": 27.85,
+    "roots": {
+      "Neuroscience & neurology": 27.85
+    }
+  },
+  "General Surgery": {
+    "frequency": 27.8333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 27.8333
+    }
+  },
+  "Medicine, East Asian Traditional": {
+    "frequency": 27.6667,
+    "roots": {
+      "General / internal medicine": 13.8333,
+      "Psychiatry & psychology": 13.8333
+    }
+  },
+  "Microbiology": {
+    "frequency": 27.5833,
+    "roots": {
+      "Microbiology/pathogenesis": 27.5833
+    }
+  },
+  "Pharmacokinetics": {
+    "frequency": 26.25,
+    "roots": {
+      "General biology / anatomy / physiology": 13.125,
+      "Molecular biology / biochemistry": 13.125
+    }
+  },
+  "Internal Medicine": {
+    "frequency": 25.0,
+    "roots": {
+      "General / internal medicine": 25.0
+    }
+  },
+  "Leukocytes": {
+    "frequency": 25.0,
+    "roots": {
+      "Immunology": 15.625,
+      "Cell & developmental biology": 6.25,
+      "General biology / anatomy / physiology": 3.125
+    }
+  },
+  "Cell Differentiation": {
+    "frequency": 24.75,
+    "roots": {
+      "Cell & developmental biology": 24.75
+    }
+  },
+  "Lipids": {
+    "frequency": 24.6667,
+    "roots": {
+      "Molecular biology / biochemistry": 24.6667
+    }
+  },
+  "Asia": {
+    "frequency": 24.2,
+    "roots": {
+      "Public health / health services": 24.2
+    }
+  },
+  "Mutation": {
+    "frequency": 23.6667,
+    "roots": {
+      "Genetics/genomics": 23.6667
+    }
+  },
+  "Cell Death": {
+    "frequency": 23.5,
+    "roots": {
+      "Cell & developmental biology": 23.5
+    }
+  },
+  "Behavior": {
+    "frequency": 23.0,
+    "roots": {
+      "Psychiatry & psychology": 23.0
+    }
+  },
+  "Biopolymers": {
+    "frequency": 23.0,
+    "roots": {
+      "Chemistry / Materials Science": 23.0
+    }
+  },
+  "Dermatology": {
+    "frequency": 23.0,
+    "roots": {
+      "Clinical specialties by organ system": 23.0
+    }
+  },
+  "Obesity": {
+    "frequency": 23.0,
+    "roots": {
+      "Nutrition, metabolism, and food science": 23.0
+    }
+  },
+  "Drug Delivery Systems": {
+    "frequency": 22.5,
+    "roots": {
+      "General / internal medicine": 22.5
+    }
+  },
+  "Bone and Bones": {
+    "frequency": 21.7,
+    "roots": {
+      "Cell & developmental biology": 10.85,
+      "Clinical specialties by organ system": 10.85
+    }
+  },
+  "Emergency Medicine": {
+    "frequency": 21.5,
+    "roots": {
+      "General / internal medicine": 21.5
+    }
+  },
+  "Acquired Immunodeficiency Syndrome": {
+    "frequency": 21.4167,
+    "roots": {
+      "Microbiology/pathogenesis": 16.7318,
+      "Immunology": 2.6771,
+      "General / internal medicine": 1.5616,
+      "Clinical specialties by organ system": 0.4462
+    }
+  },
+  "Biophysical Phenomena": {
+    "frequency": 21.3333,
+    "roots": {
+      "Chemistry / Materials Science": 21.3333
+    }
+  },
+  "Rheumatic Diseases": {
+    "frequency": 21.1667,
+    "roots": {
+      "Clinical specialties by organ system": 21.1667
+    }
+  },
+  "Hypersensitivity": {
+    "frequency": 21.0,
+    "roots": {
+      "Immunology": 21.0
+    }
+  },
+  "Minerals": {
+    "frequency": 21.0,
+    "roots": {
+      "Chemistry / Materials Science": 21.0
+    }
+  },
+  "Models, Chemical": {
+    "frequency": 20.6667,
+    "roots": {
+      "Chemistry / Materials Science": 20.6667
+    }
+  },
+  "Developmental Biology": {
+    "frequency": 20.25,
+    "roots": {
+      "Cell & developmental biology": 20.25
+    }
+  },
+  "Metabolism, Inborn Errors": {
+    "frequency": 20.0,
+    "roots": {
+      "Genetics/genomics": 10.0,
+      "Nutrition, metabolism, and food science": 10.0
+    }
+  },
+  "Communicable Diseases": {
+    "frequency": 20.0,
+    "roots": {
+      "General / internal medicine": 10.0,
+      "Microbiology/pathogenesis": 10.0
+    }
+  },
+  "Molecular Structure": {
+    "frequency": 19.8571,
+    "roots": {
+      "Chemistry / Materials Science": 19.8571
+    }
+  },
+  "Brain": {
+    "frequency": 19.4167,
+    "roots": {
+      "Neuroscience & neurology": 19.4167
+    }
+  },
+  "Signal Transduction": {
+    "frequency": 19.35,
+    "roots": {
+      "Cell & developmental biology": 9.675,
+      "Chemistry / Materials Science": 9.675
+    }
+  },
+  "Base Sequence": {
+    "frequency": 19.0667,
+    "roots": {
+      "Chemistry / Materials Science": 6.3556,
+      "General natural sciences": 6.3556,
+      "Genetics/genomics": 6.3556
+    }
+  },
+  "Transplantation": {
+    "frequency": 19.0,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 19.0
+    }
+  },
+  "Environmental Health": {
+    "frequency": 18.8667,
+    "roots": {
+      "Health disciplines": 18.8667
+    }
+  },
+  "Pharmacogenetics": {
+    "frequency": 18.3333,
+    "roots": {
+      "Genetics/genomics": 9.1667,
+      "Pharmacology": 9.1667
+    }
+  },
+  "Crystallography": {
+    "frequency": 18.0,
+    "roots": {
+      "Chemistry / Materials Science": 18.0
+    }
+  },
+  "Models, Molecular": {
+    "frequency": 18.0,
+    "roots": {
+      "Chemistry / Materials Science": 18.0
+    }
+  },
+  "Inflammation": {
+    "frequency": 17.6667,
+    "roots": {
+      "General / internal medicine": 17.6667
+    }
+  },
+  "Metabolic Diseases": {
+    "frequency": 17.6,
+    "roots": {
+      "Nutrition, metabolism, and food science": 17.6
+    }
+  },
+  "Neurosurgery": {
+    "frequency": 17.3333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 17.3333
+    }
+  },
+  "Genome": {
+    "frequency": 17.1667,
+    "roots": {
+      "Genetics/genomics": 17.1667
+    }
+  },
+  "Thyroid Diseases": {
+    "frequency": 16.8333,
+    "roots": {
+      "Clinical specialties by organ system": 16.8333
+    }
+  },
+  "Thyroid Hormones": {
+    "frequency": 16.8333,
+    "roots": {
+      "Pharmacology": 16.8333
+    }
+  },
+  "Nutritional Physiological Phenomena": {
+    "frequency": 16.6167,
+    "roots": {
+      "General biology / anatomy / physiology": 16.6167
+    }
+  },
+  "Mental Disorders": {
+    "frequency": 16.3286,
+    "roots": {
+      "Psychiatry & psychology": 16.3286
+    }
+  },
+  "Chromosome Mapping": {
+    "frequency": 16.1333,
+    "roots": {
+      "Genetics/genomics": 16.1333
+    }
+  },
+  "Lung Diseases": {
+    "frequency": 16.0,
+    "roots": {
+      "Clinical specialties by organ system": 16.0
+    }
+  },
+  "Cardiovascular Diseases": {
+    "frequency": 15.6667,
+    "roots": {
+      "Clinical specialties by organ system": 15.6667
+    }
+  },
+  "Liver Diseases": {
+    "frequency": 15.5833,
+    "roots": {
+      "Clinical specialties by organ system": 15.5833
+    }
+  },
+  "Immunity, Cellular": {
+    "frequency": 15.1667,
+    "roots": {
+      "Immunology": 15.1667
+    }
+  },
+  "Central Nervous System Diseases": {
+    "frequency": 14.75,
+    "roots": {
+      "Neuroscience & neurology": 14.75
+    }
+  },
+  "Genital Diseases, Female": {
+    "frequency": 14.3333,
+    "roots": {
+      "Clinical specialties by organ system": 7.1667,
+      "Pediatrics / reproductive / developmental medicine": 7.1667
+    }
+  },
+  "Prostate": {
+    "frequency": 14.0,
+    "roots": {
+      "Cell & developmental biology": 7.0,
+      "Clinical specialties by organ system": 7.0
+    }
+  },
+  "Pain": {
+    "frequency": 13.8333,
+    "roots": {
+      "Neuroscience & neurology": 6.9167,
+      "General / internal medicine": 3.4583,
+      "Psychiatry & psychology": 2.3056,
+      "General biology / anatomy / physiology": 1.1528
+    }
+  },
+  "Child": {
+    "frequency": 13.6286,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 13.6286
+    }
+  },
+  "Breast Neoplasms": {
+    "frequency": 13.3333,
+    "roots": {
+      "Clinical specialties by organ system": 6.6667,
+      "Oncology": 6.6667
+    }
+  },
+  "Environment": {
+    "frequency": 13.3333,
+    "roots": {
+      "General biology / anatomy / physiology": 6.6667,
+      "Public health / health services": 6.6667
+    }
+  },
+  "Kidney": {
+    "frequency": 13.25,
+    "roots": {
+      "Clinical specialties by organ system": 13.25
+    }
+  },
+  "Cell Communication": {
+    "frequency": 13.1667,
+    "roots": {
+      "Cell & developmental biology": 13.1667
+    }
+  },
+  "Sexual Behavior": {
+    "frequency": 13.0,
+    "roots": {
+      "Psychiatry & psychology": 13.0
+    }
+  },
+  "Therapeutics": {
+    "frequency": 12.9167,
+    "roots": {
+      "General / internal medicine": 12.9167
+    }
+  },
+  "Urology": {
+    "frequency": 12.8333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 12.8333
+    }
+  },
+  "Hematologic Diseases": {
+    "frequency": 12.6667,
+    "roots": {
+      "Clinical specialties by organ system": 12.6667
+    }
+  },
+  "Chemical Phenomena": {
+    "frequency": 12.5,
+    "roots": {
+      "Chemistry / Materials Science": 12.5
+    }
+  },
+  "Critical Care": {
+    "frequency": 12.5,
+    "roots": {
+      "General / internal medicine": 6.25,
+      "Health disciplines": 6.25
+    }
+  },
+  "Genetic Therapy": {
+    "frequency": 12.4,
+    "roots": {
+      "General / internal medicine": 6.2,
+      "Genetics/genomics": 6.2
+    }
+  },
+  "Apoptosis": {
+    "frequency": 12.1667,
+    "roots": {
+      "Cell & developmental biology": 12.1667
+    }
+  },
+  "Obstetrics": {
+    "frequency": 12.0,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 12.0
+    }
+  },
+  "Cell Division": {
+    "frequency": 12.0,
+    "roots": {
+      "Cell & developmental biology": 6.0,
+      "Genetics/genomics": 4.0,
+      "General biology / anatomy / physiology": 2.0
+    }
+  },
+  "Chemistry Techniques, Analytical": {
+    "frequency": 12.0,
+    "roots": {
+      "Chemistry / Materials Science": 12.0
+    }
+  },
+  "Biological Evolution": {
+    "frequency": 11.9333,
+    "roots": {
+      "General biology / anatomy / physiology": 5.9667,
+      "Genetics/genomics": 5.9667
+    }
+  },
+  "Translational Research, Biomedical.": {
+    "frequency": 11.9333,
+    "roots": {}
+  },
+  "Immunotherapy": {
+    "frequency": 11.85,
+    "roots": {
+      "General / internal medicine": 5.925,
+      "Immunology": 5.925
+    }
+  },
+  "Embryology": {
+    "frequency": 11.5833,
+    "roots": {
+      "Cell & developmental biology": 5.7917,
+      "General biology / anatomy / physiology": 5.7917
+    }
+  },
+  "Blood Circulation": {
+    "frequency": 11.5,
+    "roots": {
+      "Clinical specialties by organ system": 11.5
+    }
+  },
+  "Molecular Conformation": {
+    "frequency": 11.25,
+    "roots": {
+      "Chemistry / Materials Science": 11.25
+    }
+  },
+  "Infant": {
+    "frequency": 11.0452,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 11.0452
+    }
+  },
+  "Hemodynamics": {
+    "frequency": 11.0,
+    "roots": {
+      "Clinical specialties by organ system": 11.0
+    }
+  },
+  "Isomerism": {
+    "frequency": 11.0,
+    "roots": {
+      "Chemistry / Materials Science": 11.0
+    }
+  },
+  "Cell Physiological Phenomena": {
+    "frequency": 10.75,
+    "roots": {
+      "Cell & developmental biology": 10.75
+    }
+  },
+  "Gynecology": {
+    "frequency": 10.6667,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 5.3333,
+      "Surgery / anesthesia / perioperative": 5.3333
+    }
+  },
+  "Ecosystem": {
+    "frequency": 10.6,
+    "roots": {
+      "General biology / anatomy / physiology": 5.3,
+      "Public health / health services": 5.3
+    }
+  },
+  "Clinical Laboratory Techniques": {
+    "frequency": 10.3333,
+    "roots": {
+      "Diagnostics / pathology / radiology": 10.3333
+    }
+  },
+  "Genetic Techniques": {
+    "frequency": 10.3,
+    "roots": {
+      "Genetics/genomics": 10.3
+    }
+  },
+  "Host-Parasite Interactions": {
+    "frequency": 10.25,
+    "roots": {
+      "Microbiology/pathogenesis": 7.6875,
+      "General biology / anatomy / physiology": 2.5625
+    }
+  },
+  "Virulence": {
+    "frequency": 10.25,
+    "roots": {
+      "Microbiology/pathogenesis": 10.25
+    }
+  },
+  "Genes": {
+    "frequency": 10.1667,
+    "roots": {
+      "Genetics/genomics": 10.1667
+    }
+  },
+  "Arteriosclerosis": {
+    "frequency": 10.0,
+    "roots": {
+      "Clinical specialties by organ system": 10.0
+    }
+  },
+  "Gene Expression Regulation": {
+    "frequency": 10.0,
+    "roots": {
+      "Genetics/genomics": 10.0
+    }
+  },
+  "Homeostasis": {
+    "frequency": 10.0,
+    "roots": {
+      "General biology / anatomy / physiology": 10.0
+    }
+  },
+  "RNA": {
+    "frequency": 10.0,
+    "roots": {
+      "Molecular biology / biochemistry": 10.0
+    }
+  },
+  "Respiratory System": {
+    "frequency": 9.75,
+    "roots": {
+      "Clinical specialties by organ system": 9.75
+    }
+  },
+  "Retroviridae": {
+    "frequency": 9.75,
+    "roots": {
+      "Microbiology/pathogenesis": 9.75
+    }
+  },
+  "Enzymes": {
+    "frequency": 9.5,
+    "roots": {
+      "Molecular biology / biochemistry": 9.5
+    }
+  },
+  "Epilepsy": {
+    "frequency": 9.5,
+    "roots": {
+      "Neuroscience & neurology": 9.5
+    }
+  },
+  "Neurobiology": {
+    "frequency": 9.5,
+    "roots": {
+      "General biology / anatomy / physiology": 4.75,
+      "Neuroscience & neurology": 4.75
+    }
+  },
+  "Antineoplastic Agents": {
+    "frequency": 9.4,
+    "roots": {
+      "Pharmacology": 9.4
+    }
+  },
+  "Proteins": {
+    "frequency": 9.3333,
+    "roots": {
+      "Molecular biology / biochemistry": 9.3333
+    }
+  },
+  "Respiratory Tract Diseases": {
+    "frequency": 9.0833,
+    "roots": {
+      "Clinical specialties by organ system": 9.0833
+    }
+  },
+  "Thrombosis": {
+    "frequency": 9.0,
+    "roots": {
+      "Clinical specialties by organ system": 9.0
+    }
+  },
+  "Infections": {
+    "frequency": 9.0,
+    "roots": {
+      "Microbiology/pathogenesis": 9.0
+    }
+  },
+  "Microchemistry": {
+    "frequency": 9.0,
+    "roots": {
+      "Chemistry / Materials Science": 9.0
+    }
+  },
+  "Marine Biology": {
+    "frequency": 8.75,
+    "roots": {
+      "General natural sciences": 6.5625,
+      "General biology / anatomy / physiology": 2.1875
+    }
+  },
+  "Immune System": {
+    "frequency": 8.5833,
+    "roots": {
+      "Immunology": 8.5833
+    }
+  },
+  "Growth": {
+    "frequency": 8.5,
+    "roots": {
+      "General biology / anatomy / physiology": 8.5
+    }
+  },
+  "Thoracic Diseases": {
+    "frequency": 8.3333,
+    "roots": {
+      "Clinical specialties by organ system": 8.3333
+    }
+  },
+  "Immunogenetics": {
+    "frequency": 8.0,
+    "roots": {
+      "Genetics/genomics": 8.0
+    }
+  },
+  "Magnetic Resonance Spectroscopy": {
+    "frequency": 8.0,
+    "roots": {
+      "Chemistry / Materials Science": 8.0
+    }
+  },
+  "Veterinary Medicine": {
+    "frequency": 8.0,
+    "roots": {
+      "Health disciplines": 8.0
+    }
+  },
+  "Proteome": {
+    "frequency": 7.8333,
+    "roots": {
+      "Molecular biology / biochemistry": 7.8333
+    }
+  },
+  "Computer Simulation": {
+    "frequency": 7.5833,
+    "roots": {
+      "General natural sciences": 7.5833
+    }
+  },
+  "Otolaryngology": {
+    "frequency": 7.3333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 7.3333
+    }
+  },
+  "Cellular Senescence": {
+    "frequency": 7.3333,
+    "roots": {
+      "Cell & developmental biology": 3.6667,
+      "General / internal medicine": 3.6667
+    }
+  },
+  "Nephrology": {
+    "frequency": 7.2333,
+    "roots": {
+      "General / internal medicine": 7.2333
+    }
+  },
+  "Pharmacy": {
+    "frequency": 7.0833,
+    "roots": {
+      "Health disciplines": 7.0833
+    }
+  },
+  "Disease Models, Animal": {
+    "frequency": 7.0,
+    "roots": {
+      "Health disciplines": 7.0
+    }
+  },
+  "Microbiological Phenomena": {
+    "frequency": 7.0,
+    "roots": {
+      "Microbiology/pathogenesis": 7.0
+    }
+  },
+  "Movement Disorders": {
+    "frequency": 7.0,
+    "roots": {
+      "Neuroscience & neurology": 7.0
+    }
+  },
+  "Geriatrics": {
+    "frequency": 6.75,
+    "roots": {
+      "General / internal medicine": 6.75
+    }
+  },
+  "Orthopedics": {
+    "frequency": 6.75,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 6.75
+    }
+  },
+  "Ecology": {
+    "frequency": 6.5,
+    "roots": {
+      "General biology / anatomy / physiology": 3.25,
+      "General natural sciences": 3.25
+    }
+  },
+  "Hypertension": {
+    "frequency": 6.5,
+    "roots": {
+      "Clinical specialties by organ system": 6.5
+    }
+  },
+  "Lung": {
+    "frequency": 6.5,
+    "roots": {
+      "Clinical specialties by organ system": 6.5
+    }
+  },
+  "Pathology, Clinical": {
+    "frequency": 6.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 6.5
+    }
+  },
+  "Radiology": {
+    "frequency": 6.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 6.5
+    }
+  },
+  "Drug Administration Routes": {
+    "frequency": 6.3333,
+    "roots": {
+      "General / internal medicine": 6.3333
+    }
+  },
+  "Drug Evaluation": {
+    "frequency": 6.2667,
+    "roots": {
+      "Pharmacology": 3.1333,
+      "Public health / health services": 3.1333
+    }
+  },
+  "Gastrointestinal Diseases": {
+    "frequency": 6.25,
+    "roots": {
+      "Clinical specialties by organ system": 6.25
+    }
+  },
+  "Neurons": {
+    "frequency": 6.25,
+    "roots": {
+      "Cell & developmental biology": 3.125,
+      "Neuroscience & neurology": 3.125
+    }
+  },
+  "Cytokines": {
+    "frequency": 6.1,
+    "roots": {
+      "Molecular biology / biochemistry": 6.1
+    }
+  },
+  "Biomedical Engineering": {
+    "frequency": 6.0,
+    "roots": {
+      "Health disciplines": 6.0
+    }
+  },
+  "Genital Neoplasms, Female": {
+    "frequency": 6.0,
+    "roots": {
+      "Clinical specialties by organ system": 3.0,
+      "Pediatrics / reproductive / developmental medicine": 2.25,
+      "Oncology": 0.75
+    }
+  },
+  "Urologic Diseases": {
+    "frequency": 5.9,
+    "roots": {
+      "Clinical specialties by organ system": 5.9
+    }
+  },
+  "Blood": {
+    "frequency": 5.8333,
+    "roots": {
+      "General biology / anatomy / physiology": 2.9167,
+      "Immunology": 2.9167
+    }
+  },
+  "Adaptation, Biological": {
+    "frequency": 5.75,
+    "roots": {
+      "General biology / anatomy / physiology": 5.75
+    }
+  },
+  "Genetics, Population": {
+    "frequency": 5.75,
+    "roots": {
+      "Genetics/genomics": 5.75
+    }
+  },
+  "Eye Diseases": {
+    "frequency": 5.7,
+    "roots": {
+      "Clinical specialties by organ system": 5.7
+    }
+  },
+  "Air Pollutants": {
+    "frequency": 5.6667,
+    "roots": {
+      "Toxicology": 5.6667
+    }
+  },
+  "Nanomedicine": {
+    "frequency": 5.6667,
+    "roots": {
+      "Chemistry / Materials Science": 2.8333,
+      "General biology / anatomy / physiology": 2.8333
+    }
+  },
+  "Alcoholism": {
+    "frequency": 5.5,
+    "roots": {
+      "Psychiatry & psychology": 2.75,
+      "Toxicology": 2.75
+    }
+  },
+  "Neurologic Manifestations": {
+    "frequency": 5.5,
+    "roots": {
+      "General / internal medicine": 2.75,
+      "Neuroscience & neurology": 2.75
+    }
+  },
+  "Nuclear Medicine": {
+    "frequency": 5.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 5.5
+    }
+  },
+  "Systems Biology": {
+    "frequency": 5.5,
+    "roots": {
+      "General biology / anatomy / physiology": 2.75,
+      "General natural sciences": 2.75
+    }
+  },
+  "Tropical Medicine": {
+    "frequency": 5.5,
+    "roots": {
+      "General / internal medicine": 5.5
+    }
+  },
+  "Cell Cycle": {
+    "frequency": 5.3333,
+    "roots": {
+      "Cell & developmental biology": 5.3333
+    }
+  },
+  "Informatics": {
+    "frequency": 5.1667,
+    "roots": {
+      "General natural sciences": 5.1667
+    }
+  },
+  "Patents as Topic": {
+    "frequency": 5.0833,
+    "roots": {
+      "Health disciplines": 2.5417,
+      "Psychiatry & psychology": 2.5417
+    }
+  },
+  "Carbohydrates": {
+    "frequency": 5.0,
+    "roots": {
+      "Molecular biology / biochemistry": 5.0
+    }
+  },
+  "Fertility": {
+    "frequency": 5.0,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 5.0
+    }
+  },
+  "Immunity, Mucosal": {
+    "frequency": 5.0,
+    "roots": {
+      "Immunology": 5.0
+    }
+  },
+  "Neoplasm Metastasis": {
+    "frequency": 5.0,
+    "roots": {
+      "General / internal medicine": 2.5,
+      "Oncology": 2.5
+    }
+  },
+  "Nervous System Neoplasms": {
+    "frequency": 5.0,
+    "roots": {
+      "Neuroscience & neurology": 2.5,
+      "Oncology": 2.5
+    }
+  },
+  "Recombination, Genetic": {
+    "frequency": 5.0,
+    "roots": {
+      "Genetics/genomics": 5.0
+    }
+  },
+  "Vascular Diseases": {
+    "frequency": 5.0,
+    "roots": {
+      "Clinical specialties by organ system": 5.0
+    }
+  },
+  "Public Health": {
+    "frequency": 4.9762,
+    "roots": {
+      "Public health / health services": 4.9762
+    }
+  },
+  "Sequence Analysis, DNA": {
+    "frequency": 4.8,
+    "roots": {
+      "Genetics/genomics": 4.8
+    }
+  },
+  "Drug Approval": {
+    "frequency": 4.75,
+    "roots": {
+      "Pharmacology": 1.5833,
+      "Public health / health services": 1.5833,
+      "Health disciplines": 1.1875,
+      "Psychiatry & psychology": 0.3958
+    }
+  },
+  "Neurosecretory Systems": {
+    "frequency": 4.75,
+    "roots": {
+      "Clinical specialties by organ system": 4.75
+    }
+  },
+  "Radiography": {
+    "frequency": 4.75,
+    "roots": {
+      "Diagnostics / pathology / radiology": 4.75
+    }
+  },
+  "Molecular Imaging": {
+    "frequency": 4.6667,
+    "roots": {
+      "Chemistry / Materials Science": 4.6667
+    }
+  },
+  "Plants": {
+    "frequency": 4.6667,
+    "roots": {
+      "General biology / anatomy / physiology": 4.6667
+    }
+  },
+  "Cardiovascular Agents": {
+    "frequency": 4.5,
+    "roots": {
+      "Pharmacology": 4.5
+    }
+  },
+  "Epidemiology": {
+    "frequency": 4.5,
+    "roots": {
+      "Public health / health services": 4.5
+    }
+  },
+  "Liver": {
+    "frequency": 4.5,
+    "roots": {
+      "Clinical specialties by organ system": 4.5
+    }
+  },
+  "Biocompatible Materials": {
+    "frequency": 4.3333,
+    "roots": {
+      "Chemistry / Materials Science": 4.3333
+    }
+  },
+  "Anesthesia": {
+    "frequency": 4.3333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 4.3333
+    }
+  },
+  "Histology": {
+    "frequency": 4.25,
+    "roots": {
+      "General biology / anatomy / physiology": 4.25
+    }
+  },
+  "Respiration": {
+    "frequency": 4.25,
+    "roots": {
+      "Clinical specialties by organ system": 4.25
+    }
+  },
+  "Surgery, Plastic": {
+    "frequency": 4.25,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 4.25
+    }
+  },
+  "Mutagens": {
+    "frequency": 4.1667,
+    "roots": {
+      "Toxicology": 4.1667
+    }
+  },
+  "Phylogeny": {
+    "frequency": 4.1,
+    "roots": {
+      "General natural sciences": 2.05,
+      "General biology / anatomy / physiology": 1.025,
+      "Genetics/genomics": 1.025
+    }
+  },
+  "Carcinogens": {
+    "frequency": 4.0,
+    "roots": {
+      "Toxicology": 4.0
+    }
+  },
+  "Cardiovascular Physiological Phenomena": {
+    "frequency": 4.0,
+    "roots": {
+      "Clinical specialties by organ system": 4.0
+    }
+  },
+  "Lymphoma": {
+    "frequency": 4.0,
+    "roots": {
+      "Oncology": 2.0,
+      "Clinical specialties by organ system": 1.0,
+      "Immunology": 1.0
+    }
+  },
+  "Malaria": {
+    "frequency": 4.0,
+    "roots": {
+      "Microbiology/pathogenesis": 4.0
+    }
+  },
+  "Neuromuscular Diseases": {
+    "frequency": 4.0,
+    "roots": {
+      "Neuroscience & neurology": 4.0
+    }
+  },
+  "Physiology, Comparative": {
+    "frequency": 4.0,
+    "roots": {
+      "General biology / anatomy / physiology": 4.0
+    }
+  },
+  "Drug-Related Side Effects and Adverse Reactions": {
+    "frequency": 3.9333,
+    "roots": {
+      "Toxicology": 3.9333
+    }
+  },
+  "Dentistry": {
+    "frequency": 3.8333,
+    "roots": {
+      "Health disciplines": 3.8333
+    }
+  },
+  "Electrophoresis": {
+    "frequency": 3.8333,
+    "roots": {
+      "Chemistry / Materials Science": 3.8333
+    }
+  },
+  "Sexually Transmitted Diseases": {
+    "frequency": 3.8333,
+    "roots": {
+      "Microbiology/pathogenesis": 1.9167,
+      "Clinical specialties by organ system": 1.2778,
+      "General / internal medicine": 0.6389
+    }
+  },
+  "China": {
+    "frequency": 3.8333,
+    "roots": {
+      "Public health / health services": 3.8333
+    }
+  },
+  "Neurophysiology": {
+    "frequency": 3.8333,
+    "roots": {
+      "General biology / anatomy / physiology": 1.9167,
+      "Neuroscience & neurology": 1.9167
+    }
+  },
+  "Forensic Medicine": {
+    "frequency": 3.6667,
+    "roots": {
+      "Health disciplines": 3.6667
+    }
+  },
+  "Immunochemistry": {
+    "frequency": 3.6667,
+    "roots": {
+      "Immunology": 1.8333,
+      "Molecular biology / biochemistry": 1.8333
+    }
+  },
+  "Genetic Code": {
+    "frequency": 3.6,
+    "roots": {
+      "Genetics/genomics": 3.6
+    }
+  },
+  "Species Specificity": {
+    "frequency": 3.6,
+    "roots": {
+      "General biology / anatomy / physiology": 3.6
+    }
+  },
+  "Cytological Techniques": {
+    "frequency": 3.5833,
+    "roots": {
+      "Diagnostics / pathology / radiology": 3.5833
+    }
+  },
+  "Acute Kidney Injury": {
+    "frequency": 3.5,
+    "roots": {
+      "Clinical specialties by organ system": 3.5
+    }
+  },
+  "Anti-Infective Agents": {
+    "frequency": 3.5,
+    "roots": {
+      "Pharmacology": 3.5
+    }
+  },
+  "Biological Phenomena": {
+    "frequency": 3.5,
+    "roots": {
+      "General biology / anatomy / physiology": 3.5
+    }
+  },
+  "Epigenesis, Genetic": {
+    "frequency": 3.5,
+    "roots": {
+      "Genetics/genomics": 3.5
+    }
+  },
+  "Histocompatibility Testing": {
+    "frequency": 3.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.75,
+      "Immunology": 1.75
+    }
+  },
+  "Intensive Care Units": {
+    "frequency": 3.5,
+    "roots": {
+      "Health disciplines": 3.5
+    }
+  },
+  "Melanoma": {
+    "frequency": 3.5,
+    "roots": {
+      "Oncology": 2.9167,
+      "Clinical specialties by organ system": 0.5833
+    }
+  },
+  "Neurochemistry": {
+    "frequency": 3.5,
+    "roots": {
+      "Molecular biology / biochemistry": 1.75,
+      "Neuroscience & neurology": 1.75
+    }
+  },
+  "Neuropharmacology": {
+    "frequency": 3.5,
+    "roots": {
+      "Neuroscience & neurology": 1.75,
+      "Pharmacology": 1.75
+    }
+  },
+  "Shock": {
+    "frequency": 3.5,
+    "roots": {
+      "General / internal medicine": 3.5
+    }
+  },
+  "Uremia": {
+    "frequency": 3.5,
+    "roots": {
+      "Clinical specialties by organ system": 3.5
+    }
+  },
+  "Nervous System Physiological Phenomena": {
+    "frequency": 3.3333,
+    "roots": {
+      "Neuroscience & neurology": 3.3333
+    }
+  },
+  "Wounds and Injuries": {
+    "frequency": 3.25,
+    "roots": {
+      "General / internal medicine": 3.25
+    }
+  },
+  "Kidney Transplantation": {
+    "frequency": 3.2333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 2.1556,
+      "General / internal medicine": 1.0778
+    }
+  },
+  "Angiography": {
+    "frequency": 3.0,
+    "roots": {
+      "Diagnostics / pathology / radiology": 3.0
+    }
+  },
+  "Brain Neoplasms": {
+    "frequency": 3.0,
+    "roots": {
+      "Neuroscience & neurology": 2.25,
+      "Oncology": 0.75
+    }
+  },
+  "Cerebral Cortex": {
+    "frequency": 3.0,
+    "roots": {
+      "Neuroscience & neurology": 3.0
+    }
+  },
+  "Cerebrovascular Circulation": {
+    "frequency": 3.0,
+    "roots": {
+      "Clinical specialties by organ system": 3.0
+    }
+  },
+  "Emergency Medical Services.": {
+    "frequency": 3.0,
+    "roots": {}
+  },
+  "Histocompatibility Antigens": {
+    "frequency": 3.0,
+    "roots": {
+      "Molecular biology / biochemistry": 3.0
+    }
+  },
+  "Interferons": {
+    "frequency": 3.0,
+    "roots": {
+      "Molecular biology / biochemistry": 3.0
+    }
+  },
+  "Military Medicine": {
+    "frequency": 3.0,
+    "roots": {
+      "General / internal medicine": 3.0
+    }
+  },
+  "Mouth Diseases": {
+    "frequency": 3.0,
+    "roots": {
+      "Clinical specialties by organ system": 3.0
+    }
+  },
+  "Muscle, Skeletal": {
+    "frequency": 3.0,
+    "roots": {
+      "Clinical specialties by organ system": 3.0
+    }
+  },
+  "Periodontics": {
+    "frequency": 3.0,
+    "roots": {
+      "Health disciplines": 3.0
+    }
+  },
+  "Plant Cells": {
+    "frequency": 3.0,
+    "roots": {
+      "Cell & developmental biology": 3.0
+    }
+  },
+  "Psychosomatic Medicine": {
+    "frequency": 3.0,
+    "roots": {
+      "Psychiatry & psychology": 3.0
+    }
+  },
+  "Rheumatology": {
+    "frequency": 3.0,
+    "roots": {
+      "General / internal medicine": 3.0
+    }
+  },
+  "Transport Vesicles": {
+    "frequency": 3.0,
+    "roots": {
+      "Cell & developmental biology": 2.25,
+      "General biology / anatomy / physiology": 0.75
+    }
+  },
+  "Tuberculosis": {
+    "frequency": 3.0,
+    "roots": {
+      "Microbiology/pathogenesis": 3.0
+    }
+  },
+  "Biomedical Technology": {
+    "frequency": 2.95,
+    "roots": {
+      "General biology / anatomy / physiology": 2.95
+    }
+  },
+  "Product Surveillance, Postmarketing": {
+    "frequency": 2.9333,
+    "roots": {
+      "Public health / health services": 2.9333
+    }
+  },
+  "Renal Dialysis": {
+    "frequency": 2.8333,
+    "roots": {
+      "General / internal medicine": 2.8333
+    }
+  },
+  "Anti-Bacterial Agents": {
+    "frequency": 2.75,
+    "roots": {
+      "Pharmacology": 2.75
+    }
+  },
+  "Biodiversity": {
+    "frequency": 2.75,
+    "roots": {
+      "General biology / anatomy / physiology": 1.375,
+      "Public health / health services": 1.375
+    }
+  },
+  "Diagnostic Imaging": {
+    "frequency": 2.75,
+    "roots": {
+      "Diagnostics / pathology / radiology": 2.75
+    }
+  },
+  "Radiation": {
+    "frequency": 2.75,
+    "roots": {
+      "Chemistry / Materials Science": 2.75
+    }
+  },
+  "Free Radicals": {
+    "frequency": 2.7333,
+    "roots": {
+      "Chemistry / Materials Science": 2.7333
+    }
+  },
+  "Blood Vessels": {
+    "frequency": 2.6667,
+    "roots": {
+      "Clinical specialties by organ system": 2.6667
+    }
+  },
+  "Information Storage and Retrieval": {
+    "frequency": 2.6667,
+    "roots": {
+      "General natural sciences": 2.6667
+    }
+  },
+  "Central Nervous System Agents": {
+    "frequency": 2.6667,
+    "roots": {
+      "Pharmacology": 2.6667
+    }
+  },
+  "Neurosurgical Procedures": {
+    "frequency": 2.6667,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 2.6667
+    }
+  },
+  "Optics and Photonics": {
+    "frequency": 2.6667,
+    "roots": {
+      "General natural sciences": 2.6667
+    }
+  },
+  "Cell Transformation, Neoplastic": {
+    "frequency": 2.6167,
+    "roots": {
+      "General / internal medicine": 1.3083,
+      "Oncology": 1.3083
+    }
+  },
+  "Consumer Product Safety": {
+    "frequency": 2.6,
+    "roots": {
+      "Public health / health services": 2.6
+    }
+  },
+  "Aged": {
+    "frequency": 2.5,
+    "roots": {
+      "General / internal medicine": 2.5
+    }
+  },
+  "Alzheimer Disease": {
+    "frequency": 2.5,
+    "roots": {
+      "Neuroscience & neurology": 1.875,
+      "Psychiatry & psychology": 0.625
+    }
+  },
+  "Biomarkers, Tumor.": {
+    "frequency": 2.5,
+    "roots": {}
+  },
+  "Blood Transfusion": {
+    "frequency": 2.5,
+    "roots": {
+      "General / internal medicine": 2.5
+    }
+  },
+  "Cerebrovascular Disorders": {
+    "frequency": 2.5,
+    "roots": {
+      "Clinical specialties by organ system": 1.25,
+      "Neuroscience & neurology": 1.25
+    }
+  },
+  "Clinical Trial Protocols as Topic": {
+    "frequency": 2.5,
+    "roots": {
+      "General / internal medicine": 1.25,
+      "Health disciplines": 0.625,
+      "Public health / health services": 0.625
+    }
+  },
+  "Heart Diseases": {
+    "frequency": 2.5,
+    "roots": {
+      "Clinical specialties by organ system": 2.5
+    }
+  },
+  "Hemostasis": {
+    "frequency": 2.5,
+    "roots": {
+      "Clinical specialties by organ system": 2.5
+    }
+  },
+  "Infertility": {
+    "frequency": 2.5,
+    "roots": {
+      "Clinical specialties by organ system": 2.5
+    }
+  },
+  "Neovascularization, Pathologic": {
+    "frequency": 2.5,
+    "roots": {
+      "Clinical specialties by organ system": 1.25,
+      "General / internal medicine": 1.25
+    }
+  },
+  "Neovascularization, Physiologic": {
+    "frequency": 2.5,
+    "roots": {
+      "Clinical specialties by organ system": 2.5
+    }
+  },
+  "Reproducibility of Results": {
+    "frequency": 2.5,
+    "roots": {
+      "Public health / health services": 1.875,
+      "Health disciplines": 0.625
+    }
+  },
+  "Research Design": {
+    "frequency": 2.5,
+    "roots": {
+      "Multidisciplinary": 2.5
+    }
+  },
+  "Retinal Diseases": {
+    "frequency": 2.5,
+    "roots": {
+      "Clinical specialties by organ system": 2.5
+    }
+  },
+  "Ultrasonography": {
+    "frequency": 2.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 2.5
+    }
+  },
+  "Virus Diseases": {
+    "frequency": 2.5,
+    "roots": {
+      "Microbiology/pathogenesis": 2.5
+    }
+  },
+  "Vitreous Body": {
+    "frequency": 2.5,
+    "roots": {
+      "Clinical specialties by organ system": 2.5
+    }
+  },
+  "Psychophysiology": {
+    "frequency": 2.4167,
+    "roots": {
+      "Psychiatry & psychology": 1.6111,
+      "General biology / anatomy / physiology": 0.8056
+    }
+  },
+  "Family Practice": {
+    "frequency": 2.3333,
+    "roots": {
+      "General / internal medicine": 2.3333
+    }
+  },
+  "Headache": {
+    "frequency": 2.3333,
+    "roots": {
+      "Neuroscience & neurology": 1.1667,
+      "General / internal medicine": 0.5833,
+      "Psychiatry & psychology": 0.3889,
+      "General biology / anatomy / physiology": 0.1944
+    }
+  },
+  "Kinetics": {
+    "frequency": 2.3333,
+    "roots": {
+      "Chemistry / Materials Science": 2.3333
+    }
+  },
+  "Perinatology": {
+    "frequency": 2.3333,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 2.3333
+    }
+  },
+  "Zoology": {
+    "frequency": 2.3333,
+    "roots": {
+      "General biology / anatomy / physiology": 2.3333
+    }
+  },
+  "Biological Transport": {
+    "frequency": 2.3333,
+    "roots": {
+      "Molecular biology / biochemistry": 2.3333
+    }
+  },
+  "Psychology": {
+    "frequency": 2.3333,
+    "roots": {
+      "Psychiatry & psychology": 2.3333
+    }
+  },
+  "Psychology, Clinical": {
+    "frequency": 2.3333,
+    "roots": {
+      "Psychiatry & psychology": 2.3333
+    }
+  },
+  "DNA": {
+    "frequency": 2.25,
+    "roots": {
+      "Molecular biology / biochemistry": 2.25
+    }
+  },
+  "Respiratory Physiological Phenomena": {
+    "frequency": 2.25,
+    "roots": {
+      "Clinical specialties by organ system": 2.25
+    }
+  },
+  "Asthma": {
+    "frequency": 2.1667,
+    "roots": {
+      "Clinical specialties by organ system": 1.8056,
+      "Immunology": 0.3611
+    }
+  },
+  "Chromosome Aberrations": {
+    "frequency": 2.1667,
+    "roots": {
+      "General / internal medicine": 1.0833,
+      "Genetics/genomics": 1.0833
+    }
+  },
+  "Skin Diseases": {
+    "frequency": 2.1667,
+    "roots": {
+      "Clinical specialties by organ system": 2.1667
+    }
+  },
+  "Affective Symptoms": {
+    "frequency": 2.0,
+    "roots": {
+      "Psychiatry & psychology": 2.0
+    }
+  },
+  "Anesthesia, Obstetrical": {
+    "frequency": 2.0,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 2.0
+    }
+  },
+  "Antiviral Agents": {
+    "frequency": 2.0,
+    "roots": {
+      "Pharmacology": 2.0
+    }
+  },
+  "Autonomic Nervous System": {
+    "frequency": 2.0,
+    "roots": {
+      "Neuroscience & neurology": 2.0
+    }
+  },
+  "Biological Psychiatry": {
+    "frequency": 2.0,
+    "roots": {
+      "Psychiatry & psychology": 2.0
+    }
+  },
+  "Biosensing Techniques": {
+    "frequency": 2.0,
+    "roots": {
+      "Diagnostics / pathology / radiology": 2.0
+    }
+  },
+  "Burns": {
+    "frequency": 2.0,
+    "roots": {
+      "General / internal medicine": 2.0
+    }
+  },
+  "Calcification, Physiologic": {
+    "frequency": 2.0,
+    "roots": {
+      "General biology / anatomy / physiology": 0.8333,
+      "Chemistry / Materials Science": 0.6667,
+      "Clinical specialties by organ system": 0.3333,
+      "Pediatrics / reproductive / developmental medicine": 0.1667
+    }
+  },
+  "Chemistry, Bioinorganic": {
+    "frequency": 2.0,
+    "roots": {
+      "Chemistry / Materials Science": 1.0,
+      "Molecular biology / biochemistry": 1.0
+    }
+  },
+  "Communicable Diseases, Emerging": {
+    "frequency": 2.0,
+    "roots": {
+      "General / internal medicine": 1.0,
+      "Microbiology/pathogenesis": 1.0
+    }
+  },
+  "Cornea": {
+    "frequency": 2.0,
+    "roots": {
+      "Clinical specialties by organ system": 2.0
+    }
+  },
+  "Endothelium": {
+    "frequency": 2.0,
+    "roots": {
+      "Cell & developmental biology": 2.0
+    }
+  },
+  "Esophageal Diseases": {
+    "frequency": 2.0,
+    "roots": {
+      "Clinical specialties by organ system": 2.0
+    }
+  },
+  "Fatty Acids, Unsaturated": {
+    "frequency": 2.0,
+    "roots": {
+      "Molecular biology / biochemistry": 2.0
+    }
+  },
+  "Genetic Engineering": {
+    "frequency": 2.0,
+    "roots": {
+      "Genetics/genomics": 2.0
+    }
+  },
+  "Hand": {
+    "frequency": 2.0,
+    "roots": {
+      "Clinical specialties by organ system": 2.0
+    }
+  },
+  "Hematologic Neoplasms.": {
+    "frequency": 2.0,
+    "roots": {}
+  },
+  "Infant, Newborn": {
+    "frequency": 2.0,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 2.0
+    }
+  },
+  "Leprosy": {
+    "frequency": 2.0,
+    "roots": {
+      "Microbiology/pathogenesis": 2.0
+    }
+  },
+  "Lung Neoplasms": {
+    "frequency": 2.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.5,
+      "Oncology": 0.5
+    }
+  },
+  "Lupus Erythematosus, Systemic": {
+    "frequency": 2.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.0,
+      "Immunology": 1.0
+    }
+  },
+  "Medical Informatics": {
+    "frequency": 2.0,
+    "roots": {
+      "General natural sciences": 2.0
+    }
+  },
+  "Molecular Targeted Therapy": {
+    "frequency": 2.0,
+    "roots": {
+      "General / internal medicine": 2.0
+    }
+  },
+  "Monitoring, Physiologic": {
+    "frequency": 2.0,
+    "roots": {
+      "Diagnostics / pathology / radiology": 2.0
+    }
+  },
+  "Neoplasms, Experimental": {
+    "frequency": 2.0,
+    "roots": {
+      "Health disciplines": 1.0,
+      "Oncology": 1.0
+    }
+  },
+  "Neurodegenerative Diseases": {
+    "frequency": 2.0,
+    "roots": {
+      "Neuroscience & neurology": 2.0
+    }
+  },
+  "Otorhinolaryngologic Diseases": {
+    "frequency": 2.0,
+    "roots": {
+      "Clinical specialties by organ system": 2.0
+    }
+  },
+  "Physiological Phenomena": {
+    "frequency": 2.0,
+    "roots": {
+      "General biology / anatomy / physiology": 2.0
+    }
+  },
+  "Substance-Related Disorders": {
+    "frequency": 2.0,
+    "roots": {
+      "Psychiatry & psychology": 1.0,
+      "Toxicology": 1.0
+    }
+  },
+  "Vision, Ocular": {
+    "frequency": 2.0,
+    "roots": {
+      "Clinical specialties by organ system": 0.6667,
+      "Cell & developmental biology": 0.3333,
+      "Chemistry / Materials Science": 0.3333,
+      "Neuroscience & neurology": 0.3333,
+      "Psychiatry & psychology": 0.2222,
+      "General biology / anatomy / physiology": 0.1111
+    }
+  },
+  "Voice": {
+    "frequency": 2.0,
+    "roots": {
+      "Clinical specialties by organ system": 2.0
+    }
+  },
+  "Wound Healing": {
+    "frequency": 2.0,
+    "roots": {
+      "General biology / anatomy / physiology": 2.0
+    }
+  },
+  "Tissue Engineering": {
+    "frequency": 2.0,
+    "roots": {
+      "Cell & developmental biology": 2.0
+    }
+  },
+  "Anatomy": {
+    "frequency": 1.9167,
+    "roots": {
+      "General biology / anatomy / physiology": 1.9167
+    }
+  },
+  "Oxidative Stress": {
+    "frequency": 1.9,
+    "roots": {
+      "General biology / anatomy / physiology": 0.95,
+      "Molecular biology / biochemistry": 0.95
+    }
+  },
+  "Evolution, Molecular": {
+    "frequency": 1.8333,
+    "roots": {
+      "General biology / anatomy / physiology": 0.9167,
+      "Genetics/genomics": 0.9167
+    }
+  },
+  "Emergencies": {
+    "frequency": 1.75,
+    "roots": {
+      "Public health / health services": 0.875,
+      "General / internal medicine": 0.5833,
+      "General biology / anatomy / physiology": 0.2917
+    }
+  },
+  "Nursing Care": {
+    "frequency": 1.75,
+    "roots": {
+      "Health disciplines": 1.3125,
+      "General / internal medicine": 0.4375
+    }
+  },
+  "Data Collection": {
+    "frequency": 1.6667,
+    "roots": {
+      "General natural sciences": 0.5556,
+      "Health disciplines": 0.5556,
+      "Public health / health services": 0.5556
+    }
+  },
+  "Data Mining": {
+    "frequency": 1.6667,
+    "roots": {
+      "General natural sciences": 1.6667
+    }
+  },
+  "Hyperlipidemias": {
+    "frequency": 1.6667,
+    "roots": {
+      "Nutrition, metabolism, and food science": 1.6667
+    }
+  },
+  "Musculoskeletal Diseases": {
+    "frequency": 1.6667,
+    "roots": {
+      "Clinical specialties by organ system": 1.6667
+    }
+  },
+  "Gene Expression": {
+    "frequency": 1.5833,
+    "roots": {
+      "Genetics/genomics": 1.5833
+    }
+  },
+  "Muscular Diseases": {
+    "frequency": 1.5333,
+    "roots": {
+      "Clinical specialties by organ system": 0.7667,
+      "Neuroscience & neurology": 0.7667
+    }
+  },
+  "Animal Diseases": {
+    "frequency": 1.5,
+    "roots": {
+      "Health disciplines": 1.5
+    }
+  },
+  "Bone Marrow Transplantation": {
+    "frequency": 1.5,
+    "roots": {
+      "General / internal medicine": 0.75,
+      "Surgery / anesthesia / perioperative": 0.75
+    }
+  },
+  "Cerebrospinal Fluid": {
+    "frequency": 1.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.9375,
+      "Cell & developmental biology": 0.5625
+    }
+  },
+  "Chemistry, Clinical": {
+    "frequency": 1.5,
+    "roots": {
+      "Chemistry / Materials Science": 1.5
+    }
+  },
+  "Colorectal Surgery": {
+    "frequency": 1.5,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 1.5
+    }
+  },
+  "Diabetes Complications": {
+    "frequency": 1.5,
+    "roots": {
+      "Clinical specialties by organ system": 1.5
+    }
+  },
+  "Endoscopy": {
+    "frequency": 1.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.75,
+      "Surgery / anesthesia / perioperative": 0.75
+    }
+  },
+  "Fetus": {
+    "frequency": 1.5,
+    "roots": {
+      "Cell & developmental biology": 1.5
+    }
+  },
+  "Genetic Diseases, Inborn": {
+    "frequency": 1.5,
+    "roots": {
+      "Genetics/genomics": 1.5
+    }
+  },
+  "Genome, Human": {
+    "frequency": 1.5,
+    "roots": {
+      "Genetics/genomics": 1.5
+    }
+  },
+  "Genomic Library": {
+    "frequency": 1.5,
+    "roots": {
+      "Genetics/genomics": 1.5
+    }
+  },
+  "Hematopoietic Stem Cell Transplantation": {
+    "frequency": 1.5,
+    "roots": {
+      "General / internal medicine": 0.75,
+      "Surgery / anesthesia / perioperative": 0.75
+    }
+  },
+  "Mammals": {
+    "frequency": 1.5,
+    "roots": {
+      "General biology / anatomy / physiology": 1.5
+    }
+  },
+  "Mice": {
+    "frequency": 1.5,
+    "roots": {
+      "General biology / anatomy / physiology": 1.5
+    }
+  },
+  "Microcirculation": {
+    "frequency": 1.5,
+    "roots": {
+      "Clinical specialties by organ system": 1.5
+    }
+  },
+  "Mouth Neoplasms": {
+    "frequency": 1.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.75,
+      "Oncology": 0.75
+    }
+  },
+  "Neural Pathways": {
+    "frequency": 1.5,
+    "roots": {
+      "Neuroscience & neurology": 1.5
+    }
+  },
+  "Orphan Drug Production": {
+    "frequency": 1.5,
+    "roots": {
+      "Pharmacology": 1.5
+    }
+  },
+  "Pathology, Surgical": {
+    "frequency": 1.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.5
+    }
+  },
+  "Pigmentation": {
+    "frequency": 1.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.75,
+      "General biology / anatomy / physiology": 0.75
+    }
+  },
+  "Rare Diseases": {
+    "frequency": 1.5,
+    "roots": {
+      "General / internal medicine": 1.5
+    }
+  },
+  "Regeneration": {
+    "frequency": 1.5,
+    "roots": {
+      "General biology / anatomy / physiology": 1.5
+    }
+  },
+  "Retroviridae Infections": {
+    "frequency": 1.5,
+    "roots": {
+      "Microbiology/pathogenesis": 1.5
+    }
+  },
+  "Seizures": {
+    "frequency": 1.5,
+    "roots": {
+      "General / internal medicine": 0.75,
+      "Neuroscience & neurology": 0.75
+    }
+  },
+  "Skin": {
+    "frequency": 1.5,
+    "roots": {
+      "Clinical specialties by organ system": 1.5
+    }
+  },
+  "Substance-Related Disorders.": {
+    "frequency": 1.5,
+    "roots": {}
+  },
+  "Synaptic Transmission": {
+    "frequency": 1.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.5,
+      "Neuroscience & neurology": 0.5,
+      "Cell & developmental biology": 0.25,
+      "Chemistry / Materials Science": 0.25
+    }
+  },
+  "Thorax": {
+    "frequency": 1.5,
+    "roots": {
+      "Clinical specialties by organ system": 1.5
+    }
+  },
+  "Tomography, Emission-Computed": {
+    "frequency": 1.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.5
+    }
+  },
+  "Tomography, X-Ray Computed": {
+    "frequency": 1.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.5
+    }
+  },
+  "Vascular Surgical Procedures": {
+    "frequency": 1.5,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 1.5
+    }
+  },
+  "Psychotropic Drugs": {
+    "frequency": 1.4286,
+    "roots": {
+      "Pharmacology": 1.4286
+    }
+  },
+  "Blood Cells": {
+    "frequency": 1.3333,
+    "roots": {
+      "Cell & developmental biology": 0.6667,
+      "General biology / anatomy / physiology": 0.3333,
+      "Immunology": 0.3333
+    }
+  },
+  "Breast": {
+    "frequency": 1.3333,
+    "roots": {
+      "Clinical specialties by organ system": 1.3333
+    }
+  },
+  "Cell Membrane": {
+    "frequency": 1.3333,
+    "roots": {
+      "Cell & developmental biology": 1.3333
+    }
+  },
+  "Child Psychiatry": {
+    "frequency": 1.3333,
+    "roots": {
+      "Psychiatry & psychology": 1.3333
+    }
+  },
+  "Chromosomes": {
+    "frequency": 1.3333,
+    "roots": {
+      "Cell & developmental biology": 0.7778,
+      "Genetics/genomics": 0.4444,
+      "General biology / anatomy / physiology": 0.1111
+    }
+  },
+  "Electrodiagnosis": {
+    "frequency": 1.3333,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.3333
+    }
+  },
+  "Electrophysiology": {
+    "frequency": 1.3333,
+    "roots": {
+      "General biology / anatomy / physiology": 1.0,
+      "General natural sciences": 0.3333
+    }
+  },
+  "Genetic Research": {
+    "frequency": 1.3333,
+    "roots": {
+      "Genetics/genomics": 0.6667,
+      "Multidisciplinary": 0.6667
+    }
+  },
+  "Mitochondria": {
+    "frequency": 1.3333,
+    "roots": {
+      "Cell & developmental biology": 1.1667,
+      "General biology / anatomy / physiology": 0.1667
+    }
+  },
+  "Nursing": {
+    "frequency": 1.3333,
+    "roots": {
+      "Health disciplines": 1.3333
+    }
+  },
+  "Pain Management": {
+    "frequency": 1.3333,
+    "roots": {
+      "General / internal medicine": 0.6667,
+      "Health disciplines": 0.6667
+    }
+  },
+  "Pharmacological Phenomena": {
+    "frequency": 1.3333,
+    "roots": {
+      "General biology / anatomy / physiology": 1.3333
+    }
+  },
+  "Surgical Procedures, Operative": {
+    "frequency": 1.3333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 1.3333
+    }
+  },
+  "United States": {
+    "frequency": 1.3333,
+    "roots": {
+      "Public health / health services": 1.3333
+    }
+  },
+  "Deltaretrovirus": {
+    "frequency": 1.25,
+    "roots": {
+      "Microbiology/pathogenesis": 1.25
+    }
+  },
+  "Deltaretrovirus Infections": {
+    "frequency": 1.25,
+    "roots": {
+      "Immunology": 0.625,
+      "Microbiology/pathogenesis": 0.625
+    }
+  },
+  "Echocardiography": {
+    "frequency": 1.25,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.25
+    }
+  },
+  "Food Microbiology": {
+    "frequency": 1.25,
+    "roots": {
+      "Public health / health services": 0.9375,
+      "Microbiology/pathogenesis": 0.3125
+    }
+  },
+  "Head": {
+    "frequency": 1.2333,
+    "roots": {
+      "Clinical specialties by organ system": 1.2333
+    }
+  },
+  "Neck": {
+    "frequency": 1.2333,
+    "roots": {
+      "Clinical specialties by organ system": 1.2333
+    }
+  },
+  "Histocytochemistry": {
+    "frequency": 1.2,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.6,
+      "General biology / anatomy / physiology": 0.3,
+      "Molecular biology / biochemistry": 0.3
+    }
+  },
+  "Immunologic Techniques": {
+    "frequency": 1.2,
+    "roots": {
+      "Immunology": 1.2
+    }
+  },
+  "Gene Transfer Techniques": {
+    "frequency": 1.1667,
+    "roots": {
+      "Genetics/genomics": 1.1667
+    }
+  },
+  "HIV Infections": {
+    "frequency": 1.1667,
+    "roots": {
+      "Microbiology/pathogenesis": 0.6562,
+      "Immunology": 0.2917,
+      "General / internal medicine": 0.1701,
+      "Clinical specialties by organ system": 0.0486
+    }
+  },
+  "Parasites": {
+    "frequency": 1.1667,
+    "roots": {
+      "General biology / anatomy / physiology": 1.1667
+    }
+  },
+  "Occupational Diseases": {
+    "frequency": 1.1167,
+    "roots": {
+      "Public health / health services": 1.1167
+    }
+  },
+  "Environmental Exposure": {
+    "frequency": 1.1,
+    "roots": {
+      "Public health / health services": 1.1
+    }
+  },
+  "Radionuclide Imaging": {
+    "frequency": 1.0833,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.0833
+    }
+  },
+  "Receptors, Cell Surface": {
+    "frequency": 1.05,
+    "roots": {
+      "Molecular biology / biochemistry": 1.05
+    }
+  },
+  "Abnormalities, Drug-Induced": {
+    "frequency": 1.0,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 1.0
+    }
+  },
+  "Adolescent Psychiatry": {
+    "frequency": 1.0,
+    "roots": {
+      "Psychiatry & psychology": 1.0
+    }
+  },
+  "Anesthesia, Conduction": {
+    "frequency": 1.0,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 1.0
+    }
+  },
+  "Animals, Laboratory": {
+    "frequency": 1.0,
+    "roots": {
+      "General biology / anatomy / physiology": 1.0
+    }
+  },
+  "Antioxidants": {
+    "frequency": 1.0,
+    "roots": {
+      "Pharmacology": 0.5,
+      "Molecular biology / biochemistry": 0.3333,
+      "Chemistry / Materials Science": 0.1667
+    }
+  },
+  "Artificial Organs": {
+    "frequency": 1.0,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 1.0
+    }
+  },
+  "Autistic Disorder": {
+    "frequency": 1.0,
+    "roots": {
+      "Psychiatry & psychology": 1.0
+    }
+  },
+  "Bacterial Infections": {
+    "frequency": 1.0,
+    "roots": {
+      "Microbiology/pathogenesis": 1.0
+    }
+  },
+  "Behavior, Addictive": {
+    "frequency": 1.0,
+    "roots": {
+      "Psychiatry & psychology": 1.0
+    }
+  },
+  "Biological Therapy": {
+    "frequency": 1.0,
+    "roots": {
+      "General / internal medicine": 1.0
+    }
+  },
+  "Biomechanical Phenomena": {
+    "frequency": 1.0,
+    "roots": {
+      "Chemistry / Materials Science": 1.0
+    }
+  },
+  "Bipolar Disorder.": {
+    "frequency": 1.0,
+    "roots": {}
+  },
+  "Blood Group Antigens": {
+    "frequency": 1.0,
+    "roots": {
+      "Molecular biology / biochemistry": 1.0
+    }
+  },
+  "Blood Platelets": {
+    "frequency": 1.0,
+    "roots": {
+      "Cell & developmental biology": 0.5,
+      "General biology / anatomy / physiology": 0.25,
+      "Immunology": 0.25
+    }
+  },
+  "Cartilage": {
+    "frequency": 1.0,
+    "roots": {
+      "Cell & developmental biology": 0.5,
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Catalysis": {
+    "frequency": 1.0,
+    "roots": {
+      "Chemistry / Materials Science": 1.0
+    }
+  },
+  "Chiropractic": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 1.0
+    }
+  },
+  "Chromatin": {
+    "frequency": 1.0,
+    "roots": {
+      "Molecular biology / biochemistry": 0.5,
+      "Genetics/genomics": 0.3333,
+      "Cell & developmental biology": 0.1458,
+      "General biology / anatomy / physiology": 0.0208
+    }
+  },
+  "Complementary Therapies": {
+    "frequency": 1.0,
+    "roots": {
+      "General / internal medicine": 1.0
+    }
+  },
+  "Digestive System Physiological Phenomena": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.0
+    }
+  },
+  "Disease Susceptibility": {
+    "frequency": 1.0,
+    "roots": {
+      "General / internal medicine": 0.5,
+      "Diagnostics / pathology / radiology": 0.25,
+      "General biology / anatomy / physiology": 0.25
+    }
+  },
+  "Drug Interactions": {
+    "frequency": 1.0,
+    "roots": {
+      "General biology / anatomy / physiology": 1.0
+    }
+  },
+  "Drugs, Investigational": {
+    "frequency": 1.0,
+    "roots": {
+      "Pharmacology": 1.0
+    }
+  },
+  "Ear": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.0
+    }
+  },
+  "Electrocardiography": {
+    "frequency": 1.0,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.0
+    }
+  },
+  "Electroconvulsive Therapy": {
+    "frequency": 1.0,
+    "roots": {
+      "Psychiatry & psychology": 1.0
+    }
+  },
+  "Electroencephalography": {
+    "frequency": 1.0,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.0
+    }
+  },
+  "Endodontics": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 1.0
+    }
+  },
+  "Environmental Medicine": {
+    "frequency": 1.0,
+    "roots": {
+      "Public health / health services": 1.0
+    }
+  },
+  "Erectile Dysfunction": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 0.6667,
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Gastrointestinal Neoplasms": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 0.75,
+      "Oncology": 0.25
+    }
+  },
+  "Genetic Markers": {
+    "frequency": 1.0,
+    "roots": {
+      "Genetics/genomics": 0.5,
+      "Molecular biology / biochemistry": 0.5
+    }
+  },
+  "Genetics, Behavioral": {
+    "frequency": 1.0,
+    "roots": {
+      "Genetics/genomics": 0.5,
+      "Psychiatry & psychology": 0.5
+    }
+  },
+  "Heart Failure": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.0
+    }
+  },
+  "Heart Valve Diseases": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.0
+    }
+  },
+  "Hemophilia A": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 0.8333,
+      "Genetics/genomics": 0.1667
+    }
+  },
+  "History of Medicine": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 1.0
+    }
+  },
+  "Intellectual Disability": {
+    "frequency": 1.0,
+    "roots": {
+      "Psychiatry & psychology": 0.75,
+      "General / internal medicine": 0.125,
+      "Neuroscience & neurology": 0.125
+    }
+  },
+  "Ion Channels": {
+    "frequency": 1.0,
+    "roots": {
+      "Molecular biology / biochemistry": 1.0
+    }
+  },
+  "Mammary Glands, Animal": {
+    "frequency": 1.0,
+    "roots": {
+      "Cell & developmental biology": 0.5,
+      "General biology / anatomy / physiology": 0.5
+    }
+  },
+  "Mammary Neoplasms, Animal": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 0.5,
+      "Oncology": 0.5
+    }
+  },
+  "Membranes": {
+    "frequency": 1.0,
+    "roots": {
+      "Cell & developmental biology": 1.0
+    }
+  },
+  "Microscopy": {
+    "frequency": 1.0,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.0
+    }
+  },
+  "Microscopy, Electron, Scanning": {
+    "frequency": 1.0,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.0
+    }
+  },
+  "Models, Biological": {
+    "frequency": 1.0,
+    "roots": {
+      "General biology / anatomy / physiology": 1.0
+    }
+  },
+  "Models, Theoretical": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 1.0
+    }
+  },
+  "Neuroglia": {
+    "frequency": 1.0,
+    "roots": {
+      "Cell & developmental biology": 0.5,
+      "Neuroscience & neurology": 0.5
+    }
+  },
+  "Nursing Research": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 0.6667,
+      "Multidisciplinary": 0.3333
+    }
+  },
+  "Obesity, Morbid": {
+    "frequency": 1.0,
+    "roots": {
+      "Nutrition, metabolism, and food science": 1.0
+    }
+  },
+  "Organ Transplantation": {
+    "frequency": 1.0,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 1.0
+    }
+  },
+  "Palliative Care": {
+    "frequency": 1.0,
+    "roots": {
+      "General / internal medicine": 0.5,
+      "Health disciplines": 0.5
+    }
+  },
+  "Pancreas": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.0
+    }
+  },
+  "Peptides": {
+    "frequency": 1.0,
+    "roots": {
+      "Molecular biology / biochemistry": 1.0
+    }
+  },
+  "Perioperative Nursing": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 0.5833,
+      "Surgery / anesthesia / perioperative": 0.3333,
+      "General / internal medicine": 0.0833
+    }
+  },
+  "Personality": {
+    "frequency": 1.0,
+    "roots": {
+      "Psychiatry & psychology": 1.0
+    }
+  },
+  "Photobiology": {
+    "frequency": 1.0,
+    "roots": {
+      "General biology / anatomy / physiology": 1.0
+    }
+  },
+  "Poultry": {
+    "frequency": 1.0,
+    "roots": {
+      "General biology / anatomy / physiology": 0.8333,
+      "Nutrition, metabolism, and food science": 0.1667
+    }
+  },
+  "Poultry Diseases": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 1.0
+    }
+  },
+  "Prenatal Diagnosis": {
+    "frequency": 1.0,
+    "roots": {
+      "Diagnostics / pathology / radiology": 1.0
+    }
+  },
+  "Preventive Medicine": {
+    "frequency": 1.0,
+    "roots": {
+      "Public health / health services": 1.0
+    }
+  },
+  "Prostaglandins": {
+    "frequency": 1.0,
+    "roots": {
+      "Molecular biology / biochemistry": 1.0
+    }
+  },
+  "Psychiatric Department, Hospital": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 1.0
+    }
+  },
+  "Psychiatric Nursing": {
+    "frequency": 1.0,
+    "roots": {
+      "Health disciplines": 0.875,
+      "General / internal medicine": 0.125
+    }
+  },
+  "Psychology, Social": {
+    "frequency": 1.0,
+    "roots": {
+      "Psychiatry & psychology": 1.0
+    }
+  },
+  "Psychopathology": {
+    "frequency": 1.0,
+    "roots": {
+      "Psychiatry & psychology": 1.0
+    }
+  },
+  "Radiobiology": {
+    "frequency": 1.0,
+    "roots": {
+      "General biology / anatomy / physiology": 1.0
+    }
+  },
+  "Regenerative Medicine": {
+    "frequency": 1.0,
+    "roots": {
+      "General / internal medicine": 1.0
+    }
+  },
+  "Renal Replacement Therapy": {
+    "frequency": 1.0,
+    "roots": {
+      "General / internal medicine": 1.0
+    }
+  },
+  "Sanitation": {
+    "frequency": 1.0,
+    "roots": {
+      "Public health / health services": 0.6667,
+      "Health disciplines": 0.3333
+    }
+  },
+  "Stomatognathic Diseases": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.0
+    }
+  },
+  "Stomatognathic System": {
+    "frequency": 1.0,
+    "roots": {
+      "Clinical specialties by organ system": 1.0
+    }
+  },
+  "Transfection": {
+    "frequency": 1.0,
+    "roots": {
+      "Genetics/genomics": 1.0
+    }
+  },
+  "Transplantation, Heterologous": {
+    "frequency": 1.0,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 1.0
+    }
+  },
+  "Vaccines": {
+    "frequency": 1.0,
+    "roots": {
+      "Chemistry / Materials Science": 1.0
+    }
+  },
+  "Female Urogenital Diseases": {
+    "frequency": 0.9833,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.9833
+    }
+  },
+  "Immunologic Factors": {
+    "frequency": 0.9167,
+    "roots": {
+      "Pharmacology": 0.9167
+    }
+  },
+  "Orthopedic Procedures": {
+    "frequency": 0.9167,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.9167
+    }
+  },
+  "Pharmacy Service, Hospital.": {
+    "frequency": 0.9167,
+    "roots": {}
+  },
+  "Child Development": {
+    "frequency": 0.9167,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.9167
+    }
+  },
+  "Radiotherapy": {
+    "frequency": 0.9167,
+    "roots": {
+      "General / internal medicine": 0.9167
+    }
+  },
+  "Molecular Sequence Data": {
+    "frequency": 0.8571,
+    "roots": {
+      "General natural sciences": 0.8571
+    }
+  },
+  "Protein Conformation": {
+    "frequency": 0.8571,
+    "roots": {
+      "Chemistry / Materials Science": 0.8571
+    }
+  },
+  "Protein Engineering": {
+    "frequency": 0.8571,
+    "roots": {
+      "Genetics/genomics": 0.8571
+    }
+  },
+  "Protein Folding": {
+    "frequency": 0.8571,
+    "roots": {
+      "Chemistry / Materials Science": 0.8571
+    }
+  },
+  "Protein Binding": {
+    "frequency": 0.85,
+    "roots": {
+      "Chemistry / Materials Science": 0.425,
+      "Molecular biology / biochemistry": 0.425
+    }
+  },
+  "Receptors, Cytoplasmic and Nuclear.": {
+    "frequency": 0.85,
+    "roots": {}
+  },
+  "Receptors, Drug": {
+    "frequency": 0.85,
+    "roots": {
+      "Molecular biology / biochemistry": 0.85
+    }
+  },
+  "Chromatography": {
+    "frequency": 0.8333,
+    "roots": {
+      "Chemistry / Materials Science": 0.8333
+    }
+  },
+  "Heart": {
+    "frequency": 0.8333,
+    "roots": {
+      "Clinical specialties by organ system": 0.8333
+    }
+  },
+  "Sports": {
+    "frequency": 0.8333,
+    "roots": {
+      "Psychiatry & psychology": 0.8333
+    }
+  },
+  "Sports Medicine": {
+    "frequency": 0.8333,
+    "roots": {
+      "General / internal medicine": 0.8333
+    }
+  },
+  "Accidents": {
+    "frequency": 0.75,
+    "roots": {
+      "Public health / health services": 0.75
+    }
+  },
+  "Culture Techniques": {
+    "frequency": 0.75,
+    "roots": {
+      "Cell & developmental biology": 0.75
+    }
+  },
+  "Developmental Disabilities": {
+    "frequency": 0.7333,
+    "roots": {
+      "Psychiatry & psychology": 0.7333
+    }
+  },
+  "Bone Diseases": {
+    "frequency": 0.7,
+    "roots": {
+      "Clinical specialties by organ system": 0.7
+    }
+  },
+  "Diet": {
+    "frequency": 0.7,
+    "roots": {
+      "General biology / anatomy / physiology": 0.7
+    }
+  },
+  "Arrhythmias, Cardiac": {
+    "frequency": 0.6667,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333,
+      "General / internal medicine": 0.3333
+    }
+  },
+  "Autacoids": {
+    "frequency": 0.6667,
+    "roots": {
+      "Molecular biology / biochemistry": 0.6667
+    }
+  },
+  "Bioengineering": {
+    "frequency": 0.6667,
+    "roots": {
+      "General biology / anatomy / physiology": 0.6667
+    }
+  },
+  "Cardiac Pacing, Artificial": {
+    "frequency": 0.6667,
+    "roots": {
+      "General / internal medicine": 0.5938,
+      "Health disciplines": 0.0729
+    }
+  },
+  "Cataract Extraction": {
+    "frequency": 0.6667,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.6667
+    }
+  },
+  "Cell Adhesion Molecules": {
+    "frequency": 0.6667,
+    "roots": {
+      "Molecular biology / biochemistry": 0.6667
+    }
+  },
+  "Colitis, Ulcerative": {
+    "frequency": 0.6667,
+    "roots": {
+      "Clinical specialties by organ system": 0.6667
+    }
+  },
+  "Crohn Disease": {
+    "frequency": 0.6667,
+    "roots": {
+      "Clinical specialties by organ system": 0.6667
+    }
+  },
+  "Digestive System Diseases": {
+    "frequency": 0.6667,
+    "roots": {
+      "Clinical specialties by organ system": 0.6667
+    }
+  },
+  "Disease Vectors": {
+    "frequency": 0.6667,
+    "roots": {
+      "Public health / health services": 0.6667
+    }
+  },
+  "Dust": {
+    "frequency": 0.6667,
+    "roots": {
+      "Chemistry / Materials Science": 0.6667
+    }
+  },
+  "Ethology": {
+    "frequency": 0.6667,
+    "roots": {
+      "Psychiatry & psychology": 0.6667
+    }
+  },
+  "Forensic Psychiatry": {
+    "frequency": 0.6667,
+    "roots": {
+      "Health disciplines": 0.3333,
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Guided Tissue Regeneration": {
+    "frequency": 0.6667,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.6667
+    }
+  },
+  "Hybrid Cells": {
+    "frequency": 0.6667,
+    "roots": {
+      "Cell & developmental biology": 0.6667
+    }
+  },
+  "Inflammatory Bowel Diseases": {
+    "frequency": 0.6667,
+    "roots": {
+      "Clinical specialties by organ system": 0.6667
+    }
+  },
+  "Jurisprudence": {
+    "frequency": 0.6667,
+    "roots": {
+      "Health disciplines": 0.3333,
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Lenses, Intraocular": {
+    "frequency": 0.6667,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.6667
+    }
+  },
+  "Marriage": {
+    "frequency": 0.6667,
+    "roots": {
+      "Psychiatry & psychology": 0.4074,
+      "Public health / health services": 0.2593
+    }
+  },
+  "Mineral Fibers": {
+    "frequency": 0.6667,
+    "roots": {
+      "Chemistry / Materials Science": 0.6667
+    }
+  },
+  "Models, Structural": {
+    "frequency": 0.6667,
+    "roots": {
+      "General natural sciences": 0.6667
+    }
+  },
+  "Musculoskeletal System": {
+    "frequency": 0.6667,
+    "roots": {
+      "Clinical specialties by organ system": 0.6667
+    }
+  },
+  "Pacemaker, Artificial": {
+    "frequency": 0.6667,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.6667
+    }
+  },
+  "Parasitic Diseases": {
+    "frequency": 0.6667,
+    "roots": {
+      "Microbiology/pathogenesis": 0.6667
+    }
+  },
+  "Pharmacology, Clinical": {
+    "frequency": 0.6667,
+    "roots": {
+      "Pharmacology": 0.6667
+    }
+  },
+  "Refractive Surgical Procedures": {
+    "frequency": 0.6667,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.6667
+    }
+  },
+  "Skin Abnormalities": {
+    "frequency": 0.6667,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333,
+      "Pediatrics / reproductive / developmental medicine": 0.3333
+    }
+  },
+  "Hypertension, Renal": {
+    "frequency": 0.65,
+    "roots": {
+      "Clinical specialties by organ system": 0.65
+    }
+  },
+  "Male Urogenital Diseases": {
+    "frequency": 0.65,
+    "roots": {
+      "Clinical specialties by organ system": 0.65
+    }
+  },
+  "Skull": {
+    "frequency": 0.65,
+    "roots": {
+      "Cell & developmental biology": 0.325,
+      "Clinical specialties by organ system": 0.325
+    }
+  },
+  "Adolescent": {
+    "frequency": 0.6286,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.6286
+    }
+  },
+  "Risk Assessment": {
+    "frequency": 0.6,
+    "roots": {
+      "Public health / health services": 0.2333,
+      "Health disciplines": 0.1833,
+      "General natural sciences": 0.1333,
+      "Psychiatry & psychology": 0.05
+    }
+  },
+  "Health Policy": {
+    "frequency": 0.6,
+    "roots": {
+      "Health disciplines": 0.3,
+      "Psychiatry & psychology": 0.3
+    }
+  },
+  "Biliary Tract Diseases": {
+    "frequency": 0.5833,
+    "roots": {
+      "Clinical specialties by organ system": 0.5833
+    }
+  },
+  "Face": {
+    "frequency": 0.5833,
+    "roots": {
+      "Clinical specialties by organ system": 0.5833
+    }
+  },
+  "Urinary Tract Physiological Phenomena": {
+    "frequency": 0.5833,
+    "roots": {
+      "Clinical specialties by organ system": 0.5833
+    }
+  },
+  "Eye": {
+    "frequency": 0.5333,
+    "roots": {
+      "Clinical specialties by organ system": 0.5333
+    }
+  },
+  "Muscles": {
+    "frequency": 0.5333,
+    "roots": {
+      "Clinical specialties by organ system": 0.5333
+    }
+  },
+  "Adipocytes": {
+    "frequency": 0.5,
+    "roots": {
+      "Cell & developmental biology": 0.5
+    }
+  },
+  "Adipose Tissue": {
+    "frequency": 0.5,
+    "roots": {
+      "Cell & developmental biology": 0.5
+    }
+  },
+  "Adolescent Medicine": {
+    "frequency": 0.5,
+    "roots": {
+      "General / internal medicine": 0.5
+    }
+  },
+  "Aerospace Medicine": {
+    "frequency": 0.5,
+    "roots": {
+      "General / internal medicine": 0.5
+    }
+  },
+  "Animal Testing Alternatives": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.5
+    }
+  },
+  "Animal Welfare": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.25,
+      "Psychiatry & psychology": 0.25
+    }
+  },
+  "Arteries": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Autoantibodies": {
+    "frequency": 0.5,
+    "roots": {
+      "Molecular biology / biochemistry": 0.5
+    }
+  },
+  "Autoimmune Diseases": {
+    "frequency": 0.5,
+    "roots": {
+      "Immunology": 0.5
+    }
+  },
+  "Biological Clocks": {
+    "frequency": 0.5,
+    "roots": {
+      "Chemistry / Materials Science": 0.25,
+      "General biology / anatomy / physiology": 0.25
+    }
+  },
+  "Blood Coagulation": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Body Fluids": {
+    "frequency": 0.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.5
+    }
+  },
+  "Calcium": {
+    "frequency": 0.5,
+    "roots": {
+      "Chemistry / Materials Science": 0.25,
+      "Molecular biology / biochemistry": 0.25
+    }
+  },
+  "Canada": {
+    "frequency": 0.5,
+    "roots": {
+      "Public health / health services": 0.5
+    }
+  },
+  "Chemistry, Agricultural": {
+    "frequency": 0.5,
+    "roots": {
+      "Chemistry / Materials Science": 0.5
+    }
+  },
+  "Child Welfare": {
+    "frequency": 0.5,
+    "roots": {
+      "Psychiatry & psychology": 0.5
+    }
+  },
+  "Circadian Rhythm": {
+    "frequency": 0.5,
+    "roots": {
+      "Chemistry / Materials Science": 0.25,
+      "General biology / anatomy / physiology": 0.25
+    }
+  },
+  "Collagen Diseases": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Colonic Diseases": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Congenital Abnormalities": {
+    "frequency": 0.5,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.5
+    }
+  },
+  "Cytodiagnosis": {
+    "frequency": 0.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.5
+    }
+  },
+  "DNA Methylation": {
+    "frequency": 0.5,
+    "roots": {
+      "Chemistry / Materials Science": 0.2778,
+      "Genetics/genomics": 0.1667,
+      "Molecular biology / biochemistry": 0.0556
+    }
+  },
+  "Dementia": {
+    "frequency": 0.5,
+    "roots": {
+      "Neuroscience & neurology": 0.25,
+      "Psychiatry & psychology": 0.25
+    }
+  },
+  "Dental Implantation": {
+    "frequency": 0.5,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.3333,
+      "Health disciplines": 0.1667
+    }
+  },
+  "Dental Implants": {
+    "frequency": 0.5,
+    "roots": {
+      "Chemistry / Materials Science": 0.25,
+      "Health disciplines": 0.125,
+      "Surgery / anesthesia / perioperative": 0.125
+    }
+  },
+  "Diagnostic Techniques and Procedures": {
+    "frequency": 0.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.5
+    }
+  },
+  "Elbow": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Electronics, Medical": {
+    "frequency": 0.5,
+    "roots": {
+      "General natural sciences": 0.5
+    }
+  },
+  "Environmental Illness": {
+    "frequency": 0.5,
+    "roots": {
+      "Immunology": 0.25,
+      "Public health / health services": 0.25
+    }
+  },
+  "Equipment Contamination": {
+    "frequency": 0.5,
+    "roots": {
+      "Public health / health services": 0.5
+    }
+  },
+  "Eugenics": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.5
+    }
+  },
+  "Evidence-Based Medicine": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.3333,
+      "General / internal medicine": 0.1667
+    }
+  },
+  "Eye Injuries": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.25,
+      "General / internal medicine": 0.125,
+      "Neuroscience & neurology": 0.125
+    }
+  },
+  "Fibrinolysis": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Fishes": {
+    "frequency": 0.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.5
+    }
+  },
+  "Gastrointestinal Tract": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Glaucoma": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Growth Substances": {
+    "frequency": 0.5,
+    "roots": {
+      "Pharmacology": 0.5
+    }
+  },
+  "Health Promotion": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.25,
+      "Public health / health services": 0.25
+    }
+  },
+  "Heart Transplantation": {
+    "frequency": 0.5,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.5
+    }
+  },
+  "Hematopoietic System": {
+    "frequency": 0.5,
+    "roots": {
+      "Immunology": 0.5
+    }
+  },
+  "Hemodialysis, Home": {
+    "frequency": 0.5,
+    "roots": {
+      "General / internal medicine": 0.25,
+      "Health disciplines": 0.25
+    }
+  },
+  "Hepatitis, Viral, Animal": {
+    "frequency": 0.5,
+    "roots": {
+      "Microbiology/pathogenesis": 0.3333,
+      "Clinical specialties by organ system": 0.0833,
+      "Health disciplines": 0.0833
+    }
+  },
+  "Hepatitis, Viral, Human": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.25,
+      "Microbiology/pathogenesis": 0.25
+    }
+  },
+  "Histological Techniques": {
+    "frequency": 0.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.5
+    }
+  },
+  "Immunity, Innate": {
+    "frequency": 0.5,
+    "roots": {
+      "Immunology": 0.5
+    }
+  },
+  "Intracellular Membranes": {
+    "frequency": 0.5,
+    "roots": {
+      "Cell & developmental biology": 0.5
+    }
+  },
+  "Israel": {
+    "frequency": 0.5,
+    "roots": {
+      "Public health / health services": 0.5
+    }
+  },
+  "Joint Diseases": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Liver Neoplasms": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.375,
+      "Oncology": 0.125
+    }
+  },
+  "Lung Transplantation": {
+    "frequency": 0.5,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.5
+    }
+  },
+  "Magnetic Resonance Imaging": {
+    "frequency": 0.5,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.5
+    }
+  },
+  "Mathematics": {
+    "frequency": 0.5,
+    "roots": {
+      "General natural sciences": 0.5
+    }
+  },
+  "Mouth": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Nonlinear Dynamics": {
+    "frequency": 0.5,
+    "roots": {
+      "General natural sciences": 0.5
+    }
+  },
+  "Nutritional Sciences": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.5
+    }
+  },
+  "Nutritive Value": {
+    "frequency": 0.5,
+    "roots": {
+      "Nutrition, metabolism, and food science": 0.5
+    }
+  },
+  "Oncology Nursing": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.4375,
+      "General / internal medicine": 0.0625
+    }
+  },
+  "Oral Medicine": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.5
+    }
+  },
+  "Parasitology": {
+    "frequency": 0.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.5
+    }
+  },
+  "Perinatal Care": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.3333,
+      "General / internal medicine": 0.0833,
+      "Psychiatry & psychology": 0.0833
+    }
+  },
+  "Physical Exertion": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Plant Physiological Phenomena": {
+    "frequency": 0.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.5
+    }
+  },
+  "Plants, Edible": {
+    "frequency": 0.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.5
+    }
+  },
+  "Primates": {
+    "frequency": 0.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.5
+    }
+  },
+  "Prostatic Diseases": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Prostatic Neoplasms": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.4375,
+      "Oncology": 0.0312,
+      "Pediatrics / reproductive / developmental medicine": 0.0312
+    }
+  },
+  "Randomized Controlled Trials as Topic": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.25,
+      "Public health / health services": 0.25
+    }
+  },
+  "Serology": {
+    "frequency": 0.5,
+    "roots": {
+      "Health disciplines": 0.5
+    }
+  },
+  "Sex Differentiation": {
+    "frequency": 0.5,
+    "roots": {
+      "General biology / anatomy / physiology": 0.25,
+      "Pediatrics / reproductive / developmental medicine": 0.25
+    }
+  },
+  "Sexual Dysfunction, Physiological": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Shoulder": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Social Support": {
+    "frequency": 0.5,
+    "roots": {
+      "Psychiatry & psychology": 0.5
+    }
+  },
+  "Space Flight": {
+    "frequency": 0.5,
+    "roots": {
+      "General natural sciences": 0.5
+    }
+  },
+  "Spinal Diseases": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.5
+    }
+  },
+  "Spine": {
+    "frequency": 0.5,
+    "roots": {
+      "Cell & developmental biology": 0.25,
+      "Clinical specialties by organ system": 0.25
+    }
+  },
+  "Statistics as Topic": {
+    "frequency": 0.5,
+    "roots": {
+      "General natural sciences": 0.1667,
+      "Health disciplines": 0.1667,
+      "Public health / health services": 0.1667
+    }
+  },
+  "Stereotaxic Techniques": {
+    "frequency": 0.5,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.5
+    }
+  },
+  "Sterilization": {
+    "frequency": 0.5,
+    "roots": {
+      "Public health / health services": 0.5
+    }
+  },
+  "Stroke": {
+    "frequency": 0.5,
+    "roots": {
+      "Clinical specialties by organ system": 0.25,
+      "Neuroscience & neurology": 0.25
+    }
+  },
+  "Syphilis": {
+    "frequency": 0.5,
+    "roots": {
+      "Microbiology/pathogenesis": 0.4375,
+      "Clinical specialties by organ system": 0.0417,
+      "General / internal medicine": 0.0208
+    }
+  },
+  "Teratogens": {
+    "frequency": 0.5,
+    "roots": {
+      "Toxicology": 0.5
+    }
+  },
+  "Adolescent Behavior": {
+    "frequency": 0.4286,
+    "roots": {
+      "Psychiatry & psychology": 0.4286
+    }
+  },
+  "Child Behavior": {
+    "frequency": 0.4286,
+    "roots": {
+      "Psychiatry & psychology": 0.4286
+    }
+  },
+  "Anticarcinogenic Agents": {
+    "frequency": 0.4,
+    "roots": {
+      "Pharmacology": 0.3,
+      "Chemistry / Materials Science": 0.1
+    }
+  },
+  "Diagnostic Techniques, Urological.": {
+    "frequency": 0.4,
+    "roots": {}
+  },
+  "Dialysis": {
+    "frequency": 0.4,
+    "roots": {
+      "Chemistry / Materials Science": 0.4
+    }
+  },
+  "Oxidation-Reduction": {
+    "frequency": 0.4,
+    "roots": {
+      "Chemistry / Materials Science": 0.2,
+      "Molecular biology / biochemistry": 0.2
+    }
+  },
+  "Urologic Surgical Procedures": {
+    "frequency": 0.4,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.4
+    }
+  },
+  "Occupational Health": {
+    "frequency": 0.3929,
+    "roots": {
+      "Public health / health services": 0.3929
+    }
+  },
+  "Angiocardiography": {
+    "frequency": 0.3333,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.3333
+    }
+  },
+  "Animals": {
+    "frequency": 0.3333,
+    "roots": {
+      "General biology / anatomy / physiology": 0.3333
+    }
+  },
+  "Antisense Elements (Genetics)": {
+    "frequency": 0.3333,
+    "roots": {
+      "Molecular biology / biochemistry": 0.25,
+      "Chemistry / Materials Science": 0.0417,
+      "Pharmacology": 0.0417
+    }
+  },
+  "Athletic Injuries": {
+    "frequency": 0.3333,
+    "roots": {
+      "General / internal medicine": 0.3333
+    }
+  },
+  "Behavior, Animal": {
+    "frequency": 0.3333,
+    "roots": {
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Blood Glucose Self-Monitoring": {
+    "frequency": 0.3333,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.25,
+      "Psychiatry & psychology": 0.0486,
+      "General / internal medicine": 0.0256,
+      "Health disciplines": 0.0091
+    }
+  },
+  "Breast Diseases": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Cardiac Catheterization": {
+    "frequency": 0.3333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.3333
+    }
+  },
+  "Cell Movement": {
+    "frequency": 0.3333,
+    "roots": {
+      "Cell & developmental biology": 0.1667,
+      "Clinical specialties by organ system": 0.0833,
+      "General biology / anatomy / physiology": 0.0833
+    }
+  },
+  "Cell Nucleus": {
+    "frequency": 0.3333,
+    "roots": {
+      "Cell & developmental biology": 0.25,
+      "General biology / anatomy / physiology": 0.0833
+    }
+  },
+  "Cells, Cultured": {
+    "frequency": 0.3333,
+    "roots": {
+      "Cell & developmental biology": 0.3333
+    }
+  },
+  "Child Behavior Disorders": {
+    "frequency": 0.3333,
+    "roots": {
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Collagen": {
+    "frequency": 0.3333,
+    "roots": {
+      "Chemistry / Materials Science": 0.1667,
+      "Molecular biology / biochemistry": 0.1667
+    }
+  },
+  "Community Health Services": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Connective Tissue": {
+    "frequency": 0.3333,
+    "roots": {
+      "Cell & developmental biology": 0.3333
+    }
+  },
+  "Conservation of Natural Resources": {
+    "frequency": 0.3333,
+    "roots": {
+      "General biology / anatomy / physiology": 0.3333
+    }
+  },
+  "DNA Damage": {
+    "frequency": 0.3333,
+    "roots": {
+      "Genetics/genomics": 0.3333
+    }
+  },
+  "DNA, Recombinant": {
+    "frequency": 0.3333,
+    "roots": {
+      "Molecular biology / biochemistry": 0.3333
+    }
+  },
+  "Dental Care": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Dental Materials": {
+    "frequency": 0.3333,
+    "roots": {
+      "Chemistry / Materials Science": 0.3333
+    }
+  },
+  "Dentures": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.1667,
+      "Surgery / anesthesia / perioperative": 0.1667
+    }
+  },
+  "Drug Discovery": {
+    "frequency": 0.3333,
+    "roots": {
+      "Pharmacology": 0.3333
+    }
+  },
+  "Drug Utilization": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Endocrine System": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Epidemiologic Methods": {
+    "frequency": 0.3333,
+    "roots": {
+      "Public health / health services": 0.3333
+    }
+  },
+  "Equipment and Supplies": {
+    "frequency": 0.3333,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.3333
+    }
+  },
+  "Ethics": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Ethics, Clinical": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Ethics, Medical": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Extracellular Matrix": {
+    "frequency": 0.3333,
+    "roots": {
+      "Cell & developmental biology": 0.25,
+      "General biology / anatomy / physiology": 0.0833
+    }
+  },
+  "Gene Expression Regulation, Developmental": {
+    "frequency": 0.3333,
+    "roots": {
+      "Genetics/genomics": 0.3333
+    }
+  },
+  "Immunohistochemistry": {
+    "frequency": 0.3333,
+    "roots": {
+      "Immunology": 0.1667,
+      "Molecular biology / biochemistry": 0.0833,
+      "Diagnostics / pathology / radiology": 0.0556,
+      "General biology / anatomy / physiology": 0.0278
+    }
+  },
+  "Infant Welfare": {
+    "frequency": 0.3333,
+    "roots": {
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Lymphatic System": {
+    "frequency": 0.3333,
+    "roots": {
+      "Immunology": 0.3333
+    }
+  },
+  "Maxilla": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.25,
+      "Cell & developmental biology": 0.0833
+    }
+  },
+  "Microbiological Techniques": {
+    "frequency": 0.3333,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.3333
+    }
+  },
+  "Motor Skills": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.1111,
+      "Neuroscience & neurology": 0.1111,
+      "Psychiatry & psychology": 0.1111
+    }
+  },
+  "Mouth Rehabilitation": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Muscle Contraction": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Neonatology": {
+    "frequency": 0.3333,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.3333
+    }
+  },
+  "Nicotine": {
+    "frequency": 0.3333,
+    "roots": {
+      "Chemistry / Materials Science": 0.3333
+    }
+  },
+  "Nuclear Transfer Techniques": {
+    "frequency": 0.3333,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.1667,
+      "Diagnostics / pathology / radiology": 0.0833,
+      "Genetics/genomics": 0.0833
+    }
+  },
+  "Nucleosides": {
+    "frequency": 0.3333,
+    "roots": {
+      "Molecular biology / biochemistry": 0.3333
+    }
+  },
+  "Nucleotides": {
+    "frequency": 0.3333,
+    "roots": {
+      "Molecular biology / biochemistry": 0.3333
+    }
+  },
+  "Obstetric Nursing": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.2917,
+      "General / internal medicine": 0.0417
+    }
+  },
+  "Origin of Life": {
+    "frequency": 0.3333,
+    "roots": {
+      "General biology / anatomy / physiology": 0.1667,
+      "General natural sciences": 0.0833,
+      "Psychiatry & psychology": 0.0833
+    }
+  },
+  "Ovarian Diseases": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.25,
+      "Pediatrics / reproductive / developmental medicine": 0.0833
+    }
+  },
+  "Ovary": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Pancreatic Diseases": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Paraneoplastic Endocrine Syndromes": {
+    "frequency": 0.3333,
+    "roots": {
+      "Oncology": 0.25,
+      "Clinical specialties by organ system": 0.0833
+    }
+  },
+  "Patient Participation": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.2083,
+      "Psychiatry & psychology": 0.125
+    }
+  },
+  "Pediatric Nursing": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.2917,
+      "General / internal medicine": 0.0417
+    }
+  },
+  "Pelvic Floor": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Perception": {
+    "frequency": 0.3333,
+    "roots": {
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Pregnancy Complications": {
+    "frequency": 0.3333,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.3333
+    }
+  },
+  "Primary Health Care": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Psychology, Child": {
+    "frequency": 0.3333,
+    "roots": {
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Sewage": {
+    "frequency": 0.3333,
+    "roots": {
+      "Chemistry / Materials Science": 0.1667,
+      "Public health / health services": 0.1667
+    }
+  },
+  "Smoking": {
+    "frequency": 0.3333,
+    "roots": {
+      "Psychiatry & psychology": 0.3333
+    }
+  },
+  "Solutions": {
+    "frequency": 0.3333,
+    "roots": {
+      "Pharmacology": 0.3333
+    }
+  },
+  "Spectrum Analysis": {
+    "frequency": 0.3333,
+    "roots": {
+      "Chemistry / Materials Science": 0.3333
+    }
+  },
+  "Surgery, Oral": {
+    "frequency": 0.3333,
+    "roots": {
+      "Health disciplines": 0.3333
+    }
+  },
+  "Thyroid Gland": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Tobacco Products": {
+    "frequency": 0.3333,
+    "roots": {
+      "Chemistry / Materials Science": 0.3333
+    }
+  },
+  "Tooth Diseases": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Urodynamics": {
+    "frequency": 0.3333,
+    "roots": {
+      "Clinical specialties by organ system": 0.3333
+    }
+  },
+  "Water Pollution": {
+    "frequency": 0.3333,
+    "roots": {
+      "Public health / health services": 0.3333
+    }
+  },
+  "Water Supply": {
+    "frequency": 0.3333,
+    "roots": {
+      "Public health / health services": 0.3333
+    }
+  },
+  "Antibodies": {
+    "frequency": 0.25,
+    "roots": {
+      "Molecular biology / biochemistry": 0.25
+    }
+  },
+  "Antigens": {
+    "frequency": 0.25,
+    "roots": {
+      "Molecular biology / biochemistry": 0.25
+    }
+  },
+  "Ataxia": {
+    "frequency": 0.25,
+    "roots": {
+      "Neuroscience & neurology": 0.1875,
+      "General / internal medicine": 0.0625
+    }
+  },
+  "Behavioral Sciences": {
+    "frequency": 0.25,
+    "roots": {
+      "Psychiatry & psychology": 0.25
+    }
+  },
+  "Blood Pressure": {
+    "frequency": 0.25,
+    "roots": {
+      "Clinical specialties by organ system": 0.125,
+      "Diagnostics / pathology / radiology": 0.125
+    }
+  },
+  "Blood Transfusion, Autologous": {
+    "frequency": 0.25,
+    "roots": {
+      "General / internal medicine": 0.25
+    }
+  },
+  "Carcinoembryonic Antigen": {
+    "frequency": 0.25,
+    "roots": {
+      "Molecular biology / biochemistry": 0.25
+    }
+  },
+  "Cell Separation": {
+    "frequency": 0.25,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.25
+    }
+  },
+  "Cerebellum": {
+    "frequency": 0.25,
+    "roots": {
+      "Neuroscience & neurology": 0.25
+    }
+  },
+  "Cerebral Palsy": {
+    "frequency": 0.25,
+    "roots": {
+      "General / internal medicine": 0.125,
+      "Neuroscience & neurology": 0.125
+    }
+  },
+  "Climacteric": {
+    "frequency": 0.25,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.1875,
+      "General biology / anatomy / physiology": 0.0625
+    }
+  },
+  "Clone Cells": {
+    "frequency": 0.25,
+    "roots": {
+      "Cell & developmental biology": 0.25
+    }
+  },
+  "Cognition": {
+    "frequency": 0.25,
+    "roots": {
+      "Psychiatry & psychology": 0.25
+    }
+  },
+  "Conditioning, Psychological": {
+    "frequency": 0.25,
+    "roots": {
+      "Psychiatry & psychology": 0.25
+    }
+  },
+  "Demyelinating Diseases": {
+    "frequency": 0.25,
+    "roots": {
+      "Neuroscience & neurology": 0.25
+    }
+  },
+  "Diagnostic Techniques, Radioisotope": {
+    "frequency": 0.25,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.25
+    }
+  },
+  "Embryonic Development": {
+    "frequency": 0.25,
+    "roots": {
+      "General biology / anatomy / physiology": 0.125,
+      "Pediatrics / reproductive / developmental medicine": 0.125
+    }
+  },
+  "Emergency Nursing": {
+    "frequency": 0.25,
+    "roots": {
+      "Health disciplines": 0.2188,
+      "General / internal medicine": 0.0312
+    }
+  },
+  "Environmental Microbiology": {
+    "frequency": 0.25,
+    "roots": {
+      "Microbiology/pathogenesis": 0.125,
+      "Public health / health services": 0.125
+    }
+  },
+  "Facial Bones": {
+    "frequency": 0.25,
+    "roots": {
+      "Cell & developmental biology": 0.125,
+      "Clinical specialties by organ system": 0.125
+    }
+  },
+  "Fetal Development": {
+    "frequency": 0.25,
+    "roots": {
+      "General biology / anatomy / physiology": 0.125,
+      "Pediatrics / reproductive / developmental medicine": 0.125
+    }
+  },
+  "Food Technology": {
+    "frequency": 0.25,
+    "roots": {
+      "Nutrition, metabolism, and food science": 0.25
+    }
+  },
+  "Fungi": {
+    "frequency": 0.25,
+    "roots": {
+      "General biology / anatomy / physiology": 0.25
+    }
+  },
+  "Gene Rearrangement": {
+    "frequency": 0.25,
+    "roots": {
+      "Genetics/genomics": 0.25
+    }
+  },
+  "Genital Diseases, Male": {
+    "frequency": 0.25,
+    "roots": {
+      "Clinical specialties by organ system": 0.25
+    }
+  },
+  "Germ Cells": {
+    "frequency": 0.25,
+    "roots": {
+      "Cell & developmental biology": 0.125,
+      "Clinical specialties by organ system": 0.125
+    }
+  },
+  "Hematopoietic Stem Cells": {
+    "frequency": 0.25,
+    "roots": {
+      "Cell & developmental biology": 0.1875,
+      "Immunology": 0.0625
+    }
+  },
+  "Histamine": {
+    "frequency": 0.25,
+    "roots": {
+      "Chemistry / Materials Science": 0.1875,
+      "Molecular biology / biochemistry": 0.0625
+    }
+  },
+  "Italy": {
+    "frequency": 0.25,
+    "roots": {
+      "Public health / health services": 0.25
+    }
+  },
+  "Language": {
+    "frequency": 0.25,
+    "roots": {
+      "General natural sciences": 0.1875,
+      "Psychiatry & psychology": 0.0625
+    }
+  },
+  "Leukapheresis": {
+    "frequency": 0.25,
+    "roots": {
+      "General / internal medicine": 0.1458,
+      "Diagnostics / pathology / radiology": 0.1042
+    }
+  },
+  "Menopause": {
+    "frequency": 0.25,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.1875,
+      "General biology / anatomy / physiology": 0.0625
+    }
+  },
+  "Middle Aged": {
+    "frequency": 0.25,
+    "roots": {
+      "General / internal medicine": 0.25
+    }
+  },
+  "Models, Neurological": {
+    "frequency": 0.25,
+    "roots": {
+      "Neuroscience & neurology": 0.25
+    }
+  },
+  "Multiple Sclerosis": {
+    "frequency": 0.25,
+    "roots": {
+      "Neuroscience & neurology": 0.2083,
+      "Immunology": 0.0417
+    }
+  },
+  "Mycoses": {
+    "frequency": 0.25,
+    "roots": {
+      "Microbiology/pathogenesis": 0.25
+    }
+  },
+  "Neural Networks, Computer": {
+    "frequency": 0.25,
+    "roots": {
+      "General natural sciences": 0.25
+    }
+  },
+  "Neuropsychology": {
+    "frequency": 0.25,
+    "roots": {
+      "Psychiatry & psychology": 0.1667,
+      "General biology / anatomy / physiology": 0.0833
+    }
+  },
+  "Noxae": {
+    "frequency": 0.25,
+    "roots": {
+      "Toxicology": 0.25
+    }
+  },
+  "Orientation": {
+    "frequency": 0.25,
+    "roots": {
+      "Psychiatry & psychology": 0.2083,
+      "General biology / anatomy / physiology": 0.0417
+    }
+  },
+  "Plasmapheresis": {
+    "frequency": 0.25,
+    "roots": {
+      "General / internal medicine": 0.1667,
+      "Surgery / anesthesia / perioperative": 0.0833
+    }
+  },
+  "Postural Balance": {
+    "frequency": 0.25,
+    "roots": {
+      "Clinical specialties by organ system": 0.125,
+      "General biology / anatomy / physiology": 0.0729,
+      "Neuroscience & neurology": 0.0312,
+      "Psychiatry & psychology": 0.0208
+    }
+  },
+  "Psycholinguistics": {
+    "frequency": 0.25,
+    "roots": {
+      "Psychiatry & psychology": 0.1875,
+      "General natural sciences": 0.0625
+    }
+  },
+  "Radiation Effects": {
+    "frequency": 0.25,
+    "roots": {
+      "Chemistry / Materials Science": 0.125,
+      "Public health / health services": 0.125
+    }
+  },
+  "Radioisotopes": {
+    "frequency": 0.25,
+    "roots": {
+      "Chemistry / Materials Science": 0.25
+    }
+  },
+  "Societies": {
+    "frequency": 0.25,
+    "roots": {
+      "Health disciplines": 0.25
+    }
+  },
+  "Speech Disorders": {
+    "frequency": 0.25,
+    "roots": {
+      "Psychiatry & psychology": 0.1875,
+      "General / internal medicine": 0.0312,
+      "Neuroscience & neurology": 0.0312
+    }
+  },
+  "Thermography": {
+    "frequency": 0.25,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.25
+    }
+  },
+  "Traumatology": {
+    "frequency": 0.25,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.25
+    }
+  },
+  "Urinary Tract": {
+    "frequency": 0.25,
+    "roots": {
+      "Clinical specialties by organ system": 0.25
+    }
+  },
+  "Vestibular Diseases": {
+    "frequency": 0.25,
+    "roots": {
+      "Clinical specialties by organ system": 0.25
+    }
+  },
+  "Vestibule, Labyrinth": {
+    "frequency": 0.25,
+    "roots": {
+      "Clinical specialties by organ system": 0.25
+    }
+  },
+  "alpha-Fetoproteins": {
+    "frequency": 0.25,
+    "roots": {
+      "Molecular biology / biochemistry": 0.25
+    }
+  },
+  "Androgens": {
+    "frequency": 0.2,
+    "roots": {
+      "Pharmacology": 0.2
+    }
+  },
+  "Antigens, Neoplasm": {
+    "frequency": 0.2,
+    "roots": {
+      "Molecular biology / biochemistry": 0.2
+    }
+  },
+  "Australia": {
+    "frequency": 0.2,
+    "roots": {
+      "Public health / health services": 0.175,
+      "General biology / anatomy / physiology": 0.025
+    }
+  },
+  "Back Pain": {
+    "frequency": 0.2,
+    "roots": {
+      "Neuroscience & neurology": 0.1,
+      "General / internal medicine": 0.05,
+      "Psychiatry & psychology": 0.0333,
+      "General biology / anatomy / physiology": 0.0167
+    }
+  },
+  "Diet Therapy": {
+    "frequency": 0.2,
+    "roots": {
+      "General / internal medicine": 0.2
+    }
+  },
+  "Economics, Pharmaceutical": {
+    "frequency": 0.2,
+    "roots": {
+      "Health disciplines": 0.1,
+      "Psychiatry & psychology": 0.1
+    }
+  },
+  "Evaluation Studies as Topic": {
+    "frequency": 0.2,
+    "roots": {
+      "Public health / health services": 0.2
+    }
+  },
+  "Eye Manifestations": {
+    "frequency": 0.2,
+    "roots": {
+      "Clinical specialties by organ system": 0.1,
+      "General / internal medicine": 0.1
+    }
+  },
+  "Fats": {
+    "frequency": 0.2,
+    "roots": {
+      "Molecular biology / biochemistry": 0.2
+    }
+  },
+  "Fatty Acids": {
+    "frequency": 0.2,
+    "roots": {
+      "Molecular biology / biochemistry": 0.2
+    }
+  },
+  "Feeding Behavior": {
+    "frequency": 0.2,
+    "roots": {
+      "Psychiatry & psychology": 0.1333,
+      "General biology / anatomy / physiology": 0.0667
+    }
+  },
+  "Financial Management": {
+    "frequency": 0.2,
+    "roots": {
+      "Health disciplines": 0.1,
+      "Psychiatry & psychology": 0.1
+    }
+  },
+  "Genitalia, Male": {
+    "frequency": 0.2,
+    "roots": {
+      "Clinical specialties by organ system": 0.2
+    }
+  },
+  "Health Resources": {
+    "frequency": 0.2,
+    "roots": {
+      "Health disciplines": 0.175,
+      "Psychiatry & psychology": 0.025
+    }
+  },
+  "Mental Health Services": {
+    "frequency": 0.2,
+    "roots": {
+      "Health disciplines": 0.1,
+      "Psychiatry & psychology": 0.1
+    }
+  },
+  "Nasopharyngeal Diseases": {
+    "frequency": 0.2,
+    "roots": {
+      "Clinical specialties by organ system": 0.2
+    }
+  },
+  "Nasopharynx": {
+    "frequency": 0.2,
+    "roots": {
+      "Clinical specialties by organ system": 0.2
+    }
+  },
+  "Nose": {
+    "frequency": 0.2,
+    "roots": {
+      "Clinical specialties by organ system": 0.2
+    }
+  },
+  "Nose Diseases": {
+    "frequency": 0.2,
+    "roots": {
+      "Clinical specialties by organ system": 0.2
+    }
+  },
+  "Occupational Exposure": {
+    "frequency": 0.2,
+    "roots": {
+      "Public health / health services": 0.2
+    }
+  },
+  "Outcome Assessment, Health Care": {
+    "frequency": 0.2,
+    "roots": {
+      "Health disciplines": 0.1,
+      "Multidisciplinary": 0.1
+    }
+  },
+  "Probability": {
+    "frequency": 0.2,
+    "roots": {
+      "General natural sciences": 0.1333,
+      "Health disciplines": 0.0333,
+      "Public health / health services": 0.0333
+    }
+  },
+  "Psychotherapy": {
+    "frequency": 0.2,
+    "roots": {
+      "Psychiatry & psychology": 0.2
+    }
+  },
+  "Rhinoplasty": {
+    "frequency": 0.2,
+    "roots": {
+      "Surgery / anesthesia / perioperative": 0.1333,
+      "General / internal medicine": 0.0667
+    }
+  },
+  "Risk": {
+    "frequency": 0.2,
+    "roots": {
+      "General natural sciences": 0.1333,
+      "Health disciplines": 0.0333,
+      "Public health / health services": 0.0333
+    }
+  },
+  "Risk Management": {
+    "frequency": 0.2,
+    "roots": {
+      "Health disciplines": 0.15,
+      "Psychiatry & psychology": 0.05
+    }
+  },
+  "Semen": {
+    "frequency": 0.2,
+    "roots": {
+      "General biology / anatomy / physiology": 0.2
+    }
+  },
+  "Soaps": {
+    "frequency": 0.2,
+    "roots": {
+      "Chemistry / Materials Science": 0.2
+    }
+  },
+  "Surface-Active Agents": {
+    "frequency": 0.2,
+    "roots": {
+      "Chemistry / Materials Science": 0.2
+    }
+  },
+  "Testicular Hormones": {
+    "frequency": 0.2,
+    "roots": {
+      "Pharmacology": 0.2
+    }
+  },
+  "Audiology": {
+    "frequency": 0.1667,
+    "roots": {
+      "Health disciplines": 0.1667
+    }
+  },
+  "Contraception": {
+    "frequency": 0.1667,
+    "roots": {
+      "Pediatrics / reproductive / developmental medicine": 0.1667
+    }
+  },
+  "Cytoprotection": {
+    "frequency": 0.1667,
+    "roots": {
+      "General biology / anatomy / physiology": 0.1667
+    }
+  },
+  "Hearing": {
+    "frequency": 0.1667,
+    "roots": {
+      "General biology / anatomy / physiology": 0.0972,
+      "Neuroscience & neurology": 0.0417,
+      "Psychiatry & psychology": 0.0278
+    }
+  },
+  "Hearing Disorders": {
+    "frequency": 0.1667,
+    "roots": {
+      "Clinical specialties by organ system": 0.0833,
+      "General / internal medicine": 0.0417,
+      "Neuroscience & neurology": 0.0417
+    }
+  },
+  "Maternal Welfare": {
+    "frequency": 0.1667,
+    "roots": {
+      "Psychiatry & psychology": 0.1667
+    }
+  },
+  "Nerve Degeneration": {
+    "frequency": 0.1667,
+    "roots": {
+      "General / internal medicine": 0.1667
+    }
+  },
+  "Nerve Regeneration": {
+    "frequency": 0.1667,
+    "roots": {
+      "General biology / anatomy / physiology": 0.0833,
+      "Neuroscience & neurology": 0.0833
+    }
+  },
+  "Neurotoxins": {
+    "frequency": 0.1667,
+    "roots": {
+      "Toxicology": 0.1667
+    }
+  },
+  "Nutrition Disorders": {
+    "frequency": 0.1667,
+    "roots": {
+      "Nutrition, metabolism, and food science": 0.1667
+    }
+  },
+  "Psychoacoustics": {
+    "frequency": 0.1667,
+    "roots": {
+      "Diagnostics / pathology / radiology": 0.125,
+      "Psychiatry & psychology": 0.0417
+    }
+  },
+  "Signal Detection, Psychological": {
+    "frequency": 0.1667,
+    "roots": {
+      "Psychiatry & psychology": 0.1667
+    }
+  },
+  "Social Welfare": {
+    "frequency": 0.1667,
+    "roots": {
+      "Psychiatry & psychology": 0.1667
+    }
+  },
+  "Accidents, Occupational": {
+    "frequency": 0.1429,
+    "roots": {
+      "Public health / health services": 0.1429
+    }
+  },
+  "Agricultural Workers' Diseases": {
+    "frequency": 0.1429,
+    "roots": {
+      "Public health / health services": 0.1429
+    }
+  },
+  "Agriculture": {
+    "frequency": 0.1429,
+    "roots": {
+      "Nutrition, metabolism, and food science": 0.1429
+    }
+  },
+  "Agrochemicals": {
+    "frequency": 0.1429,
+    "roots": {
+      "Chemistry / Materials Science": 0.1429
+    }
+  }
+}

@@ -1,13 +1,45 @@
 name: CRAFT
 
-loader:
-  name: bioc_xml
-  params:
-    paths:
-      train: corpora/CRAFT/CRAFT-train.BioC.xml 
-      dev: corpora/CRAFT/CRAFT-dev.BioC.xml 
-      test: corpora/CRAFT/CRAFT-test.BioC.xml  
-    label_infon_key: type
-    doc_id_map:
-        pmid: "__DOCUMENT_ID__"
+cache_filename: corpora/CRAFT.json.gz
 
+acquisition:
+  source_url: "https://github.com/lhunter-lab/CRAFT/archive/refs/heads/master.zip"
+  format: "zip"
+
+loader:
+  name: craft_knowtator
+  params:
+    text_dir: corpora/CRAFT/CRAFT-master/articles/txt
+    id_mapping_path: corpora/CRAFT/CRAFT-master/articles/ids/craft-idmappings.txt
+    annotation_dirs:
+      CHEBI: corpora/CRAFT/CRAFT-master/concept-annotation/CHEBI/CHEBI/knowtator
+      CL: corpora/CRAFT/CRAFT-master/concept-annotation/CL/CL/knowtator
+      GO_BP: corpora/CRAFT/CRAFT-master/concept-annotation/GO_BP/GO_BP/knowtator
+      GO_CC: corpora/CRAFT/CRAFT-master/concept-annotation/GO_CC/GO_CC/knowtator
+      GO_MF: corpora/CRAFT/CRAFT-master/concept-annotation/GO_MF/GO_MF/knowtator
+      MONDO: corpora/CRAFT/CRAFT-master/concept-annotation/MONDO/MONDO_without_genotype_annotations/knowtator-2
+      MOP: corpora/CRAFT/CRAFT-master/concept-annotation/MOP/MOP/knowtator
+      NCBITaxon: corpora/CRAFT/CRAFT-master/concept-annotation/NCBITaxon/NCBITaxon/knowtator
+      PR: corpora/CRAFT/CRAFT-master/concept-annotation/PR/PR/knowtator
+      SO: corpora/CRAFT/CRAFT-master/concept-annotation/SO/SO/knowtator
+      UBERON: corpora/CRAFT/CRAFT-master/concept-annotation/UBERON/UBERON/knowtator
+    split:
+      source: files
+      id_type: pmid
+      files:
+        train: corpora/CRAFT/CRAFT-master/articles/ids/craft-ids-train.txt
+        dev: corpora/CRAFT/CRAFT-master/articles/ids/craft-ids-dev.txt
+        test: corpora/CRAFT/CRAFT-master/articles/ids/craft-ids-test.txt
+    label_map: {
+        "CHEBI": "chemical",
+        "CL": "cell_type",
+        "GO_BP": "Biological_process",
+        "GO_CC": "Cellular_component",
+        "MONDO": "Disease",
+        "NCBITaxon": "species",
+        "PR": "Gene",
+        "SO": "Sequence",
+        "UBERON": "anatomical_entity",
+        "GO_MF": "molecular_function",
+        "MOP": "molecular_process",
+      }
