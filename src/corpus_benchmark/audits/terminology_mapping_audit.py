@@ -1,48 +1,21 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
-import json
 from pathlib import Path
 import sys
 from typing import Any
 
-from corpus_benchmark.builtins import register_builtins
+from corpus_benchmark.audits.audit_helpers import (
+    load_mesh_term_overrides,
+    load_terminology,
+    round_counts,
+    write_json_payload,
+)
 from corpus_benchmark.cli import load_battery_config
-from corpus_benchmark.models.config import LoaderSpec, WorkspaceConfig
 from corpus_benchmark.models.terminologies import TerminologyResource
 from corpus_benchmark.models.terminologies import TerminologyTopicAnchorCounter
-from corpus_benchmark.models.terminologies import load_topic_term_overrides
-from corpus_benchmark.registry import TERMINOLOGY_LOADERS
 
-PRECISION = 4
 DEFAULT_CONFIG_PATH = Path("configs/terminology_coverage.yaml")
-
-
-def _load_terminology(
-    workspace_config: WorkspaceConfig,
-    terminology_name: str,
-    terminology_spec: LoaderSpec,
-) -> TerminologyResource:
-    register_builtins()
-
-    loader = TERMINOLOGY_LOADERS.get(terminology_spec.name)
-    if loader is None:
-        available = ", ".join(sorted(TERMINOLOGY_LOADERS)) or "<none>"
-        raise ValueError(
-            f"Unknown terminology loader {terminology_spec.name!r} for {terminology_name!r}. "
-            f"Available terminology loaders: {available}"
-        )
-    return loader(workspace_config, **terminology_spec.params)
-
-
-def _round_counts(counts: dict[str, float]) -> dict[str, float]:
-    return {
-        name: round(count, PRECISION)
-        for name, count in sorted(
-            counts.items(),
-            key=lambda item: (-item[1], item[0]),
-        )
-    }
 
 
 def build_terminology_mapping_audit(
@@ -59,7 +32,7 @@ def build_terminology_mapping_audit(
             {
                 "concept_id": concept.ui,
                 "name": concept.name,
-                "anchor_counts": _round_counts(counts),
+                "anchor_counts": round_counts(counts),
             }
         )
 
@@ -72,7 +45,7 @@ def build_terminology_mapping_audit(
         "n_concepts": len(terminology.concepts),
         "configured_topics": configured_topics,
         "concept_mappings": concept_mappings,
-        "high_level_totals": _round_counts(high_level_totals),
+        "high_level_totals": round_counts(high_level_totals),
     }
 
 
@@ -119,21 +92,17 @@ def main(argv: list[str] | None = None) -> None:
             f"Available terminologies: {available}"
         )
 
-    terminology = _load_terminology(
+    terminology = load_terminology(
         battery_config.workspace,
         args.terminology_name,
         terminology_spec,
     )
-    term_overrides = load_topic_term_overrides(args.mapping)
+    term_overrides = load_mesh_term_overrides(args.mapping)
     audit = build_terminology_mapping_audit(terminology, term_overrides)
     audit["terminology_config_name"] = args.terminology_name
     audit["mapping_path"] = str(args.mapping)
 
-    payload = json.dumps(audit, indent=2, sort_keys=True)
-    if args.output:
-        args.output.write_text(payload + "\n", encoding="utf-8")
-    else:
-        print(payload)
+    write_json_payload(args.output, audit, sort_keys=True)
 
 
 if __name__ == "__main__":

@@ -12,6 +12,7 @@ from corpus_benchmark.models.corpus import (
     CorpusSubset,
     Document,
     DocumentIdentifierType,
+    NIL_RESOURCE,
     Passage,
     Annotation,
     AnnotationSpan,
@@ -154,7 +155,7 @@ class Loader:
         #logger.debug(f'Loader.parse_atomic_identifier(): identifier_text = "{identifier_text}"')
         identifier_text = identifier_text.strip()
         if identifier_text in self.nil_labels:
-            return NIL
+            return IdentifierLink(identifier=None, resource=NIL_RESOURCE, match_type=NIL.match_type)
         if self.resource_delimiter in identifier_text:
             fields = identifier_text.split(self.resource_delimiter)
             if len(fields) != 2:
@@ -189,9 +190,13 @@ class DocIDExtractor:
         for id_type, doc_id in raw_ids.items():
             try:
                 id_type_enum = DocumentIdentifierType(id_type.lower())
-                ids[id_type_enum] = id_type_enum.normalize(doc_id)
             except ValueError:
                 logger.warning(f"Unknown identifier type '{id_type}' configured in YAML.")
+                continue
+            try:
+                ids[id_type_enum] = id_type_enum.normalize(doc_id)
+            except ValueError:
+                logger.warning("Invalid %s identifier value %r configured in YAML.", id_type_enum.value, doc_id)
         return ids
 
     def get_BioCXML_IDs(self, doc) -> dict[str, str]:
@@ -283,10 +288,10 @@ class BioCXMLLoader(Loader):
                 all_documents.extend(documents)
                 all_id_type_counts.update(id_type_counts)
                 
-        logger.info(f"\tLoaded {len(documents)} documents")
-        for id_type, count in id_type_counts.items():
-            percentage = 100.0 * count / len(documents)
-            logger.info(f"\tID type {id_type} present in {count} / {len(documents)} of documents ({percentage:.2f}%)")
+        logger.info(f"\tLoaded {len(all_documents)} documents")
+        for id_type, count in all_id_type_counts.items():
+            percentage = 100.0 * count / len(all_documents) if all_documents else 0.0
+            logger.info(f"\tID type {id_type} present in {count} / {len(all_documents)} of documents ({percentage:.2f}%)")
         return all_documents, all_id_type_counts
 
     def _load_bioc_file(self, path: str) -> List[Document]:
@@ -447,7 +452,7 @@ class BioCPubtatorLoader(Loader):
                     label=label,
                     link=self.get_identifier(ann.id),
                 )
-                if ann.start >= abstract_offset:
+                if ann.start < abstract_offset:
                     title_passage.annotations.append(mention)
                 else:
                     abstract_passage.annotations.append(mention)

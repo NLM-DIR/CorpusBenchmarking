@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from corpus_benchmark.models.terminologies import TerminologyConcept, TerminologyResource
-from corpus_benchmark.terminology_mapping_audit import build_terminology_mapping_audit
+from corpus_benchmark.audits.terminology_mapping_audit import build_terminology_mapping_audit
 
 
 def test_build_terminology_mapping_audit_reports_concept_mappings_and_totals() -> None:

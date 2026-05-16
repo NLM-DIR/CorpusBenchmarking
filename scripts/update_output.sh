@@ -2,6 +2,8 @@ set -e
 
 export PYTHONPATH="${PYTHONPATH}:$(pwd)/src"
 
+python -m utils.ensure_nltk_data
+
 # TODO convert this to run as one python program
 
 # Calculate corpus metrics

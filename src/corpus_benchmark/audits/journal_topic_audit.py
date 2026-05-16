@@ -1,68 +1,30 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 from collections import Counter
-import json
 from pathlib import Path
 import sys
 from typing import Any
 
-from corpus_benchmark.builtins import register_builtins
+from corpus_benchmark.audits.audit_helpers import (
+    add_weighted_counts,
+    load_json_records,
+    load_journal_name_topics,
+    load_mesh_term_overrides,
+    load_terminology,
+    round_floats,
+    write_json_payload,
+)
 from corpus_benchmark.cli import load_battery_config
 from corpus_benchmark.metadata.journal_topics import classify_journal
-from corpus_benchmark.models.config import LoaderSpec, WorkspaceConfig
-from corpus_benchmark.models.terminologies import TerminologyTopicAnchorCounter
-from corpus_benchmark.models.terminologies import load_name_topic_fallbacks
-from corpus_benchmark.models.terminologies import load_topic_term_overrides
-from corpus_benchmark.models.terminologies import topic_treetop_names
-from corpus_benchmark.models.terminologies import TerminologyResource
-from corpus_benchmark.registry import TERMINOLOGY_LOADERS
-
-PRECISION = 4  # Number of decimal places
+from corpus_benchmark.models.config import LoaderSpec
+from corpus_benchmark.models.terminologies import (
+    TerminologyTopicAnchorCounter,
+    topic_treetop_names,
+    TerminologyResource,
+)
 
 DEFAULT_CONFIG_PATH = Path("configs/metadata_stats.yaml")
-
-
-def _load_json_records(path: Path) -> list[dict[str, Any]]:
-    with path.open("r", encoding="utf-8") as fp:
-        payload = json.load(fp)
-    records = payload.get("records")
-    if not isinstance(records, list):
-        raise ValueError(f"{path} does not contain a JSON record-store 'records' list")
-    return records
-
-
-def load_mesh_term_overrides(path: Path) -> dict[str, str]:
-    return load_topic_term_overrides(path)
-
-
-def load_journal_name_topics(path: Path) -> dict[str, list[str]]:
-    return load_name_topic_fallbacks(path)
-
-
-def _load_terminology(
-    workspace_config: WorkspaceConfig,
-    terminology_name: str,
-    terminology_spec: LoaderSpec | None,
-) -> TerminologyResource:
-    register_builtins()
-
-    spec = terminology_spec or LoaderSpec(name="mesh_xml", params={"year": 2026})
-    loader = TERMINOLOGY_LOADERS.get(spec.name)
-    if loader is None:
-        available = ", ".join(sorted(TERMINOLOGY_LOADERS)) or "<none>"
-        raise ValueError(f"Unknown terminology loader {spec.name!r} for {terminology_name!r}. " f"Available terminology loaders: {available}")
-    return loader(workspace_config, **spec.params)
-
-
-def _round_floats(data: Any) -> Any:
-    if isinstance(data, float):
-        return round(data, PRECISION)
-    if isinstance(data, dict):
-        return {k: _round_floats(v) for k, v in data.items()}
-    if isinstance(data, list):
-        return [_round_floats(v) for v in data]
-    return data
 
 
 def build_journal_topic_audit(
@@ -73,7 +35,11 @@ def build_journal_topic_audit(
     journal_name_topics: dict[str, list[str]],
     include_journal_id: bool = False,
 ) -> list[dict[str, Any]]:
-    journal_id_counts = Counter(record.get("data", {}).get("journal_id") for record in metadata_records if record.get("data", {}).get("journal_id") is not None)
+    journal_id_counts = Counter(
+        record.get("data", {}).get("journal_id")
+        for record in metadata_records
+        if record.get("data", {}).get("journal_id") is not None
+    )
     root_counter = TerminologyTopicAnchorCounter(
         terminology,
         term_overrides=mesh_term_overrides,
@@ -102,7 +68,7 @@ def build_journal_topic_audit(
             "metadata_usage_count": journal_id_counts[journal_id],
             "mesh_topics": mesh_topics,
             "classify_journal_topic": classify_journal(full_name),
-            "mesh_root_counts": _round_floats(mesh_root_counts),
+            "mesh_root_counts": round_floats(mesh_root_counts),
         }
         if include_journal_id:
             record_payload["journal_id"] = journal_id
@@ -115,15 +81,6 @@ def build_journal_topic_audit(
     )
 
 
-def _add_weighted_counts(
-    target: dict[str, float],
-    source: dict[str, float],
-    weight: float,
-) -> None:
-    for name, count in source.items():
-        target[name] = target.get(name, 0.0) + count * weight
-
-
 def _build_weighted_mesh_topic_counts(
     journal_records: list[dict[str, Any]],
     metadata_records: list[dict[str, Any]],
@@ -131,7 +88,11 @@ def _build_weighted_mesh_topic_counts(
     mesh_term_overrides: dict[str, str],
     journal_name_topics: dict[str, list[str]],
 ) -> dict[str, float]:
-    journal_id_counts = Counter(record.get("data", {}).get("journal_id") for record in metadata_records if record.get("data", {}).get("journal_id") is not None)
+    journal_id_counts = Counter(
+        record.get("data", {}).get("journal_id")
+        for record in metadata_records
+        if record.get("data", {}).get("journal_id") is not None
+    )
     root_counter = TerminologyTopicAnchorCounter(
         terminology,
         term_overrides=mesh_term_overrides,
@@ -148,10 +109,10 @@ def _build_weighted_mesh_topic_counts(
         journal_data = record.get("data", {})
         full_name = journal_data.get("name") or journal_data.get("abbreviation") or "Unknown"
         journal_counts = root_counter.counts_for_record_topics(full_name, mesh_topics)
-        _add_weighted_counts(total_counts, journal_counts, float(journal_usage_count))
+        add_weighted_counts(total_counts, journal_counts, float(journal_usage_count))
 
     return {
-        name: _round_floats(count)
+        name: round_floats(count)
         for name, count in sorted(
             total_counts.items(),
             key=lambda item: (-item[1], item[0]),
@@ -181,7 +142,11 @@ def build_mesh_term_root_frequencies(
     terminology: TerminologyResource,
     mesh_term_overrides: dict[str, str],
 ) -> dict[str, dict[str, Any]]:
-    journal_id_counts = Counter(record.get("data", {}).get("journal_id") for record in metadata_records if record.get("data", {}).get("journal_id") is not None)
+    journal_id_counts = Counter(
+        record.get("data", {}).get("journal_id")
+        for record in metadata_records
+        if record.get("data", {}).get("journal_id") is not None
+    )
     root_counter = TerminologyTopicAnchorCounter(
         terminology,
         term_overrides=mesh_term_overrides,
@@ -208,13 +173,13 @@ def build_mesh_term_root_frequencies(
             )
             topic_counts["frequency"] += topic_weight
             root_counts = root_counter.topic_anchor_counts(mesh_topic)
-            _add_weighted_counts(topic_counts["roots"], root_counts, topic_weight)
+            add_weighted_counts(topic_counts["roots"], root_counts, topic_weight)
 
     return {
         mesh_topic: {
-            "frequency": _round_floats(counts["frequency"]),
+            "frequency": round_floats(counts["frequency"]),
             "roots": {
-                root: _round_floats(count)
+                root: round_floats(count)
                 for root, count in sorted(
                     counts["roots"].items(),
                     key=lambda item: (-item[1], item[0]),
@@ -230,7 +195,10 @@ def build_mesh_term_root_frequencies(
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description=("Output per-journal topic mappings from data/journals.json, " "metadata usage counts from data/metadata.json, and MeSH treetop topics.")
+        description=(
+            "Output per-journal topic mappings from data/journals.json, "
+            "metadata usage counts from data/metadata.json, and MeSH treetop topics."
+        )
     )
     parser.add_argument(
         "--config",
@@ -299,13 +267,14 @@ def main(argv: list[str] | None = None) -> None:
     mesh_term_overrides = load_mesh_term_overrides(args.journal_topics)
     journal_name_topics = load_journal_name_topics(args.journal_name_topics)
 
-    terminology = _load_terminology(
+    terminology = load_terminology(
         workspace_config,
         args.terminology_name,
         terminology_spec,
+        default_spec=LoaderSpec(name="mesh_xml", params={"year": 2026}),
     )
-    journal_records = _load_json_records(journal_path)
-    metadata_records = _load_json_records(metadata_path)
+    journal_records = load_json_records(journal_path)
+    metadata_records = load_json_records(metadata_path)
 
     audit_records = build_journal_topic_audit(
         journal_records,
@@ -328,24 +297,9 @@ def main(argv: list[str] | None = None) -> None:
         terminology,
         mesh_term_overrides,
     )
-    payload = json.dumps(audit_records, indent=2, sort_keys=True)
-    root_counts_payload = json.dumps(mesh_root_counts, indent=2)
-    term_root_frequencies_payload = json.dumps(mesh_term_root_frequencies, indent=2)
-
-    if args.output:
-        args.output.write_text(payload + "\n", encoding="utf-8")
-    else:
-        print(payload)
-
-    if args.mesh_root_counts_output:
-        args.mesh_root_counts_output.write_text(root_counts_payload + "\n", encoding="utf-8")
-    else:
-        print(root_counts_payload)
-
-    if args.mesh_term_root_frequencies_output:
-        args.mesh_term_root_frequencies_output.write_text(term_root_frequencies_payload + "\n", encoding="utf-8")
-    else:
-        print(term_root_frequencies_payload)
+    write_json_payload(args.output, audit_records, sort_keys=True)
+    write_json_payload(args.mesh_root_counts_output, mesh_root_counts)
+    write_json_payload(args.mesh_term_root_frequencies_output, mesh_term_root_frequencies)
 
 
 if __name__ == "__main__":

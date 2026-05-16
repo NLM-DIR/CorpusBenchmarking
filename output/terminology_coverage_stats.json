@@ -298,9 +298,9 @@
               "branch_code": "D08 Enzymes and Coenzymes",
               "count": 5.875,
               "label": "D08 Enzymes and Coenzymes",
-              "mesh_total_count": 24429.1006105,
+              "mesh_total_count": 24429.6006105,
               "proportion": 0.00024049,
-              "terminology_total_count": 24429.1006105,
+              "terminology_total_count": 24429.6006105,
               "treetop": "D08 Enzymes and Coenzymes",
               "treetop_name": "D08 Enzymes and Coenzymes"
             },
@@ -338,9 +338,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 80.56666667,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116630.86301755,
-              "proportion": 0.00069078,
-              "terminology_total_count": 116630.86301755,
+              "mesh_total_count": 116632.36301755,
+              "proportion": 0.00069077,
+              "terminology_total_count": 116632.36301755,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -348,9 +348,9 @@
               "branch_code": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "count": 25.01190476,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "mesh_total_count": 6831.1484127,
-              "proportion": 0.00366145,
-              "terminology_total_count": 6831.1484127,
+              "mesh_total_count": 6832.1484127,
+              "proportion": 0.00366091,
+              "terminology_total_count": 6832.1484127,
               "treetop": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "treetop_name": "D13 Nucleic Acids, Nucleotides, and Nucleosides"
             },
@@ -503,9 +503,9 @@
               "branch_code": "C10 Nervous System Diseases",
               "count": 150.19816017,
               "label": "C10 Nervous System Diseases",
-              "mesh_total_count": 2049.42729958,
-              "proportion": 0.07328787,
-              "terminology_total_count": 2049.42729958,
+              "mesh_total_count": 2050.02729958,
+              "proportion": 0.07326642,
+              "terminology_total_count": 2050.02729958,
               "treetop": "C10 Nervous System Diseases",
               "treetop_name": "C10 Nervous System Diseases"
             },
@@ -513,9 +513,9 @@
               "branch_code": "C11 Eye Diseases",
               "count": 35.4547619,
               "label": "C11 Eye Diseases",
-              "mesh_total_count": 965.09222689,
-              "proportion": 0.03673717,
-              "terminology_total_count": 965.09222689,
+              "mesh_total_count": 966.09222689,
+              "proportion": 0.03669915,
+              "terminology_total_count": 966.09222689,
               "treetop": "C11 Eye Diseases",
               "treetop_name": "C11 Eye Diseases"
             },
@@ -563,9 +563,9 @@
               "branch_code": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "count": 30.21424964,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "mesh_total_count": 2962.40287319,
-              "proportion": 0.01019924,
-              "terminology_total_count": 2962.40287319,
+              "mesh_total_count": 2962.80287319,
+              "proportion": 0.01019786,
+              "terminology_total_count": 2962.80287319,
               "treetop": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "treetop_name": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
             },
@@ -735,9 +735,9 @@
           "branch_code": "D000602",
           "count": 74.61038961,
           "label": "Amino Acids, Peptides, and Proteins",
-          "mesh_total_count": 76366.09882699,
-          "proportion": 0.00097701,
-          "terminology_total_count": 76366.09882699,
+          "mesh_total_count": 76367.59882699,
+          "proportion": 0.00097699,
+          "terminology_total_count": 76367.59882699,
           "treetop": "D000602",
           "treetop_name": "Amino Acids, Peptides, and Proteins"
         },
@@ -885,9 +885,9 @@
           "branch_code": "D005128",
           "count": 35.61111111,
           "label": "Eye Diseases",
-          "mesh_total_count": 554.27414699,
-          "proportion": 0.06424819,
-          "terminology_total_count": 554.27414699,
+          "mesh_total_count": 555.27414699,
+          "proportion": 0.06413249,
+          "terminology_total_count": 555.27414699,
           "treetop": "D005128",
           "treetop_name": "Eye Diseases"
         },
@@ -1045,9 +1045,9 @@
           "branch_code": "D009706",
           "count": 20.41666667,
           "label": "Nucleic Acids, Nucleotides, and Nucleosides",
-          "mesh_total_count": 5237.25006464,
-          "proportion": 0.00389836,
-          "terminology_total_count": 5237.25006464,
+          "mesh_total_count": 5238.25006464,
+          "proportion": 0.00389761,
+          "terminology_total_count": 5238.25006464,
           "treetop": "D009706",
           "treetop_name": "Nucleic Acids, Nucleotides, and Nucleosides"
         },
@@ -1225,9 +1225,9 @@
           "branch_code": "D045762",
           "count": 6.23333333,
           "label": "Enzymes and Coenzymes",
-          "mesh_total_count": 19362.33475675,
-          "proportion": 0.00032193,
-          "terminology_total_count": 19362.33475675,
+          "mesh_total_count": 19362.83475675,
+          "proportion": 0.00032192,
+          "terminology_total_count": 19362.83475675,
           "treetop": "D045762",
           "treetop_name": "Enzymes and Coenzymes"
         },
@@ -1434,23 +1434,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -1540,23 +1540,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -1723,23 +1723,23 @@
             {
               "count": 146.16666667,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.00957528,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 1821.6,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.1193318,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 5397.53333333,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.35358882,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 4482.93333333,
@@ -1837,23 +1837,23 @@
             {
               "count": 1138.66666667,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.08458377,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 5524.2,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.41035507,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 4125.26666667,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.30643787,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 1647.53333333,
@@ -1943,23 +1943,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -2049,23 +2049,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -2155,23 +2155,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -2250,23 +2250,23 @@
         {
           "count": 1284.83333333,
           "depth": 2,
-          "mesh_total_count": 22820.38690476,
+          "mesh_total_count": 22821.38690476,
           "proportion": 0.04472564,
-          "terminology_total_count": 22820.38690476
+          "terminology_total_count": 22821.38690476
         },
         {
           "count": 7345.8,
           "depth": 3,
-          "mesh_total_count": 114688.1579365,
+          "mesh_total_count": 114688.6579365,
           "proportion": 0.25571066,
-          "terminology_total_count": 114688.1579365
+          "terminology_total_count": 114688.6579365
         },
         {
           "count": 9522.8,
           "depth": 4,
-          "mesh_total_count": 117161.94318181,
+          "mesh_total_count": 117164.44318181,
           "proportion": 0.33149302,
-          "terminology_total_count": 117161.94318181
+          "terminology_total_count": 117164.44318181
         },
         {
           "count": 6130.46666667,
@@ -8398,9 +8398,9 @@
               "branch_code": "D08 Enzymes and Coenzymes",
               "count": 0.0,
               "label": "D08 Enzymes and Coenzymes",
-              "mesh_total_count": 24429.1006105,
+              "mesh_total_count": 24429.6006105,
               "proportion": 0.0,
-              "terminology_total_count": 24429.1006105,
+              "terminology_total_count": 24429.6006105,
               "treetop": "D08 Enzymes and Coenzymes",
               "treetop_name": "D08 Enzymes and Coenzymes"
             },
@@ -8438,9 +8438,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116630.86301755,
+              "mesh_total_count": 116632.36301755,
               "proportion": 0.0,
-              "terminology_total_count": 116630.86301755,
+              "terminology_total_count": 116632.36301755,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -8448,9 +8448,9 @@
               "branch_code": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "count": 0.0,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "mesh_total_count": 6831.1484127,
+              "mesh_total_count": 6832.1484127,
               "proportion": 0.0,
-              "terminology_total_count": 6831.1484127,
+              "terminology_total_count": 6832.1484127,
               "treetop": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "treetop_name": "D13 Nucleic Acids, Nucleotides, and Nucleosides"
             },
@@ -8595,9 +8595,9 @@
               "branch_code": "C10 Nervous System Diseases",
               "count": 0.0,
               "label": "C10 Nervous System Diseases",
-              "mesh_total_count": 2049.42729958,
+              "mesh_total_count": 2050.02729958,
               "proportion": 0.0,
-              "terminology_total_count": 2049.42729958,
+              "terminology_total_count": 2050.02729958,
               "treetop": "C10 Nervous System Diseases",
               "treetop_name": "C10 Nervous System Diseases"
             },
@@ -8605,9 +8605,9 @@
               "branch_code": "C11 Eye Diseases",
               "count": 0.0,
               "label": "C11 Eye Diseases",
-              "mesh_total_count": 965.09222689,
+              "mesh_total_count": 966.09222689,
               "proportion": 0.0,
-              "terminology_total_count": 965.09222689,
+              "terminology_total_count": 966.09222689,
               "treetop": "C11 Eye Diseases",
               "treetop_name": "C11 Eye Diseases"
             },
@@ -8655,9 +8655,9 @@
               "branch_code": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "count": 0.0,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "mesh_total_count": 2962.40287319,
+              "mesh_total_count": 2962.80287319,
               "proportion": 0.0,
-              "terminology_total_count": 2962.40287319,
+              "terminology_total_count": 2962.80287319,
               "treetop": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "treetop_name": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
             },
@@ -8851,23 +8851,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -8957,23 +8957,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -9063,23 +9063,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -9169,23 +9169,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -9275,23 +9275,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -9381,23 +9381,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -9487,23 +9487,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -9582,23 +9582,23 @@
         {
           "count": 0.0,
           "depth": 2,
-          "mesh_total_count": 22820.38690476,
+          "mesh_total_count": 22821.38690476,
           "proportion": 0.0,
-          "terminology_total_count": 22820.38690476
+          "terminology_total_count": 22821.38690476
         },
         {
           "count": 0.0,
           "depth": 3,
-          "mesh_total_count": 114688.1579365,
+          "mesh_total_count": 114688.6579365,
           "proportion": 0.0,
-          "terminology_total_count": 114688.1579365
+          "terminology_total_count": 114688.6579365
         },
         {
           "count": 0.0,
           "depth": 4,
-          "mesh_total_count": 117161.94318181,
+          "mesh_total_count": 117164.44318181,
           "proportion": 0.0,
-          "terminology_total_count": 117161.94318181
+          "terminology_total_count": 117164.44318181
         },
         {
           "count": 0.0,
@@ -16591,9 +16591,9 @@
               "branch_code": "D08 Enzymes and Coenzymes",
               "count": 0.0,
               "label": "D08 Enzymes and Coenzymes",
-              "mesh_total_count": 24429.1006105,
+              "mesh_total_count": 24429.6006105,
               "proportion": 0.0,
-              "terminology_total_count": 24429.1006105,
+              "terminology_total_count": 24429.6006105,
               "treetop": "D08 Enzymes and Coenzymes",
               "treetop_name": "D08 Enzymes and Coenzymes"
             },
@@ -16631,9 +16631,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116630.86301755,
+              "mesh_total_count": 116632.36301755,
               "proportion": 0.0,
-              "terminology_total_count": 116630.86301755,
+              "terminology_total_count": 116632.36301755,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -16641,9 +16641,9 @@
               "branch_code": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "count": 0.0,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "mesh_total_count": 6831.1484127,
+              "mesh_total_count": 6832.1484127,
               "proportion": 0.0,
-              "terminology_total_count": 6831.1484127,
+              "terminology_total_count": 6832.1484127,
               "treetop": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "treetop_name": "D13 Nucleic Acids, Nucleotides, and Nucleosides"
             },
@@ -16788,9 +16788,9 @@
               "branch_code": "C10 Nervous System Diseases",
               "count": 0.0,
               "label": "C10 Nervous System Diseases",
-              "mesh_total_count": 2049.42729958,
+              "mesh_total_count": 2050.02729958,
               "proportion": 0.0,
-              "terminology_total_count": 2049.42729958,
+              "terminology_total_count": 2050.02729958,
               "treetop": "C10 Nervous System Diseases",
               "treetop_name": "C10 Nervous System Diseases"
             },
@@ -16798,9 +16798,9 @@
               "branch_code": "C11 Eye Diseases",
               "count": 0.0,
               "label": "C11 Eye Diseases",
-              "mesh_total_count": 965.09222689,
+              "mesh_total_count": 966.09222689,
               "proportion": 0.0,
-              "terminology_total_count": 965.09222689,
+              "terminology_total_count": 966.09222689,
               "treetop": "C11 Eye Diseases",
               "treetop_name": "C11 Eye Diseases"
             },
@@ -16848,9 +16848,9 @@
               "branch_code": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "count": 0.0,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "mesh_total_count": 2962.40287319,
+              "mesh_total_count": 2962.80287319,
               "proportion": 0.0,
-              "terminology_total_count": 2962.40287319,
+              "terminology_total_count": 2962.80287319,
               "treetop": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "treetop_name": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
             },
@@ -17044,23 +17044,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -17150,23 +17150,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -17256,23 +17256,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -17362,23 +17362,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -17468,23 +17468,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -17574,23 +17574,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -17680,23 +17680,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -17775,23 +17775,23 @@
         {
           "count": 0.0,
           "depth": 2,
-          "mesh_total_count": 22820.38690476,
+          "mesh_total_count": 22821.38690476,
           "proportion": 0.0,
-          "terminology_total_count": 22820.38690476
+          "terminology_total_count": 22821.38690476
         },
         {
           "count": 0.0,
           "depth": 3,
-          "mesh_total_count": 114688.1579365,
+          "mesh_total_count": 114688.6579365,
           "proportion": 0.0,
-          "terminology_total_count": 114688.1579365
+          "terminology_total_count": 114688.6579365
         },
         {
           "count": 0.0,
           "depth": 4,
-          "mesh_total_count": 117161.94318181,
+          "mesh_total_count": 117164.44318181,
           "proportion": 0.0,
-          "terminology_total_count": 117161.94318181
+          "terminology_total_count": 117164.44318181
         },
         {
           "count": 0.0,
@@ -27043,9 +27043,9 @@
               "branch_code": "D08 Enzymes and Coenzymes",
               "count": 0.0,
               "label": "D08 Enzymes and Coenzymes",
-              "mesh_total_count": 24429.1006105,
+              "mesh_total_count": 24429.6006105,
               "proportion": 0.0,
-              "terminology_total_count": 24429.1006105,
+              "terminology_total_count": 24429.6006105,
               "treetop": "D08 Enzymes and Coenzymes",
               "treetop_name": "D08 Enzymes and Coenzymes"
             },
@@ -27083,9 +27083,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116630.86301755,
+              "mesh_total_count": 116632.36301755,
               "proportion": 0.0,
-              "terminology_total_count": 116630.86301755,
+              "terminology_total_count": 116632.36301755,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -27093,9 +27093,9 @@
               "branch_code": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "count": 0.0,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "mesh_total_count": 6831.1484127,
+              "mesh_total_count": 6832.1484127,
               "proportion": 0.0,
-              "terminology_total_count": 6831.1484127,
+              "terminology_total_count": 6832.1484127,
               "treetop": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "treetop_name": "D13 Nucleic Acids, Nucleotides, and Nucleosides"
             },
@@ -27240,9 +27240,9 @@
               "branch_code": "C10 Nervous System Diseases",
               "count": 0.0,
               "label": "C10 Nervous System Diseases",
-              "mesh_total_count": 2049.42729958,
+              "mesh_total_count": 2050.02729958,
               "proportion": 0.0,
-              "terminology_total_count": 2049.42729958,
+              "terminology_total_count": 2050.02729958,
               "treetop": "C10 Nervous System Diseases",
               "treetop_name": "C10 Nervous System Diseases"
             },
@@ -27250,9 +27250,9 @@
               "branch_code": "C11 Eye Diseases",
               "count": 0.0,
               "label": "C11 Eye Diseases",
-              "mesh_total_count": 965.09222689,
+              "mesh_total_count": 966.09222689,
               "proportion": 0.0,
-              "terminology_total_count": 965.09222689,
+              "terminology_total_count": 966.09222689,
               "treetop": "C11 Eye Diseases",
               "treetop_name": "C11 Eye Diseases"
             },
@@ -27300,9 +27300,9 @@
               "branch_code": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "count": 0.0,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "mesh_total_count": 2962.40287319,
+              "mesh_total_count": 2962.80287319,
               "proportion": 0.0,
-              "terminology_total_count": 2962.40287319,
+              "terminology_total_count": 2962.80287319,
               "treetop": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "treetop_name": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
             },
@@ -27496,23 +27496,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -27602,23 +27602,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -27708,23 +27708,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -27814,23 +27814,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -27920,23 +27920,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -28026,23 +28026,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -28132,23 +28132,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -28227,23 +28227,23 @@
         {
           "count": 0.0,
           "depth": 2,
-          "mesh_total_count": 22820.38690476,
+          "mesh_total_count": 22821.38690476,
           "proportion": 0.0,
-          "terminology_total_count": 22820.38690476
+          "terminology_total_count": 22821.38690476
         },
         {
           "count": 0.0,
           "depth": 3,
-          "mesh_total_count": 114688.1579365,
+          "mesh_total_count": 114688.6579365,
           "proportion": 0.0,
-          "terminology_total_count": 114688.1579365
+          "terminology_total_count": 114688.6579365
         },
         {
           "count": 0.0,
           "depth": 4,
-          "mesh_total_count": 117161.94318181,
+          "mesh_total_count": 117164.44318181,
           "proportion": 0.0,
-          "terminology_total_count": 117161.94318181
+          "terminology_total_count": 117164.44318181
         },
         {
           "count": 0.0,
@@ -36276,9 +36276,9 @@
               "branch_code": "D08 Enzymes and Coenzymes",
               "count": 0.0,
               "label": "D08 Enzymes and Coenzymes",
-              "mesh_total_count": 24429.1006105,
+              "mesh_total_count": 24429.6006105,
               "proportion": 0.0,
-              "terminology_total_count": 24429.1006105,
+              "terminology_total_count": 24429.6006105,
               "treetop": "D08 Enzymes and Coenzymes",
               "treetop_name": "D08 Enzymes and Coenzymes"
             },
@@ -36316,9 +36316,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116630.86301755,
+              "mesh_total_count": 116632.36301755,
               "proportion": 0.0,
-              "terminology_total_count": 116630.86301755,
+              "terminology_total_count": 116632.36301755,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -36326,9 +36326,9 @@
               "branch_code": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "count": 0.0,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "mesh_total_count": 6831.1484127,
+              "mesh_total_count": 6832.1484127,
               "proportion": 0.0,
-              "terminology_total_count": 6831.1484127,
+              "terminology_total_count": 6832.1484127,
               "treetop": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "treetop_name": "D13 Nucleic Acids, Nucleotides, and Nucleosides"
             },
@@ -36483,9 +36483,9 @@
               "branch_code": "C10 Nervous System Diseases",
               "count": 72.61728202,
               "label": "C10 Nervous System Diseases",
-              "mesh_total_count": 2049.42729958,
-              "proportion": 0.03543296,
-              "terminology_total_count": 2049.42729958,
+              "mesh_total_count": 2050.02729958,
+              "proportion": 0.03542259,
+              "terminology_total_count": 2050.02729958,
               "treetop": "C10 Nervous System Diseases",
               "treetop_name": "C10 Nervous System Diseases"
             },
@@ -36493,9 +36493,9 @@
               "branch_code": "C11 Eye Diseases",
               "count": 31.18968254,
               "label": "C11 Eye Diseases",
-              "mesh_total_count": 965.09222689,
-              "proportion": 0.03231783,
-              "terminology_total_count": 965.09222689,
+              "mesh_total_count": 966.09222689,
+              "proportion": 0.03228437,
+              "terminology_total_count": 966.09222689,
               "treetop": "C11 Eye Diseases",
               "treetop_name": "C11 Eye Diseases"
             },
@@ -36543,9 +36543,9 @@
               "branch_code": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "count": 79.67548748,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "mesh_total_count": 2962.40287319,
-              "proportion": 0.02689556,
-              "terminology_total_count": 2962.40287319,
+              "mesh_total_count": 2962.80287319,
+              "proportion": 0.02689193,
+              "terminology_total_count": 2962.80287319,
               "treetop": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "treetop_name": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
             },
@@ -36815,9 +36815,9 @@
           "branch_code": "D005128",
           "count": 30.72857143,
           "label": "Eye Diseases",
-          "mesh_total_count": 554.27414699,
-          "proportion": 0.0554393,
-          "terminology_total_count": 554.27414699,
+          "mesh_total_count": 555.27414699,
+          "proportion": 0.05533946,
+          "terminology_total_count": 555.27414699,
           "treetop": "D005128",
           "treetop_name": "Eye Diseases"
         },
@@ -37075,9 +37075,9 @@
           "branch_code": "D045762",
           "count": 0.66666667,
           "label": "Enzymes and Coenzymes",
-          "mesh_total_count": 19362.33475675,
+          "mesh_total_count": 19362.83475675,
           "proportion": 3.443e-05,
-          "terminology_total_count": 19362.33475675,
+          "terminology_total_count": 19362.83475675,
           "treetop": "D045762",
           "treetop_name": "Enzymes and Coenzymes"
         },
@@ -37180,23 +37180,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -37286,23 +37286,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -37392,23 +37392,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -37508,23 +37508,23 @@
             {
               "count": 393.78333333,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.06128923,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 2095.52142857,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.3261512,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 2351.86428571,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.36604892,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 934.54761905,
@@ -37614,23 +37614,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -37720,23 +37720,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -37826,23 +37826,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -37921,23 +37921,23 @@
         {
           "count": 393.78333333,
           "depth": 2,
-          "mesh_total_count": 22820.38690476,
+          "mesh_total_count": 22821.38690476,
           "proportion": 0.06128923,
-          "terminology_total_count": 22820.38690476
+          "terminology_total_count": 22821.38690476
         },
         {
           "count": 2095.52142857,
           "depth": 3,
-          "mesh_total_count": 114688.1579365,
+          "mesh_total_count": 114688.6579365,
           "proportion": 0.3261512,
-          "terminology_total_count": 114688.1579365
+          "terminology_total_count": 114688.6579365
         },
         {
           "count": 2351.86428571,
           "depth": 4,
-          "mesh_total_count": 117161.94318181,
+          "mesh_total_count": 117164.44318181,
           "proportion": 0.36604892,
-          "terminology_total_count": 117161.94318181
+          "terminology_total_count": 117164.44318181
         },
         {
           "count": 934.54761905,
@@ -44101,9 +44101,9 @@
               "branch_code": "D08 Enzymes and Coenzymes",
               "count": 9.94285714,
               "label": "D08 Enzymes and Coenzymes",
-              "mesh_total_count": 24429.1006105,
-              "proportion": 0.00040701,
-              "terminology_total_count": 24429.1006105,
+              "mesh_total_count": 24429.6006105,
+              "proportion": 0.000407,
+              "terminology_total_count": 24429.6006105,
               "treetop": "D08 Enzymes and Coenzymes",
               "treetop_name": "D08 Enzymes and Coenzymes"
             },
@@ -44141,9 +44141,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 136.18630952,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116630.86301755,
-              "proportion": 0.00116767,
-              "terminology_total_count": 116630.86301755,
+              "mesh_total_count": 116632.36301755,
+              "proportion": 0.00116765,
+              "terminology_total_count": 116632.36301755,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -44151,9 +44151,9 @@
               "branch_code": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "count": 51.56349206,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "mesh_total_count": 6831.1484127,
-              "proportion": 0.00754829,
-              "terminology_total_count": 6831.1484127,
+              "mesh_total_count": 6832.1484127,
+              "proportion": 0.00754719,
+              "terminology_total_count": 6832.1484127,
               "treetop": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "treetop_name": "D13 Nucleic Acids, Nucleotides, and Nucleosides"
             },
@@ -44298,9 +44298,9 @@
               "branch_code": "C10 Nervous System Diseases",
               "count": 0.0,
               "label": "C10 Nervous System Diseases",
-              "mesh_total_count": 2049.42729958,
+              "mesh_total_count": 2050.02729958,
               "proportion": 0.0,
-              "terminology_total_count": 2049.42729958,
+              "terminology_total_count": 2050.02729958,
               "treetop": "C10 Nervous System Diseases",
               "treetop_name": "C10 Nervous System Diseases"
             },
@@ -44308,9 +44308,9 @@
               "branch_code": "C11 Eye Diseases",
               "count": 0.0,
               "label": "C11 Eye Diseases",
-              "mesh_total_count": 965.09222689,
+              "mesh_total_count": 966.09222689,
               "proportion": 0.0,
-              "terminology_total_count": 965.09222689,
+              "terminology_total_count": 966.09222689,
               "treetop": "C11 Eye Diseases",
               "treetop_name": "C11 Eye Diseases"
             },
@@ -44358,9 +44358,9 @@
               "branch_code": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "count": 0.0,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "mesh_total_count": 2962.40287319,
+              "mesh_total_count": 2962.80287319,
               "proportion": 0.0,
-              "terminology_total_count": 2962.40287319,
+              "terminology_total_count": 2962.80287319,
               "treetop": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "treetop_name": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
             },
@@ -44520,9 +44520,9 @@
           "branch_code": "D000602",
           "count": 133.92857143,
           "label": "Amino Acids, Peptides, and Proteins",
-          "mesh_total_count": 76366.09882699,
-          "proportion": 0.00175377,
-          "terminology_total_count": 76366.09882699,
+          "mesh_total_count": 76367.59882699,
+          "proportion": 0.00175374,
+          "terminology_total_count": 76367.59882699,
           "treetop": "D000602",
           "treetop_name": "Amino Acids, Peptides, and Proteins"
         },
@@ -44630,9 +44630,9 @@
           "branch_code": "D009706",
           "count": 40.61666667,
           "label": "Nucleic Acids, Nucleotides, and Nucleosides",
-          "mesh_total_count": 5237.25006464,
-          "proportion": 0.00775534,
-          "terminology_total_count": 5237.25006464,
+          "mesh_total_count": 5238.25006464,
+          "proportion": 0.00775386,
+          "terminology_total_count": 5238.25006464,
           "treetop": "D009706",
           "treetop_name": "Nucleic Acids, Nucleotides, and Nucleosides"
         },
@@ -44720,9 +44720,9 @@
           "branch_code": "D045762",
           "count": 10.75,
           "label": "Enzymes and Coenzymes",
-          "mesh_total_count": 19362.33475675,
-          "proportion": 0.0005552,
-          "terminology_total_count": 19362.33475675,
+          "mesh_total_count": 19362.83475675,
+          "proportion": 0.00055519,
+          "terminology_total_count": 19362.83475675,
           "treetop": "D045762",
           "treetop_name": "Enzymes and Coenzymes"
         },
@@ -44811,23 +44811,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -44917,23 +44917,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -45039,23 +45039,23 @@
             {
               "count": 3200.28333333,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.07835957,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 10910.4,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.26714331,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 14487.38333333,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.35472646,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 7551.81666667,
@@ -45145,23 +45145,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -45251,23 +45251,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -45357,23 +45357,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -45463,23 +45463,23 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22820.38690476,
+              "mesh_total_count": 22821.38690476,
               "proportion": 0.0,
-              "terminology_total_count": 22820.38690476
+              "terminology_total_count": 22821.38690476
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.1579365,
+              "mesh_total_count": 114688.6579365,
               "proportion": 0.0,
-              "terminology_total_count": 114688.1579365
+              "terminology_total_count": 114688.6579365
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117161.94318181,
+              "mesh_total_count": 117164.44318181,
               "proportion": 0.0,
-              "terminology_total_count": 117161.94318181
+              "terminology_total_count": 117164.44318181
             },
             {
               "count": 0.0,
@@ -45558,23 +45558,23 @@
         {
           "count": 3200.28333333,
           "depth": 2,
-          "mesh_total_count": 22820.38690476,
+          "mesh_total_count": 22821.38690476,
           "proportion": 0.07835957,
-          "terminology_total_count": 22820.38690476
+          "terminology_total_count": 22821.38690476
         },
         {
           "count": 10910.4,
           "depth": 3,
-          "mesh_total_count": 114688.1579365,
+          "mesh_total_count": 114688.6579365,
           "proportion": 0.26714331,
-          "terminology_total_count": 114688.1579365
+          "terminology_total_count": 114688.6579365
         },
         {
           "count": 14487.38333333,
           "depth": 4,
-          "mesh_total_count": 117161.94318181,
+          "mesh_total_count": 117164.44318181,
           "proportion": 0.35472646,
-          "terminology_total_count": 117161.94318181
+          "terminology_total_count": 117164.44318181
         },
         {
           "count": 7551.81666667,

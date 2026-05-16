@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from corpus_benchmark.article_topic_audit import build_article_topic_audit
-from corpus_benchmark.article_topic_audit import build_article_topic_root_counts
-from corpus_benchmark.article_topic_audit import build_unmapped_article_mesh_term_frequencies
+from corpus_benchmark.audits.article_topic_audit import build_article_topic_audit
+from corpus_benchmark.audits.article_topic_audit import build_article_topic_root_counts
+from corpus_benchmark.audits.article_topic_audit import build_unmapped_article_mesh_term_frequencies
 from corpus_benchmark.models.terminologies import TerminologyConcept
 from corpus_benchmark.models.terminologies import TerminologyResource
 
