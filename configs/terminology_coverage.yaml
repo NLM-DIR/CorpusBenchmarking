@@ -82,7 +82,7 @@ bundles:
 metrics:
   - result_name: mesh_high_level_concept_counts
     metric_name: high_level_concept_counts
-    target_bundles: &terminology_bundles ["BC5CDR_corpus", "BioID_corpus", "CRAFT_corpus", "CellLink_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["BC5CDR_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
     params:
       terminology_name: mesh
       term_override_paths_by_entity_scope:
@@ -90,40 +90,40 @@ metrics:
         chemical: configs/MeSH_chemical_mappings.yaml
   - result_name: mesh_concept_depth_counts
     metric_name: concept_depth_counts
-    target_bundles: *terminology_bundles
+    target_bundles: ["BC5CDR_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
     params: {terminology_name: mesh}
   - result_name: cell_ontology_high_level_concept_counts
     metric_name: high_level_concept_counts
-    target_bundles: *terminology_bundles
+    target_bundles: ["BioID_corpus", "CRAFT_corpus", "CellLink_corpus"]
     params:
       terminology_name: cell_ontology
       term_override_paths_by_entity_scope:
         cell: configs/cell_ontology_mappings.yaml
   - result_name: cell_ontology_concept_depth_counts
     metric_name: concept_depth_counts
-    target_bundles: *terminology_bundles
+    target_bundles: ["BioID_corpus", "CRAFT_corpus", "CellLink_corpus"]
     params: {terminology_name: cell_ontology}
   - result_name: mondo_high_level_concept_counts
     metric_name: high_level_concept_counts
-    target_bundles: *terminology_bundles
+    target_bundles: ["CRAFT_corpus"]
     params:
       terminology_name: mondo
       term_override_paths_by_entity_scope:
         disease: configs/MONDO_disease_mappings.yaml
   - result_name: mondo_concept_depth_counts
     metric_name: concept_depth_counts
-    target_bundles: *terminology_bundles
+    target_bundles: ["CRAFT_corpus"]
     params: {terminology_name: mondo}
   - result_name: chebi_high_level_concept_counts
     metric_name: high_level_concept_counts
-    target_bundles: *terminology_bundles
+    target_bundles: ["BioID_corpus", "CRAFT_corpus"]
     params:
       terminology_name: chebi
       term_override_paths_by_entity_scope:
         chemical: configs/ChEBI_chemical_mappings.yaml
   - result_name: chebi_concept_depth_counts
     metric_name: concept_depth_counts
-    target_bundles: *terminology_bundles
+    target_bundles: ["BioID_corpus", "CRAFT_corpus"]
     params: {terminology_name: chebi}
 
 output_path: "output/terminology_coverage_stats.json"
