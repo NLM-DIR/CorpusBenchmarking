@@ -120,7 +120,7 @@ metrics:
     params:
       terminology_name: chebi
       term_override_paths_by_entity_scope:
-        disease: configs/ChEBI_chemical_mappings.yaml
+        chemical: configs/ChEBI_chemical_mappings.yaml
   - result_name: chebi_concept_depth_counts
     metric_name: concept_depth_counts
     target_bundles: *terminology_bundles

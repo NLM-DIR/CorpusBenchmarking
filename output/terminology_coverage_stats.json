@@ -230,9 +230,9 @@
               "branch_code": "D01 Inorganic Chemicals",
               "count": 74.35,
               "label": "D01 Inorganic Chemicals",
-              "mesh_total_count": 8234.7047619,
-              "proportion": 0.00902886,
-              "terminology_total_count": 8234.7047619,
+              "mesh_total_count": 8235.7047619,
+              "proportion": 0.00902776,
+              "terminology_total_count": 8235.7047619,
               "treetop": "D01 Inorganic Chemicals",
               "treetop_name": "D01 Inorganic Chemicals"
             },
@@ -242,9 +242,9 @@
               "branch_code": "D02 Organic Chemicals",
               "count": 408.24384921,
               "label": "D02 Organic Chemicals",
-              "mesh_total_count": 85262.95555556,
-              "proportion": 0.00478806,
-              "terminology_total_count": 85262.95555556,
+              "mesh_total_count": 85267.53888889,
+              "proportion": 0.0047878,
+              "terminology_total_count": 85267.53888889,
               "treetop": "D02 Organic Chemicals",
               "treetop_name": "D02 Organic Chemicals"
             },
@@ -254,9 +254,9 @@
               "branch_code": "D03 Heterocyclic Compounds",
               "count": 368.43571429,
               "label": "D03 Heterocyclic Compounds",
-              "mesh_total_count": 68370.20039683,
-              "proportion": 0.00538883,
-              "terminology_total_count": 68370.20039683,
+              "mesh_total_count": 68384.86706349,
+              "proportion": 0.00538768,
+              "terminology_total_count": 68384.86706349,
               "treetop": "D03 Heterocyclic Compounds",
               "treetop_name": "D03 Heterocyclic Compounds"
             },
@@ -266,9 +266,9 @@
               "branch_code": "D04 Polycyclic Compounds",
               "count": 75.66111111,
               "label": "D04 Polycyclic Compounds",
-              "mesh_total_count": 13245.57301587,
-              "proportion": 0.00571218,
-              "terminology_total_count": 13245.57301587,
+              "mesh_total_count": 13246.57301587,
+              "proportion": 0.00571175,
+              "terminology_total_count": 13246.57301587,
               "treetop": "D04 Polycyclic Compounds",
               "treetop_name": "D04 Polycyclic Compounds"
             },
@@ -278,9 +278,9 @@
               "branch_code": "D05 Macromolecular Substances",
               "count": 2.16369048,
               "label": "D05 Macromolecular Substances",
-              "mesh_total_count": 2564.19896215,
-              "proportion": 0.00084381,
-              "terminology_total_count": 2564.19896215,
+              "mesh_total_count": 2564.53229548,
+              "proportion": 0.0008437,
+              "terminology_total_count": 2564.53229548,
               "treetop": "D05 Macromolecular Substances",
               "treetop_name": "D05 Macromolecular Substances"
             },
@@ -290,9 +290,9 @@
               "branch_code": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "count": 19.45,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
-              "mesh_total_count": 2112.13647186,
-              "proportion": 0.00920869,
-              "terminology_total_count": 2112.13647186,
+              "mesh_total_count": 2112.63647186,
+              "proportion": 0.00920651,
+              "terminology_total_count": 2112.63647186,
               "treetop": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "treetop_name": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists"
             },
@@ -326,9 +326,9 @@
               "branch_code": "D09 Carbohydrates",
               "count": 43.73174603,
               "label": "D09 Carbohydrates",
-              "mesh_total_count": 14267.08935786,
-              "proportion": 0.00306522,
-              "terminology_total_count": 14267.08935786,
+              "mesh_total_count": 14267.75602453,
+              "proportion": 0.00306508,
+              "terminology_total_count": 14267.75602453,
               "treetop": "D09 Carbohydrates",
               "treetop_name": "D09 Carbohydrates"
             },
@@ -338,9 +338,9 @@
               "branch_code": "D10 Lipids",
               "count": 23.46666667,
               "label": "D10 Lipids",
-              "mesh_total_count": 6502.94047619,
-              "proportion": 0.00360862,
-              "terminology_total_count": 6502.94047619,
+              "mesh_total_count": 6503.19047619,
+              "proportion": 0.00360849,
+              "terminology_total_count": 6503.19047619,
               "treetop": "D10 Lipids",
               "treetop_name": "D10 Lipids"
             },
@@ -362,9 +362,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 80.56666667,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116632.36301755,
-              "proportion": 0.00069077,
-              "terminology_total_count": 116632.36301755,
+              "mesh_total_count": 116635.02968421,
+              "proportion": 0.00069076,
+              "terminology_total_count": 116635.02968421,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -386,9 +386,9 @@
               "branch_code": "D20 Complex Mixtures",
               "count": 7.02777778,
               "label": "D20 Complex Mixtures",
-              "mesh_total_count": 2982.17777778,
-              "proportion": 0.00235659,
-              "terminology_total_count": 2982.17777778,
+              "mesh_total_count": 2984.67777778,
+              "proportion": 0.00235462,
+              "terminology_total_count": 2984.67777778,
               "treetop": "D20 Complex Mixtures",
               "treetop_name": "D20 Complex Mixtures"
             },
@@ -398,9 +398,9 @@
               "branch_code": "D23 Biological Factors",
               "count": 16.62777778,
               "label": "D23 Biological Factors",
-              "mesh_total_count": 6349.31277056,
-              "proportion": 0.00261883,
-              "terminology_total_count": 6349.31277056,
+              "mesh_total_count": 6350.1461039,
+              "proportion": 0.00261849,
+              "terminology_total_count": 6350.1461039,
               "treetop": "D23 Biological Factors",
               "treetop_name": "D23 Biological Factors"
             },
@@ -422,9 +422,9 @@
               "branch_code": "D26 Pharmaceutical Preparations",
               "count": 5.15833333,
               "label": "D26 Pharmaceutical Preparations",
-              "mesh_total_count": 3092.89563492,
-              "proportion": 0.0016678,
-              "terminology_total_count": 3092.89563492,
+              "mesh_total_count": 3094.89563492,
+              "proportion": 0.00166672,
+              "terminology_total_count": 3094.89563492,
               "treetop": "D26 Pharmaceutical Preparations",
               "treetop_name": "D26 Pharmaceutical Preparations"
             },
@@ -823,9 +823,9 @@
           "branch_code": "D000602",
           "count": 74.61038961,
           "label": "Amino Acids, Peptides, and Proteins",
-          "mesh_total_count": 76367.59882699,
-          "proportion": 0.00097699,
-          "terminology_total_count": 76367.59882699,
+          "mesh_total_count": 76369.26549366,
+          "proportion": 0.00097697,
+          "terminology_total_count": 76369.26549366,
           "treetop": "D000602",
           "treetop_name": "Amino Acids, Peptides, and Proteins"
         },
@@ -871,9 +871,9 @@
           "branch_code": "D001685",
           "count": 21.4484127,
           "label": "Biological Factors",
-          "mesh_total_count": 5861.99423077,
-          "proportion": 0.00365889,
-          "terminology_total_count": 5861.99423077,
+          "mesh_total_count": 5862.66089744,
+          "proportion": 0.00365848,
+          "terminology_total_count": 5862.66089744,
           "treetop": "D001685",
           "treetop_name": "Biological Factors"
         },
@@ -895,9 +895,9 @@
           "branch_code": "D002241",
           "count": 45.82467532,
           "label": "Carbohydrates",
-          "mesh_total_count": 10844.18219109,
-          "proportion": 0.00422574,
-          "terminology_total_count": 10844.18219109,
+          "mesh_total_count": 10844.51552443,
+          "proportion": 0.00422561,
+          "terminology_total_count": 10844.51552443,
           "treetop": "D002241",
           "treetop_name": "Carbohydrates"
         },
@@ -967,9 +967,9 @@
           "branch_code": "D004364",
           "count": 5.58333333,
           "label": "Pharmaceutical Preparations",
-          "mesh_total_count": 1655.65921856,
-          "proportion": 0.00337227,
-          "terminology_total_count": 1655.65921856,
+          "mesh_total_count": 1656.24255189,
+          "proportion": 0.00337108,
+          "terminology_total_count": 1656.24255189,
           "treetop": "D004364",
           "treetop_name": "Pharmaceutical Preparations"
         },
@@ -1039,9 +1039,9 @@
           "branch_code": "D006571",
           "count": 368.16991342,
           "label": "Heterocyclic Compounds",
-          "mesh_total_count": 48465.84273399,
-          "proportion": 0.00759648,
-          "terminology_total_count": 48465.84273399,
+          "mesh_total_count": 48472.67606732,
+          "proportion": 0.00759541,
+          "terminology_total_count": 48472.67606732,
           "treetop": "D006571",
           "treetop_name": "Heterocyclic Compounds"
         },
@@ -1051,9 +1051,9 @@
           "branch_code": "D006730",
           "count": 19.16666667,
           "label": "Hormones, Hormone Substitutes, and Hormone Antagonists",
-          "mesh_total_count": 1994.62883032,
-          "proportion": 0.00960914,
-          "terminology_total_count": 1994.62883032,
+          "mesh_total_count": 1995.12883032,
+          "proportion": 0.00960673,
+          "terminology_total_count": 1995.12883032,
           "treetop": "D006730",
           "treetop_name": "Hormones, Hormone Substitutes, and Hormone Antagonists"
         },
@@ -1087,9 +1087,9 @@
           "branch_code": "D007287",
           "count": 72.97619048,
           "label": "Inorganic Chemicals",
-          "mesh_total_count": 5065.56697788,
-          "proportion": 0.01440632,
-          "terminology_total_count": 5065.56697788,
+          "mesh_total_count": 5065.90031121,
+          "proportion": 0.01440537,
+          "terminology_total_count": 5065.90031121,
           "treetop": "D007287",
           "treetop_name": "Inorganic Chemicals"
         },
@@ -1099,9 +1099,9 @@
           "branch_code": "D008055",
           "count": 26.08333333,
           "label": "Lipids",
-          "mesh_total_count": 5386.51470474,
-          "proportion": 0.00484234,
-          "terminology_total_count": 5386.51470474,
+          "mesh_total_count": 5386.76470474,
+          "proportion": 0.00484211,
+          "terminology_total_count": 5386.76470474,
           "treetop": "D008055",
           "treetop_name": "Lipids"
         },
@@ -1231,9 +1231,9 @@
           "branch_code": "D009930",
           "count": 403.56435786,
           "label": "Organic Chemicals",
-          "mesh_total_count": 60775.31205454,
-          "proportion": 0.00664027,
-          "terminology_total_count": 60775.31205454,
+          "mesh_total_count": 60777.31205454,
+          "proportion": 0.00664005,
+          "terminology_total_count": 60777.31205454,
           "treetop": "D009930",
           "treetop_name": "Organic Chemicals"
         },
@@ -1267,9 +1267,9 @@
           "branch_code": "D011083",
           "count": 80.46753247,
           "label": "Polycyclic Compounds",
-          "mesh_total_count": 11275.34495121,
-          "proportion": 0.00713659,
-          "terminology_total_count": 11275.34495121,
+          "mesh_total_count": 11276.17828454,
+          "proportion": 0.00713606,
+          "terminology_total_count": 11276.17828454,
           "treetop": "D011083",
           "treetop_name": "Polycyclic Compounds"
         },
@@ -1399,9 +1399,9 @@
           "branch_code": "D045424",
           "count": 7.66666667,
           "label": "Complex Mixtures",
-          "mesh_total_count": 2550.26533189,
-          "proportion": 0.00300622,
-          "terminology_total_count": 2550.26533189,
+          "mesh_total_count": 2551.93199856,
+          "proportion": 0.00300426,
+          "terminology_total_count": 2551.93199856,
           "treetop": "D045424",
           "treetop_name": "Complex Mixtures"
         },
@@ -1423,9 +1423,9 @@
           "branch_code": "D046911",
           "count": 2.70396825,
           "label": "Macromolecular Substances",
-          "mesh_total_count": 2365.7299506,
-          "proportion": 0.00114297,
-          "terminology_total_count": 2365.7299506,
+          "mesh_total_count": 2366.06328394,
+          "proportion": 0.00114281,
+          "terminology_total_count": 2366.06328394,
           "treetop": "D046911",
           "treetop_name": "Macromolecular Substances"
         },
@@ -1636,30 +1636,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -1671,9 +1671,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -1742,30 +1742,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -1777,9 +1777,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -1925,30 +1925,30 @@
             {
               "count": 146.16666667,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.00957528,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 1821.6,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.1193318,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 5397.53333333,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.35358882,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 4482.93333333,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.29367398,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 2145.76666667,
@@ -1960,9 +1960,9 @@
             {
               "count": 940.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.06157877,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 173.0,
@@ -2039,30 +2039,30 @@
             {
               "count": 1138.66666667,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.08458377,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 5524.2,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.41035507,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 4125.26666667,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.30643787,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 1647.53333333,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.12238399,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 501.0,
@@ -2074,9 +2074,9 @@
             {
               "count": 69.33333333,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0051503,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 7.0,
@@ -2145,30 +2145,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -2180,9 +2180,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -2251,30 +2251,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -2286,9 +2286,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -2357,30 +2357,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -2392,9 +2392,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -2452,30 +2452,30 @@
         {
           "count": 1284.83333333,
           "depth": 2,
-          "mesh_total_count": 22821.38690476,
+          "mesh_total_count": 22822.55357143,
           "proportion": 0.04472564,
-          "terminology_total_count": 22821.38690476
+          "terminology_total_count": 22822.55357143
         },
         {
           "count": 7345.8,
           "depth": 3,
-          "mesh_total_count": 114688.6579365,
+          "mesh_total_count": 114695.99126983,
           "proportion": 0.25571066,
-          "terminology_total_count": 114688.6579365
+          "terminology_total_count": 114695.99126983
         },
         {
           "count": 9522.8,
           "depth": 4,
-          "mesh_total_count": 117164.44318181,
+          "mesh_total_count": 117169.10984848,
           "proportion": 0.33149302,
-          "terminology_total_count": 117164.44318181
+          "terminology_total_count": 117169.10984848
         },
         {
           "count": 6130.46666667,
           "depth": 5,
-          "mesh_total_count": 57705.05133478,
+          "mesh_total_count": 57707.55133478,
           "proportion": 0.21340435,
-          "terminology_total_count": 57705.05133478
+          "terminology_total_count": 57707.55133478
         },
         {
           "count": 2646.76666667,
@@ -2487,9 +2487,9 @@
         {
           "count": 1009.33333333,
           "depth": 7,
-          "mesh_total_count": 11535.29292929,
+          "mesh_total_count": 11535.62626263,
           "proportion": 0.03513535,
-          "terminology_total_count": 11535.29292929
+          "terminology_total_count": 11535.62626263
         },
         {
           "count": 180.0,
@@ -7356,20 +7356,6 @@
             "resource_aliases": [
               "CHEBI"
             ],
-            "term_overrides_path": null,
-            "terminology": "chebi"
-          },
-          "value": []
-        },
-        "disease": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
             "term_overrides_path": "configs/ChEBI_chemical_mappings.yaml",
             "terminology": "chebi"
           },
@@ -7615,6 +7601,20 @@
               "treetop_name": "Subatomic particles"
             }
           ]
+        },
+        "disease": {
+          "details": {
+            "missing_ids": [],
+            "n_input_ids": 0,
+            "n_missing_ids": 0,
+            "n_unique_input_ids": 0,
+            "resource_aliases": [
+              "CHEBI"
+            ],
+            "term_overrides_path": null,
+            "terminology": "chebi"
+          },
+          "value": []
         },
         "function_process": {
           "details": {
@@ -8847,9 +8847,9 @@
               "branch_code": "D01 Inorganic Chemicals",
               "count": 0.0,
               "label": "D01 Inorganic Chemicals",
-              "mesh_total_count": 8234.7047619,
+              "mesh_total_count": 8235.7047619,
               "proportion": 0.0,
-              "terminology_total_count": 8234.7047619,
+              "terminology_total_count": 8235.7047619,
               "treetop": "D01 Inorganic Chemicals",
               "treetop_name": "D01 Inorganic Chemicals"
             },
@@ -8859,9 +8859,9 @@
               "branch_code": "D02 Organic Chemicals",
               "count": 0.0,
               "label": "D02 Organic Chemicals",
-              "mesh_total_count": 85262.95555556,
+              "mesh_total_count": 85267.53888889,
               "proportion": 0.0,
-              "terminology_total_count": 85262.95555556,
+              "terminology_total_count": 85267.53888889,
               "treetop": "D02 Organic Chemicals",
               "treetop_name": "D02 Organic Chemicals"
             },
@@ -8871,9 +8871,9 @@
               "branch_code": "D03 Heterocyclic Compounds",
               "count": 0.0,
               "label": "D03 Heterocyclic Compounds",
-              "mesh_total_count": 68370.20039683,
+              "mesh_total_count": 68384.86706349,
               "proportion": 0.0,
-              "terminology_total_count": 68370.20039683,
+              "terminology_total_count": 68384.86706349,
               "treetop": "D03 Heterocyclic Compounds",
               "treetop_name": "D03 Heterocyclic Compounds"
             },
@@ -8883,9 +8883,9 @@
               "branch_code": "D04 Polycyclic Compounds",
               "count": 0.0,
               "label": "D04 Polycyclic Compounds",
-              "mesh_total_count": 13245.57301587,
+              "mesh_total_count": 13246.57301587,
               "proportion": 0.0,
-              "terminology_total_count": 13245.57301587,
+              "terminology_total_count": 13246.57301587,
               "treetop": "D04 Polycyclic Compounds",
               "treetop_name": "D04 Polycyclic Compounds"
             },
@@ -8895,9 +8895,9 @@
               "branch_code": "D05 Macromolecular Substances",
               "count": 0.0,
               "label": "D05 Macromolecular Substances",
-              "mesh_total_count": 2564.19896215,
+              "mesh_total_count": 2564.53229548,
               "proportion": 0.0,
-              "terminology_total_count": 2564.19896215,
+              "terminology_total_count": 2564.53229548,
               "treetop": "D05 Macromolecular Substances",
               "treetop_name": "D05 Macromolecular Substances"
             },
@@ -8907,9 +8907,9 @@
               "branch_code": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "count": 0.0,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
-              "mesh_total_count": 2112.13647186,
+              "mesh_total_count": 2112.63647186,
               "proportion": 0.0,
-              "terminology_total_count": 2112.13647186,
+              "terminology_total_count": 2112.63647186,
               "treetop": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "treetop_name": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists"
             },
@@ -8943,9 +8943,9 @@
               "branch_code": "D09 Carbohydrates",
               "count": 0.0,
               "label": "D09 Carbohydrates",
-              "mesh_total_count": 14267.08935786,
+              "mesh_total_count": 14267.75602453,
               "proportion": 0.0,
-              "terminology_total_count": 14267.08935786,
+              "terminology_total_count": 14267.75602453,
               "treetop": "D09 Carbohydrates",
               "treetop_name": "D09 Carbohydrates"
             },
@@ -8955,9 +8955,9 @@
               "branch_code": "D10 Lipids",
               "count": 0.0,
               "label": "D10 Lipids",
-              "mesh_total_count": 6502.94047619,
+              "mesh_total_count": 6503.19047619,
               "proportion": 0.0,
-              "terminology_total_count": 6502.94047619,
+              "terminology_total_count": 6503.19047619,
               "treetop": "D10 Lipids",
               "treetop_name": "D10 Lipids"
             },
@@ -8979,9 +8979,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116632.36301755,
+              "mesh_total_count": 116635.02968421,
               "proportion": 0.0,
-              "terminology_total_count": 116632.36301755,
+              "terminology_total_count": 116635.02968421,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -9003,9 +9003,9 @@
               "branch_code": "D20 Complex Mixtures",
               "count": 0.0,
               "label": "D20 Complex Mixtures",
-              "mesh_total_count": 2982.17777778,
+              "mesh_total_count": 2984.67777778,
               "proportion": 0.0,
-              "terminology_total_count": 2982.17777778,
+              "terminology_total_count": 2984.67777778,
               "treetop": "D20 Complex Mixtures",
               "treetop_name": "D20 Complex Mixtures"
             },
@@ -9015,9 +9015,9 @@
               "branch_code": "D23 Biological Factors",
               "count": 0.0,
               "label": "D23 Biological Factors",
-              "mesh_total_count": 6349.31277056,
+              "mesh_total_count": 6350.1461039,
               "proportion": 0.0,
-              "terminology_total_count": 6349.31277056,
+              "terminology_total_count": 6350.1461039,
               "treetop": "D23 Biological Factors",
               "treetop_name": "D23 Biological Factors"
             },
@@ -9039,9 +9039,9 @@
               "branch_code": "D26 Pharmaceutical Preparations",
               "count": 0.0,
               "label": "D26 Pharmaceutical Preparations",
-              "mesh_total_count": 3092.89563492,
+              "mesh_total_count": 3094.89563492,
               "proportion": 0.0,
-              "terminology_total_count": 3092.89563492,
+              "terminology_total_count": 3094.89563492,
               "treetop": "D26 Pharmaceutical Preparations",
               "treetop_name": "D26 Pharmaceutical Preparations"
             },
@@ -9452,30 +9452,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -9487,9 +9487,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -9558,30 +9558,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -9593,9 +9593,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -9664,30 +9664,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -9699,9 +9699,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -9770,30 +9770,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -9805,9 +9805,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -9876,30 +9876,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -9911,9 +9911,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -9982,30 +9982,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -10017,9 +10017,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -10088,30 +10088,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -10123,9 +10123,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -10183,30 +10183,30 @@
         {
           "count": 0.0,
           "depth": 2,
-          "mesh_total_count": 22821.38690476,
+          "mesh_total_count": 22822.55357143,
           "proportion": 0.0,
-          "terminology_total_count": 22821.38690476
+          "terminology_total_count": 22822.55357143
         },
         {
           "count": 0.0,
           "depth": 3,
-          "mesh_total_count": 114688.6579365,
+          "mesh_total_count": 114695.99126983,
           "proportion": 0.0,
-          "terminology_total_count": 114688.6579365
+          "terminology_total_count": 114695.99126983
         },
         {
           "count": 0.0,
           "depth": 4,
-          "mesh_total_count": 117164.44318181,
+          "mesh_total_count": 117169.10984848,
           "proportion": 0.0,
-          "terminology_total_count": 117164.44318181
+          "terminology_total_count": 117169.10984848
         },
         {
           "count": 0.0,
           "depth": 5,
-          "mesh_total_count": 57705.05133478,
+          "mesh_total_count": 57707.55133478,
           "proportion": 0.0,
-          "terminology_total_count": 57705.05133478
+          "terminology_total_count": 57707.55133478
         },
         {
           "count": 0.0,
@@ -10218,9 +10218,9 @@
         {
           "count": 0.0,
           "depth": 7,
-          "mesh_total_count": 11535.29292929,
+          "mesh_total_count": 11535.62626263,
           "proportion": 0.0,
-          "terminology_total_count": 11535.29292929
+          "terminology_total_count": 11535.62626263
         },
         {
           "count": 0.0,
@@ -15962,93 +15962,42 @@
             "resource_aliases": [
               "CHEBI"
             ],
-            "term_overrides_path": null,
-            "terminology": "chebi"
-          },
-          "value": [
-            {
-              "annotation_count": 9564.0,
-              "annotation_proportion": 0.96909515,
-              "branch_code": "CHEBI:24431",
-              "count": 710.0,
-              "label": "chemical entity",
-              "mesh_total_count": 203617.0,
-              "proportion": 0.00348694,
-              "terminology_total_count": 203617.0,
-              "treetop": "CHEBI:24431",
-              "treetop_name": "chemical entity"
-            },
-            {
-              "annotation_count": 8.0,
-              "annotation_proportion": 0.00081062,
-              "branch_code": "CHEBI:36342",
-              "count": 2.0,
-              "label": "subatomic particle",
-              "mesh_total_count": 40.0,
-              "proportion": 0.05,
-              "terminology_total_count": 40.0,
-              "treetop": "CHEBI:36342",
-              "treetop_name": "subatomic particle"
-            },
-            {
-              "annotation_count": 278.0,
-              "annotation_proportion": 0.02816901,
-              "branch_code": "CHEBI:50906",
-              "count": 20.0,
-              "label": "role",
-              "mesh_total_count": 1647.0,
-              "proportion": 0.01214329,
-              "terminology_total_count": 1647.0,
-              "treetop": "CHEBI:50906",
-              "treetop_name": "role"
-            }
-          ]
-        },
-        "disease": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
             "term_overrides_path": "configs/ChEBI_chemical_mappings.yaml",
             "terminology": "chebi"
           },
           "value": [
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 607.13888889,
+              "annotation_proportion": 0.0615198,
               "branch_code": "Amino acids and derivatives",
-              "count": 0.0,
+              "count": 42.65277778,
               "label": "Amino acids and derivatives",
               "mesh_total_count": 14963.40388889,
-              "proportion": 0.0,
+              "proportion": 0.00285047,
               "terminology_total_count": 14963.40388889,
               "treetop": "Amino acids and derivatives",
               "treetop_name": "Amino acids and derivatives"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 258.5,
+              "annotation_proportion": 0.02619313,
               "branch_code": "Biological roles",
-              "count": 0.0,
+              "count": 18.5,
               "label": "Biological roles",
               "mesh_total_count": 1110.08333333,
-              "proportion": 0.0,
+              "proportion": 0.01666542,
               "terminology_total_count": 1110.08333333,
               "treetop": "Biological roles",
               "treetop_name": "Biological roles"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 419.94166667,
+              "annotation_proportion": 0.04255159,
               "branch_code": "Carbohydrates and glycoconjugates",
-              "count": 0.0,
+              "count": 23.74166667,
               "label": "Carbohydrates and glycoconjugates",
               "mesh_total_count": 11886.33298611,
-              "proportion": 0.0,
+              "proportion": 0.00199739,
               "terminology_total_count": 11886.33298611,
               "treetop": "Carbohydrates and glycoconjugates",
               "treetop_name": "Carbohydrates and glycoconjugates"
@@ -16066,145 +16015,145 @@
               "treetop_name": "Chemical applications"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 2.0,
+              "annotation_proportion": 0.00020265,
               "branch_code": "Chemical groups",
-              "count": 0.0,
+              "count": 2.0,
               "label": "Chemical groups",
               "mesh_total_count": 2728.33333333,
-              "proportion": 0.0,
+              "proportion": 0.00073305,
               "terminology_total_count": 2728.33333333,
               "treetop": "Chemical groups",
               "treetop_name": "Chemical groups"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 192.0,
+              "annotation_proportion": 0.01945486,
               "branch_code": "Chemical mixtures",
-              "count": 0.0,
+              "count": 18.0,
               "label": "Chemical mixtures",
               "mesh_total_count": 966.37619048,
-              "proportion": 0.0,
+              "proportion": 0.01862629,
               "terminology_total_count": 966.37619048,
               "treetop": "Chemical mixtures",
               "treetop_name": "Chemical mixtures"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 19.5,
+              "annotation_proportion": 0.00197588,
               "branch_code": "Chemical roles",
-              "count": 0.0,
+              "count": 1.5,
               "label": "Chemical roles",
               "mesh_total_count": 85.125,
-              "proportion": 0.0,
+              "proportion": 0.01762115,
               "terminology_total_count": 85.125,
               "treetop": "Chemical roles",
               "treetop_name": "Chemical roles"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 196.74305556,
+              "annotation_proportion": 0.01993546,
               "branch_code": "Elements",
-              "count": 0.0,
+              "count": 17.4375,
               "label": "Elements",
               "mesh_total_count": 393.56145833,
-              "proportion": 0.0,
+              "proportion": 0.04430693,
               "terminology_total_count": 393.56145833,
               "treetop": "Elements",
               "treetop_name": "Elements"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 858.82403274,
+              "annotation_proportion": 0.0870224,
               "branch_code": "Heterocyclic and polycyclic compounds",
-              "count": 0.0,
+              "count": 71.76940311,
               "label": "Heterocyclic and polycyclic compounds",
               "mesh_total_count": 28175.37783539,
-              "proportion": 0.0,
+              "proportion": 0.00254724,
               "terminology_total_count": 28175.37783539,
               "treetop": "Heterocyclic and polycyclic compounds",
               "treetop_name": "Heterocyclic and polycyclic compounds"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 313.73611111,
+              "annotation_proportion": 0.03179006,
               "branch_code": "Inorganic molecules",
-              "count": 0.0,
+              "count": 27.41666667,
               "label": "Inorganic molecules",
               "mesh_total_count": 2601.2687128,
-              "proportion": 0.0,
+              "proportion": 0.01053973,
               "terminology_total_count": 2601.2687128,
               "treetop": "Inorganic molecules",
               "treetop_name": "Inorganic molecules"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 254.98795573,
+              "annotation_proportion": 0.02583726,
               "branch_code": "Ions and radicals",
-              "count": 0.0,
+              "count": 25.42610677,
               "label": "Ions and radicals",
               "mesh_total_count": 7472.28707269,
-              "proportion": 0.0,
+              "proportion": 0.00340272,
               "terminology_total_count": 7472.28707269,
               "treetop": "Ions and radicals",
               "treetop_name": "Ions and radicals"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 602.90957341,
+              "annotation_proportion": 0.06109125,
               "branch_code": "Lipids and lipid-like molecules",
-              "count": 0.0,
+              "count": 58.73779762,
               "label": "Lipids and lipid-like molecules",
               "mesh_total_count": 25116.51208551,
-              "proportion": 0.0,
+              "proportion": 0.00233861,
               "terminology_total_count": 25116.51208551,
               "treetop": "Lipids and lipid-like molecules",
               "treetop_name": "Lipids and lipid-like molecules"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 747.125,
+              "annotation_proportion": 0.07570423,
               "branch_code": "Macromolecules and biopolymers",
-              "count": 0.0,
+              "count": 24.70833333,
               "label": "Macromolecules and biopolymers",
               "mesh_total_count": 1113.40092593,
-              "proportion": 0.0,
+              "proportion": 0.02219177,
               "terminology_total_count": 1113.40092593,
               "treetop": "Macromolecules and biopolymers",
               "treetop_name": "Macromolecules and biopolymers"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 340.59404762,
+              "annotation_proportion": 0.03451151,
               "branch_code": "Natural products",
-              "count": 0.0,
+              "count": 12.02857143,
               "label": "Natural products",
               "mesh_total_count": 4625.79481421,
-              "proportion": 0.0,
+              "proportion": 0.00260033,
               "terminology_total_count": 4625.79481421,
               "treetop": "Natural products",
               "treetop_name": "Natural products"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 375.44097222,
+              "annotation_proportion": 0.03804245,
               "branch_code": "Nucleobases, nucleosides and nucleotides",
-              "count": 0.0,
+              "count": 31.03472222,
               "label": "Nucleobases, nucleosides and nucleotides",
               "mesh_total_count": 1107.38900463,
-              "proportion": 0.0,
+              "proportion": 0.02802513,
               "terminology_total_count": 1107.38900463,
               "treetop": "Nucleobases, nucleosides and nucleotides",
               "treetop_name": "Nucleobases, nucleosides and nucleotides"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 3445.66426022,
+              "annotation_proportion": 0.34914016,
               "branch_code": "Organic small molecules",
-              "count": 0.0,
+              "count": 261.27907917,
               "label": "Organic small molecules",
               "mesh_total_count": 80961.87032219,
-              "proportion": 0.0,
+              "proportion": 0.00322719,
               "terminology_total_count": 80961.87032219,
               "treetop": "Organic small molecules",
               "treetop_name": "Organic small molecules"
@@ -16222,13 +16171,13 @@
               "treetop_name": "Organometallic compounds"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 1206.89443583,
+              "annotation_proportion": 0.12229146,
               "branch_code": "Other molecules",
-              "count": 0.0,
+              "count": 93.76737523,
               "label": "Other molecules",
               "mesh_total_count": 21414.71636952,
-              "proportion": 0.0,
+              "proportion": 0.00437864,
               "terminology_total_count": 21414.71636952,
               "treetop": "Other molecules",
               "treetop_name": "Other molecules"
@@ -16246,18 +16195,32 @@
               "treetop_name": "Pharmaceutical and drug-like molecules"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 8.0,
+              "annotation_proportion": 0.00081062,
               "branch_code": "Subatomic particles",
-              "count": 0.0,
+              "count": 2.0,
               "label": "Subatomic particles",
               "mesh_total_count": 39.375,
-              "proportion": 0.0,
+              "proportion": 0.05079365,
               "terminology_total_count": 39.375,
               "treetop": "Subatomic particles",
               "treetop_name": "Subatomic particles"
             }
           ]
+        },
+        "disease": {
+          "details": {
+            "missing_ids": [],
+            "n_input_ids": 0,
+            "n_missing_ids": 0,
+            "n_unique_input_ids": 0,
+            "resource_aliases": [
+              "CHEBI"
+            ],
+            "term_overrides_path": null,
+            "terminology": "chebi"
+          },
+          "value": []
         },
         "function_process": {
           "details": {
@@ -17541,9 +17504,9 @@
               "branch_code": "D01 Inorganic Chemicals",
               "count": 0.0,
               "label": "D01 Inorganic Chemicals",
-              "mesh_total_count": 8234.7047619,
+              "mesh_total_count": 8235.7047619,
               "proportion": 0.0,
-              "terminology_total_count": 8234.7047619,
+              "terminology_total_count": 8235.7047619,
               "treetop": "D01 Inorganic Chemicals",
               "treetop_name": "D01 Inorganic Chemicals"
             },
@@ -17553,9 +17516,9 @@
               "branch_code": "D02 Organic Chemicals",
               "count": 0.0,
               "label": "D02 Organic Chemicals",
-              "mesh_total_count": 85262.95555556,
+              "mesh_total_count": 85267.53888889,
               "proportion": 0.0,
-              "terminology_total_count": 85262.95555556,
+              "terminology_total_count": 85267.53888889,
               "treetop": "D02 Organic Chemicals",
               "treetop_name": "D02 Organic Chemicals"
             },
@@ -17565,9 +17528,9 @@
               "branch_code": "D03 Heterocyclic Compounds",
               "count": 0.0,
               "label": "D03 Heterocyclic Compounds",
-              "mesh_total_count": 68370.20039683,
+              "mesh_total_count": 68384.86706349,
               "proportion": 0.0,
-              "terminology_total_count": 68370.20039683,
+              "terminology_total_count": 68384.86706349,
               "treetop": "D03 Heterocyclic Compounds",
               "treetop_name": "D03 Heterocyclic Compounds"
             },
@@ -17577,9 +17540,9 @@
               "branch_code": "D04 Polycyclic Compounds",
               "count": 0.0,
               "label": "D04 Polycyclic Compounds",
-              "mesh_total_count": 13245.57301587,
+              "mesh_total_count": 13246.57301587,
               "proportion": 0.0,
-              "terminology_total_count": 13245.57301587,
+              "terminology_total_count": 13246.57301587,
               "treetop": "D04 Polycyclic Compounds",
               "treetop_name": "D04 Polycyclic Compounds"
             },
@@ -17589,9 +17552,9 @@
               "branch_code": "D05 Macromolecular Substances",
               "count": 0.0,
               "label": "D05 Macromolecular Substances",
-              "mesh_total_count": 2564.19896215,
+              "mesh_total_count": 2564.53229548,
               "proportion": 0.0,
-              "terminology_total_count": 2564.19896215,
+              "terminology_total_count": 2564.53229548,
               "treetop": "D05 Macromolecular Substances",
               "treetop_name": "D05 Macromolecular Substances"
             },
@@ -17601,9 +17564,9 @@
               "branch_code": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "count": 0.0,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
-              "mesh_total_count": 2112.13647186,
+              "mesh_total_count": 2112.63647186,
               "proportion": 0.0,
-              "terminology_total_count": 2112.13647186,
+              "terminology_total_count": 2112.63647186,
               "treetop": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "treetop_name": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists"
             },
@@ -17637,9 +17600,9 @@
               "branch_code": "D09 Carbohydrates",
               "count": 0.0,
               "label": "D09 Carbohydrates",
-              "mesh_total_count": 14267.08935786,
+              "mesh_total_count": 14267.75602453,
               "proportion": 0.0,
-              "terminology_total_count": 14267.08935786,
+              "terminology_total_count": 14267.75602453,
               "treetop": "D09 Carbohydrates",
               "treetop_name": "D09 Carbohydrates"
             },
@@ -17649,9 +17612,9 @@
               "branch_code": "D10 Lipids",
               "count": 0.0,
               "label": "D10 Lipids",
-              "mesh_total_count": 6502.94047619,
+              "mesh_total_count": 6503.19047619,
               "proportion": 0.0,
-              "terminology_total_count": 6502.94047619,
+              "terminology_total_count": 6503.19047619,
               "treetop": "D10 Lipids",
               "treetop_name": "D10 Lipids"
             },
@@ -17673,9 +17636,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116632.36301755,
+              "mesh_total_count": 116635.02968421,
               "proportion": 0.0,
-              "terminology_total_count": 116632.36301755,
+              "terminology_total_count": 116635.02968421,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -17697,9 +17660,9 @@
               "branch_code": "D20 Complex Mixtures",
               "count": 0.0,
               "label": "D20 Complex Mixtures",
-              "mesh_total_count": 2982.17777778,
+              "mesh_total_count": 2984.67777778,
               "proportion": 0.0,
-              "terminology_total_count": 2982.17777778,
+              "terminology_total_count": 2984.67777778,
               "treetop": "D20 Complex Mixtures",
               "treetop_name": "D20 Complex Mixtures"
             },
@@ -17709,9 +17672,9 @@
               "branch_code": "D23 Biological Factors",
               "count": 0.0,
               "label": "D23 Biological Factors",
-              "mesh_total_count": 6349.31277056,
+              "mesh_total_count": 6350.1461039,
               "proportion": 0.0,
-              "terminology_total_count": 6349.31277056,
+              "terminology_total_count": 6350.1461039,
               "treetop": "D23 Biological Factors",
               "treetop_name": "D23 Biological Factors"
             },
@@ -17733,9 +17696,9 @@
               "branch_code": "D26 Pharmaceutical Preparations",
               "count": 0.0,
               "label": "D26 Pharmaceutical Preparations",
-              "mesh_total_count": 3092.89563492,
+              "mesh_total_count": 3094.89563492,
               "proportion": 0.0,
-              "terminology_total_count": 3092.89563492,
+              "terminology_total_count": 3094.89563492,
               "treetop": "D26 Pharmaceutical Preparations",
               "treetop_name": "D26 Pharmaceutical Preparations"
             },
@@ -18146,30 +18109,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -18181,9 +18144,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -18252,30 +18215,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -18287,9 +18250,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -18358,30 +18321,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -18393,9 +18356,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -18464,30 +18427,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -18499,9 +18462,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -18570,30 +18533,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -18605,9 +18568,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -18676,30 +18639,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -18711,9 +18674,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -18782,30 +18745,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -18817,9 +18780,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -18877,30 +18840,30 @@
         {
           "count": 0.0,
           "depth": 2,
-          "mesh_total_count": 22821.38690476,
+          "mesh_total_count": 22822.55357143,
           "proportion": 0.0,
-          "terminology_total_count": 22821.38690476
+          "terminology_total_count": 22822.55357143
         },
         {
           "count": 0.0,
           "depth": 3,
-          "mesh_total_count": 114688.6579365,
+          "mesh_total_count": 114695.99126983,
           "proportion": 0.0,
-          "terminology_total_count": 114688.6579365
+          "terminology_total_count": 114695.99126983
         },
         {
           "count": 0.0,
           "depth": 4,
-          "mesh_total_count": 117164.44318181,
+          "mesh_total_count": 117169.10984848,
           "proportion": 0.0,
-          "terminology_total_count": 117164.44318181
+          "terminology_total_count": 117169.10984848
         },
         {
           "count": 0.0,
           "depth": 5,
-          "mesh_total_count": 57705.05133478,
+          "mesh_total_count": 57707.55133478,
           "proportion": 0.0,
-          "terminology_total_count": 57705.05133478
+          "terminology_total_count": 57707.55133478
         },
         {
           "count": 0.0,
@@ -18912,9 +18875,9 @@
         {
           "count": 0.0,
           "depth": 7,
-          "mesh_total_count": 11535.29292929,
+          "mesh_total_count": 11535.62626263,
           "proportion": 0.0,
-          "terminology_total_count": 11535.29292929
+          "terminology_total_count": 11535.62626263
         },
         {
           "count": 0.0,
@@ -27435,249 +27398,198 @@
             "resource_aliases": [
               "CHEBI"
             ],
-            "term_overrides_path": null,
-            "terminology": "chebi"
-          },
-          "value": [
-            {
-              "annotation_count": 5719.0,
-              "annotation_proportion": 0.84751037,
-              "branch_code": "CHEBI:24431",
-              "count": 510.0,
-              "label": "chemical entity",
-              "mesh_total_count": 203617.0,
-              "proportion": 0.0025047,
-              "terminology_total_count": 203617.0,
-              "treetop": "CHEBI:24431",
-              "treetop_name": "chemical entity"
-            },
-            {
-              "annotation_count": 98.0,
-              "annotation_proportion": 0.01452282,
-              "branch_code": "CHEBI:36342",
-              "count": 4.0,
-              "label": "subatomic particle",
-              "mesh_total_count": 40.0,
-              "proportion": 0.1,
-              "terminology_total_count": 40.0,
-              "treetop": "CHEBI:36342",
-              "treetop_name": "subatomic particle"
-            },
-            {
-              "annotation_count": 931.0,
-              "annotation_proportion": 0.1379668,
-              "branch_code": "CHEBI:50906",
-              "count": 73.0,
-              "label": "role",
-              "mesh_total_count": 1647.0,
-              "proportion": 0.04432301,
-              "terminology_total_count": 1647.0,
-              "treetop": "CHEBI:50906",
-              "treetop_name": "role"
-            }
-          ]
-        },
-        "disease": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
             "term_overrides_path": "configs/ChEBI_chemical_mappings.yaml",
             "terminology": "chebi"
           },
           "value": [
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 166.54166667,
+              "annotation_proportion": 0.02468015,
               "branch_code": "Amino acids and derivatives",
-              "count": 0.0,
+              "count": 14.45833333,
               "label": "Amino acids and derivatives",
               "mesh_total_count": 14963.40388889,
-              "proportion": 0.0,
+              "proportion": 0.00096625,
               "terminology_total_count": 14963.40388889,
               "treetop": "Amino acids and derivatives",
               "treetop_name": "Amino acids and derivatives"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 607.41666667,
+              "annotation_proportion": 0.09001433,
               "branch_code": "Biological roles",
-              "count": 0.0,
+              "count": 42.58333333,
               "label": "Biological roles",
               "mesh_total_count": 1110.08333333,
-              "proportion": 0.0,
+              "proportion": 0.03836048,
               "terminology_total_count": 1110.08333333,
               "treetop": "Biological roles",
               "treetop_name": "Biological roles"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 498.5875,
+              "annotation_proportion": 0.07388671,
               "branch_code": "Carbohydrates and glycoconjugates",
-              "count": 0.0,
+              "count": 17.575,
               "label": "Carbohydrates and glycoconjugates",
               "mesh_total_count": 11886.33298611,
-              "proportion": 0.0,
+              "proportion": 0.00147859,
               "terminology_total_count": 11886.33298611,
               "treetop": "Carbohydrates and glycoconjugates",
               "treetop_name": "Carbohydrates and glycoconjugates"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 158.0,
+              "annotation_proportion": 0.02341434,
               "branch_code": "Chemical applications",
-              "count": 0.0,
+              "count": 10.0,
               "label": "Chemical applications",
               "mesh_total_count": 163.875,
-              "proportion": 0.0,
+              "proportion": 0.06102212,
               "terminology_total_count": 163.875,
               "treetop": "Chemical applications",
               "treetop_name": "Chemical applications"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 55.0,
+              "annotation_proportion": 0.00815056,
               "branch_code": "Chemical groups",
-              "count": 0.0,
+              "count": 12.0,
               "label": "Chemical groups",
               "mesh_total_count": 2728.33333333,
-              "proportion": 0.0,
+              "proportion": 0.00439829,
               "terminology_total_count": 2728.33333333,
               "treetop": "Chemical groups",
               "treetop_name": "Chemical groups"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 213.5,
+              "annotation_proportion": 0.031639,
               "branch_code": "Chemical mixtures",
-              "count": 0.0,
+              "count": 7.5,
               "label": "Chemical mixtures",
               "mesh_total_count": 966.37619048,
-              "proportion": 0.0,
+              "proportion": 0.00776095,
               "terminology_total_count": 966.37619048,
               "treetop": "Chemical mixtures",
               "treetop_name": "Chemical mixtures"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 61.83333333,
+              "annotation_proportion": 0.00916321,
               "branch_code": "Chemical roles",
-              "count": 0.0,
+              "count": 8.66666667,
               "label": "Chemical roles",
               "mesh_total_count": 85.125,
-              "proportion": 0.0,
+              "proportion": 0.10181106,
               "terminology_total_count": 85.125,
               "treetop": "Chemical roles",
               "treetop_name": "Chemical roles"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 136.38541667,
+              "annotation_proportion": 0.02021124,
               "branch_code": "Elements",
-              "count": 0.0,
+              "count": 9.65625,
               "label": "Elements",
               "mesh_total_count": 393.56145833,
-              "proportion": 0.0,
+              "proportion": 0.02453556,
               "terminology_total_count": 393.56145833,
               "treetop": "Elements",
               "treetop_name": "Elements"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 309.79740823,
+              "annotation_proportion": 0.04590952,
               "branch_code": "Heterocyclic and polycyclic compounds",
-              "count": 0.0,
+              "count": 33.65031002,
               "label": "Heterocyclic and polycyclic compounds",
               "mesh_total_count": 28175.37783539,
-              "proportion": 0.0,
+              "proportion": 0.00119432,
               "terminology_total_count": 28175.37783539,
               "treetop": "Heterocyclic and polycyclic compounds",
               "treetop_name": "Heterocyclic and polycyclic compounds"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 397.5625,
+              "annotation_proportion": 0.0589156,
               "branch_code": "Inorganic molecules",
-              "count": 0.0,
+              "count": 41.1875,
               "label": "Inorganic molecules",
               "mesh_total_count": 2601.2687128,
-              "proportion": 0.0,
+              "proportion": 0.01583362,
               "terminology_total_count": 2601.2687128,
               "treetop": "Inorganic molecules",
               "treetop_name": "Inorganic molecules"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 308.54394531,
+              "annotation_proportion": 0.04572376,
               "branch_code": "Ions and radicals",
-              "count": 0.0,
+              "count": 25.55240885,
               "label": "Ions and radicals",
               "mesh_total_count": 7472.28707269,
-              "proportion": 0.0,
+              "proportion": 0.00341962,
               "terminology_total_count": 7472.28707269,
               "treetop": "Ions and radicals",
               "treetop_name": "Ions and radicals"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 622.95009921,
+              "annotation_proportion": 0.09231626,
               "branch_code": "Lipids and lipid-like molecules",
-              "count": 0.0,
+              "count": 49.89871032,
               "label": "Lipids and lipid-like molecules",
               "mesh_total_count": 25116.51208551,
-              "proportion": 0.0,
+              "proportion": 0.00198669,
               "terminology_total_count": 25116.51208551,
               "treetop": "Lipids and lipid-like molecules",
               "treetop_name": "Lipids and lipid-like molecules"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 275.0,
+              "annotation_proportion": 0.04075282,
               "branch_code": "Macromolecules and biopolymers",
-              "count": 0.0,
+              "count": 21.77083333,
               "label": "Macromolecules and biopolymers",
               "mesh_total_count": 1113.40092593,
-              "proportion": 0.0,
+              "proportion": 0.01955345,
               "terminology_total_count": 1113.40092593,
               "treetop": "Macromolecules and biopolymers",
               "treetop_name": "Macromolecules and biopolymers"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 241.65277778,
+              "annotation_proportion": 0.03581102,
               "branch_code": "Natural products",
-              "count": 0.0,
+              "count": 8.06944444,
               "label": "Natural products",
               "mesh_total_count": 4625.79481421,
-              "proportion": 0.0,
+              "proportion": 0.00174444,
               "terminology_total_count": 4625.79481421,
               "treetop": "Natural products",
               "treetop_name": "Natural products"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 98.23958333,
+              "annotation_proportion": 0.01455833,
               "branch_code": "Nucleobases, nucleosides and nucleotides",
-              "count": 0.0,
+              "count": 8.28645833,
               "label": "Nucleobases, nucleosides and nucleotides",
               "mesh_total_count": 1107.38900463,
-              "proportion": 0.0,
+              "proportion": 0.00748288,
               "terminology_total_count": 1107.38900463,
               "treetop": "Nucleobases, nucleosides and nucleotides",
               "treetop_name": "Nucleobases, nucleosides and nucleotides"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 1411.5800795,
+              "annotation_proportion": 0.20918496,
               "branch_code": "Organic small molecules",
-              "count": 0.0,
+              "count": 176.486747,
               "label": "Organic small molecules",
               "mesh_total_count": 80961.87032219,
-              "proportion": 0.0,
+              "proportion": 0.00217987,
               "terminology_total_count": 80961.87032219,
               "treetop": "Organic small molecules",
               "treetop_name": "Organic small molecules"
@@ -27695,42 +27607,56 @@
               "treetop_name": "Organometallic compounds"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 993.6590233,
+              "annotation_proportion": 0.14725237,
               "branch_code": "Other molecules",
-              "count": 0.0,
+              "count": 84.90800437,
               "label": "Other molecules",
               "mesh_total_count": 21414.71636952,
-              "proportion": 0.0,
+              "proportion": 0.00396494,
               "terminology_total_count": 21414.71636952,
               "treetop": "Other molecules",
               "treetop_name": "Other molecules"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 93.75,
+              "annotation_proportion": 0.01389301,
               "branch_code": "Pharmaceutical and drug-like molecules",
-              "count": 0.0,
+              "count": 10.75,
               "label": "Pharmaceutical and drug-like molecules",
               "mesh_total_count": 280.41666667,
-              "proportion": 0.0,
+              "proportion": 0.03833581,
               "terminology_total_count": 280.41666667,
               "treetop": "Pharmaceutical and drug-like molecules",
               "treetop_name": "Pharmaceutical and drug-like molecules"
             },
             {
-              "annotation_count": 0.0,
-              "annotation_proportion": 0.0,
+              "annotation_count": 98.0,
+              "annotation_proportion": 0.01452282,
               "branch_code": "Subatomic particles",
-              "count": 0.0,
+              "count": 4.0,
               "label": "Subatomic particles",
               "mesh_total_count": 39.375,
-              "proportion": 0.0,
+              "proportion": 0.1015873,
               "terminology_total_count": 39.375,
               "treetop": "Subatomic particles",
               "treetop_name": "Subatomic particles"
             }
           ]
+        },
+        "disease": {
+          "details": {
+            "missing_ids": [],
+            "n_input_ids": 0,
+            "n_missing_ids": 0,
+            "n_unique_input_ids": 0,
+            "resource_aliases": [
+              "CHEBI"
+            ],
+            "term_overrides_path": null,
+            "terminology": "chebi"
+          },
+          "value": []
         },
         "function_process": {
           "details": {
@@ -29000,9 +28926,9 @@
               "branch_code": "D01 Inorganic Chemicals",
               "count": 0.0,
               "label": "D01 Inorganic Chemicals",
-              "mesh_total_count": 8234.7047619,
+              "mesh_total_count": 8235.7047619,
               "proportion": 0.0,
-              "terminology_total_count": 8234.7047619,
+              "terminology_total_count": 8235.7047619,
               "treetop": "D01 Inorganic Chemicals",
               "treetop_name": "D01 Inorganic Chemicals"
             },
@@ -29012,9 +28938,9 @@
               "branch_code": "D02 Organic Chemicals",
               "count": 0.0,
               "label": "D02 Organic Chemicals",
-              "mesh_total_count": 85262.95555556,
+              "mesh_total_count": 85267.53888889,
               "proportion": 0.0,
-              "terminology_total_count": 85262.95555556,
+              "terminology_total_count": 85267.53888889,
               "treetop": "D02 Organic Chemicals",
               "treetop_name": "D02 Organic Chemicals"
             },
@@ -29024,9 +28950,9 @@
               "branch_code": "D03 Heterocyclic Compounds",
               "count": 0.0,
               "label": "D03 Heterocyclic Compounds",
-              "mesh_total_count": 68370.20039683,
+              "mesh_total_count": 68384.86706349,
               "proportion": 0.0,
-              "terminology_total_count": 68370.20039683,
+              "terminology_total_count": 68384.86706349,
               "treetop": "D03 Heterocyclic Compounds",
               "treetop_name": "D03 Heterocyclic Compounds"
             },
@@ -29036,9 +28962,9 @@
               "branch_code": "D04 Polycyclic Compounds",
               "count": 0.0,
               "label": "D04 Polycyclic Compounds",
-              "mesh_total_count": 13245.57301587,
+              "mesh_total_count": 13246.57301587,
               "proportion": 0.0,
-              "terminology_total_count": 13245.57301587,
+              "terminology_total_count": 13246.57301587,
               "treetop": "D04 Polycyclic Compounds",
               "treetop_name": "D04 Polycyclic Compounds"
             },
@@ -29048,9 +28974,9 @@
               "branch_code": "D05 Macromolecular Substances",
               "count": 0.0,
               "label": "D05 Macromolecular Substances",
-              "mesh_total_count": 2564.19896215,
+              "mesh_total_count": 2564.53229548,
               "proportion": 0.0,
-              "terminology_total_count": 2564.19896215,
+              "terminology_total_count": 2564.53229548,
               "treetop": "D05 Macromolecular Substances",
               "treetop_name": "D05 Macromolecular Substances"
             },
@@ -29060,9 +28986,9 @@
               "branch_code": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "count": 0.0,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
-              "mesh_total_count": 2112.13647186,
+              "mesh_total_count": 2112.63647186,
               "proportion": 0.0,
-              "terminology_total_count": 2112.13647186,
+              "terminology_total_count": 2112.63647186,
               "treetop": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "treetop_name": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists"
             },
@@ -29096,9 +29022,9 @@
               "branch_code": "D09 Carbohydrates",
               "count": 0.0,
               "label": "D09 Carbohydrates",
-              "mesh_total_count": 14267.08935786,
+              "mesh_total_count": 14267.75602453,
               "proportion": 0.0,
-              "terminology_total_count": 14267.08935786,
+              "terminology_total_count": 14267.75602453,
               "treetop": "D09 Carbohydrates",
               "treetop_name": "D09 Carbohydrates"
             },
@@ -29108,9 +29034,9 @@
               "branch_code": "D10 Lipids",
               "count": 0.0,
               "label": "D10 Lipids",
-              "mesh_total_count": 6502.94047619,
+              "mesh_total_count": 6503.19047619,
               "proportion": 0.0,
-              "terminology_total_count": 6502.94047619,
+              "terminology_total_count": 6503.19047619,
               "treetop": "D10 Lipids",
               "treetop_name": "D10 Lipids"
             },
@@ -29132,9 +29058,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116632.36301755,
+              "mesh_total_count": 116635.02968421,
               "proportion": 0.0,
-              "terminology_total_count": 116632.36301755,
+              "terminology_total_count": 116635.02968421,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -29156,9 +29082,9 @@
               "branch_code": "D20 Complex Mixtures",
               "count": 0.0,
               "label": "D20 Complex Mixtures",
-              "mesh_total_count": 2982.17777778,
+              "mesh_total_count": 2984.67777778,
               "proportion": 0.0,
-              "terminology_total_count": 2982.17777778,
+              "terminology_total_count": 2984.67777778,
               "treetop": "D20 Complex Mixtures",
               "treetop_name": "D20 Complex Mixtures"
             },
@@ -29168,9 +29094,9 @@
               "branch_code": "D23 Biological Factors",
               "count": 0.0,
               "label": "D23 Biological Factors",
-              "mesh_total_count": 6349.31277056,
+              "mesh_total_count": 6350.1461039,
               "proportion": 0.0,
-              "terminology_total_count": 6349.31277056,
+              "terminology_total_count": 6350.1461039,
               "treetop": "D23 Biological Factors",
               "treetop_name": "D23 Biological Factors"
             },
@@ -29192,9 +29118,9 @@
               "branch_code": "D26 Pharmaceutical Preparations",
               "count": 0.0,
               "label": "D26 Pharmaceutical Preparations",
-              "mesh_total_count": 3092.89563492,
+              "mesh_total_count": 3094.89563492,
               "proportion": 0.0,
-              "terminology_total_count": 3092.89563492,
+              "terminology_total_count": 3094.89563492,
               "treetop": "D26 Pharmaceutical Preparations",
               "treetop_name": "D26 Pharmaceutical Preparations"
             },
@@ -29605,30 +29531,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -29640,9 +29566,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -29711,30 +29637,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -29746,9 +29672,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -29817,30 +29743,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -29852,9 +29778,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -29923,30 +29849,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -29958,9 +29884,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -30029,30 +29955,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -30064,9 +29990,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -30135,30 +30061,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -30170,9 +30096,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -30241,30 +30167,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -30276,9 +30202,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -30336,30 +30262,30 @@
         {
           "count": 0.0,
           "depth": 2,
-          "mesh_total_count": 22821.38690476,
+          "mesh_total_count": 22822.55357143,
           "proportion": 0.0,
-          "terminology_total_count": 22821.38690476
+          "terminology_total_count": 22822.55357143
         },
         {
           "count": 0.0,
           "depth": 3,
-          "mesh_total_count": 114688.6579365,
+          "mesh_total_count": 114695.99126983,
           "proportion": 0.0,
-          "terminology_total_count": 114688.6579365
+          "terminology_total_count": 114695.99126983
         },
         {
           "count": 0.0,
           "depth": 4,
-          "mesh_total_count": 117164.44318181,
+          "mesh_total_count": 117169.10984848,
           "proportion": 0.0,
-          "terminology_total_count": 117164.44318181
+          "terminology_total_count": 117169.10984848
         },
         {
           "count": 0.0,
           "depth": 5,
-          "mesh_total_count": 57705.05133478,
+          "mesh_total_count": 57707.55133478,
           "proportion": 0.0,
-          "terminology_total_count": 57705.05133478
+          "terminology_total_count": 57707.55133478
         },
         {
           "count": 0.0,
@@ -30371,9 +30297,9 @@
         {
           "count": 0.0,
           "depth": 7,
-          "mesh_total_count": 11535.29292929,
+          "mesh_total_count": 11535.62626263,
           "proportion": 0.0,
-          "terminology_total_count": 11535.29292929
+          "terminology_total_count": 11535.62626263
         },
         {
           "count": 0.0,
@@ -37505,20 +37431,6 @@
             "resource_aliases": [
               "CHEBI"
             ],
-            "term_overrides_path": null,
-            "terminology": "chebi"
-          },
-          "value": []
-        },
-        "disease": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
             "term_overrides_path": "configs/ChEBI_chemical_mappings.yaml",
             "terminology": "chebi"
           },
@@ -37764,6 +37676,20 @@
               "treetop_name": "Subatomic particles"
             }
           ]
+        },
+        "disease": {
+          "details": {
+            "missing_ids": [],
+            "n_input_ids": 0,
+            "n_missing_ids": 0,
+            "n_unique_input_ids": 0,
+            "resource_aliases": [
+              "CHEBI"
+            ],
+            "term_overrides_path": null,
+            "terminology": "chebi"
+          },
+          "value": []
         },
         "function_process": {
           "details": {
@@ -39006,9 +38932,9 @@
               "branch_code": "D01 Inorganic Chemicals",
               "count": 0.0,
               "label": "D01 Inorganic Chemicals",
-              "mesh_total_count": 8234.7047619,
+              "mesh_total_count": 8235.7047619,
               "proportion": 0.0,
-              "terminology_total_count": 8234.7047619,
+              "terminology_total_count": 8235.7047619,
               "treetop": "D01 Inorganic Chemicals",
               "treetop_name": "D01 Inorganic Chemicals"
             },
@@ -39018,9 +38944,9 @@
               "branch_code": "D02 Organic Chemicals",
               "count": 0.0,
               "label": "D02 Organic Chemicals",
-              "mesh_total_count": 85262.95555556,
+              "mesh_total_count": 85267.53888889,
               "proportion": 0.0,
-              "terminology_total_count": 85262.95555556,
+              "terminology_total_count": 85267.53888889,
               "treetop": "D02 Organic Chemicals",
               "treetop_name": "D02 Organic Chemicals"
             },
@@ -39030,9 +38956,9 @@
               "branch_code": "D03 Heterocyclic Compounds",
               "count": 0.0,
               "label": "D03 Heterocyclic Compounds",
-              "mesh_total_count": 68370.20039683,
+              "mesh_total_count": 68384.86706349,
               "proportion": 0.0,
-              "terminology_total_count": 68370.20039683,
+              "terminology_total_count": 68384.86706349,
               "treetop": "D03 Heterocyclic Compounds",
               "treetop_name": "D03 Heterocyclic Compounds"
             },
@@ -39042,9 +38968,9 @@
               "branch_code": "D04 Polycyclic Compounds",
               "count": 0.0,
               "label": "D04 Polycyclic Compounds",
-              "mesh_total_count": 13245.57301587,
+              "mesh_total_count": 13246.57301587,
               "proportion": 0.0,
-              "terminology_total_count": 13245.57301587,
+              "terminology_total_count": 13246.57301587,
               "treetop": "D04 Polycyclic Compounds",
               "treetop_name": "D04 Polycyclic Compounds"
             },
@@ -39054,9 +38980,9 @@
               "branch_code": "D05 Macromolecular Substances",
               "count": 0.0,
               "label": "D05 Macromolecular Substances",
-              "mesh_total_count": 2564.19896215,
+              "mesh_total_count": 2564.53229548,
               "proportion": 0.0,
-              "terminology_total_count": 2564.19896215,
+              "terminology_total_count": 2564.53229548,
               "treetop": "D05 Macromolecular Substances",
               "treetop_name": "D05 Macromolecular Substances"
             },
@@ -39066,9 +38992,9 @@
               "branch_code": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "count": 0.0,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
-              "mesh_total_count": 2112.13647186,
+              "mesh_total_count": 2112.63647186,
               "proportion": 0.0,
-              "terminology_total_count": 2112.13647186,
+              "terminology_total_count": 2112.63647186,
               "treetop": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "treetop_name": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists"
             },
@@ -39102,9 +39028,9 @@
               "branch_code": "D09 Carbohydrates",
               "count": 0.0,
               "label": "D09 Carbohydrates",
-              "mesh_total_count": 14267.08935786,
+              "mesh_total_count": 14267.75602453,
               "proportion": 0.0,
-              "terminology_total_count": 14267.08935786,
+              "terminology_total_count": 14267.75602453,
               "treetop": "D09 Carbohydrates",
               "treetop_name": "D09 Carbohydrates"
             },
@@ -39114,9 +39040,9 @@
               "branch_code": "D10 Lipids",
               "count": 0.0,
               "label": "D10 Lipids",
-              "mesh_total_count": 6502.94047619,
+              "mesh_total_count": 6503.19047619,
               "proportion": 0.0,
-              "terminology_total_count": 6502.94047619,
+              "terminology_total_count": 6503.19047619,
               "treetop": "D10 Lipids",
               "treetop_name": "D10 Lipids"
             },
@@ -39138,9 +39064,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116632.36301755,
+              "mesh_total_count": 116635.02968421,
               "proportion": 0.0,
-              "terminology_total_count": 116632.36301755,
+              "terminology_total_count": 116635.02968421,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -39162,9 +39088,9 @@
               "branch_code": "D20 Complex Mixtures",
               "count": 0.0,
               "label": "D20 Complex Mixtures",
-              "mesh_total_count": 2982.17777778,
+              "mesh_total_count": 2984.67777778,
               "proportion": 0.0,
-              "terminology_total_count": 2982.17777778,
+              "terminology_total_count": 2984.67777778,
               "treetop": "D20 Complex Mixtures",
               "treetop_name": "D20 Complex Mixtures"
             },
@@ -39174,9 +39100,9 @@
               "branch_code": "D23 Biological Factors",
               "count": 0.0,
               "label": "D23 Biological Factors",
-              "mesh_total_count": 6349.31277056,
+              "mesh_total_count": 6350.1461039,
               "proportion": 0.0,
-              "terminology_total_count": 6349.31277056,
+              "terminology_total_count": 6350.1461039,
               "treetop": "D23 Biological Factors",
               "treetop_name": "D23 Biological Factors"
             },
@@ -39198,9 +39124,9 @@
               "branch_code": "D26 Pharmaceutical Preparations",
               "count": 0.0,
               "label": "D26 Pharmaceutical Preparations",
-              "mesh_total_count": 3092.89563492,
+              "mesh_total_count": 3094.89563492,
               "proportion": 0.0,
-              "terminology_total_count": 3092.89563492,
+              "terminology_total_count": 3094.89563492,
               "treetop": "D26 Pharmaceutical Preparations",
               "treetop_name": "D26 Pharmaceutical Preparations"
             },
@@ -39637,9 +39563,9 @@
           "branch_code": "D002241",
           "count": 0.25,
           "label": "Carbohydrates",
-          "mesh_total_count": 10844.18219109,
+          "mesh_total_count": 10844.51552443,
           "proportion": 2.305e-05,
-          "terminology_total_count": 10844.18219109,
+          "terminology_total_count": 10844.51552443,
           "treetop": "D002241",
           "treetop_name": "Carbohydrates"
         },
@@ -39781,9 +39707,9 @@
           "branch_code": "D007287",
           "count": 0.14285714,
           "label": "Inorganic Chemicals",
-          "mesh_total_count": 5065.56697788,
+          "mesh_total_count": 5065.90031121,
           "proportion": 2.82e-05,
-          "terminology_total_count": 5065.56697788,
+          "terminology_total_count": 5065.90031121,
           "treetop": "D007287",
           "treetop_name": "Inorganic Chemicals"
         },
@@ -39793,9 +39719,9 @@
           "branch_code": "D008055",
           "count": 0.25,
           "label": "Lipids",
-          "mesh_total_count": 5386.51470474,
+          "mesh_total_count": 5386.76470474,
           "proportion": 4.641e-05,
-          "terminology_total_count": 5386.51470474,
+          "terminology_total_count": 5386.76470474,
           "treetop": "D008055",
           "treetop_name": "Lipids"
         },
@@ -40148,30 +40074,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -40183,9 +40109,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -40254,30 +40180,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -40289,9 +40215,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -40360,30 +40286,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -40395,9 +40321,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -40476,30 +40402,30 @@
             {
               "count": 393.78333333,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.06128923,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 2095.52142857,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.3261512,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 2351.86428571,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.36604892,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 934.54761905,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.14545488,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 152.6,
@@ -40511,9 +40437,9 @@
             {
               "count": 67.08333333,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.01044099,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 8.0,
@@ -40582,30 +40508,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -40617,9 +40543,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -40688,30 +40614,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -40723,9 +40649,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -40794,30 +40720,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -40829,9 +40755,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -40889,30 +40815,30 @@
         {
           "count": 393.78333333,
           "depth": 2,
-          "mesh_total_count": 22821.38690476,
+          "mesh_total_count": 22822.55357143,
           "proportion": 0.06128923,
-          "terminology_total_count": 22821.38690476
+          "terminology_total_count": 22822.55357143
         },
         {
           "count": 2095.52142857,
           "depth": 3,
-          "mesh_total_count": 114688.6579365,
+          "mesh_total_count": 114695.99126983,
           "proportion": 0.3261512,
-          "terminology_total_count": 114688.6579365
+          "terminology_total_count": 114695.99126983
         },
         {
           "count": 2351.86428571,
           "depth": 4,
-          "mesh_total_count": 117164.44318181,
+          "mesh_total_count": 117169.10984848,
           "proportion": 0.36604892,
-          "terminology_total_count": 117164.44318181
+          "terminology_total_count": 117169.10984848
         },
         {
           "count": 934.54761905,
           "depth": 5,
-          "mesh_total_count": 57705.05133478,
+          "mesh_total_count": 57707.55133478,
           "proportion": 0.14545488,
-          "terminology_total_count": 57705.05133478
+          "terminology_total_count": 57707.55133478
         },
         {
           "count": 152.6,
@@ -40924,9 +40850,9 @@
         {
           "count": 67.08333333,
           "depth": 7,
-          "mesh_total_count": 11535.29292929,
+          "mesh_total_count": 11535.62626263,
           "proportion": 0.01044099,
-          "terminology_total_count": 11535.29292929
+          "terminology_total_count": 11535.62626263
         },
         {
           "count": 8.0,
@@ -45793,20 +45719,6 @@
             "resource_aliases": [
               "CHEBI"
             ],
-            "term_overrides_path": null,
-            "terminology": "chebi"
-          },
-          "value": []
-        },
-        "disease": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
             "term_overrides_path": "configs/ChEBI_chemical_mappings.yaml",
             "terminology": "chebi"
           },
@@ -46052,6 +45964,20 @@
               "treetop_name": "Subatomic particles"
             }
           ]
+        },
+        "disease": {
+          "details": {
+            "missing_ids": [],
+            "n_input_ids": 0,
+            "n_missing_ids": 0,
+            "n_unique_input_ids": 0,
+            "resource_aliases": [
+              "CHEBI"
+            ],
+            "term_overrides_path": null,
+            "terminology": "chebi"
+          },
+          "value": []
         },
         "function_process": {
           "details": {
@@ -47316,9 +47242,9 @@
               "branch_code": "D01 Inorganic Chemicals",
               "count": 210.63015873,
               "label": "D01 Inorganic Chemicals",
-              "mesh_total_count": 8234.7047619,
-              "proportion": 0.02557835,
-              "terminology_total_count": 8234.7047619,
+              "mesh_total_count": 8235.7047619,
+              "proportion": 0.02557524,
+              "terminology_total_count": 8235.7047619,
               "treetop": "D01 Inorganic Chemicals",
               "treetop_name": "D01 Inorganic Chemicals"
             },
@@ -47328,9 +47254,9 @@
               "branch_code": "D02 Organic Chemicals",
               "count": 654.54246032,
               "label": "D02 Organic Chemicals",
-              "mesh_total_count": 85262.95555556,
-              "proportion": 0.00767675,
-              "terminology_total_count": 85262.95555556,
+              "mesh_total_count": 85267.53888889,
+              "proportion": 0.00767634,
+              "terminology_total_count": 85267.53888889,
               "treetop": "D02 Organic Chemicals",
               "treetop_name": "D02 Organic Chemicals"
             },
@@ -47340,9 +47266,9 @@
               "branch_code": "D03 Heterocyclic Compounds",
               "count": 345.84246032,
               "label": "D03 Heterocyclic Compounds",
-              "mesh_total_count": 68370.20039683,
-              "proportion": 0.00505838,
-              "terminology_total_count": 68370.20039683,
+              "mesh_total_count": 68384.86706349,
+              "proportion": 0.0050573,
+              "terminology_total_count": 68384.86706349,
               "treetop": "D03 Heterocyclic Compounds",
               "treetop_name": "D03 Heterocyclic Compounds"
             },
@@ -47352,9 +47278,9 @@
               "branch_code": "D04 Polycyclic Compounds",
               "count": 87.53333333,
               "label": "D04 Polycyclic Compounds",
-              "mesh_total_count": 13245.57301587,
-              "proportion": 0.0066085,
-              "terminology_total_count": 13245.57301587,
+              "mesh_total_count": 13246.57301587,
+              "proportion": 0.006608,
+              "terminology_total_count": 13246.57301587,
               "treetop": "D04 Polycyclic Compounds",
               "treetop_name": "D04 Polycyclic Compounds"
             },
@@ -47364,9 +47290,9 @@
               "branch_code": "D05 Macromolecular Substances",
               "count": 17.8797619,
               "label": "D05 Macromolecular Substances",
-              "mesh_total_count": 2564.19896215,
-              "proportion": 0.00697284,
-              "terminology_total_count": 2564.19896215,
+              "mesh_total_count": 2564.53229548,
+              "proportion": 0.00697194,
+              "terminology_total_count": 2564.53229548,
               "treetop": "D05 Macromolecular Substances",
               "treetop_name": "D05 Macromolecular Substances"
             },
@@ -47376,9 +47302,9 @@
               "branch_code": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "count": 10.5,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
-              "mesh_total_count": 2112.13647186,
-              "proportion": 0.00497127,
-              "terminology_total_count": 2112.13647186,
+              "mesh_total_count": 2112.63647186,
+              "proportion": 0.00497009,
+              "terminology_total_count": 2112.63647186,
               "treetop": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "treetop_name": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists"
             },
@@ -47412,9 +47338,9 @@
               "branch_code": "D09 Carbohydrates",
               "count": 112.1125,
               "label": "D09 Carbohydrates",
-              "mesh_total_count": 14267.08935786,
-              "proportion": 0.00785812,
-              "terminology_total_count": 14267.08935786,
+              "mesh_total_count": 14267.75602453,
+              "proportion": 0.00785775,
+              "terminology_total_count": 14267.75602453,
               "treetop": "D09 Carbohydrates",
               "treetop_name": "D09 Carbohydrates"
             },
@@ -47424,9 +47350,9 @@
               "branch_code": "D10 Lipids",
               "count": 90.41666667,
               "label": "D10 Lipids",
-              "mesh_total_count": 6502.94047619,
-              "proportion": 0.01390397,
-              "terminology_total_count": 6502.94047619,
+              "mesh_total_count": 6503.19047619,
+              "proportion": 0.01390343,
+              "terminology_total_count": 6503.19047619,
               "treetop": "D10 Lipids",
               "treetop_name": "D10 Lipids"
             },
@@ -47448,9 +47374,9 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 136.18630952,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "mesh_total_count": 116632.36301755,
-              "proportion": 0.00116765,
-              "terminology_total_count": 116632.36301755,
+              "mesh_total_count": 116635.02968421,
+              "proportion": 0.00116763,
+              "terminology_total_count": 116635.02968421,
               "treetop": "D12 Amino Acids, Peptides, and Proteins",
               "treetop_name": "D12 Amino Acids, Peptides, and Proteins"
             },
@@ -47472,9 +47398,9 @@
               "branch_code": "D20 Complex Mixtures",
               "count": 3.61666667,
               "label": "D20 Complex Mixtures",
-              "mesh_total_count": 2982.17777778,
-              "proportion": 0.00121276,
-              "terminology_total_count": 2982.17777778,
+              "mesh_total_count": 2984.67777778,
+              "proportion": 0.00121174,
+              "terminology_total_count": 2984.67777778,
               "treetop": "D20 Complex Mixtures",
               "treetop_name": "D20 Complex Mixtures"
             },
@@ -47484,9 +47410,9 @@
               "branch_code": "D23 Biological Factors",
               "count": 22.47261905,
               "label": "D23 Biological Factors",
-              "mesh_total_count": 6349.31277056,
-              "proportion": 0.00353938,
-              "terminology_total_count": 6349.31277056,
+              "mesh_total_count": 6350.1461039,
+              "proportion": 0.00353891,
+              "terminology_total_count": 6350.1461039,
               "treetop": "D23 Biological Factors",
               "treetop_name": "D23 Biological Factors"
             },
@@ -47508,9 +47434,9 @@
               "branch_code": "D26 Pharmaceutical Preparations",
               "count": 7.24166667,
               "label": "D26 Pharmaceutical Preparations",
-              "mesh_total_count": 3092.89563492,
-              "proportion": 0.00234139,
-              "terminology_total_count": 3092.89563492,
+              "mesh_total_count": 3094.89563492,
+              "proportion": 0.00233987,
+              "terminology_total_count": 3094.89563492,
               "treetop": "D26 Pharmaceutical Preparations",
               "treetop_name": "D26 Pharmaceutical Preparations"
             },
@@ -47889,9 +47815,9 @@
           "branch_code": "D000602",
           "count": 133.92857143,
           "label": "Amino Acids, Peptides, and Proteins",
-          "mesh_total_count": 76367.59882699,
-          "proportion": 0.00175374,
-          "terminology_total_count": 76367.59882699,
+          "mesh_total_count": 76369.26549366,
+          "proportion": 0.0017537,
+          "terminology_total_count": 76369.26549366,
           "treetop": "D000602",
           "treetop_name": "Amino Acids, Peptides, and Proteins"
         },
@@ -47901,9 +47827,9 @@
           "branch_code": "D001685",
           "count": 26.41666667,
           "label": "Biological Factors",
-          "mesh_total_count": 5861.99423077,
-          "proportion": 0.00450643,
-          "terminology_total_count": 5861.99423077,
+          "mesh_total_count": 5862.66089744,
+          "proportion": 0.00450592,
+          "terminology_total_count": 5862.66089744,
           "treetop": "D001685",
           "treetop_name": "Biological Factors"
         },
@@ -47937,9 +47863,9 @@
           "branch_code": "D002241",
           "count": 114.65238095,
           "label": "Carbohydrates",
-          "mesh_total_count": 10844.18219109,
-          "proportion": 0.01057271,
-          "terminology_total_count": 10844.18219109,
+          "mesh_total_count": 10844.51552443,
+          "proportion": 0.01057238,
+          "terminology_total_count": 10844.51552443,
           "treetop": "D002241",
           "treetop_name": "Carbohydrates"
         },
@@ -47949,9 +47875,9 @@
           "branch_code": "D004364",
           "count": 7.39285714,
           "label": "Pharmaceutical Preparations",
-          "mesh_total_count": 1655.65921856,
-          "proportion": 0.0044652,
-          "terminology_total_count": 1655.65921856,
+          "mesh_total_count": 1656.24255189,
+          "proportion": 0.00446363,
+          "terminology_total_count": 1656.24255189,
           "treetop": "D004364",
           "treetop_name": "Pharmaceutical Preparations"
         },
@@ -47973,9 +47899,9 @@
           "branch_code": "D006571",
           "count": 350.45,
           "label": "Heterocyclic Compounds",
-          "mesh_total_count": 48465.84273399,
-          "proportion": 0.00723087,
-          "terminology_total_count": 48465.84273399,
+          "mesh_total_count": 48472.67606732,
+          "proportion": 0.00722985,
+          "terminology_total_count": 48472.67606732,
           "treetop": "D006571",
           "treetop_name": "Heterocyclic Compounds"
         },
@@ -47985,9 +47911,9 @@
           "branch_code": "D006730",
           "count": 9.83333333,
           "label": "Hormones, Hormone Substitutes, and Hormone Antagonists",
-          "mesh_total_count": 1994.62883032,
-          "proportion": 0.00492991,
-          "terminology_total_count": 1994.62883032,
+          "mesh_total_count": 1995.12883032,
+          "proportion": 0.00492867,
+          "terminology_total_count": 1995.12883032,
           "treetop": "D006730",
           "treetop_name": "Hormones, Hormone Substitutes, and Hormone Antagonists"
         },
@@ -47997,9 +47923,9 @@
           "branch_code": "D007287",
           "count": 205.36666667,
           "label": "Inorganic Chemicals",
-          "mesh_total_count": 5065.56697788,
-          "proportion": 0.04054169,
-          "terminology_total_count": 5065.56697788,
+          "mesh_total_count": 5065.90031121,
+          "proportion": 0.04053903,
+          "terminology_total_count": 5065.90031121,
           "treetop": "D007287",
           "treetop_name": "Inorganic Chemicals"
         },
@@ -48009,9 +47935,9 @@
           "branch_code": "D008055",
           "count": 89.83333333,
           "label": "Lipids",
-          "mesh_total_count": 5386.51470474,
-          "proportion": 0.01667745,
-          "terminology_total_count": 5386.51470474,
+          "mesh_total_count": 5386.76470474,
+          "proportion": 0.01667668,
+          "terminology_total_count": 5386.76470474,
           "treetop": "D008055",
           "treetop_name": "Lipids"
         },
@@ -48033,9 +47959,9 @@
           "branch_code": "D009930",
           "count": 647.34285714,
           "label": "Organic Chemicals",
-          "mesh_total_count": 60775.31205454,
-          "proportion": 0.01065141,
-          "terminology_total_count": 60775.31205454,
+          "mesh_total_count": 60777.31205454,
+          "proportion": 0.01065106,
+          "terminology_total_count": 60777.31205454,
           "treetop": "D009930",
           "treetop_name": "Organic Chemicals"
         },
@@ -48057,9 +47983,9 @@
           "branch_code": "D011083",
           "count": 94.56666667,
           "label": "Polycyclic Compounds",
-          "mesh_total_count": 11275.34495121,
-          "proportion": 0.00838703,
-          "terminology_total_count": 11275.34495121,
+          "mesh_total_count": 11276.17828454,
+          "proportion": 0.00838641,
+          "terminology_total_count": 11276.17828454,
           "treetop": "D011083",
           "treetop_name": "Polycyclic Compounds"
         },
@@ -48117,9 +48043,9 @@
           "branch_code": "D045424",
           "count": 3.91666667,
           "label": "Complex Mixtures",
-          "mesh_total_count": 2550.26533189,
-          "proportion": 0.00153579,
-          "terminology_total_count": 2550.26533189,
+          "mesh_total_count": 2551.93199856,
+          "proportion": 0.00153478,
+          "terminology_total_count": 2551.93199856,
           "treetop": "D045424",
           "treetop_name": "Complex Mixtures"
         },
@@ -48141,9 +48067,9 @@
           "branch_code": "D046911",
           "count": 19.67857143,
           "label": "Macromolecular Substances",
-          "mesh_total_count": 2365.7299506,
-          "proportion": 0.00831818,
-          "terminology_total_count": 2365.7299506,
+          "mesh_total_count": 2366.06328394,
+          "proportion": 0.00831701,
+          "terminology_total_count": 2366.06328394,
           "treetop": "D046911",
           "treetop_name": "Macromolecular Substances"
         },
@@ -48226,30 +48152,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -48261,9 +48187,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -48332,30 +48258,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -48367,9 +48293,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -48454,30 +48380,30 @@
             {
               "count": 3200.28333333,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.07835957,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 10910.4,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.26714331,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 14487.38333333,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.35472646,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 7551.81666667,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.18490773,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 2819.11666667,
@@ -48489,9 +48415,9 @@
             {
               "count": 1129.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.02764379,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 265.0,
@@ -48560,30 +48486,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -48595,9 +48521,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -48666,30 +48592,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -48701,9 +48627,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -48772,30 +48698,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -48807,9 +48733,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -48878,30 +48804,30 @@
             {
               "count": 0.0,
               "depth": 2,
-              "mesh_total_count": 22821.38690476,
+              "mesh_total_count": 22822.55357143,
               "proportion": 0.0,
-              "terminology_total_count": 22821.38690476
+              "terminology_total_count": 22822.55357143
             },
             {
               "count": 0.0,
               "depth": 3,
-              "mesh_total_count": 114688.6579365,
+              "mesh_total_count": 114695.99126983,
               "proportion": 0.0,
-              "terminology_total_count": 114688.6579365
+              "terminology_total_count": 114695.99126983
             },
             {
               "count": 0.0,
               "depth": 4,
-              "mesh_total_count": 117164.44318181,
+              "mesh_total_count": 117169.10984848,
               "proportion": 0.0,
-              "terminology_total_count": 117164.44318181
+              "terminology_total_count": 117169.10984848
             },
             {
               "count": 0.0,
               "depth": 5,
-              "mesh_total_count": 57705.05133478,
+              "mesh_total_count": 57707.55133478,
               "proportion": 0.0,
-              "terminology_total_count": 57705.05133478
+              "terminology_total_count": 57707.55133478
             },
             {
               "count": 0.0,
@@ -48913,9 +48839,9 @@
             {
               "count": 0.0,
               "depth": 7,
-              "mesh_total_count": 11535.29292929,
+              "mesh_total_count": 11535.62626263,
               "proportion": 0.0,
-              "terminology_total_count": 11535.29292929
+              "terminology_total_count": 11535.62626263
             },
             {
               "count": 0.0,
@@ -48973,30 +48899,30 @@
         {
           "count": 3200.28333333,
           "depth": 2,
-          "mesh_total_count": 22821.38690476,
+          "mesh_total_count": 22822.55357143,
           "proportion": 0.07835957,
-          "terminology_total_count": 22821.38690476
+          "terminology_total_count": 22822.55357143
         },
         {
           "count": 10910.4,
           "depth": 3,
-          "mesh_total_count": 114688.6579365,
+          "mesh_total_count": 114695.99126983,
           "proportion": 0.26714331,
-          "terminology_total_count": 114688.6579365
+          "terminology_total_count": 114695.99126983
         },
         {
           "count": 14487.38333333,
           "depth": 4,
-          "mesh_total_count": 117164.44318181,
+          "mesh_total_count": 117169.10984848,
           "proportion": 0.35472646,
-          "terminology_total_count": 117164.44318181
+          "terminology_total_count": 117169.10984848
         },
         {
           "count": 7551.81666667,
           "depth": 5,
-          "mesh_total_count": 57705.05133478,
+          "mesh_total_count": 57707.55133478,
           "proportion": 0.18490773,
-          "terminology_total_count": 57705.05133478
+          "terminology_total_count": 57707.55133478
         },
         {
           "count": 2819.11666667,
@@ -49008,9 +48934,9 @@
         {
           "count": 1129.0,
           "depth": 7,
-          "mesh_total_count": 11535.29292929,
+          "mesh_total_count": 11535.62626263,
           "proportion": 0.02764379,
-          "terminology_total_count": 11535.29292929
+          "terminology_total_count": 11535.62626263
         },
         {
           "count": 265.0,
@@ -53877,20 +53803,6 @@
             "resource_aliases": [
               "CHEBI"
             ],
-            "term_overrides_path": null,
-            "terminology": "chebi"
-          },
-          "value": []
-        },
-        "disease": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
             "term_overrides_path": "configs/ChEBI_chemical_mappings.yaml",
             "terminology": "chebi"
           },
@@ -54136,6 +54048,20 @@
               "treetop_name": "Subatomic particles"
             }
           ]
+        },
+        "disease": {
+          "details": {
+            "missing_ids": [],
+            "n_input_ids": 0,
+            "n_missing_ids": 0,
+            "n_unique_input_ids": 0,
+            "resource_aliases": [
+              "CHEBI"
+            ],
+            "term_overrides_path": null,
+            "terminology": "chebi"
+          },
+          "value": []
         },
         "function_process": {
           "details": {
