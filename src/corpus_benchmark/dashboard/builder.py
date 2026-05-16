@@ -222,7 +222,6 @@ def build_overlap_panels(corpora):
     oc = OV_COLS
     tabs = (
         '\n  <button class="tab" data-p="p6">Train-test overlap</button>'
-        '\n  <button class="tab" data-p="p7">Cascade view</button>'
     )
     panels = (
         f'<div class="panel" id="p6">'
@@ -240,8 +239,8 @@ def build_overlap_panels(corpora):
         f'<th>Identifiers<span class="sub">Jaccard</span></th>'
         f"<th>ID vocab</th></tr></thead>"
         f'<tbody id="overlapRows">{build_overlap_rows(corpora)}</tbody></table></div>'
-        f'<div class="fn">All values are Jaccard similarity (intersection / union) between splits.</div></div>\n'
-        f'<div class="panel" id="p7">'
+        f'<div class="fn">All values are Jaccard similarity (intersection / union) between splits.</div>'
+        f'<p class="sec" style="margin-top:1.5rem">Overlap cascade</p>'
         f'<div class="leg" id="cascLeg"></div>'
         f'<div class="cw" style="height:380px">'
         f'<canvas id="c7" role="img" aria-label="Overlap cascade across four abstraction levels.">'
@@ -568,8 +567,8 @@ def build_metadata_panels(corpora, colours):
     tabs = (
         '\n  <button class="tab" data-p="p8">Journal metadata</button>'
         '\n  <button class="tab" data-p="p9">Temporal coverage</button>'
-        '\n  <button class="tab" data-p="p10">Journal topics</button>'
         '\n  <button class="tab" data-p="p11">Article topics</button>'
+        '\n  <button class="tab" data-p="p10">Journal topics</button>'
     )
 
     panels = f"""
@@ -630,6 +629,19 @@ def build_metadata_panels(corpora, colours):
   risk reduced performance on contemporary terminology.</p>
 </div>
 
+<div class="panel" id="p11">
+  <p class="sec">Article topic distribution per corpus (%)</p>
+  {article_topic_table}
+  <div class="fn">
+    Topics are high-level MeSH-derived article categories resolved from article
+    metadata MeSH terms, with unresolved article-term fractions filled from journal
+    MeSH topics and configured journal-name fallback topics. Only topics with ≥ 1%
+    share in at least one corpus are shown. Dominant value per row is bold.
+    Percentages may not sum to exactly
+    100 due to rounding.
+  </div>
+</div>
+
 <div class="panel" id="p10">
   <p class="sec">Journal topic distribution per corpus (%)</p>
   {topic_table}
@@ -639,18 +651,6 @@ def build_metadata_panels(corpora, colours):
     journals that do not have MeSH topics. Only topics with ≥ 1% share in at least one
     corpus are shown. Dominant value per row is bold. Percentages may not sum to exactly
     100 due to rounding.
-  </div>
-</div>
-
-<div class="panel" id="p11">
-  <p class="sec">Article topic distribution per corpus (%)</p>
-  {article_topic_table}
-  <div class="fn">
-    Topics are high-level MeSH-derived article categories resolved from article
-    metadata MeSH terms, with unresolved article-term fractions filled from journal
-    MeSH topics and configured journal-name fallback topics. Only topics with ≥ 1%
-    share in at least one corpus are shown. Dominant value per row is bold.
-    Percentages may not sum to exactly 100 due to rounding.
   </div>
 </div>
 
@@ -828,13 +828,12 @@ def _terminology_profiles(term_data):
             f"<td class='l'>{entry['terminology_label']}</td>"
             f"<td class='r'>{entry['n_input_ids']:,}</td>"
             f"<td class='r'>{entry['n_missing_ids']:,} ({entry['missing_pct']:.2f}%)</td>"
-            f"<td class='r'>{entry['unique_missing']}</td>"
             f"<td class='r'><strong>{entry['coverage_pct']:.2f}%</strong></td>"
             "</tr>"
             for entry in entries
         )
         if not table_rows:
-            table_rows = "<tr><td class='l' colspan='6'>No terminology data for this entity scope.</td></tr>"
+            table_rows = "<tr><td class='l' colspan='5'>No terminology data for this entity scope.</td></tr>"
 
         entries_by_group = {}
         for entry in chart_entries:
@@ -897,12 +896,25 @@ def _terminology_profiles(term_data):
                 )
                 branch_labels.append(label if label == code else f"{code} {label}")
             recall_datasets = []
+            annotation_datasets = []
             for i, entry in enumerate(terminology_entries):
                 recall_datasets.append(
                     {
                         "label": entry["display_name"],
                         "data": [
                             round(entry.get("branches", {}).get(code, {}).get("proportion", 0) * 100, 2)
+                            for code in branch_codes
+                        ],
+                        "backgroundColor": group_colors[i] + "bb",
+                        "borderWidth": 0,
+                        "borderRadius": 2,
+                    }
+                )
+                annotation_datasets.append(
+                    {
+                        "label": entry["display_name"],
+                        "data": [
+                            round(entry.get("branches", {}).get(code, {}).get("annotation_proportion", 0) * 100, 2)
                             for code in branch_codes
                         ],
                         "backgroundColor": group_colors[i] + "bb",
@@ -924,6 +936,11 @@ def _terminology_profiles(term_data):
                         "datasets": recall_datasets,
                         "height": max(320, len(branch_labels) * 44 + 120),
                     },
+                    "annotation": {
+                        "labels": branch_labels,
+                        "datasets": annotation_datasets,
+                        "height": max(320, len(branch_labels) * 44 + 120),
+                    },
                 }
             )
 
@@ -934,6 +951,7 @@ def _terminology_profiles(term_data):
                 "found": [entry["coverage_pct"] for entry in entries],
                 "missing": [entry["missing_pct"] for entry in entries],
                 "colors": colors,
+                "height": max(240, len(labels) * 34 + 110),
             },
             "chartGroups": chart_groups,
         }
@@ -948,27 +966,27 @@ def build_terminology_panels(term_data):
         return "", ""
 
     tabs = (
-        '\n  <button class="tab" data-p="pterm1">Vocabulary coverage</button>'
+        '\n  <button class="tab" data-p="pterm1">Deprecated terms</button>'
         '\n  <button class="tab" data-p="pterm3">Annotation depth</button>'
-        '\n  <button class="tab" data-p="pterm4">Recall</button>'
+        '\n  <button class="tab" data-p="pterm4">Terminology coverage</button>'
+        '\n  <button class="tab" data-p="pterm5">Annotation topic coverage</button>'
     )
     profiles = _terminology_profiles(term_data)
 
     panels = f"""
 <div class="panel" id="pterm1">
-  <p class="sec">Vocabulary coverage summary</p>
+  <p class="sec">Deprecated terms summary</p>
   <div style="overflow-x:auto;margin-bottom:1.5rem">
   <table><thead><tr>
     <th class="l">Corpus</th>
     <th class="l">Terminology</th>
-    <th class="r">Total instances</th>
-    <th class="r">Missing (instances)</th>
-    <th class="r">Unique missing IDs</th>
-    <th class="r">Coverage</th>
+    <th class="r">Total concepts</th>
+    <th class="r">Deprecated concepts</th>
+    <th class="r">Resolvable identifier rate</th>
   </tr></thead><tbody id="termCoverageRows"></tbody></table>
   </div>
-  <p class="sec">Coverage rate</p>
-  <div class="cw" style="height:190px">
+  <p class="sec">Resolvable identifier rate</p>
+  <div class="cw" id="termCoverageChartWrap" style="height:240px">
     <canvas id="tmc1" role="img" aria-label="Horizontal stacked bar: vocabulary coverage per corpus.">
       Coverage rates for all corpora.
     </canvas>
@@ -984,10 +1002,16 @@ def build_terminology_panels(term_data):
 </div>
 
 <div class="panel" id="pterm4">
-  <p class="sec">Recall</p>
-  <div id="termRecallCharts"></div>
-  <p class="note">Recall = unique corpus concept count in branch ÷ total terminology concepts in that branch.
+  <p class="sec">Terminology coverage</p>
+  <div id="termTerminologyCoverageCharts"></div>
+  <p class="note">Terminology coverage = unique corpus concept count in branch ÷ total terminology concepts in that branch.
   Only branches with signal in the selected scope are shown.</p>
+</div>
+
+<div class="panel" id="pterm5">
+  <p class="sec">Annotation topic coverage</p>
+  <div id="termAnnotationCharts"></div>
+  <p class="note">Annotation topic coverage = annotation-weighted branch count ÷ all identifiers for that corpus and entity scope, including deprecated identifiers in the denominator.</p>
 </div>
 
 <script>
@@ -1032,14 +1056,16 @@ def build_terminology_panels(term_data):
       if (charts.tmc1) {{ charts.tmc1.destroy(); delete charts.tmc1; }}
       return;
     }}
+    const wrap = document.getElementById('termCoverageChartWrap');
+    if (wrap) wrap.style.height = `${{p.coverage.height || 240}}px`;
     updateBar('tmc1', {{
       type:'bar',
       data:{{
         labels:p.coverage.labels,
         datasets:[
-          {{ label:'Found (%)', data:p.coverage.found,
+          {{ label:'Current (%)', data:p.coverage.found,
              backgroundColor:p.coverage.colors.map(c=>c+'bb'), borderWidth:0, borderRadius:3 }},
-          {{ label:'Missing (%)', data:p.coverage.missing,
+          {{ label:'Deprecated (%)', data:p.coverage.missing,
              backgroundColor:p.coverage.colors.map(()=>'#E24B4A44'), borderWidth:0, borderRadius:3 }}
         ]
       }},
@@ -1102,7 +1128,7 @@ def build_terminology_panels(term_data):
 
   function renderTerm4(scope) {{
     const p = currentProfile(scope);
-    const root = document.getElementById('termRecallCharts');
+    const root = document.getElementById('termTerminologyCoverageCharts');
     destroyCharts('tmc4_');
     if (!root) return;
     const groups = (p.chartGroups || []).filter(group => group.recall && group.recall.labels.length);
@@ -1139,14 +1165,56 @@ def build_terminology_panels(term_data):
     }});
   }}
 
+  function renderTerm5(scope) {{
+    const p = currentProfile(scope);
+    const root = document.getElementById('termAnnotationCharts');
+    destroyCharts('tmc5_');
+    if (!root) return;
+    const groups = (p.chartGroups || []).filter(group => group.annotation && group.annotation.labels.length);
+    if (!groups.length) {{
+      root.innerHTML = '<div class="fn">No terminology data for this entity scope.</div>';
+      return;
+    }}
+    root.innerHTML = groups.map((group, i) => `
+      <p class="sec">${{group.title}}</p>
+      <div class="cw" style="height:${{group.annotation.height}}px">
+        <canvas id="tmc5_${{i}}" role="img" aria-label="Grouped horizontal bar: ${{group.title}} annotation topic coverage.">
+          Annotation topic coverage for ${{group.title}}.
+        </canvas>
+      </div>
+    `).join('');
+    groups.forEach((group, i) => {{
+      updateBar(`tmc5_${{i}}`, {{
+        type:'bar',
+        data:{{ labels:group.annotation.labels, datasets:group.annotation.datasets }},
+        options:{{
+          responsive:true, maintainAspectRatio:false, indexAxis:'y',
+          plugins:{{ legend:{{ display:true, position:'top', align:'end',
+            labels:{{ boxWidth:10,boxHeight:10,borderRadius:2,font:{{size:11}},color:tc }} }},
+            tooltip:{{ callbacks:{{ label: ctx =>
+              ` ${{ctx.dataset.label}}: ${{ctx.parsed.x.toFixed(1)}}%`
+            }} }} }},
+          scales:{{
+            x:{{ min:0, max:100,
+                 title:{{display:true,text:'% of corpus identifiers in topic',color:tc,font:{{size:11}}}},
+                 ticks:{{color:tc,font:{{size:11}},callback:v=>v+'%'}}, grid:{{color:gc}} }},
+            y:{{ ticks:{{color:tc,font:{{size:11}}}}, grid:{{color:gc}} }}
+          }}
+        }}
+      }});
+    }});
+  }}
+
   window.applyTermScope = function(scope) {{
     renderTerm1(scope || 'all');
     renderTerm3(scope || 'all');
     renderTerm4(scope || 'all');
+    renderTerm5(scope || 'all');
   }};
   window.initTerm1 = () => renderTerm1(window.currentEntityScope || 'all');
   window.initTerm3 = () => renderTerm3(window.currentEntityScope || 'all');
   window.initTerm4 = () => renderTerm4(window.currentEntityScope || 'all');
+  window.initTerm5 = () => renderTerm5(window.currentEntityScope || 'all');
 }})();
 </script>
 """
@@ -1237,7 +1305,7 @@ def build_html(corpora, dashboard_config=None):
         term_tabs, term_panels = build_terminology_panels(term_data_for_panels)
         term_panel_js = (
             "pterm1:window.initTerm1,\n  pterm3:window.initTerm3,"
-            "\n  pterm4:window.initTerm4,"
+            "\n  pterm4:window.initTerm4,\n  pterm5:window.initTerm5,"
         )
     else:
         term_tabs = term_panels = term_panel_js = ""

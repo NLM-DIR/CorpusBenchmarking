@@ -118,15 +118,15 @@ HTML = """\
 <p class="scope-note" id="scopeNote">{scope_note}</p>
 
 <div class="tabs" id="tabs">
-  <button class="tab sel" data-p="p1">Annotation density</button>
-  <button class="tab" data-p="p2">Identifier coverage</button>
-  <button class="tab" data-p="p3">Difficulty indicators</button>
+  <button class="tab sel" data-p="p5">Summary table</button>
+  <button class="tab" data-p="p1">Annotation density</button>
+  <button class="tab" data-p="p2">Identifier density</button>
+  <button class="tab" data-p="p3">Lexical / conceptual structure</button>
   <button class="tab" data-p="p4">Entity type profile</button>
-  <button class="tab" data-p="p5">Summary table</button>
   {overlap_tabs}{meta_tabs}{term_tabs}
 </div>
 
-<div class="panel sel" id="p1">
+<div class="panel" id="p1">
   <p class="sec">Annotations per thousand tokens</p>
   <div class="cw" style="height:{h_ann}px">
     <canvas id="c1" role="img" aria-label="Mean annotations per thousand tokens, log scale.">
@@ -199,7 +199,7 @@ HTML = """\
   balanced coverage across entity types.</p>
 </div>
 
-<div class="panel" id="p5">
+<div class="panel sel" id="p5">
   <div style="overflow-x:auto">
   <table>
   <thead>
@@ -300,43 +300,44 @@ function hbar(el, labels, data, bg, xLabel, xOpts={{}}) {{
   }});
 }}
 
-chartRefs.c1 = new Chart('c1', {{
-  type:'bar',
-  data:{{ labels:{c1k_labels}, datasets:[{{ data:{c1k_data}, backgroundColor:{c1k_bg},
-    borderWidth:0, borderRadius:3 }}] }},
-  options:{{
-    responsive:true, maintainAspectRatio:false, indexAxis:'y',
-    plugins:{{ legend:{{display:false}},
-      tooltip:{{ callbacks:{{ label: ctx=>` ${{ctx.parsed.x.toFixed(1)}}` }} }} }},
-    scales:{{
-      x:{{ type:'logarithmic',
-           title:{{display:true,text:'Mean annotations per thousand tokens (log scale)',color:tc,font:{{size:11}}}},
-           ticks:{{color:tc,font:{{size:11}},callback:v=>[0.1,1,10,100,1000].includes(v)?v:''}},
-           grid:{{color:gc}} }},
-      y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
-    }}
-  }}
-}});
-
-chartRefs.c1b = new Chart('c1b', {{
-  type:'bar',
-  data:{{ labels:{c1_labels}, datasets:[{{ data:{c1_data}, backgroundColor:{c1_bg},
-    borderWidth:0, borderRadius:3 }}] }},
-  options:{{
-    responsive:true, maintainAspectRatio:false, indexAxis:'y',
-    plugins:{{ legend:{{display:false}},
-      tooltip:{{ callbacks:{{ label: ctx=>` ${{ctx.parsed.x.toFixed(1)}}` }} }} }},
-    scales:{{
-      x:{{ type:'logarithmic',
-           title:{{display:true,text:'Mean annotations per document (log scale)',color:tc,font:{{size:11}}}},
-           ticks:{{color:tc,font:{{size:11}},callback:v=>[0.1,1,10,100,1000].includes(v)?v:''}},
-           grid:{{color:gc}} }},
-      y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
-    }}
-  }}
-}});
-
 const inited={{}};
+function initC1(){{
+  chartRefs.c1 = new Chart('c1', {{
+    type:'bar',
+    data:{{ labels:prof().ann1k.labels, datasets:[{{ data:prof().ann1k.data, backgroundColor:prof().ann1k.bg,
+      borderWidth:0, borderRadius:3 }}] }},
+    options:{{
+      responsive:true, maintainAspectRatio:false, indexAxis:'y',
+      plugins:{{ legend:{{display:false}},
+        tooltip:{{ callbacks:{{ label: ctx=>` ${{ctx.parsed.x.toFixed(1)}}` }} }} }},
+      scales:{{
+        x:{{ type:'logarithmic',
+             title:{{display:true,text:'Mean annotations per thousand tokens (log scale)',color:tc,font:{{size:11}}}},
+             ticks:{{color:tc,font:{{size:11}},callback:v=>[0.1,1,10,100,1000].includes(v)?v:''}},
+             grid:{{color:gc}} }},
+        y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+      }}
+    }}
+  }});
+
+  chartRefs.c1b = new Chart('c1b', {{
+    type:'bar',
+    data:{{ labels:prof().ann.labels, datasets:[{{ data:prof().ann.data, backgroundColor:prof().ann.bg,
+      borderWidth:0, borderRadius:3 }}] }},
+    options:{{
+      responsive:true, maintainAspectRatio:false, indexAxis:'y',
+      plugins:{{ legend:{{display:false}},
+        tooltip:{{ callbacks:{{ label: ctx=>` ${{ctx.parsed.x.toFixed(1)}}` }} }} }},
+      scales:{{
+        x:{{ type:'logarithmic',
+             title:{{display:true,text:'Mean annotations per document (log scale)',color:tc,font:{{size:11}}}},
+             ticks:{{color:tc,font:{{size:11}},callback:v=>[0.1,1,10,100,1000].includes(v)?v:''}},
+             grid:{{color:gc}} }},
+        y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+      }}
+    }}
+  }});
+}}
 function initC2(){{ chartRefs.c2 = hbar('c2',prof().ids.labels,prof().ids.data,prof().ids.bg,'Mean unique identifiers per document'); }}
 function initC3(){{
   chartRefs.c3 = new Chart('c3', {{
@@ -385,7 +386,7 @@ function initC7(){{
 }}
 
 const panels={{
-  p2:initC2, p3:()=>{{initC3();initC4();}}, p4:()=>{{initC5();initC6();}}, p7:initC7,
+  p1:initC1, p2:initC2, p3:()=>{{initC3();initC4();}}, p4:()=>{{initC5();initC6();}}, p6:initC7,
   {meta_panel_js}
   {term_panel_js}
 }};

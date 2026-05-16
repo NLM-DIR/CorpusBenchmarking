@@ -94,17 +94,20 @@ def high_level_concept_counts(target: MetricTarget, result_name: str, terminolog
 
     if term_overrides_path:
         corpus_counts = counter.count_by_anchor(unique_ids)
+        annotation_counts = counter.count_by_anchor(ids)
         global_counts = counter.get_global_counts_by_anchor()
     else:
         corpus_counts = counter.count_by_branch(unique_ids)
+        annotation_counts = counter.count_by_branch(ids)
         global_counts = counter.get_global_counts_by_branch()
 
-    all_branches = sorted(corpus_counts.keys())
+    all_branches = sorted(set(corpus_counts.keys()) | set(annotation_counts.keys()))
     if term_overrides_path:
         all_branches = sorted(set(all_branches) | set(global_counts.keys()) | set(counter.configured_anchor_topics))
     rows = []
     for branch_code in all_branches:
         count = corpus_counts.get(branch_code, 0.0)
+        annotation_count = annotation_counts.get(branch_code, 0.0)
         terminology_total = global_counts.get(branch_code, 0.0)
         proportion = count / terminology_total if terminology_total > 0 else 0.0
         treetop = branch_code if term_overrides_path else branch_code.split(".")[0]
@@ -117,9 +120,11 @@ def high_level_concept_counts(target: MetricTarget, result_name: str, terminolog
                 "treetop": treetop,
                 "treetop_name": treetop_name,
                 "count": round(count, PRECISION),
+                "annotation_count": round(annotation_count, PRECISION),
                 "terminology_total_count": round(terminology_total, PRECISION),
                 "mesh_total_count": round(terminology_total, PRECISION),
                 "proportion": round(proportion, PRECISION),
+                "annotation_proportion": round(annotation_count / len(ids), PRECISION) if ids else 0.0,
             }
         )
 

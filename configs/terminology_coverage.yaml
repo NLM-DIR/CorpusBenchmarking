@@ -117,7 +117,10 @@ metrics:
   - result_name: chebi_high_level_concept_counts
     metric_name: high_level_concept_counts
     target_bundles: *terminology_bundles
-    params: {terminology_name: chebi}
+    params:
+      terminology_name: chebi
+      term_override_paths_by_entity_scope:
+        disease: configs/ChEBI_chemical_mappings.yaml
   - result_name: chebi_concept_depth_counts
     metric_name: concept_depth_counts
     target_bundles: *terminology_bundles

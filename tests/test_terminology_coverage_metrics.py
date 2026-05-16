@@ -196,7 +196,37 @@ def test_high_level_concept_counts_uses_unique_corpus_concepts_for_recall() -> N
     assert result.details["n_input_ids"] == 3
     assert result.details["n_unique_input_ids"] == 1
     assert result.value[0]["count"] == 1
+    assert result.value[0]["annotation_count"] == 3
     assert result.value[0]["proportion"] == 0.5
+    assert result.value[0]["annotation_proportion"] == 1.0
+
+
+def test_high_level_concept_counts_annotation_proportion_uses_all_identifiers() -> None:
+    terminology = TerminologyResource(
+        name="example",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Root A"),
+            "T1": TerminologyConcept(ui="T1", name="Term One", parent_ids=["R1"]),
+        },
+        resource_aliases=["EX"],
+    )
+    target = _target_for_links(
+        [
+            IdentifierLink(identifier="T1", resource="EX"),
+            IdentifierLink(identifier="T1", resource="EX"),
+            IdentifierLink(identifier="OLD:1", resource="EX"),
+        ]
+    )
+
+    result = high_level_concept_counts(target, "high_level_concept_counts", terminology)
+    row = result.value[0]
+
+    assert result.details["n_input_ids"] == 3
+    assert result.details["n_missing_ids"] == 1
+    assert row["count"] == 1
+    assert row["proportion"] == 0.5
+    assert row["annotation_count"] == 2
+    assert row["annotation_proportion"] == round(2 / 3, 8)
 
 
 def test_concept_depth_counts_reports_annotation_depth_distribution() -> None:

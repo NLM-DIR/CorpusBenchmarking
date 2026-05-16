@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from corpus_benchmark.dashboard import PALETTE, _entity_profile_data, build_terminology_panels
+from corpus_benchmark.dashboard import PALETTE, _entity_profile_data, build_html, build_terminology_panels
 
 
 def _corpus(
@@ -179,7 +179,77 @@ def test_terminology_panel_chart_helper_uses_chartjs_config_labels() -> None:
 
     assert "const labels = config && config.data && config.data.labels;" in panels
     assert "termDepthCharts" in panels
-    assert "termRecallCharts" in panels
+    assert "termTerminologyCoverageCharts" in panels
     assert "tmc3_${i}" in panels
     assert "tmc4_${i}" in panels
     assert "!config.labels" not in panels
+
+
+def test_dashboard_panel_labels_order_and_removed_cascade_tab() -> None:
+    corpora = [_corpus("Example", {"Disease": 5})]
+    corpora[0]["overlap"] = {
+        "train_size": 10,
+        "test_size": 5,
+        "token_overlap": 0.5,
+        "mention_token_overlap": 0.4,
+        "mention_overlap": 0.3,
+        "identifier_overlap": 0.2,
+    }
+    corpora[0]["metadata"] = {
+        "has_metadata": True,
+        "journal": {"n_journals": 1, "top1_pct": 100, "top3_pct": 100},
+        "year": {
+            "year_min": 2020,
+            "year_max": 2021,
+            "mode_year": 2020,
+            "decades": {2020: 100.0},
+            "year_pcts": {2020: 50.0, 2021: 50.0},
+        },
+        "topic_dist": {"Oncology": 100.0},
+        "article_topic_dist": {"Oncology": 100.0},
+    }
+    corpora[0]["terminology"] = {
+        "by_scope": {
+            "all": [
+                {
+                    "display_name": "Example",
+                    "terminology": "mesh",
+                    "terminology_label": "MeSH",
+                    "series_label": "Example / MeSH",
+                    "n_input_ids": 5,
+                    "n_missing_ids": 1,
+                    "unique_missing": 1,
+                    "missing_pct": 20.0,
+                    "coverage_pct": 80.0,
+                    "mean_depth": 2.0,
+                    "branches": {
+                        "C": {
+                            "label": "Diseases",
+                            "count": 1,
+                            "annotation_count": 4,
+                            "proportion": 0.1,
+                            "annotation_proportion": 0.8,
+                            "total": 10,
+                        }
+                    },
+                    "depth": {"2": {"count": 4, "proportion": 0.8, "total": 10}},
+                }
+            ]
+        }
+    }
+
+    html = build_html(corpora)
+
+    assert html.index("data-p=\"p5\">Summary table") < html.index("data-p=\"p1\">Annotation density")
+    assert "Identifier density" in html
+    assert "Lexical / conceptual structure" in html
+    assert "Deprecated terms" in html
+    assert "Terminology coverage" in html
+    assert "Annotation topic coverage" in html
+    assert "Cascade view" not in html
+    assert html.index("Overlap cascade") > html.index("Train-test overlap")
+    assert html.index("Article topics") < html.index("Journal topics")
+    assert "Unique missing IDs" not in html
+    assert "Resolvable identifier rate" in html
+    assert "Current (%)" in html
+    assert "Deprecated (%)" in html
