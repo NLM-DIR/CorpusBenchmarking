@@ -2,6 +2,8 @@
 
 **CorpusBenchmarking** is a corpus-centric Python framework for diagnosing the benchmark utility of biomedical named entity recognition (NER) and entity linking (EL) corpora. It treats corpora as measurement instruments rather than fixed inputs, and reports corpus-intrinsic properties that affect what benchmark results can and cannot support.
 
+**Dashboard:** the current dashboard for the preconfigured corpora and terminologies is published at <https://nlm-dir.github.io/CorpusBenchmarking/corpus_dashboard.html>.
+
 The framework characterizes corpora across several diagnostic families:
 
 * **Scale and density**: document counts, token counts, annotation density, and related corpus-size summaries.
@@ -23,6 +25,24 @@ The framework characterizes corpora across several diagnostic families:
 * **Configurable filtering and scopes**: Annotation filters and dashboard entity scopes allow analyses over all annotations or focused entity groups such as diseases, chemicals, cells, anatomy, and genes/proteins.
 * **Interactive dashboard**: The pipeline writes structured JSON outputs and a self-contained HTML dashboard with metadata panels, topic heatmaps, overlap summaries, terminology coverage panels, and configurable entity-scope controls.
 
+## Preconfigured Corpora and Terminologies
+
+The default metric batteries currently preconfigure nine biomedical NER or NER+EL corpora. Entity scopes are dashboard filters defined in `configs/dashboard.yaml`; terminology coverage is computed only where corpus identifiers can be resolved against a configured terminology.
+
+| Corpus | Entity scopes available in the dashboard | Terminology coverage configured |
+| --- | --- | --- |
+| AnatEM | Anatomy; cells and cell states; diseases | None; this is an NER-only standoff corpus in the current configuration. |
+| BC5CDR | Chemicals; diseases | MeSH 2026 for chemical and disease identifiers. |
+| BioID | Anatomy; cells and cell states; chemicals; functions and processes; genes/proteins/sequences; species | Cell Ontology (CL) for cell annotations; ChEBI for chemical annotations. |
+| CHEMDNER | Chemicals | None; this configuration filters chemical mentions but does not provide normalized terminology identifiers for coverage metrics. |
+| CRAFT | Anatomy; cells and cell states; chemicals; diseases; functions and processes; genes/proteins/sequences; species | Cell Ontology (CL), MONDO, and ChEBI for the corresponding cell, disease, and chemical scopes. The corpus also carries identifiers from GO, NCBITaxon, PR, SO, UBERON, and related CRAFT annotation resources. |
+| CellLink | Cells and cell states | Cell Ontology (CL) for cell-state and cell-line/cell-type links. |
+| JNLPBA | Cells and cell states; genes/proteins/sequences | None; this is an NER-only standoff corpus in the current configuration. |
+| NCBI Disease | Diseases | MeSH 2026 for disease identifiers. OMIM identifiers are retained in resource-distribution metrics but are not loaded as a terminology coverage resource by default. |
+| NLM-Chem | Chemicals | MeSH 2026 for chemical identifiers. |
+
+The terminology coverage battery loads four terminology resources: MeSH XML for MeSH 2026, OBO Cell Ontology (`CL`), OBO MONDO, and OBO ChEBI. High-level terminology branch mappings are configured under `configs/MeSH_*_mappings.yaml`, `configs/cell_ontology_mappings.yaml`, `configs/MONDO_disease_mappings.yaml`, and `configs/ChEBI_chemical_mappings.yaml`.
+
 ## Install
 
 This framework requires Python 3.11 or higher.
@@ -40,7 +60,7 @@ Run the full diagnostic pipeline and regenerate the dashboard:
 bash scripts/update_output.sh
 ```
 
-The script runs the configured metric batteries for basic corpus statistics, overlap, metadata, and terminology coverage, then writes `output/corpus_dashboard.html`.
+The script runs the configured metric batteries for basic corpus statistics, overlap, metadata, and terminology coverage, then writes `docs/dashboard.html`.
 
 Individual batteries can also be run directly:
 
@@ -166,13 +186,13 @@ The dashboard entity scopes are configured in the `configs/dashboard.yaml` confi
 
 ## Outputs
 
-Common outputs are written under `output/`:
+Common outputs include:
 
 * `basic_corpus_stats.json`: scale, density, label, ambiguity, and variation metrics.
 * `overlap_stats.json`: train-test overlap and independence metrics.
 * `metadata_stats.json`: journal, year, journal-topic, and article-topic metrics.
 * `terminology_coverage_stats.json`: terminology coverage, ontology depth, and high-level branch coverage.
-* `corpus_dashboard.html`: a self-contained interactive dashboard summarizing the metrics.
+* `docs/dashboard.html`: a self-contained interactive dashboard summarizing the metrics.
 * `*_audit.json`: optional topic and terminology mapping audit outputs.
 
 ## Citation
