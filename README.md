@@ -2,7 +2,7 @@
 
 **CorpusBenchmarking** is a corpus-centric Python framework for diagnosing the benchmark utility of biomedical named entity recognition (NER) and entity linking (EL) corpora. It treats corpora as measurement instruments rather than fixed inputs, and reports corpus-intrinsic properties that affect what benchmark results can and cannot support.
 
-**Dashboard:** the current dashboard for the preconfigured corpora and terminologies is published at <https://nlm-dir.github.io/CorpusBenchmarking/corpus_dashboard.html>.
+**Dashboard:** the current dashboard for the preconfigured corpora and terminologies is published at <https://nlm-dir.github.io/CorpusBenchmarking/dashboard.html>.
 
 The framework characterizes corpora across several diagnostic families:
 
