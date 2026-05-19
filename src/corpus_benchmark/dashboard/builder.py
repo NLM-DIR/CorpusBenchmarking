@@ -1116,7 +1116,7 @@ def build_terminology_panels(term_data):
               ` ${{ctx.dataset.label}}: ${{ctx.parsed.x.toFixed(1)}}%`
             }} }} }},
           scales:{{
-            x:{{ min:0, max:100,
+            x:{{ min:0,
                  title:{{display:true,text:'% of corpus identifiers in topic',color:tc,font:{{size:11}}}},
                  ticks:{{color:tc,font:{{size:11}},callback:v=>v+'%'}}, grid:{{color:gc}} }},
             y:{{ ticks:{{color:tc,font:{{size:11}}}}, grid:{{color:gc}} }}
