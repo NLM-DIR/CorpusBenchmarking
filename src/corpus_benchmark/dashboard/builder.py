@@ -7,6 +7,7 @@ from .stats import compute_entropy_from_counts, get_id_info, get_total_ann
 from .terminology import _metric_scope_payload
 from .templates import HTML
 
+
 def load_dashboard_config(path: str | Path | None) -> dict:
     if path is None:
         return {}
@@ -15,6 +16,7 @@ def load_dashboard_config(path: str | Path | None) -> dict:
     if not isinstance(config, dict):
         raise ValueError(f"{path} must contain a YAML mapping")
     return config
+
 
 def _entity_scopes(config: dict | None) -> list[dict]:
     raw_scopes = (config or {}).get("entity_scopes", {})
@@ -38,15 +40,19 @@ def _entity_scopes(config: dict | None) -> list[dict]:
         )
     return scopes
 
+
 def _scope_label_counts(corpus, scope):
     scope_key = None if scope.get("include_all") else scope.get("key")
     if scope_key:
-        details = get_metric(
-            corpus.get("metric_results") or [],
-            "label_distribution",
-            "details",
-            scope=scope_key,
-        ) or {}
+        details = (
+            get_metric(
+                corpus.get("metric_results") or [],
+                "label_distribution",
+                "details",
+                scope=scope_key,
+            )
+            or {}
+        )
         counts = details.get("counts", {})
         if counts:
             return counts
@@ -55,6 +61,7 @@ def _scope_label_counts(corpus, scope):
         return counts
     labels = scope.get("labels") or set()
     return {label: count for label, count in counts.items() if label in labels}
+
 
 def _scope_corpus(corpus, scope):
     scope_key = None if scope.get("include_all") else scope.get("key")
@@ -125,34 +132,28 @@ def _scope_corpus(corpus, scope):
     scoped["entropy"] = round(compute_entropy_from_counts(scoped_counts), 2)
     return scoped
 
+
 def _scoped_corpora(corpora, scope):
     scoped = [_scope_corpus(corpus, scope) for corpus in corpora]
     if scope.get("include_all"):
         return scoped
     return [corpus for corpus in scoped if corpus["total_ann"] > 0]
 
+
 def _hbar_payload(corpora, key, colours, *, sorted_values=True, include_null=False):
-    pairs = [
-        (c["name"], c.get(key), colours[c["color_index"] % len(colours)])
-        for c in corpora
-        if include_null or c.get(key) is not None
-    ]
+    pairs = [(c["name"], c.get(key), colours[c["color_index"] % len(colours)]) for c in corpora if include_null or c.get(key) is not None]
     if sorted_values:
         pairs.sort(key=lambda x: (x[1] is None, -(x[1] or 0)))
     return {
         "labels": [p[0] for p in pairs],
         "data": [p[1] if p[1] is not None else 0 for p in pairs],
-        "bg": [
-            col if (val is not None and val > 0) else col + "33"
-            for _, val, col in pairs
-        ],
+        "bg": [col if (val is not None and val > 0) else col + "33" for _, val, col in pairs],
     }
 
+
 def _scope_controls(scopes):
-    return "".join(
-        f'<button class="scope-btn{" sel" if i == 0 else ""}" data-scope="{scope["key"]}">{scope["label"]}</button>'
-        for i, scope in enumerate(scopes)
-    )
+    return "".join(f'<button class="scope-btn{" sel" if i == 0 else ""}" data-scope="{scope["key"]}">{scope["label"]}</button>' for i, scope in enumerate(scopes))
+
 
 def _bar_td(val, col):
     if val is None:
@@ -164,6 +165,7 @@ def _bar_td(val, col):
         f"style='width:{w:.0f}%;background:{col}'></div></div>"
         f"<span class='bar-val'>{val * 100:.1f}%</span></div></td>"
     )
+
 
 def cascade_datasets(corpora, colours):
     with_ov = [c for c in corpora if c.get("overlap")]
@@ -193,8 +195,10 @@ def cascade_datasets(corpora, colours):
         )
     return ds
 
+
 def cascade_datasets_js(corpora, colours):
     return json.dumps(cascade_datasets(corpora, colours))
+
 
 def build_overlap_rows(corpora):
     with_ov = sorted(
@@ -218,11 +222,10 @@ def build_overlap_rows(corpora):
         )
     return "".join(rows)
 
+
 def build_overlap_panels(corpora):
     oc = OV_COLS
-    tabs = (
-        '\n  <button class="tab" data-p="p6">Train-test overlap</button>'
-    )
+    tabs = '\n  <button class="tab" data-p="p6">Train-test overlap</button>'
     panels = (
         f'<div class="panel" id="p6">'
         f'<div class="leg">'
@@ -251,33 +254,23 @@ def build_overlap_panels(corpora):
     )
     return tabs, panels
 
+
 def build_legend_html(corpora, colours, *, use_color_index=False):
     return "".join(
-        f'<span class="li"><span class="lc" style="background:{colours[(c.get("color_index", i) if use_color_index else i) % len(colours)]}"></span>'
-        f'{c["name"]}</span>'
+        f'<span class="li"><span class="lc" style="background:{colours[(c.get("color_index", i) if use_color_index else i) % len(colours)]}"></span>' f'{c["name"]}</span>'
         for i, c in enumerate(corpora)
     )
 
+
 def build_id_status_html(corpora):
-    return "".join(
-        f'<span style="margin-right:10px"><strong>{c["name"]}</strong> '
-        f'<span class="pill p-{c["id_class"]}">{c["id_vocab"]}</span></span>'
-        for c in corpora
-    )
+    return "".join(f'<span style="margin-right:10px"><strong>{c["name"]}</strong> ' f'<span class="pill p-{c["id_class"]}">{c["id_vocab"]}</span></span>' for c in corpora)
+
 
 def build_table_rows(corpora):
     rows = []
     for c in corpora:
-        var = (
-            f"{c['variation']:.2f}"
-            if c["variation"] is not None
-            else '<span style="color:#aaa">n/a</span>'
-        )
-        ids = (
-            f"{c['ids_per_doc']:.2f}"
-            if c["has_ids"]
-            else '<span style="color:#aaa">—</span>'
-        )
+        var = f"{c['variation']:.2f}" if c["variation"] is not None else '<span style="color:#aaa">n/a</span>'
+        ids = f"{c['ids_per_doc']:.2f}" if c["has_ids"] else '<span style="color:#aaa">—</span>'
         rows.append(
             "<tr>"
             f"<td class='l'><strong>{c['name']}</strong></td>"
@@ -291,6 +284,7 @@ def build_table_rows(corpora):
             "</tr>"
         )
     return "\n".join(rows)
+
 
 def _entity_profile_data(corpora, colours, config):
     scopes = _entity_scopes(config)
@@ -334,6 +328,7 @@ def _entity_profile_data(corpora, colours, config):
         }
     return data
 
+
 def _hex_to_rgb(hex_color: str) -> tuple[int, int, int]:
     hex_color = hex_color.lstrip("#")
     if len(hex_color) == 3:
@@ -355,47 +350,23 @@ def build_topic_heatmap(corpora, metadata_key: str = "topic_dist") -> str:
     if not with_td:
         return "<p style='color:var(--color-text-secondary);font-size:13px'>No topic data available.</p>"
 
-    observed_topics = {
-        topic for c in with_td for topic in c["metadata"][metadata_key].keys()
-    }
-    ordered_topics = [
-        topic for topic in JOURNAL_TOPIC_ORDER if topic in observed_topics
-    ] + sorted(observed_topics - set(JOURNAL_TOPIC_ORDER))
-    shown_topics = [
-        topic
-        for topic in ordered_topics
-        if max(c["metadata"][metadata_key].get(topic, 0.0) for c in with_td) >= 1.0
-    ]
+    observed_topics = {topic for c in with_td for topic in c["metadata"][metadata_key].keys()}
+    ordered_topics = [topic for topic in JOURNAL_TOPIC_ORDER if topic in observed_topics] + sorted(observed_topics - set(JOURNAL_TOPIC_ORDER))
+    shown_topics = [topic for topic in ordered_topics if max(c["metadata"][metadata_key].get(topic, 0.0) for c in with_td) >= 1.0]
     if not shown_topics:
         return "<p style='color:var(--color-text-secondary);font-size:13px'>No topic data available.</p>"
 
     heatmap_color = "#7F77DD"
     heatmap_rgb = _hex_to_rgb(heatmap_color)
-    heatmap_max = max(
-        c["metadata"][metadata_key].get(topic, 0.0)
-        for c in with_td
-        for topic in shown_topics
-    )
-    grid_template = (
-        "grid-template-columns:minmax(210px,1.35fr) "
-        f"repeat({len(with_td)},minmax(88px,1fr))"
-    )
-    header = (
-        '<div class="hm-corner">Topic</div>'
-        + "".join(
-            f'<div class="hm-col" title="{escape(c["name"])}">{escape(c["name"])}</div>'
-            for c in with_td
-        )
-    )
+    heatmap_max = max(c["metadata"][metadata_key].get(topic, 0.0) for c in with_td for topic in shown_topics)
+    grid_template = "grid-template-columns:minmax(210px,1.35fr) " f"repeat({len(with_td)},minmax(88px,1fr))"
+    header = '<div class="hm-corner">Topic</div>' + "".join(f'<div class="hm-col" title="{escape(c["name"])}">{escape(c["name"])}</div>' for c in with_td)
     rows = []
     for topic in shown_topics:
         vals = [c["metadata"][metadata_key].get(topic, 0.0) for c in with_td]
         col = JOURNAL_TOPIC_COLORS.get(topic, "#D3D1C7")
         mx = max(vals)
-        dot = (
-            f'<span style="display:inline-block;width:8px;height:8px;border-radius:2px;'
-            f'background:{col};margin-right:6px;vertical-align:middle"></span>'
-        )
+        dot = f'<span style="display:inline-block;width:8px;height:8px;border-radius:2px;' f'background:{col};margin-right:6px;vertical-align:middle"></span>'
         cells = []
         for v in vals:
             if v < 1:
@@ -409,23 +380,16 @@ def build_topic_heatmap(corpora, metadata_key: str = "topic_dist") -> str:
             cells.append(
                 '<div class="hm-cell" '
                 f'style="background:rgb({red},{green},{blue});'
-                f'color:{text_color};'
+                f"color:{text_color};"
                 f'font-weight:{"650" if v == mx else "500"}" '
                 f'title="{escape(topic)}: {v:.1f}%">'
-                f'{v:.0f}%</div>'
+                f"{v:.0f}%</div>"
             )
-        rows.append(
-            f'<div class="hm-row" style="{grid_template}">'
-            f'<div class="hm-topic">{dot}{escape(topic)}</div>'
-            f'{"".join(cells)}</div>'
-        )
+        rows.append(f'<div class="hm-row" style="{grid_template}">' f'<div class="hm-topic">{dot}{escape(topic)}</div>' f'{"".join(cells)}</div>')
 
     total_cells = []
     for c in with_td:
-        shown = sum(
-            c["metadata"][metadata_key].get(t, 0)
-            for t in shown_topics
-        )
+        shown = sum(c["metadata"][metadata_key].get(t, 0) for t in shown_topics)
         total_cells.append(f'<div class="hm-total-cell">{shown:.0f}%</div>')
 
     return f"""
@@ -448,6 +412,7 @@ def build_topic_heatmap(corpora, metadata_key: str = "topic_dist") -> str:
 def build_topic_table(corpora, metadata_key: str = "topic_dist") -> str:
     return build_topic_heatmap(corpora, metadata_key)
 
+
 def _meta_chart_data(corpora, colours):
     ci = {c["name"]: i for i, c in enumerate(corpora)}
 
@@ -457,14 +422,9 @@ def _meta_chart_data(corpora, colours):
     # Journal diversity
     by_jdiv = sorted(
         corpora,
-        key=lambda c: -(
-            ((c.get("metadata") or {}).get("journal") or {}).get("n_journals", 0)
-        ),
+        key=lambda c: -(((c.get("metadata") or {}).get("journal") or {}).get("n_journals", 0)),
     )
-    jdiv_vals = [
-        ((c.get("metadata") or {}).get("journal") or {}).get("n_journals", 0)
-        for c in by_jdiv
-    ]
+    jdiv_vals = [((c.get("metadata") or {}).get("journal") or {}).get("n_journals", 0) for c in by_jdiv]
 
     # Temporal range
     with_yr = [c for c in corpora if (c.get("metadata") or {}).get("year")]
@@ -493,9 +453,7 @@ def _meta_chart_data(corpora, colours):
     decade_ds = [
         {
             "label": dec_lbl(d),
-            "data": [
-                round(c["metadata"]["year"]["decades"].get(d, 0), 1) for c in by_yr
-            ],
+            "data": [round(c["metadata"]["year"]["decades"].get(d, 0), 1) for c in by_yr],
             "backgroundColor": dec_pal[i % len(dec_pal)],
             "borderWidth": 0,
             "borderRadius": 0,
@@ -508,10 +466,7 @@ def _meta_chart_data(corpora, colours):
     if by_yr:
         sel = [by_yr[0], by_yr[-1]] if len(by_yr) > 1 else [by_yr[0]]
         for c in sel:
-            pts = [
-                {"x": yr, "y": pct}
-                for yr, pct in sorted(c["metadata"]["year"]["year_pcts"].items())
-            ]
+            pts = [{"x": yr, "y": pct} for yr, pct in sorted(c["metadata"]["year"]["year_pcts"].items())]
             yby_ds.append(
                 {
                     "label": c["name"],
@@ -528,19 +483,9 @@ def _meta_chart_data(corpora, colours):
     return dict(
         jdiv_labels=json.dumps([c["name"] for c in by_jdiv]),
         jdiv_data=json.dumps(jdiv_vals),
-        jdiv_bg=json.dumps(
-            [
-                col(c["name"]) + ("cc" if jdiv_vals[i] > 0 else "22")
-                for i, c in enumerate(by_jdiv)
-            ]
-        ),
+        jdiv_bg=json.dumps([col(c["name"]) + ("cc" if jdiv_vals[i] > 0 else "22") for i, c in enumerate(by_jdiv)]),
         yr_labels=json.dumps([c["name"] for c in by_yr]),
-        yr_ranges=json.dumps(
-            [
-                [c["metadata"]["year"]["year_min"], c["metadata"]["year"]["year_max"]]
-                for c in by_yr
-            ]
-        ),
+        yr_ranges=json.dumps([[c["metadata"]["year"]["year_min"], c["metadata"]["year"]["year_max"]] for c in by_yr]),
         yr_modes=json.dumps([c["metadata"]["year"]["mode_year"] for c in by_yr]),
         yr_bg=json.dumps([col(c["name"]) + "bb" for c in by_yr]),
         conc_labels=json.dumps([c["name"] for c in by_conc]),
@@ -553,10 +498,9 @@ def _meta_chart_data(corpora, colours):
         yby_ds=json.dumps(yby_ds),
         yr_x_min=yr_x_min,
         yr_x_max=yr_x_max,
-        n_with_meta=sum(
-            1 for c in corpora if (c.get("metadata") or {}).get("has_metadata")
-        ),
+        n_with_meta=sum(1 for c in corpora if (c.get("metadata") or {}).get("has_metadata")),
     )
+
 
 def build_metadata_panels(corpora, colours):
     n = len(corpora)
@@ -794,34 +738,24 @@ def build_metadata_panels(corpora, colours):
 """
     return tabs, panels
 
+
 def _terminology_profiles(term_data):
     scopes = {"all"}
     for corpus_data in term_data.values():
         scopes.update((corpus_data.get("by_scope") or {}).keys())
 
     def terminology_proportion(branch):
-        return branch.get("terminology_proportion", branch.get("proportion", 0)) or 0
+        return branch.get("terminology_proportion", 0) or 0
 
     profiles = {}
     entries_by_scope = {
-        scope: [
-            entry
-            for corpus_data in term_data.values()
-            for entry in (corpus_data.get("by_scope") or {}).get(scope, [])
-            if entry.get("n_input_ids", 0) > 0
-        ]
-        for scope in scopes
+        scope: [entry for corpus_data in term_data.values() for entry in (corpus_data.get("by_scope") or {}).get(scope, []) if entry.get("n_input_ids", 0) > 0] for scope in scopes
     }
     for scope in sorted(scopes):
         entries = entries_by_scope.get(scope, [])
         chart_entries = entries
         if scope == "all":
-            scoped_entries = [
-                entry
-                for scope_key, scope_entries in entries_by_scope.items()
-                if scope_key != "all"
-                for entry in scope_entries
-            ]
+            scoped_entries = [entry for scope_key, scope_entries in entries_by_scope.items() if scope_key != "all" for entry in scope_entries]
             if scoped_entries:
                 chart_entries = scoped_entries
         labels = [entry["series_label"] for entry in entries]
@@ -850,23 +784,13 @@ def _terminology_profiles(term_data):
             key=lambda item: (item[1][0].get("entity_scope_label") or item[0][0], item[1][0]["terminology_label"]),
         ):
             group_colors = [PALETTE[i % len(PALETTE)] for i in range(len(terminology_entries))]
-            depth_labels = sorted(
-                {
-                    int(depth)
-                    for entry in terminology_entries
-                    for depth in entry.get("depth", {})
-                    if str(depth).isdigit()
-                }
-            )
+            depth_labels = sorted({int(depth) for entry in terminology_entries for depth in entry.get("depth", {}) if str(depth).isdigit()})
             depth_datasets = []
             for i, entry in enumerate(terminology_entries):
                 depth_datasets.append(
                     {
                         "label": entry["display_name"],
-                        "data": [
-                            round(entry["depth"].get(str(depth), {}).get("proportion", 0) * 100, 2)
-                            for depth in depth_labels
-                        ],
+                        "data": [round(entry["depth"].get(str(depth), {}).get("terminology_proportion", 0) * 100, 2) for depth in depth_labels],
                         "borderColor": group_colors[i],
                         "backgroundColor": group_colors[i] + "22",
                         "fill": False,
@@ -875,9 +799,11 @@ def _terminology_profiles(term_data):
                         "tension": 0.3,
                     }
                 )
-            depth_note = "Mean annotation depth: " + " | ".join(
-                f"{entry['display_name']} {entry['mean_depth']}" for entry in terminology_entries
-            ) if terminology_entries else "No terminology data for this entity scope."
+            depth_note = (
+                "Mean annotation depth: " + " | ".join(f"{entry['display_name']} {entry['mean_depth']}" for entry in terminology_entries)
+                if terminology_entries
+                else "No terminology data for this entity scope."
+            )
 
             branch_codes = sorted(
                 {
@@ -891,11 +817,7 @@ def _terminology_profiles(term_data):
             branch_labels = []
             for code in branch_codes:
                 label = next(
-                    (
-                        entry["branches"][code].get("label")
-                        for entry in terminology_entries
-                        if code in entry.get("branches", {})
-                    ),
+                    (entry["branches"][code].get("label") for entry in terminology_entries if code in entry.get("branches", {})),
                     code,
                 )
                 branch_labels.append(label if label == code else f"{code} {label}")
@@ -905,10 +827,7 @@ def _terminology_profiles(term_data):
                 recall_datasets.append(
                     {
                         "label": entry["display_name"],
-                        "data": [
-                            round(terminology_proportion(entry.get("branches", {}).get(code, {})) * 100, 2)
-                            for code in branch_codes
-                        ],
+                        "data": [round(terminology_proportion(entry.get("branches", {}).get(code, {})) * 100, 2) for code in branch_codes],
                         "backgroundColor": group_colors[i] + "bb",
                         "borderWidth": 0,
                         "borderRadius": 2,
@@ -917,10 +836,7 @@ def _terminology_profiles(term_data):
                 annotation_datasets.append(
                     {
                         "label": entry["display_name"],
-                        "data": [
-                            round(entry.get("branches", {}).get(code, {}).get("annotation_proportion", 0) * 100, 2)
-                            for code in branch_codes
-                        ],
+                        "data": [round(entry.get("branches", {}).get(code, {}).get("annotation_proportion", 0) * 100, 2) for code in branch_codes],
                         "backgroundColor": group_colors[i] + "bb",
                         "borderWidth": 0,
                         "borderRadius": 2,
@@ -960,6 +876,7 @@ def _terminology_profiles(term_data):
             "chartGroups": chart_groups,
         }
     return profiles
+
 
 def build_terminology_panels(term_data):
     """
@@ -1224,22 +1141,16 @@ def build_terminology_panels(term_data):
 """
     return tabs, panels
 
+
 def _sorted_hbar(corpora, key, colours):
-    pairs = [
-        (c["name"], c.get(key), colours[i % len(colours)])
-        for i, c in enumerate(corpora)
-    ]
+    pairs = [(c["name"], c.get(key), colours[i % len(colours)]) for i, c in enumerate(corpora)]
     pairs.sort(key=lambda x: (x[1] is None, -(x[1] or 0)))
     return (
         json.dumps([p[0] for p in pairs]),
         json.dumps([p[1] if p[1] is not None else 0 for p in pairs]),
-        json.dumps(
-            [
-                col if (val is not None and val > 0) else col + "33"
-                for _, val, col in pairs
-            ]
-        ),
+        json.dumps([col if (val is not None and val > 0) else col + "33" for _, val, col in pairs]),
     )
+
 
 def _all_hbar(corpora, key, colours):
     return (
@@ -1248,18 +1159,16 @@ def _all_hbar(corpora, key, colours):
         json.dumps([colours[i % len(colours)] for i in range(len(corpora))]),
     )
 
+
 def _variation_data(corpora, colours):
-    pairs = [
-        (c["name"], c["variation"], colours[i % len(colours)])
-        for i, c in enumerate(corpora)
-        if c["variation"] is not None
-    ]
+    pairs = [(c["name"], c["variation"], colours[i % len(colours)]) for i, c in enumerate(corpora) if c["variation"] is not None]
     pairs.sort(key=lambda x: -x[1])
     return (
         json.dumps([p[0] for p in pairs]),
         json.dumps([round(p[1], 2) for p in pairs]),
         json.dumps([p[2] for p in pairs]),
     )
+
 
 def build_html(corpora, dashboard_config=None):
     colours = PALETTE[:]
@@ -1301,16 +1210,9 @@ def build_html(corpora, dashboard_config=None):
 
     has_term = any(c.get("terminology") for c in corpora)
     if has_term:
-        term_data_for_panels = {
-            norm_corpus_name(c["raw_name"]): c["terminology"]
-            for c in corpora
-            if c.get("terminology")
-        }
+        term_data_for_panels = {norm_corpus_name(c["raw_name"]): c["terminology"] for c in corpora if c.get("terminology")}
         term_tabs, term_panels = build_terminology_panels(term_data_for_panels)
-        term_panel_js = (
-            "pterm1:window.initTerm1,\n  pterm3:window.initTerm3,"
-            "\n  pterm4:window.initTerm4,\n  pterm5:window.initTerm5,"
-        )
+        term_panel_js = "pterm1:window.initTerm1,\n  pterm3:window.initTerm3," "\n  pterm4:window.initTerm4,\n  pterm5:window.initTerm5,"
     else:
         term_tabs = term_panels = term_panel_js = ""
 
@@ -1326,7 +1228,8 @@ def build_html(corpora, dashboard_config=None):
         h_ann=h_ann,
         legend_html=build_legend_html(corpora, colours),
         scope_controls=_scope_controls(scopes),
-        scope_note=default_profile.get("description") or "Annotation, identifier, difficulty, and overlap views update by entity scope where scoped metric outputs are available. Terminology and metadata panels remain corpus-level.",
+        scope_note=default_profile.get("description")
+        or "Annotation, identifier, difficulty, and overlap views update by entity scope where scoped metric outputs are available. Terminology and metadata panels remain corpus-level.",
         entity_profiles=json.dumps(entity_profiles),
         id_status_html=build_id_status_html(corpora),
         table_rows=build_table_rows(corpora),

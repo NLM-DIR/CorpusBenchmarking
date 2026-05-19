@@ -19,16 +19,13 @@ _ANCHOR_COUNTER_CACHE: dict[tuple[int, int, int, str], TerminologyTopicAnchorCou
 # TODO make these metrics resource-aware: only do ID lookups in the associated terminology
 # TODO report IDs not found as <resource>:<accession>
 
+
 def _identifier_links_for_terminology(
     target: MetricTarget,
     terminology: TerminologyResource,
     annotation_filter_name: str | None,
 ):
-    return [
-        link
-        for link in get_identifier_links(target, annotation_filter_name)
-        if link.identifier is not None and terminology.accepts_resource(link.resource)
-    ]
+    return [link for link in get_identifier_links(target, annotation_filter_name) if link.identifier is not None and terminology.accepts_resource(link.resource)]
 
 
 def _unique_concept_ids(ids: list[str], terminology: TerminologyResource) -> list[str]:
@@ -54,11 +51,7 @@ def _term_overrides_path(params: dict[str, Any], annotation_filter_name: str | N
         if configured_path:
             return str(configured_path)
 
-    configured_path = (
-        params.get("term_overrides_path")
-        or params.get("term_override_path")
-        or params.get("topic_terms_path")
-    )
+    configured_path = params.get("term_overrides_path") or params.get("term_override_path") or params.get("topic_terms_path")
     return str(configured_path) if configured_path else None
 
 
@@ -118,14 +111,10 @@ def high_level_concept_counts(target: MetricTarget, result_name: str, terminolog
             {
                 "branch_code": branch_code,
                 "label": counter.branch_label(branch_code),
-                "treetop": treetop,
-                "treetop_name": treetop_name,
                 "count": round(count, PRECISION),
                 "annotation_count": round(annotation_count, PRECISION),
                 "terminology_total_count": round(terminology_total, PRECISION),
-                "mesh_total_count": round(terminology_total, PRECISION),
                 "terminology_proportion": rounded_terminology_proportion,
-                "proportion": rounded_terminology_proportion,
                 "annotation_proportion": round(annotation_count / len(ids), PRECISION) if ids else 0.0,
             }
         )
@@ -167,8 +156,7 @@ def concept_depth_counts(target: MetricTarget, result_name: str, terminology: Te
                 "depth": d,
                 "count": round(c_count, PRECISION),
                 "terminology_total_count": round(m_count, PRECISION),
-                "mesh_total_count": round(m_count, PRECISION),
-                "proportion": round(c_count / corpus_total, PRECISION) if corpus_total > 0 else 0.0,
+                "terminology_proportion": round(c_count / corpus_total, PRECISION) if corpus_total > 0 else 0.0,
             }
         )
 

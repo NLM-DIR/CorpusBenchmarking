@@ -140,19 +140,19 @@ def test_terminology_panel_chart_helper_uses_chartjs_config_labels() -> None:
             "Example": {
                 "by_scope": {
                     "all": [
-                            {
-                                "corpus": "Example",
-                                "display_name": "Example",
-                                "terminology": "mesh",
-                                "terminology_label": "MeSH",
-                                "series_label": "Example / mesh",
-                                "n_input_ids": 1,
-                                "n_missing_ids": 0,
-                                "n_unique_missing_ids": 0,
-                                "unique_missing": 0,
-                                "missing_pct": 0.0,
-                                "coverage_pct": 100.0,
-                                "mean_depth": "1.00",
+                        {
+                            "corpus": "Example",
+                            "display_name": "Example",
+                            "terminology": "mesh",
+                            "terminology_label": "MeSH",
+                            "series_label": "Example / mesh",
+                            "n_input_ids": 1,
+                            "n_missing_ids": 0,
+                            "n_unique_missing_ids": 0,
+                            "unique_missing": 0,
+                            "missing_pct": 0.0,
+                            "coverage_pct": 100.0,
+                            "mean_depth": "1.00",
                             "high_level": [
                                 {
                                     "branch_code": "D000001",
@@ -167,7 +167,7 @@ def test_terminology_panel_chart_helper_uses_chartjs_config_labels() -> None:
                                     "depth": 1,
                                     "count": 1,
                                     "terminology_total_count": 10,
-                                    "proportion": 0.1,
+                                    "terminology_proportion": 0.1,
                                 }
                             ],
                         }
@@ -232,7 +232,7 @@ def test_dashboard_panel_labels_order_and_removed_cascade_tab() -> None:
                             "total": 10,
                         }
                     },
-                    "depth": {"2": {"count": 4, "proportion": 0.8, "total": 10}},
+                    "depth": {"2": {"count": 4, "terminology_proportion": 0.8, "total": 10}},
                 }
             ]
         }
@@ -240,7 +240,7 @@ def test_dashboard_panel_labels_order_and_removed_cascade_tab() -> None:
 
     html = build_html(corpora)
 
-    assert html.index("data-p=\"p5\">Summary table") < html.index("data-p=\"p1\">Annotation density")
+    assert html.index('data-p="p5">Summary table') < html.index('data-p="p1">Annotation density')
     assert "Identifier density" in html
     assert "Lexical / conceptual structure" in html
     assert "Deprecated terms" in html

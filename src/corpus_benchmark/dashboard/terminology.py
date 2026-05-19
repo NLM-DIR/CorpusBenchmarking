@@ -1,6 +1,7 @@
 import json
 from .base import norm_corpus_name
 
+
 def _term_label(name: str) -> str:
     return {
         "mesh": "MeSH",
@@ -9,16 +10,20 @@ def _term_label(name: str) -> str:
         "chebi": "ChEBI",
     }.get(name, name.replace("_", " "))
 
+
 def _scope_label(scope: str) -> str:
     return scope.replace("_", " ").title()
+
 
 def _metric_scope_payload(metric: dict, scope: str) -> dict | None:
     if scope == "all":
         return metric
     return (metric.get("scopes") or {}).get(scope)
 
+
 def _terminology_proportion(item: dict) -> float:
-    return item.get("terminology_proportion", item.get("proportion", 0)) or 0
+    return item.get("terminology_proportion", item.get("terminology_proportion", 0)) or 0
+
 
 def _process_term_payload(corpus_name: str, terminology_name: str, hlc: dict, dc: dict) -> dict:
     details = hlc.get("details", {})
@@ -36,7 +41,7 @@ def _process_term_payload(corpus_name: str, terminology_name: str, hlc: dict, dc
             "annotation_count": item.get("annotation_count", 0),
             "terminology_proportion": _terminology_proportion(item),
             "annotation_proportion": item.get("annotation_proportion", 0) or 0,
-            "total": item.get("terminology_total_count", item.get("mesh_total_count", 0)),
+            "total": item.get("terminology_total_count", 0),
             "configured_anchor": bool(details.get("term_overrides_path")),
         }
 
@@ -48,8 +53,8 @@ def _process_term_payload(corpus_name: str, terminology_name: str, hlc: dict, dc
         count = item.get("count", 0) or 0
         depth[d] = {
             "count": count,
-            "proportion": item.get("proportion", 0) or 0,
-            "total": item.get("terminology_total_count", item.get("mesh_total_count", 0)),
+            "terminology_proportion": item.get("terminology_proportion", 0) or 0,
+            "total": item.get("terminology_total_count", 0),
         }
         try:
             mean_num += float(d) * float(count)
@@ -74,6 +79,7 @@ def _process_term_payload(corpus_name: str, terminology_name: str, hlc: dict, dc
         "mean_depth": round(mean_num / mean_den, 2) if mean_den else 0,
     }
 
+
 def process_terminology_stats(raw):
     processed = {}
     for corpus_name, metrics in raw.items():
@@ -90,11 +96,7 @@ def process_terminology_stats(raw):
             if not terminology_name:
                 continue
             depth_metric = next(
-                (
-                    m
-                    for m in depth_metrics
-                    if (m.get("details") or {}).get("terminology") == terminology_name
-                ),
+                (m for m in depth_metrics if (m.get("details") or {}).get("terminology") == terminology_name),
                 {},
             )
             for scope in scope_keys:
@@ -110,9 +112,11 @@ def process_terminology_stats(raw):
         processed[norm_corpus_name(corpus_name)] = {"by_scope": by_scope}
     return processed
 
+
 def attach_terminology_to_corpora(corpora, term_data):
     for c in corpora:
         c["terminology"] = term_data.get(norm_corpus_name(c["raw_name"]))
+
 
 def load_terminology_stats(path):
     with open(path, "r", encoding="utf-8") as f:

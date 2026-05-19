@@ -98,7 +98,6 @@ def test_terminology_metric_filters_identifiers_by_resource_and_scope() -> None:
     assert scoped.details["n_input_ids"] == 1
     assert scoped.value[0]["branch_code"] == "CL:0001"
     assert scoped.value[0]["terminology_proportion"] == 0.5
-    assert scoped.value[0]["proportion"] == scoped.value[0]["terminology_proportion"]
 
 
 def test_terminology_topic_anchor_counter_uses_configured_anchor_ids() -> None:
@@ -199,7 +198,6 @@ def test_high_level_concept_counts_uses_unique_corpus_concepts_for_recall() -> N
     assert result.value[0]["count"] == 1
     assert result.value[0]["annotation_count"] == 3
     assert result.value[0]["terminology_proportion"] == 0.5
-    assert result.value[0]["proportion"] == result.value[0]["terminology_proportion"]
     assert result.value[0]["annotation_proportion"] == 1.0
 
 
@@ -227,7 +225,6 @@ def test_high_level_concept_counts_annotation_proportion_uses_all_identifiers() 
     assert result.details["n_missing_ids"] == 1
     assert row["count"] == 1
     assert row["terminology_proportion"] == 0.5
-    assert row["proportion"] == row["terminology_proportion"]
     assert row["annotation_count"] == 2
     assert row["annotation_proportion"] == round(2 / 3, 8)
 
@@ -261,7 +258,6 @@ def test_high_level_concept_counts_treats_mapped_supplementals_as_terminology_co
     assert row["annotation_count"] == 3
     assert row["terminology_total_count"] == 4
     assert row["terminology_proportion"] == 0.5
-    assert row["proportion"] == row["terminology_proportion"]
     assert row["annotation_proportion"] == 1.0
 
 
@@ -321,7 +317,7 @@ def test_concept_depth_counts_reports_annotation_depth_distribution() -> None:
     )
 
     result = concept_depth_counts(target, "concept_depth_counts", terminology)
-    proportions = {row["depth"]: row["proportion"] for row in result.value}
+    proportions = {row["depth"]: row["terminology_proportion"] for row in result.value}
 
     assert proportions[1] == 0.0
     assert proportions[2] == round(2 / 3, 8)
