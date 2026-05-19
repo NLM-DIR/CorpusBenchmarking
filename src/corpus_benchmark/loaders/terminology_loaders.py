@@ -121,11 +121,14 @@ def _load_cached(cache_path: pathlib.Path, name: str) -> TerminologyResource | N
         return None
     logger.info(f"Loading cached terminology {name} from {cache_path}")
     with open(cache_path, "rb") as f:
-        return pickle.load(f)
+        resource = pickle.load(f)
+    resource.cache_path = str(cache_path)
+    return resource
 
 
 def _save_cached(cache_path: pathlib.Path, name: str, resource: TerminologyResource) -> None:
     logger.info(f"Saving terminology {name} to {cache_path}")
+    resource.cache_path = str(cache_path)
     with open(cache_path, "wb") as f:
         pickle.dump(resource, f)
 

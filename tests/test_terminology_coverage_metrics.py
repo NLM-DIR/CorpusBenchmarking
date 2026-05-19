@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import pickle
 from pathlib import Path
 
 from corpus_benchmark.context import BenchmarkContext, MetricTarget
@@ -113,6 +114,32 @@ def test_terminology_topic_anchor_counter_uses_configured_anchor_ids() -> None:
     counter = TerminologyTopicAnchorCounter(terminology, anchor_ids={"A1": "Broad A"})
 
     assert counter.topic_anchor_counts("Term One") == {"Broad A": 1.0}
+
+
+def test_terminology_global_counts_are_persisted(tmp_path: Path) -> None:
+    cache_path = tmp_path / "example.pkl"
+    terminology = TerminologyResource(
+        name="example",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Root A"),
+            "T1": TerminologyConcept(ui="T1", name="Term One", parent_ids=["R1"]),
+        },
+        tree_to_ids={"R1": ["R1"]},
+        cache_path=str(cache_path),
+    )
+    with cache_path.open("wb") as fp:
+        pickle.dump(terminology, fp)
+
+    counter = TerminologyTopicAnchorCounter(terminology)
+
+    assert counter.get_global_counts_by_branch() == {"R1": 2.0}
+    assert counter.get_global_counts_by_depth() == {1: 1.0, 2: 1.0}
+
+    with cache_path.open("rb") as fp:
+        cached = pickle.load(fp)
+
+    assert cached.global_branch_counts_cache == (2, {"R1": 2.0})
+    assert cached.global_depth_counts_cache == (2, {1: 1.0, 2: 1.0})
 
 
 def test_high_level_concept_counts_uses_configured_term_overrides(tmp_path: Path) -> None:

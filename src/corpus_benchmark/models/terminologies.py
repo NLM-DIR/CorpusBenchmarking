@@ -5,6 +5,7 @@ from dataclasses import dataclass, field
 import json
 import logging
 from pathlib import Path
+import pickle
 import re
 import time
 from collections.abc import Iterable, Mapping, Sequence
@@ -45,6 +46,9 @@ class TerminologyResource:
     treetop_names: Dict[str, str] = field(default_factory=dict)
     resource_aliases: List[str] = field(default_factory=list)
     id_prefix: Optional[str] = None
+    global_branch_counts_cache: tuple[int, Dict[str, float]] | None = None
+    global_depth_counts_cache: tuple[int, Dict[int, float]] | None = None
+    cache_path: Optional[str] = None
 
     def __post_init__(self) -> None:
         if not self.resource_aliases:
@@ -60,6 +64,14 @@ class TerminologyResource:
 
     def _cache_signature(self) -> _TerminologyCacheSignature:
         return (len(self.concepts), id(self.concepts))
+
+    def save_cache(self) -> None:
+        if not self.cache_path:
+            return
+        cache_path = Path(self.cache_path)
+        logger.info("Saving terminology %s cache to %s", self.name, cache_path)
+        with cache_path.open("wb") as fp:
+            pickle.dump(self, fp)
 
     @staticmethod
     def normalize_identifier(ui: str | None) -> str | None:
@@ -716,6 +728,16 @@ class TerminologyTopicAnchorCounter:
     def get_global_counts_by_branch(self) -> Dict[str, float]:
         cache_key = id(self.terminology)
         concept_count = len(self.terminology.concepts)
+        persistent_cached = getattr(self.terminology, "global_branch_counts_cache", None)
+        if persistent_cached is not None and persistent_cached[0] == concept_count:
+            logger.info(
+                "Reusing persisted global branch counts for terminology %s (%s concepts, %s result keys)",
+                self.terminology.name,
+                concept_count,
+                len(persistent_cached[1]),
+            )
+            _GLOBAL_BRANCH_COUNT_CACHE[cache_key] = persistent_cached
+            return persistent_cached[1]
         cached = _GLOBAL_BRANCH_COUNT_CACHE.get(cache_key)
         if cached is not None and cached[0] == concept_count:
             logger.info(
@@ -732,7 +754,10 @@ class TerminologyTopicAnchorCounter:
         )
         target_ids = (c.ui for c in self.terminology.concepts.values())
         counts = self.count_by_branch(target_ids, total=concept_count)
-        _GLOBAL_BRANCH_COUNT_CACHE[cache_key] = (concept_count, counts)
+        cache_entry = (concept_count, counts)
+        _GLOBAL_BRANCH_COUNT_CACHE[cache_key] = cache_entry
+        self.terminology.global_branch_counts_cache = cache_entry
+        self.terminology.save_cache()
         return counts
 
     def get_global_counts_by_anchor(self) -> Dict[str, float]:
@@ -758,6 +783,16 @@ class TerminologyTopicAnchorCounter:
     def get_global_counts_by_depth(self) -> Dict[int, float]:
         cache_key = id(self.terminology)
         concept_count = len(self.terminology.concepts)
+        persistent_cached = getattr(self.terminology, "global_depth_counts_cache", None)
+        if persistent_cached is not None and persistent_cached[0] == concept_count:
+            logger.info(
+                "Reusing persisted global depth counts for terminology %s (%s concepts, %s result keys)",
+                self.terminology.name,
+                concept_count,
+                len(persistent_cached[1]),
+            )
+            _GLOBAL_DEPTH_COUNT_CACHE[cache_key] = persistent_cached
+            return persistent_cached[1]
         cached = _GLOBAL_DEPTH_COUNT_CACHE.get(cache_key)
         if cached is not None and cached[0] == concept_count:
             logger.info(
@@ -774,7 +809,10 @@ class TerminologyTopicAnchorCounter:
         )
         target_ids = (c.ui for c in self.terminology.concepts.values())
         counts = self.count_by_depth(target_ids, total=concept_count)
-        _GLOBAL_DEPTH_COUNT_CACHE[cache_key] = (concept_count, counts)
+        cache_entry = (concept_count, counts)
+        _GLOBAL_DEPTH_COUNT_CACHE[cache_key] = cache_entry
+        self.terminology.global_depth_counts_cache = cache_entry
+        self.terminology.save_cache()
         return counts
 
     def branch_label(self, branch_code: str) -> str:
