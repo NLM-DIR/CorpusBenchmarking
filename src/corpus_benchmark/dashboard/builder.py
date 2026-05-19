@@ -812,7 +812,18 @@ def _terminology_profiles(term_data):
                     for code, branch in entry.get("branches", {}).items()
                     if branch.get("configured_anchor") or branch.get("total", 0) > 0 or terminology_proportion(branch) > 0
                 },
-                key=lambda code: -sum(terminology_proportion(entry.get("branches", {}).get(code, {})) for entry in terminology_entries),
+                key=lambda code: (
+                    -sum(terminology_proportion(entry.get("branches", {}).get(code, {})) for entry in terminology_entries),
+                    next(
+                        (
+                            entry["branches"][code].get("label") or code
+                            for entry in terminology_entries
+                            if code in entry.get("branches", {})
+                        ),
+                        code,
+                    ),
+                    code,
+                ),
             )
             branch_labels = []
             for code in branch_codes:
