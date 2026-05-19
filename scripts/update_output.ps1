@@ -25,4 +25,4 @@ python src/corpus_benchmark/dashboard.py output/basic_corpus_stats.json `
     --overlap output/overlap_stats.json `
     --metadata output/metadata_stats.json `
     --terminology output/terminology_coverage_stats.json `
-    --output output/corpus_dashboard.html
+    --output docs/dashboard.html
