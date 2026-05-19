@@ -225,40 +225,40 @@
           },
           "value": [
             {
-              "annotation_count": 1078.96666667,
-              "annotation_proportion": 0.06804356,
+              "annotation_count": 1079.11666667,
+              "annotation_proportion": 0.06805302,
               "branch_code": "D01 Inorganic Chemicals",
-              "count": 74.35,
+              "count": 74.4,
               "label": "D01 Inorganic Chemicals",
-              "terminology_proportion": 0.00902776,
-              "terminology_total_count": 8235.7047619
+              "terminology_proportion": 0.01438837,
+              "terminology_total_count": 5170.84138889
             },
             {
-              "annotation_count": 5871.91666667,
-              "annotation_proportion": 0.37030439,
+              "annotation_count": 5872.49444444,
+              "annotation_proportion": 0.37034082,
               "branch_code": "D02 Organic Chemicals",
-              "count": 408.24384921,
+              "count": 408.46607143,
               "label": "D02 Organic Chemicals",
-              "terminology_proportion": 0.0047878,
-              "terminology_total_count": 85267.53888889
+              "terminology_proportion": 0.00661449,
+              "terminology_total_count": 61753.22345238
             },
             {
-              "annotation_count": 4337.40634921,
-              "annotation_proportion": 0.27353259,
+              "annotation_count": 4338.37857143,
+              "annotation_proportion": 0.27359391,
               "branch_code": "D03 Heterocyclic Compounds",
-              "count": 368.43571429,
+              "count": 368.79404762,
               "label": "D03 Heterocyclic Compounds",
-              "terminology_proportion": 0.00538768,
-              "terminology_total_count": 68384.86706349
+              "terminology_proportion": 0.00755266,
+              "terminology_total_count": 48829.70260582
             },
             {
-              "annotation_count": 999.77777778,
-              "annotation_proportion": 0.06304962,
+              "annotation_count": 1000.01666667,
+              "annotation_proportion": 0.06306468,
               "branch_code": "D04 Polycyclic Compounds",
-              "count": 75.66111111,
+              "count": 75.75555556,
               "label": "D04 Polycyclic Compounds",
-              "terminology_proportion": 0.00571175,
-              "terminology_total_count": 13246.57301587
+              "terminology_proportion": 0.00735141,
+              "terminology_total_count": 10304.90154762
             },
             {
               "annotation_count": 11.18452381,
@@ -266,8 +266,8 @@
               "branch_code": "D05 Macromolecular Substances",
               "count": 2.16369048,
               "label": "D05 Macromolecular Substances",
-              "terminology_proportion": 0.0008437,
-              "terminology_total_count": 2564.53229548
+              "terminology_proportion": 0.00117984,
+              "terminology_total_count": 1833.8862149
             },
             {
               "annotation_count": 246.98333333,
@@ -275,8 +275,8 @@
               "branch_code": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "count": 19.45,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
-              "terminology_proportion": 0.00920651,
-              "terminology_total_count": 2112.63647186
+              "terminology_proportion": 0.01139321,
+              "terminology_total_count": 1707.15674002
             },
             {
               "annotation_count": 10.04166667,
@@ -284,26 +284,26 @@
               "branch_code": "D07 Enzyme Inhibitors",
               "count": 1.16666667,
               "label": "D07 Enzyme Inhibitors",
-              "terminology_proportion": 0.02739726,
-              "terminology_total_count": 42.58333333
+              "terminology_proportion": 0.02890571,
+              "terminology_total_count": 40.36111111
             },
             {
-              "annotation_count": 30.25,
-              "annotation_proportion": 0.00190767,
+              "annotation_count": 30.41666667,
+              "annotation_proportion": 0.00191819,
               "branch_code": "D08 Enzymes and Coenzymes",
-              "count": 5.875,
+              "count": 5.91666667,
               "label": "D08 Enzymes and Coenzymes",
-              "terminology_proportion": 0.00024049,
-              "terminology_total_count": 24429.6006105
+              "terminology_proportion": 0.00031199,
+              "terminology_total_count": 18964.28894689
             },
             {
-              "annotation_count": 669.36984127,
-              "annotation_proportion": 0.04221289,
+              "annotation_count": 669.44761905,
+              "annotation_proportion": 0.0422178,
               "branch_code": "D09 Carbohydrates",
-              "count": 43.73174603,
+              "count": 43.77619048,
               "label": "D09 Carbohydrates",
-              "terminology_proportion": 0.00306508,
-              "terminology_total_count": 14267.75602453
+              "terminology_proportion": 0.00433024,
+              "terminology_total_count": 10109.40939755
             },
             {
               "annotation_count": 208.68333333,
@@ -311,8 +311,8 @@
               "branch_code": "D10 Lipids",
               "count": 23.46666667,
               "label": "D10 Lipids",
-              "terminology_proportion": 0.00360849,
-              "terminology_total_count": 6503.19047619
+              "terminology_proportion": 0.00457538,
+              "terminology_total_count": 5128.89535714
             },
             {
               "annotation_count": 0.0,
@@ -324,13 +324,13 @@
               "terminology_total_count": 0.0
             },
             {
-              "annotation_count": 873.59285714,
-              "annotation_proportion": 0.05509194,
+              "annotation_count": 873.67619048,
+              "annotation_proportion": 0.05509719,
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
-              "count": 80.56666667,
+              "count": 80.62222222,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "terminology_proportion": 0.00069076,
-              "terminology_total_count": 116635.02968421
+              "terminology_proportion": 0.00101749,
+              "terminology_total_count": 79236.2078084
             },
             {
               "annotation_count": 338.80952381,
@@ -338,17 +338,17 @@
               "branch_code": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "count": 25.01190476,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "terminology_proportion": 0.00366091,
-              "terminology_total_count": 6832.1484127
+              "terminology_proportion": 0.00423804,
+              "terminology_total_count": 5901.75904762
             },
             {
-              "annotation_count": 38.44444444,
-              "annotation_proportion": 0.00242445,
+              "annotation_count": 40.94444444,
+              "annotation_proportion": 0.00258211,
               "branch_code": "D20 Complex Mixtures",
-              "count": 7.02777778,
+              "count": 7.27777778,
               "label": "D20 Complex Mixtures",
-              "terminology_proportion": 0.00235462,
-              "terminology_total_count": 2984.67777778
+              "terminology_proportion": 0.00287267,
+              "terminology_total_count": 2533.45853175
             },
             {
               "annotation_count": 226.3015873,
@@ -356,8 +356,8 @@
               "branch_code": "D23 Biological Factors",
               "count": 16.62777778,
               "label": "D23 Biological Factors",
-              "terminology_proportion": 0.00261849,
-              "terminology_total_count": 6350.1461039
+              "terminology_proportion": 0.00331619,
+              "terminology_total_count": 5014.12388167
             },
             {
               "annotation_count": 5.32142857,
@@ -365,17 +365,17 @@
               "branch_code": "D25 Biomedical and Dental Materials",
               "count": 1.94642857,
               "label": "D25 Biomedical and Dental Materials",
-              "terminology_proportion": 0.00061215,
-              "terminology_total_count": 3179.65992063
+              "terminology_proportion": 0.00080504,
+              "terminology_total_count": 2417.81472222
             },
             {
-              "annotation_count": 38.475,
-              "annotation_proportion": 0.00242637,
+              "annotation_count": 40.975,
+              "annotation_proportion": 0.00258403,
               "branch_code": "D26 Pharmaceutical Preparations",
-              "count": 5.15833333,
+              "count": 5.40833333,
               "label": "D26 Pharmaceutical Preparations",
-              "terminology_proportion": 0.00166672,
-              "terminology_total_count": 3094.89563492
+              "terminology_proportion": 0.0030576,
+              "terminology_total_count": 1768.81527778
             },
             {
               "annotation_count": 244.20833333,
@@ -383,8 +383,8 @@
               "branch_code": "D27 Chemical Actions and Uses",
               "count": 28.75,
               "label": "D27 Chemical Actions and Uses",
-              "terminology_proportion": 0.04524285,
-              "terminology_total_count": 635.45952381
+              "terminology_proportion": 0.04576903,
+              "terminology_total_count": 628.15396825
             }
           ]
         },
@@ -417,8 +417,8 @@
               "branch_code": "C01 Infections",
               "count": 52.8452381,
               "label": "C01 Infections",
-              "terminology_proportion": 0.07817721,
-              "terminology_total_count": 675.96731602
+              "terminology_proportion": 0.08166791,
+              "terminology_total_count": 647.07472342
             },
             {
               "annotation_count": 469.94011544,
@@ -426,8 +426,8 @@
               "branch_code": "C04 Neoplasms",
               "count": 52.1294733,
               "label": "C04 Neoplasms",
-              "terminology_proportion": 0.06609818,
-              "terminology_total_count": 788.66729798
+              "terminology_proportion": 0.08270891,
+              "terminology_total_count": 630.27635762
             },
             {
               "annotation_count": 186.53138528,
@@ -435,17 +435,17 @@
               "branch_code": "C05 Musculoskeletal Diseases",
               "count": 29.43217893,
               "label": "C05 Musculoskeletal Diseases",
-              "terminology_proportion": 0.0201289,
-              "terminology_total_count": 1462.18513709
+              "terminology_proportion": 0.03500238,
+              "terminology_total_count": 840.86222082
             },
             {
-              "annotation_count": 519.80670996,
-              "annotation_proportion": 0.03856991,
+              "annotation_count": 520.14004329,
+              "annotation_proportion": 0.03859465,
               "branch_code": "C06 Digestive System Diseases",
-              "count": 51.62305195,
+              "count": 51.78971861,
               "label": "C06 Digestive System Diseases",
-              "terminology_proportion": 0.11421464,
-              "terminology_total_count": 451.98279221
+              "terminology_proportion": 0.14337679,
+              "terminology_total_count": 361.21411015
             },
             {
               "annotation_count": 41.73333333,
@@ -453,17 +453,17 @@
               "branch_code": "C07 Stomatognathic Diseases",
               "count": 15.01111111,
               "label": "C07 Stomatognathic Diseases",
-              "terminology_proportion": 0.03700559,
-              "terminology_total_count": 405.64444444
+              "terminology_proportion": 0.05679469,
+              "terminology_total_count": 264.30483907
             },
             {
-              "annotation_count": 176.45,
-              "annotation_proportion": 0.01309268,
+              "annotation_count": 176.53333333,
+              "annotation_proportion": 0.01309886,
               "branch_code": "C08 Respiratory Tract Diseases",
-              "count": 30.45,
+              "count": 30.53333333,
               "label": "C08 Respiratory Tract Diseases",
-              "terminology_proportion": 0.11775087,
-              "terminology_total_count": 258.5968254
+              "terminology_proportion": 0.14253664,
+              "terminology_total_count": 214.21392857
             },
             {
               "annotation_count": 46.03333333,
@@ -471,8 +471,8 @@
               "branch_code": "C09 Otorhinolaryngologic Diseases",
               "count": 7.28333333,
               "label": "C09 Otorhinolaryngologic Diseases",
-              "terminology_proportion": 0.03487388,
-              "terminology_total_count": 208.84780579
+              "terminology_proportion": 0.04975501,
+              "terminology_total_count": 146.3839169
             },
             {
               "annotation_count": 2261.01850649,
@@ -480,8 +480,8 @@
               "branch_code": "C10 Nervous System Diseases",
               "count": 150.19816017,
               "label": "C10 Nervous System Diseases",
-              "terminology_proportion": 0.07326642,
-              "terminology_total_count": 2050.02729958
+              "terminology_proportion": 0.11009173,
+              "terminology_total_count": 1364.30008323
             },
             {
               "annotation_count": 194.46190476,
@@ -489,8 +489,8 @@
               "branch_code": "C11 Eye Diseases",
               "count": 35.4547619,
               "label": "C11 Eye Diseases",
-              "terminology_proportion": 0.03669915,
-              "terminology_total_count": 966.09222689
+              "terminology_proportion": 0.05791294,
+              "terminology_total_count": 612.20790149
             },
             {
               "annotation_count": 1161.78538961,
@@ -498,8 +498,8 @@
               "branch_code": "C12 Urogenital Diseases",
               "count": 70.24902597,
               "label": "C12 Urogenital Diseases",
-              "terminology_proportion": 0.12392711,
-              "terminology_total_count": 566.85762012
+              "terminology_proportion": 0.16668644,
+              "terminology_total_count": 421.44416228
             },
             {
               "annotation_count": 230.64181097,
@@ -507,8 +507,8 @@
               "branch_code": "C13 Female Urogenital Diseases and Pregnancy Complications",
               "count": 16.7520202,
               "label": "C13 Female Urogenital Diseases and Pregnancy Complications",
-              "terminology_proportion": 0.11851758,
-              "terminology_total_count": 141.34628954
+              "terminology_proportion": 0.15278785,
+              "terminology_total_count": 109.64235819
             },
             {
               "annotation_count": 2111.03300866,
@@ -516,8 +516,8 @@
               "branch_code": "C14 Cardiovascular Diseases",
               "count": 110.99967532,
               "label": "C14 Cardiovascular Diseases",
-              "terminology_proportion": 0.16332413,
-              "terminology_total_count": 679.62814963
+              "terminology_proportion": 0.20996838,
+              "terminology_total_count": 528.649482
             },
             {
               "annotation_count": 591.55440115,
@@ -525,35 +525,35 @@
               "branch_code": "C15 Hemic and Lymphatic Diseases",
               "count": 41.02106782,
               "label": "C15 Hemic and Lymphatic Diseases",
-              "terminology_proportion": 0.0775269,
-              "terminology_total_count": 529.12045455
+              "terminology_proportion": 0.0963371,
+              "terminology_total_count": 425.80757576
             },
             {
-              "annotation_count": 121.17128427,
-              "annotation_proportion": 0.00899097,
+              "annotation_count": 121.92128427,
+              "annotation_proportion": 0.00904662,
               "branch_code": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "count": 30.21424964,
+              "count": 30.96424964,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "terminology_proportion": 0.01019786,
-              "terminology_total_count": 2962.80287319
+              "terminology_proportion": 0.01769892,
+              "terminology_total_count": 1749.49913198
             },
             {
-              "annotation_count": 214.94285714,
-              "annotation_proportion": 0.01594887,
+              "annotation_count": 215.27619048,
+              "annotation_proportion": 0.0159736,
               "branch_code": "C17 Skin and Connective Tissue Diseases",
-              "count": 39.45952381,
+              "count": 39.79285714,
               "label": "C17 Skin and Connective Tissue Diseases",
-              "terminology_proportion": 0.0465477,
-              "terminology_total_count": 847.72229437
+              "terminology_proportion": 0.07079134,
+              "terminology_total_count": 562.11478776
             },
             {
-              "annotation_count": 333.84949495,
-              "annotation_proportion": 0.0247718,
+              "annotation_count": 333.93282828,
+              "annotation_proportion": 0.02477798,
               "branch_code": "C18 Nutritional and Metabolic Diseases",
-              "count": 38.60328283,
+              "count": 38.68661616,
               "label": "C18 Nutritional and Metabolic Diseases",
-              "terminology_proportion": 0.04946058,
-              "terminology_total_count": 780.48584136
+              "terminology_proportion": 0.06571288,
+              "terminology_total_count": 588.72201399
             },
             {
               "annotation_count": 166.76233766,
@@ -561,8 +561,8 @@
               "branch_code": "C19 Endocrine System Diseases",
               "count": 24.10995671,
               "label": "C19 Endocrine System Diseases",
-              "terminology_proportion": 0.07039447,
-              "terminology_total_count": 342.49788431
+              "terminology_proportion": 0.10515093,
+              "terminology_total_count": 229.28904652
             },
             {
               "annotation_count": 133.02222222,
@@ -570,8 +570,8 @@
               "branch_code": "C20 Immune System Diseases",
               "count": 24.09246032,
               "label": "C20 Immune System Diseases",
-              "terminology_proportion": 0.09524758,
-              "terminology_total_count": 252.94563492
+              "terminology_proportion": 0.11446314,
+              "terminology_total_count": 210.4822619
             },
             {
               "annotation_count": 0.0,
@@ -588,17 +588,17 @@
               "branch_code": "C22 Animal Diseases",
               "count": 1.0,
               "label": "C22 Animal Diseases",
-              "terminology_proportion": 0.01361912,
-              "terminology_total_count": 73.42619048
+              "terminology_proportion": 0.01392735,
+              "terminology_total_count": 71.80119048
             },
             {
-              "annotation_count": 2750.94285714,
-              "annotation_proportion": 0.20412131,
+              "annotation_count": 2751.02619048,
+              "annotation_proportion": 0.20412749,
               "branch_code": "C23 Pathological Conditions, Signs and Symptoms",
-              "count": 183.67142857,
+              "count": 183.7547619,
               "label": "C23 Pathological Conditions, Signs and Symptoms",
-              "terminology_proportion": 0.08856394,
-              "terminology_total_count": 2073.88504829
+              "terminology_proportion": 0.1400018,
+              "terminology_total_count": 1312.51711178
             },
             {
               "annotation_count": 0.33333333,
@@ -606,17 +606,17 @@
               "branch_code": "C24 Occupational Diseases",
               "count": 0.33333333,
               "label": "C24 Occupational Diseases",
-              "terminology_proportion": 0.02640015,
-              "terminology_total_count": 12.62619048
+              "terminology_proportion": 0.0267533,
+              "terminology_total_count": 12.45952381
             },
             {
-              "annotation_count": 791.13333333,
-              "annotation_proportion": 0.05870248,
+              "annotation_count": 791.8,
+              "annotation_proportion": 0.05875195,
               "branch_code": "C25 Chemically-Induced Disorders",
-              "count": 22.15,
+              "count": 22.48333333,
               "label": "C25 Chemically-Induced Disorders",
-              "terminology_proportion": 0.24898964,
-              "terminology_total_count": 88.95952381
+              "terminology_proportion": 0.20610929,
+              "terminology_total_count": 109.08452381
             },
             {
               "annotation_count": 94.16666667,
@@ -624,8 +624,8 @@
               "branch_code": "C26 Wounds and Injuries",
               "count": 13.08333333,
               "label": "C26 Wounds and Injuries",
-              "terminology_proportion": 0.06535626,
-              "terminology_total_count": 200.18485958
+              "terminology_proportion": 0.06773709,
+              "terminology_total_count": 193.14874847
             }
           ]
         },
@@ -2340,53 +2340,53 @@
               "branch_code": "Endothelial",
               "count": 10.0,
               "label": "Endothelial",
-              "terminology_proportion": 0.16085791,
-              "terminology_total_count": 62.16666667
+              "terminology_proportion": 0.1511335,
+              "terminology_total_count": 66.16666667
             },
             {
-              "annotation_count": 112.27604167,
-              "annotation_proportion": 0.02270037,
+              "annotation_count": 211.21875,
+              "annotation_proportion": 0.04270496,
               "branch_code": "Epithelial",
-              "count": 13.43229167,
+              "count": 19.76041667,
               "label": "Epithelial",
-              "terminology_proportion": 0.05304295,
-              "terminology_total_count": 253.23423032
+              "terminology_proportion": 0.0487804,
+              "terminology_total_count": 405.08923611
             },
             {
-              "annotation_count": 11.375,
-              "annotation_proportion": 0.00229984,
+              "annotation_count": 20.5,
+              "annotation_proportion": 0.00414476,
               "branch_code": "Germ line",
-              "count": 0.875,
+              "count": 2.16666667,
               "label": "Germ line",
-              "terminology_proportion": 0.36842105,
-              "terminology_total_count": 2.375
+              "terminology_proportion": 0.59090909,
+              "terminology_total_count": 3.66666667
             },
             {
-              "annotation_count": 255.16666667,
-              "annotation_proportion": 0.05159051,
+              "annotation_count": 260.16666667,
+              "annotation_proportion": 0.05260143,
               "branch_code": "Glial",
-              "count": 5.83333333,
+              "count": 6.83333333,
               "label": "Glial",
-              "terminology_proportion": 0.05831713,
-              "terminology_total_count": 100.02777778
+              "terminology_proportion": 0.06029412,
+              "terminology_total_count": 113.33333333
             },
             {
-              "annotation_count": 39.94444444,
-              "annotation_proportion": 0.00807611,
+              "annotation_count": 62.75,
+              "annotation_proportion": 0.01268702,
               "branch_code": "Hematopoietic",
-              "count": 1.40277778,
+              "count": 1.875,
               "label": "Hematopoietic",
-              "terminology_proportion": 0.12546584,
-              "terminology_total_count": 11.18055556
+              "terminology_proportion": 0.14018692,
+              "terminology_total_count": 13.375
             },
             {
-              "annotation_count": 397.75,
-              "annotation_proportion": 0.08041852,
+              "annotation_count": 400.25,
+              "annotation_proportion": 0.08092398,
               "branch_code": "Mesenchymal/stromal",
-              "count": 15.75,
+              "count": 16.25,
               "label": "Mesenchymal/stromal",
-              "terminology_proportion": 0.11206641,
-              "terminology_total_count": 140.54166667
+              "terminology_proportion": 0.1104503,
+              "terminology_total_count": 147.125
             },
             {
               "annotation_count": 117.5,
@@ -2394,35 +2394,35 @@
               "branch_code": "Muscle",
               "count": 6.75,
               "label": "Muscle",
-              "terminology_proportion": 0.10828877,
-              "terminology_total_count": 62.33333333
+              "terminology_proportion": 0.10018553,
+              "terminology_total_count": 67.375
             },
             {
-              "annotation_count": 880.85416667,
-              "annotation_proportion": 0.17809425,
+              "annotation_count": 991.35416667,
+              "annotation_proportion": 0.20043554,
               "branch_code": "Neuronal",
-              "count": 23.89583333,
+              "count": 29.5625,
               "label": "Neuronal",
-              "terminology_proportion": 0.04453392,
-              "terminology_total_count": 536.57604167
+              "terminology_proportion": 0.03989896,
+              "terminology_total_count": 740.93402778
             },
             {
-              "annotation_count": 634.34236111,
-              "annotation_proportion": 0.12825361,
+              "annotation_count": 1151.76041667,
+              "annotation_proportion": 0.23286705,
               "branch_code": "Other",
-              "count": 43.27847222,
+              "count": 63.13541667,
               "label": "Other",
-              "terminology_proportion": 0.06584929,
-              "terminology_total_count": 657.23524306
+              "terminology_proportion": 0.07010359,
+              "terminology_total_count": 900.60173611
             },
             {
-              "annotation_count": 359.0,
-              "annotation_proportion": 0.07258391,
+              "annotation_count": 408.5,
+              "annotation_proportion": 0.08259199,
               "branch_code": "Stem/progenitor",
-              "count": 12.0,
+              "count": 15.66666667,
               "label": "Stem/progenitor",
-              "terminology_proportion": 0.10951958,
-              "terminology_total_count": 109.56944444
+              "terminology_proportion": 0.11823899,
+              "terminology_total_count": 132.5
             },
             {
               "annotation_count": 0.0,
@@ -2431,7 +2431,7 @@
               "count": 0.0,
               "label": "Trophoblast/placental",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 7.33333333
+              "terminology_total_count": 7.83333333
             }
           ]
         },
@@ -6119,35 +6119,35 @@
               "branch_code": "Endothelial",
               "count": 3.0,
               "label": "Endothelial",
-              "terminology_proportion": 0.04825737,
-              "terminology_total_count": 62.16666667
+              "terminology_proportion": 0.04534005,
+              "terminology_total_count": 66.16666667
             },
             {
-              "annotation_count": 268.72916667,
-              "annotation_proportion": 0.04639661,
+              "annotation_count": 393.33333333,
+              "annotation_proportion": 0.06790976,
               "branch_code": "Epithelial",
-              "count": 23.38541667,
+              "count": 36.95833333,
               "label": "Epithelial",
-              "terminology_proportion": 0.09234698,
-              "terminology_total_count": 253.23423032
+              "terminology_proportion": 0.09123504,
+              "terminology_total_count": 405.08923611
             },
             {
-              "annotation_count": 0.5,
-              "annotation_proportion": 8.633e-05,
+              "annotation_count": 1.0,
+              "annotation_proportion": 0.00017265,
               "branch_code": "Germ line",
-              "count": 0.5,
+              "count": 1.0,
               "label": "Germ line",
-              "terminology_proportion": 0.21052632,
-              "terminology_total_count": 2.375
+              "terminology_proportion": 0.27272727,
+              "terminology_total_count": 3.66666667
             },
             {
-              "annotation_count": 110.75,
-              "annotation_proportion": 0.0191212,
+              "annotation_count": 113.0,
+              "annotation_proportion": 0.01950967,
               "branch_code": "Glial",
-              "count": 9.25,
+              "count": 10.0,
               "label": "Glial",
-              "terminology_proportion": 0.09247431,
-              "terminology_total_count": 100.02777778
+              "terminology_proportion": 0.08823529,
+              "terminology_total_count": 113.33333333
             },
             {
               "annotation_count": 17.25,
@@ -6155,8 +6155,8 @@
               "branch_code": "Hematopoietic",
               "count": 2.25,
               "label": "Hematopoietic",
-              "terminology_proportion": 0.20124224,
-              "terminology_total_count": 11.18055556
+              "terminology_proportion": 0.1682243,
+              "terminology_total_count": 13.375
             },
             {
               "annotation_count": 328.25,
@@ -6164,8 +6164,8 @@
               "branch_code": "Mesenchymal/stromal",
               "count": 14.08333333,
               "label": "Mesenchymal/stromal",
-              "terminology_proportion": 0.10020753,
-              "terminology_total_count": 140.54166667
+              "terminology_proportion": 0.09572359,
+              "terminology_total_count": 147.125
             },
             {
               "annotation_count": 165.75,
@@ -6173,35 +6173,35 @@
               "branch_code": "Muscle",
               "count": 9.5,
               "label": "Muscle",
-              "terminology_proportion": 0.15240642,
-              "terminology_total_count": 62.33333333
+              "terminology_proportion": 0.14100186,
+              "terminology_total_count": 67.375
             },
             {
-              "annotation_count": 1495.375,
-              "annotation_proportion": 0.25817939,
+              "annotation_count": 1647.0,
+              "annotation_proportion": 0.28435773,
               "branch_code": "Neuronal",
-              "count": 41.25,
+              "count": 48.16666667,
               "label": "Neuronal",
-              "terminology_proportion": 0.07687634,
-              "terminology_total_count": 536.57604167
+              "terminology_proportion": 0.06500804,
+              "terminology_total_count": 740.93402778
             },
             {
-              "annotation_count": 1072.34583333,
-              "annotation_proportion": 0.18514258,
+              "annotation_count": 1590.58333333,
+              "annotation_proportion": 0.27461729,
               "branch_code": "Other",
-              "count": 69.2,
+              "count": 86.83333333,
               "label": "Other",
-              "terminology_proportion": 0.10528955,
-              "terminology_total_count": 657.23524306
+              "terminology_proportion": 0.09641702,
+              "terminology_total_count": 900.60173611
             },
             {
-              "annotation_count": 796.83333333,
-              "annotation_proportion": 0.13757482,
+              "annotation_count": 819.83333333,
+              "annotation_proportion": 0.14154581,
               "branch_code": "Stem/progenitor",
-              "count": 18.54166667,
+              "count": 20.20833333,
               "label": "Stem/progenitor",
-              "terminology_proportion": 0.16922297,
-              "terminology_total_count": 109.56944444
+              "terminology_proportion": 0.15251572,
+              "terminology_total_count": 132.5
             },
             {
               "annotation_count": 5.0,
@@ -6209,8 +6209,8 @@
               "branch_code": "Trophoblast/placental",
               "count": 2.0,
               "label": "Trophoblast/placental",
-              "terminology_proportion": 0.27272727,
-              "terminology_total_count": 7.33333333
+              "terminology_proportion": 0.25531915,
+              "terminology_total_count": 7.83333333
             }
           ]
         },
@@ -8448,13 +8448,13 @@
           },
           "value": [
             {
-              "annotation_count": 0.5,
-              "annotation_proportion": 0.00016234,
+              "annotation_count": 1.0,
+              "annotation_proportion": 0.00032468,
               "branch_code": "Auditory and otorhinolaryngologic",
-              "count": 0.5,
+              "count": 1.0,
               "label": "Auditory and otorhinolaryngologic",
-              "terminology_proportion": 0.05586592,
-              "terminology_total_count": 8.95
+              "terminology_proportion": 0.05194805,
+              "terminology_total_count": 19.25
             },
             {
               "annotation_count": 0.0,
@@ -8463,7 +8463,7 @@
               "count": 0.0,
               "label": "Breast",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2.75
+              "terminology_total_count": 3.0
             },
             {
               "annotation_count": 0.0,
@@ -8493,13 +8493,13 @@
               "terminology_total_count": 1.0
             },
             {
-              "annotation_count": 1.5,
-              "annotation_proportion": 0.00048701,
+              "annotation_count": 3.0,
+              "annotation_proportion": 0.00097403,
               "branch_code": "Developmental, congenital, and perinatal",
-              "count": 0.5,
+              "count": 1.0,
               "label": "Developmental, congenital, and perinatal",
-              "terminology_proportion": 0.02371229,
-              "terminology_total_count": 21.08611111
+              "terminology_proportion": 0.0244898,
+              "terminology_total_count": 40.83333333
             },
             {
               "annotation_count": 1.0,
@@ -8507,8 +8507,8 @@
               "branch_code": "Digestive and oral",
               "count": 1.0,
               "label": "Digestive and oral",
-              "terminology_proportion": 0.05468058,
-              "terminology_total_count": 18.2880291
+              "terminology_proportion": 0.02209945,
+              "terminology_total_count": 45.25
             },
             {
               "annotation_count": 0.0,
@@ -8517,7 +8517,7 @@
               "count": 0.0,
               "label": "Endocrine",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 6.875
+              "terminology_total_count": 15.83333333
             },
             {
               "annotation_count": 0.0,
@@ -8526,16 +8526,16 @@
               "count": 0.0,
               "label": "Extrinsic, toxic, and occupational",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 12.83333333
+              "terminology_total_count": 25.5
             },
             {
-              "annotation_count": 49.38472222,
-              "annotation_proportion": 0.016034,
+              "annotation_count": 138.5,
+              "annotation_proportion": 0.04496753,
               "branch_code": "Genetic and genomic",
-              "count": 8.79305556,
+              "count": 28.0,
               "label": "Genetic and genomic",
-              "terminology_proportion": 0.02192354,
-              "terminology_total_count": 401.07827381
+              "terminology_proportion": 0.01921537,
+              "terminology_total_count": 1457.16666667
             },
             {
               "annotation_count": 0.0,
@@ -8544,7 +8544,7 @@
               "count": 0.0,
               "label": "Hematologic",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 14.275
+              "terminology_total_count": 31.16666667
             },
             {
               "annotation_count": 0.0,
@@ -8553,25 +8553,25 @@
               "count": 0.0,
               "label": "Idiopathic",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 37.70833333
+              "terminology_total_count": 79.5
             },
             {
-              "annotation_count": 0.66666667,
-              "annotation_proportion": 0.00021645,
+              "annotation_count": 1.0,
+              "annotation_proportion": 0.00032468,
               "branch_code": "Immune",
-              "count": 0.33333333,
+              "count": 0.5,
               "label": "Immune",
-              "terminology_proportion": 0.02745367,
-              "terminology_total_count": 12.14166667
+              "terminology_proportion": 0.01734104,
+              "terminology_total_count": 28.83333333
             },
             {
-              "annotation_count": 17.5,
-              "annotation_proportion": 0.00568182,
+              "annotation_count": 18.0,
+              "annotation_proportion": 0.00584416,
               "branch_code": "Infectious and post-infectious",
-              "count": 2.25,
+              "count": 2.5,
               "label": "Infectious and post-infectious",
-              "terminology_proportion": 0.03355983,
-              "terminology_total_count": 67.04444444
+              "terminology_proportion": 0.01393081,
+              "terminology_total_count": 179.45833333
             },
             {
               "annotation_count": 2.0,
@@ -8579,8 +8579,8 @@
               "branch_code": "Inflammatory",
               "count": 1.0,
               "label": "Inflammatory",
-              "terminology_proportion": 0.03664122,
-              "terminology_total_count": 27.29166667
+              "terminology_proportion": 0.0159787,
+              "terminology_total_count": 62.58333333
             },
             {
               "annotation_count": 0.0,
@@ -8589,16 +8589,16 @@
               "count": 0.0,
               "label": "Integumentary",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 16.79166667
+              "terminology_total_count": 40.83333333
             },
             {
-              "annotation_count": 10.0,
-              "annotation_proportion": 0.00324675,
+              "annotation_count": 17.0,
+              "annotation_proportion": 0.00551948,
               "branch_code": "Metabolic and nutritional",
-              "count": 2.125,
+              "count": 3.0,
               "label": "Metabolic and nutritional",
-              "terminology_proportion": 0.09189347,
-              "terminology_total_count": 23.12460317
+              "terminology_proportion": 0.04422604,
+              "terminology_total_count": 67.83333333
             },
             {
               "annotation_count": 1.0,
@@ -8606,8 +8606,8 @@
               "branch_code": "Musculoskeletal",
               "count": 1.0,
               "label": "Musculoskeletal",
-              "terminology_proportion": 0.08421053,
-              "terminology_total_count": 11.875
+              "terminology_proportion": 0.04081633,
+              "terminology_total_count": 24.5
             },
             {
               "annotation_count": 8.0,
@@ -8615,8 +8615,8 @@
               "branch_code": "Nervous system",
               "count": 1.0,
               "label": "Nervous system",
-              "terminology_proportion": 0.12392427,
-              "terminology_total_count": 8.06944444
+              "terminology_proportion": 0.05,
+              "terminology_total_count": 20.0
             },
             {
               "annotation_count": 0.0,
@@ -8625,7 +8625,7 @@
               "count": 0.0,
               "label": "Psychiatric and sleep",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 3.5
+              "terminology_total_count": 4.0
             },
             {
               "annotation_count": 0.0,
@@ -8634,25 +8634,25 @@
               "count": 0.0,
               "label": "Reproductive",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2.33333333
+              "terminology_total_count": 4.0
             },
             {
-              "annotation_count": 1.5,
-              "annotation_proportion": 0.00048701,
+              "annotation_count": 2.0,
+              "annotation_proportion": 0.00064935,
               "branch_code": "Respiratory",
-              "count": 1.25,
+              "count": 1.5,
               "label": "Respiratory",
-              "terminology_proportion": 0.13211979,
-              "terminology_total_count": 9.46111111
+              "terminology_proportion": 0.05063291,
+              "terminology_total_count": 29.625
             },
             {
-              "annotation_count": 22.55555556,
-              "annotation_proportion": 0.00732323,
+              "annotation_count": 27.5,
+              "annotation_proportion": 0.00892857,
               "branch_code": "Syndromic",
-              "count": 1.18055556,
+              "count": 2.0,
               "label": "Syndromic",
-              "terminology_proportion": 0.01370273,
-              "terminology_total_count": 86.1547619
+              "terminology_proportion": 0.015,
+              "terminology_total_count": 133.33333333
             },
             {
               "annotation_count": 1.0,
@@ -8660,8 +8660,8 @@
               "branch_code": "Ulcer disease",
               "count": 1.0,
               "label": "Ulcer disease",
-              "terminology_proportion": 0.46153846,
-              "terminology_total_count": 2.16666667
+              "terminology_proportion": 0.25,
+              "terminology_total_count": 4.0
             },
             {
               "annotation_count": 0.0,
@@ -8670,16 +8670,16 @@
               "count": 0.0,
               "label": "Urinary",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2.0
+              "terminology_total_count": 3.0
             },
             {
-              "annotation_count": 3.875,
-              "annotation_proportion": 0.00125812,
+              "annotation_count": 15.0,
+              "annotation_proportion": 0.00487013,
               "branch_code": "Visual system",
-              "count": 1.0,
+              "count": 3.5,
               "label": "Visual system",
-              "terminology_proportion": 0.09409305,
-              "terminology_total_count": 10.62777778
+              "terminology_proportion": 0.08641975,
+              "terminology_total_count": 40.5
             }
           ]
         },
@@ -14274,103 +14274,103 @@
           },
           "value": [
             {
-              "annotation_count": 442.25,
-              "annotation_proportion": 0.03138528,
+              "annotation_count": 444.25,
+              "annotation_proportion": 0.03152722,
               "branch_code": "Endothelial",
-              "count": 31.0,
+              "count": 32.0,
               "label": "Endothelial",
-              "terminology_proportion": 0.49865952,
-              "terminology_total_count": 62.16666667
+              "terminology_proportion": 0.4836272,
+              "terminology_total_count": 66.16666667
             },
             {
-              "annotation_count": 591.05416667,
-              "annotation_proportion": 0.04194551,
+              "annotation_count": 873.64375,
+              "annotation_proportion": 0.06200012,
               "branch_code": "Epithelial",
-              "count": 86.51996528,
+              "count": 135.67291667,
               "label": "Epithelial",
-              "terminology_proportion": 0.34165983,
-              "terminology_total_count": 253.23423032
+              "terminology_proportion": 0.33492106,
+              "terminology_total_count": 405.08923611
             },
             {
-              "annotation_count": 14.5,
-              "annotation_proportion": 0.00102903,
+              "annotation_count": 55.5,
+              "annotation_proportion": 0.00393868,
               "branch_code": "Germ line",
-              "count": 1.25,
+              "count": 2.5,
               "label": "Germ line",
-              "terminology_proportion": 0.52631579,
-              "terminology_total_count": 2.375
+              "terminology_proportion": 0.68181818,
+              "terminology_total_count": 3.66666667
             },
             {
-              "annotation_count": 438.41666667,
-              "annotation_proportion": 0.03111324,
+              "annotation_count": 473.66666667,
+              "annotation_proportion": 0.03361484,
               "branch_code": "Glial",
-              "count": 21.08333333,
+              "count": 23.33333333,
               "label": "Glial",
-              "terminology_proportion": 0.21077478,
-              "terminology_total_count": 100.02777778
+              "terminology_proportion": 0.20588235,
+              "terminology_total_count": 113.33333333
             },
             {
-              "annotation_count": 122.91666667,
-              "annotation_proportion": 0.00872306,
+              "annotation_count": 139.125,
+              "annotation_proportion": 0.00987332,
               "branch_code": "Hematopoietic",
-              "count": 6.55555556,
+              "count": 7.375,
               "label": "Hematopoietic",
-              "terminology_proportion": 0.5863354,
-              "terminology_total_count": 11.18055556
+              "terminology_proportion": 0.55140187,
+              "terminology_total_count": 13.375
             },
             {
-              "annotation_count": 835.16666667,
-              "annotation_proportion": 0.05926951,
+              "annotation_count": 851.66666667,
+              "annotation_proportion": 0.06044047,
               "branch_code": "Mesenchymal/stromal",
-              "count": 53.91666667,
+              "count": 55.91666667,
               "label": "Mesenchymal/stromal",
-              "terminology_proportion": 0.38363475,
-              "terminology_total_count": 140.54166667
+              "terminology_proportion": 0.38006231,
+              "terminology_total_count": 147.125
             },
             {
-              "annotation_count": 137.25,
-              "annotation_proportion": 0.00974026,
+              "annotation_count": 143.75,
+              "annotation_proportion": 0.01020155,
               "branch_code": "Muscle",
-              "count": 18.25,
+              "count": 18.75,
               "label": "Muscle",
-              "terminology_proportion": 0.29278075,
-              "terminology_total_count": 62.33333333
+              "terminology_proportion": 0.27829314,
+              "terminology_total_count": 67.375
             },
             {
-              "annotation_count": 1267.74444444,
-              "annotation_proportion": 0.08996838,
+              "annotation_count": 1513.60416667,
+              "annotation_proportion": 0.10741638,
               "branch_code": "Neuronal",
-              "count": 127.40763889,
+              "count": 158.8125,
               "label": "Neuronal",
-              "terminology_proportion": 0.23744563,
-              "terminology_total_count": 536.57604167
+              "terminology_proportion": 0.21434095,
+              "terminology_total_count": 740.93402778
             },
             {
-              "annotation_count": 2355.43333333,
-              "annotation_proportion": 0.16715871,
+              "annotation_count": 3953.66875,
+              "annotation_proportion": 0.28058113,
               "branch_code": "Other",
-              "count": 207.72951389,
+              "count": 292.59791667,
               "label": "Other",
-              "terminology_proportion": 0.3160657,
-              "terminology_total_count": 657.23524306
+              "terminology_proportion": 0.32489158,
+              "terminology_total_count": 900.60173611
             },
             {
-              "annotation_count": 1113.04166667,
-              "annotation_proportion": 0.07898954,
+              "annotation_count": 1365.79166667,
+              "annotation_proportion": 0.09692653,
               "branch_code": "Stem/progenitor",
-              "count": 62.375,
+              "count": 75.70833333,
               "label": "Stem/progenitor",
-              "terminology_proportion": 0.56927367,
-              "terminology_total_count": 109.56944444
+              "terminology_proportion": 0.57138365,
+              "terminology_total_count": 132.5
             },
             {
-              "annotation_count": 42.33333333,
-              "annotation_proportion": 0.00300428,
+              "annotation_count": 44.33333333,
+              "annotation_proportion": 0.00314622,
               "branch_code": "Trophoblast/placental",
-              "count": 5.83333333,
+              "count": 6.33333333,
               "label": "Trophoblast/placental",
-              "terminology_proportion": 0.79545455,
-              "terminology_total_count": 7.33333333
+              "terminology_proportion": 0.80851064,
+              "terminology_total_count": 7.83333333
             }
           ]
         },
@@ -17879,7 +17879,7 @@
               "count": 0.0,
               "label": "D01 Inorganic Chemicals",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 8235.7047619
+              "terminology_total_count": 5170.84138889
             },
             {
               "annotation_count": 0.0,
@@ -17888,7 +17888,7 @@
               "count": 0.0,
               "label": "D02 Organic Chemicals",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 85267.53888889
+              "terminology_total_count": 61753.22345238
             },
             {
               "annotation_count": 0.0,
@@ -17897,7 +17897,7 @@
               "count": 0.0,
               "label": "D03 Heterocyclic Compounds",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 68384.86706349
+              "terminology_total_count": 48829.70260582
             },
             {
               "annotation_count": 0.0,
@@ -17906,7 +17906,7 @@
               "count": 0.0,
               "label": "D04 Polycyclic Compounds",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 13246.57301587
+              "terminology_total_count": 10304.90154762
             },
             {
               "annotation_count": 0.0,
@@ -17915,7 +17915,7 @@
               "count": 0.0,
               "label": "D05 Macromolecular Substances",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2564.53229548
+              "terminology_total_count": 1833.8862149
             },
             {
               "annotation_count": 0.0,
@@ -17924,7 +17924,7 @@
               "count": 0.0,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2112.63647186
+              "terminology_total_count": 1707.15674002
             },
             {
               "annotation_count": 0.0,
@@ -17933,7 +17933,7 @@
               "count": 0.0,
               "label": "D07 Enzyme Inhibitors",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 42.58333333
+              "terminology_total_count": 40.36111111
             },
             {
               "annotation_count": 0.0,
@@ -17942,7 +17942,7 @@
               "count": 0.0,
               "label": "D08 Enzymes and Coenzymes",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 24429.6006105
+              "terminology_total_count": 18964.28894689
             },
             {
               "annotation_count": 0.0,
@@ -17951,7 +17951,7 @@
               "count": 0.0,
               "label": "D09 Carbohydrates",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 14267.75602453
+              "terminology_total_count": 10109.40939755
             },
             {
               "annotation_count": 0.0,
@@ -17960,7 +17960,7 @@
               "count": 0.0,
               "label": "D10 Lipids",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 6503.19047619
+              "terminology_total_count": 5128.89535714
             },
             {
               "annotation_count": 0.0,
@@ -17978,7 +17978,7 @@
               "count": 0.0,
               "label": "D12 Amino Acids, Peptides, and Proteins",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 116635.02968421
+              "terminology_total_count": 79236.2078084
             },
             {
               "annotation_count": 0.0,
@@ -17987,7 +17987,7 @@
               "count": 0.0,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 6832.1484127
+              "terminology_total_count": 5901.75904762
             },
             {
               "annotation_count": 0.0,
@@ -17996,7 +17996,7 @@
               "count": 0.0,
               "label": "D20 Complex Mixtures",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2984.67777778
+              "terminology_total_count": 2533.45853175
             },
             {
               "annotation_count": 0.0,
@@ -18005,7 +18005,7 @@
               "count": 0.0,
               "label": "D23 Biological Factors",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 6350.1461039
+              "terminology_total_count": 5014.12388167
             },
             {
               "annotation_count": 0.0,
@@ -18014,7 +18014,7 @@
               "count": 0.0,
               "label": "D25 Biomedical and Dental Materials",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 3179.65992063
+              "terminology_total_count": 2417.81472222
             },
             {
               "annotation_count": 0.0,
@@ -18023,7 +18023,7 @@
               "count": 0.0,
               "label": "D26 Pharmaceutical Preparations",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 3094.89563492
+              "terminology_total_count": 1768.81527778
             },
             {
               "annotation_count": 0.0,
@@ -18032,7 +18032,7 @@
               "count": 0.0,
               "label": "D27 Chemical Actions and Uses",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 635.45952381
+              "terminology_total_count": 628.15396825
             }
           ]
         },
@@ -18067,53 +18067,53 @@
               "branch_code": "C01 Infections",
               "count": 14.28095238,
               "label": "C01 Infections",
-              "terminology_proportion": 0.02112669,
-              "terminology_total_count": 675.96731602
+              "terminology_proportion": 0.02207002,
+              "terminology_total_count": 647.07472342
             },
             {
-              "annotation_count": 860.76387085,
-              "annotation_proportion": 0.13246597,
+              "annotation_count": 862.08053752,
+              "annotation_proportion": 0.1326686,
               "branch_code": "C04 Neoplasms",
-              "count": 78.59094517,
+              "count": 78.65761183,
               "label": "C04 Neoplasms",
-              "terminology_proportion": 0.09965032,
-              "terminology_total_count": 788.66729798
+              "terminology_proportion": 0.12479861,
+              "terminology_total_count": 630.27635762
             },
             {
-              "annotation_count": 340.37097162,
-              "annotation_proportion": 0.05238088,
+              "annotation_count": 344.0774531,
+              "annotation_proportion": 0.05295129,
               "branch_code": "C05 Musculoskeletal Diseases",
-              "count": 42.71991041,
+              "count": 44.19329004,
               "label": "C05 Musculoskeletal Diseases",
-              "terminology_proportion": 0.02921649,
-              "terminology_total_count": 1462.18513709
+              "terminology_proportion": 0.05255711,
+              "terminology_total_count": 840.86222082
             },
             {
-              "annotation_count": 295.14276094,
-              "annotation_proportion": 0.04542055,
+              "annotation_count": 295.53164983,
+              "annotation_proportion": 0.0454804,
               "branch_code": "C06 Digestive System Diseases",
-              "count": 19.66144781,
+              "count": 19.71700337,
               "label": "C06 Digestive System Diseases",
-              "terminology_proportion": 0.04350043,
-              "terminology_total_count": 451.98279221
+              "terminology_proportion": 0.05458536,
+              "terminology_total_count": 361.21411015
             },
             {
-              "annotation_count": 70.42037037,
-              "annotation_proportion": 0.01083724,
+              "annotation_count": 73.71805556,
+              "annotation_proportion": 0.01134473,
               "branch_code": "C07 Stomatognathic Diseases",
-              "count": 13.76296296,
+              "count": 13.8375,
               "label": "C07 Stomatognathic Diseases",
-              "terminology_proportion": 0.03392864,
-              "terminology_total_count": 405.64444444
+              "terminology_proportion": 0.05235432,
+              "terminology_total_count": 264.30483907
             },
             {
-              "annotation_count": 5.13888889,
-              "annotation_proportion": 0.00079084,
+              "annotation_count": 5.51666667,
+              "annotation_proportion": 0.00084898,
               "branch_code": "C08 Respiratory Tract Diseases",
-              "count": 2.69444444,
+              "count": 2.71666667,
               "label": "C08 Respiratory Tract Diseases",
-              "terminology_proportion": 0.01041948,
-              "terminology_total_count": 258.5968254
+              "terminology_proportion": 0.01268203,
+              "terminology_total_count": 214.21392857
             },
             {
               "annotation_count": 24.66666667,
@@ -18121,107 +18121,107 @@
               "branch_code": "C09 Otorhinolaryngologic Diseases",
               "count": 6.0,
               "label": "C09 Otorhinolaryngologic Diseases",
-              "terminology_proportion": 0.02872905,
-              "terminology_total_count": 208.84780579
+              "terminology_proportion": 0.04098811,
+              "terminology_total_count": 146.3839169
             },
             {
-              "annotation_count": 908.4983128,
-              "annotation_proportion": 0.13981199,
+              "annotation_count": 909.76378899,
+              "annotation_proportion": 0.14000674,
               "branch_code": "C10 Nervous System Diseases",
-              "count": 72.61728202,
+              "count": 73.02055583,
               "label": "C10 Nervous System Diseases",
-              "terminology_proportion": 0.03542259,
-              "terminology_total_count": 2050.02729958
+              "terminology_proportion": 0.05352236,
+              "terminology_total_count": 1364.30008323
             },
             {
-              "annotation_count": 241.01111111,
-              "annotation_proportion": 0.03709004,
+              "annotation_count": 244.46944444,
+              "annotation_proportion": 0.03762226,
               "branch_code": "C11 Eye Diseases",
-              "count": 31.18968254,
+              "count": 31.73134921,
               "label": "C11 Eye Diseases",
-              "terminology_proportion": 0.03228437,
-              "terminology_total_count": 966.09222689
+              "terminology_proportion": 0.051831,
+              "terminology_total_count": 612.20790149
             },
             {
-              "annotation_count": 265.96024809,
-              "annotation_proportion": 0.04092955,
+              "annotation_count": 266.01977189,
+              "annotation_proportion": 0.04093872,
               "branch_code": "C12 Urogenital Diseases",
-              "count": 29.63558872,
+              "count": 29.69511253,
               "label": "C12 Urogenital Diseases",
-              "terminology_proportion": 0.05228048,
-              "terminology_total_count": 566.85762012
+              "terminology_proportion": 0.07046037,
+              "terminology_total_count": 421.44416228
             },
             {
-              "annotation_count": 53.56190892,
-              "annotation_proportion": 0.00824283,
+              "annotation_count": 53.57381369,
+              "annotation_proportion": 0.00824466,
               "branch_code": "C13 Female Urogenital Diseases and Pregnancy Complications",
-              "count": 5.50533564,
+              "count": 5.5172404,
               "label": "C13 Female Urogenital Diseases and Pregnancy Complications",
-              "terminology_proportion": 0.03894928,
-              "terminology_total_count": 141.34628954
+              "terminology_proportion": 0.05032034,
+              "terminology_total_count": 109.64235819
             },
             {
-              "annotation_count": 132.5299062,
-              "annotation_proportion": 0.02039549,
+              "annotation_count": 132.97435065,
+              "annotation_proportion": 0.02046389,
               "branch_code": "C14 Cardiovascular Diseases",
-              "count": 27.09411977,
+              "count": 27.14967532,
               "label": "C14 Cardiovascular Diseases",
-              "terminology_proportion": 0.03986609,
-              "terminology_total_count": 679.62814963
+              "terminology_proportion": 0.05135667,
+              "terminology_total_count": 528.649482
             },
             {
-              "annotation_count": 223.81753247,
-              "annotation_proportion": 0.03444406,
+              "annotation_count": 223.85919913,
+              "annotation_proportion": 0.03445048,
               "branch_code": "C15 Hemic and Lymphatic Diseases",
-              "count": 30.99487734,
+              "count": 31.03654401,
               "label": "C15 Hemic and Lymphatic Diseases",
-              "terminology_proportion": 0.05857811,
-              "terminology_total_count": 529.12045455
+              "terminology_proportion": 0.07288866,
+              "terminology_total_count": 425.80757576
             },
             {
-              "annotation_count": 1472.08246938,
-              "annotation_proportion": 0.22654393,
+              "annotation_count": 1484.83822335,
+              "annotation_proportion": 0.22850696,
               "branch_code": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "count": 79.67548748,
+              "count": 81.84493192,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-              "terminology_proportion": 0.02689193,
-              "terminology_total_count": 2962.80287319
+              "terminology_proportion": 0.04678192,
+              "terminology_total_count": 1749.49913198
             },
             {
-              "annotation_count": 213.59729437,
-              "annotation_proportion": 0.03287124,
+              "annotation_count": 214.56396104,
+              "annotation_proportion": 0.03302,
               "branch_code": "C17 Skin and Connective Tissue Diseases",
-              "count": 27.34448052,
+              "count": 27.47781385,
               "label": "C17 Skin and Connective Tissue Diseases",
-              "terminology_proportion": 0.03225641,
-              "terminology_total_count": 847.72229437
+              "terminology_proportion": 0.04888292,
+              "terminology_total_count": 562.11478776
             },
             {
-              "annotation_count": 606.43588356,
-              "annotation_proportion": 0.09332654,
+              "annotation_count": 609.04064547,
+              "annotation_proportion": 0.0937274,
               "branch_code": "C18 Nutritional and Metabolic Diseases",
-              "count": 43.39249362,
+              "count": 43.96689838,
               "label": "C18 Nutritional and Metabolic Diseases",
-              "terminology_proportion": 0.05559677,
-              "terminology_total_count": 780.48584136
+              "terminology_proportion": 0.07468193,
+              "terminology_total_count": 588.72201399
             },
             {
-              "annotation_count": 161.39148629,
-              "annotation_proportion": 0.0248371,
+              "annotation_count": 162.14545455,
+              "annotation_proportion": 0.02495313,
               "branch_code": "C19 Endocrine System Diseases",
-              "count": 21.83463203,
+              "count": 21.93066378,
               "label": "C19 Endocrine System Diseases",
-              "terminology_proportion": 0.06375114,
-              "terminology_total_count": 342.49788431
+              "terminology_proportion": 0.09564636,
+              "terminology_total_count": 229.28904652
             },
             {
-              "annotation_count": 129.5452381,
-              "annotation_proportion": 0.01993617,
+              "annotation_count": 130.33690476,
+              "annotation_proportion": 0.020058,
               "branch_code": "C20 Immune System Diseases",
-              "count": 14.31507937,
+              "count": 14.85674603,
               "label": "C20 Immune System Diseases",
-              "terminology_proportion": 0.0565935,
-              "terminology_total_count": 252.94563492
+              "terminology_proportion": 0.07058431,
+              "terminology_total_count": 210.4822619
             },
             {
               "annotation_count": 0.0,
@@ -18239,16 +18239,16 @@
               "count": 0.0,
               "label": "C22 Animal Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 73.42619048
+              "terminology_total_count": 71.80119048
             },
             {
-              "annotation_count": 272.87460317,
-              "annotation_proportion": 0.04199363,
+              "annotation_count": 277.43055556,
+              "annotation_proportion": 0.04269476,
               "branch_code": "C23 Pathological Conditions, Signs and Symptoms",
-              "count": 68.77123016,
+              "count": 69.55277778,
               "label": "C23 Pathological Conditions, Signs and Symptoms",
-              "terminology_proportion": 0.03316058,
-              "terminology_total_count": 2073.88504829
+              "terminology_proportion": 0.0529919,
+              "terminology_total_count": 1312.51711178
             },
             {
               "annotation_count": 0.33333333,
@@ -18256,8 +18256,8 @@
               "branch_code": "C24 Occupational Diseases",
               "count": 0.33333333,
               "label": "C24 Occupational Diseases",
-              "terminology_proportion": 0.02640015,
-              "terminology_total_count": 12.62619048
+              "terminology_proportion": 0.0267533,
+              "terminology_total_count": 12.45952381
             },
             {
               "annotation_count": 3.33333333,
@@ -18265,8 +18265,8 @@
               "branch_code": "C25 Chemically-Induced Disorders",
               "count": 1.73333333,
               "label": "C25 Chemically-Induced Disorders",
-              "terminology_proportion": 0.01948452,
-              "terminology_total_count": 88.95952381
+              "terminology_proportion": 0.01588982,
+              "terminology_total_count": 109.08452381
             },
             {
               "annotation_count": 5.75,
@@ -18274,8 +18274,8 @@
               "branch_code": "C26 Wounds and Injuries",
               "count": 3.75,
               "label": "C26 Wounds and Injuries",
-              "terminology_proportion": 0.01873269,
-              "terminology_total_count": 200.18485958
+              "terminology_proportion": 0.01941509,
+              "terminology_total_count": 193.14874847
             }
           ]
         },
@@ -19588,44 +19588,44 @@
               "branch_code": "D01 Inorganic Chemicals",
               "count": 210.63015873,
               "label": "D01 Inorganic Chemicals",
-              "terminology_proportion": 0.02557524,
-              "terminology_total_count": 8235.7047619
+              "terminology_proportion": 0.04073421,
+              "terminology_total_count": 5170.84138889
             },
             {
-              "annotation_count": 11389.43690476,
-              "annotation_proportion": 0.27577329,
+              "annotation_count": 11391.18134921,
+              "annotation_proportion": 0.27581553,
               "branch_code": "D02 Organic Chemicals",
-              "count": 654.54246032,
+              "count": 654.78690476,
               "label": "D02 Organic Chemicals",
-              "terminology_proportion": 0.00767634,
-              "terminology_total_count": 85267.53888889
+              "terminology_proportion": 0.01060328,
+              "terminology_total_count": 61753.22345238
             },
             {
-              "annotation_count": 6669.54920635,
-              "annotation_proportion": 0.1614903,
+              "annotation_count": 6671.07698413,
+              "annotation_proportion": 0.16152729,
               "branch_code": "D03 Heterocyclic Compounds",
-              "count": 345.84246032,
+              "count": 346.10634921,
               "label": "D03 Heterocyclic Compounds",
-              "terminology_proportion": 0.0050573,
-              "terminology_total_count": 68384.86706349
+              "terminology_proportion": 0.00708803,
+              "terminology_total_count": 48829.70260582
             },
             {
-              "annotation_count": 1558.24166667,
-              "annotation_proportion": 0.03772982,
+              "annotation_count": 1558.68611111,
+              "annotation_proportion": 0.03774058,
               "branch_code": "D04 Polycyclic Compounds",
-              "count": 87.53333333,
+              "count": 87.64444444,
               "label": "D04 Polycyclic Compounds",
-              "terminology_proportion": 0.006608,
-              "terminology_total_count": 13246.57301587
+              "terminology_proportion": 0.00850512,
+              "terminology_total_count": 10304.90154762
             },
             {
-              "annotation_count": 315.69642857,
-              "annotation_proportion": 0.00764398,
+              "annotation_count": 318.19642857,
+              "annotation_proportion": 0.00770451,
               "branch_code": "D05 Macromolecular Substances",
-              "count": 17.8797619,
+              "count": 18.1297619,
               "label": "D05 Macromolecular Substances",
-              "terminology_proportion": 0.00697194,
-              "terminology_total_count": 2564.53229548
+              "terminology_proportion": 0.00988598,
+              "terminology_total_count": 1833.8862149
             },
             {
               "annotation_count": 31.91666667,
@@ -19633,8 +19633,8 @@
               "branch_code": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
               "count": 10.5,
               "label": "D06 Hormones, Hormone Substitutes, and Hormone Antagonists",
-              "terminology_proportion": 0.00497009,
-              "terminology_total_count": 2112.63647186
+              "terminology_proportion": 0.00615058,
+              "terminology_total_count": 1707.15674002
             },
             {
               "annotation_count": 0.0,
@@ -19643,34 +19643,34 @@
               "count": 0.0,
               "label": "D07 Enzyme Inhibitors",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 42.58333333
+              "terminology_total_count": 40.36111111
             },
             {
-              "annotation_count": 464.80714286,
-              "annotation_proportion": 0.01125441,
+              "annotation_count": 464.95714286,
+              "annotation_proportion": 0.01125804,
               "branch_code": "D08 Enzymes and Coenzymes",
-              "count": 9.94285714,
+              "count": 9.96785714,
               "label": "D08 Enzymes and Coenzymes",
-              "terminology_proportion": 0.000407,
-              "terminology_total_count": 24429.6006105
+              "terminology_proportion": 0.00052561,
+              "terminology_total_count": 18964.28894689
             },
             {
-              "annotation_count": 2349.32916667,
-              "annotation_proportion": 0.05688448,
+              "annotation_count": 2351.94027778,
+              "annotation_proportion": 0.05694771,
               "branch_code": "D09 Carbohydrates",
-              "count": 112.1125,
+              "count": 112.39027778,
               "label": "D09 Carbohydrates",
-              "terminology_proportion": 0.00785775,
-              "terminology_total_count": 14267.75602453
+              "terminology_proportion": 0.01111739,
+              "terminology_total_count": 10109.40939755
             },
             {
-              "annotation_count": 2431.18333333,
-              "annotation_proportion": 0.05886642,
+              "annotation_count": 2460.43333333,
+              "annotation_proportion": 0.05957466,
               "branch_code": "D10 Lipids",
-              "count": 90.41666667,
+              "count": 90.66666667,
               "label": "D10 Lipids",
-              "terminology_proportion": 0.01390343,
-              "terminology_total_count": 6503.19047619
+              "terminology_proportion": 0.01767762,
+              "terminology_total_count": 5128.89535714
             },
             {
               "annotation_count": 0.0,
@@ -19687,26 +19687,26 @@
               "branch_code": "D12 Amino Acids, Peptides, and Proteins",
               "count": 136.18630952,
               "label": "D12 Amino Acids, Peptides, and Proteins",
-              "terminology_proportion": 0.00116763,
-              "terminology_total_count": 116635.02968421
+              "terminology_proportion": 0.00171874,
+              "terminology_total_count": 79236.2078084
             },
             {
-              "annotation_count": 1485.01984127,
-              "annotation_proportion": 0.0359569,
+              "annotation_count": 1485.90873016,
+              "annotation_proportion": 0.03597842,
               "branch_code": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "count": 51.56349206,
+              "count": 51.67460317,
               "label": "D13 Nucleic Acids, Nucleotides, and Nucleosides",
-              "terminology_proportion": 0.00754719,
-              "terminology_total_count": 6832.1484127
+              "terminology_proportion": 0.0087558,
+              "terminology_total_count": 5901.75904762
             },
             {
-              "annotation_count": 46.75,
-              "annotation_proportion": 0.00113196,
+              "annotation_count": 76.0,
+              "annotation_proportion": 0.00184019,
               "branch_code": "D20 Complex Mixtures",
-              "count": 3.61666667,
+              "count": 3.86666667,
               "label": "D20 Complex Mixtures",
-              "terminology_proportion": 0.00121174,
-              "terminology_total_count": 2984.67777778
+              "terminology_proportion": 0.00152624,
+              "terminology_total_count": 2533.45853175
             },
             {
               "annotation_count": 663.05,
@@ -19714,8 +19714,8 @@
               "branch_code": "D23 Biological Factors",
               "count": 22.47261905,
               "label": "D23 Biological Factors",
-              "terminology_proportion": 0.00353891,
-              "terminology_total_count": 6350.1461039
+              "terminology_proportion": 0.00448186,
+              "terminology_total_count": 5014.12388167
             },
             {
               "annotation_count": 475.88571429,
@@ -19723,8 +19723,8 @@
               "branch_code": "D25 Biomedical and Dental Materials",
               "count": 26.15238095,
               "label": "D25 Biomedical and Dental Materials",
-              "terminology_proportion": 0.0082249,
-              "terminology_total_count": 3179.65992063
+              "terminology_proportion": 0.01081654,
+              "terminology_total_count": 2417.81472222
             },
             {
               "annotation_count": 251.36666667,
@@ -19732,8 +19732,8 @@
               "branch_code": "D26 Pharmaceutical Preparations",
               "count": 7.24166667,
               "label": "D26 Pharmaceutical Preparations",
-              "terminology_proportion": 0.00233987,
-              "terminology_total_count": 3094.89563492
+              "terminology_proportion": 0.00409408,
+              "terminology_total_count": 1768.81527778
             },
             {
               "annotation_count": 17.0,
@@ -19741,8 +19741,8 @@
               "branch_code": "D27 Chemical Actions and Uses",
               "count": 5.58333333,
               "label": "D27 Chemical Actions and Uses",
-              "terminology_proportion": 0.00878629,
-              "terminology_total_count": 635.45952381
+              "terminology_proportion": 0.00888848,
+              "terminology_total_count": 628.15396825
             }
           ]
         },
@@ -19768,7 +19768,7 @@
               "count": 0.0,
               "label": "C01 Infections",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 675.96731602
+              "terminology_total_count": 647.07472342
             },
             {
               "annotation_count": 0.0,
@@ -19777,7 +19777,7 @@
               "count": 0.0,
               "label": "C04 Neoplasms",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 788.66729798
+              "terminology_total_count": 630.27635762
             },
             {
               "annotation_count": 0.0,
@@ -19786,7 +19786,7 @@
               "count": 0.0,
               "label": "C05 Musculoskeletal Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 1462.18513709
+              "terminology_total_count": 840.86222082
             },
             {
               "annotation_count": 0.0,
@@ -19795,7 +19795,7 @@
               "count": 0.0,
               "label": "C06 Digestive System Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 451.98279221
+              "terminology_total_count": 361.21411015
             },
             {
               "annotation_count": 0.0,
@@ -19804,7 +19804,7 @@
               "count": 0.0,
               "label": "C07 Stomatognathic Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 405.64444444
+              "terminology_total_count": 264.30483907
             },
             {
               "annotation_count": 0.0,
@@ -19813,7 +19813,7 @@
               "count": 0.0,
               "label": "C08 Respiratory Tract Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 258.5968254
+              "terminology_total_count": 214.21392857
             },
             {
               "annotation_count": 0.0,
@@ -19822,7 +19822,7 @@
               "count": 0.0,
               "label": "C09 Otorhinolaryngologic Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 208.84780579
+              "terminology_total_count": 146.3839169
             },
             {
               "annotation_count": 0.0,
@@ -19831,7 +19831,7 @@
               "count": 0.0,
               "label": "C10 Nervous System Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2050.02729958
+              "terminology_total_count": 1364.30008323
             },
             {
               "annotation_count": 0.0,
@@ -19840,7 +19840,7 @@
               "count": 0.0,
               "label": "C11 Eye Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 966.09222689
+              "terminology_total_count": 612.20790149
             },
             {
               "annotation_count": 0.0,
@@ -19849,7 +19849,7 @@
               "count": 0.0,
               "label": "C12 Urogenital Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 566.85762012
+              "terminology_total_count": 421.44416228
             },
             {
               "annotation_count": 0.0,
@@ -19858,7 +19858,7 @@
               "count": 0.0,
               "label": "C13 Female Urogenital Diseases and Pregnancy Complications",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 141.34628954
+              "terminology_total_count": 109.64235819
             },
             {
               "annotation_count": 0.0,
@@ -19867,7 +19867,7 @@
               "count": 0.0,
               "label": "C14 Cardiovascular Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 679.62814963
+              "terminology_total_count": 528.649482
             },
             {
               "annotation_count": 0.0,
@@ -19876,7 +19876,7 @@
               "count": 0.0,
               "label": "C15 Hemic and Lymphatic Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 529.12045455
+              "terminology_total_count": 425.80757576
             },
             {
               "annotation_count": 0.0,
@@ -19885,7 +19885,7 @@
               "count": 0.0,
               "label": "C16 Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2962.80287319
+              "terminology_total_count": 1749.49913198
             },
             {
               "annotation_count": 0.0,
@@ -19894,7 +19894,7 @@
               "count": 0.0,
               "label": "C17 Skin and Connective Tissue Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 847.72229437
+              "terminology_total_count": 562.11478776
             },
             {
               "annotation_count": 0.0,
@@ -19903,7 +19903,7 @@
               "count": 0.0,
               "label": "C18 Nutritional and Metabolic Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 780.48584136
+              "terminology_total_count": 588.72201399
             },
             {
               "annotation_count": 0.0,
@@ -19912,7 +19912,7 @@
               "count": 0.0,
               "label": "C19 Endocrine System Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 342.49788431
+              "terminology_total_count": 229.28904652
             },
             {
               "annotation_count": 0.0,
@@ -19921,7 +19921,7 @@
               "count": 0.0,
               "label": "C20 Immune System Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 252.94563492
+              "terminology_total_count": 210.4822619
             },
             {
               "annotation_count": 0.0,
@@ -19939,7 +19939,7 @@
               "count": 0.0,
               "label": "C22 Animal Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 73.42619048
+              "terminology_total_count": 71.80119048
             },
             {
               "annotation_count": 0.0,
@@ -19948,7 +19948,7 @@
               "count": 0.0,
               "label": "C23 Pathological Conditions, Signs and Symptoms",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 2073.88504829
+              "terminology_total_count": 1312.51711178
             },
             {
               "annotation_count": 0.0,
@@ -19957,7 +19957,7 @@
               "count": 0.0,
               "label": "C24 Occupational Diseases",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 12.62619048
+              "terminology_total_count": 12.45952381
             },
             {
               "annotation_count": 0.0,
@@ -19966,7 +19966,7 @@
               "count": 0.0,
               "label": "C25 Chemically-Induced Disorders",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 88.95952381
+              "terminology_total_count": 109.08452381
             },
             {
               "annotation_count": 0.0,
@@ -19975,7 +19975,7 @@
               "count": 0.0,
               "label": "C26 Wounds and Injuries",
               "terminology_proportion": 0.0,
-              "terminology_total_count": 200.18485958
+              "terminology_total_count": 193.14874847
             }
           ]
         },

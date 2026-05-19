@@ -298,6 +298,52 @@ def test_high_level_concept_counts_term_overrides_include_mapped_supplementals_i
     assert row["annotation_proportion"] == 1.0
 
 
+def test_high_level_concept_counts_term_overrides_renormalize_mapped_supplementals_to_in_scope_parents(tmp_path: Path) -> None:
+    terminology = TerminologyResource(
+        name="mesh_like",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Disease Root", tree_numbers=["C01"]),
+            "D1": TerminologyConcept(ui="D1", name="Disease Descriptor One", tree_numbers=["C01.001"]),
+            "D2": TerminologyConcept(ui="D2", name="Disease Descriptor Two", tree_numbers=["C01.002"]),
+            "O1": TerminologyConcept(ui="O1", name="Chemical Descriptor", tree_numbers=["D08.001"]),
+            "S1": TerminologyConcept(ui="S1", name="Mixed Supplemental", mapped_ui_ids=["D1", "O1", "D2"]),
+            "S2": TerminologyConcept(ui="S2", name="Out Of Scope Supplemental", mapped_ui_ids=["O1"]),
+        },
+        tree_to_ids={"C01": ["R1"], "C01.001": ["D1"], "C01.002": ["D2"], "D08.001": ["O1"]},
+        resource_aliases=["MESH"],
+    )
+    mapping_path = tmp_path / "mappings.yaml"
+    mapping_path.write_text(
+        "Topic One:\n- Disease Descriptor One\nTopic Two:\n- Disease Descriptor Two\n",
+        encoding="utf-8",
+    )
+    target = _target_for_links(
+        [
+            IdentifierLink(identifier="S1", resource="MESH"),
+            IdentifierLink(identifier="S2", resource="MESH"),
+        ]
+    )
+
+    result = high_level_concept_counts(
+        target,
+        "high_level_concept_counts",
+        terminology,
+        term_overrides_path=str(mapping_path),
+    )
+    rows = {row["branch_code"]: row for row in result.value}
+
+    assert rows["Topic One"]["count"] == 0.5
+    assert rows["Topic Two"]["count"] == 0.5
+    assert rows["Topic One"]["annotation_count"] == 0.5
+    assert rows["Topic Two"]["annotation_count"] == 0.5
+    assert rows["Topic One"]["terminology_total_count"] == 1.5
+    assert rows["Topic Two"]["terminology_total_count"] == 1.5
+    assert rows["Topic One"]["terminology_proportion"] == round(1 / 3, 8)
+    assert rows["Topic Two"]["terminology_proportion"] == round(1 / 3, 8)
+    assert rows["Topic One"]["annotation_proportion"] == 0.25
+    assert rows["Topic Two"]["annotation_proportion"] == 0.25
+
+
 def test_concept_depth_counts_reports_annotation_depth_distribution() -> None:
     terminology = TerminologyResource(
         name="example",

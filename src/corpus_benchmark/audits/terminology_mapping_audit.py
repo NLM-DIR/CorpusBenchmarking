@@ -33,6 +33,7 @@ def build_terminology_mapping_audit(
                 "concept_id": concept.ui,
                 "name": concept.name,
                 "anchor_counts": round_counts(counts),
+                "anchor_count_sum": round(sum(counts.values()), 8),
             }
         )
 

@@ -512,6 +512,22 @@ class TerminologyTopicAnchorCounter:
             for topic in sorted(topics)
         }
 
+    def _combine_parent_anchor_counts(self, parent_ids: Sequence[str], active: set[str]) -> dict[str, float]:
+        parent_count_list = [
+            counts
+            for parent_id in parent_ids
+            for counts in [self._topic_anchor_counts_by_id(parent_id, active)]
+            if counts or not self.has_configured_anchors
+        ]
+        if not parent_count_list:
+            return {}
+
+        parent_weight = 1.0 / len(parent_count_list)
+        counts: dict[str, float] = {}
+        for parent_counts in parent_count_list:
+            _add_weighted_counts(counts, parent_counts, parent_weight)
+        return counts
+
     def _topic_anchor_counts_by_id(
         self,
         ui: str,
@@ -556,11 +572,7 @@ class TerminologyTopicAnchorCounter:
         active.add(cache_key)
         parent_ids = _topic_parent_ids(concept)
         if parent_ids:
-            parent_weight = 1.0 / len(parent_ids)
-            counts: dict[str, float] = {}
-            for parent_id in parent_ids:
-                parent_counts = self._topic_anchor_counts_by_id(parent_id, active)
-                _add_weighted_counts(counts, parent_counts, parent_weight)
+            counts = self._combine_parent_anchor_counts(parent_ids, active)
         else:
             counts = {} if self.has_configured_anchors else {concept.name: 1.0}
         active.remove(cache_key)
@@ -614,16 +626,14 @@ class TerminologyTopicAnchorCounter:
         not_found: set[str] = set()
         processed = 0
         for processed, ui in enumerate(ids, start=1):
-            concepts = self.terminology.resolve_to_tree_concepts(ui)
-            if not concepts:
+            concept = self.terminology.get_concept(ui)
+            if concept is None:
                 not_found.add(ui)
                 if processed % progress_interval == 0:
                     _log_count_progress("anchor counts", self.terminology, processed, total, start)
                 continue
-            concept_weight = 1.0 / len(concepts)
-            for concept in concepts:
-                anchor_counts = self._topic_anchor_counts_by_id(concept.ui, set())
-                _add_weighted_counts(counts, anchor_counts, concept_weight)
+            anchor_counts = self._topic_anchor_counts_by_id(concept.ui, set())
+            _add_weighted_counts(counts, anchor_counts, 1.0)
             if processed % progress_interval == 0:
                 _log_count_progress("anchor counts", self.terminology, processed, total, start)
         if len(not_found) > 0:
@@ -740,16 +750,8 @@ class TerminologyTopicAnchorCounter:
             self.terminology.name,
             concept_count,
         )
-        if self.term_tree_overrides:
-            tree_concepts = (
-                tree_concept
-                for concept in self.terminology.concepts.values()
-                for tree_concept in self.terminology.resolve_to_tree_concepts(concept.ui)
-            )
-            counts = self._anchor_counts_by_tree_overrides(tree_concepts)
-        else:
-            target_ids = (c.ui for c in self.terminology.concepts.values())
-            counts = self.count_by_anchor(target_ids, total=concept_count)
+        target_ids = (c.ui for c in self.terminology.concepts.values())
+        counts = self.count_by_anchor(target_ids, total=concept_count)
         self.global_anchor_counts_cache = (concept_count, counts)
         return counts
 
