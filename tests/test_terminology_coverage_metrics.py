@@ -97,7 +97,8 @@ def test_terminology_metric_filters_identifiers_by_resource_and_scope() -> None:
     assert result.details["n_missing_ids"] == 0
     assert scoped.details["n_input_ids"] == 1
     assert scoped.value[0]["branch_code"] == "CL:0001"
-    assert scoped.value[0]["proportion"] == 0.5
+    assert scoped.value[0]["terminology_proportion"] == 0.5
+    assert scoped.value[0]["proportion"] == scoped.value[0]["terminology_proportion"]
 
 
 def test_terminology_topic_anchor_counter_uses_configured_anchor_ids() -> None:
@@ -197,7 +198,8 @@ def test_high_level_concept_counts_uses_unique_corpus_concepts_for_recall() -> N
     assert result.details["n_unique_input_ids"] == 1
     assert result.value[0]["count"] == 1
     assert result.value[0]["annotation_count"] == 3
-    assert result.value[0]["proportion"] == 0.5
+    assert result.value[0]["terminology_proportion"] == 0.5
+    assert result.value[0]["proportion"] == result.value[0]["terminology_proportion"]
     assert result.value[0]["annotation_proportion"] == 1.0
 
 
@@ -224,9 +226,80 @@ def test_high_level_concept_counts_annotation_proportion_uses_all_identifiers() 
     assert result.details["n_input_ids"] == 3
     assert result.details["n_missing_ids"] == 1
     assert row["count"] == 1
-    assert row["proportion"] == 0.5
+    assert row["terminology_proportion"] == 0.5
+    assert row["proportion"] == row["terminology_proportion"]
     assert row["annotation_count"] == 2
     assert row["annotation_proportion"] == round(2 / 3, 8)
+
+
+def test_high_level_concept_counts_treats_mapped_supplementals_as_terminology_concepts() -> None:
+    terminology = TerminologyResource(
+        name="mesh_like",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Root One", tree_numbers=["A01"]),
+            "D1": TerminologyConcept(ui="D1", name="Descriptor One", tree_numbers=["A01.001"]),
+            "S1": TerminologyConcept(ui="S1", name="Supplemental One", mapped_ui_ids=["D1"]),
+            "S2": TerminologyConcept(ui="S2", name="Supplemental Two", mapped_ui_ids=["D1"]),
+        },
+        tree_to_ids={"A01": ["R1"], "A01.001": ["D1"]},
+        treetop_names={"R1": "Root One"},
+        resource_aliases=["MESH"],
+    )
+    target = _target_for_links(
+        [
+            IdentifierLink(identifier="S1", resource="MESH"),
+            IdentifierLink(identifier="S1", resource="MESH"),
+            IdentifierLink(identifier="S2", resource="MESH"),
+        ]
+    )
+
+    result = high_level_concept_counts(target, "high_level_concept_counts", terminology)
+    row = result.value[0]
+
+    assert row["branch_code"] == "R1"
+    assert row["count"] == 2
+    assert row["annotation_count"] == 3
+    assert row["terminology_total_count"] == 4
+    assert row["terminology_proportion"] == 0.5
+    assert row["proportion"] == row["terminology_proportion"]
+    assert row["annotation_proportion"] == 1.0
+
+
+def test_high_level_concept_counts_term_overrides_include_mapped_supplementals_in_totals(tmp_path: Path) -> None:
+    terminology = TerminologyResource(
+        name="mesh_like",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Root One", tree_numbers=["A01"]),
+            "D1": TerminologyConcept(ui="D1", name="Descriptor One", tree_numbers=["A01.001"]),
+            "S1": TerminologyConcept(ui="S1", name="Supplemental One", mapped_ui_ids=["D1"]),
+            "S2": TerminologyConcept(ui="S2", name="Supplemental Two", mapped_ui_ids=["D1"]),
+        },
+        tree_to_ids={"A01": ["R1"], "A01.001": ["D1"]},
+        resource_aliases=["MESH"],
+    )
+    mapping_path = tmp_path / "mappings.yaml"
+    mapping_path.write_text("Topic One:\n- Descriptor One\n", encoding="utf-8")
+    target = _target_for_links(
+        [
+            IdentifierLink(identifier="S1", resource="MESH"),
+            IdentifierLink(identifier="S2", resource="MESH"),
+        ]
+    )
+
+    result = high_level_concept_counts(
+        target,
+        "high_level_concept_counts",
+        terminology,
+        term_overrides_path=str(mapping_path),
+    )
+    row = result.value[0]
+
+    assert row["branch_code"] == "Topic One"
+    assert row["count"] == 2
+    assert row["annotation_count"] == 2
+    assert row["terminology_total_count"] == 3
+    assert row["terminology_proportion"] == round(2 / 3, 8)
+    assert row["annotation_proportion"] == 1.0
 
 
 def test_concept_depth_counts_reports_annotation_depth_distribution() -> None:

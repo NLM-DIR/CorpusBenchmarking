@@ -109,9 +109,10 @@ def high_level_concept_counts(target: MetricTarget, result_name: str, terminolog
         count = corpus_counts.get(branch_code, 0.0)
         annotation_count = annotation_counts.get(branch_code, 0.0)
         terminology_total = global_counts.get(branch_code, 0.0)
-        proportion = count / terminology_total if terminology_total > 0 else 0.0
+        terminology_proportion = count / terminology_total if terminology_total > 0 else 0.0
         treetop = branch_code if term_overrides_path else branch_code.split(".")[0]
         treetop_name = counter.branch_label(branch_code) if term_overrides_path else terminology.treetop_names.get(treetop) or counter.branch_label(branch_code)
+        rounded_terminology_proportion = round(terminology_proportion, PRECISION)
 
         rows.append(
             {
@@ -123,7 +124,8 @@ def high_level_concept_counts(target: MetricTarget, result_name: str, terminolog
                 "annotation_count": round(annotation_count, PRECISION),
                 "terminology_total_count": round(terminology_total, PRECISION),
                 "mesh_total_count": round(terminology_total, PRECISION),
-                "proportion": round(proportion, PRECISION),
+                "terminology_proportion": rounded_terminology_proportion,
+                "proportion": rounded_terminology_proportion,
                 "annotation_proportion": round(annotation_count / len(ids), PRECISION) if ids else 0.0,
             }
         )

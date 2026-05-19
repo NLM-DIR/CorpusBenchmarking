@@ -798,6 +798,10 @@ def _terminology_profiles(term_data):
     scopes = {"all"}
     for corpus_data in term_data.values():
         scopes.update((corpus_data.get("by_scope") or {}).keys())
+
+    def terminology_proportion(branch):
+        return branch.get("terminology_proportion", branch.get("proportion", 0)) or 0
+
     profiles = {}
     entries_by_scope = {
         scope: [
@@ -880,9 +884,9 @@ def _terminology_profiles(term_data):
                     code
                     for entry in terminology_entries
                     for code, branch in entry.get("branches", {}).items()
-                    if branch.get("configured_anchor") or branch.get("total", 0) > 0 or branch.get("proportion", 0) > 0
+                    if branch.get("configured_anchor") or branch.get("total", 0) > 0 or terminology_proportion(branch) > 0
                 },
-                key=lambda code: -sum(entry.get("branches", {}).get(code, {}).get("proportion", 0) for entry in terminology_entries),
+                key=lambda code: -sum(terminology_proportion(entry.get("branches", {}).get(code, {})) for entry in terminology_entries),
             )
             branch_labels = []
             for code in branch_codes:
@@ -902,7 +906,7 @@ def _terminology_profiles(term_data):
                     {
                         "label": entry["display_name"],
                         "data": [
-                            round(entry.get("branches", {}).get(code, {}).get("proportion", 0) * 100, 2)
+                            round(terminology_proportion(entry.get("branches", {}).get(code, {})) * 100, 2)
                             for code in branch_codes
                         ],
                         "backgroundColor": group_colors[i] + "bb",

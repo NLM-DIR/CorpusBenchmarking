@@ -152,6 +152,8 @@ CorpusBenchmarking includes three related topic-analysis workflows. They are int
 * **Article topic profiles** use article-level MeSH terms from PubMed/PMC metadata. Article terms that cannot be mapped can fall back to the journal topic profile for the article's journal, with remaining unresolved mass reported as unknown.
 * **Terminology topic profiles** map ontology concepts themselves to configured high-level branches, supporting terminology coverage summaries such as MeSH disease branches, MeSH chemical branches, or Cell Ontology cell categories.
 
+Terminology coverage rows report two different proportions. `terminology_proportion` is the unique corpus concept mass assigned to a high-level branch divided by the total terminology concept mass assigned to that branch. For MeSH, supplemental records are treated as terminology concepts under their mapped descriptor parent(s), with mass split across multiple mapped descriptors. `annotation_proportion` is the annotation-weighted branch count divided by all identifiers for that corpus and entity scope.
+
 The audit scripts write JSON files that expose how mappings were produced and where coverage is weak:
 
 ```bash

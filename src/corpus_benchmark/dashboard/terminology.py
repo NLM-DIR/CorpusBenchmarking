@@ -17,6 +17,9 @@ def _metric_scope_payload(metric: dict, scope: str) -> dict | None:
         return metric
     return (metric.get("scopes") or {}).get(scope)
 
+def _terminology_proportion(item: dict) -> float:
+    return item.get("terminology_proportion", item.get("proportion", 0)) or 0
+
 def _process_term_payload(corpus_name: str, terminology_name: str, hlc: dict, dc: dict) -> dict:
     details = hlc.get("details", {})
     n_in = details.get("n_input_ids", 0)
@@ -31,7 +34,7 @@ def _process_term_payload(corpus_name: str, terminology_name: str, hlc: dict, dc
             "label": item.get("label") or code,
             "count": item.get("count", 0),
             "annotation_count": item.get("annotation_count", 0),
-            "proportion": item.get("proportion", 0) or 0,
+            "terminology_proportion": _terminology_proportion(item),
             "annotation_proportion": item.get("annotation_proportion", 0) or 0,
             "total": item.get("terminology_total_count", item.get("mesh_total_count", 0)),
             "configured_anchor": bool(details.get("term_overrides_path")),

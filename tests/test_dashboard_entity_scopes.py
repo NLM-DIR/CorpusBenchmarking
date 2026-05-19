@@ -159,7 +159,7 @@ def test_terminology_panel_chart_helper_uses_chartjs_config_labels() -> None:
                                     "label": "Root",
                                     "count": 1,
                                     "terminology_total_count": 10,
-                                    "proportion": 0.1,
+                                    "terminology_proportion": 0.1,
                                 }
                             ],
                             "depth": [
@@ -227,7 +227,7 @@ def test_dashboard_panel_labels_order_and_removed_cascade_tab() -> None:
                             "label": "Diseases",
                             "count": 1,
                             "annotation_count": 4,
-                            "proportion": 0.1,
+                            "terminology_proportion": 0.1,
                             "annotation_proportion": 0.8,
                             "total": 10,
                         }
