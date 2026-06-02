@@ -53,9 +53,13 @@ from corpus_benchmark.metrics.annotation_distributions import (
 
 from corpus_benchmark.metrics.overlaps import (
     token_overlap,
+    token_overlap_by_frequency,
     mention_overlap,
+    mention_overlap_by_frequency,
     mention_token_overlap,
+    mention_token_overlap_by_frequency,
     identifier_overlap,
+    identifier_overlap_by_frequency,
 )
 
 from corpus_benchmark.metrics.metadata_distribution import (
@@ -110,9 +114,13 @@ __all__ = [
     "identifier_resource_distribution",
     "match_type_distribution",
     "token_overlap",
+    "token_overlap_by_frequency",
     "mention_overlap",
+    "mention_overlap_by_frequency",
     "mention_token_overlap",
+    "mention_token_overlap_by_frequency",
     "identifier_overlap",
+    "identifier_overlap_by_frequency",
     "article_MeSH_topic_distribution",
     "journal_distribution",
     "journal_MeSH_topic_distribution",

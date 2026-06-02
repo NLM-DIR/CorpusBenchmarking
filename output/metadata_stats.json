@@ -702,6 +702,7 @@
           "ZooKeys": 1,
           "[Zasshi] [Journal]. Nihon Kyobu Geka Gakkai": 1
         },
+        "entropy": 8.81739553,
         "total": 1212
       },
       "metric_name": "journal_distribution",
@@ -1432,6 +1433,7 @@
           "Surgery / anesthesia / perioperative": 33.61111111111111,
           "Toxicology": 11.283333333333333
         },
+        "entropy": 4.06929269,
         "total": 1210.4666666666667
       },
       "metric_name": "journal_MeSH_topic_distribution",
@@ -1487,6 +1489,7 @@
           "Surgery / anesthesia / perioperative": 20.135910969785055,
           "Toxicology": 2.8285048609610013
         },
+        "entropy": 3.96238662,
         "total": 1212.0000000000016
       },
       "metric_name": "article_MeSH_topic_distribution",
@@ -2313,6 +2316,7 @@
           "Zentralblatt fu\u0308r Pathologie": 1,
           "[Rinsho ketsueki] The Japanese journal of clinical hematology": 1
         },
+        "entropy": 8.93643704,
         "total": 1500
       },
       "metric_name": "journal_distribution",
@@ -3049,6 +3053,7 @@
           "Toxicology": 42.03333333333334,
           "Unknown": 2.0
         },
+        "entropy": 3.6248526,
         "total": 1497.0166666666662
       },
       "metric_name": "journal_MeSH_topic_distribution",
@@ -3105,6 +3110,7 @@
           "Surgery / anesthesia / perioperative": 21.83676119223898,
           "Toxicology": 12.6027158390277
         },
+        "entropy": 3.63061344,
         "total": 1500.000000000002
       },
       "metric_name": "article_MeSH_topic_distribution",
@@ -3250,12 +3256,13 @@
           "Nature chemical biology": 82,
           "Nature genetics": 4,
           "Nature immunology": 133,
-          "PLOS Biology": 90,
-          "PLOS Pathogens": 607,
+          "PLoS Biology": 90,
           "PLoS Genetics": 183,
+          "PLoS Pathogens": 607,
           "The EMBO journal": 5252,
           "The Journal of cell biology": 765
         },
+        "entropy": 2.79834445,
         "total": 13697
       },
       "metric_name": "journal_distribution",
@@ -3273,9 +3280,9 @@
         "Nature chemical biology": 0.00598671,
         "Nature genetics": 0.00029203,
         "Nature immunology": 0.00971016,
-        "PLOS Biology": 0.00657078,
-        "PLOS Pathogens": 0.04431627,
+        "PLoS Biology": 0.00657078,
         "PLoS Genetics": 0.01336059,
+        "PLoS Pathogens": 0.04431627,
         "The EMBO journal": 0.38344163,
         "The Journal of cell biology": 0.05585165
       }
@@ -3287,15 +3294,16 @@
           "General / internal medicine": 930.0000000000358,
           "General biology / anatomy / physiology": 799.3333333333353,
           "General natural sciences": 63.25,
-          "Genetics/genomics": 1072.6666666666997,
-          "Immunology": 240.41666666666603,
+          "Genetics/genomics": 1072.666666666702,
+          "Immunology": 240.4166666666661,
           "Microbiology/pathogenesis": 303.5,
-          "Molecular biology / biochemistry": 8450.166666666395,
+          "Molecular biology / biochemistry": 8450.166666666624,
           "Multidisciplinary": 229.0,
           "Neuroscience & neurology": 192.0,
           "Nutrition, metabolism, and food science": 17.33333333333334
         },
-        "total": 13696.999999999794
+        "entropy": 2.01370873,
+        "total": 13697.000000000025
       },
       "metric_name": "journal_MeSH_topic_distribution",
       "value": {
@@ -3319,15 +3327,16 @@
           "General / internal medicine": 930.0000000000358,
           "General biology / anatomy / physiology": 799.3333333333353,
           "General natural sciences": 63.25,
-          "Genetics/genomics": 1072.6666666666997,
-          "Immunology": 240.41666666666603,
+          "Genetics/genomics": 1072.666666666702,
+          "Immunology": 240.4166666666661,
           "Microbiology/pathogenesis": 303.5,
-          "Molecular biology / biochemistry": 8450.166666666395,
+          "Molecular biology / biochemistry": 8450.166666666624,
           "Multidisciplinary": 229.0,
           "Neuroscience & neurology": 192.0,
           "Nutrition, metabolism, and food science": 17.33333333333334
         },
-        "total": 13696.999999999794
+        "entropy": 2.01370873,
+        "total": 13697.000000000025
       },
       "metric_name": "article_MeSH_topic_distribution",
       "value": {
@@ -3554,7 +3563,7 @@
           "Obesity reviews : an official journal of the International Association for the Study of Obesity": 14,
           "Oncogene": 61,
           "Organic process research & development": 1,
-          "PLOS Biology": 7,
+          "PLoS Biology": 7,
           "Pediatric diabetes": 2,
           "PharmacoEconomics": 9,
           "Pharmacogenomics": 19,
@@ -3602,6 +3611,7 @@
           "Unknown": 10,
           "Xenobiotica; the fate of foreign compounds in biological systems": 79
         },
+        "entropy": 6.76765315,
         "total": 10000
       },
       "metric_name": "journal_distribution",
@@ -3763,7 +3773,7 @@
         "Obesity reviews : an official journal of the International Association for the Study of Obesity": 0.0014,
         "Oncogene": 0.0061,
         "Organic process research & development": 0.0001,
-        "PLOS Biology": 0.0007,
+        "PLoS Biology": 0.0007,
         "Pediatric diabetes": 0.0002,
         "PharmacoEconomics": 0.0009,
         "Pharmacogenomics": 0.0019,
@@ -3838,6 +3848,7 @@
           "Toxicology": 1090.1499999999978,
           "Unknown": 10.0
         },
+        "entropy": 3.27377763,
         "total": 9999.999999999985
       },
       "metric_name": "journal_MeSH_topic_distribution",
@@ -3894,6 +3905,7 @@
           "Toxicology": 105.9847170613885,
           "Unknown": 10.0
         },
+        "entropy": 3.39280544,
         "total": 9999.999999999975
       },
       "metric_name": "article_MeSH_topic_distribution",
@@ -3971,12 +3983,13 @@
           "Genome Biology": 1,
           "Journal of biology": 1,
           "Nucleic acids research": 6,
-          "PLOS Biology": 19,
+          "PLoS Biology": 19,
           "PLoS Genetics": 19,
           "PLoS ONE": 1,
           "PLoS medicine": 1,
           "Respiratory Research": 1
         },
+        "entropy": 3.7418223,
         "total": 97
       },
       "metric_name": "journal_distribution",
@@ -4001,7 +4014,7 @@
         "Genome Biology": 0.01030928,
         "Journal of biology": 0.01030928,
         "Nucleic acids research": 0.06185567,
-        "PLOS Biology": 0.19587629,
+        "PLoS Biology": 0.19587629,
         "PLoS Genetics": 0.19587629,
         "PLoS ONE": 0.01030928,
         "PLoS medicine": 0.01030928,
@@ -4025,6 +4038,7 @@
           "Oncology": 3.0,
           "Public health / health services": 0.5
         },
+        "entropy": 2.99883525,
         "total": 97.0
       },
       "metric_name": "journal_MeSH_topic_distribution",
@@ -4070,6 +4084,7 @@
           "Surgery / anesthesia / perioperative": 0.09846153846153846,
           "Toxicology": 0.06666666666666667
         },
+        "entropy": 3.20373151,
         "total": 96.99999999999999
       },
       "metric_name": "article_MeSH_topic_distribution",
@@ -4439,11 +4454,11 @@
           "Open Biology": 4,
           "Orphanet Journal of Rare Diseases": 1,
           "Oxidative Medicine and Cellular Longevity": 1,
-          "PLOS Biology": 10,
-          "PLOS Pathogens": 15,
+          "PLoS Biology": 10,
           "PLoS Computational Biology": 13,
           "PLoS Genetics": 2,
           "PLoS ONE": 43,
+          "PLoS Pathogens": 15,
           "PLoS neglected tropical diseases": 2,
           "Parasites & Vectors": 2,
           "Particle and fibre toxicology": 2,
@@ -4520,6 +4535,7 @@
           "mBio": 3,
           "mSphere": 3
         },
+        "entropy": 6.79476543,
         "total": 2003
       },
       "metric_name": "journal_distribution",
@@ -4836,11 +4852,11 @@
         "Open Biology": 0.001997,
         "Orphanet Journal of Rare Diseases": 0.00049925,
         "Oxidative Medicine and Cellular Longevity": 0.00049925,
-        "PLOS Biology": 0.00499251,
-        "PLOS Pathogens": 0.00748877,
+        "PLoS Biology": 0.00499251,
         "PLoS Computational Biology": 0.00649026,
         "PLoS Genetics": 0.0009985,
         "PLoS ONE": 0.0214678,
+        "PLoS Pathogens": 0.00748877,
         "PLoS neglected tropical diseases": 0.0009985,
         "Parasites & Vectors": 0.0009985,
         "Particle and fibre toxicology": 0.0009985,
@@ -4945,6 +4961,7 @@
           "Toxicology": 1.6666666666666665,
           "Unknown": 4.0
         },
+        "entropy": 3.63740277,
         "total": 1990.8999999999987
       },
       "metric_name": "journal_MeSH_topic_distribution",
@@ -5002,6 +5019,7 @@
           "Toxicology": 1.2293077021018195,
           "Unknown": 0.07142857142857142
         },
+        "entropy": 3.5820846,
         "total": 2003.0000000000011
       },
       "metric_name": "article_MeSH_topic_distribution",
@@ -5038,8 +5056,8 @@
           "2019": 252,
           "2020": 283,
           "2021": 372,
-          "2022": 371,
-          "2023": 387,
+          "2022": 370,
+          "2023": 388,
           "2024": 337,
           "2025": 1
         },
@@ -5050,8 +5068,8 @@
         "2019": 0.12581128,
         "2020": 0.14128807,
         "2021": 0.18572142,
-        "2022": 0.18522217,
-        "2023": 0.19321018,
+        "2022": 0.18472292,
+        "2023": 0.19370944,
         "2024": 0.16824763,
         "2025": 0.00049925
       }
@@ -5491,6 +5509,7 @@
           "Zhonghua yi xue za zhi": 1,
           "[Hokkaido igaku zasshi] The Hokkaido journal of medical science": 1
         },
+        "entropy": 6.75332174,
         "total": 2404
       },
       "metric_name": "journal_distribution",
@@ -5952,6 +5971,7 @@
           "Surgery / anesthesia / perioperative": 11.083333333333332,
           "Toxicology": 9.583333333333334
         },
+        "entropy": 3.62941502,
         "total": 2402.85
       },
       "metric_name": "journal_MeSH_topic_distribution",
@@ -6007,6 +6027,7 @@
           "Surgery / anesthesia / perioperative": 1.8964731268266402,
           "Toxicology": 0.7429251678628277
         },
+        "entropy": 3.05336407,
         "total": 2404.0000000000014
       },
       "metric_name": "article_MeSH_topic_distribution",
@@ -6198,6 +6219,7 @@
           "The Prostate": 1,
           "Vox sanguinis": 2
         },
+        "entropy": 5.02530892,
         "total": 793
       },
       "metric_name": "journal_distribution",
@@ -6326,6 +6348,7 @@
           "Public health / health services": 0.2777777777777778,
           "Surgery / anesthesia / perioperative": 1.7499999999999998
         },
+        "entropy": 2.49964589,
         "total": 793.0000000000003
       },
       "metric_name": "journal_MeSH_topic_distribution",
@@ -6379,6 +6402,7 @@
           "Surgery / anesthesia / perioperative": 0.5641060985797828,
           "Toxicology": 0.2116058016058016
         },
+        "entropy": 3.27193222,
         "total": 793.0000000000011
       },
       "metric_name": "article_MeSH_topic_distribution",
@@ -6536,6 +6560,7 @@
           "The journal of headache and pain": 1,
           "Veterinary world": 1
         },
+        "entropy": 4.96469948,
         "total": 150
       },
       "metric_name": "journal_distribution",
@@ -6627,6 +6652,7 @@
           "Surgery / anesthesia / perioperative": 0.3333333333333333,
           "Toxicology": 0.25
         },
+        "entropy": 3.37774347,
         "total": 149.66666666666666
       },
       "metric_name": "journal_MeSH_topic_distribution",
@@ -6681,6 +6707,7 @@
           "Surgery / anesthesia / perioperative": 0.2625,
           "Toxicology": 0.3724564977506154
         },
+        "entropy": 3.32694226,
         "total": 149.99999999999997
       },
       "metric_name": "article_MeSH_topic_distribution",
