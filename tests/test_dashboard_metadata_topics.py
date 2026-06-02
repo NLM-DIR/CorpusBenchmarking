@@ -14,8 +14,8 @@ def test_load_metadata_stats_keeps_journal_and_article_topics_separate(tmp_path)
                 "Example_corpus": [
                     {"metric_name": "journal_distribution", "value": {"Journal A": 1.0}},
                     {"metric_name": "publication_year_distribution", "value": {"2024": 1.0}},
-                    {"metric_name": "journal_MeSH_topic_distribution", "value": {"Journal Topic": 1.0}},
-                    {"metric_name": "article_MeSH_topic_distribution", "value": {"Article Topic": 0.75, "Unknown": 0.25}},
+                    {"metric_name": "journal_MeSH_topic_distribution", "value": {"Journal Topic": 1.0}, "details": {"entropy": 0.0}},
+                    {"metric_name": "article_MeSH_topic_distribution", "value": {"Article Topic": 0.75, "Unknown": 0.25}, "details": {"entropy": 0.81127812}},
                 ]
             }
         ),
@@ -26,6 +26,8 @@ def test_load_metadata_stats_keeps_journal_and_article_topics_separate(tmp_path)
 
     assert metadata["example"]["topic_dist"] == {"Journal Topic": 100.0}
     assert metadata["example"]["article_topic_dist"] == {"Article Topic": 75.0}
+    assert metadata["example"]["topic_entropy"] == 0.0
+    assert metadata["example"]["article_topic_entropy"] == 0.81127812
 
 
 def test_build_metadata_panels_adds_article_topics_pane() -> None:
@@ -37,6 +39,8 @@ def test_build_metadata_panels_adds_article_topics_pane() -> None:
                 "year": {"mode_year": 2024, "year_min": 2024, "year_max": 2024, "span": 0, "decades": {2020: 100.0}, "year_pcts": {2024: 100.0}},
                 "topic_dist": {"Journal Topic": 100.0},
                 "article_topic_dist": {"Article Topic": 100.0},
+                "topic_entropy": 0.0,
+                "article_topic_entropy": 0.0,
                 "has_metadata": True,
             },
         }
@@ -50,3 +54,4 @@ def test_build_metadata_panels_adds_article_topics_pane() -> None:
     assert "Article Topic" in panels
     assert "topic-heatmap" in panels
     assert "hm-cell" in panels
+    assert "Entropy (bits)" in panels

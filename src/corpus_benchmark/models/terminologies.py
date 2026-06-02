@@ -19,8 +19,8 @@ _NAME_INDEX_CACHE: Dict[int, tuple[_TerminologyCacheSignature, Dict[str, List[st
 _ID_INDEX_CACHE: Dict[int, tuple[_TerminologyCacheSignature, Dict[str, str]]] = {}
 _DEPTH_CACHE: Dict[int, tuple[_TerminologyCacheSignature, Dict[str, int]]] = {}
 _TOP_ANCESTOR_CACHE: Dict[int, tuple[_TerminologyCacheSignature, Dict[str, List[str]]]] = {}
-_GLOBAL_BRANCH_COUNT_CACHE: Dict[int, tuple[int, Dict[str, float]]] = {}
-_GLOBAL_DEPTH_COUNT_CACHE: Dict[int, tuple[int, Dict[int, float]]] = {}
+_GLOBAL_BRANCH_COUNT_CACHE: Dict[tuple[str, int, int], tuple[int, Dict[str, float]]] = {}
+_GLOBAL_DEPTH_COUNT_CACHE: Dict[tuple[str, int, int], tuple[int, Dict[int, float]]] = {}
 NOT_FOUND_LIMIT = 10
 PROGRESS_LOG_MIN_TOTAL = 10_000
 PROGRESS_LOG_INTERVAL = 50_000
@@ -64,6 +64,9 @@ class TerminologyResource:
 
     def _cache_signature(self) -> _TerminologyCacheSignature:
         return (len(self.concepts), id(self.concepts))
+
+    def cache_key(self) -> tuple[str, int, int]:
+        return (self.name, *self._cache_signature())
 
     def save_cache(self) -> None:
         if not self.cache_path:
@@ -121,7 +124,6 @@ class TerminologyResource:
         signature = self._cache_signature()
         cached = _ID_INDEX_CACHE.get(cache_key)
         if cached is not None and cached[0] == signature:
-            logger.debug("Reusing terminology ID index for %s (%s concepts)", self.name, len(self.concepts))
             return cached[1]
 
         start = time.perf_counter()
@@ -150,7 +152,6 @@ class TerminologyResource:
         signature = self._cache_signature()
         cached = _NAME_INDEX_CACHE.get(cache_key)
         if cached is not None and cached[0] == signature:
-            logger.debug("Reusing terminology name index for %s (%s concepts)", self.name, len(self.concepts))
             return cached[1]
 
         start = time.perf_counter()
@@ -726,7 +727,7 @@ class TerminologyTopicAnchorCounter:
         return result
 
     def get_global_counts_by_branch(self) -> Dict[str, float]:
-        cache_key = id(self.terminology)
+        cache_key = self.terminology.cache_key()
         concept_count = len(self.terminology.concepts)
         persistent_cached = getattr(self.terminology, "global_branch_counts_cache", None)
         if persistent_cached is not None and persistent_cached[0] == concept_count:
@@ -746,6 +747,8 @@ class TerminologyTopicAnchorCounter:
                 concept_count,
                 len(cached[1]),
             )
+            self.terminology.global_branch_counts_cache = cached
+            self.terminology.save_cache()
             return cached[1]
         logger.info(
             "Computing global branch counts for terminology %s by iterating %s concepts",
@@ -781,7 +784,7 @@ class TerminologyTopicAnchorCounter:
         return counts
 
     def get_global_counts_by_depth(self) -> Dict[int, float]:
-        cache_key = id(self.terminology)
+        cache_key = self.terminology.cache_key()
         concept_count = len(self.terminology.concepts)
         persistent_cached = getattr(self.terminology, "global_depth_counts_cache", None)
         if persistent_cached is not None and persistent_cached[0] == concept_count:
@@ -801,6 +804,8 @@ class TerminologyTopicAnchorCounter:
                 concept_count,
                 len(cached[1]),
             )
+            self.terminology.global_depth_counts_cache = cached
+            self.terminology.save_cache()
             return cached[1]
         logger.info(
             "Computing global depth counts for terminology %s by iterating %s concepts",

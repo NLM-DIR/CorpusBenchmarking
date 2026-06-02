@@ -5,12 +5,14 @@ import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
+from sys import stdout
 
 from corpus_benchmark.models.filters import AnnotationFilter
 
 logger = logging.getLogger(__name__)
 
 APP_NAME_VER = "CorpusBenchmarking/0.1"
+
 
 @dataclass(slots=True)
 class LoaderSpec:
@@ -145,12 +147,19 @@ class WorkspaceConfig:
                 id_type = DocumentIdentifierType(str(raw_id_type).lower())
             except ValueError as exc:
                 allowed = ", ".join(item.value for item in DocumentIdentifierType)
-                raise ValueError(f"Unknown workspace.document_fetchers identifier type " f"{raw_id_type!r}. Expected one of: {allowed}") from exc
+                raise ValueError(
+                    f"Unknown workspace.document_fetchers identifier type "
+                    f"{raw_id_type!r}. Expected one of: {allowed}"
+                ) from exc
 
             for fetcher_spec in fetcher_specs:
                 if fetcher_spec.name not in DOCUMENT_FETCHERS:
                     available = ", ".join(sorted(DOCUMENT_FETCHERS)) or "<none>"
-                    raise ValueError(f"Unknown document fetcher {fetcher_spec.name!r} for " f"identifier type {id_type.value!r}. Available document " f"fetchers: {available}")
+                    raise ValueError(
+                        f"Unknown document fetcher {fetcher_spec.name!r} for "
+                        f"identifier type {id_type.value!r}. Available document "
+                        f"fetchers: {available}"
+                    )
 
                 fetcher_cls = DOCUMENT_FETCHERS[fetcher_spec.name]
                 try:
@@ -159,7 +168,11 @@ class WorkspaceConfig:
                     raise ValueError(f"Invalid params for document fetcher " f"{fetcher_spec.name!r}: {exc}") from exc
 
                 if fetcher.supported_id_type != id_type:
-                    raise ValueError(f"Document fetcher {fetcher_spec.name!r} supports " f"{fetcher.supported_id_type.value!r}, but it was " f"configured for {id_type.value!r}.")
+                    raise ValueError(
+                        f"Document fetcher {fetcher_spec.name!r} supports "
+                        f"{fetcher.supported_id_type.value!r}, but it was "
+                        f"configured for {id_type.value!r}."
+                    )
 
 
 @dataclass(slots=True)
@@ -167,6 +180,22 @@ class LoggingConfig:
     level: str = "INFO"
     format: str = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     filename: str | None = None
+
+    def __post_init__(self):
+        logging_level = getattr(logging, self.level.upper(), None)
+        if logging_level is None:
+            raise ValueError(f"Unknown logging level: {self.level}")
+        self.level = logging_level
+
+    def setup(self) -> None:
+        logging_params = dict()
+        logging_params["level"] = self.level
+        logging_params["format"] = self.format
+        if self.filename is None:
+            logging_params["stream"] = stdout
+        else:
+            logging_params["filename"] = self.filename
+        logging.basicConfig(**logging_params)
 
 
 @dataclass(slots=True)
@@ -206,13 +235,18 @@ class BatteryConfig:
             loader_name = corpus_config.loader.name
             if loader_name not in LOADERS:
                 available = ", ".join(sorted(LOADERS)) or "<none>"
-                raise ValueError(f"Corpus {corpus_name!r} uses unknown loader " f"{loader_name!r}. Available loaders: {available}")
+                raise ValueError(
+                    f"Corpus {corpus_name!r} uses unknown loader " f"{loader_name!r}. Available loaders: {available}"
+                )
 
         for term_name, term_config in self.terminologies.items():
             loader_name = term_config.name
             if loader_name not in TERMINOLOGY_LOADERS:
                 available = ", ".join(sorted(TERMINOLOGY_LOADERS)) or "<none>"
-                raise ValueError(f"Terminology {term_name!r} uses unknown loader " f"{loader_name!r}. Available terminology loaders: {available}")
+                raise ValueError(
+                    f"Terminology {term_name!r} uses unknown loader "
+                    f"{loader_name!r}. Available terminology loaders: {available}"
+                )
 
         for bundle_name, bundle in self.bundles.items():
             if not bundle.subsets:
@@ -220,7 +254,10 @@ class BatteryConfig:
             for ref in bundle.subsets:
                 if ref.corpus_name not in self.corpora:
                     available = ", ".join(sorted(self.corpora)) or "<none>"
-                    raise ValueError(f"Bundle {bundle_name!r} references unknown corpus " f"{ref.corpus_name!r}. Available corpora: {available}")
+                    raise ValueError(
+                        f"Bundle {bundle_name!r} references unknown corpus "
+                        f"{ref.corpus_name!r}. Available corpora: {available}"
+                    )
 
         for suite_name, suite in self.comparison_suites.items():
             if not suite.bundle_pairs:
@@ -229,7 +266,11 @@ class BatteryConfig:
                 for bundle_name in (bundle1, bundle2):
                     if bundle_name not in self.bundles:
                         available = ", ".join(sorted(self.bundles)) or "<none>"
-                        raise ValueError(f"Comparison suite {suite_name!r} references " f"unknown bundle {bundle_name!r}. Available bundles: " f"{available}")
+                        raise ValueError(
+                            f"Comparison suite {suite_name!r} references "
+                            f"unknown bundle {bundle_name!r}. Available bundles: "
+                            f"{available}"
+                        )
 
         for metric_spec in self.metrics:
             if not metric_spec.enabled:
@@ -244,16 +285,24 @@ class BatteryConfig:
                 if metric_spec.comparison_suite not in self.comparison_suites:
                     available = ", ".join(sorted(self.comparison_suites)) or "<none>"
                     raise ValueError(
-                        f"Metric {metric_name!r} references unknown comparison " f"suite {metric_spec.comparison_suite!r}. Available " f"comparison suites: {available}"
+                        f"Metric {metric_name!r} references unknown comparison "
+                        f"suite {metric_spec.comparison_suite!r}. Available "
+                        f"comparison suites: {available}"
                     )
             elif metric_name in TERMINOLOGY_METRICS:
                 self._validate_metric_target_bundles(metric_spec)
                 term_name = metric_spec.params.get("terminology_name")
                 if term_name is not None and term_name not in self.terminologies:
                     available = ", ".join(sorted(self.terminologies)) or "<none>"
-                    raise ValueError(f"Metric {metric_name!r} references unknown terminology " f"{term_name!r}. Available terminologies: {available}")
+                    raise ValueError(
+                        f"Metric {metric_name!r} references unknown terminology "
+                        f"{term_name!r}. Available terminologies: {available}"
+                    )
                 if term_name is None and len(self.terminologies) != 1:
-                    raise ValueError(f"Metric {metric_name!r} requires params.terminology_name " "unless exactly one terminology is configured.")
+                    raise ValueError(
+                        f"Metric {metric_name!r} requires params.terminology_name "
+                        "unless exactly one terminology is configured."
+                    )
             else:
                 available_metrics = []
                 available_metrics.extend(SUBSET_METRICS)
@@ -268,4 +317,7 @@ class BatteryConfig:
         for bundle_name in metric_spec.target_bundles:
             if bundle_name not in self.bundles:
                 available = ", ".join(sorted(self.bundles)) or "<none>"
-                raise ValueError(f"Metric {metric_spec.metric_name!r} references unknown " f"bundle {bundle_name!r}. Available bundles: {available}")
+                raise ValueError(
+                    f"Metric {metric_spec.metric_name!r} references unknown "
+                    f"bundle {bundle_name!r}. Available bundles: {available}"
+                )

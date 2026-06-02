@@ -4,7 +4,7 @@ import pickle
 from pathlib import Path
 
 from corpus_benchmark.context import BenchmarkContext, MetricTarget
-from corpus_benchmark.metrics.terminology_coverage import concept_depth_counts, high_level_concept_counts
+from corpus_benchmark.metrics.terminology_coverage import annotation_topic_coverage, concept_depth_counts, terminology_concept_coverage
 from corpus_benchmark.models.corpus import Annotation, AnnotationSpan, CorpusSubset, Document, IdentifierLink, Passage
 from corpus_benchmark.models.filters import AnnotationFilter
 from corpus_benchmark.models.terminologies import TerminologyConcept, TerminologyResource, TerminologyTopicAnchorCounter
@@ -86,10 +86,10 @@ def test_terminology_metric_filters_identifiers_by_resource_and_scope() -> None:
         id_prefix="CL",
     )
 
-    result = high_level_concept_counts(_target(), "high_level_concept_counts", terminology)
-    scoped = high_level_concept_counts(
+    result = terminology_concept_coverage(_target(), "terminology_concept_coverage", terminology)
+    scoped = terminology_concept_coverage(
         _target(),
-        "high_level_concept_counts",
+        "terminology_concept_coverage",
         terminology,
         annotation_filter_name="cell",
     )
@@ -142,7 +142,42 @@ def test_terminology_global_counts_are_persisted(tmp_path: Path) -> None:
     assert cached.global_depth_counts_cache == (2, {1: 1.0, 2: 1.0})
 
 
-def test_high_level_concept_counts_uses_configured_term_overrides(tmp_path: Path) -> None:
+def test_cached_global_counts_are_persisted_on_cache_hit(tmp_path: Path) -> None:
+    cache_path = tmp_path / "example.pkl"
+    concepts = {
+        "R1": TerminologyConcept(ui="R1", name="Root A"),
+        "T1": TerminologyConcept(ui="T1", name="Term One", parent_ids=["R1"]),
+    }
+    tree_to_ids = {"R1": ["R1"]}
+    warm_terminology = TerminologyResource(
+        name="example",
+        concepts=concepts,
+        tree_to_ids=tree_to_ids,
+    )
+    warm_counter = TerminologyTopicAnchorCounter(warm_terminology)
+
+    assert warm_counter.get_global_counts_by_branch() == {"R1": 2.0}
+    assert warm_counter.get_global_counts_by_depth() == {1: 1.0, 2: 1.0}
+
+    terminology = TerminologyResource(
+        name="example",
+        concepts=concepts,
+        tree_to_ids=tree_to_ids,
+        cache_path=str(cache_path),
+    )
+    counter = TerminologyTopicAnchorCounter(terminology)
+
+    assert counter.get_global_counts_by_branch() == {"R1": 2.0}
+    assert counter.get_global_counts_by_depth() == {1: 1.0, 2: 1.0}
+
+    with cache_path.open("rb") as fp:
+        cached = pickle.load(fp)
+
+    assert cached.global_branch_counts_cache == (2, {"R1": 2.0})
+    assert cached.global_depth_counts_cache == (2, {1: 1.0, 2: 1.0})
+
+
+def test_terminology_concept_coverage_uses_configured_term_overrides(tmp_path: Path) -> None:
     terminology = TerminologyResource(
         name="example",
         concepts={
@@ -155,9 +190,9 @@ def test_high_level_concept_counts_uses_configured_term_overrides(tmp_path: Path
     mapping_path = tmp_path / "mappings.yaml"
     mapping_path.write_text("Broad A:\n- Anchor A\n", encoding="utf-8")
 
-    result = high_level_concept_counts(
+    result = terminology_concept_coverage(
         _target_for_link("T1", "EX"),
-        "high_level_concept_counts",
+        "terminology_concept_coverage",
         terminology,
         term_overrides_path=str(mapping_path),
     )
@@ -167,7 +202,7 @@ def test_high_level_concept_counts_uses_configured_term_overrides(tmp_path: Path
     assert result.details["term_overrides_path"] == str(mapping_path)
 
 
-def test_high_level_concept_counts_selects_scope_specific_term_overrides(tmp_path: Path) -> None:
+def test_terminology_concept_coverage_selects_scope_specific_term_overrides(tmp_path: Path) -> None:
     terminology = TerminologyResource(
         name="example",
         concepts={
@@ -181,15 +216,15 @@ def test_high_level_concept_counts_selects_scope_specific_term_overrides(tmp_pat
     mapping_path.write_text("Broad A:\n- Anchor A\n", encoding="utf-8")
     target = _target_for_link("T1", "EX")
 
-    unscoped = high_level_concept_counts(
+    unscoped = terminology_concept_coverage(
         target,
-        "high_level_concept_counts",
+        "terminology_concept_coverage",
         terminology,
         term_override_paths_by_entity_scope={"entity": str(mapping_path)},
     )
-    scoped = high_level_concept_counts(
+    scoped = terminology_concept_coverage(
         target,
-        "high_level_concept_counts",
+        "terminology_concept_coverage",
         terminology,
         annotation_filter_name="entity",
         term_override_paths_by_entity_scope={"entity": str(mapping_path)},
@@ -201,7 +236,7 @@ def test_high_level_concept_counts_selects_scope_specific_term_overrides(tmp_pat
     assert scoped.details["term_overrides_path"] == str(mapping_path)
 
 
-def test_high_level_concept_counts_uses_unique_corpus_concepts_for_recall() -> None:
+def test_terminology_concept_coverage_uses_unique_corpus_concepts_for_recall() -> None:
     terminology = TerminologyResource(
         name="example",
         concepts={
@@ -218,7 +253,7 @@ def test_high_level_concept_counts_uses_unique_corpus_concepts_for_recall() -> N
         ]
     )
 
-    result = high_level_concept_counts(target, "high_level_concept_counts", terminology)
+    result = terminology_concept_coverage(target, "terminology_concept_coverage", terminology)
 
     assert result.details["n_input_ids"] == 3
     assert result.details["n_unique_input_ids"] == 1
@@ -228,7 +263,7 @@ def test_high_level_concept_counts_uses_unique_corpus_concepts_for_recall() -> N
     assert result.value[0]["annotation_proportion"] == 1.0
 
 
-def test_high_level_concept_counts_annotation_proportion_uses_all_identifiers() -> None:
+def test_terminology_concept_coverage_annotation_proportion_uses_all_identifiers() -> None:
     terminology = TerminologyResource(
         name="example",
         concepts={
@@ -245,7 +280,7 @@ def test_high_level_concept_counts_annotation_proportion_uses_all_identifiers() 
         ]
     )
 
-    result = high_level_concept_counts(target, "high_level_concept_counts", terminology)
+    result = terminology_concept_coverage(target, "terminology_concept_coverage", terminology)
     row = result.value[0]
 
     assert result.details["n_input_ids"] == 3
@@ -256,7 +291,31 @@ def test_high_level_concept_counts_annotation_proportion_uses_all_identifiers() 
     assert row["annotation_proportion"] == round(2 / 3, 8)
 
 
-def test_high_level_concept_counts_treats_mapped_supplementals_as_terminology_concepts() -> None:
+def test_annotation_topic_coverage_reports_annotation_normalized_metric_and_entropy() -> None:
+    terminology = TerminologyResource(
+        name="example",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Root A"),
+            "T1": TerminologyConcept(ui="T1", name="Term One", parent_ids=["R1"]),
+        },
+        resource_aliases=["EX"],
+    )
+    target = _target_for_links(
+        [
+            IdentifierLink(identifier="T1", resource="EX"),
+            IdentifierLink(identifier="T1", resource="EX"),
+            IdentifierLink(identifier="OLD:1", resource="EX"),
+        ]
+    )
+
+    result = annotation_topic_coverage(target, "annotation_topic_coverage", terminology)
+
+    assert result.metric_name == "annotation_topic_coverage"
+    assert result.details["distribution_entropy"] == 0.0
+    assert result.value[0]["annotation_proportion"] == round(2 / 3, 8)
+
+
+def test_terminology_concept_coverage_treats_mapped_supplementals_as_terminology_concepts() -> None:
     terminology = TerminologyResource(
         name="mesh_like",
         concepts={
@@ -277,7 +336,7 @@ def test_high_level_concept_counts_treats_mapped_supplementals_as_terminology_co
         ]
     )
 
-    result = high_level_concept_counts(target, "high_level_concept_counts", terminology)
+    result = terminology_concept_coverage(target, "terminology_concept_coverage", terminology)
     row = result.value[0]
 
     assert row["branch_code"] == "R1"
@@ -288,7 +347,7 @@ def test_high_level_concept_counts_treats_mapped_supplementals_as_terminology_co
     assert row["annotation_proportion"] == 1.0
 
 
-def test_high_level_concept_counts_term_overrides_include_mapped_supplementals_in_totals(tmp_path: Path) -> None:
+def test_terminology_concept_coverage_term_overrides_include_mapped_supplementals_in_totals(tmp_path: Path) -> None:
     terminology = TerminologyResource(
         name="mesh_like",
         concepts={
@@ -309,9 +368,9 @@ def test_high_level_concept_counts_term_overrides_include_mapped_supplementals_i
         ]
     )
 
-    result = high_level_concept_counts(
+    result = terminology_concept_coverage(
         target,
-        "high_level_concept_counts",
+        "terminology_concept_coverage",
         terminology,
         term_overrides_path=str(mapping_path),
     )
@@ -325,7 +384,7 @@ def test_high_level_concept_counts_term_overrides_include_mapped_supplementals_i
     assert row["annotation_proportion"] == 1.0
 
 
-def test_high_level_concept_counts_term_overrides_renormalize_mapped_supplementals_to_in_scope_parents(tmp_path: Path) -> None:
+def test_terminology_concept_coverage_term_overrides_renormalize_mapped_supplementals_to_in_scope_parents(tmp_path: Path) -> None:
     terminology = TerminologyResource(
         name="mesh_like",
         concepts={
@@ -351,9 +410,9 @@ def test_high_level_concept_counts_term_overrides_renormalize_mapped_supplementa
         ]
     )
 
-    result = high_level_concept_counts(
+    result = terminology_concept_coverage(
         target,
-        "high_level_concept_counts",
+        "terminology_concept_coverage",
         terminology,
         term_overrides_path=str(mapping_path),
     )

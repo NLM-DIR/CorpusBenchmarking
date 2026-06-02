@@ -14,7 +14,7 @@ def _topic_distribution(td_raw):
     )
 
 
-def _process_metadata(jd_raw, yd_raw, journal_td_raw, article_td_raw):
+def _process_metadata(jd_raw, yd_raw, journal_td_raw, article_td_raw, journal_td_details=None, article_td_details=None):
     j_clean = {
         k: v for k, v in (jd_raw or {}).items() if k not in ("Unknown", None) and v
     }
@@ -61,6 +61,8 @@ def _process_metadata(jd_raw, yd_raw, journal_td_raw, article_td_raw):
         "year": year,
         "topic_dist": _topic_distribution(journal_td_raw),
         "article_topic_dist": _topic_distribution(article_td_raw),
+        "topic_entropy": (journal_td_details or {}).get("entropy"),
+        "article_topic_entropy": (article_td_details or {}).get("entropy"),
         "has_metadata": journal is not None or year is not None,
     }
 
@@ -86,23 +88,16 @@ def load_metadata_stats(path):
             ),
             {},
         )
-        journal_td = next(
-            (
-                m.get("value", {})
-                for m in metrics
-                if m.get("metric_name") == "journal_MeSH_topic_distribution"
-            ),
-            {},
+        journal_td_metric = next((m for m in metrics if m.get("metric_name") == "journal_MeSH_topic_distribution"), {})
+        article_td_metric = next((m for m in metrics if m.get("metric_name") == "article_MeSH_topic_distribution"), {})
+        result[norm_corpus_name(corpus_name)] = _process_metadata(
+            jd,
+            yd,
+            journal_td_metric.get("value", {}),
+            article_td_metric.get("value", {}),
+            journal_td_metric.get("details", {}),
+            article_td_metric.get("details", {}),
         )
-        article_td = next(
-            (
-                m.get("value", {})
-                for m in metrics
-                if m.get("metric_name") == "article_MeSH_topic_distribution"
-            ),
-            {},
-        )
-        result[norm_corpus_name(corpus_name)] = _process_metadata(jd, yd, journal_td, article_td)
     return result
 
 

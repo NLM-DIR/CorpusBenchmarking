@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import math
 from collections import Counter
 from pathlib import Path
 from typing import Any
@@ -20,7 +21,18 @@ PRECISION = 8  # Number of decimal places
 
 def calculate_proportions(counts: Counter[Any]) -> dict[str, float]:
     total = counts.total()
-    return {str(label) if label is not None else "null": (round(count / total, PRECISION) if total else 0.0) for label, count in counts.items()}
+    return {
+        str(label) if label is not None else "null": (round(count / total, PRECISION) if total else 0.0)
+        for label, count in counts.items()
+    }
+
+
+def calculate_entropy(counts: Counter[Any]) -> float:
+    total = counts.total()
+    if total <= 0:
+        return 0.0
+    entropy = -sum((count / total) * math.log2(count / total) for count in counts.values() if count > 0)
+    return round(entropy, PRECISION)
 
 
 def normalize_counts(counts: Counter[Any]) -> dict[str, int | float]:
@@ -117,12 +129,14 @@ def journal_distribution(target: MetricTarget, result_name: str) -> SubsetMetric
         metric_name="journal_distribution",
         value=calculate_proportions(counts),
         subset_name=target.name,
-        details={"counts": normalize_counts(counts), "total": counts.total()},
+        details={"counts": normalize_counts(counts), "total": counts.total(), "entropy": calculate_entropy(counts)},
     )
 
 
 @register_subset_metric("journal_topic_distribution", requires_metadata=True)
-def journal_topic_distribution(target: MetricTarget, result_name: str, terminology_name: str = "mesh") -> SubsetMetricResult:
+def journal_topic_distribution(
+    target: MetricTarget, result_name: str, terminology_name: str = "mesh"
+) -> SubsetMetricResult:
     workspace = get_workspace(target)
     terminology = workspace.get_terminology(terminology_name)
     metadata = get_metadata_for_target(target)
@@ -148,7 +162,7 @@ def journal_topic_distribution(target: MetricTarget, result_name: str, terminolo
         metric_name="journal_topic_distribution",
         value=calculate_proportions(counts),
         subset_name=target.name,
-        details={"counts": normalize_counts(counts), "total": counts.total()},
+        details={"counts": normalize_counts(counts), "total": counts.total(), "entropy": calculate_entropy(counts)},
     )
 
 
@@ -194,7 +208,7 @@ def journal_MeSH_topic_distribution(
         metric_name="journal_MeSH_topic_distribution",
         value=calculate_proportions(counts),
         subset_name=target.name,
-        details={"counts": normalize_counts(counts), "total": counts.total()},
+        details={"counts": normalize_counts(counts), "total": counts.total(), "entropy": calculate_entropy(counts)},
     )
 
 
@@ -241,7 +255,7 @@ def article_MeSH_topic_distribution(
         metric_name="article_MeSH_topic_distribution",
         value=calculate_proportions(counts),
         subset_name=target.name,
-        details={"counts": normalize_counts(counts), "total": counts.total()},
+        details={"counts": normalize_counts(counts), "total": counts.total(), "entropy": calculate_entropy(counts)},
     )
 
 

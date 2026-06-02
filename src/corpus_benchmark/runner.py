@@ -335,10 +335,9 @@ def run_benchmark(battery_config: BatteryConfig) -> list[Any]:
     journal_record_store.save()
 
     # Display context usage
-    logger.debug("Context usage:")
-    for benchmark_name, benchmark_context in contexts.items():
-        logger.debug("%s:", benchmark_name)
-        for context_key, usage_count in benchmark_context.usage_counts.items():
-            logger.debug("  %s: %s", context_key, usage_count)
+    if logger.isEnabledFor(logging.DEBUG):
+        for benchmark_name, benchmark_context in contexts.items():
+            for context_key, usage_count in benchmark_context.usage_counts.items():
+                logger.debug("Context usage for %s %s: %s", benchmark_name, context_key, usage_count)
 
     return results

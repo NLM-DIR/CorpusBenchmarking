@@ -31,7 +31,8 @@ def test_scoped_metrics_declare_annotation_scope_support() -> None:
     assert getattr(SUBSET_METRICS["label_distribution"], "supports_annotation_scope") is True
     assert getattr(SUBSET_METRICS["annotations_per_document_stats"], "supports_annotation_scope") is True
     assert getattr(CROSS_METRICS["mention_overlap"], "supports_annotation_scope") is True
-    assert getattr(TERMINOLOGY_METRICS["high_level_concept_counts"], "supports_annotation_scope") is True
+    assert getattr(TERMINOLOGY_METRICS["terminology_concept_coverage"], "supports_annotation_scope") is True
+    assert getattr(TERMINOLOGY_METRICS["annotation_topic_coverage"], "supports_annotation_scope") is True
     assert not getattr(CROSS_METRICS["token_overlap"], "supports_annotation_scope", False)
 
 

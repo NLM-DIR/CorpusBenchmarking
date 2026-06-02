@@ -391,6 +391,14 @@ def build_topic_heatmap(corpora, metadata_key: str = "topic_dist") -> str:
     for c in with_td:
         shown = sum(c["metadata"][metadata_key].get(t, 0) for t in shown_topics)
         total_cells.append(f'<div class="hm-total-cell">{shown:.0f}%</div>')
+    entropy_key = "article_topic_entropy" if metadata_key == "article_topic_dist" else "topic_entropy"
+    entropy_cells = []
+    for c in with_td:
+        entropy = c["metadata"].get(entropy_key)
+        if isinstance(entropy, (int, float)):
+            entropy_cells.append(f'<div class="hm-total-cell">{entropy:.2f}</div>')
+        else:
+            entropy_cells.append('<div class="hm-total-cell">n/a</div>')
 
     return f"""
 <div class="topic-heatmap-wrap">
@@ -401,6 +409,9 @@ def build_topic_heatmap(corpora, metadata_key: str = "topic_dist") -> str:
     {"".join(rows)}
     <div class="hm-total" style="{grid_template}">
       <div>Total shown</div>{"".join(total_cells)}
+    </div>
+    <div class="hm-total" style="{grid_template}">
+      <div>Entropy (bits)</div>{"".join(entropy_cells)}
     </div>
   </div>
   <div class="hm-scale" aria-hidden="true">
@@ -872,6 +883,10 @@ def _terminology_profiles(term_data):
                         "datasets": annotation_datasets,
                         "height": max(320, len(branch_labels) * 44 + 120),
                     },
+                    "terminologyEntropyNote": "Distribution entropy: "
+                    + " | ".join(f"{entry['display_name']} {entry.get('terminology_distribution_entropy', 0):.2f} bits" for entry in terminology_entries),
+                    "annotationEntropyNote": "Distribution entropy: "
+                    + " | ".join(f"{entry['display_name']} {entry.get('annotation_distribution_entropy', 0):.2f} bits" for entry in terminology_entries),
                 }
             )
 
@@ -1075,6 +1090,7 @@ def build_terminology_panels(term_data):
           Terminology branch recall for ${{group.title}}.
         </canvas>
       </div>
+      <div class="fn">${{group.terminologyEntropyNote || ''}}</div>
     `).join('');
     groups.forEach((group, i) => {{
       updateBar(`tmc4_${{i}}`, {{
@@ -1114,6 +1130,7 @@ def build_terminology_panels(term_data):
           Annotation topic coverage for ${{group.title}}.
         </canvas>
       </div>
+      <div class="fn">${{group.annotationEntropyNote || ''}}</div>
     `).join('');
     groups.forEach((group, i) => {{
       updateBar(`tmc5_${{i}}`, {{

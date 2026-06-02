@@ -14,13 +14,6 @@ from corpus_benchmark.runner import run_benchmark
 
 logger = logging.getLogger(__name__)
 
-def setup_logging(config: LoggingConfig) -> None:
-    logging.basicConfig(
-        level=getattr(logging, config.level.upper(), logging.INFO),
-        format=config.format,
-        filename=config.filename,
-    )
-
 def load_benchmark_config(path: str | Path) -> BenchmarkConfig:
     with open(path, "r", encoding="utf-8") as fp:
         raw_config: dict[str, Any] = yaml.safe_load(fp)
@@ -115,7 +108,7 @@ def main() -> None:
 
     battery_config = load_battery_config(Path(sys.argv[1]))
     battery_config.validate()
-    setup_logging(battery_config.logging)
+    battery_config.logging.setup()
 
     logger.info(f"Loading battery config from {sys.argv[1]}")
     logger.info(f"Loaded {len(battery_config.corpora)} corpora, {len(battery_config.metrics)} metrics")

@@ -67,8 +67,9 @@ from corpus_benchmark.metrics.metadata_distribution import (
 )
 
 from corpus_benchmark.metrics.terminology_coverage import (
-    high_level_concept_counts,
+    annotation_topic_coverage,
     concept_depth_counts,
+    terminology_concept_coverage,
 )
 
 __all__ = [
@@ -117,6 +118,7 @@ __all__ = [
     "journal_MeSH_topic_distribution",
     "journal_topic_distribution",
     "publication_year_distribution",
-    "high_level_concept_counts",
+    "annotation_topic_coverage",
     "concept_depth_counts",
+    "terminology_concept_coverage",
 ]
