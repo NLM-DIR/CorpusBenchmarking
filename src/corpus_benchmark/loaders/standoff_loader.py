@@ -78,9 +78,9 @@ def read_docid_map(filename: str | Path) -> dict[str, str]:
             if not line:
                 continue
 
-            fields = line.split("\t")
+            fields = line.split()
             if len(fields) != 2:
-                raise ValueError(f"Expected exactly 2 tab-delimited columns on line " f'{line_index} of file "{path}" but got {len(fields)}: ' f'"{line}"')
+                raise ValueError(f"Expected exactly 2 columns on line " f'{line_index} of file "{path}" but got {len(fields)}: ' f'"{line}"')
 
             docid_from, docid_to = fields
             docid_map[docid_from.strip()] = docid_to.strip()
@@ -169,6 +169,8 @@ def load_BRAT_standoff(
     docid_type: str = "pmid",
     docid_regex: str | None = None,
     docid_group: int | str = 1,
+    docid_map_path: str | None = None,
+    docid_map_invert: bool = False,
     normalization_resource_map: dict[str, str] = {},
     verify_text: bool = True,
 ) -> BenchmarkCorpus:
@@ -177,11 +179,16 @@ def load_BRAT_standoff(
     This loader supports standard text-bound rows and optional BRAT
     normalization rows, for example ``N1\tReference T1 Taxonomy:9606``.
     """
+    docid_map = read_docid_map(docid_map_path) if docid_map_path else {}
+    if docid_map_invert:
+        docid_map = {mapped_id: source_id for source_id, mapped_id in docid_map.items()}
+
     loader = BRAT_StandoffLoader(
         label_map=label_map,
         docid_type=docid_type,
         docid_regex=docid_regex,
         docid_group=docid_group,
+        docid_map=docid_map,
         normalization_resource_map=normalization_resource_map,
         verify_text=verify_text,
     )
@@ -518,6 +525,7 @@ class BRAT_StandoffLoader(StandoffLoader):
         docid_type: str = "pmid",
         docid_regex: str | None = None,
         docid_group: int | str = 1,
+        docid_map: dict[str, str] = {},
         normalization_resource_map: dict[str, str] = {},
         verify_text: bool = True,
         **kwargs,
@@ -531,13 +539,14 @@ class BRAT_StandoffLoader(StandoffLoader):
         self.docid_type = DocumentIdentifierType(docid_type.lower())
         self.docid_regex = re.compile(docid_regex) if docid_regex else None
         self.docid_group = docid_group
+        self.docid_map = docid_map
 
     def get_ids(self, filename_docid: str) -> dict[DocumentIdentifierType, str]:
-        docid_text = filename_docid
+        docid_text = self.docid_map.get(filename_docid, filename_docid)
         if self.docid_regex is not None:
-            match = self.docid_regex.search(filename_docid)
+            match = self.docid_regex.search(docid_text)
             if match is None:
-                raise ValueError(f"Document ID {filename_docid!r} did not match configured docid_regex")
+                raise ValueError(f"Document ID {filename_docid!r} resolved to {docid_text!r}, which did not match configured docid_regex")
             docid_text = match.group(self.docid_group)
         docid = self.docid_type.normalize(docid_text)
         return {self.docid_type: docid}

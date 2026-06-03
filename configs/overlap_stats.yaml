@@ -50,7 +50,7 @@ bundles:
       subset_name: train
   BC2GM_test:
     - corpus_name: BC2GM
-      subset_name: dev
+      subset_name: test
   CHEMDNER_train:
     - corpus_name: CHEMDNER
       subset_name: train

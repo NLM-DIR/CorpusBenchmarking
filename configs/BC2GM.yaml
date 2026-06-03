@@ -12,7 +12,10 @@ loader:
     paths:
       train: corpora/BC2GM/bc2gm-corpus-master/combined-data/standoff/train
       dev: corpora/BC2GM/bc2gm-corpus-master/combined-data/standoff/devel
+      test: corpora/BC2GM/bc2gm-corpus-master/combined-data/standoff/test
     docid_type: pmid
     docid_regex: "^P0*([0-9]+)[A-Z][0-9]+[a-z]*$"
+    docid_map_path: corpora/BC2GM/bc2gm-corpus-master/original-data/test/test.idmap
+    docid_map_invert: true
     label_map:
       GENE: Gene

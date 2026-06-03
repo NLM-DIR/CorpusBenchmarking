@@ -30,16 +30,16 @@ Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	I
 (AnatEM_train, AnatEM_test)	disease	(64, 128)	0	0	0	0	0	0	3.9826345
 (AnatEM_train, AnatEM_test)	disease	(128, 256)	2	2	1	0.0023837902	0.016528926	0.0023837902	3.9826345
 (AnatEM_train, AnatEM_test)	disease	(256, None)	1	1	1	0.0011918951	0.0082644628	0.0011918951	3.9826345
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	Overall	22364	1022	0.045698444	1	1	0.045698444	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(1, 2)	18904	0	0	0.84528707	0	0	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(2, 4)	2491	456	0.18305901	0.11138437	0.44618395	0.020389912	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(4, 8)	659	308	0.46737481	0.029467001	0.30136986	0.013772134	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(8, 16)	206	156	0.75728155	0.0092112323	0.15264188	0.0069754963	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(16, 32)	80	78	0.975	0.0035771776	0.076320939	0.0034877482	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(32, 64)	19	19	1	0.00084957968	0.018590998	0.00084957968	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(64, 128)	5	5	1	0.0002235736	0.0048923679	0.0002235736	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(128, 256)	0	0	0	0	0	0	3.6840377
-(BC2GM_train, BC2GM_test)	gene_protein_sequence	(256, None)	0	0	0	0	0	0	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	Overall	25836	1904	0.073695619	1	1	0.073695619	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(1, 2)	21698	0	0	0.83983589	0	0	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(2, 4)	2956	986	0.33355886	0.114414	0.51785714	0.038163802	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(4, 8)	799	562	0.70337922	0.03092584	0.29516807	0.021752593	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(8, 16)	250	224	0.896	0.0096764205	0.11764706	0.0086700728	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(16, 32)	97	96	0.98969072	0.0037544512	0.050420168	0.0037157455	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(32, 64)	29	29	1	0.0011224648	0.015231092	0.0011224648	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(64, 128)	7	7	1	0.00027093977	0.0036764706	0.00027093977	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(128, 256)	0	0	0	0	0	0	3.6858729
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(256, None)	0	0	0	0	0	0	3.6858729
 (BC5CDR_train, BC5CDR_test)	chemical	Overall	2039	417	0.20451202	1	1	0.20451202	3.6306134
 (BC5CDR_train, BC5CDR_test)	chemical	(1, 2)	801	0	0	0.39283963	0	0	3.6306134
 (BC5CDR_train, BC5CDR_test)	chemical	(2, 4)	518	66	0.12741313	0.2540461	0.15827338	0.032368808	3.6306134
