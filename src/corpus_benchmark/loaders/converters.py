@@ -105,8 +105,8 @@ bioid_type_handlers = {
     "CVCL:": ("cell_line", True),
     "Corum:": ("gene", True), # Protein complexes
     "GO:": ("GO term", True),
-    "NCBI gene:": ("gene", True),
-    "NCBI taxon:": ("species", True),
+    "NCBIGene:": ("gene", True),
+    "NCBITaxon:": ("species", True),
     "PubChem:": ("chemical", True),
     "Rfam:": ("gene", True), # RNA families
     "Uberon:": ("anatomy", True),
@@ -124,6 +124,8 @@ bioid_type_handlers = {
 def update_bioid_identifier(identifier):
     identifier = re.sub(r"^Uberon:UBERON:", "Uberon:UBERON_", identifier)
     identifier = re.sub(r"^CVCL_", "CVCL:CVCL_", identifier)
+    identifier = re.sub(r"^NCBI gene:", "NCBIGene:", identifier)
+    identifier = re.sub(r"^NCBI taxon:", "NCBITaxon:", identifier)
     return identifier
 
 def infer_bioid_type(identifier_list):

@@ -2427,8 +2427,8 @@
           "CVCL": 5783,
           "Corum": 24,
           "GO": 7310,
-          "NCBI gene": 21766,
-          "NCBI taxon": 7952,
+          "NCBIGene": 21766,
+          "NCBITaxon": 7952,
           "PubChem": 700,
           "Rfam": 167,
           "Uberon": 5870,
@@ -2515,7 +2515,7 @@
           "details": {
             "counts": {
               "Corum": 24,
-              "NCBI gene": 21766,
+              "NCBIGene": 21766,
               "Rfam": 167,
               "Uniprot": 30211,
               "gene": 1969,
@@ -2526,7 +2526,7 @@
           },
           "value": {
             "Corum": 0.00036143,
-            "NCBI gene": 0.32779133,
+            "NCBIGene": 0.32779133,
             "Rfam": 0.00251498,
             "Uniprot": 0.45497124,
             "gene": 0.02965272,
@@ -2544,13 +2544,13 @@
         "species": {
           "details": {
             "counts": {
-              "NCBI taxon": 7952,
+              "NCBITaxon": 7952,
               "organism": 25
             },
             "total": 7977
           },
           "value": {
-            "NCBI taxon": 0.99686599,
+            "NCBITaxon": 0.99686599,
             "organism": 0.00313401
           }
         }
@@ -2562,8 +2562,8 @@
         "CVCL": 0.05237276,
         "Corum": 0.00021735,
         "GO": 0.06620178,
-        "NCBI gene": 0.19712009,
-        "NCBI taxon": 0.07201594,
+        "NCBIGene": 0.19712009,
+        "NCBITaxon": 0.07201594,
         "PubChem": 0.00633943,
         "Rfam": 0.00151241,
         "Uberon": 0.05316066,
