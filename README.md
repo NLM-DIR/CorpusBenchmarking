@@ -27,7 +27,7 @@ The framework characterizes corpora across several diagnostic families:
 
 ## Preconfigured Corpora and Terminologies
 
-The default metric batteries currently preconfigure ten biomedical NER or NER+EL corpora. Entity scopes are dashboard filters defined in `configs/dashboard.yaml`; terminology coverage is computed only where corpus identifiers can be resolved against a configured terminology.
+The default metric batteries currently preconfigure eleven biomedical NER or NER+EL corpora. Entity scopes are dashboard filters defined in `configs/dashboard.yaml`; terminology coverage is computed only where corpus identifiers can be resolved against a configured terminology.
 
 | Corpus | Entity scopes available in the dashboard | Terminology coverage configured |
 | --- | --- | --- |
@@ -41,6 +41,7 @@ The default metric batteries currently preconfigure ten biomedical NER or NER+EL
 | NCBI Disease | Diseases | MeSH 2026 for disease identifiers. OMIM identifiers are retained in resource-distribution metrics but are not loaded as a terminology coverage resource by default. |
 | NLM-Chem | Chemicals | MeSH 2026 for chemical identifiers. |
 | NLM-Gene | Genes/proteins/sequences | None; NCBI Gene identifiers are retained for identifier and overlap metrics but are not loaded as a terminology coverage resource by default. |
+| S1000 | Species | None; NCBI Taxonomy identifiers are retained for identifier and overlap metrics but are not loaded as a terminology coverage resource by default. |
 
 The terminology coverage battery loads four terminology resources: MeSH XML for MeSH 2026, OBO Cell Ontology (`CL`), OBO MONDO, and OBO ChEBI. High-level terminology branch mappings are configured under `configs/MeSH_*_mappings.yaml`, `configs/cell_ontology_mappings.yaml`, `configs/MONDO_disease_mappings.yaml`, and `configs/ChEBI_chemical_mappings.yaml`.
 

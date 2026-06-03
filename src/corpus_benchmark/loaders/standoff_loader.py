@@ -27,11 +27,15 @@ from corpus_benchmark.models.corpus import (
     Annotation,
     AnnotationSpan,
     BenchmarkCorpus,
+    CompositeLink,
     CorpusSubset,
     Document,
     DocumentIdentifierType,
+    IdentifierLink,
+    Link,
     Passage,
 )
+from corpus_benchmark.models.types import LinkRelation
 from corpus_benchmark.loaders.bioc_loader import Loader
 from corpus_benchmark.loaders.splits import apply_document_split
 from corpus_benchmark.registry import register_loader
@@ -155,6 +159,38 @@ def load_AnatEM_standoff(
     return apply_document_split(corpus, split)
 
 
+@register_loader("BRAT_standoff")
+def load_BRAT_standoff(
+    paths: dict[str, str] | None = None,
+    path: str | None = None,
+    split: dict | None = None,
+    label_map: dict[str, str | None] = {},
+    docid_type: str = "pmid",
+    normalization_resource_map: dict[str, str] = {},
+    verify_text: bool = True,
+) -> BenchmarkCorpus:
+    """Load a generic BRAT standoff corpus into the benchmark corpus model.
+
+    This loader supports standard text-bound rows and optional BRAT
+    normalization rows, for example ``N1\tReference T1 Taxonomy:9606``.
+    """
+    loader = BRAT_StandoffLoader(
+        label_map=label_map,
+        docid_type=docid_type,
+        normalization_resource_map=normalization_resource_map,
+        verify_text=verify_text,
+    )
+
+    load_paths = _resolve_load_paths(paths, path)
+    subsets = {subset_name: loader.load_subset(subset_name, subset_path) for subset_name, subset_path in load_paths.items()}
+
+    corpus = BenchmarkCorpus(
+        subsets=subsets,
+        metadata={"source_format": "BRAT standoff"},
+    )
+    return apply_document_split(corpus, split)
+
+
 class StandoffLoader(Loader):
     """Load a directory of simple standoff annotation files.
 
@@ -168,6 +204,8 @@ class StandoffLoader(Loader):
     def __init__(
         self,
         label_map: dict[str, str | None] = {},
+        normalization_resource_map: dict[str, str] = {},
+        verify_text: bool = True,
         **kwargs,
     ) -> None:
         """Initialize the standoff loader.
@@ -188,6 +226,8 @@ class StandoffLoader(Loader):
             currently unused.
         """
         super().__init__(label_map=label_map)
+        self.normalization_resource_map = normalization_resource_map
+        self.verify_text = verify_text
 
     @abstractmethod
     def get_ids(self, docid: str) -> dict[DocumentIdentifierType, str]:
@@ -237,7 +277,8 @@ class StandoffLoader(Loader):
 
         annotations = self.load_annotations(document_id, annotation_path)
         for annotation in annotations:
-            self.verify_annotation_text(annotation, passage, document_id)
+            if self.verify_text:
+                self.verify_annotation_text(annotation, passage, document_id)
             passage.annotations.append(annotation)
 
         doc = Document(
@@ -249,9 +290,9 @@ class StandoffLoader(Loader):
 
     @staticmethod
     def _annotation_span(annotation: Annotation) -> AnnotationSpan:
-        """Return the single span for a simple standoff annotation."""
+        """Return the single span for loaders that only support simple spans."""
         if len(annotation.spans) != 1:
-            raise ValueError(f"StandoffLoader expects exactly one span per annotation; " f"annotation {annotation.mention_id!r} has {len(annotation.spans)}.")
+            raise ValueError(f"Expected exactly one span for annotation {annotation.mention_id!r}, but found {len(annotation.spans)}.")
         return annotation.spans[0]
 
     def verify_annotation_text(
@@ -261,16 +302,17 @@ class StandoffLoader(Loader):
         document_id: str,
     ) -> None:
         """Verify that the standoff span extracts the recorded mention text."""
-        span = self._annotation_span(annotation)
-        local_start = span.start - passage.offset
-        local_end = span.end - passage.offset
-        extracted_text = passage.text[local_start:local_end]
+        span_texts = []
+        for span in annotation.spans:
+            local_start = span.start - passage.offset
+            local_end = span.end - passage.offset
+            span_texts.append(passage.text[local_start:local_end])
+        extracted_text = " ".join(span_texts)
 
-        if extracted_text != annotation.text:
+        if extracted_text != annotation.text and "".join(span_texts) != annotation.text:
             raise ValueError(
                 f"Annotation text mismatch in document {document_id!r}, "
-                f"annotation {annotation.mention_id!r}: span [{span.start}, "
-                f"{span.end}) extracts {extracted_text!r}, but annotation file "
+                f"annotation {annotation.mention_id!r}: spans extract {extracted_text!r}, but annotation file "
                 f"contains {annotation.text!r}."
             )
 
@@ -286,6 +328,8 @@ class StandoffLoader(Loader):
             raise ValueError(f'Missing standoff annotation file for document "{document_id}": ' f'"{annotation_path}"')
 
         annotations: list[Annotation] = []
+        annotations_by_id: dict[str, Annotation] = {}
+        pending_links: dict[str, list[IdentifierLink]] = {}
         with annotation_path.open("r", encoding="utf-8") as file:
             for line_index, line in enumerate(file, start=1):
                 line = line.rstrip("\n")
@@ -293,31 +337,55 @@ class StandoffLoader(Loader):
                     continue
 
                 fields = line.split("\t")
-                if len(fields) != 3:
-                    raise ValueError(f"Expected exactly 3 tab-delimited fields on line " f"{line_index} of standoff annotation file " f'{annotation_path}: "{line}"')
+                annotation_kind = fields[0][:1]
+                if annotation_kind == "T":
+                    if len(fields) != 3:
+                        raise ValueError(f"Expected exactly 3 tab-delimited fields on line " f"{line_index} of standoff annotation file " f'{annotation_path}: "{line}"')
 
-                mention_id, span_descriptor, mention_text = fields
-                label, span_start, span_end = self.parse_span_descriptor(
-                    span_descriptor=span_descriptor,
-                    annotation_path=annotation_path,
-                    line_index=line_index,
-                    line=line,
-                )
+                    mention_id, span_descriptor, mention_text = fields
+                    label, spans = self.parse_span_descriptor(
+                        span_descriptor=span_descriptor,
+                        annotation_path=annotation_path,
+                        line_index=line_index,
+                        line=line,
+                    )
 
-                # Label maps may intentionally suppress labels by mapping them
-                # to None. This mirrors the behavior of the BioC loaders.
-                if label is None:
-                    continue
+                    # Label maps may intentionally suppress labels by mapping
+                    # them to None. This mirrors the behavior of the BioC
+                    # loaders.
+                    if label is None:
+                        continue
 
-                annotations.append(
-                    Annotation(
+                    annotation = Annotation(
                         mention_id=str(mention_id),
                         text=str(mention_text),
-                        spans=[AnnotationSpan(start=span_start, end=span_end)],
+                        spans=spans,
                         label=label,
                         link=None,
                     )
-                )
+                    annotations.append(annotation)
+                    annotations_by_id[str(mention_id)] = annotation
+                    if mention_id in pending_links:
+                        annotation.link = self._combine_links(pending_links.pop(mention_id))
+                    continue
+
+                if annotation_kind == "N":
+                    target_id, link = self.parse_normalization_descriptor(
+                        fields=fields,
+                        annotation_path=annotation_path,
+                        line_index=line_index,
+                        line=line,
+                    )
+                    annotation = annotations_by_id.get(target_id)
+                    if annotation is None:
+                        pending_links.setdefault(target_id, []).append(link)
+                    else:
+                        current_links = annotation.link.get_identifier_links() if annotation.link is not None else []
+                        annotation.link = self._combine_links([*current_links, link])
+                    continue
+
+                # Ignore BRAT attributes, notes, relations, and events. They
+                # are not part of the corpus model used by these metrics.
 
         return annotations
 
@@ -327,32 +395,65 @@ class StandoffLoader(Loader):
         annotation_path: Path,
         line_index: int,
         line: str,
-    ) -> tuple[str | None, int, int]:
+    ) -> tuple[str | None, list[AnnotationSpan]]:
         """Parse the middle field of a simple standoff annotation row.
 
-        The expected format is ``<label> <start> <end>``. More complex BRAT
-        text-bound annotations, such as discontinuous spans, are deliberately
-        rejected with a clear error so that unsupported data cannot be loaded
-        silently.
+        The expected format is ``<label> <start> <end>`` or a BRAT
+        discontinuous span such as ``<label> <start> <end>;<start> <end>``.
         """
-        fields = span_descriptor.split()
-        if len(fields) != 3:
-            raise ValueError(f"Expected exactly 3 space-delimited values in the center " f"field on line {line_index} of standoff annotation file " f'{annotation_path}: "{line}"')
-
-        raw_label, raw_start, raw_end = fields
-        if ";" in raw_start or ";" in raw_end:
-            raise ValueError(f"Discontinuous spans are not supported by StandoffLoader " f"(line {line_index} of {annotation_path}: {line!r}).")
-
         try:
-            span_start = int(raw_start)
-            span_end = int(raw_end)
+            raw_label, span_text = span_descriptor.split(maxsplit=1)
         except ValueError as exc:
-            raise ValueError(f"Could not parse integer offsets on line {line_index} of " f"standoff annotation file {annotation_path}: {line!r}") from exc
+            raise ValueError(f"Expected a label and span offsets in the center " f"field on line {line_index} of standoff annotation file " f'{annotation_path}: "{line}"') from exc
 
-        if span_start < 0 or span_end <= span_start:
-            raise ValueError(f"Invalid span [{span_start}, {span_end}) on line " f"{line_index} of standoff annotation file {annotation_path}: " f"{line!r}")
+        spans: list[AnnotationSpan] = []
+        for raw_span in span_text.split(";"):
+            fields = raw_span.split()
+            if len(fields) != 2:
+                raise ValueError(f"Expected start and end offsets in span {raw_span!r} on line " f"{line_index} of standoff annotation file {annotation_path}: " f"{line!r}")
+            raw_start, raw_end = fields
+            try:
+                span_start = int(raw_start)
+                span_end = int(raw_end)
+            except ValueError as exc:
+                raise ValueError(f"Could not parse integer offsets on line {line_index} of " f"standoff annotation file {annotation_path}: {line!r}") from exc
 
-        return self.get_label(raw_label), span_start, span_end
+            if span_start < 0 or span_end <= span_start:
+                raise ValueError(f"Invalid span [{span_start}, {span_end}) on line " f"{line_index} of standoff annotation file {annotation_path}: " f"{line!r}")
+            spans.append(AnnotationSpan(start=span_start, end=span_end))
+
+        return self.get_label(raw_label), spans
+
+    def parse_normalization_descriptor(
+        self,
+        fields: list[str],
+        annotation_path: Path,
+        line_index: int,
+        line: str,
+    ) -> tuple[str, IdentifierLink]:
+        if len(fields) < 2:
+            raise ValueError(f"Expected a normalization descriptor on line " f"{line_index} of standoff annotation file " f'{annotation_path}: "{line}"')
+
+        descriptor_fields = fields[1].split()
+        if len(descriptor_fields) < 3:
+            raise ValueError(f"Expected normalization format 'Reference <target> <resource>:<id>' " f"on line {line_index} of standoff annotation file " f'{annotation_path}: "{line}"')
+
+        target_id = descriptor_fields[1]
+        resource_and_id = descriptor_fields[2]
+        if ":" in resource_and_id:
+            resource, identifier = resource_and_id.split(":", 1)
+        else:
+            resource, identifier = None, resource_and_id
+        mapped_resource = self.normalization_resource_map.get(resource, resource)
+        return target_id, IdentifierLink(resource=mapped_resource, identifier=identifier)
+
+    @staticmethod
+    def _combine_links(links: list[IdentifierLink]) -> Link | None:
+        if not links:
+            return None
+        if len(links) == 1:
+            return links[0]
+        return CompositeLink(relation=LinkRelation.RELATED_SET, components=list(links))
 
 
 class JNLPBA_StandoffLoader(StandoffLoader):
@@ -403,3 +504,25 @@ class AnatEM_StandoffLoader(StandoffLoader):
         ids = {docid_type: docid}
         # logger.debug(f"TRACE ids for {docid} = {ids}")
         return ids
+
+
+class BRAT_StandoffLoader(StandoffLoader):
+    def __init__(
+        self,
+        label_map: dict[str, str | None] = {},
+        docid_type: str = "pmid",
+        normalization_resource_map: dict[str, str] = {},
+        verify_text: bool = True,
+        **kwargs,
+    ) -> None:
+        super().__init__(
+            label_map=label_map,
+            normalization_resource_map=normalization_resource_map,
+            verify_text=verify_text,
+            kwargs=kwargs,
+        )
+        self.docid_type = DocumentIdentifierType(docid_type.lower())
+
+    def get_ids(self, filename_docid: str) -> dict[DocumentIdentifierType, str]:
+        docid = self.docid_type.normalize(filename_docid)
+        return {self.docid_type: docid}

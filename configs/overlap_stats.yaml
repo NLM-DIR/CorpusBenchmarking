@@ -14,6 +14,7 @@ corpora:
     NCBI_Disease: configs/NCBI_Disease.yaml
     NLM_Chem: configs/NLM_Chem.yaml
     NLM_Gene: configs/NLM_Gene.yaml
+    S1000: configs/S1000.yaml
 
 bundles:
   AnatEM_train:
@@ -76,6 +77,12 @@ bundles:
   NLM_Gene_test:
     - corpus_name: NLM_Gene
       subset_name: test
+  S1000_train:
+    - corpus_name: S1000
+      subset_name: train
+  S1000_test:
+    - corpus_name: S1000
+      subset_name: test
       
 comparison_suites:
   AnatEM_TrainVsTest:
@@ -98,6 +105,8 @@ comparison_suites:
     - ["NLM_Chem_train", "NLM_Chem_test"]
   NLM_Gene_TrainVsTest:
     - ["NLM_Gene_train", "NLM_Gene_test"]
+  S1000_TrainVsTest:
+    - ["S1000_train", "S1000_test"]
     
 metrics:
   - result_name: AnatEM_token_overlap
@@ -130,6 +139,9 @@ metrics:
   - result_name: NLM_Gene_token_overlap
     metric_name: token_overlap
     comparison_suite: NLM_Gene_TrainVsTest
+  - result_name: S1000_token_overlap
+    metric_name: token_overlap
+    comparison_suite: S1000_TrainVsTest
   - result_name: AnatEM_token_overlap_by_frequency
     metric_name: token_overlap_by_frequency
     comparison_suite: AnatEM_TrainVsTest
@@ -160,6 +172,9 @@ metrics:
   - result_name: NLM_Gene_token_overlap_by_frequency
     metric_name: token_overlap_by_frequency
     comparison_suite: NLM_Gene_TrainVsTest
+  - result_name: S1000_token_overlap_by_frequency
+    metric_name: token_overlap_by_frequency
+    comparison_suite: S1000_TrainVsTest
   - result_name: AnatEM_mention_overlap
     metric_name: mention_overlap
     comparison_suite: AnatEM_TrainVsTest
@@ -190,6 +205,9 @@ metrics:
   - result_name: NLM_Gene_mention_overlap
     metric_name: mention_overlap
     comparison_suite: NLM_Gene_TrainVsTest
+  - result_name: S1000_mention_overlap
+    metric_name: mention_overlap
+    comparison_suite: S1000_TrainVsTest
   - result_name: AnatEM_mention_overlap_by_frequency
     metric_name: mention_overlap_by_frequency
     comparison_suite: AnatEM_TrainVsTest
@@ -220,6 +238,9 @@ metrics:
   - result_name: NLM_Gene_mention_overlap_by_frequency
     metric_name: mention_overlap_by_frequency
     comparison_suite: NLM_Gene_TrainVsTest
+  - result_name: S1000_mention_overlap_by_frequency
+    metric_name: mention_overlap_by_frequency
+    comparison_suite: S1000_TrainVsTest
   - result_name: AnatEM_mention_token_overlap
     metric_name: mention_token_overlap
     comparison_suite: AnatEM_TrainVsTest
@@ -250,6 +271,9 @@ metrics:
   - result_name: NLM_Gene_mention_token_overlap
     metric_name: mention_token_overlap
     comparison_suite: NLM_Gene_TrainVsTest
+  - result_name: S1000_mention_token_overlap
+    metric_name: mention_token_overlap
+    comparison_suite: S1000_TrainVsTest
   - result_name: AnatEM_mention_token_overlap_by_frequency
     metric_name: mention_token_overlap_by_frequency
     comparison_suite: AnatEM_TrainVsTest
@@ -280,6 +304,9 @@ metrics:
   - result_name: NLM_Gene_mention_token_overlap_by_frequency
     metric_name: mention_token_overlap_by_frequency
     comparison_suite: NLM_Gene_TrainVsTest
+  - result_name: S1000_mention_token_overlap_by_frequency
+    metric_name: mention_token_overlap_by_frequency
+    comparison_suite: S1000_TrainVsTest
   - result_name: AnatEM_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: AnatEM_TrainVsTest
@@ -310,6 +337,9 @@ metrics:
   - result_name: NLM_Gene_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: NLM_Gene_TrainVsTest
+  - result_name: S1000_identifier_overlap
+    metric_name: identifier_overlap
+    comparison_suite: S1000_TrainVsTest
 
   - result_name: AnatEM_identifier_overlap_by_frequency
     metric_name: identifier_overlap_by_frequency
@@ -341,5 +371,8 @@ metrics:
   - result_name: NLM_Gene_identifier_overlap_by_frequency
     metric_name: identifier_overlap_by_frequency
     comparison_suite: NLM_Gene_TrainVsTest
+  - result_name: S1000_identifier_overlap_by_frequency
+    metric_name: identifier_overlap_by_frequency
+    comparison_suite: S1000_TrainVsTest
 
 output_path: "output/overlap_stats.json"

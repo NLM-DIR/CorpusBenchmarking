@@ -1,0 +1,19 @@
+name: S1000
+
+cache_filename: corpora/S1000.json.gz
+
+acquisition:
+  source_url: "https://jensenlab.org/assets/s1000/S1000-corpus.tar.gz"
+  format: "tar.gz"
+
+loader:
+  name: BRAT_standoff
+  params:
+    paths:
+      train: corpora/S1000/S1000-corpus/entire-corpus/train
+      dev: corpora/S1000/S1000-corpus/entire-corpus/dev
+      test: corpora/S1000/S1000-corpus/entire-corpus/test
+    docid_type: pmid
+    verify_text: false
+    normalization_resource_map:
+      Taxonomy: NCBITaxon

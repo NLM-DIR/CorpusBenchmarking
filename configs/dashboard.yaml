@@ -54,6 +54,9 @@ entity_scopes:
   species:
     label: Species
     labels:
+      - Genus
+      - Species
+      - Strain
       - species
     description: "Organism/species labels."
   function_process:
