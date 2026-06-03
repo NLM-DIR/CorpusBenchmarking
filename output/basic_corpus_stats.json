@@ -6318,5 +6318,679 @@
         "stdev": 0.17165555
       }
     }
+  ],
+  "NLM_Gene_corpus": [
+    {
+      "metric_name": "document_count",
+      "value": 550
+    },
+    {
+      "metric_name": "sentence_count",
+      "value": 6211
+    },
+    {
+      "metric_name": "token_count",
+      "value": 149960
+    },
+    {
+      "details": {
+        "counts": {
+          "Domain": 28,
+          "Gene": 13449,
+          "Other": 122,
+          "STARGENE": 1954
+        },
+        "total": 15553
+      },
+      "metric_name": "label_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "disease": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {
+              "Gene": 13449
+            },
+            "total": 13449
+          },
+          "value": {
+            "Gene": 1.0
+          }
+        },
+        "species": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        }
+      },
+      "value": {
+        "Domain": 0.0018003,
+        "Gene": 0.86472063,
+        "Other": 0.00784415,
+        "STARGENE": 0.12563493
+      }
+    },
+    {
+      "metric_name": "mention_length_stats",
+      "value": {
+        "count": 15553,
+        "max": 102,
+        "mean": 7.28380377,
+        "median": 5,
+        "min": 1,
+        "stdev": 7.45282355
+      }
+    },
+    {
+      "metric_name": "identifier_redundancy_stats",
+      "value": {
+        "count": 3785,
+        "max": 110,
+        "mean": 4.07661823,
+        "median": 2,
+        "min": 1,
+        "stdev": 6.28754643
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "NCBIGene": 15430
+        },
+        "total": 15430
+      },
+      "metric_name": "identifier_resource_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "disease": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {
+              "NCBIGene": 13433
+            },
+            "total": 13433
+          },
+          "value": {
+            "NCBIGene": 1.0
+          }
+        },
+        "species": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        }
+      },
+      "value": {
+        "NCBIGene": 1.0
+      }
+    },
+    {
+      "metric_name": "annotations_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 550,
+            "max": 78,
+            "mean": 24.45272727,
+            "median": 23.0,
+            "min": 0,
+            "stdev": 11.70402068
+          }
+        },
+        "species": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 550,
+        "max": 86,
+        "mean": 28.27818182,
+        "median": 27.0,
+        "min": 2,
+        "stdev": 12.67431737
+      }
+    },
+    {
+      "metric_name": "annotations_per_1000_tokens_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 550,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 550,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 550,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 550,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 550,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 550,
+            "max": 239.81900452,
+            "mean": 90.63624724,
+            "median": 88.13173157,
+            "min": 0.0,
+            "stdev": 39.59232895
+          }
+        },
+        "species": {
+          "value": {
+            "count": 550,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 550,
+        "max": 276.0,
+        "mean": 104.41047072,
+        "median": 100.52321866,
+        "min": 12.19512195,
+        "stdev": 41.62568507
+      }
+    },
+    {
+      "metric_name": "unique_mentions_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 550,
+            "max": 47,
+            "mean": 13.74363636,
+            "median": 13.0,
+            "min": 0,
+            "stdev": 7.5232309
+          }
+        },
+        "species": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 550,
+        "max": 47,
+        "mean": 14.82,
+        "median": 14.0,
+        "min": 1,
+        "stdev": 7.75808879
+      }
+    },
+    {
+      "metric_name": "unique_identifiers_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 550,
+            "max": 40,
+            "mean": 11.15818182,
+            "median": 10.0,
+            "min": 0,
+            "stdev": 6.80796145
+          }
+        },
+        "species": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 550,
+        "max": 40,
+        "mean": 11.70181818,
+        "median": 10.0,
+        "min": 1,
+        "stdev": 6.9070195
+      }
+    },
+    {
+      "metric_name": "variation_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 3633,
+            "max": 15,
+            "mean": 1.67327278,
+            "median": 1,
+            "min": 1,
+            "stdev": 1.2688203
+          }
+        },
+        "species": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        }
+      },
+      "value": {
+        "count": 4036,
+        "max": 32,
+        "mean": 1.68508424,
+        "median": 1.0,
+        "min": 1,
+        "stdev": 1.33884321
+      }
+    },
+    {
+      "metric_name": "ambiguity_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 4943,
+            "max": 31,
+            "mean": 1.22981995,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.90178614
+          }
+        },
+        "species": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        }
+      },
+      "value": {
+        "count": 5298,
+        "max": 35,
+        "mean": 1.28369196,
+        "median": 1.0,
+        "min": 1,
+        "stdev": 1.05918949
+      }
+    }
   ]
 }

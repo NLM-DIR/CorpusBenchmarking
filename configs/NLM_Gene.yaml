@@ -1,0 +1,33 @@
+name: NLM_Gene
+
+cache_filename: corpora/NLM_Gene.json.gz
+
+acquisition:
+  format: none
+  source_urls:
+    - url: "https://ftp.ncbi.nlm.nih.gov/pub/lu/NLMGene/Corpus/"
+      format: directory
+    - "https://ftp.ncbi.nlm.nih.gov/pub/lu/NLMGene/Pmidlist.Train.txt"
+    - "https://ftp.ncbi.nlm.nih.gov/pub/lu/NLMGene/Pmidlist.Test.txt"
+
+loader:
+  name: bioc_xml
+  params:
+    paths:
+      all: corpora/NLM_Gene/Corpus
+    label_infon_key: type
+    id_infon_key: "NCBI Gene identifier"
+    default_resource: NCBIGene
+    label_map:
+      Gene: Gene
+      GENERIF: Gene
+    doc_id_map:
+      pmid: "__DOCUMENT_ID__"
+    split:
+      source: files
+      id_type: pmid
+      delimiter: whitespace
+      id_column: all
+      files:
+        train: corpora/NLM_Gene/Pmidlist.Train.txt
+        test: corpora/NLM_Gene/Pmidlist.Test.txt

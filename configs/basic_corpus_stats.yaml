@@ -13,6 +13,7 @@ corpora:
     JNLPBA: configs/JNLPBA.yaml
     NCBI_Disease: configs/NCBI_Disease.yaml
     NLM_Chem: configs/NLM_Chem.yaml
+    NLM_Gene: configs/NLM_Gene.yaml
 
 bundles:
   AnatEM_corpus:
@@ -72,33 +73,38 @@ bundles:
       subset_name: dev
     - corpus_name: NLM_Chem
       subset_name: test
+  NLM_Gene_corpus:
+    - corpus_name: NLM_Gene
+      subset_name: train
+    - corpus_name: NLM_Gene
+      subset_name: test
   
 metrics:
   - metric_name: document_count
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: sentence_count
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: token_count
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: label_distribution
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: mention_length_stats
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: identifier_redundancy_stats
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: identifier_resource_distribution
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: annotations_per_document_stats
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: annotations_per_1000_tokens_stats
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: unique_mentions_per_document_stats
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: unique_identifiers_per_document_stats
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: variation_degree_stats
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
   - metric_name: ambiguity_degree_stats
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus"]
 
 output_path: "output/basic_corpus_stats.json"

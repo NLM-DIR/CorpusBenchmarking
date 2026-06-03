@@ -32,9 +32,9 @@ def test_token_overlap_by_frequency_reports_jaccard_per_frequency_bin() -> None:
     result = token_overlap_by_frequency(train, test, "token_overlap_by_frequency")
 
     assert result.value["(2, 4)"] == 0.5
-    assert result.value["(4, 16)"] == 1.0
+    assert result.value["(4, 8)"] == 1.0
     assert result.details["bin_counts"]["(2, 4)"] == [4, 2]
-    assert result.details["bin_counts"]["(4, 16)"] == [1, 1]
+    assert result.details["bin_counts"]["(4, 8)"] == [1, 1]
 
 
 def test_scoped_overlap_by_frequency_metrics_report_jaccard_per_frequency_bin() -> None:

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import gzip
+import html.parser
 import logging
 import shutil
 import tarfile
@@ -8,7 +9,7 @@ import zipfile
 from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
-from urllib.parse import unquote, urlparse
+from urllib.parse import unquote, urljoin, urlparse
 
 from corpus_benchmark.models.config import BenchmarkConfig, WorkspaceConfig, APP_NAME_VER
 from corpus_benchmark.registry import CONVERTERS
@@ -31,7 +32,23 @@ _ARCHIVE_FORMAT_ALIASES: dict[str, str] = {
     "tgz": "tar.gz",
     "gz": "gz",
     "gzip": "gz",
+    "directory": "directory",
+    "dir": "directory",
+    "listing": "directory",
 }
+
+
+class _DirectoryLinkParser(html.parser.HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.links: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() != "a":
+            return
+        for name, value in attrs:
+            if name.lower() == "href" and value:
+                self.links.append(value)
 
 
 class AcquisitionManager:
@@ -44,8 +61,8 @@ class AcquisitionManager:
         Returns:
             True if the corpus was already ready, False if acquisition was performed.
 
-        Acquisition supports two source-url styles:
-        ... (omitted docstring rest for brevity in this thought, but I will provide full) ...
+        Acquisition supports either plain source URL strings or source mappings
+        with per-source formats, including directory listings.
         """
         corpus_dir = self.download_dir / corpus_name
         sentinel_file = corpus_dir / ".acquisition_done"
@@ -77,6 +94,10 @@ class AcquisitionManager:
 
         for source in config.acquisition.source_urls:
             url, fmt = _normalize_source_spec(source, default_format)
+            if fmt == "directory":
+                _download_directory(url, corpus_dir, user_agent=APP_NAME_VER)
+                continue
+
             filename = _download_filename(url)
             dest_path = corpus_dir / filename
 
@@ -210,6 +231,42 @@ def _extract_downloaded_file(file_path: Path, output_dir: Path, fmt: str) -> Non
     else:
         # This should be unreachable if formats are normalized at input time.
         raise ValueError(f"Unsupported acquisition format: {fmt!r}")
+
+
+def _download_directory(url: str, output_dir: Path, user_agent: str) -> None:
+    parsed = urlparse(url)
+    directory_name = unquote(Path(parsed.path.rstrip("/")).name)
+    directory_output_dir = output_dir / directory_name if directory_name else output_dir
+    directory_output_dir.mkdir(parents=True, exist_ok=True)
+
+    logger.info("  Listing directory %s", url)
+    listing_name = f".{directory_name or 'directory'}.listing.html"
+    listing_path = output_dir / listing_name
+    download_file(url, listing_path, user_agent=user_agent)
+    parser = _DirectoryLinkParser()
+    parser.feed(listing_path.read_text(encoding="utf-8", errors="replace"))
+
+    base_url = url if url.endswith("/") else f"{url}/"
+    downloaded = 0
+    for href in parser.links:
+        child_url = urljoin(base_url, href)
+        if not child_url.startswith(base_url):
+            continue
+        child_parsed = urlparse(child_url)
+        if child_parsed.path.endswith("/"):
+            continue
+        filename = unquote(Path(child_parsed.path).name)
+        if not filename or filename.startswith("."):
+            continue
+        dest_path = directory_output_dir / filename
+        if dest_path.exists():
+            logger.info("  Reusing downloaded file %s", dest_path)
+            continue
+        logger.info("  Downloading %s -> %s", child_url, dest_path)
+        download_file(child_url, dest_path, user_agent=user_agent)
+        downloaded += 1
+
+    logger.info("  Downloaded %s files from %s", downloaded, url)
 
 
 def _infer_archive_format(file_path: Path) -> str:

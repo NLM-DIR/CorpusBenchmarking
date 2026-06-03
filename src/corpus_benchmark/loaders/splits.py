@@ -136,8 +136,25 @@ def _load_split_mapping(split_config: dict[str, Any]) -> dict[str, str]:
     return split_map
 
 
-def _iter_column_values(path: Path, column: int, delimiter: str | None, has_header: bool):
+def _iter_column_values(path: Path, column: int | str, delimiter: str | None, has_header: bool):
     with path.open("r", encoding="utf-8", newline="") as file:
+        if delimiter == "whitespace":
+            for line_index, line in enumerate(file, start=1):
+                if line_index == 1 and has_header:
+                    continue
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                values = line.split()
+                if column == "all":
+                    yield from values
+                    continue
+                try:
+                    yield values[int(column)].strip()
+                except (IndexError, ValueError) as exc:
+                    raise ValueError(f"Split file {path} line {line_index} does not contain column {column}: {values}") from exc
+            return
+
         if delimiter is None:
             for line_index, line in enumerate(file, start=1):
                 if line_index == 1 and has_header:

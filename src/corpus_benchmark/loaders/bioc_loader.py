@@ -280,6 +280,10 @@ class BioCXMLLoader(Loader):
         
         # Iterate over items in the directory
         for item in os.listdir(dirname):
+            if item.startswith("."):
+                continue
+            if not item.lower().endswith(".xml"):
+                continue
             item_path = os.path.join(dirname, item)
             
             # Only process files (skips subdirectories)
