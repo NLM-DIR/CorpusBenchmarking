@@ -179,9 +179,11 @@ def test_terminology_panel_chart_helper_uses_chartjs_config_labels() -> None:
 
     assert "const labels = config && config.data && config.data.labels;" in panels
     assert "termDepthCharts" in panels
+    assert "termDepthCoverageCharts" in panels
     assert "termTerminologyCoverageCharts" in panels
     assert "tmc3_${i}" in panels
     assert "tmc4_${i}" in panels
+    assert "tmc6_${i}" in panels
     assert "!config.labels" not in panels
 
 
@@ -244,7 +246,9 @@ def test_dashboard_panel_labels_order_and_removed_cascade_tab() -> None:
     assert "Identifier density" in html
     assert "Lexical / conceptual structure" in html
     assert "Deprecated terms" in html
-    assert "Terminology coverage" in html
+    assert "Annotation depth coverage" in html
+    assert "Terminology depth coverage" in html
+    assert "Terminology topic coverage" in html
     assert "Annotation topic coverage" in html
     assert "Cascade view" not in html
     assert html.index("Overlap cascade") > html.index("Train-test overlap")

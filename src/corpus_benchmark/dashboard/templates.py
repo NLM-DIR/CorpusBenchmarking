@@ -127,17 +127,23 @@ HTML = """\
 </div>
 
 <div class="panel" id="p1">
-  <p class="sec">Annotations per thousand tokens</p>
-  <div class="cw" style="height:{h_ann}px">
-    <canvas id="c1" role="img" aria-label="Mean annotations per thousand tokens, log scale.">
-      Annotation density per thousand tokens varies widely across corpora.
-    </canvas>
-  </div>
-  <p class="sec" style="margin-top:1.5rem">Annotations per document</p>
-  <div class="cw" style="height:{h_ann}px">
-    <canvas id="c1b" role="img" aria-label="Mean annotations per document, log scale.">
-      Annotation density per document varies widely across corpora.
-    </canvas>
+  <div class="two">
+    <div>
+      <p class="sec">Annotations per thousand tokens</p>
+      <div class="cw" style="height:{h_ann}px">
+        <canvas id="c1" role="img" aria-label="Mean annotations per thousand tokens, log scale.">
+          Annotation density per thousand tokens varies widely across corpora.
+        </canvas>
+      </div>
+    </div>
+    <div>
+      <p class="sec">Annotations per document</p>
+      <div class="cw" style="height:{h_ann}px">
+        <canvas id="c1b" role="img" aria-label="Mean annotations per document, log scale.">
+          Annotation density per document varies widely across corpora.
+        </canvas>
+      </div>
+    </div>
   </div>
   <p class="note">Log scale. NLM-Chem annotates full-text articles; BioID uses figure captions.</p>
 </div>
@@ -180,7 +186,7 @@ HTML = """\
   <div class="two">
     <div>
       <p class="sec">Distinct entity type labels</p>
-      <div class="cw" style="height:320px">
+      <div class="cw" style="height:{h_ann}px">
         <canvas id="c5" role="img" aria-label="Number of distinct entity type labels per corpus.">
           AnatEM has 12 types; four corpora annotate a single entity type.
         </canvas>
@@ -188,7 +194,7 @@ HTML = """\
     </div>
     <div>
       <p class="sec">Label entropy (bits)</p>
-      <div class="cw" style="height:320px">
+      <div class="cw" style="height:{h_ann}px">
         <canvas id="c6" role="img" aria-label="Shannon entropy of label distributions.">
           Single-entity corpora have 0 bits; AnatEM highest at 2.84 bits.
         </canvas>
@@ -294,7 +300,7 @@ function hbar(el, labels, data, bg, xLabel, xOpts={{}}) {{
         x:{{ ...xOpts,
               title:{{display:true,text:xLabel,color:tc,font:{{size:11}}}},
               ticks:{{color:tc,font:{{size:11}}}}, grid:{{color:gc}} }},
-        y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+        y:{{ ticks:{{color:tc,font:{{size:12}},autoSkip:false}}, grid:{{color:gc}} }}
       }}
     }}
   }});
@@ -315,7 +321,7 @@ function initC1(){{
              title:{{display:true,text:'Mean annotations per thousand tokens (log scale)',color:tc,font:{{size:11}}}},
              ticks:{{color:tc,font:{{size:11}},callback:v=>[0.1,1,10,100,1000].includes(v)?v:''}},
              grid:{{color:gc}} }},
-        y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+        y:{{ ticks:{{color:tc,font:{{size:12}},autoSkip:false}}, grid:{{color:gc}} }}
       }}
     }}
   }});
@@ -333,7 +339,7 @@ function initC1(){{
              title:{{display:true,text:'Mean annotations per document (log scale)',color:tc,font:{{size:11}}}},
              ticks:{{color:tc,font:{{size:11}},callback:v=>[0.1,1,10,100,1000].includes(v)?v:''}},
              grid:{{color:gc}} }},
-        y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+        y:{{ ticks:{{color:tc,font:{{size:12}},autoSkip:false}}, grid:{{color:gc}} }}
       }}
     }}
   }});
@@ -350,7 +356,7 @@ function initC3(){{
       scales:{{ x:{{ min:{amb_min_scale}, max:{amb_max_scale},
         title:{{display:true,text:'Mean identifiers per mention',color:tc,font:{{size:11}}}},
         ticks:{{color:tc,font:{{size:11}},callback:v=>v.toFixed(2)}}, grid:{{color:gc}} }},
-        y:{{ ticks:{{color:tc,font:{{size:11}}}}, grid:{{color:gc}} }}
+        y:{{ ticks:{{color:tc,font:{{size:11}},autoSkip:false}}, grid:{{color:gc}} }}
       }}
     }}
   }});

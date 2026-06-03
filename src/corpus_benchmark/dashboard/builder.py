@@ -203,7 +203,7 @@ def cascade_datasets_js(corpora, colours):
 def build_overlap_rows(corpora):
     with_ov = sorted(
         [c for c in corpora if c.get("overlap")],
-        key=lambda c: -(c["overlap"].get("token_overlap") or 0),
+        key=lambda c: c["name"].lower(),
     )
     rows = []
     for c in with_ov:
@@ -316,7 +316,6 @@ def _entity_profile_data(corpora, colours, config):
                 [c for c in scoped if c["has_ids"]],
                 "ambiguity",
                 colours,
-                sorted_values=False,
             ),
             "variation": _hbar_payload(
                 [c for c in scoped if c["has_ids"]],
@@ -509,6 +508,8 @@ def _meta_chart_data(corpora, colours):
         yby_ds=json.dumps(yby_ds),
         yr_x_min=yr_x_min,
         yr_x_max=yr_x_max,
+        conc_height=max(300, len(by_conc) * 34 + 100),
+        yr_height=max(260, len(by_yr) * 34 + 80),
         n_with_meta=sum(1 for c in corpora if (c.get("metadata") or {}).get("has_metadata")),
     )
 
@@ -543,7 +544,7 @@ def build_metadata_panels(corpora, colours):
         <span class="li"><span class="lc" style="background:#555;opacity:.9"></span>Top-1 journal</span>
         <span class="li"><span class="lc" style="background:#555;opacity:.35"></span>Top-3 journals</span>
       </div>
-      <div class="cw" style="height:300px">
+      <div class="cw" style="height:{d['conc_height']}px">
         <canvas id="mc2" role="img" aria-label="Top-1 and top-3 journal share.">
           CRAFT most concentrated; BC5CDR most distributed.
         </canvas>
@@ -557,7 +558,7 @@ def build_metadata_panels(corpora, colours):
 
 <div class="panel" id="p9">
   <p class="sec">Publication year range</p>
-  <div class="cw" style="height:230px">
+  <div class="cw" style="height:{d['yr_height']}px">
     <canvas id="mc3" role="img" aria-label="Year range per corpus.">
       Year ranges span from 1968 to 2025.
     </canvas>
@@ -647,7 +648,7 @@ def build_metadata_panels(corpora, colours):
           x:{{ ...(xOpts||{{}}),
                title:{{display:true,text:xLabel,color:tc,font:{{size:11}}}},
                ticks:{{color:tc,font:{{size:11}}}}, grid:{{color:gc}} }},
-          y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+          y:{{ ticks:{{color:tc,font:{{size:12}},autoSkip:false}}, grid:{{color:gc}} }}
         }}
       }}
     }});
@@ -671,7 +672,7 @@ def build_metadata_panels(corpora, colours):
           x:{{ min:0, max:65,
                title:{{display:true,text:'Share of corpus (%)',color:tc,font:{{size:11}}}},
                ticks:{{color:tc,font:{{size:11}},callback:v=>v+'%'}}, grid:{{color:gc}} }},
-          y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+          y:{{ ticks:{{color:tc,font:{{size:12}},autoSkip:false}}, grid:{{color:gc}} }}
         }}
       }}
     }});
@@ -695,7 +696,7 @@ def build_metadata_panels(corpora, colours):
             x:{{ min:1960, max:2030,
                  title:{{display:true,text:'Publication year',color:tc,font:{{size:11}}}},
                  ticks:{{color:tc,font:{{size:11}},stepSize:10}}, grid:{{color:gc}} }},
-            y:{{ ticks:{{color:tc,font:{{size:12}}}}, grid:{{color:gc}} }}
+            y:{{ ticks:{{color:tc,font:{{size:12}},autoSkip:false}}, grid:{{color:gc}} }}
           }}
         }}
       }});
@@ -810,6 +811,30 @@ def _terminology_profiles(term_data):
                         "tension": 0.3,
                     }
                 )
+            depth_coverage_datasets = []
+            for i, entry in enumerate(terminology_entries):
+                depth_coverage_datasets.append(
+                    {
+                        "label": entry["display_name"],
+                        "data": [
+                            round(
+                                entry["depth"].get(str(depth), {}).get("count", 0)
+                                / entry["depth"].get(str(depth), {}).get("total", 0)
+                                * 100,
+                                2,
+                            )
+                            if entry["depth"].get(str(depth), {}).get("total", 0)
+                            else 0
+                            for depth in depth_labels
+                        ],
+                        "borderColor": group_colors[i],
+                        "backgroundColor": group_colors[i] + "22",
+                        "fill": False,
+                        "borderWidth": 2,
+                        "pointRadius": 4,
+                        "tension": 0.3,
+                    }
+                )
             depth_note = (
                 "Mean annotation depth: " + " | ".join(f"{entry['display_name']} {entry['mean_depth']}" for entry in terminology_entries)
                 if terminology_entries
@@ -873,6 +898,10 @@ def _terminology_profiles(term_data):
                         "datasets": depth_datasets,
                         "note": depth_note,
                     },
+                    "depthCoverage": {
+                        "labels": depth_labels,
+                        "datasets": depth_coverage_datasets,
+                    },
                     "recall": {
                         "labels": branch_labels,
                         "datasets": recall_datasets,
@@ -914,8 +943,9 @@ def build_terminology_panels(term_data):
 
     tabs = (
         '\n  <button class="tab" data-p="pterm1">Deprecated terms</button>'
-        '\n  <button class="tab" data-p="pterm3">Annotation depth</button>'
-        '\n  <button class="tab" data-p="pterm4">Terminology coverage</button>'
+        '\n  <button class="tab" data-p="pterm3">Annotation depth coverage</button>'
+        '\n  <button class="tab" data-p="pterm6">Terminology depth coverage</button>'
+        '\n  <button class="tab" data-p="pterm4">Terminology topic coverage</button>'
         '\n  <button class="tab" data-p="pterm5">Annotation topic coverage</button>'
     )
     profiles = _terminology_profiles(term_data)
@@ -944,14 +974,20 @@ def build_terminology_panels(term_data):
 </div>
 
 <div class="panel" id="pterm3">
-  <p class="sec">Annotation depth distribution</p>
+  <p class="sec">Annotation depth coverage</p>
   <div id="termDepthCharts"></div>
 </div>
 
+<div class="panel" id="pterm6">
+  <p class="sec">Terminology depth coverage</p>
+  <div id="termDepthCoverageCharts"></div>
+  <p class="note">Terminology depth coverage = unique corpus concept count at depth divided by total terminology concepts at that depth.</p>
+</div>
+
 <div class="panel" id="pterm4">
-  <p class="sec">Terminology coverage</p>
+  <p class="sec">Terminology topic coverage</p>
   <div id="termTerminologyCoverageCharts"></div>
-  <p class="note">Terminology coverage = unique corpus concept count in branch ÷ total terminology concepts in that branch.
+  <p class="note">Terminology topic coverage = unique corpus concept count in branch divided by total terminology concepts in that branch.
   Only branches with signal in the selected scope are shown.</p>
 </div>
 
@@ -1113,6 +1149,47 @@ def build_terminology_panels(term_data):
     }});
   }}
 
+  function renderTerm6(scope) {{
+    const p = currentProfile(scope);
+    const root = document.getElementById('termDepthCoverageCharts');
+    destroyCharts('tmc6_');
+    if (!root) return;
+    const groups = (p.chartGroups || []).filter(group => group.depthCoverage && group.depthCoverage.labels.length);
+    if (!groups.length) {{
+      root.innerHTML = '<div class="fn">No terminology data for this entity scope.</div>';
+      return;
+    }}
+    root.innerHTML = groups.map((group, i) => `
+      <p class="sec">${{group.title}}</p>
+      <div class="cw" style="height:300px">
+        <canvas id="tmc6_${{i}}" role="img" aria-label="Line chart: ${{group.title}} terminology depth coverage.">
+          Terminology depth coverage for ${{group.title}}.
+        </canvas>
+      </div>
+    `).join('');
+    groups.forEach((group, i) => {{
+      updateBar(`tmc6_${{i}}`, {{
+        type:'line',
+        data:{{ labels:group.depthCoverage.labels, datasets:group.depthCoverage.datasets }},
+        options:{{
+          responsive:true, maintainAspectRatio:false,
+          plugins:{{ legend:{{ display:true, position:'top', align:'end',
+            labels:{{ boxWidth:10,boxHeight:10,borderRadius:2,font:{{size:11}},color:tc }} }},
+            tooltip:{{ callbacks:{{ label: ctx =>
+              ` ${{ctx.dataset.label}}: ${{ctx.parsed.y.toFixed(2)}}%`
+            }} }} }},
+          scales:{{
+            x:{{ title:{{display:true,text:'Ontology hierarchy depth',color:tc,font:{{size:11}}}},
+                 ticks:{{color:tc,font:{{size:11}}}}, grid:{{color:gc}} }},
+            y:{{ min:0,
+                 title:{{display:true,text:'% of terminology concepts at depth covered',color:tc,font:{{size:11}}}},
+                 ticks:{{color:tc,font:{{size:11}},callback:v=>v+'%'}}, grid:{{color:gc}} }}
+          }}
+        }}
+      }});
+    }});
+  }}
+
   function renderTerm5(scope) {{
     const p = currentProfile(scope);
     const root = document.getElementById('termAnnotationCharts');
@@ -1159,11 +1236,13 @@ def build_terminology_panels(term_data):
     renderTerm3(scope || 'all');
     renderTerm4(scope || 'all');
     renderTerm5(scope || 'all');
+    renderTerm6(scope || 'all');
   }};
   window.initTerm1 = () => renderTerm1(window.currentEntityScope || 'all');
   window.initTerm3 = () => renderTerm3(window.currentEntityScope || 'all');
   window.initTerm4 = () => renderTerm4(window.currentEntityScope || 'all');
   window.initTerm5 = () => renderTerm5(window.currentEntityScope || 'all');
+  window.initTerm6 = () => renderTerm6(window.currentEntityScope || 'all');
 }})();
 </script>
 """
@@ -1240,7 +1319,7 @@ def build_html(corpora, dashboard_config=None):
     if has_term:
         term_data_for_panels = {norm_corpus_name(c["raw_name"]): c["terminology"] for c in corpora if c.get("terminology")}
         term_tabs, term_panels = build_terminology_panels(term_data_for_panels)
-        term_panel_js = "pterm1:window.initTerm1,\n  pterm3:window.initTerm3," "\n  pterm4:window.initTerm4,\n  pterm5:window.initTerm5,"
+        term_panel_js = "pterm1:window.initTerm1,\n  pterm3:window.initTerm3," "\n  pterm4:window.initTerm4,\n  pterm5:window.initTerm5,\n  pterm6:window.initTerm6,"
     else:
         term_tabs = term_panels = term_panel_js = ""
 
