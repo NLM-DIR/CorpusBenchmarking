@@ -1,0 +1,16 @@
+name: Hallmarks_Of_Cancer
+
+cache_filename: corpora/Hallmarks_Of_Cancer.json.gz
+
+acquisition:
+  source_url: "https://github.com/spyysalo/hoccorpus/archive/refs/heads/master.zip"
+  format: "zip"
+
+loader:
+  name: sentence_label_tsv
+  params:
+    paths:
+      train: corpora/Hallmarks_Of_Cancer/hoccorpus-master/split-data/train
+      dev: corpora/Hallmarks_Of_Cancer/hoccorpus-master/split-data/devel
+      test: corpora/Hallmarks_Of_Cancer/hoccorpus-master/split-data/test
+    docid_type: pmid

@@ -1,0 +1,18 @@
+name: BC2GM
+
+cache_filename: corpora/BC2GM.json.gz
+
+acquisition:
+  source_url: "https://github.com/spyysalo/bc2gm-corpus/archive/refs/heads/master.zip"
+  format: "zip"
+
+loader:
+  name: BRAT_standoff
+  params:
+    paths:
+      train: corpora/BC2GM/bc2gm-corpus-master/combined-data/standoff/train
+      dev: corpora/BC2GM/bc2gm-corpus-master/combined-data/standoff/devel
+    docid_type: pmid
+    docid_regex: "^P0*([0-9]+)[A-Z][0-9]+[a-z]*$"
+    label_map:
+      GENE: Gene

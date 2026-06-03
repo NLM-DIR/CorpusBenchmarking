@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import gzip
+import html
 import html.parser
 import logging
+import re
 import shutil
 import tarfile
 import zipfile
@@ -68,7 +70,7 @@ class AcquisitionManager:
         sentinel_file = corpus_dir / ".acquisition_done"
 
         paths = _expected_loader_paths(config)
-        all_exist = bool(paths) and all(Path(path).exists() for path in paths.values())
+        all_exist = bool(paths) and all(_path_exists(path) for path in paths.values())
 
         if all_exist:
             # If no acquisition spec is provided, we assume the user has
@@ -105,8 +107,10 @@ class AcquisitionManager:
                 logger.info("  Downloading %s -> %s", url, dest_path)
                 # NOTE: some repos (e.g. Zenodo) insist on a meaningful user_agent
                 download_file(url, dest_path, user_agent=APP_NAME_VER)
+                _follow_sourceforge_meta_refresh(dest_path, user_agent=APP_NAME_VER)
             else:
                 logger.info("  Reusing downloaded file %s", dest_path)
+                _follow_sourceforge_meta_refresh(dest_path, user_agent=APP_NAME_VER)
 
             downloaded_files.append((dest_path, fmt))
 
@@ -200,6 +204,14 @@ def _download_filename(url: str) -> str:
     return filename
 
 
+def _path_exists(path: str | Path) -> bool:
+    try:
+        return Path(path).exists()
+    except PermissionError:
+        logger.debug("Path exists but cannot be stat'ed due to permissions: %s", path)
+        return True
+
+
 def _extract_downloaded_file(file_path: Path, output_dir: Path, fmt: str) -> None:
 
     """Extract or skip one downloaded file according to ``fmt``."""
@@ -269,6 +281,28 @@ def _download_directory(url: str, output_dir: Path, user_agent: str) -> None:
     logger.info("  Downloaded %s files from %s", downloaded, url)
 
 
+def _follow_sourceforge_meta_refresh(dest_path: Path, user_agent: str) -> bool:
+    try:
+        prefix = dest_path.read_bytes()[:4096]
+    except OSError:
+        return False
+    if b"sourceforge" not in prefix.lower() or b"http-equiv=\"refresh\"" not in prefix.lower():
+        return False
+
+    html_text = dest_path.read_text(encoding="utf-8", errors="replace")
+    match = re.search(
+        r"url=(https://downloads\.sourceforge\.net/[^\"<>]+)",
+        html_text,
+        flags=re.IGNORECASE,
+    )
+    if not match:
+        return False
+    refresh_url = html.unescape(match.group(1))
+    logger.info("  Following SourceForge mirror redirect %s", refresh_url)
+    download_file(refresh_url, dest_path, user_agent=user_agent)
+    return True
+
+
 def _infer_archive_format(file_path: Path) -> str:
     """Infer archive format from filename suffixes.
 
@@ -306,6 +340,11 @@ def _expected_loader_paths(config: BenchmarkConfig) -> dict[str, str]:
     paths = dict(params.get("paths", {}))
     if "path" in params:
         paths["path"] = params["path"]
+    for label, path in (params.get("gold_paths") or {}).items():
+        paths[f"gold:{label}"] = path
+    for key in ("text_dir", "tags_path"):
+        if key in params:
+            paths[key] = params[key]
 
     split_config = params.get("split") or {}
     for split_name, split_path in (split_config.get("files") or {}).items():

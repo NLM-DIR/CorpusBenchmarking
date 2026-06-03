@@ -1,0 +1,19 @@
+name: tmVar
+
+cache_filename: corpora/tmVar.json.gz
+
+acquisition:
+  source_url: "https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/tmVar/tmVarCorpus.zip"
+  format: "zip"
+
+loader:
+  name: pubtator
+  params:
+    paths:
+      train: corpora/tmVar/tmVarCorpus/train.PubTator.txt
+      test: corpora/tmVar/tmVarCorpus/test.PubTator.txt
+    default_resource: tmVar
+    label_map:
+      DNAMutation: SequenceVariant
+      ProteinMutation: SequenceVariant
+      SNP: SequenceVariant

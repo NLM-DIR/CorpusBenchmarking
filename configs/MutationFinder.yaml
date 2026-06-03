@@ -1,0 +1,18 @@
+name: MutationFinder
+
+cache_filename: corpora/MutationFinder.json.gz
+
+acquisition:
+  source_url: "https://sourceforge.net/projects/mutationfinder/files/MutationFinder/MutationFinder-1.1/MutationFinder-1.1.tar.gz/download"
+  format: "tar.gz"
+
+loader:
+  name: mutationfinder
+  params:
+    paths:
+      dev: corpora/MutationFinder/MutationFinder/corpora/devo_set.txt
+      test: corpora/MutationFinder/MutationFinder/corpora/test_set.txt
+    gold_paths:
+      dev: corpora/MutationFinder/MutationFinder/corpora/devo_gold_std.txt
+      test: corpora/MutationFinder/MutationFinder/corpora/test_gold_std.txt
+    default_resource: MutationFinder

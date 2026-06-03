@@ -34,6 +34,7 @@ terminologies:
 corpora:
     BC5CDR: configs/BC5CDR.yaml
     BioID: configs/BioID.yaml
+    BioRED: configs/BioRED.yaml
     CRAFT: configs/CRAFT.yaml
     CellLink: configs/CellLink.yaml
     NCBI_Disease: configs/NCBI_Disease.yaml
@@ -52,6 +53,13 @@ bundles:
       subset_name: train
     - corpus_name: BioID
       subset_name: dev
+  BioRED_corpus:
+    - corpus_name: BioRED
+      subset_name: train
+    - corpus_name: BioRED
+      subset_name: dev
+    - corpus_name: BioRED
+      subset_name: test
   CRAFT_corpus:
     - corpus_name: CRAFT
       subset_name: train
@@ -82,7 +90,7 @@ bundles:
 metrics:
   - result_name: mesh_terminology_concept_coverage
     metric_name: terminology_concept_coverage
-    target_bundles: ["BC5CDR_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["BC5CDR_corpus", "BioRED_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
     params:
       terminology_name: mesh
       term_override_paths_by_entity_scope:
@@ -90,7 +98,7 @@ metrics:
         chemical: configs/MeSH_chemical_mappings.yaml
   - result_name: mesh_annotation_topic_coverage
     metric_name: annotation_topic_coverage
-    target_bundles: ["BC5CDR_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["BC5CDR_corpus", "BioRED_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
     params:
       terminology_name: mesh
       term_override_paths_by_entity_scope:
@@ -98,7 +106,7 @@ metrics:
         chemical: configs/MeSH_chemical_mappings.yaml
   - result_name: mesh_concept_depth_counts
     metric_name: concept_depth_counts
-    target_bundles: ["BC5CDR_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
+    target_bundles: ["BC5CDR_corpus", "BioRED_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus"]
     params: {terminology_name: mesh}
   - result_name: cell_ontology_terminology_concept_coverage
     metric_name: terminology_concept_coverage

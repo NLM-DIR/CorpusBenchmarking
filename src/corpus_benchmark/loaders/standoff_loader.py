@@ -20,6 +20,7 @@ starts at ``len(title) + 1``.
 from __future__ import annotations
 
 import logging
+import re
 from abc import abstractmethod
 from pathlib import Path
 
@@ -166,6 +167,8 @@ def load_BRAT_standoff(
     split: dict | None = None,
     label_map: dict[str, str | None] = {},
     docid_type: str = "pmid",
+    docid_regex: str | None = None,
+    docid_group: int | str = 1,
     normalization_resource_map: dict[str, str] = {},
     verify_text: bool = True,
 ) -> BenchmarkCorpus:
@@ -177,6 +180,8 @@ def load_BRAT_standoff(
     loader = BRAT_StandoffLoader(
         label_map=label_map,
         docid_type=docid_type,
+        docid_regex=docid_regex,
+        docid_group=docid_group,
         normalization_resource_map=normalization_resource_map,
         verify_text=verify_text,
     )
@@ -511,6 +516,8 @@ class BRAT_StandoffLoader(StandoffLoader):
         self,
         label_map: dict[str, str | None] = {},
         docid_type: str = "pmid",
+        docid_regex: str | None = None,
+        docid_group: int | str = 1,
         normalization_resource_map: dict[str, str] = {},
         verify_text: bool = True,
         **kwargs,
@@ -522,7 +529,15 @@ class BRAT_StandoffLoader(StandoffLoader):
             kwargs=kwargs,
         )
         self.docid_type = DocumentIdentifierType(docid_type.lower())
+        self.docid_regex = re.compile(docid_regex) if docid_regex else None
+        self.docid_group = docid_group
 
     def get_ids(self, filename_docid: str) -> dict[DocumentIdentifierType, str]:
-        docid = self.docid_type.normalize(filename_docid)
+        docid_text = filename_docid
+        if self.docid_regex is not None:
+            match = self.docid_regex.search(filename_docid)
+            if match is None:
+                raise ValueError(f"Document ID {filename_docid!r} did not match configured docid_regex")
+            docid_text = match.group(self.docid_group)
+        docid = self.docid_type.normalize(docid_text)
         return {self.docid_type: docid}

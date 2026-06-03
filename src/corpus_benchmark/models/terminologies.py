@@ -278,7 +278,7 @@ def _get_not_found_text(not_found: set[str]) -> str:
     if len(not_found_list) < len(not_found):
         more_count = len(not_found) - len(not_found_list)
         not_found_text += f" ...(+{more_count} more)"
-    return not_found_text
+    return not_found_text.encode("ascii", errors="backslashreplace").decode("ascii")
 
 
 def _topic_parent_ids(concept: TerminologyConcept) -> list[str]:

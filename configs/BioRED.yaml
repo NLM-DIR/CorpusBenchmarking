@@ -1,0 +1,28 @@
+name: BioRED
+
+cache_filename: corpora/BioRED.json.gz
+
+acquisition:
+  source_url: "https://ftp.ncbi.nlm.nih.gov/pub/lu/BioRED/BIORED.zip"
+  format: "zip"
+
+loader:
+  name: pubtator
+  params:
+    paths:
+      train: corpora/BioRED/BioRED/Train.PubTator
+      dev: corpora/BioRED/BioRED/Dev.PubTator
+      test: corpora/BioRED/BioRED/Test.PubTator
+    id_format_list: [[",", "distributive", "False"]]
+    id_resource_map:
+      Chemical: MESH
+      Disease: MESH
+      Gene: NCBIGene
+      Species: NCBITaxon
+      SequenceVariant: dbSNP
+    label_map:
+      ChemicalEntity: Chemical
+      DiseaseOrPhenotypicFeature: Disease
+      GeneOrGeneProduct: Gene
+      OrganismTaxon: Species
+      SequenceVariant: SequenceVariant

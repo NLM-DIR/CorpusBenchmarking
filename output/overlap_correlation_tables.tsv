@@ -1,35 +1,45 @@
 Metric:	mention_overlap_by_frequency
 Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	Intersection share	Contribution to Overall Jaccard	Article topic distribution entropy
-(AnatEM_train, AnatEM_test)	anatomy	Overall	1576	268	0.17005076	1	1	0.17005076	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(1, 2)	936	0	0	0.59390863	0	0	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(2, 4)	368	73	0.19836957	0.23350254	0.27238806	0.046319797	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(4, 8)	156	83	0.53205128	0.098984772	0.30970149	0.052664975	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(8, 16)	75	73	0.97333333	0.047588832	0.27238806	0.046319797	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(16, 32)	24	22	0.91666667	0.015228426	0.082089552	0.013959391	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(32, 64)	13	13	1	0.008248731	0.048507463	0.008248731	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(64, 128)	4	4	1	0.0025380711	0.014925373	0.0025380711	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(128, 256)	0	0	0	0	0	0	3.9623866
-(AnatEM_train, AnatEM_test)	anatomy	(256, None)	0	0	0	0	0	0	3.9623866
-(AnatEM_train, AnatEM_test)	cell	Overall	1194	155	0.12981575	1	1	0.12981575	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(1, 2)	769	0	0	0.6440536	0	0	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(2, 4)	273	59	0.21611722	0.22864322	0.38064516	0.049413735	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(4, 8)	87	47	0.54022989	0.072864322	0.30322581	0.039363484	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(8, 16)	39	28	0.71794872	0.032663317	0.18064516	0.023450586	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(16, 32)	12	10	0.83333333	0.010050251	0.064516129	0.0083752094	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(32, 64)	9	6	0.66666667	0.0075376884	0.038709677	0.0050251256	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(64, 128)	3	3	1	0.0025125628	0.019354839	0.0025125628	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(128, 256)	0	0	0	0	0	0	3.9623866
-(AnatEM_train, AnatEM_test)	cell	(256, None)	2	2	1	0.0016750419	0.012903226	0.0016750419	3.9623866
-(AnatEM_train, AnatEM_test)	disease	Overall	839	121	0.14421931	1	1	0.14421931	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(1, 2)	518	0	0	0.61740167	0	0	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(2, 4)	199	43	0.2160804	0.23718713	0.3553719	0.05125149	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(4, 8)	72	32	0.44444444	0.085816448	0.26446281	0.038140644	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(8, 16)	26	22	0.84615385	0.030989273	0.18181818	0.026221692	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(16, 32)	14	14	1	0.016686532	0.11570248	0.016686532	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(32, 64)	7	7	1	0.0083432658	0.05785124	0.0083432658	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(64, 128)	0	0	0	0	0	0	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(128, 256)	2	2	1	0.0023837902	0.016528926	0.0023837902	3.9623866
-(AnatEM_train, AnatEM_test)	disease	(256, None)	1	1	1	0.0011918951	0.0082644628	0.0011918951	3.9623866
+(AnatEM_train, AnatEM_test)	anatomy	Overall	1576	268	0.17005076	1	1	0.17005076	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(1, 2)	936	0	0	0.59390863	0	0	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(2, 4)	368	73	0.19836957	0.23350254	0.27238806	0.046319797	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(4, 8)	156	83	0.53205128	0.098984772	0.30970149	0.052664975	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(8, 16)	75	73	0.97333333	0.047588832	0.27238806	0.046319797	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(16, 32)	24	22	0.91666667	0.015228426	0.082089552	0.013959391	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(32, 64)	13	13	1	0.008248731	0.048507463	0.008248731	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(64, 128)	4	4	1	0.0025380711	0.014925373	0.0025380711	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(128, 256)	0	0	0	0	0	0	3.9826345
+(AnatEM_train, AnatEM_test)	anatomy	(256, None)	0	0	0	0	0	0	3.9826345
+(AnatEM_train, AnatEM_test)	cell	Overall	1194	155	0.12981575	1	1	0.12981575	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(1, 2)	769	0	0	0.6440536	0	0	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(2, 4)	273	59	0.21611722	0.22864322	0.38064516	0.049413735	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(4, 8)	87	47	0.54022989	0.072864322	0.30322581	0.039363484	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(8, 16)	39	28	0.71794872	0.032663317	0.18064516	0.023450586	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(16, 32)	12	10	0.83333333	0.010050251	0.064516129	0.0083752094	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(32, 64)	9	6	0.66666667	0.0075376884	0.038709677	0.0050251256	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(64, 128)	3	3	1	0.0025125628	0.019354839	0.0025125628	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(128, 256)	0	0	0	0	0	0	3.9826345
+(AnatEM_train, AnatEM_test)	cell	(256, None)	2	2	1	0.0016750419	0.012903226	0.0016750419	3.9826345
+(AnatEM_train, AnatEM_test)	disease	Overall	839	121	0.14421931	1	1	0.14421931	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(1, 2)	518	0	0	0.61740167	0	0	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(2, 4)	199	43	0.2160804	0.23718713	0.3553719	0.05125149	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(4, 8)	72	32	0.44444444	0.085816448	0.26446281	0.038140644	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(8, 16)	26	22	0.84615385	0.030989273	0.18181818	0.026221692	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(16, 32)	14	14	1	0.016686532	0.11570248	0.016686532	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(32, 64)	7	7	1	0.0083432658	0.05785124	0.0083432658	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(64, 128)	0	0	0	0	0	0	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(128, 256)	2	2	1	0.0023837902	0.016528926	0.0023837902	3.9826345
+(AnatEM_train, AnatEM_test)	disease	(256, None)	1	1	1	0.0011918951	0.0082644628	0.0011918951	3.9826345
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	Overall	22364	1022	0.045698444	1	1	0.045698444	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(1, 2)	18904	0	0	0.84528707	0	0	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(2, 4)	2491	456	0.18305901	0.11138437	0.44618395	0.020389912	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(4, 8)	659	308	0.46737481	0.029467001	0.30136986	0.013772134	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(8, 16)	206	156	0.75728155	0.0092112323	0.15264188	0.0069754963	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(16, 32)	80	78	0.975	0.0035771776	0.076320939	0.0034877482	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(32, 64)	19	19	1	0.00084957968	0.018590998	0.00084957968	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(64, 128)	5	5	1	0.0002235736	0.0048923679	0.0002235736	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(128, 256)	0	0	0	0	0	0	3.6840377
+(BC2GM_train, BC2GM_test)	gene_protein_sequence	(256, None)	0	0	0	0	0	0	3.6840377
 (BC5CDR_train, BC5CDR_test)	chemical	Overall	2039	417	0.20451202	1	1	0.20451202	3.6306134
 (BC5CDR_train, BC5CDR_test)	chemical	(1, 2)	801	0	0	0.39283963	0	0	3.6306134
 (BC5CDR_train, BC5CDR_test)	chemical	(2, 4)	518	66	0.12741313	0.2540461	0.15827338	0.032368808	3.6306134
@@ -110,16 +120,66 @@ Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	I
 (BioID_train, BioID_dev)	species	(64, 128)	4	3	0.75	0.0090497738	0.040540541	0.0067873303	2.0137087
 (BioID_train, BioID_dev)	species	(128, 256)	6	6	1	0.013574661	0.081081081	0.013574661	2.0137087
 (BioID_train, BioID_dev)	species	(256, None)	2	2	1	0.0045248869	0.027027027	0.0045248869	2.0137087
-(CHEMDNER_train, CHEMDNER_test)	chemical	Overall	13980	2100	0.15021459	1	1	0.15021459	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(1, 2)	8002	0	0	0.57238913	0	0	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(2, 4)	3144	541	0.17207379	0.2248927	0.25761905	0.03869814	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(4, 8)	1568	585	0.37308673	0.11216023	0.27857143	0.041845494	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(8, 16)	722	464	0.64265928	0.051645207	0.22095238	0.033190272	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(16, 32)	332	299	0.90060241	0.023748212	0.14238095	0.021387697	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(32, 64)	115	114	0.99130435	0.0082260372	0.054285714	0.0081545064	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(64, 128)	64	64	1	0.0045779685	0.03047619	0.0045779685	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(128, 256)	28	28	1	0.0020028612	0.013333333	0.0020028612	3.3928054
-(CHEMDNER_train, CHEMDNER_test)	chemical	(256, None)	5	5	1	0.00035765379	0.0023809524	0.00035765379	3.3928054
+(BioRED_train, BioRED_test)	chemical	Overall	988	108	0.10931174	1	1	0.10931174	3.664348
+(BioRED_train, BioRED_test)	chemical	(1, 2)	435	0	0	0.4402834	0	0	3.664348
+(BioRED_train, BioRED_test)	chemical	(2, 4)	269	23	0.085501859	0.27226721	0.21296296	0.023279352	3.664348
+(BioRED_train, BioRED_test)	chemical	(4, 8)	164	31	0.18902439	0.1659919	0.28703704	0.031376518	3.664348
+(BioRED_train, BioRED_test)	chemical	(8, 16)	85	27	0.31764706	0.086032389	0.25	0.027327935	3.664348
+(BioRED_train, BioRED_test)	chemical	(16, 32)	32	24	0.75	0.032388664	0.22222222	0.024291498	3.664348
+(BioRED_train, BioRED_test)	chemical	(32, 64)	2	2	1	0.0020242915	0.018518519	0.0020242915	3.664348
+(BioRED_train, BioRED_test)	chemical	(64, 128)	1	1	1	0.0010121457	0.0092592593	0.0010121457	3.664348
+(BioRED_train, BioRED_test)	chemical	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	chemical	(256, None)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	disease	Overall	1665	132	0.079279279	1	1	0.079279279	3.664348
+(BioRED_train, BioRED_test)	disease	(1, 2)	976	0	0	0.58618619	0	0	3.664348
+(BioRED_train, BioRED_test)	disease	(2, 4)	384	45	0.1171875	0.23063063	0.34090909	0.027027027	3.664348
+(BioRED_train, BioRED_test)	disease	(4, 8)	199	34	0.17085427	0.11951952	0.25757576	0.02042042	3.664348
+(BioRED_train, BioRED_test)	disease	(8, 16)	76	31	0.40789474	0.045645646	0.23484848	0.018618619	3.664348
+(BioRED_train, BioRED_test)	disease	(16, 32)	22	14	0.63636364	0.013213213	0.10606061	0.0084084084	3.664348
+(BioRED_train, BioRED_test)	disease	(32, 64)	6	6	1	0.0036036036	0.045454545	0.0036036036	3.664348
+(BioRED_train, BioRED_test)	disease	(64, 128)	2	2	1	0.0012012012	0.015151515	0.0012012012	3.664348
+(BioRED_train, BioRED_test)	disease	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	disease	(256, None)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	Overall	2156	110	0.051020408	1	1	0.051020408	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(1, 2)	1280	0	0	0.59369202	0	0	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(2, 4)	441	38	0.0861678	0.20454545	0.34545455	0.017625232	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(4, 8)	282	37	0.13120567	0.13079777	0.33636364	0.01716141	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(8, 16)	131	23	0.17557252	0.060760668	0.20909091	0.010667904	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(16, 32)	21	11	0.52380952	0.0097402597	0.1	0.0051020408	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(32, 64)	1	1	1	0.00046382189	0.0090909091	0.00046382189	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(64, 128)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(256, None)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	Overall	748	4	0.0053475936	1	1	0.0053475936	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(1, 2)	546	0	0	0.72994652	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(2, 4)	160	4	0.025	0.21390374	1	0.0053475936	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(4, 8)	38	0	0	0.050802139	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(8, 16)	4	0	0	0.0053475936	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(16, 32)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(32, 64)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(64, 128)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(256, None)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	species	Overall	82	24	0.29268293	1	1	0.29268293	3.664348
+(BioRED_train, BioRED_test)	species	(1, 2)	25	0	0	0.30487805	0	0	3.664348
+(BioRED_train, BioRED_test)	species	(2, 4)	30	5	0.16666667	0.36585366	0.20833333	0.06097561	3.664348
+(BioRED_train, BioRED_test)	species	(4, 8)	7	4	0.57142857	0.085365854	0.16666667	0.048780488	3.664348
+(BioRED_train, BioRED_test)	species	(8, 16)	8	3	0.375	0.097560976	0.125	0.036585366	3.664348
+(BioRED_train, BioRED_test)	species	(16, 32)	3	3	1	0.036585366	0.125	0.036585366	3.664348
+(BioRED_train, BioRED_test)	species	(32, 64)	4	4	1	0.048780488	0.16666667	0.048780488	3.664348
+(BioRED_train, BioRED_test)	species	(64, 128)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	species	(128, 256)	4	4	1	0.048780488	0.16666667	0.048780488	3.664348
+(BioRED_train, BioRED_test)	species	(256, None)	1	1	1	0.012195122	0.041666667	0.012195122	3.664348
+(CHEMDNER_train, CHEMDNER_test)	chemical	Overall	13980	2100	0.15021459	1	1	0.15021459	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(1, 2)	8002	0	0	0.57238913	0	0	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(2, 4)	3144	541	0.17207379	0.2248927	0.25761905	0.03869814	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(4, 8)	1568	585	0.37308673	0.11216023	0.27857143	0.041845494	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(8, 16)	722	464	0.64265928	0.051645207	0.22095238	0.033190272	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(16, 32)	332	299	0.90060241	0.023748212	0.14238095	0.021387697	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(32, 64)	115	114	0.99130435	0.0082260372	0.054285714	0.0081545064	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(64, 128)	64	64	1	0.0045779685	0.03047619	0.0045779685	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(128, 256)	28	28	1	0.0020028612	0.013333333	0.0020028612	3.3931164
+(CHEMDNER_train, CHEMDNER_test)	chemical	(256, None)	5	5	1	0.00035765379	0.0023809524	0.00035765379	3.3931164
 (CRAFT_train, CRAFT_test)	anatomy	Overall	2930	519	0.17713311	1	1	0.17713311	3.2037315
 (CRAFT_train, CRAFT_test)	anatomy	(1, 2)	1423	0	0	0.48566553	0	0	3.2037315
 (CRAFT_train, CRAFT_test)	anatomy	(2, 4)	663	105	0.15837104	0.22627986	0.20231214	0.035836177	3.2037315
@@ -200,36 +260,86 @@ Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	I
 (CellLink_train, CellLink_dev)	cell	(64, 128)	11	11	1	0.0015768349	0.017268446	0.0015768349	3.5820846
 (CellLink_train, CellLink_dev)	cell	(128, 256)	2	2	1	0.00028669725	0.0031397174	0.00028669725	3.5820846
 (CellLink_train, CellLink_dev)	cell	(256, None)	0	0	0	0	0	0	3.5820846
-(JNLPBA_train, JNLPBA_test)	cell	Overall	5137	413	0.080397119	1	1	0.080397119	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(1, 2)	3832	0	0	0.74596068	0	0	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(2, 4)	831	152	0.18291215	0.16176757	0.36803874	0.029589254	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(4, 8)	276	112	0.4057971	0.053727857	0.27118644	0.021802609	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(8, 16)	111	75	0.67567568	0.021607942	0.18159806	0.014599961	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(16, 32)	44	34	0.77272727	0.0085653105	0.082324455	0.006618649	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(32, 64)	28	25	0.89285714	0.0054506521	0.060532688	0.0048666537	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(64, 128)	8	8	1	0.0015573292	0.01937046	0.0015573292	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(128, 256)	5	5	1	0.00097333074	0.012106538	0.00097333074	3.0533641
-(JNLPBA_train, JNLPBA_test)	cell	(256, None)	2	2	1	0.0003893323	0.004842615	0.0003893323	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	Overall	16702	1037	0.062088373	1	1	0.062088373	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(1, 2)	11923	0	0	0.7138666	0	0	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(2, 4)	2825	298	0.10548673	0.16914142	0.28736741	0.017842175	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(4, 8)	1131	269	0.23784262	0.067716441	0.25940212	0.016105856	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(8, 16)	499	215	0.43086172	0.029876661	0.20732883	0.01287271	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(16, 32)	177	120	0.6779661	0.010597533	0.11571842	0.0071847683	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(32, 64)	85	75	0.88235294	0.0050892109	0.072324012	0.0044904802	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(64, 128)	40	38	0.95	0.0023949228	0.036644166	0.0022751766	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(128, 256)	13	13	1	0.0007783499	0.012536162	0.0007783499	3.0533641
-(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(256, None)	9	9	1	0.00053885762	0.0086788814	0.00053885762	3.0533641
-(NCBI_Disease_train, NCBI_Disease_test)	disease	Overall	1941	174	0.089644513	1	1	0.089644513	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(1, 2)	1230	0	0	0.63369397	0	0	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(2, 4)	417	54	0.1294964	0.21483771	0.31034483	0.027820711	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(4, 8)	160	36	0.225	0.082431736	0.20689655	0.018547141	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(8, 16)	71	39	0.54929577	0.036579083	0.22413793	0.020092736	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(16, 32)	36	21	0.58333333	0.018547141	0.12068966	0.010819165	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(32, 64)	21	18	0.85714286	0.010819165	0.10344828	0.0092735703	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(64, 128)	5	5	1	0.0025759918	0.028735632	0.0025759918	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(128, 256)	1	1	1	0.00051519835	0.0057471264	0.00051519835	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(256, None)	0	0	0	0	0	0	3.2719322
+(JNLPBA_train, JNLPBA_test)	cell	Overall	5137	413	0.080397119	1	1	0.080397119	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(1, 2)	3832	0	0	0.74596068	0	0	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(2, 4)	831	152	0.18291215	0.16176757	0.36803874	0.029589254	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(4, 8)	276	112	0.4057971	0.053727857	0.27118644	0.021802609	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(8, 16)	111	75	0.67567568	0.021607942	0.18159806	0.014599961	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(16, 32)	44	34	0.77272727	0.0085653105	0.082324455	0.006618649	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(32, 64)	28	25	0.89285714	0.0054506521	0.060532688	0.0048666537	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(64, 128)	8	8	1	0.0015573292	0.01937046	0.0015573292	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(128, 256)	5	5	1	0.00097333074	0.012106538	0.00097333074	3.056553
+(JNLPBA_train, JNLPBA_test)	cell	(256, None)	2	2	1	0.0003893323	0.004842615	0.0003893323	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	Overall	16702	1037	0.062088373	1	1	0.062088373	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(1, 2)	11923	0	0	0.7138666	0	0	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(2, 4)	2825	298	0.10548673	0.16914142	0.28736741	0.017842175	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(4, 8)	1131	269	0.23784262	0.067716441	0.25940212	0.016105856	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(8, 16)	499	215	0.43086172	0.029876661	0.20732883	0.01287271	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(16, 32)	177	120	0.6779661	0.010597533	0.11571842	0.0071847683	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(32, 64)	85	75	0.88235294	0.0050892109	0.072324012	0.0044904802	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(64, 128)	40	38	0.95	0.0023949228	0.036644166	0.0022751766	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(128, 256)	13	13	1	0.0007783499	0.012536162	0.0007783499	3.056553
+(JNLPBA_train, JNLPBA_test)	gene_protein_sequence	(256, None)	9	9	1	0.00053885762	0.0086788814	0.00053885762	3.056553
+(MedMentions_train, MedMentions_test)	anatomy	Overall	6542	628	0.095995109	1	1	0.095995109	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(1, 2)	4089	0	0	0.62503821	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(2, 4)	1429	187	0.13086074	0.21843473	0.2977707	0.028584531	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(4, 8)	659	192	0.29135053	0.10073372	0.30573248	0.029348823	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(8, 16)	252	144	0.57142857	0.03852033	0.22929936	0.022011617	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(16, 32)	72	64	0.88888889	0.011005809	0.10191083	0.009782941	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(32, 64)	26	26	1	0.0039743198	0.041401274	0.0039743198	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(64, 128)	10	10	1	0.0015285845	0.015923567	0.0015285845	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(128, 256)	3	3	1	0.00045857536	0.0047770701	0.00045857536	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(256, None)	2	2	1	0.00030571691	0.0031847134	0.00030571691	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	Overall	11180	991	0.088640429	1	1	0.088640429	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(1, 2)	6755	0	0	0.60420394	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(2, 4)	2475	319	0.12888889	0.22137746	0.32189707	0.028533095	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(4, 8)	1216	288	0.23684211	0.10876565	0.29061554	0.025760286	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(8, 16)	567	233	0.41093474	0.050715564	0.23511604	0.020840787	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(16, 32)	111	97	0.87387387	0.0099284436	0.097880928	0.0086762075	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(32, 64)	43	41	0.95348837	0.0038461538	0.041372351	0.003667263	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(64, 128)	11	11	1	0.00098389982	0.011099899	0.00098389982	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(128, 256)	2	2	1	0.00017889088	0.0020181635	0.00017889088	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(256, None)	0	0	0	0	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	disease	Overall	5540	494	0.089169675	1	1	0.089169675	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(1, 2)	3835	0	0	0.69223827	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(2, 4)	1057	160	0.15137181	0.19079422	0.32388664	0.028880866	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(4, 8)	418	162	0.38755981	0.075451264	0.32793522	0.029241877	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(8, 16)	138	81	0.58695652	0.024909747	0.16396761	0.014620939	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(16, 32)	46	45	0.97826087	0.0083032491	0.091093117	0.0081227437	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(32, 64)	24	24	1	0.00433213	0.048582996	0.00433213	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(64, 128)	14	14	1	0.0025270758	0.028340081	0.0025270758	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(128, 256)	8	8	1	0.0014440433	0.016194332	0.0014440433	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(256, None)	0	0	0	0	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	Overall	10799	1244	0.11519585	1	1	0.11519585	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(1, 2)	6849	0	0	0.63422539	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(2, 4)	2260	384	0.1699115	0.20927864	0.30868167	0.035558848	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(4, 8)	970	323	0.33298969	0.089823132	0.2596463	0.029910177	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(8, 16)	421	262	0.62232779	0.038985091	0.21061093	0.024261506	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(16, 32)	179	156	0.87150838	0.016575609	0.12540193	0.014445782	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(32, 64)	81	80	0.98765432	0.0075006945	0.064308682	0.0074080933	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(64, 128)	29	29	1	0.0026854338	0.023311897	0.0026854338	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(128, 256)	9	9	1	0.0008334105	0.0072347267	0.0008334105	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(256, None)	1	1	1	9.2601167e-05	0.00080385852	9.2601167e-05	4.0553945
+(MedMentions_train, MedMentions_test)	species	Overall	3406	278	0.081620669	1	1	0.081620669	4.0553945
+(MedMentions_train, MedMentions_test)	species	(1, 2)	2154	0	0	0.63241339	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	species	(2, 4)	798	83	0.10401003	0.23429243	0.29856115	0.024368761	4.0553945
+(MedMentions_train, MedMentions_test)	species	(4, 8)	301	83	0.27574751	0.088373459	0.29856115	0.024368761	4.0553945
+(MedMentions_train, MedMentions_test)	species	(8, 16)	93	54	0.58064516	0.027304756	0.1942446	0.015854375	4.0553945
+(MedMentions_train, MedMentions_test)	species	(16, 32)	34	32	0.94117647	0.009982384	0.11510791	0.009395185	4.0553945
+(MedMentions_train, MedMentions_test)	species	(32, 64)	18	18	1	0.0052847915	0.064748201	0.0052847915	4.0553945
+(MedMentions_train, MedMentions_test)	species	(64, 128)	5	5	1	0.0014679977	0.017985612	0.0014679977	4.0553945
+(MedMentions_train, MedMentions_test)	species	(128, 256)	1	1	1	0.00029359953	0.0035971223	0.00029359953	4.0553945
+(MedMentions_train, MedMentions_test)	species	(256, None)	2	2	1	0.00058719906	0.0071942446	0.00058719906	4.0553945
+(NCBI_Disease_train, NCBI_Disease_test)	disease	Overall	1941	174	0.089644513	1	1	0.089644513	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(1, 2)	1230	0	0	0.63369397	0	0	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(2, 4)	417	54	0.1294964	0.21483771	0.31034483	0.027820711	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(4, 8)	160	36	0.225	0.082431736	0.20689655	0.018547141	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(8, 16)	71	39	0.54929577	0.036579083	0.22413793	0.020092736	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(16, 32)	36	21	0.58333333	0.018547141	0.12068966	0.010819165	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(32, 64)	21	18	0.85714286	0.010819165	0.10344828	0.0092735703	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(64, 128)	5	5	1	0.0025759918	0.028735632	0.0025759918	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(128, 256)	1	1	1	0.00051519835	0.0057471264	0.00051519835	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(256, None)	0	0	0	0	0	0	3.272444
 (NLM_Chem_train, NLM_Chem_test)	chemical	Overall	4432	489	0.11033394	1	1	0.11033394	3.3269423
 (NLM_Chem_train, NLM_Chem_test)	chemical	(1, 2)	2237	0	0	0.50473827	0	0	3.3269423
 (NLM_Chem_train, NLM_Chem_test)	chemical	(2, 4)	946	86	0.090909091	0.21344765	0.17586912	0.019404332	3.3269423
@@ -240,6 +350,36 @@ Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	I
 (NLM_Chem_train, NLM_Chem_test)	chemical	(64, 128)	79	33	0.41772152	0.01782491	0.067484663	0.0074458484	3.3269423
 (NLM_Chem_train, NLM_Chem_test)	chemical	(128, 256)	26	16	0.61538462	0.005866426	0.032719836	0.0036101083	3.3269423
 (NLM_Chem_train, NLM_Chem_test)	chemical	(256, None)	4	3	0.75	0.00090252708	0.0061349693	0.00067689531	3.3269423
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	Overall	4943	389	0.078697147	1	1	0.078697147	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(1, 2)	3155	0	0	0.63827635	0	0	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(2, 4)	944	110	0.11652542	0.19097714	0.28277635	0.022253692	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(4, 8)	454	122	0.26872247	0.091847056	0.31362468	0.024681368	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(8, 16)	302	93	0.30794702	0.0610965	0.23907455	0.018814485	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(16, 32)	61	38	0.62295082	0.012340684	0.097686375	0.0076876391	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(32, 64)	23	22	0.95652174	0.0046530447	0.05655527	0.0044507384	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(64, 128)	4	4	1	0.00080922517	0.010282776	0.00080922517	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(128, 256)	0	0	0	0	0	0	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(256, None)	0	0	0	0	0	0	3.2725862
+(S1000_train, S1000_test)	species	Overall	2329	124	0.053241735	1	1	0.053241735	3.458114
+(S1000_train, S1000_test)	species	(1, 2)	1232	0	0	0.5289824	0	0	3.458114
+(S1000_train, S1000_test)	species	(2, 4)	763	36	0.047182176	0.32760842	0.29032258	0.015457278	3.458114
+(S1000_train, S1000_test)	species	(4, 8)	241	40	0.1659751	0.10347789	0.32258065	0.017174753	3.458114
+(S1000_train, S1000_test)	species	(8, 16)	66	25	0.37878788	0.028338343	0.2016129	0.010734221	3.458114
+(S1000_train, S1000_test)	species	(16, 32)	19	15	0.78947368	0.0081580077	0.12096774	0.0064405324	3.458114
+(S1000_train, S1000_test)	species	(32, 64)	6	6	1	0.002576213	0.048387097	0.002576213	3.458114
+(S1000_train, S1000_test)	species	(64, 128)	2	2	1	0.00085873766	0.016129032	0.00085873766	3.458114
+(S1000_train, S1000_test)	species	(128, 256)	0	0	0	0	0	0	3.458114
+(S1000_train, S1000_test)	species	(256, None)	0	0	0	0	0	0	3.458114
+(tmVar_train, tmVar_test)	sequence_variant	Overall	933	6	0.0064308682	1	1	0.0064308682	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(1, 2)	683	0	0	0.73204716	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(2, 4)	195	3	0.015384615	0.20900322	0.5	0.0032154341	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(4, 8)	49	2	0.040816327	0.052518757	0.33333333	0.0021436227	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(8, 16)	5	0	0	0.0053590568	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(16, 32)	1	1	1	0.0010718114	0.16666667	0.0010718114	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(32, 64)	0	0	0	0	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(64, 128)	0	0	0	0	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(128, 256)	0	0	0	0	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(256, None)	0	0	0	0	0	0	3.1999731
 
 Metric:	identifier_overlap_by_frequency
 Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	Intersection share	Contribution to Overall Jaccard	Article topic distribution entropy
@@ -323,6 +463,56 @@ Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	I
 (BioID_train, BioID_dev)	species	(64, 128)	9	5	0.55555556	0.056962025	0.14285714	0.03164557	2.0137087
 (BioID_train, BioID_dev)	species	(128, 256)	5	5	1	0.03164557	0.14285714	0.03164557	2.0137087
 (BioID_train, BioID_dev)	species	(256, None)	3	3	1	0.018987342	0.085714286	0.018987342	2.0137087
+(BioRED_train, BioRED_test)	chemical	Overall	564	94	0.16666667	1	1	0.16666667	3.664348
+(BioRED_train, BioRED_test)	chemical	(1, 2)	157	0	0	0.27836879	0	0	3.664348
+(BioRED_train, BioRED_test)	chemical	(2, 4)	128	9	0.0703125	0.22695035	0.095744681	0.015957447	3.664348
+(BioRED_train, BioRED_test)	chemical	(4, 8)	126	19	0.15079365	0.22340426	0.20212766	0.033687943	3.664348
+(BioRED_train, BioRED_test)	chemical	(8, 16)	103	32	0.31067961	0.18262411	0.34042553	0.056737589	3.664348
+(BioRED_train, BioRED_test)	chemical	(16, 32)	39	24	0.61538462	0.069148936	0.25531915	0.042553191	3.664348
+(BioRED_train, BioRED_test)	chemical	(32, 64)	10	9	0.9	0.017730496	0.095744681	0.015957447	3.664348
+(BioRED_train, BioRED_test)	chemical	(64, 128)	1	1	1	0.0017730496	0.010638298	0.0017730496	3.664348
+(BioRED_train, BioRED_test)	chemical	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	chemical	(256, None)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	disease	Overall	693	129	0.18614719	1	1	0.18614719	3.664348
+(BioRED_train, BioRED_test)	disease	(1, 2)	210	0	0	0.3030303	0	0	3.664348
+(BioRED_train, BioRED_test)	disease	(2, 4)	145	20	0.13793103	0.20923521	0.15503876	0.028860029	3.664348
+(BioRED_train, BioRED_test)	disease	(4, 8)	172	26	0.15116279	0.24819625	0.20155039	0.037518038	3.664348
+(BioRED_train, BioRED_test)	disease	(8, 16)	110	40	0.36363636	0.15873016	0.31007752	0.057720058	3.664348
+(BioRED_train, BioRED_test)	disease	(16, 32)	37	26	0.7027027	0.053391053	0.20155039	0.037518038	3.664348
+(BioRED_train, BioRED_test)	disease	(32, 64)	13	11	0.84615385	0.018759019	0.085271318	0.015873016	3.664348
+(BioRED_train, BioRED_test)	disease	(64, 128)	5	5	1	0.0072150072	0.03875969	0.0072150072	3.664348
+(BioRED_train, BioRED_test)	disease	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	disease	(256, None)	1	1	1	0.0014430014	0.007751938	0.0014430014	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	Overall	1417	125	0.088214538	1	1	0.088214538	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(1, 2)	532	0	0	0.37544107	0	0	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(2, 4)	295	23	0.077966102	0.20818631	0.184	0.016231475	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(4, 8)	333	36	0.10810811	0.23500353	0.288	0.025405787	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(8, 16)	207	44	0.21256039	0.14608327	0.352	0.031051517	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(16, 32)	50	22	0.44	0.035285815	0.176	0.015525759	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(32, 64)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(64, 128)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	gene_protein_sequence	(256, None)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	Overall	552	5	0.009057971	1	1	0.009057971	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(1, 2)	323	0	0	0.58514493	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(2, 4)	157	3	0.01910828	0.28442029	0.6	0.0054347826	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(4, 8)	55	2	0.036363636	0.099637681	0.4	0.0036231884	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(8, 16)	16	0	0	0.028985507	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(16, 32)	1	0	0	0.0018115942	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(32, 64)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(64, 128)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	sequence_variant	(256, None)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	species	Overall	41	7	0.17073171	1	1	0.17073171	3.664348
+(BioRED_train, BioRED_test)	species	(1, 2)	13	0	0	0.31707317	0	0	3.664348
+(BioRED_train, BioRED_test)	species	(2, 4)	15	1	0.066666667	0.36585366	0.14285714	0.024390244	3.664348
+(BioRED_train, BioRED_test)	species	(4, 8)	3	0	0	0.073170732	0	0	3.664348
+(BioRED_train, BioRED_test)	species	(8, 16)	5	2	0.4	0.12195122	0.28571429	0.048780488	3.664348
+(BioRED_train, BioRED_test)	species	(16, 32)	2	1	0.5	0.048780488	0.14285714	0.024390244	3.664348
+(BioRED_train, BioRED_test)	species	(32, 64)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	species	(64, 128)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	species	(128, 256)	0	0	0	0	0	0	3.664348
+(BioRED_train, BioRED_test)	species	(256, None)	3	3	1	0.073170732	0.42857143	0.073170732	3.664348
 (CRAFT_train, CRAFT_test)	anatomy	Overall	1228	356	0.28990228	1	1	0.28990228	3.2037315
 (CRAFT_train, CRAFT_test)	anatomy	(1, 2)	331	0	0	0.26954397	0	0	3.2037315
 (CRAFT_train, CRAFT_test)	anatomy	(2, 4)	271	37	0.13653137	0.22068404	0.10393258	0.030130293	3.2037315
@@ -403,16 +593,66 @@ Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	I
 (CellLink_train, CellLink_dev)	cell	(64, 128)	24	24	1	0.022367195	0.055045872	0.022367195	3.5820846
 (CellLink_train, CellLink_dev)	cell	(128, 256)	15	15	1	0.013979497	0.03440367	0.013979497	3.5820846
 (CellLink_train, CellLink_dev)	cell	(256, None)	5	5	1	0.0046598322	0.01146789	0.0046598322	3.5820846
-(NCBI_Disease_train, NCBI_Disease_test)	disease	Overall	708	139	0.19632768	1	1	0.19632768	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(1, 2)	254	0	0	0.35875706	0	0	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(2, 4)	173	26	0.15028902	0.24435028	0.18705036	0.036723164	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(4, 8)	132	29	0.21969697	0.18644068	0.20863309	0.040960452	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(8, 16)	74	34	0.45945946	0.10451977	0.24460432	0.048022599	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(16, 32)	37	21	0.56756757	0.052259887	0.15107914	0.029661017	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(32, 64)	18	11	0.61111111	0.025423729	0.079136691	0.015536723	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(64, 128)	15	13	0.86666667	0.021186441	0.09352518	0.018361582	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(128, 256)	5	5	1	0.0070621469	0.035971223	0.0070621469	3.2719322
-(NCBI_Disease_train, NCBI_Disease_test)	disease	(256, None)	0	0	0	0	0	0	3.2719322
+(MedMentions_train, MedMentions_test)	anatomy	Overall	2645	492	0.18601134	1	1	0.18601134	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(1, 2)	1067	0	0	0.40340265	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(2, 4)	629	89	0.14149444	0.23780718	0.18089431	0.033648393	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(4, 8)	474	112	0.23628692	0.17920605	0.22764228	0.042344045	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(8, 16)	268	111	0.4141791	0.10132325	0.22560976	0.041965974	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(16, 32)	118	97	0.8220339	0.044612476	0.19715447	0.036672968	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(32, 64)	59	53	0.89830508	0.022306238	0.10772358	0.020037807	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(64, 128)	20	20	1	0.0075614367	0.040650407	0.0075614367	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(128, 256)	7	7	1	0.0026465028	0.014227642	0.0026465028	4.0553945
+(MedMentions_train, MedMentions_test)	anatomy	(256, None)	3	3	1	0.0011342155	0.006097561	0.0011342155	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	Overall	4711	872	0.18509871	1	1	0.18509871	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(1, 2)	1487	0	0	0.31564424	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(2, 4)	1212	141	0.11633663	0.25727022	0.16169725	0.029929951	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(4, 8)	970	198	0.20412371	0.20590108	0.22706422	0.042029293	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(8, 16)	692	243	0.35115607	0.14689026	0.27866972	0.051581405	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(16, 32)	231	176	0.76190476	0.049034175	0.20183486	0.037359372	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(32, 64)	84	79	0.94047619	0.017830609	0.09059633	0.016769263	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(64, 128)	24	24	1	0.0050944598	0.027522936	0.0050944598	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(128, 256)	9	9	1	0.0019104224	0.010321101	0.0019104224	4.0553945
+(MedMentions_train, MedMentions_test)	chemical	(256, None)	2	2	1	0.00042453831	0.002293578	0.00042453831	4.0553945
+(MedMentions_train, MedMentions_test)	disease	Overall	2329	445	0.19106913	1	1	0.19106913	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(1, 2)	1156	0	0	0.49635036	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(2, 4)	520	86	0.16538462	0.22327179	0.19325843	0.036925719	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(4, 8)	328	115	0.35060976	0.14083298	0.25842697	0.049377415	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(8, 16)	196	124	0.63265306	0.08415629	0.27865169	0.053241735	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(16, 32)	70	61	0.87142857	0.030055818	0.13707865	0.026191498	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(32, 64)	33	33	1	0.014169171	0.074157303	0.014169171	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(64, 128)	13	13	1	0.0055817948	0.029213483	0.0055817948	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(128, 256)	8	8	1	0.0034349506	0.017977528	0.0034349506	4.0553945
+(MedMentions_train, MedMentions_test)	disease	(256, None)	5	5	1	0.0021468441	0.011235955	0.0021468441	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	Overall	4515	1019	0.22569214	1	1	0.22569214	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(1, 2)	1692	0	0	0.37475083	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(2, 4)	1058	162	0.15311909	0.23433001	0.15897939	0.035880399	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(4, 8)	865	255	0.29479769	0.19158361	0.25024534	0.056478405	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(8, 16)	505	251	0.4970297	0.11184939	0.24631992	0.05559247	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(16, 32)	216	178	0.82407407	0.047840532	0.17468106	0.039424142	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(32, 64)	102	96	0.94117647	0.022591362	0.09421001	0.021262458	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(64, 128)	56	56	1	0.012403101	0.054955839	0.012403101	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(128, 256)	17	17	1	0.003765227	0.016683023	0.003765227	4.0553945
+(MedMentions_train, MedMentions_test)	function_process	(256, None)	4	4	1	0.00088593577	0.0039254171	0.00088593577	4.0553945
+(MedMentions_train, MedMentions_test)	species	Overall	1440	231	0.16041667	1	1	0.16041667	4.0553945
+(MedMentions_train, MedMentions_test)	species	(1, 2)	528	0	0	0.36666667	0	0	4.0553945
+(MedMentions_train, MedMentions_test)	species	(2, 4)	394	44	0.11167513	0.27361111	0.19047619	0.030555556	4.0553945
+(MedMentions_train, MedMentions_test)	species	(4, 8)	288	54	0.1875	0.2	0.23376623	0.0375	4.0553945
+(MedMentions_train, MedMentions_test)	species	(8, 16)	138	57	0.41304348	0.095833333	0.24675325	0.039583333	4.0553945
+(MedMentions_train, MedMentions_test)	species	(16, 32)	52	36	0.69230769	0.036111111	0.15584416	0.025	4.0553945
+(MedMentions_train, MedMentions_test)	species	(32, 64)	23	23	1	0.015972222	0.0995671	0.015972222	4.0553945
+(MedMentions_train, MedMentions_test)	species	(64, 128)	12	12	1	0.0083333333	0.051948052	0.0083333333	4.0553945
+(MedMentions_train, MedMentions_test)	species	(128, 256)	3	3	1	0.0020833333	0.012987013	0.0020833333	4.0553945
+(MedMentions_train, MedMentions_test)	species	(256, None)	2	2	1	0.0013888889	0.0086580087	0.0013888889	4.0553945
+(NCBI_Disease_train, NCBI_Disease_test)	disease	Overall	708	139	0.19632768	1	1	0.19632768	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(1, 2)	254	0	0	0.35875706	0	0	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(2, 4)	173	26	0.15028902	0.24435028	0.18705036	0.036723164	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(4, 8)	132	29	0.21969697	0.18644068	0.20863309	0.040960452	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(8, 16)	74	34	0.45945946	0.10451977	0.24460432	0.048022599	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(16, 32)	37	21	0.56756757	0.052259887	0.15107914	0.029661017	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(32, 64)	18	11	0.61111111	0.025423729	0.079136691	0.015536723	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(64, 128)	15	13	0.86666667	0.021186441	0.09352518	0.018361582	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(128, 256)	5	5	1	0.0070621469	0.035971223	0.0070621469	3.272444
+(NCBI_Disease_train, NCBI_Disease_test)	disease	(256, None)	0	0	0	0	0	0	3.272444
 (NLM_Chem_train, NLM_Chem_test)	chemical	Overall	1686	401	0.23784104	1	1	0.23784104	3.3269423
 (NLM_Chem_train, NLM_Chem_test)	chemical	(1, 2)	432	0	0	0.25622776	0	0	3.3269423
 (NLM_Chem_train, NLM_Chem_test)	chemical	(2, 4)	347	49	0.14121037	0.20581257	0.12219451	0.029062871	3.3269423
@@ -423,3 +663,33 @@ Split pair	Entity scope	Bin	Union count	Intersection count	Jaccard	Union share	I
 (NLM_Chem_train, NLM_Chem_test)	chemical	(64, 128)	104	49	0.47115385	0.06168446	0.12219451	0.029062871	3.3269423
 (NLM_Chem_train, NLM_Chem_test)	chemical	(128, 256)	44	26	0.59090909	0.026097272	0.064837905	0.015421115	3.3269423
 (NLM_Chem_train, NLM_Chem_test)	chemical	(256, None)	15	13	0.86666667	0.0088967972	0.032418953	0.0077105575	3.3269423
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	Overall	3632	400	0.11013216	1	1	0.11013216	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(1, 2)	1720	0	0	0.47356828	0	0	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(2, 4)	930	96	0.10322581	0.25605727	0.24	0.026431718	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(4, 8)	501	129	0.25748503	0.13794053	0.3225	0.035517621	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(8, 16)	348	92	0.26436782	0.095814978	0.23	0.025330396	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(16, 32)	108	62	0.57407407	0.029735683	0.155	0.017070485	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(32, 64)	23	19	0.82608696	0.0063325991	0.0475	0.0052312775	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(64, 128)	2	2	1	0.00055066079	0.005	0.00055066079	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(128, 256)	0	0	0	0	0	0	3.2725862
+(NLM_Gene_train, NLM_Gene_test)	gene_protein_sequence	(256, None)	0	0	0	0	0	0	3.2725862
+(S1000_train, S1000_test)	species	Overall	1360	95	0.069852941	1	1	0.069852941	3.458114
+(S1000_train, S1000_test)	species	(1, 2)	489	0	0	0.35955882	0	0	3.458114
+(S1000_train, S1000_test)	species	(2, 4)	451	14	0.031042129	0.33161765	0.14736842	0.010294118	3.458114
+(S1000_train, S1000_test)	species	(4, 8)	270	25	0.092592593	0.19852941	0.26315789	0.018382353	3.458114
+(S1000_train, S1000_test)	species	(8, 16)	108	23	0.21296296	0.079411765	0.24210526	0.016911765	3.458114
+(S1000_train, S1000_test)	species	(16, 32)	28	19	0.67857143	0.020588235	0.2	0.013970588	3.458114
+(S1000_train, S1000_test)	species	(32, 64)	11	11	1	0.0080882353	0.11578947	0.0080882353	3.458114
+(S1000_train, S1000_test)	species	(64, 128)	2	2	1	0.0014705882	0.021052632	0.0014705882	3.458114
+(S1000_train, S1000_test)	species	(128, 256)	1	1	1	0.00073529412	0.010526316	0.00073529412	3.458114
+(S1000_train, S1000_test)	species	(256, None)	0	0	0	0	0	0	3.458114
+(tmVar_train, tmVar_test)	sequence_variant	Overall	871	17	0.019517796	1	1	0.019517796	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(1, 2)	619	0	0	0.71067738	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(2, 4)	186	4	0.021505376	0.21354765	0.23529412	0.0045924225	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(4, 8)	56	10	0.17857143	0.064293915	0.58823529	0.011481056	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(8, 16)	9	2	0.22222222	0.010332951	0.11764706	0.0022962113	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(16, 32)	1	1	1	0.0011481056	0.058823529	0.0011481056	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(32, 64)	0	0	0	0	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(64, 128)	0	0	0	0	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(128, 256)	0	0	0	0	0	0	3.1999731
+(tmVar_train, tmVar_test)	sequence_variant	(256, None)	0	0	0	0	0	0	3.1999731

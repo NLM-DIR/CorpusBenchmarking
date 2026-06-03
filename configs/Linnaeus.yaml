@@ -1,0 +1,14 @@
+name: Linnaeus
+
+cache_filename: corpora/Linnaeus.json.gz
+
+acquisition:
+  source_url: "https://github.com/spyysalo/linnaeus-corpus-data/archive/refs/heads/master.zip"
+  format: "zip"
+
+loader:
+  name: linnaeus_species
+  params:
+    text_dir: corpora/Linnaeus/linnaeus-corpus-data-master/txt
+    tags_path: corpora/Linnaeus/linnaeus-corpus-data-master/filtered_tags.tsv
+    default_resource: NCBITaxon

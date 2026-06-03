@@ -27,21 +27,28 @@ The framework characterizes corpora across several diagnostic families:
 
 ## Preconfigured Corpora and Terminologies
 
-The default metric batteries currently preconfigure eleven biomedical NER or NER+EL corpora. Entity scopes are dashboard filters defined in `configs/dashboard.yaml`; terminology coverage is computed only where corpus identifiers can be resolved against a configured terminology.
+The default metric batteries currently preconfigure seventeen biomedical NER, NER+EL, and sentence-label corpora. Entity scopes are dashboard filters defined in `configs/dashboard.yaml`; terminology coverage is computed only where corpus identifiers can be resolved against a configured terminology.
 
 | Corpus | Entity scopes available in the dashboard | Terminology coverage configured |
 | --- | --- | --- |
 | AnatEM | Anatomy; cells and cell states; diseases | None; this is an NER-only standoff corpus in the current configuration. |
 | BC5CDR | Chemicals; diseases | MeSH 2026 for chemical and disease identifiers. |
 | BioID | Anatomy; cells and cell states; chemicals; functions and processes; genes/proteins/sequences; species | Cell Ontology (CL) for cell annotations; ChEBI for chemical annotations. |
+| BioRED | Chemicals; diseases; genes/proteins/sequences; species; sequence variants | MeSH 2026 for chemical and disease identifiers. NCBI Gene, NCBI Taxonomy, and dbSNP identifiers are retained for identifier and overlap metrics but are not loaded as terminology coverage resources by default. |
+| BC2GM | Genes/proteins/sequences | None; this sentence-only corpus is NER-only in the current configuration. The configured data uses train/devel only because the test set IDs do not expose PubMed or PMC identifiers. |
 | CHEMDNER | Chemicals | None; this configuration filters chemical mentions but does not provide normalized terminology identifiers for coverage metrics. |
 | CRAFT | Anatomy; cells and cell states; chemicals; diseases; functions and processes; genes/proteins/sequences; species | Cell Ontology (CL), MONDO, and ChEBI for the corresponding cell, disease, and chemical scopes. The corpus also carries identifiers from GO, NCBITaxon, PR, SO, UBERON, and related CRAFT annotation resources. |
 | CellLink | Cells and cell states | Cell Ontology (CL) for cell-state and cell-line/cell-type links. |
+| Hallmarks of Cancer | Cancer hallmarks | None; this is sentence-level hallmark annotation over PubMed articles, represented as sentence-span annotations for corpus diagnostics. |
 | JNLPBA | Cells and cell states; genes/proteins/sequences | None; this is an NER-only standoff corpus in the current configuration. |
+| Linnaeus | Species | None; NCBI Taxonomy identifiers are retained for identifier metrics but are not loaded as a terminology coverage resource by default. This corpus has no source train/test split, so it is excluded from overlap metrics. |
+| MedMentions | Anatomy; chemicals; diseases; functions and processes; genes/proteins/sequences; species; additional UMLS semantic groups | None; UMLS CUIs are retained for identifier and overlap metrics, but UMLS is not automatically downloaded because it requires license-controlled access. |
+| MutationFinder | Sequence variants | None; normalized mutation strings from the gold standard are retained for identifier and overlap metrics but are not loaded as a terminology coverage resource by default. |
 | NCBI Disease | Diseases | MeSH 2026 for disease identifiers. OMIM identifiers are retained in resource-distribution metrics but are not loaded as a terminology coverage resource by default. |
 | NLM-Chem | Chemicals | MeSH 2026 for chemical identifiers. |
 | NLM-Gene | Genes/proteins/sequences | None; NCBI Gene identifiers are retained for identifier and overlap metrics but are not loaded as a terminology coverage resource by default. |
 | S1000 | Species | None; NCBI Taxonomy identifiers are retained for identifier and overlap metrics but are not loaded as a terminology coverage resource by default. |
+| tmVar | Sequence variants | None; normalized tmVar mutation strings are retained for identifier and overlap metrics but are not loaded as a terminology coverage resource by default. |
 
 The terminology coverage battery loads four terminology resources: MeSH XML for MeSH 2026, OBO Cell Ontology (`CL`), OBO MONDO, and OBO ChEBI. High-level terminology branch mappings are configured under `configs/MeSH_*_mappings.yaml`, `configs/cell_ontology_mappings.yaml`, `configs/MONDO_disease_mappings.yaml`, and `configs/ChEBI_chemical_mappings.yaml`.
 

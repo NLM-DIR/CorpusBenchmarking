@@ -19,14 +19,19 @@ corpora:
     AnatEM: configs/AnatEM.yaml
     BC5CDR: configs/BC5CDR.yaml
     BioID: configs/BioID.yaml
+    BioRED: configs/BioRED.yaml
+    BC2GM: configs/BC2GM.yaml
     CHEMDNER: configs/CHEMDNER.yaml
     CRAFT: configs/CRAFT.yaml
     CellLink: configs/CellLink.yaml
     JNLPBA: configs/JNLPBA.yaml
+    Linnaeus: configs/Linnaeus.yaml
+    MedMentions: configs/MedMentions.yaml
     NCBI_Disease: configs/NCBI_Disease.yaml
     NLM_Chem: configs/NLM_Chem.yaml
     NLM_Gene: configs/NLM_Gene.yaml
     S1000: configs/S1000.yaml
+    tmVar: configs/tmVar.yaml
 
 bundles:
   AnatEM_corpus:
@@ -47,6 +52,18 @@ bundles:
     - corpus_name: BioID
       subset_name: train
     - corpus_name: BioID
+      subset_name: dev
+  BioRED_corpus:
+    - corpus_name: BioRED
+      subset_name: train
+    - corpus_name: BioRED
+      subset_name: dev
+    - corpus_name: BioRED
+      subset_name: test
+  BC2GM_corpus:
+    - corpus_name: BC2GM
+      subset_name: train
+    - corpus_name: BC2GM
       subset_name: dev
   CHEMDNER_corpus:
     - corpus_name: CHEMDNER
@@ -71,6 +88,16 @@ bundles:
     - corpus_name: JNLPBA
       subset_name: train
     - corpus_name: JNLPBA
+      subset_name: test
+  Linnaeus_corpus:
+    - corpus_name: Linnaeus
+      subset_name: all
+  MedMentions_corpus:
+    - corpus_name: MedMentions
+      subset_name: train
+    - corpus_name: MedMentions
+      subset_name: dev
+    - corpus_name: MedMentions
       subset_name: test
   NCBI_Disease_corpus:
     - corpus_name: NCBI_Disease
@@ -98,24 +125,29 @@ bundles:
       subset_name: dev
     - corpus_name: S1000
       subset_name: test
+  tmVar_corpus:
+    - corpus_name: tmVar
+      subset_name: train
+    - corpus_name: tmVar
+      subset_name: test
   
 metrics:
   - metric_name: journal_distribution
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus", "S1000_corpus"]
+    target_bundles: &metadata_corpus_bundles ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "BioRED_corpus", "BC2GM_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "Linnaeus_corpus", "MedMentions_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus", "S1000_corpus", "tmVar_corpus"]
   - metric_name: journal_MeSH_topic_distribution
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus", "S1000_corpus"]
+    target_bundles: *metadata_corpus_bundles
     params:
       terminology_name: mesh
       journal_topics_path: configs/journal_topics.yaml
       journal_name_topics_path: configs/journal_name_topic.json
   - metric_name: article_MeSH_topic_distribution
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus", "S1000_corpus"]
+    target_bundles: *metadata_corpus_bundles
     params:
       terminology_name: mesh
       article_topic_path: configs/article_topics.yaml
       journal_topics_path: configs/journal_topics.yaml
       journal_name_topics_path: configs/journal_name_topic.json
   - metric_name: publication_year_distribution
-    target_bundles: ["AnatEM_corpus", "BC5CDR_corpus", "BioID_corpus", "CHEMDNER_corpus", "CRAFT_corpus", "CellLink_corpus", "JNLPBA_corpus", "NCBI_Disease_corpus", "NLM_Chem_corpus", "NLM_Gene_corpus", "S1000_corpus"]
+    target_bundles: *metadata_corpus_bundles
 
 output_path: "output/metadata_stats.json"

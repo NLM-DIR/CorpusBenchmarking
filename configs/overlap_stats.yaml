@@ -7,14 +7,18 @@ corpora:
     AnatEM: configs/AnatEM.yaml
     BC5CDR: configs/BC5CDR.yaml
     BioID: configs/BioID.yaml
+    BioRED: configs/BioRED.yaml
+    BC2GM: configs/BC2GM.yaml
     CHEMDNER: configs/CHEMDNER.yaml
     CRAFT: configs/CRAFT.yaml
     CellLink: configs/CellLink.yaml
     JNLPBA: configs/JNLPBA.yaml
+    MedMentions: configs/MedMentions.yaml
     NCBI_Disease: configs/NCBI_Disease.yaml
     NLM_Chem: configs/NLM_Chem.yaml
     NLM_Gene: configs/NLM_Gene.yaml
     S1000: configs/S1000.yaml
+    tmVar: configs/tmVar.yaml
 
 bundles:
   AnatEM_train:
@@ -34,6 +38,18 @@ bundles:
       subset_name: train
   BioID_dev:
     - corpus_name: BioID
+      subset_name: dev
+  BioRED_train:
+    - corpus_name: BioRED
+      subset_name: train
+  BioRED_test:
+    - corpus_name: BioRED
+      subset_name: test
+  BC2GM_train:
+    - corpus_name: BC2GM
+      subset_name: train
+  BC2GM_test:
+    - corpus_name: BC2GM
       subset_name: dev
   CHEMDNER_train:
     - corpus_name: CHEMDNER
@@ -59,6 +75,12 @@ bundles:
   JNLPBA_test:
     - corpus_name: JNLPBA
       subset_name: test
+  MedMentions_train:
+    - corpus_name: MedMentions
+      subset_name: train
+  MedMentions_test:
+    - corpus_name: MedMentions
+      subset_name: test
   NCBI_Disease_train:
     - corpus_name: NCBI_Disease
       subset_name: train
@@ -83,6 +105,12 @@ bundles:
   S1000_test:
     - corpus_name: S1000
       subset_name: test
+  tmVar_train:
+    - corpus_name: tmVar
+      subset_name: train
+  tmVar_test:
+    - corpus_name: tmVar
+      subset_name: test
       
 comparison_suites:
   AnatEM_TrainVsTest:
@@ -91,6 +119,10 @@ comparison_suites:
     - ["BC5CDR_train", "BC5CDR_test"]
   BioID_TrainVsTest:
     - ["BioID_train", "BioID_dev"]
+  BioRED_TrainVsTest:
+    - ["BioRED_train", "BioRED_test"]
+  BC2GM_TrainVsTest:
+    - ["BC2GM_train", "BC2GM_test"]
   CHEMDNER_TrainVsTest:
     - ["CHEMDNER_train", "CHEMDNER_test"]
   CRAFT_TrainVsTest:
@@ -99,6 +131,8 @@ comparison_suites:
     - ["CellLink_train", "CellLink_dev"]
   JNLPBA_TrainVsTest:
     - ["JNLPBA_train", "JNLPBA_test"]
+  MedMentions_TrainVsTest:
+    - ["MedMentions_train", "MedMentions_test"]
   NCBI_Disease_TrainVsTest:
     - ["NCBI_Disease_train", "NCBI_Disease_test"]
   NLM_Chem_TrainVsTest:
@@ -107,6 +141,8 @@ comparison_suites:
     - ["NLM_Gene_train", "NLM_Gene_test"]
   S1000_TrainVsTest:
     - ["S1000_train", "S1000_test"]
+  tmVar_TrainVsTest:
+    - ["tmVar_train", "tmVar_test"]
     
 metrics:
   - result_name: AnatEM_token_overlap
@@ -118,6 +154,12 @@ metrics:
   - result_name: BioID_token_overlap
     metric_name: token_overlap
     comparison_suite: BioID_TrainVsTest
+  - result_name: BioRED_token_overlap
+    metric_name: token_overlap
+    comparison_suite: BioRED_TrainVsTest
+  - result_name: BC2GM_token_overlap
+    metric_name: token_overlap
+    comparison_suite: BC2GM_TrainVsTest
   - result_name: CHEMDNER_token_overlap
     metric_name: token_overlap
     comparison_suite: CHEMDNER_TrainVsTest
@@ -130,6 +172,9 @@ metrics:
   - result_name: JNLPBA_token_overlap
     metric_name: token_overlap
     comparison_suite: JNLPBA_TrainVsTest
+  - result_name: MedMentions_token_overlap
+    metric_name: token_overlap
+    comparison_suite: MedMentions_TrainVsTest
   - result_name: NCBI_Disease_token_overlap
     metric_name: token_overlap
     comparison_suite: NCBI_Disease_TrainVsTest
@@ -142,6 +187,9 @@ metrics:
   - result_name: S1000_token_overlap
     metric_name: token_overlap
     comparison_suite: S1000_TrainVsTest
+  - result_name: tmVar_token_overlap
+    metric_name: token_overlap
+    comparison_suite: tmVar_TrainVsTest
   - result_name: AnatEM_token_overlap_by_frequency
     metric_name: token_overlap_by_frequency
     comparison_suite: AnatEM_TrainVsTest
@@ -151,6 +199,12 @@ metrics:
   - result_name: BioID_token_overlap_by_frequency
     metric_name: token_overlap_by_frequency
     comparison_suite: BioID_TrainVsTest
+  - result_name: BioRED_token_overlap_by_frequency
+    metric_name: token_overlap_by_frequency
+    comparison_suite: BioRED_TrainVsTest
+  - result_name: BC2GM_token_overlap_by_frequency
+    metric_name: token_overlap_by_frequency
+    comparison_suite: BC2GM_TrainVsTest
   - result_name: CHEMDNER_token_overlap_by_frequency
     metric_name: token_overlap_by_frequency
     comparison_suite: CHEMDNER_TrainVsTest
@@ -163,6 +217,9 @@ metrics:
   - result_name: JNLPBA_token_overlap_by_frequency
     metric_name: token_overlap_by_frequency
     comparison_suite: JNLPBA_TrainVsTest
+  - result_name: MedMentions_token_overlap_by_frequency
+    metric_name: token_overlap_by_frequency
+    comparison_suite: MedMentions_TrainVsTest
   - result_name: NCBI_Disease_token_overlap_by_frequency
     metric_name: token_overlap_by_frequency
     comparison_suite: NCBI_Disease_TrainVsTest
@@ -175,6 +232,9 @@ metrics:
   - result_name: S1000_token_overlap_by_frequency
     metric_name: token_overlap_by_frequency
     comparison_suite: S1000_TrainVsTest
+  - result_name: tmVar_token_overlap_by_frequency
+    metric_name: token_overlap_by_frequency
+    comparison_suite: tmVar_TrainVsTest
   - result_name: AnatEM_mention_overlap
     metric_name: mention_overlap
     comparison_suite: AnatEM_TrainVsTest
@@ -184,6 +244,12 @@ metrics:
   - result_name: BioID_mention_overlap
     metric_name: mention_overlap
     comparison_suite: BioID_TrainVsTest
+  - result_name: BioRED_mention_overlap
+    metric_name: mention_overlap
+    comparison_suite: BioRED_TrainVsTest
+  - result_name: BC2GM_mention_overlap
+    metric_name: mention_overlap
+    comparison_suite: BC2GM_TrainVsTest
   - result_name: CHEMDNER_mention_overlap
     metric_name: mention_overlap
     comparison_suite: CHEMDNER_TrainVsTest
@@ -196,6 +262,9 @@ metrics:
   - result_name: JNLPBA_mention_overlap
     metric_name: mention_overlap
     comparison_suite: JNLPBA_TrainVsTest
+  - result_name: MedMentions_mention_overlap
+    metric_name: mention_overlap
+    comparison_suite: MedMentions_TrainVsTest
   - result_name: NCBI_Disease_mention_overlap
     metric_name: mention_overlap
     comparison_suite: NCBI_Disease_TrainVsTest
@@ -208,6 +277,9 @@ metrics:
   - result_name: S1000_mention_overlap
     metric_name: mention_overlap
     comparison_suite: S1000_TrainVsTest
+  - result_name: tmVar_mention_overlap
+    metric_name: mention_overlap
+    comparison_suite: tmVar_TrainVsTest
   - result_name: AnatEM_mention_overlap_by_frequency
     metric_name: mention_overlap_by_frequency
     comparison_suite: AnatEM_TrainVsTest
@@ -217,6 +289,12 @@ metrics:
   - result_name: BioID_mention_overlap_by_frequency
     metric_name: mention_overlap_by_frequency
     comparison_suite: BioID_TrainVsTest
+  - result_name: BioRED_mention_overlap_by_frequency
+    metric_name: mention_overlap_by_frequency
+    comparison_suite: BioRED_TrainVsTest
+  - result_name: BC2GM_mention_overlap_by_frequency
+    metric_name: mention_overlap_by_frequency
+    comparison_suite: BC2GM_TrainVsTest
   - result_name: CHEMDNER_mention_overlap_by_frequency
     metric_name: mention_overlap_by_frequency
     comparison_suite: CHEMDNER_TrainVsTest
@@ -229,6 +307,9 @@ metrics:
   - result_name: JNLPBA_mention_overlap_by_frequency
     metric_name: mention_overlap_by_frequency
     comparison_suite: JNLPBA_TrainVsTest
+  - result_name: MedMentions_mention_overlap_by_frequency
+    metric_name: mention_overlap_by_frequency
+    comparison_suite: MedMentions_TrainVsTest
   - result_name: NCBI_Disease_mention_overlap_by_frequency
     metric_name: mention_overlap_by_frequency
     comparison_suite: NCBI_Disease_TrainVsTest
@@ -241,6 +322,9 @@ metrics:
   - result_name: S1000_mention_overlap_by_frequency
     metric_name: mention_overlap_by_frequency
     comparison_suite: S1000_TrainVsTest
+  - result_name: tmVar_mention_overlap_by_frequency
+    metric_name: mention_overlap_by_frequency
+    comparison_suite: tmVar_TrainVsTest
   - result_name: AnatEM_mention_token_overlap
     metric_name: mention_token_overlap
     comparison_suite: AnatEM_TrainVsTest
@@ -250,6 +334,12 @@ metrics:
   - result_name: BioID_mention_token_overlap
     metric_name: mention_token_overlap
     comparison_suite: BioID_TrainVsTest
+  - result_name: BioRED_mention_token_overlap
+    metric_name: mention_token_overlap
+    comparison_suite: BioRED_TrainVsTest
+  - result_name: BC2GM_mention_token_overlap
+    metric_name: mention_token_overlap
+    comparison_suite: BC2GM_TrainVsTest
   - result_name: CHEMDNER_mention_token_overlap
     metric_name: mention_token_overlap
     comparison_suite: CHEMDNER_TrainVsTest
@@ -262,6 +352,9 @@ metrics:
   - result_name: JNLPBA_mention_token_overlap
     metric_name: mention_token_overlap
     comparison_suite: JNLPBA_TrainVsTest
+  - result_name: MedMentions_mention_token_overlap
+    metric_name: mention_token_overlap
+    comparison_suite: MedMentions_TrainVsTest
   - result_name: NCBI_Disease_mention_token_overlap
     metric_name: mention_token_overlap
     comparison_suite: NCBI_Disease_TrainVsTest
@@ -274,6 +367,9 @@ metrics:
   - result_name: S1000_mention_token_overlap
     metric_name: mention_token_overlap
     comparison_suite: S1000_TrainVsTest
+  - result_name: tmVar_mention_token_overlap
+    metric_name: mention_token_overlap
+    comparison_suite: tmVar_TrainVsTest
   - result_name: AnatEM_mention_token_overlap_by_frequency
     metric_name: mention_token_overlap_by_frequency
     comparison_suite: AnatEM_TrainVsTest
@@ -283,6 +379,12 @@ metrics:
   - result_name: BioID_mention_token_overlap_by_frequency
     metric_name: mention_token_overlap_by_frequency
     comparison_suite: BioID_TrainVsTest
+  - result_name: BioRED_mention_token_overlap_by_frequency
+    metric_name: mention_token_overlap_by_frequency
+    comparison_suite: BioRED_TrainVsTest
+  - result_name: BC2GM_mention_token_overlap_by_frequency
+    metric_name: mention_token_overlap_by_frequency
+    comparison_suite: BC2GM_TrainVsTest
   - result_name: CHEMDNER_mention_token_overlap_by_frequency
     metric_name: mention_token_overlap_by_frequency
     comparison_suite: CHEMDNER_TrainVsTest
@@ -295,6 +397,9 @@ metrics:
   - result_name: JNLPBA_mention_token_overlap_by_frequency
     metric_name: mention_token_overlap_by_frequency
     comparison_suite: JNLPBA_TrainVsTest
+  - result_name: MedMentions_mention_token_overlap_by_frequency
+    metric_name: mention_token_overlap_by_frequency
+    comparison_suite: MedMentions_TrainVsTest
   - result_name: NCBI_Disease_mention_token_overlap_by_frequency
     metric_name: mention_token_overlap_by_frequency
     comparison_suite: NCBI_Disease_TrainVsTest
@@ -307,6 +412,9 @@ metrics:
   - result_name: S1000_mention_token_overlap_by_frequency
     metric_name: mention_token_overlap_by_frequency
     comparison_suite: S1000_TrainVsTest
+  - result_name: tmVar_mention_token_overlap_by_frequency
+    metric_name: mention_token_overlap_by_frequency
+    comparison_suite: tmVar_TrainVsTest
   - result_name: AnatEM_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: AnatEM_TrainVsTest
@@ -316,6 +424,12 @@ metrics:
   - result_name: BioID_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: BioID_TrainVsTest
+  - result_name: BioRED_identifier_overlap
+    metric_name: identifier_overlap
+    comparison_suite: BioRED_TrainVsTest
+  - result_name: BC2GM_identifier_overlap
+    metric_name: identifier_overlap
+    comparison_suite: BC2GM_TrainVsTest
   - result_name: CHEMDNER_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: CHEMDNER_TrainVsTest
@@ -328,6 +442,9 @@ metrics:
   - result_name: JNLPBA_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: JNLPBA_TrainVsTest
+  - result_name: MedMentions_identifier_overlap
+    metric_name: identifier_overlap
+    comparison_suite: MedMentions_TrainVsTest
   - result_name: NCBI_Disease_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: NCBI_Disease_TrainVsTest
@@ -340,6 +457,9 @@ metrics:
   - result_name: S1000_identifier_overlap
     metric_name: identifier_overlap
     comparison_suite: S1000_TrainVsTest
+  - result_name: tmVar_identifier_overlap
+    metric_name: identifier_overlap
+    comparison_suite: tmVar_TrainVsTest
 
   - result_name: AnatEM_identifier_overlap_by_frequency
     metric_name: identifier_overlap_by_frequency
@@ -350,6 +470,12 @@ metrics:
   - result_name: BioID_identifier_overlap_by_frequency
     metric_name: identifier_overlap_by_frequency
     comparison_suite: BioID_TrainVsTest
+  - result_name: BioRED_identifier_overlap_by_frequency
+    metric_name: identifier_overlap_by_frequency
+    comparison_suite: BioRED_TrainVsTest
+  - result_name: BC2GM_identifier_overlap_by_frequency
+    metric_name: identifier_overlap_by_frequency
+    comparison_suite: BC2GM_TrainVsTest
   - result_name: CHEMDNER_identifier_overlap_by_frequency
     metric_name: identifier_overlap_by_frequency
     comparison_suite: CHEMDNER_TrainVsTest
@@ -362,6 +488,9 @@ metrics:
   - result_name: JNLPBA_identifier_overlap_by_frequency
     metric_name: identifier_overlap_by_frequency
     comparison_suite: JNLPBA_TrainVsTest
+  - result_name: MedMentions_identifier_overlap_by_frequency
+    metric_name: identifier_overlap_by_frequency
+    comparison_suite: MedMentions_TrainVsTest
   - result_name: NCBI_Disease_identifier_overlap_by_frequency
     metric_name: identifier_overlap_by_frequency
     comparison_suite: NCBI_Disease_TrainVsTest
@@ -374,5 +503,8 @@ metrics:
   - result_name: S1000_identifier_overlap_by_frequency
     metric_name: identifier_overlap_by_frequency
     comparison_suite: S1000_TrainVsTest
+  - result_name: tmVar_identifier_overlap_by_frequency
+    metric_name: identifier_overlap_by_frequency
+    comparison_suite: tmVar_TrainVsTest
 
 output_path: "output/overlap_stats.json"

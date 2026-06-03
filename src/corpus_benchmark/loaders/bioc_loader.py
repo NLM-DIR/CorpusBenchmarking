@@ -4,6 +4,7 @@ import logging
 from collections import Counter
 from typing import List
 import os
+import gzip
 
 from bioc import biocxml, pubtator
 
@@ -370,6 +371,9 @@ def load_pubtator(
     nil_labels: set[str] = set(),
     default_resource: str | None = None,
     resource_delimiter: str = ":",
+    id_resource_map: dict[str, str] = {},
+    label_delimiter: str | None = None,
+    multi_label_strategy: str = "first",
 ) -> BenchmarkCorpus:
     """
     Load a BioC XML file and convert it into the internal corpus model.
@@ -386,6 +390,9 @@ def load_pubtator(
         nil_labels,
         default_resource,
         resource_delimiter,
+        id_resource_map,
+        label_delimiter,
+        multi_label_strategy,
     )
     load_paths = _resolve_load_paths(paths, path)
     subsets = dict()
@@ -411,15 +418,22 @@ class BioCPubtatorLoader(Loader):
         nil_labels: set[str] = set(),
         default_resource: str | None = None,
         resource_delimiter: str = ":",
+        id_resource_map: dict[str, str] = {},
+        label_delimiter: str | None = None,
+        multi_label_strategy: str = "first",
     ):
         super().__init__(label_map, id_format_list, qualifier_map, nil_labels, default_resource, resource_delimiter)
         self.doc_id_fetcher = DocIDExtractor(self, doc_id_map)
+        self.id_resource_map = id_resource_map
+        self.label_delimiter = label_delimiter
+        self.multi_label_strategy = multi_label_strategy
 
     def load_subset(self, subset_name: str, path: str):
         """
         Load a BioC Pubtator file and convert it into the internal corpus model.
         """
-        with open(path, "r", encoding="utf-8") as fp:
+        open_func = gzip.open if str(path).lower().endswith(".gz") else open
+        with open_func(path, "rt", encoding="utf-8") as fp:
             collection = pubtator.load(fp)
 
         id_type_counts = Counter()
@@ -441,7 +455,7 @@ class BioCPubtatorLoader(Loader):
                 annotations=[],
             )
             for ann_index, ann in enumerate(doc.annotations):
-                label = self.get_label(ann.type)
+                label = self.get_pubtator_label(ann.type)
                 if label is None:
                     continue
                 mention = Annotation(
@@ -454,7 +468,7 @@ class BioCPubtatorLoader(Loader):
                         )
                     ],
                     label=label,
-                    link=self.get_identifier(ann.id),
+                    link=self.get_identifier_for_label(ann.id, label),
                 )
                 if ann.start < abstract_offset:
                     title_passage.annotations.append(mention)
@@ -468,3 +482,30 @@ class BioCPubtatorLoader(Loader):
             percentage = 100.0 * count / len(collection)
             logger.info(f"\tID type {id_type} present in {count} / {len(collection)} of documents ({percentage:.2f}%)")
         return CorpusSubset(name=subset_name, documents=documents)
+
+    def get_pubtator_label(self, label_text: str) -> str | None:
+        if self.label_delimiter and self.label_delimiter in label_text:
+            labels = [
+                label
+                for label in (self.get_label(part.strip()) for part in label_text.split(self.label_delimiter))
+                if label is not None
+            ]
+            deduped = list(dict.fromkeys(labels))
+            if not deduped:
+                return None
+            if self.multi_label_strategy == "join":
+                return "+".join(deduped)
+            if self.multi_label_strategy == "first":
+                return deduped[0]
+            raise ValueError(f"Unsupported multi_label_strategy: {self.multi_label_strategy!r}")
+        return self.get_label(label_text)
+
+    def get_identifier_for_label(self, identifier_text: str | None, label: str) -> Link | None:
+        link = self.get_identifier(identifier_text)
+        resource = self.id_resource_map.get(label)
+        if resource is None or link is None:
+            return link
+        for identifier_link in link.get_identifier_links():
+            if identifier_link.resource is None:
+                identifier_link.resource = resource
+        return link

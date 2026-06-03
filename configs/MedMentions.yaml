@@ -1,0 +1,46 @@
+name: MedMentions
+
+cache_filename: corpora/MedMentions.json.gz
+
+acquisition:
+  source_url: "https://github.com/chanzuckerberg/MedMentions/archive/refs/heads/master.zip"
+  format: "zip"
+
+loader:
+  name: pubtator
+  params:
+    paths:
+      all: corpora/MedMentions/MedMentions-master/st21pv/data/corpus_pubtator.txt.gz
+    default_resource: UMLS
+    label_delimiter: ","
+    multi_label_strategy: first
+    label_map:
+      T005: Species
+      T007: Species
+      T017: anatomy
+      T022: anatomy
+      T031: anatomy
+      T033: Disease
+      T037: Disease
+      T038: Biological_process
+      T058: Health_Care_Activity
+      T062: Research_Activity
+      T074: Medical_Device
+      T082: Spatial_Concept
+      T091: Biomedical_Occupation_Or_Discipline
+      T092: Organization
+      T097: Population_Group
+      T098: Population_Group
+      T103: Chemical
+      T168: Food
+      T170: Intellectual_Product
+      T201: Clinical_Attribute
+      T204: Species
+      UnknownType: Unknown
+    split:
+      source: files
+      id_type: pmid
+      files:
+        train: corpora/MedMentions/MedMentions-master/full/data/corpus_pubtator_pmids_trng.txt
+        dev: corpora/MedMentions/MedMentions-master/full/data/corpus_pubtator_pmids_dev.txt
+        test: corpora/MedMentions/MedMentions-master/full/data/corpus_pubtator_pmids_test.txt

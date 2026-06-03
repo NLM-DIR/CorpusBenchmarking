@@ -59,6 +59,13 @@
             "Tissue": 0.14727463
           }
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {
@@ -98,6 +105,13 @@
           "value": {}
         },
         "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
           "details": {
             "counts": {},
             "total": 0
@@ -163,6 +177,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -198,6 +219,13 @@
           },
           "value": {}
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {},
@@ -219,6 +247,16 @@
             "median": 3.0,
             "min": 0,
             "stdev": 6.46293194
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 1212,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -271,6 +309,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 1212,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 1212,
@@ -302,6 +350,16 @@
             "median": 13.33392595,
             "min": 0.0,
             "stdev": 28.26544555
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 1212,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -354,6 +412,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 1212,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 1212,
@@ -385,6 +453,16 @@
             "median": 2.0,
             "min": 0,
             "stdev": 3.83693557
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 1212,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -437,6 +515,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 1212,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 1212,
@@ -461,6 +549,16 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 1212,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 1212,
             "max": 0,
@@ -520,6 +618,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 1212,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 1212,
@@ -551,6 +659,16 @@
             "median": 154,
             "min": 31,
             "stdev": 192.24723665
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
           }
         },
         "cell": {
@@ -603,6 +721,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -634,6 +762,16 @@
             "median": 1,
             "min": 1,
             "stdev": 0.19208767
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
           }
         },
         "cell": {
@@ -686,6 +824,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -704,6 +852,814 @@
         "median": 1,
         "min": 1,
         "stdev": 0.20419895
+      }
+    }
+  ],
+  "BC2GM_corpus": [
+    {
+      "metric_name": "document_count",
+      "value": 15000
+    },
+    {
+      "metric_name": "sentence_count",
+      "value": 15287
+    },
+    {
+      "metric_name": "token_count",
+      "value": 356983
+    },
+    {
+      "details": {
+        "counts": {
+          "Gene": 32764
+        },
+        "total": 32764
+      },
+      "metric_name": "label_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "disease": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {
+              "Gene": 32764
+            },
+            "total": 32764
+          },
+          "value": {
+            "Gene": 1.0
+          }
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "species": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        }
+      },
+      "value": {
+        "Gene": 1.0
+      }
+    },
+    {
+      "metric_name": "mention_length_stats",
+      "value": {
+        "count": 32764,
+        "max": 154,
+        "mean": 13.859602,
+        "median": 10.0,
+        "min": 1,
+        "stdev": 12.67863316
+      }
+    },
+    {
+      "metric_name": "identifier_redundancy_stats",
+      "value": {
+        "count": 0,
+        "max": NaN,
+        "mean": NaN,
+        "median": NaN,
+        "min": NaN,
+        "stdev": NaN
+      }
+    },
+    {
+      "details": {
+        "counts": {},
+        "total": 0
+      },
+      "metric_name": "identifier_resource_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "disease": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "species": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        }
+      },
+      "value": {}
+    },
+    {
+      "metric_name": "annotations_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 15000,
+            "max": 46,
+            "mean": 2.18426667,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 3.29457677
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 15000,
+        "max": 46,
+        "mean": 2.18426667,
+        "median": 1.0,
+        "min": 0,
+        "stdev": 3.29457677
+      }
+    },
+    {
+      "metric_name": "annotations_per_1000_tokens_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 15000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 15000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 15000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 15000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 15000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 15000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 15000,
+            "max": 1000.0,
+            "mean": 87.42001855,
+            "median": 29.41176471,
+            "min": 0.0,
+            "stdev": 124.32886995
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 15000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 15000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 15000,
+        "max": 1000.0,
+        "mean": 87.42001855,
+        "median": 29.41176471,
+        "min": 0.0,
+        "stdev": 124.32886995
+      }
+    },
+    {
+      "metric_name": "unique_mentions_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 15000,
+            "max": 44,
+            "mean": 2.03106667,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 3.00914803
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 15000,
+        "max": 44,
+        "mean": 2.03106667,
+        "median": 1.0,
+        "min": 0,
+        "stdev": 3.00914803
+      }
+    },
+    {
+      "metric_name": "unique_identifiers_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 15000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 15000,
+        "max": 0,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "stdev": 0.0
+      }
+    },
+    {
+      "metric_name": "variation_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 1,
+            "max": 22364,
+            "mean": 22364,
+            "median": 22364,
+            "min": 22364,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "species": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        }
+      },
+      "value": {
+        "count": 1,
+        "max": 22364,
+        "mean": 22364,
+        "median": 22364,
+        "min": 22364,
+        "stdev": NaN
+      }
+    },
+    {
+      "metric_name": "ambiguity_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 22364,
+            "max": 1,
+            "mean": 1,
+            "median": 1.0,
+            "min": 1,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "species": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        }
+      },
+      "value": {
+        "count": 22364,
+        "max": 1,
+        "mean": 1,
+        "median": 1.0,
+        "min": 1,
+        "stdev": 0.0
       }
     }
   ],
@@ -731,6 +1687,13 @@
       "metric_name": "label_distribution",
       "scopes": {
         "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
           "details": {
             "counts": {},
             "total": 0
@@ -774,6 +1737,13 @@
           "value": {}
         },
         "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
           "details": {
             "counts": {},
             "total": 0
@@ -832,6 +1802,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -879,6 +1856,13 @@
           },
           "value": {}
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {},
@@ -896,6 +1880,16 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 1500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 1500,
             "max": 0,
@@ -955,6 +1949,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 1500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 1500,
@@ -979,6 +1983,16 @@
       "metric_name": "annotations_per_1000_tokens_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 1500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 1500,
             "max": 0.0,
@@ -1038,6 +2052,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 1500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 1500,
@@ -1062,6 +2086,16 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 1500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 1500,
             "max": 0,
@@ -1121,6 +2155,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 1500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 1500,
@@ -1145,6 +2189,16 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 1500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 1500,
             "max": 0,
@@ -1204,6 +2258,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 1500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 1500,
@@ -1228,6 +2292,16 @@
       "metric_name": "variation_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -1287,6 +2361,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -1311,6 +2395,16 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -1361,6 +2455,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -1431,6 +2535,13 @@
             "anatomy": 1.0
           }
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {
@@ -1483,6 +2594,13 @@
           "value": {
             "gene": 1.0
           }
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
         },
         "species": {
           "details": {
@@ -1572,6 +2690,13 @@
             "tissue": 0.08245561
           }
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {
@@ -1645,6 +2770,13 @@
             "protein": 0.18469323
           }
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {
@@ -1693,6 +2825,16 @@
             "median": 0,
             "min": 0,
             "stdev": 1.32953385
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 13697,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -1745,6 +2887,16 @@
             "stdev": 4.18694351
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 13697,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 13697,
@@ -1776,6 +2928,16 @@
             "median": 0.0,
             "min": 0.0,
             "stdev": 23.11988145
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 13697,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -1828,6 +2990,16 @@
             "stdev": 64.3782994
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 13697,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 13697,
@@ -1859,6 +3031,16 @@
             "median": 0,
             "min": 0,
             "stdev": 0.91979163
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 13697,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -1911,6 +3093,16 @@
             "stdev": 1.8651209
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 13697,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 13697,
@@ -1942,6 +3134,16 @@
             "median": 0,
             "min": 0,
             "stdev": 0.80509982
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 13697,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -1994,6 +3196,16 @@
             "stdev": 2.33916008
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 13697,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 13697,
@@ -2025,6 +3237,16 @@
             "median": 1,
             "min": 1,
             "stdev": 1.51010993
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
           }
         },
         "cell": {
@@ -2077,6 +3299,16 @@
             "stdev": 0.72830745
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 160,
@@ -2108,6 +3340,16 @@
             "median": 1.0,
             "min": 1,
             "stdev": 0.36488597
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
           }
         },
         "cell": {
@@ -2160,6 +3402,16 @@
             "stdev": 1.41181583
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 442,
@@ -2178,6 +3430,876 @@
         "median": 1.0,
         "min": 1,
         "stdev": 1.09330064
+      }
+    }
+  ],
+  "BioRED_corpus": [
+    {
+      "metric_name": "document_count",
+      "value": 600
+    },
+    {
+      "metric_name": "sentence_count",
+      "value": 7170
+    },
+    {
+      "metric_name": "token_count",
+      "value": 162122
+    },
+    {
+      "details": {
+        "counts": {
+          "CellLine": 175,
+          "Chemical": 4429,
+          "Disease": 5545,
+          "Gene": 6697,
+          "SequenceVariant": 1381,
+          "Species": 2192
+        },
+        "total": 20419
+      },
+      "metric_name": "label_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {
+              "Chemical": 4429
+            },
+            "total": 4429
+          },
+          "value": {
+            "Chemical": 1.0
+          }
+        },
+        "disease": {
+          "details": {
+            "counts": {
+              "Disease": 5545
+            },
+            "total": 5545
+          },
+          "value": {
+            "Disease": 1.0
+          }
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {
+              "Gene": 6697
+            },
+            "total": 6697
+          },
+          "value": {
+            "Gene": 1.0
+          }
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {
+              "SequenceVariant": 1381
+            },
+            "total": 1381
+          },
+          "value": {
+            "SequenceVariant": 1.0
+          }
+        },
+        "species": {
+          "details": {
+            "counts": {
+              "Species": 2192
+            },
+            "total": 2192
+          },
+          "value": {
+            "Species": 1.0
+          }
+        }
+      },
+      "value": {
+        "CellLine": 0.00857045,
+        "Chemical": 0.21690582,
+        "Disease": 0.2715608,
+        "Gene": 0.32797884,
+        "SequenceVariant": 0.06763309,
+        "Species": 0.107351
+      }
+    },
+    {
+      "metric_name": "mention_length_stats",
+      "value": {
+        "count": 20419,
+        "max": 110,
+        "mean": 9.61810079,
+        "median": 7,
+        "min": 1,
+        "stdev": 8.20619625
+      }
+    },
+    {
+      "metric_name": "identifier_redundancy_stats",
+      "value": {
+        "count": 3869,
+        "max": 1364,
+        "mean": 5.4864306,
+        "median": 2,
+        "min": 1,
+        "stdev": 24.67944718
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "MESH": 10052,
+          "NCBIGene": 7406,
+          "NCBITaxon": 2193,
+          "OMIM": 20,
+          "dbSNP": 1381,
+          "null": 175
+        },
+        "total": 21227
+      },
+      "metric_name": "identifier_resource_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {
+              "MESH": 4448
+            },
+            "total": 4448
+          },
+          "value": {
+            "MESH": 1.0
+          }
+        },
+        "disease": {
+          "details": {
+            "counts": {
+              "MESH": 5604,
+              "OMIM": 20
+            },
+            "total": 5624
+          },
+          "value": {
+            "MESH": 0.99644381,
+            "OMIM": 0.00355619
+          }
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {
+              "NCBIGene": 7406
+            },
+            "total": 7406
+          },
+          "value": {
+            "NCBIGene": 1.0
+          }
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {
+              "dbSNP": 1381
+            },
+            "total": 1381
+          },
+          "value": {
+            "dbSNP": 1.0
+          }
+        },
+        "species": {
+          "details": {
+            "counts": {
+              "NCBITaxon": 2193
+            },
+            "total": 2193
+          },
+          "value": {
+            "NCBITaxon": 1.0
+          }
+        }
+      },
+      "value": {
+        "MESH": 0.47354784,
+        "NCBIGene": 0.34889527,
+        "NCBITaxon": 0.10331182,
+        "OMIM": 0.0009422,
+        "dbSNP": 0.06505865,
+        "null": 0.00824422
+      }
+    },
+    {
+      "metric_name": "annotations_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 600,
+            "max": 60,
+            "mean": 7.38166667,
+            "median": 3.0,
+            "min": 0,
+            "stdev": 9.47623319
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 600,
+            "max": 43,
+            "mean": 9.24166667,
+            "median": 8.0,
+            "min": 0,
+            "stdev": 5.85979173
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 600,
+            "max": 57,
+            "mean": 11.16166667,
+            "median": 8.0,
+            "min": 0,
+            "stdev": 11.29623265
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 600,
+            "max": 34,
+            "mean": 2.30166667,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 3.94206761
+          }
+        },
+        "species": {
+          "value": {
+            "count": 600,
+            "max": 30,
+            "mean": 3.65333333,
+            "median": 3.0,
+            "min": 0,
+            "stdev": 3.34541605
+          }
+        }
+      },
+      "value": {
+        "count": 600,
+        "max": 88,
+        "mean": 34.03166667,
+        "median": 33.0,
+        "min": 5,
+        "stdev": 14.23956715
+      }
+    },
+    {
+      "metric_name": "annotations_per_1000_tokens_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 600,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 600,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 600,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 600,
+            "max": 174.12935323,
+            "mean": 27.81797884,
+            "median": 10.15231333,
+            "min": 0.0,
+            "stdev": 34.52359209
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 600,
+            "max": 128.20512821,
+            "mean": 35.23810863,
+            "median": 31.62055336,
+            "min": 0.0,
+            "stdev": 21.66243958
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 600,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 600,
+            "max": 178.43866171,
+            "mean": 39.89609074,
+            "median": 30.35888254,
+            "min": 0.0,
+            "stdev": 37.68818596
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 600,
+            "max": 129.27756654,
+            "mean": 8.3594793,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 13.75721706
+          }
+        },
+        "species": {
+          "value": {
+            "count": 600,
+            "max": 109.09090909,
+            "mean": 13.39055121,
+            "median": 11.06553614,
+            "min": 0.0,
+            "stdev": 11.36177421
+          }
+        }
+      },
+      "value": {
+        "count": 600,
+        "max": 247.9338843,
+        "mean": 125.72798753,
+        "median": 124.56062456,
+        "min": 23.25581395,
+        "stdev": 40.27006358
+      }
+    },
+    {
+      "metric_name": "unique_mentions_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 600,
+            "max": 22,
+            "mean": 2.96333333,
+            "median": 2.0,
+            "min": 0,
+            "stdev": 3.5781738
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 600,
+            "max": 20,
+            "mean": 4.92166667,
+            "median": 4.0,
+            "min": 0,
+            "stdev": 3.11636274
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 600,
+            "max": 37,
+            "mean": 5.27833333,
+            "median": 3.0,
+            "min": 0,
+            "stdev": 6.42258618
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 600,
+            "max": 34,
+            "mean": 1.55833333,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 2.94012547
+          }
+        },
+        "species": {
+          "value": {
+            "count": 600,
+            "max": 11,
+            "mean": 1.61333333,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 1.15153475
+          }
+        }
+      },
+      "value": {
+        "count": 600,
+        "max": 49,
+        "mean": 16.47833333,
+        "median": 15.0,
+        "min": 3,
+        "stdev": 7.55300892
+      }
+    },
+    {
+      "metric_name": "unique_identifiers_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 600,
+            "max": 14,
+            "mean": 2.145,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 2.51883887
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 600,
+            "max": 17,
+            "mean": 3.24333333,
+            "median": 3.0,
+            "min": 0,
+            "stdev": 2.26185371
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 600,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 600,
+            "max": 32,
+            "mean": 3.91,
+            "median": 2.0,
+            "min": 0,
+            "stdev": 5.69555079
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 600,
+            "max": 31,
+            "mean": 1.17,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 2.41747257
+          }
+        },
+        "species": {
+          "value": {
+            "count": 600,
+            "max": 7,
+            "mean": 1.09833333,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 0.66788772
+          }
+        }
+      },
+      "value": {
+        "count": 600,
+        "max": 46,
+        "mean": 11.715,
+        "median": 10.0,
+        "min": 2,
+        "stdev": 6.48669693
+      }
+    },
+    {
+      "metric_name": "variation_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 658,
+            "max": 24,
+            "mean": 1.77659574,
+            "median": 1.0,
+            "min": 1,
+            "stdev": 1.35830473
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 812,
+            "max": 44,
+            "mean": 2.41871921,
+            "median": 2.0,
+            "min": 1,
+            "stdev": 2.56881504
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 1698,
+            "max": 17,
+            "mean": 1.67844523,
+            "median": 1.0,
+            "min": 1,
+            "stdev": 1.12935625
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 678,
+            "max": 8,
+            "mean": 1.36578171,
+            "median": 1.0,
+            "min": 1,
+            "stdev": 0.83964378
+          }
+        },
+        "species": {
+          "value": {
+            "count": 47,
+            "max": 18,
+            "mean": 1.93617021,
+            "median": 1,
+            "min": 1,
+            "stdev": 2.60771644
+          }
+        }
+      },
+      "value": {
+        "count": 3965,
+        "max": 44,
+        "mean": 1.7851198,
+        "median": 1,
+        "min": 1,
+        "stdev": 1.59043893
+      }
+    },
+    {
+      "metric_name": "ambiguity_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 1160,
+            "max": 2,
+            "mean": 1.00775862,
+            "median": 1.0,
+            "min": 1,
+            "stdev": 0.08777851
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 1947,
+            "max": 2,
+            "mean": 1.00873138,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.09305693
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 2529,
+            "max": 7,
+            "mean": 1.12692764,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.46314154
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 917,
+            "max": 3,
+            "mean": 1.00981461,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.10914349
+          }
+        },
+        "species": {
+          "value": {
+            "count": 91,
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 6686,
+        "max": 7,
+        "mean": 1.05862997,
+        "median": 1.0,
+        "min": 1,
+        "stdev": 0.3120653
       }
     }
   ],
@@ -2204,6 +4326,13 @@
       "metric_name": "label_distribution",
       "scopes": {
         "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
           "details": {
             "counts": {},
             "total": 0
@@ -2243,6 +4372,13 @@
           "value": {}
         },
         "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
           "details": {
             "counts": {},
             "total": 0
@@ -2297,6 +4433,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -2332,6 +4475,13 @@
           },
           "value": {}
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {},
@@ -2346,6 +4496,16 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 10000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 10000,
             "max": 0,
@@ -2405,6 +4565,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 10000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 10000,
@@ -2429,6 +4599,16 @@
       "metric_name": "annotations_per_1000_tokens_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 10000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 10000,
             "max": 0.0,
@@ -2488,6 +4668,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 10000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 10000,
@@ -2512,6 +4702,16 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 10000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 10000,
             "max": 0,
@@ -2571,6 +4771,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 10000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 10000,
@@ -2595,6 +4805,16 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 10000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 10000,
             "max": 0,
@@ -2654,6 +4874,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 10000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 10000,
@@ -2678,6 +4908,16 @@
       "metric_name": "variation_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -2737,6 +4977,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -2761,6 +5011,16 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -2811,6 +5071,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -2886,6 +5156,13 @@
             "anatomical_entity": 0.78159392
           }
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {
@@ -2946,6 +5223,13 @@
             "Gene": 0.65696273,
             "Sequence": 0.34303727
           }
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
         },
         "species": {
           "details": {
@@ -3027,6 +5311,13 @@
             "UBERON": 0.78159392
           }
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {
@@ -3088,6 +5379,13 @@
             "SO": 0.34303727
           }
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {
@@ -3125,6 +5423,16 @@
             "median": 226,
             "min": 13,
             "stdev": 165.59028084
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 97,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -3177,6 +5485,16 @@
             "stdev": 195.88569235
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 97,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 97,
@@ -3208,6 +5526,16 @@
             "median": 32.53424658,
             "min": 2.50626566,
             "stdev": 21.3536254
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 97,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -3260,6 +5588,16 @@
             "stdev": 23.90751401
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 97,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 97,
@@ -3291,6 +5629,16 @@
             "median": 61,
             "min": 9,
             "stdev": 43.28613194
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 97,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -3343,6 +5691,16 @@
             "stdev": 24.58695733
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 97,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 97,
@@ -3374,6 +5732,16 @@
             "median": 38,
             "min": 7,
             "stdev": 24.42249646
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 97,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
           }
         },
         "cell": {
@@ -3426,6 +5794,16 @@
             "stdev": 16.99341645
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 97,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 97,
@@ -3457,6 +5835,16 @@
             "median": 2,
             "min": 1,
             "stdev": 1.95846727
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
           }
         },
         "cell": {
@@ -3509,6 +5897,16 @@
             "stdev": 1.7318468
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 177,
@@ -3540,6 +5938,16 @@
             "median": 1,
             "min": 1,
             "stdev": 0.24536552
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
           }
         },
         "cell": {
@@ -3590,6 +5998,16 @@
             "median": 1.0,
             "min": 1,
             "stdev": 0.0606741
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
           }
         },
         "species": {
@@ -3644,6 +6062,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {
@@ -3681,6 +6106,13 @@
           "value": {}
         },
         "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
           "details": {
             "counts": {},
             "total": 0
@@ -3741,6 +6173,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {
@@ -3784,6 +6223,13 @@
           },
           "value": {}
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {},
@@ -3802,6 +6248,16 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 2003,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 2003,
             "max": 0,
@@ -3861,6 +6317,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 2003,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 2003,
@@ -3885,6 +6351,16 @@
       "metric_name": "annotations_per_1000_tokens_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 2003,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 2003,
             "max": 0.0,
@@ -3944,6 +6420,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 2003,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 2003,
@@ -3968,6 +6454,16 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 2003,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 2003,
             "max": 0,
@@ -4027,6 +6523,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 2003,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 2003,
@@ -4051,6 +6557,16 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 2003,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 2003,
             "max": 0,
@@ -4110,6 +6626,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 2003,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 2003,
@@ -4134,6 +6660,16 @@
       "metric_name": "variation_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -4193,6 +6729,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -4217,6 +6763,16 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -4267,6 +6823,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -4330,6 +6896,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {
@@ -4378,6 +6951,13 @@
             "RNA": 0.02274758,
             "protein": 0.75192578
           }
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
         },
         "species": {
           "details": {
@@ -4431,6 +7011,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -4466,6 +7053,13 @@
           },
           "value": {}
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {},
@@ -4480,6 +7074,16 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 2404,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 2404,
             "max": 0,
@@ -4539,6 +7143,16 @@
             "stdev": 11.0690603
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 2404,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 2404,
@@ -4563,6 +7177,16 @@
       "metric_name": "annotations_per_1000_tokens_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 2404,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 2404,
             "max": 0.0,
@@ -4622,6 +7246,16 @@
             "stdev": 39.68759931
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 2404,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 2404,
@@ -4646,6 +7280,16 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 2404,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 2404,
             "max": 0,
@@ -4705,6 +7349,16 @@
             "stdev": 6.98145717
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 2404,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 2404,
@@ -4729,6 +7383,16 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 2404,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 2404,
             "max": 0,
@@ -4788,6 +7452,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 2404,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 2404,
@@ -4812,6 +7486,16 @@
       "metric_name": "variation_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -4871,6 +7555,16 @@
             "stdev": 4954.9511602
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -4895,6 +7589,16 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -4954,6 +7658,16 @@
             "stdev": 0.1257603
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -4972,6 +7686,1698 @@
         "median": 1,
         "min": 1,
         "stdev": 0.14633001
+      }
+    }
+  ],
+  "Linnaeus_corpus": [
+    {
+      "metric_name": "document_count",
+      "value": 100
+    },
+    {
+      "metric_name": "sentence_count",
+      "value": 19048
+    },
+    {
+      "metric_name": "token_count",
+      "value": 437787
+    },
+    {
+      "details": {
+        "counts": {
+          "Species": 2851
+        },
+        "total": 2851
+      },
+      "metric_name": "label_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "disease": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "species": {
+          "details": {
+            "counts": {
+              "Species": 2851
+            },
+            "total": 2851
+          },
+          "value": {
+            "Species": 1.0
+          }
+        }
+      },
+      "value": {
+        "Species": 1.0
+      }
+    },
+    {
+      "metric_name": "mention_length_stats",
+      "value": {
+        "count": 2851,
+        "max": 36,
+        "mean": 8.9656261,
+        "median": 6,
+        "min": 3,
+        "stdev": 5.9251066
+      }
+    },
+    {
+      "metric_name": "identifier_redundancy_stats",
+      "value": {
+        "count": 233,
+        "max": 462,
+        "mean": 12.2360515,
+        "median": 2,
+        "min": 1,
+        "stdev": 43.23671897
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "NCBITaxon": 2851
+        },
+        "total": 2851
+      },
+      "metric_name": "identifier_resource_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "disease": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "species": {
+          "details": {
+            "counts": {
+              "NCBITaxon": 2851
+            },
+            "total": 2851
+          },
+          "value": {
+            "NCBITaxon": 1.0
+          }
+        }
+      },
+      "value": {
+        "NCBITaxon": 1.0
+      }
+    },
+    {
+      "metric_name": "annotations_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 100,
+            "max": 161,
+            "mean": 28.51,
+            "median": 12.0,
+            "min": 0,
+            "stdev": 36.82678401
+          }
+        }
+      },
+      "value": {
+        "count": 100,
+        "max": 161,
+        "mean": 28.51,
+        "median": 12.0,
+        "min": 0,
+        "stdev": 36.82678401
+      }
+    },
+    {
+      "metric_name": "annotations_per_1000_tokens_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 100,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 100,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 100,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 100,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 100,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 100,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 100,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 100,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 100,
+            "max": 34.08850307,
+            "mean": 6.2469393,
+            "median": 2.58900653,
+            "min": 0.0,
+            "stdev": 7.83918888
+          }
+        }
+      },
+      "value": {
+        "count": 100,
+        "max": 34.08850307,
+        "mean": 6.2469393,
+        "median": 2.58900653,
+        "min": 0.0,
+        "stdev": 7.83918888
+      }
+    },
+    {
+      "metric_name": "unique_mentions_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 100,
+            "max": 44,
+            "mean": 6.77,
+            "median": 4.0,
+            "min": 0,
+            "stdev": 7.76921534
+          }
+        }
+      },
+      "value": {
+        "count": 100,
+        "max": 44,
+        "mean": 6.77,
+        "median": 4.0,
+        "min": 0,
+        "stdev": 7.76921534
+      }
+    },
+    {
+      "metric_name": "unique_identifiers_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 100,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 100,
+            "max": 32,
+            "mean": 4.73,
+            "median": 3.0,
+            "min": 0,
+            "stdev": 5.55023887
+          }
+        }
+      },
+      "value": {
+        "count": 100,
+        "max": 32,
+        "mean": 4.73,
+        "median": 3.0,
+        "min": 0,
+        "stdev": 5.55023887
+      }
+    },
+    {
+      "metric_name": "variation_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "species": {
+          "value": {
+            "count": 233,
+            "max": 7,
+            "mean": 1.63948498,
+            "median": 1,
+            "min": 1,
+            "stdev": 1.13281146
+          }
+        }
+      },
+      "value": {
+        "count": 233,
+        "max": 7,
+        "mean": 1.63948498,
+        "median": 1,
+        "min": 1,
+        "stdev": 1.13281146
+      }
+    },
+    {
+      "metric_name": "ambiguity_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "species": {
+          "value": {
+            "count": 377,
+            "max": 3,
+            "mean": 1.0132626,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.13579638
+          }
+        }
+      },
+      "value": {
+        "count": 377,
+        "max": 3,
+        "mean": 1.0132626,
+        "median": 1,
+        "min": 1,
+        "stdev": 0.13579638
+      }
+    }
+  ],
+  "MedMentions_corpus": [
+    {
+      "metric_name": "document_count",
+      "value": 4392
+    },
+    {
+      "metric_name": "sentence_count",
+      "value": 47120
+    },
+    {
+      "metric_name": "token_count",
+      "value": 1116608
+    },
+    {
+      "details": {
+        "counts": {
+          "Biological_process": 41422,
+          "Biomedical_Occupation_Or_Discipline": 916,
+          "Chemical": 37401,
+          "Clinical_Attribute": 1773,
+          "Disease": 18081,
+          "Food": 1352,
+          "Health_Care_Activity": 24306,
+          "Intellectual_Product": 10324,
+          "Medical_Device": 2018,
+          "Organization": 2143,
+          "Population_Group": 7933,
+          "Research_Activity": 9172,
+          "Spatial_Concept": 12500,
+          "Species": 11693,
+          "anatomy": 22248
+        },
+        "total": 203282
+      },
+      "metric_name": "label_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {
+              "anatomy": 22248
+            },
+            "total": 22248
+          },
+          "value": {
+            "anatomy": 1.0
+          }
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {
+              "Chemical": 37401
+            },
+            "total": 37401
+          },
+          "value": {
+            "Chemical": 1.0
+          }
+        },
+        "disease": {
+          "details": {
+            "counts": {
+              "Disease": 18081
+            },
+            "total": 18081
+          },
+          "value": {
+            "Disease": 1.0
+          }
+        },
+        "function_process": {
+          "details": {
+            "counts": {
+              "Biological_process": 41422
+            },
+            "total": 41422
+          },
+          "value": {
+            "Biological_process": 1.0
+          }
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "species": {
+          "details": {
+            "counts": {
+              "Species": 11693
+            },
+            "total": 11693
+          },
+          "value": {
+            "Species": 1.0
+          }
+        }
+      },
+      "value": {
+        "Biological_process": 0.2037662,
+        "Biomedical_Occupation_Or_Discipline": 0.00450606,
+        "Chemical": 0.18398579,
+        "Clinical_Attribute": 0.00872187,
+        "Disease": 0.08894541,
+        "Food": 0.00665086,
+        "Health_Care_Activity": 0.11956789,
+        "Intellectual_Product": 0.05078659,
+        "Medical_Device": 0.0099271,
+        "Organization": 0.01054201,
+        "Population_Group": 0.03902461,
+        "Research_Activity": 0.04511959,
+        "Spatial_Concept": 0.06149093,
+        "Species": 0.05752108,
+        "anatomy": 0.10944402
+      }
+    },
+    {
+      "metric_name": "mention_length_stats",
+      "value": {
+        "count": 203282,
+        "max": 148,
+        "mean": 11.38557275,
+        "median": 9.0,
+        "min": 1,
+        "stdev": 7.89169933
+      }
+    },
+    {
+      "metric_name": "identifier_redundancy_stats",
+      "value": {
+        "count": 25419,
+        "max": 2140,
+        "mean": 7.99724615,
+        "median": 2,
+        "min": 1,
+        "stdev": 35.10072386
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "UMLS": 203282
+        },
+        "total": 203282
+      },
+      "metric_name": "identifier_resource_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {
+              "UMLS": 22248
+            },
+            "total": 22248
+          },
+          "value": {
+            "UMLS": 1.0
+          }
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {
+              "UMLS": 37401
+            },
+            "total": 37401
+          },
+          "value": {
+            "UMLS": 1.0
+          }
+        },
+        "disease": {
+          "details": {
+            "counts": {
+              "UMLS": 18081
+            },
+            "total": 18081
+          },
+          "value": {
+            "UMLS": 1.0
+          }
+        },
+        "function_process": {
+          "details": {
+            "counts": {
+              "UMLS": 41422
+            },
+            "total": 41422
+          },
+          "value": {
+            "UMLS": 1.0
+          }
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "species": {
+          "details": {
+            "counts": {
+              "UMLS": 11693
+            },
+            "total": 11693
+          },
+          "value": {
+            "UMLS": 1.0
+          }
+        }
+      },
+      "value": {
+        "UMLS": 1.0
+      }
+    },
+    {
+      "metric_name": "annotations_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 4392,
+            "max": 65,
+            "mean": 5.06557377,
+            "median": 2.0,
+            "min": 0,
+            "stdev": 7.25680034
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 4392,
+            "max": 76,
+            "mean": 8.51571038,
+            "median": 3.0,
+            "min": 0,
+            "stdev": 10.98390073
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 4392,
+            "max": 37,
+            "mean": 4.11680328,
+            "median": 3.0,
+            "min": 0,
+            "stdev": 4.67161389
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 4392,
+            "max": 58,
+            "mean": 9.43123862,
+            "median": 8.0,
+            "min": 0,
+            "stdev": 8.14759703
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 4392,
+            "max": 53,
+            "mean": 2.66234062,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 5.71138876
+          }
+        }
+      },
+      "value": {
+        "count": 4392,
+        "max": 136,
+        "mean": 46.28460838,
+        "median": 45.0,
+        "min": 2,
+        "stdev": 19.09331888
+      }
+    },
+    {
+      "metric_name": "annotations_per_1000_tokens_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 4392,
+            "max": 202.74914089,
+            "mean": 20.15502187,
+            "median": 8.32467082,
+            "min": 0.0,
+            "stdev": 27.57147894
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 4392,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 4392,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 4392,
+            "max": 238.63636364,
+            "mean": 34.18190892,
+            "median": 14.59854015,
+            "min": 0.0,
+            "stdev": 42.26882182
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 4392,
+            "max": 139.53488372,
+            "mean": 16.00057629,
+            "median": 10.92896175,
+            "min": 0.0,
+            "stdev": 17.45184925
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 4392,
+            "max": 190.2173913,
+            "mean": 37.76224197,
+            "median": 32.05128205,
+            "min": 0.0,
+            "stdev": 31.57060437
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 4392,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 4392,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 4392,
+            "max": 190.47619048,
+            "mean": 10.75874781,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 22.21175477
+          }
+        }
+      },
+      "value": {
+        "count": 4392,
+        "max": 382.02247191,
+        "mean": 183.01174184,
+        "median": 179.58465076,
+        "min": 26.45502646,
+        "stdev": 53.38557466
+      }
+    },
+    {
+      "metric_name": "unique_mentions_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 4392,
+            "max": 36,
+            "mean": 3.18897996,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 4.24149038
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 4392,
+            "max": 35,
+            "mean": 4.81420765,
+            "median": 2.0,
+            "min": 0,
+            "stdev": 6.01914492
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 4392,
+            "max": 24,
+            "mean": 2.94444444,
+            "median": 2.0,
+            "min": 0,
+            "stdev": 2.8914328
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 4392,
+            "max": 34,
+            "mean": 5.95924408,
+            "median": 5.0,
+            "min": 0,
+            "stdev": 4.94791143
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 4392,
+            "max": 33,
+            "mean": 1.68351548,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 3.45936777
+          }
+        }
+      },
+      "value": {
+        "count": 4392,
+        "max": 81,
+        "mean": 30.36794171,
+        "median": 30.0,
+        "min": 2,
+        "stdev": 11.30723912
+      }
+    },
+    {
+      "metric_name": "unique_identifiers_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 4392,
+            "max": 30,
+            "mean": 2.24704007,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 2.89334285
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 4392,
+            "max": 33,
+            "mean": 3.21994536,
+            "median": 2.0,
+            "min": 0,
+            "stdev": 3.99012482
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 4392,
+            "max": 18,
+            "mean": 2.36498179,
+            "median": 2.0,
+            "min": 0,
+            "stdev": 2.20473054
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 4392,
+            "max": 32,
+            "mean": 4.39184882,
+            "median": 4.0,
+            "min": 0,
+            "stdev": 3.69068911
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 4392,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "species": {
+          "value": {
+            "count": 4392,
+            "max": 24,
+            "mean": 1.09562842,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 2.1465249
+          }
+        }
+      },
+      "value": {
+        "count": 4392,
+        "max": 61,
+        "mean": 22.44899818,
+        "median": 22.0,
+        "min": 2,
+        "stdev": 8.58436472
+      }
+    },
+    {
+      "metric_name": "variation_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 3029,
+            "max": 382,
+            "mean": 2.7167382,
+            "median": 1,
+            "min": 1,
+            "stdev": 8.83151708
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 5440,
+            "max": 386,
+            "mean": 2.62757353,
+            "median": 2.0,
+            "min": 1,
+            "stdev": 7.27774142
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 2687,
+            "max": 1139,
+            "mean": 2.58764421,
+            "median": 1,
+            "min": 1,
+            "stdev": 22.09556774
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 5172,
+            "max": 138,
+            "mean": 2.72351121,
+            "median": 2.0,
+            "min": 1,
+            "stdev": 4.56531747
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "species": {
+          "value": {
+            "count": 1713,
+            "max": 89,
+            "mean": 2.57151197,
+            "median": 2,
+            "min": 1,
+            "stdev": 4.23268116
+          }
+        }
+      },
+      "value": {
+        "count": 25419,
+        "max": 1139,
+        "mean": 2.92139738,
+        "median": 2,
+        "min": 1,
+        "stdev": 11.08562755
+      }
+    },
+    {
+      "metric_name": "ambiguity_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 7791,
+            "max": 23,
+            "mean": 1.05621871,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.38711205
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 13407,
+            "max": 15,
+            "mean": 1.06615947,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.38356476
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 6602,
+            "max": 16,
+            "mean": 1.05316571,
+            "median": 1.0,
+            "min": 1,
+            "stdev": 0.35806945
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 12859,
+            "max": 18,
+            "mean": 1.09541955,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.53859592
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "species": {
+          "value": {
+            "count": 4211,
+            "max": 10,
+            "mean": 1.04606982,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.32367488
+          }
+        }
+      },
+      "value": {
+        "count": 65947,
+        "max": 24,
+        "mean": 1.12604061,
+        "median": 1,
+        "min": 1,
+        "stdev": 0.59906151
       }
     }
   ],
@@ -4998,6 +9404,13 @@
       "metric_name": "label_distribution",
       "scopes": {
         "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
           "details": {
             "counts": {},
             "total": 0
@@ -5037,6 +9450,13 @@
           "value": {}
         },
         "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
           "details": {
             "counts": {},
             "total": 0
@@ -5094,6 +9514,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -5135,6 +9562,13 @@
           },
           "value": {}
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {},
@@ -5152,6 +9586,16 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 793,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 793,
             "max": 0,
@@ -5211,6 +9655,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 793,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 793,
@@ -5235,6 +9689,16 @@
       "metric_name": "annotations_per_1000_tokens_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 793,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 793,
             "max": 0.0,
@@ -5294,6 +9758,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 793,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 793,
@@ -5318,6 +9792,16 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 793,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 793,
             "max": 0,
@@ -5377,6 +9861,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 793,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 793,
@@ -5401,6 +9895,16 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 793,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 793,
             "max": 0,
@@ -5460,6 +9964,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 793,
+            "max": 0,
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 793,
@@ -5484,6 +9998,16 @@
       "metric_name": "variation_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -5543,6 +10067,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -5567,6 +10101,16 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -5626,6 +10170,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -5676,6 +10230,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -5709,6 +10270,13 @@
           "value": {}
         },
         "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
           "details": {
             "counts": {},
             "total": 0
@@ -5766,6 +10334,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -5807,6 +10382,13 @@
           },
           "value": {}
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {},
@@ -5824,6 +10406,16 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 150,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 150,
             "max": 0,
@@ -5883,6 +10475,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 150,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 150,
@@ -5907,6 +10509,16 @@
       "metric_name": "annotations_per_1000_tokens_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 150,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 150,
             "max": 0.0,
@@ -5966,6 +10578,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 150,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 150,
@@ -5990,6 +10612,16 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 150,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 150,
             "max": 0,
@@ -6049,6 +10681,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 150,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 150,
@@ -6073,6 +10715,16 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 150,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 150,
             "max": 0,
@@ -6132,6 +10784,16 @@
             "stdev": 0.0
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 150,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 150,
@@ -6156,6 +10818,16 @@
       "metric_name": "variation_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -6215,6 +10887,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -6239,6 +10921,16 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -6289,6 +10981,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -6351,6 +11053,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -6389,6 +11098,13 @@
           "value": {
             "Gene": 1.0
           }
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
         },
         "species": {
           "details": {
@@ -6443,6 +11159,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -6482,6 +11205,13 @@
             "NCBIGene": 1.0
           }
         },
+        "sequence_variant": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "species": {
           "details": {
             "counts": {},
@@ -6498,6 +11228,16 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 550,
             "max": 0,
@@ -6557,6 +11297,16 @@
             "stdev": 11.70402068
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 550,
@@ -6581,6 +11331,16 @@
       "metric_name": "annotations_per_1000_tokens_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 550,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 550,
             "max": 0.0,
@@ -6640,6 +11400,16 @@
             "stdev": 39.59232895
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 550,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 550,
@@ -6664,6 +11434,16 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 550,
             "max": 0,
@@ -6723,6 +11503,16 @@
             "stdev": 7.5232309
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 550,
@@ -6747,6 +11537,16 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 550,
             "max": 0,
@@ -6806,6 +11606,16 @@
             "stdev": 6.80796145
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 550,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "species": {
           "value": {
             "count": 550,
@@ -6830,6 +11640,16 @@
       "metric_name": "variation_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -6889,6 +11709,16 @@
             "stdev": 1.2688203
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -6913,6 +11743,16 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -6972,6 +11812,16 @@
             "stdev": 0.90178614
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 0,
@@ -7024,6 +11874,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -7053,6 +11910,13 @@
           "value": {}
         },
         "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
           "details": {
             "counts": {},
             "total": 0
@@ -7119,6 +11983,13 @@
           },
           "value": {}
         },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
         "cell": {
           "details": {
             "counts": {},
@@ -7148,6 +12019,13 @@
           "value": {}
         },
         "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
           "details": {
             "counts": {},
             "total": 0
@@ -7183,6 +12061,16 @@
             "stdev": 0.0
           }
         },
+        "cancer_hallmark": {
+          "value": {
+            "count": 1000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "cell": {
           "value": {
             "count": 1000,
@@ -7224,6 +12112,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 1000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 1000,
             "max": 0,
@@ -7266,6 +12164,16 @@
             "stdev": 0.0
           }
         },
+        "cancer_hallmark": {
+          "value": {
+            "count": 1000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
         "cell": {
           "value": {
             "count": 1000,
@@ -7307,6 +12215,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 1000,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 1000,
             "max": 0.0,
@@ -7349,6 +12267,16 @@
             "stdev": 0.0
           }
         },
+        "cancer_hallmark": {
+          "value": {
+            "count": 1000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "cell": {
           "value": {
             "count": 1000,
@@ -7390,6 +12318,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 1000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 1000,
             "max": 0,
@@ -7432,6 +12370,16 @@
             "stdev": 0.0
           }
         },
+        "cancer_hallmark": {
+          "value": {
+            "count": 1000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
         "cell": {
           "value": {
             "count": 1000,
@@ -7473,6 +12421,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 1000,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 1000,
             "max": 0,
@@ -7515,6 +12473,16 @@
             "stdev": NaN
           }
         },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "cell": {
           "value": {
             "count": 0,
@@ -7556,6 +12524,16 @@
           }
         },
         "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -7598,6 +12576,16 @@
             "stdev": NaN
           }
         },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "cell": {
           "value": {
             "count": 0,
@@ -7648,6 +12636,16 @@
             "stdev": NaN
           }
         },
+        "sequence_variant": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
         "species": {
           "value": {
             "count": 2579,
@@ -7666,6 +12664,822 @@
         "median": 1,
         "min": 1,
         "stdev": 0.09205208
+      }
+    }
+  ],
+  "tmVar_corpus": [
+    {
+      "metric_name": "document_count",
+      "value": 500
+    },
+    {
+      "metric_name": "sentence_count",
+      "value": 5885
+    },
+    {
+      "metric_name": "token_count",
+      "value": 134226
+    },
+    {
+      "details": {
+        "counts": {
+          "SequenceVariant": 1431
+        },
+        "total": 1431
+      },
+      "metric_name": "label_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "disease": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {
+              "SequenceVariant": 1431
+            },
+            "total": 1431
+          },
+          "value": {
+            "SequenceVariant": 1.0
+          }
+        },
+        "species": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        }
+      },
+      "value": {
+        "SequenceVariant": 1.0
+      }
+    },
+    {
+      "metric_name": "mention_length_stats",
+      "value": {
+        "count": 1431,
+        "max": 45,
+        "mean": 8.61006289,
+        "median": 8,
+        "min": 3,
+        "stdev": 5.00464226
+      }
+    },
+    {
+      "metric_name": "identifier_redundancy_stats",
+      "value": {
+        "count": 871,
+        "max": 18,
+        "mean": 1.64293915,
+        "median": 1,
+        "min": 1,
+        "stdev": 1.49633809
+      }
+    },
+    {
+      "details": {
+        "counts": {
+          "tmVar": 1431
+        },
+        "total": 1431
+      },
+      "metric_name": "identifier_resource_distribution",
+      "scopes": {
+        "anatomy": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cancer_hallmark": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "cell": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "chemical": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "disease": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "function_process": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "gene_protein_sequence": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        },
+        "sequence_variant": {
+          "details": {
+            "counts": {
+              "tmVar": 1431
+            },
+            "total": 1431
+          },
+          "value": {
+            "tmVar": 1.0
+          }
+        },
+        "species": {
+          "details": {
+            "counts": {},
+            "total": 0
+          },
+          "value": {}
+        }
+      },
+      "value": {
+        "tmVar": 1.0
+      }
+    },
+    {
+      "metric_name": "annotations_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 500,
+            "max": 46,
+            "mean": 2.862,
+            "median": 2.0,
+            "min": 0,
+            "stdev": 4.10178074
+          }
+        },
+        "species": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 500,
+        "max": 46,
+        "mean": 2.862,
+        "median": 2.0,
+        "min": 0,
+        "stdev": 4.10178074
+      }
+    },
+    {
+      "metric_name": "annotations_per_1000_tokens_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 500,
+            "max": 120.10443864,
+            "mean": 10.5749731,
+            "median": 7.20723061,
+            "min": 0.0,
+            "stdev": 13.74749244
+          }
+        },
+        "species": {
+          "value": {
+            "count": 500,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 500,
+        "max": 120.10443864,
+        "mean": 10.5749731,
+        "median": 7.20723061,
+        "min": 0.0,
+        "stdev": 13.74749244
+      }
+    },
+    {
+      "metric_name": "unique_mentions_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 500,
+            "max": 38,
+            "mean": 1.914,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 3.01941015
+          }
+        },
+        "species": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 500,
+        "max": 38,
+        "mean": 1.914,
+        "median": 1.0,
+        "min": 0,
+        "stdev": 3.01941015
+      }
+    },
+    {
+      "metric_name": "unique_identifiers_per_document_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 500,
+            "max": 38,
+            "mean": 1.83,
+            "median": 1.0,
+            "min": 0,
+            "stdev": 2.94796217
+          }
+        },
+        "species": {
+          "value": {
+            "count": 500,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "stdev": 0.0
+          }
+        }
+      },
+      "value": {
+        "count": 500,
+        "max": 38,
+        "mean": 1.83,
+        "median": 1.0,
+        "min": 0,
+        "stdev": 2.94796217
+      }
+    },
+    {
+      "metric_name": "variation_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 871,
+            "max": 5,
+            "mean": 1.07347876,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.31676773
+          }
+        },
+        "species": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        }
+      },
+      "value": {
+        "count": 871,
+        "max": 5,
+        "mean": 1.07347876,
+        "median": 1,
+        "min": 1,
+        "stdev": 0.31676773
+      }
+    },
+    {
+      "metric_name": "ambiguity_degree_stats",
+      "scopes": {
+        "anatomy": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cancer_hallmark": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "cell": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "chemical": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "disease": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "function_process": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "gene_protein_sequence": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        },
+        "sequence_variant": {
+          "value": {
+            "count": 933,
+            "max": 2,
+            "mean": 1.00214362,
+            "median": 1,
+            "min": 1,
+            "stdev": 0.04627443
+          }
+        },
+        "species": {
+          "value": {
+            "count": 0,
+            "max": NaN,
+            "mean": NaN,
+            "median": NaN,
+            "min": NaN,
+            "stdev": NaN
+          }
+        }
+      },
+      "value": {
+        "count": 933,
+        "max": 2,
+        "mean": 1.00214362,
+        "median": 1,
+        "min": 1,
+        "stdev": 0.04627443
       }
     }
   ]
