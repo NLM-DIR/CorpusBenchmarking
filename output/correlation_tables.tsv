@@ -48,31 +48,6 @@ correlation_with_train_test_mention_token_overlap	-0.25795359	0.1594512	0.056202
 correlation_with_train_test_mention_string_overlap	-0.52673977	-0.19433699	-0.27158761	0.42623817	0.48245706	0.51465729	-0.44012761	0.42567676	0.51387739			0.25958367	0.91477827	1	0.76376045
 correlation_with_train_test_identifier_overlap	-0.31710811	0.18311125	0.030686423	-0.57479833	0.94521388	0.99888358	-0.83955616	0.3656899	0.99606351			0.67236708	0.97127089	0.76376045	1
 
-Entity type:	cancer_hallmark
-corpus	journal_distribution_entropy	article_topic_distribution_entropy	journal_topic_distribution_entropy	temporal_coverage_range	annotations_per_1000_tokens	unique_identifiers_per_document	ambiguity	variation	entity_type_label_count	terminology_coverage_entropy	annotation_topic_coverage_entropy	train_test_token_overlap	train_test_mention_token_overlap	train_test_mention_string_overlap	train_test_identifier_overlap
-AnatEM	8.8173955	3.9826345	4.1141684	41								0.35958122			
-BC2GM	9.0985765	3.6840377	4.1273397	38								0.25321183			
-BC5CDR	8.936437	3.6306134	3.6248526	48								0.41873234			
-BioID	2.7983445	2.0137087	2.0137087	19								0.25174942			
-BioRED	8.0119674	3.664348	3.9536047	51								0.2706265			
-CHEMDNER	6.7676532	3.3931164	3.3438838	4								0.38358707			
-CRAFT	3.7418223	3.2037315	2.9988352	6								0.34182785			
-CellLink	6.7947654	3.5820846	3.6503491	6								0.33743784			
-JNLPBA	6.7541537	3.056553	3.7112801	23								0.35854342			
-Linnaeus	5.0476288	3.6474887	3.6286214	58											
-MedMentions	10.524343	4.0553945	4.2045568	6								0.32963798			
-NCBI-Disease	5.0253089	3.272444	2.5179797	25								0.28182317			
-NLM-Chem	4.9646995	3.3269423	3.5914521	14								0.33162521			
-NLM-Gene	6.3533468	3.2725862	3.6588469	17								0.26468951			
-S1000	5.0504357	3.458114	2.8586136	45								0.28156463			
-tmVar	7.7763334	3.1999731	3.7201605	10								0.322663			
-correlation_with_terminology_coverage_entropy															
-correlation_with_annotation_topic_coverage_entropy															
-correlation_with_train_test_token_overlap	0.30000394	0.32302774	0.28392238	-0.14274454								1			
-correlation_with_train_test_mention_token_overlap															
-correlation_with_train_test_mention_string_overlap															
-correlation_with_train_test_identifier_overlap															
-
 Entity type:	cell
 corpus	journal_distribution_entropy	article_topic_distribution_entropy	journal_topic_distribution_entropy	temporal_coverage_range	annotations_per_1000_tokens	unique_identifiers_per_document	ambiguity	variation	entity_type_label_count	terminology_coverage_entropy	annotation_topic_coverage_entropy	train_test_token_overlap	train_test_mention_token_overlap	train_test_mention_string_overlap	train_test_identifier_overlap
 AnatEM	8.8173955	3.9826345	4.1141684	41	16.154205	0	1	1362	1			0.35958122	0.26683292	0.12981575	

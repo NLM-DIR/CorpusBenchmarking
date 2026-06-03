@@ -9,7 +9,7 @@ logger.debug("Imported corpus_benchmark.loaders package")
 from corpus_benchmark.loaders.bioc_loader import load_bioc_xml, load_pubtator
 from corpus_benchmark.loaders.standoff_loader import load_BRAT_standoff, load_JNLPBA_standoff, load_AnatEM_standoff
 from corpus_benchmark.loaders.knowtator_loader import load_craft_knowtator
-from corpus_benchmark.loaders.tsv_loaders import load_linnaeus_species, load_mutationfinder, load_sentence_label_tsv
+from corpus_benchmark.loaders.tsv_loaders import load_linnaeus_species, load_mutationfinder
 from corpus_benchmark.loaders.converters import convert_bc5cdr
 from corpus_benchmark.loaders.terminology_loaders import load_mesh_xml, load_obo
 
@@ -22,7 +22,6 @@ __all__ = [
     "load_craft_knowtator",
     "load_linnaeus_species",
     "load_mutationfinder",
-    "load_sentence_label_tsv",
     "convert_bc5cdr",
     "load_mesh_xml",
     "load_obo",

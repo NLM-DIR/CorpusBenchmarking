@@ -27,7 +27,7 @@ The framework characterizes corpora across several diagnostic families:
 
 ## Preconfigured Corpora and Terminologies
 
-The default metric batteries currently preconfigure seventeen biomedical NER, NER+EL, and sentence-label corpora. Entity scopes are dashboard filters defined in `configs/dashboard.yaml`; terminology coverage is computed only where corpus identifiers can be resolved against a configured terminology.
+The default metric batteries currently preconfigure sixteen biomedical NER and NER+EL corpora. Entity scopes are dashboard filters defined in `configs/dashboard.yaml`; terminology coverage is computed only where corpus identifiers can be resolved against a configured terminology.
 
 | Corpus | Entity scopes available in the dashboard | Terminology coverage configured |
 | --- | --- | --- |
@@ -39,7 +39,6 @@ The default metric batteries currently preconfigure seventeen biomedical NER, NE
 | CHEMDNER | Chemicals | None; this configuration filters chemical mentions but does not provide normalized terminology identifiers for coverage metrics. |
 | CRAFT | Anatomy; cells and cell states; chemicals; diseases; functions and processes; genes/proteins/sequences; species | Cell Ontology (CL), MONDO, and ChEBI for the corresponding cell, disease, and chemical scopes. The corpus also carries identifiers from GO, NCBITaxon, PR, SO, UBERON, and related CRAFT annotation resources. |
 | CellLink | Cells and cell states | Cell Ontology (CL) for cell-state and cell-line/cell-type links. |
-| Hallmarks of Cancer | Cancer hallmarks | None; this is sentence-level hallmark annotation over PubMed articles, represented as sentence-span annotations for corpus diagnostics. |
 | JNLPBA | Cells and cell states; genes/proteins/sequences | None; this is an NER-only standoff corpus in the current configuration. |
 | Linnaeus | Species | None; NCBI Taxonomy identifiers are retained for identifier metrics but are not loaded as a terminology coverage resource by default. This corpus has no source train/test split, so it is excluded from overlap metrics. |
 | MedMentions | Anatomy; chemicals; diseases; functions and processes; genes/proteins/sequences; species; additional UMLS semantic groups | None; UMLS CUIs are retained for identifier and overlap metrics, but UMLS is not automatically downloaded because it requires license-controlled access. |

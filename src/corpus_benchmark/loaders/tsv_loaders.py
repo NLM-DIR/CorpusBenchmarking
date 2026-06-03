@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import ast
 from collections import defaultdict
 from pathlib import Path
 
@@ -85,72 +84,6 @@ def load_linnaeus_species(
         metadata={"source_format": "LINNAEUS TSV"},
     )
     return apply_document_split(corpus, split)
-
-
-@register_loader("sentence_label_tsv")
-def load_sentence_label_tsv(
-    paths: dict[str, str] | None = None,
-    path: str | None = None,
-    split: dict | None = None,
-    docid_type: str = "pmid",
-) -> BenchmarkCorpus:
-    id_type = DocumentIdentifierType(docid_type.lower())
-    subsets: dict[str, CorpusSubset] = {}
-    for subset_name, subset_path in _resolve_load_paths(paths, path).items():
-        documents = [_load_sentence_label_document(text_path, id_type) for text_path in sorted(Path(subset_path).glob("*.txt"))]
-        subsets[subset_name] = CorpusSubset(name=subset_name, documents=documents)
-
-    corpus = BenchmarkCorpus(
-        subsets=subsets,
-        metadata={"source_format": "sentence label TSV"},
-    )
-    return apply_document_split(corpus, split)
-
-
-def _load_sentence_label_document(path: Path, id_type: DocumentIdentifierType) -> Document:
-    document_id = path.stem
-    text_parts: list[str] = []
-    annotations: list[Annotation] = []
-    offset = 0
-    with path.open("r", encoding="utf-8") as file:
-        for line_index, line in enumerate(file, start=1):
-            line = line.rstrip("\n")
-            if not line:
-                continue
-            try:
-                sentence, labels_text = line.rsplit("\t", 1)
-            except ValueError as exc:
-                raise ValueError(f"Sentence label file {path} line {line_index} should contain sentence<TAB>labels") from exc
-            labels = ast.literal_eval(labels_text)
-            if not isinstance(labels, list):
-                raise ValueError(f"Sentence label file {path} line {line_index} labels should be a list: {labels_text!r}")
-            sentence_start = offset
-            sentence_end = sentence_start + len(sentence)
-            text_parts.append(sentence)
-            offset = sentence_end + 1
-            for label in labels:
-                annotations.append(
-                    Annotation(
-                        mention_id=f"T{len(annotations) + 1}",
-                        text=sentence,
-                        spans=[AnnotationSpan(start=sentence_start, end=sentence_end)],
-                        label=str(label),
-                        link=None,
-                    )
-                )
-
-    return Document(
-        document_id=document_id,
-        identifiers={id_type: id_type.normalize(document_id)},
-        passages=[
-            Passage(
-                passage_id=f"{document_id}_sentences",
-                text="\n".join(text_parts),
-                offset=0,
-                annotations=annotations,
-            )
-        ],
-    )
 
 
 @register_loader("mutationfinder")

@@ -64,20 +64,6 @@ entity_scopes:
     labels:
       - SequenceVariant
     description: "DNA, RNA, protein, and other sequence variant mentions."
-  cancer_hallmark:
-    label: Cancer hallmarks
-    labels:
-      - activating invasion and metastasis
-      - avoiding immune destruction
-      - cellular energetics
-      - enabling replicative immortality
-      - evading growth suppressors
-      - genomic instability and mutation
-      - inducing angiogenesis
-      - resisting cell death
-      - sustaining proliferative signaling
-      - tumor promoting inflammation
-    description: "Sentence-level Hallmarks of Cancer labels."
   function_process:
     label: Functions and processes
     labels:

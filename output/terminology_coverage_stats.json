@@ -122,25 +122,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mesh_2026",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 0.0,
@@ -1378,25 +1359,6 @@
       "metric_name": "annotation_topic_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mesh_2026",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -2739,99 +2701,6 @@
             }
           ]
         },
-        "cancer_hallmark": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "terminology": "mesh_2026"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1452.45952381
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 22824.05357143
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 114698.32460317
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 117172.60984848
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 57710.21800144
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 23765.4950938
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 11535.62626263
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3817.37738095
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1362.51904762
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 561.15
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 115.16666667
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 84.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 27.0
-            }
-          ]
-        },
         "cell": {
           "details": {
             "missing_ids": [],
@@ -3768,24 +3637,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "term_overrides_path": null,
-            "terminology": "cell_ontology",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 2.69359821,
@@ -4617,24 +4468,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "term_overrides_path": null,
-            "terminology": "cell_ontology",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 2.69359821,
@@ -5444,212 +5277,6 @@
       "metric_name": "concept_depth_counts",
       "scopes": {
         "anatomy": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "terminology": "cell_ontology"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1396.0
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1201.0
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1215.0
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2151.0
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2532.0
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2822.0
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2709.0
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2009.0
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1253.0
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 773.0
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 352.0
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 121.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 48.0
-            },
-            {
-              "count": 0.0,
-              "depth": 14,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 14.0
-            },
-            {
-              "count": 0.0,
-              "depth": 15,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 16,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 17,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 18,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 19,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 20,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 21,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 22,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2.0
-            },
-            {
-              "count": 0.0,
-              "depth": 23,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 24,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 5.0
-            },
-            {
-              "count": 0.0,
-              "depth": 25,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 26,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 27,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 28,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 5.0
-            },
-            {
-              "count": 0.0,
-              "depth": 29,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 30,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 31,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 32,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            }
-          ]
-        },
-        "cancer_hallmark": {
           "details": {
             "missing_ids": [],
             "n_input_ids": 0,
@@ -7614,23 +7241,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
-            "term_overrides_path": null,
-            "terminology": "chebi",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 0.0,
@@ -8010,23 +7620,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
-            "term_overrides_path": null,
-            "terminology": "chebi",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 0.0,
@@ -8385,127 +7978,6 @@
       "metric_name": "concept_depth_counts",
       "scopes": {
         "anatomy": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
-            "terminology": "chebi"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 12.0
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 305.0
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 815.0
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2314.0
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3540.0
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 15745.0
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 27204.0
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 38463.0
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 52636.0
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 45250.0
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 13008.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3629.0
-            },
-            {
-              "count": 0.0,
-              "depth": 14,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1617.0
-            },
-            {
-              "count": 0.0,
-              "depth": 15,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 414.0
-            },
-            {
-              "count": 0.0,
-              "depth": 16,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 282.0
-            },
-            {
-              "count": 0.0,
-              "depth": 17,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 59.0
-            },
-            {
-              "count": 0.0,
-              "depth": 18,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 8.0
-            }
-          ]
-        },
-        "cancer_hallmark": {
           "details": {
             "missing_ids": [],
             "n_input_ids": 0,
@@ -9637,25 +9109,6 @@
       "metric_name": "terminology_concept_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mesh_2026",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -10817,25 +10270,6 @@
       "metric_name": "annotation_topic_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mesh_2026",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -12084,99 +11518,6 @@
             }
           ]
         },
-        "cancer_hallmark": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "terminology": "mesh_2026"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1452.45952381
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 22824.05357143
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 114698.32460317
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 117172.60984848
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 57710.21800144
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 23765.4950938
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 11535.62626263
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3817.37738095
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1362.51904762
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 561.15
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 115.16666667
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 84.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 27.0
-            }
-          ]
-        },
         "cell": {
           "details": {
             "missing_ids": [],
@@ -12980,24 +12321,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "term_overrides_path": null,
-            "terminology": "cell_ontology",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 2.36005523,
@@ -13674,24 +12997,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "term_overrides_path": null,
-            "terminology": "cell_ontology",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 2.36005523,
@@ -14346,212 +13651,6 @@
       "metric_name": "concept_depth_counts",
       "scopes": {
         "anatomy": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "terminology": "cell_ontology"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1396.0
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1201.0
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1215.0
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2151.0
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2532.0
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2822.0
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2709.0
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2009.0
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1253.0
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 773.0
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 352.0
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 121.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 48.0
-            },
-            {
-              "count": 0.0,
-              "depth": 14,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 14.0
-            },
-            {
-              "count": 0.0,
-              "depth": 15,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 16,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 17,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 18,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 19,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 20,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 21,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 22,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2.0
-            },
-            {
-              "count": 0.0,
-              "depth": 23,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 24,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 5.0
-            },
-            {
-              "count": 0.0,
-              "depth": 25,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 26,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 27,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 28,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 5.0
-            },
-            {
-              "count": 0.0,
-              "depth": 29,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 30,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 31,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 32,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            }
-          ]
-        },
-        "cancer_hallmark": {
           "details": {
             "missing_ids": [],
             "n_input_ids": 0,
@@ -16432,23 +15531,6 @@
       "metric_name": "terminology_concept_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MONDO"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mondo",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -19151,23 +18233,6 @@
       "metric_name": "annotation_topic_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MONDO"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mondo",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -22099,241 +21164,6 @@
             }
           ]
         },
-        "cancer_hallmark": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "MONDO"
-            ],
-            "terminology": "mondo"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 20706.0
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3344.0
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1708.0
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2420.0
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 8508.0
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2865.0
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2698.0
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2630.0
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2677.0
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2186.0
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1350.0
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 924.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 626.0
-            },
-            {
-              "count": 0.0,
-              "depth": 14,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 354.0
-            },
-            {
-              "count": 0.0,
-              "depth": 15,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 266.0
-            },
-            {
-              "count": 0.0,
-              "depth": 16,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 142.0
-            },
-            {
-              "count": 0.0,
-              "depth": 17,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 62.0
-            },
-            {
-              "count": 0.0,
-              "depth": 18,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 33.0
-            },
-            {
-              "count": 0.0,
-              "depth": 19,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 24.0
-            },
-            {
-              "count": 0.0,
-              "depth": 20,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 29.0
-            },
-            {
-              "count": 0.0,
-              "depth": 21,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 42.0
-            },
-            {
-              "count": 0.0,
-              "depth": 22,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 36.0
-            },
-            {
-              "count": 0.0,
-              "depth": 23,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 43.0
-            },
-            {
-              "count": 0.0,
-              "depth": 24,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 43.0
-            },
-            {
-              "count": 0.0,
-              "depth": 25,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 40.0
-            },
-            {
-              "count": 0.0,
-              "depth": 26,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 46.0
-            },
-            {
-              "count": 0.0,
-              "depth": 27,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 67.0
-            },
-            {
-              "count": 0.0,
-              "depth": 28,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 69.0
-            },
-            {
-              "count": 0.0,
-              "depth": 29,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 70.0
-            },
-            {
-              "count": 0.0,
-              "depth": 30,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 73.0
-            },
-            {
-              "count": 0.0,
-              "depth": 31,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 56.0
-            },
-            {
-              "count": 0.0,
-              "depth": 32,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 37.0
-            },
-            {
-              "count": 0.0,
-              "depth": 33,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 20.0
-            },
-            {
-              "count": 0.0,
-              "depth": 34,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 21.0
-            },
-            {
-              "count": 0.0,
-              "depth": 35,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 13.0
-            },
-            {
-              "count": 0.0,
-              "depth": 36,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 37,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1.0
-            }
-          ]
-        },
         "cell": {
           "details": {
             "missing_ids": [],
@@ -24251,23 +23081,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
-            "term_overrides_path": null,
-            "terminology": "chebi",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 0.0,
@@ -24633,23 +23446,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
-            "term_overrides_path": null,
-            "terminology": "chebi",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 0.0,
@@ -24994,127 +23790,6 @@
       "metric_name": "concept_depth_counts",
       "scopes": {
         "anatomy": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "CHEBI"
-            ],
-            "terminology": "chebi"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 12.0
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 305.0
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 815.0
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2314.0
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3540.0
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 15745.0
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 27204.0
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 38463.0
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 52636.0
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 45250.0
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 13008.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3629.0
-            },
-            {
-              "count": 0.0,
-              "depth": 14,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1617.0
-            },
-            {
-              "count": 0.0,
-              "depth": 15,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 414.0
-            },
-            {
-              "count": 0.0,
-              "depth": 16,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 282.0
-            },
-            {
-              "count": 0.0,
-              "depth": 17,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 59.0
-            },
-            {
-              "count": 0.0,
-              "depth": 18,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 8.0
-            }
-          ]
-        },
-        "cancer_hallmark": {
           "details": {
             "missing_ids": [],
             "n_input_ids": 0,
@@ -26220,24 +24895,6 @@
       "metric_name": "terminology_concept_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "term_overrides_path": null,
-            "terminology": "cell_ontology",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -28197,24 +26854,6 @@
       "metric_name": "annotation_topic_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "term_overrides_path": null,
-            "terminology": "cell_ontology",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -30374,212 +29013,6 @@
             }
           ]
         },
-        "cancer_hallmark": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "CL",
-              "cell"
-            ],
-            "terminology": "cell_ontology"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1396.0
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1201.0
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1215.0
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2151.0
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2532.0
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2822.0
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2709.0
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2009.0
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1253.0
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 773.0
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 352.0
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 121.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 48.0
-            },
-            {
-              "count": 0.0,
-              "depth": 14,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 14.0
-            },
-            {
-              "count": 0.0,
-              "depth": 15,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 16,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 17,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 18,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 19,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 20,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 21,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 22,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 2.0
-            },
-            {
-              "count": 0.0,
-              "depth": 23,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 24,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 5.0
-            },
-            {
-              "count": 0.0,
-              "depth": 25,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 26,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 27,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 6.0
-            },
-            {
-              "count": 0.0,
-              "depth": 28,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 5.0
-            },
-            {
-              "count": 0.0,
-              "depth": 29,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 4.0
-            },
-            {
-              "count": 0.0,
-              "depth": 30,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 31,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            },
-            {
-              "count": 0.0,
-              "depth": 32,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3.0
-            }
-          ]
-        },
         "cell": {
           "details": {
             "missing_ids": [
@@ -32273,25 +30706,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mesh_2026",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 0.0,
@@ -33236,25 +31650,6 @@
       "metric_name": "annotation_topic_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mesh_2026",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -34304,99 +32699,6 @@
             }
           ]
         },
-        "cancer_hallmark": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "terminology": "mesh_2026"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1452.45952381
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 22824.05357143
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 114698.32460317
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 117172.60984848
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 57710.21800144
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 23765.4950938
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 11535.62626263
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3817.37738095
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1362.51904762
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 561.15
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 115.16666667
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 84.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 27.0
-            }
-          ]
-        },
         "cell": {
           "details": {
             "missing_ids": [],
@@ -35178,25 +33480,6 @@
       "metric_name": "terminology_concept_coverage",
       "scopes": {
         "anatomy": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mesh_2026",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
-        "cancer_hallmark": {
           "details": {
             "annotation_distribution_entropy": 0.0,
             "distribution_entropy": 0.0,
@@ -36018,25 +34301,6 @@
           },
           "value": []
         },
-        "cancer_hallmark": {
-          "details": {
-            "annotation_distribution_entropy": 0.0,
-            "distribution_entropy": 0.0,
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "n_unique_input_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "term_overrides_path": null,
-            "terminology": "mesh_2026",
-            "terminology_distribution_entropy": 0.0
-          },
-          "value": []
-        },
         "cell": {
           "details": {
             "annotation_distribution_entropy": 0.0,
@@ -36817,99 +35081,6 @@
       "metric_name": "concept_depth_counts",
       "scopes": {
         "anatomy": {
-          "details": {
-            "missing_ids": [],
-            "n_input_ids": 0,
-            "n_missing_ids": 0,
-            "resource_aliases": [
-              "MESH",
-              "MeSH",
-              "mesh"
-            ],
-            "terminology": "mesh_2026"
-          },
-          "value": [
-            {
-              "count": 0.0,
-              "depth": 1,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1452.45952381
-            },
-            {
-              "count": 0.0,
-              "depth": 2,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 22824.05357143
-            },
-            {
-              "count": 0.0,
-              "depth": 3,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 114698.32460317
-            },
-            {
-              "count": 0.0,
-              "depth": 4,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 117172.60984848
-            },
-            {
-              "count": 0.0,
-              "depth": 5,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 57710.21800144
-            },
-            {
-              "count": 0.0,
-              "depth": 6,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 23765.4950938
-            },
-            {
-              "count": 0.0,
-              "depth": 7,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 11535.62626263
-            },
-            {
-              "count": 0.0,
-              "depth": 8,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 3817.37738095
-            },
-            {
-              "count": 0.0,
-              "depth": 9,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 1362.51904762
-            },
-            {
-              "count": 0.0,
-              "depth": 10,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 561.15
-            },
-            {
-              "count": 0.0,
-              "depth": 11,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 115.16666667
-            },
-            {
-              "count": 0.0,
-              "depth": 12,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 84.0
-            },
-            {
-              "count": 0.0,
-              "depth": 13,
-              "terminology_proportion": 0.0,
-              "terminology_total_count": 27.0
-            }
-          ]
-        },
-        "cancer_hallmark": {
           "details": {
             "missing_ids": [],
             "n_input_ids": 0,

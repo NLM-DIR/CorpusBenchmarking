@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from corpus_benchmark.loaders.tsv_loaders import load_linnaeus_species, load_mutationfinder, load_sentence_label_tsv
+from corpus_benchmark.loaders.tsv_loaders import load_linnaeus_species, load_mutationfinder
 from corpus_benchmark.models.corpus import DocumentIdentifierType
 
 
@@ -24,24 +24,6 @@ def test_linnaeus_species_loader_reads_tags_and_pmcids(tmp_path) -> None:
     assert [(link.resource, link.identifier) for link in annotation.get_identifier_links()] == [
         ("NCBITaxon", "4932")
     ]
-
-
-def test_sentence_label_tsv_loader_creates_sentence_annotations(tmp_path) -> None:
-    train_dir = tmp_path / "train"
-    train_dir.mkdir()
-    (train_dir / "12345.txt").write_text(
-        "First sentence\t[]\n"
-        "Second sentence\t['sustaining proliferative signaling']\n",
-        encoding="utf-8",
-    )
-
-    corpus = load_sentence_label_tsv(paths={"train": str(train_dir)})
-    document = corpus.subsets["train"].documents[0]
-    annotation = document.passages[0].annotations[0]
-
-    assert document.identifiers == {DocumentIdentifierType.PMID: "12345"}
-    assert annotation.label == "sustaining proliferative signaling"
-    assert annotation.text == "Second sentence"
 
 
 def test_mutationfinder_loader_reads_normalized_mutation_gold(tmp_path) -> None:

@@ -59,13 +59,6 @@
             "Tissue": 0.14727463
           }
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {
@@ -177,13 +170,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -247,16 +233,6 @@
             "median": 3.0,
             "min": 0,
             "stdev": 6.46293194
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 1212,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
           }
         },
         "cell": {
@@ -352,16 +328,6 @@
             "stdev": 28.26544555
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 1212,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 1212,
@@ -455,16 +421,6 @@
             "stdev": 3.83693557
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 1212,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 1212,
@@ -549,16 +505,6 @@
       "metric_name": "unique_identifiers_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 1212,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 1212,
             "max": 0,
@@ -661,16 +607,6 @@
             "stdev": 192.24723665
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 1,
@@ -762,16 +698,6 @@
             "median": 1,
             "min": 1,
             "stdev": 0.19208767
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
           }
         },
         "cell": {
@@ -884,13 +810,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -985,13 +904,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -1048,16 +960,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 15000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 15000,
             "max": 0,
@@ -1160,16 +1062,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 15000,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 15000,
@@ -1254,16 +1146,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 15000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 15000,
             "max": 0,
@@ -1366,16 +1248,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 15000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 15000,
@@ -1469,16 +1341,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -1563,16 +1425,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -1693,13 +1545,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -1802,13 +1647,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -1880,16 +1718,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 1500,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 1500,
             "max": 0,
@@ -1992,16 +1820,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 1500,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 1500,
@@ -2086,16 +1904,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 1500,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 1500,
             "max": 0,
@@ -2198,16 +2006,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 1500,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 1500,
@@ -2301,16 +2099,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -2395,16 +2183,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -2534,13 +2312,6 @@
           "value": {
             "anatomy": 1.0
           }
-        },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
         },
         "cell": {
           "details": {
@@ -2690,13 +2461,6 @@
             "tissue": 0.08245561
           }
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {
@@ -2827,16 +2591,6 @@
             "stdev": 1.32953385
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 13697,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 13697,
@@ -2928,16 +2682,6 @@
             "median": 0.0,
             "min": 0.0,
             "stdev": 23.11988145
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 13697,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
           }
         },
         "cell": {
@@ -3033,16 +2777,6 @@
             "stdev": 0.91979163
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 13697,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 13697,
@@ -3134,16 +2868,6 @@
             "median": 0,
             "min": 0,
             "stdev": 0.80509982
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 13697,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
           }
         },
         "cell": {
@@ -3239,16 +2963,6 @@
             "stdev": 1.51010993
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 532,
@@ -3340,16 +3054,6 @@
             "median": 1.0,
             "min": 1,
             "stdev": 0.36488597
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
           }
         },
         "cell": {
@@ -3461,13 +3165,6 @@
       "metric_name": "label_distribution",
       "scopes": {
         "anatomy": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
-        "cancer_hallmark": {
           "details": {
             "counts": {},
             "total": 0
@@ -3596,13 +3293,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -3688,16 +3378,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 600,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 600,
             "max": 0,
@@ -3800,16 +3480,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 600,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 600,
@@ -3894,16 +3564,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 600,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 600,
             "max": 0,
@@ -4006,16 +3666,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 600,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 600,
@@ -4109,16 +3759,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -4203,16 +3843,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -4332,13 +3962,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -4433,13 +4056,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -4496,16 +4112,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 10000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 10000,
             "max": 0,
@@ -4608,16 +4214,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 10000,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 10000,
@@ -4702,16 +4298,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 10000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 10000,
             "max": 0,
@@ -4814,16 +4400,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 10000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 10000,
@@ -4917,16 +4493,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -5011,16 +4577,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -5155,13 +4711,6 @@
             "Cellular_component": 0.21840608,
             "anatomical_entity": 0.78159392
           }
-        },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
         },
         "cell": {
           "details": {
@@ -5311,13 +4860,6 @@
             "UBERON": 0.78159392
           }
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {
@@ -5425,16 +4967,6 @@
             "stdev": 165.59028084
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 97,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 97,
@@ -5526,16 +5058,6 @@
             "median": 32.53424658,
             "min": 2.50626566,
             "stdev": 21.3536254
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 97,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
           }
         },
         "cell": {
@@ -5631,16 +5153,6 @@
             "stdev": 43.28613194
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 97,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 97,
@@ -5732,16 +5244,6 @@
             "median": 38,
             "min": 7,
             "stdev": 24.42249646
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 97,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
           }
         },
         "cell": {
@@ -5837,16 +5339,6 @@
             "stdev": 1.95846727
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 285,
@@ -5938,16 +5430,6 @@
             "median": 1,
             "min": 1,
             "stdev": 0.24536552
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
           }
         },
         "cell": {
@@ -6062,13 +5544,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {
@@ -6173,13 +5648,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {
@@ -6248,16 +5716,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 2003,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 2003,
             "max": 0,
@@ -6360,16 +5818,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 2003,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 2003,
@@ -6454,16 +5902,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 2003,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 2003,
             "max": 0,
@@ -6566,16 +6004,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 2003,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 2003,
@@ -6669,16 +6097,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 1989,
@@ -6763,16 +6181,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -6896,13 +6304,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {
@@ -7011,13 +6412,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -7074,16 +6468,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 2404,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 2404,
             "max": 0,
@@ -7186,16 +6570,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 2404,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 2404,
@@ -7280,16 +6654,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 2404,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 2404,
             "max": 0,
@@ -7392,16 +6756,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 2404,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 2404,
@@ -7495,16 +6849,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 2,
@@ -7589,16 +6933,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -7718,13 +7052,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -7821,13 +7148,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -7890,16 +7210,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 100,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 100,
             "max": 0,
@@ -8002,16 +7312,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 100,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 100,
@@ -8096,16 +7396,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 100,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 100,
             "max": 0,
@@ -8208,16 +7498,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 100,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 100,
@@ -8311,16 +7591,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -8405,16 +7675,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -8552,13 +7812,6 @@
             "anatomy": 1.0
           }
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -8685,13 +7938,6 @@
             "UMLS": 1.0
           }
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -8773,16 +8019,6 @@
             "median": 2.0,
             "min": 0,
             "stdev": 7.25680034
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 4392,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
           }
         },
         "cell": {
@@ -8878,16 +8114,6 @@
             "stdev": 27.57147894
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 4392,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 4392,
@@ -8979,16 +8205,6 @@
             "median": 1.0,
             "min": 0,
             "stdev": 4.24149038
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 4392,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
           }
         },
         "cell": {
@@ -9084,16 +8300,6 @@
             "stdev": 2.89334285
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 4392,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 4392,
@@ -9187,16 +8393,6 @@
             "stdev": 8.83151708
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -9288,16 +8484,6 @@
             "median": 1,
             "min": 1,
             "stdev": 0.38711205
-          }
-        },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
           }
         },
         "cell": {
@@ -9410,13 +8596,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -9514,13 +8693,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -9586,16 +8758,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 793,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 793,
             "max": 0,
@@ -9698,16 +8860,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 793,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 793,
@@ -9792,16 +8944,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 793,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 793,
             "max": 0,
@@ -9904,16 +9046,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 793,
-            "max": 0,
-            "mean": 0,
-            "median": 0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 793,
@@ -10007,16 +9139,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -10101,16 +9223,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -10230,13 +9342,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -10334,13 +9439,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -10406,16 +9504,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 150,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 150,
             "max": 0,
@@ -10518,16 +9606,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 150,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 150,
@@ -10612,16 +9690,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 150,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 150,
             "max": 0,
@@ -10724,16 +9792,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 150,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 150,
@@ -10827,16 +9885,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -10921,16 +9969,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -11053,13 +10091,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -11159,13 +10190,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -11228,16 +10252,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 550,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 550,
             "max": 0,
@@ -11340,16 +10354,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 550,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 550,
@@ -11434,16 +10438,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 550,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 550,
             "max": 0,
@@ -11546,16 +10540,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 550,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 550,
@@ -11649,16 +10633,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -11743,16 +10717,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -11874,13 +10838,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -11983,13 +10940,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -12052,16 +11002,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 1000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 1000,
             "max": 0,
@@ -12164,16 +11104,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 1000,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 1000,
@@ -12258,16 +11188,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 1000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 1000,
             "max": 0,
@@ -12370,16 +11290,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 1000,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 1000,
@@ -12473,16 +11383,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -12567,16 +11467,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
@@ -12696,13 +11586,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -12799,13 +11682,6 @@
           },
           "value": {}
         },
-        "cancer_hallmark": {
-          "details": {
-            "counts": {},
-            "total": 0
-          },
-          "value": {}
-        },
         "cell": {
           "details": {
             "counts": {},
@@ -12868,16 +11744,6 @@
       "metric_name": "annotations_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 500,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 500,
             "max": 0,
@@ -12980,16 +11846,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 500,
-            "max": 0.0,
-            "mean": 0.0,
-            "median": 0.0,
-            "min": 0.0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 500,
@@ -13074,16 +11930,6 @@
       "metric_name": "unique_mentions_per_document_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 500,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 500,
             "max": 0,
@@ -13186,16 +12032,6 @@
             "stdev": 0.0
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 500,
-            "max": 0,
-            "mean": 0,
-            "median": 0.0,
-            "min": 0,
-            "stdev": 0.0
-          }
-        },
         "cell": {
           "value": {
             "count": 500,
@@ -13289,16 +12125,6 @@
             "stdev": NaN
           }
         },
-        "cancer_hallmark": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
         "cell": {
           "value": {
             "count": 0,
@@ -13383,16 +12209,6 @@
       "metric_name": "ambiguity_degree_stats",
       "scopes": {
         "anatomy": {
-          "value": {
-            "count": 0,
-            "max": NaN,
-            "mean": NaN,
-            "median": NaN,
-            "min": NaN,
-            "stdev": NaN
-          }
-        },
-        "cancer_hallmark": {
           "value": {
             "count": 0,
             "max": NaN,
