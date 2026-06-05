@@ -82,6 +82,7 @@ def test_load_obo_parses_terms_relationships_alt_ids_and_skips_obsolete(tmp_path
     terminology_dir = tmp_path / "terminologies"
     obo_path.write_text(
         """format-version: 1.2
+property_value: IAO:0000700 TEST:0001
 
 [Term]
 id: TEST:0001
@@ -92,7 +93,16 @@ id: TEST:0002
 name: child
 alt_id: TEST:ALT2
 synonym: "child synonym" EXACT []
-is_a: TEST:0001 ! root
+is_a: TEST:0001 {is_inferred="true"} ! root
+
+[Term]
+id: OTHER:0001
+name: imported term
+
+[Term]
+id: TEST:0004
+name: imported child
+is_a: OTHER:0001 ! imported term
 
 [Term]
 id: TEST:0003
@@ -112,6 +122,10 @@ is_obsolete: true
 
     assert terminology.get_concept("0002").name == "child"
     assert terminology.get_concept("TEST:ALT2").ui == "TEST:0002"
+    assert terminology.get_concept("OTHER:0001") is None
+    assert terminology.get_concept("TEST:0004") is None
     assert terminology.get_concept("TEST:0003") is None
+    assert terminology.root_ids == ["TEST:0001"]
     assert terminology.top_ancestor_ids("TEST:0002") == ["TEST:0001"]
-    assert terminology.depth_for_concept(terminology.get_concept("TEST:0002")) == 2
+    assert terminology.depth_for_concept(terminology.get_concept("TEST:0001")) == 0
+    assert terminology.depth_for_concept(terminology.get_concept("TEST:0002")) == 1

@@ -46,6 +46,8 @@ class TerminologyResource:
     treetop_names: Dict[str, str] = field(default_factory=dict)
     resource_aliases: List[str] = field(default_factory=list)
     id_prefix: Optional[str] = None
+    root_ids: List[str] = field(default_factory=list)
+    loader_version: Optional[str] = None
     global_branch_counts_cache: tuple[int, Dict[str, float]] | None = None
     global_depth_counts_cache: tuple[int, Dict[int, float]] | None = None
     cache_path: Optional[str] = None
@@ -212,16 +214,21 @@ class TerminologyResource:
         tree_numbers = getattr(concept, "tree_numbers", [])
         parent_ids = getattr(concept, "parent_ids", [])
         if tree_numbers:
-            return min(len(tree.split(".")) for tree in tree_numbers)
+            return max(len(tree.split(".")) for tree in tree_numbers)
+        root_ids = getattr(self, "root_ids", [])
         if not parent_ids:
-            return 1
+            if root_ids and concept.ui not in root_ids:
+                return 1
+            return 0
         parent_depths = [
             self._depth_for_concept(parent, seen.copy())
             for parent_id in parent_ids
             for parent in [self.get_concept(parent_id)]
             if parent is not None and parent.ui != concept.ui
         ]
-        return (min(parent_depths) + 1) if parent_depths else 1
+        if parent_depths:
+            return max(parent_depths) + 1
+        return 0 if not root_ids or concept.ui in root_ids else 1
 
     def top_ancestor_ids(self, ui: str) -> List[str]:
         cache_key = id(self)
@@ -603,24 +610,13 @@ class TerminologyTopicAnchorCounter:
         not_found: set[str] = set()
         processed = 0
         for processed, ui in enumerate(ids, start=1):
-            concepts = self.terminology.resolve_to_tree_concepts(ui)
-            if not concepts:
+            identifier_counts = self.branch_counts_for_id(ui)
+            if not identifier_counts:
                 not_found.add(ui)
                 if processed % progress_interval == 0:
                     _log_count_progress("branch counts", self.terminology, processed, total, start)
                 continue
-            keys = [
-                key
-                for concept in concepts
-                for key in self.terminology.top_ancestor_ids(concept.ui)
-            ]
-            if not keys:
-                if processed % progress_interval == 0:
-                    _log_count_progress("branch counts", self.terminology, processed, total, start)
-                continue
-            weight = 1.0 / len(keys)
-            for key in keys:
-                counts[key] += weight
+            _add_weighted_counts(counts, identifier_counts, 1.0)
             if processed % progress_interval == 0:
                 _log_count_progress("branch counts", self.terminology, processed, total, start)
         if len(not_found) > 0:
@@ -628,6 +624,23 @@ class TerminologyTopicAnchorCounter:
         result = dict(sorted(counts.items()))
         _log_count_finish("branch counts", self.terminology, processed, total, len(result), len(not_found), start)
         return result
+
+    def branch_counts_for_id(self, ui: str) -> Dict[str, float]:
+        concepts = self.terminology.resolve_to_tree_concepts(ui)
+        if not concepts:
+            return {}
+        keys = [
+            key
+            for concept in concepts
+            for key in self.terminology.top_ancestor_ids(concept.ui)
+        ]
+        if not keys:
+            return {}
+        weight = 1.0 / len(keys)
+        counts: dict[str, float] = {}
+        for key in keys:
+            counts[key] = counts.get(key, 0.0) + weight
+        return counts
 
     def count_by_anchor(self, ids: Iterable[str], total: int | None = None) -> Dict[str, float]:
         if total is None:
@@ -639,14 +652,13 @@ class TerminologyTopicAnchorCounter:
         not_found: set[str] = set()
         processed = 0
         for processed, ui in enumerate(ids, start=1):
-            concept = self.terminology.get_concept(ui)
-            if concept is None:
+            identifier_counts = self.anchor_counts_for_id(ui)
+            if not identifier_counts:
                 not_found.add(ui)
                 if processed % progress_interval == 0:
                     _log_count_progress("anchor counts", self.terminology, processed, total, start)
                 continue
-            anchor_counts = self._topic_anchor_counts_by_id(concept.ui, set())
-            _add_weighted_counts(counts, anchor_counts, 1.0)
+            _add_weighted_counts(counts, identifier_counts, 1.0)
             if processed % progress_interval == 0:
                 _log_count_progress("anchor counts", self.terminology, processed, total, start)
         if len(not_found) > 0:
@@ -654,6 +666,12 @@ class TerminologyTopicAnchorCounter:
         result = dict(sorted(counts.items()))
         _log_count_finish("anchor counts", self.terminology, processed, total, len(result), len(not_found), start)
         return result
+
+    def anchor_counts_for_id(self, ui: str) -> Dict[str, float]:
+        concept = self.terminology.get_concept(ui)
+        if concept is None:
+            return {}
+        return self._topic_anchor_counts_by_id(concept.ui, set())
 
     def _anchor_counts_by_tree_overrides(self, concepts: Iterable[TerminologyConcept]) -> Dict[str, float]:
         total = _safe_len(concepts)
@@ -708,16 +726,13 @@ class TerminologyTopicAnchorCounter:
         not_found: set[str] = set()
         processed = 0
         for processed, ui in enumerate(ids, start=1):
-            concepts = self.terminology.resolve_to_tree_concepts(ui)
-            if not concepts:
+            identifier_counts = self.depth_counts_for_id(ui)
+            if not identifier_counts:
                 not_found.add(ui)
                 if processed % progress_interval == 0:
                     _log_count_progress("depth counts", self.terminology, processed, total, start)
                 continue
-            depths = [self.terminology.depth_for_concept(concept) for concept in concepts]
-            weight = 1.0 / len(depths)
-            for depth in depths:
-                counts[depth] += weight
+            _add_weighted_counts(counts, identifier_counts, 1.0)
             if processed % progress_interval == 0:
                 _log_count_progress("depth counts", self.terminology, processed, total, start)
         if len(not_found) > 0:
@@ -725,6 +740,19 @@ class TerminologyTopicAnchorCounter:
         result = dict(sorted(counts.items()))
         _log_count_finish("depth counts", self.terminology, processed, total, len(result), len(not_found), start)
         return result
+
+    def depth_counts_for_id(self, ui: str) -> Dict[int, float]:
+        concepts = self.terminology.resolve_to_tree_concepts(ui)
+        if not concepts:
+            return {}
+        depths = [self.terminology.depth_for_concept(concept) for concept in concepts]
+        if not depths:
+            return {}
+        weight = 1.0 / len(depths)
+        counts: dict[int, float] = {}
+        for depth in depths:
+            counts[depth] = counts.get(depth, 0.0) + weight
+        return counts
 
     def get_global_counts_by_branch(self) -> Dict[str, float]:
         cache_key = self.terminology.cache_key()

@@ -288,6 +288,29 @@ def get_identifier_links_for_terminology(
     return identifier_links
 
 
+def get_annotation_identifier_links_for_terminology(
+    target: MetricTarget,
+    terminology: TerminologyResource,
+    annotation_filter_name: str | None = None,
+) -> list[list[IdentifierLink]]:
+    annotation_links = []
+    for subset, context in target.components:
+        terminology_key = terminology.cache_key()
+        subset_annotation_links = context.get_or_compute(
+            f"annotation_identifier_links_for_terminology({subset.name}, {annotation_filter_name}, {terminology_key})",
+            lambda: [
+                [
+                    link
+                    for link in annotation.get_identifier_links()
+                    if link.identifier is not None and terminology.accepts_resource(link.resource)
+                ]
+                for annotation in get_annotations(SingleMetricTarget(subset, context), annotation_filter_name)
+            ],
+        )
+        annotation_links.extend(subset_annotation_links)
+    return annotation_links
+
+
 def get_match_types(target: MetricTarget, annotation_filter_name: str | None = None) -> list[str]:
     match_types = []
     for subset, context in target.components:
@@ -365,15 +388,22 @@ def _build_high_level_topic_rows(
     ids = [link.identifier for link in identifier_links if link.identifier is not None]
     unique_ids = _unique_concept_ids(ids, terminology)
     missing_ids = sorted({ui for ui in ids if terminology.get_concept(ui) is None})
+    annotation_link_groups = get_annotation_identifier_links_for_terminology(target, terminology, annotation_filter_name)
     counter = get_terminology_anchor_counter(target, terminology, term_overrides_path)
 
     if term_overrides_path:
         corpus_counts = counter.count_by_anchor(unique_ids)
-        annotation_counts = counter.count_by_anchor(ids)
+        annotation_counts = _annotation_counts_by_identifier_distribution(
+            annotation_link_groups,
+            counter.anchor_counts_for_id,
+        )
         global_counts = counter.get_global_counts_by_anchor()
     else:
         corpus_counts = counter.count_by_branch(unique_ids)
-        annotation_counts = counter.count_by_branch(ids)
+        annotation_counts = _annotation_counts_by_identifier_distribution(
+            annotation_link_groups,
+            counter.branch_counts_for_id,
+        )
         global_counts = counter.get_global_counts_by_branch()
 
     all_branches = sorted(set(corpus_counts.keys()) | set(annotation_counts.keys()))
@@ -394,11 +424,12 @@ def _build_high_level_topic_rows(
                 "annotation_count": round(annotation_count, PRECISION),
                 "terminology_total_count": round(terminology_total, PRECISION),
                 "terminology_proportion": round(terminology_proportion, PRECISION),
-                "annotation_proportion": round(annotation_count / len(ids), PRECISION) if ids else 0.0,
+                "annotation_proportion": round(annotation_count / len(annotation_link_groups), PRECISION) if annotation_link_groups else 0.0,
             }
         )
 
     details = {
+        "n_annotations": len(annotation_link_groups),
         "n_input_ids": len(ids),
         "n_unique_input_ids": len(unique_ids),
         "n_missing_ids": len(missing_ids),
@@ -410,6 +441,23 @@ def _build_high_level_topic_rows(
         "annotation_distribution_entropy": _shannon_entropy(annotation_counts.values()),
     }
     return rows, details
+
+
+def _annotation_counts_by_identifier_distribution(
+    annotation_link_groups: list[list[IdentifierLink]],
+    identifier_counter,
+) -> dict[str, float]:
+    counts: dict[str, float] = {}
+    for links in annotation_link_groups:
+        identifiers = [link.identifier for link in links if link.identifier is not None]
+        if not identifiers:
+            continue
+        identifier_weight = 1.0 / len(identifiers)
+        for identifier in identifiers:
+            identifier_counts = identifier_counter(identifier)
+            for key, count in identifier_counts.items():
+                counts[key] = counts.get(key, 0.0) + count * identifier_weight
+    return dict(sorted(counts.items()))
 
 
 def _unique_concept_ids(ids: list[str], terminology: TerminologyResource) -> list[str]:

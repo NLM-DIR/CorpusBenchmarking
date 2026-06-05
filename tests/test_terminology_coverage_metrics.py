@@ -5,7 +5,7 @@ from pathlib import Path
 
 from corpus_benchmark.context import BenchmarkContext, MetricTarget
 from corpus_benchmark.metrics.terminology_coverage import annotation_topic_coverage, concept_depth_counts, terminology_concept_coverage
-from corpus_benchmark.models.corpus import Annotation, AnnotationSpan, CorpusSubset, Document, IdentifierLink, Passage
+from corpus_benchmark.models.corpus import Annotation, AnnotationSpan, CompositeLink, CorpusSubset, Document, IdentifierLink, Passage
 from corpus_benchmark.models.filters import AnnotationFilter
 from corpus_benchmark.models.terminologies import TerminologyConcept, TerminologyResource, TerminologyTopicAnchorCounter
 
@@ -133,13 +133,13 @@ def test_terminology_global_counts_are_persisted(tmp_path: Path) -> None:
     counter = TerminologyTopicAnchorCounter(terminology)
 
     assert counter.get_global_counts_by_branch() == {"R1": 2.0}
-    assert counter.get_global_counts_by_depth() == {1: 1.0, 2: 1.0}
+    assert counter.get_global_counts_by_depth() == {0: 1.0, 1: 1.0}
 
     with cache_path.open("rb") as fp:
         cached = pickle.load(fp)
 
     assert cached.global_branch_counts_cache == (2, {"R1": 2.0})
-    assert cached.global_depth_counts_cache == (2, {1: 1.0, 2: 1.0})
+    assert cached.global_depth_counts_cache == (2, {0: 1.0, 1: 1.0})
 
 
 def test_cached_global_counts_are_persisted_on_cache_hit(tmp_path: Path) -> None:
@@ -157,7 +157,7 @@ def test_cached_global_counts_are_persisted_on_cache_hit(tmp_path: Path) -> None
     warm_counter = TerminologyTopicAnchorCounter(warm_terminology)
 
     assert warm_counter.get_global_counts_by_branch() == {"R1": 2.0}
-    assert warm_counter.get_global_counts_by_depth() == {1: 1.0, 2: 1.0}
+    assert warm_counter.get_global_counts_by_depth() == {0: 1.0, 1: 1.0}
 
     terminology = TerminologyResource(
         name="example",
@@ -168,13 +168,13 @@ def test_cached_global_counts_are_persisted_on_cache_hit(tmp_path: Path) -> None
     counter = TerminologyTopicAnchorCounter(terminology)
 
     assert counter.get_global_counts_by_branch() == {"R1": 2.0}
-    assert counter.get_global_counts_by_depth() == {1: 1.0, 2: 1.0}
+    assert counter.get_global_counts_by_depth() == {0: 1.0, 1: 1.0}
 
     with cache_path.open("rb") as fp:
         cached = pickle.load(fp)
 
     assert cached.global_branch_counts_cache == (2, {"R1": 2.0})
-    assert cached.global_depth_counts_cache == (2, {1: 1.0, 2: 1.0})
+    assert cached.global_depth_counts_cache == (2, {0: 1.0, 1: 1.0})
 
 
 def test_terminology_concept_coverage_uses_configured_term_overrides(tmp_path: Path) -> None:
@@ -315,6 +315,38 @@ def test_annotation_topic_coverage_reports_annotation_normalized_metric_and_entr
     assert result.value[0]["annotation_proportion"] == round(2 / 3, 8)
 
 
+def test_annotation_topic_coverage_fractionally_applies_identifiers_per_annotation() -> None:
+    terminology = TerminologyResource(
+        name="example",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Root A"),
+            "R2": TerminologyConcept(ui="R2", name="Root B"),
+            "T1": TerminologyConcept(ui="T1", name="Term One", parent_ids=["R1"]),
+            "T2": TerminologyConcept(ui="T2", name="Term Two", parent_ids=["R2"]),
+        },
+        resource_aliases=["EX"],
+    )
+    target = _target_for_links(
+        [
+            CompositeLink(
+                components=[
+                    IdentifierLink(identifier="T1", resource="EX"),
+                    IdentifierLink(identifier="T2", resource="EX"),
+                ]
+            )
+        ]
+    )
+
+    result = annotation_topic_coverage(target, "annotation_topic_coverage", terminology)
+    rows = {row["branch_code"]: row for row in result.value}
+
+    assert result.details["n_annotations"] == 1
+    assert rows["R1"]["annotation_count"] == 0.5
+    assert rows["R2"]["annotation_count"] == 0.5
+    assert rows["R1"]["annotation_proportion"] == 0.5
+    assert rows["R2"]["annotation_proportion"] == 0.5
+
+
 def test_terminology_concept_coverage_treats_mapped_supplementals_as_terminology_concepts() -> None:
     terminology = TerminologyResource(
         name="mesh_like",
@@ -430,7 +462,7 @@ def test_terminology_concept_coverage_term_overrides_renormalize_mapped_suppleme
     assert rows["Topic Two"]["annotation_proportion"] == 0.25
 
 
-def test_concept_depth_counts_reports_annotation_depth_distribution() -> None:
+def test_concept_depth_counts_reports_annotation_and_terminology_depth_coverage() -> None:
     terminology = TerminologyResource(
         name="example",
         concepts={
@@ -449,9 +481,60 @@ def test_concept_depth_counts_reports_annotation_depth_distribution() -> None:
     )
 
     result = concept_depth_counts(target, "concept_depth_counts", terminology)
-    proportions = {row["depth"]: row["terminology_proportion"] for row in result.value}
+    rows = {row["depth"]: row for row in result.value}
 
-    assert proportions[1] == 0.0
-    assert proportions[2] == round(2 / 3, 8)
-    assert proportions[3] == round(1 / 3, 8)
-    assert sum(proportions.values()) == 1.0
+    assert rows[0]["terminology_proportion"] == 0.0
+    assert rows[1]["terminology_proportion"] == 1.0
+    assert rows[2]["terminology_proportion"] == 1.0
+    assert rows[1]["annotation_proportion"] == round(2 / 3, 8)
+    assert rows[2]["annotation_proportion"] == round(1 / 3, 8)
+    assert rows[1]["count"] == 1
+    assert rows[1]["annotation_count"] == 2
+
+
+def test_concept_depth_counts_fractionally_applies_identifiers_per_annotation() -> None:
+    terminology = TerminologyResource(
+        name="example",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Root A"),
+            "T1": TerminologyConcept(ui="T1", name="Term One", parent_ids=["R1"]),
+            "T2": TerminologyConcept(ui="T2", name="Term Two", parent_ids=["T1"]),
+        },
+        resource_aliases=["EX"],
+    )
+    target = _target_for_links(
+        [
+            CompositeLink(
+                components=[
+                    IdentifierLink(identifier="T1", resource="EX"),
+                    IdentifierLink(identifier="T2", resource="EX"),
+                ]
+            )
+        ]
+    )
+
+    result = concept_depth_counts(target, "concept_depth_counts", terminology)
+    rows = {row["depth"]: row for row in result.value}
+
+    assert result.details["n_annotations"] == 1
+    assert result.details["n_input_ids"] == 2
+    assert result.details["n_unique_input_ids"] == 2
+    assert rows[1]["annotation_count"] == 0.5
+    assert rows[2]["annotation_count"] == 0.5
+    assert rows[1]["annotation_proportion"] == 0.5
+    assert rows[2]["annotation_proportion"] == 0.5
+
+
+def test_depth_for_concept_uses_deepest_parent_path() -> None:
+    terminology = TerminologyResource(
+        name="example",
+        concepts={
+            "R1": TerminologyConcept(ui="R1", name="Root A"),
+            "A1": TerminologyConcept(ui="A1", name="Shallow", parent_ids=["R1"]),
+            "B1": TerminologyConcept(ui="B1", name="Deep", parent_ids=["A1"]),
+            "T1": TerminologyConcept(ui="T1", name="Multi Parent", parent_ids=["R1", "B1"]),
+        },
+    )
+
+    assert terminology.depth_for_concept(terminology.get_concept("R1")) == 0
+    assert terminology.depth_for_concept(terminology.get_concept("T1")) == 3

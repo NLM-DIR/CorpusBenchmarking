@@ -5,6 +5,9 @@ from typing import Any
 
 from corpus_benchmark.context import (
     MetricTarget,
+    _annotation_counts_by_identifier_distribution,
+    _unique_concept_ids,
+    get_annotation_identifier_links_for_terminology,
     get_high_level_topic_rows,
     get_identifier_links_for_terminology,
     get_terminology_anchor_counter,
@@ -92,23 +95,31 @@ def concept_depth_counts(
     term_overrides_path = _term_overrides_path(params, annotation_filter_name)
     identifier_links = get_identifier_links_for_terminology(target, terminology, annotation_filter_name)
     ids = [link.identifier for link in identifier_links if link.identifier is not None]
+    unique_ids = _unique_concept_ids(ids, terminology)
+    annotation_link_groups = get_annotation_identifier_links_for_terminology(target, terminology, annotation_filter_name)
     counter = get_terminology_anchor_counter(target, terminology, term_overrides_path)
 
-    corpus_counts = counter.count_by_depth(ids)
+    corpus_counts = counter.count_by_depth(unique_ids)
+    annotation_counts = _annotation_counts_by_identifier_distribution(
+        annotation_link_groups,
+        counter.depth_counts_for_id,
+    )
     global_counts = counter.get_global_counts_by_depth()
-    corpus_total = sum(corpus_counts.values())
 
-    all_depths = sorted(set(corpus_counts.keys()) | set(global_counts.keys()))
+    all_depths = sorted(set(corpus_counts.keys()) | set(annotation_counts.keys()) | set(global_counts.keys()))
     rows = []
     for d in all_depths:
         c_count = corpus_counts.get(d, 0.0)
+        annotation_count = annotation_counts.get(d, 0.0)
         m_count = global_counts.get(d, 0.0)
         rows.append(
             {
                 "depth": d,
                 "count": round(c_count, PRECISION),
+                "annotation_count": round(annotation_count, PRECISION),
                 "terminology_total_count": round(m_count, PRECISION),
-                "terminology_proportion": round(c_count / corpus_total, PRECISION) if corpus_total > 0 else 0.0,
+                "terminology_proportion": round(c_count / m_count, PRECISION) if m_count > 0 else 0.0,
+                "annotation_proportion": round(annotation_count / len(annotation_link_groups), PRECISION) if annotation_link_groups else 0.0,
             }
         )
 
@@ -119,7 +130,9 @@ def concept_depth_counts(
         subset_name=target.name,
         value=rows,
         details={
+            "n_annotations": len(annotation_link_groups),
             "n_input_ids": len(ids),
+            "n_unique_input_ids": len(unique_ids),
             "n_missing_ids": len(missing_ids),
             "missing_ids": missing_ids,
             "terminology": terminology.name,

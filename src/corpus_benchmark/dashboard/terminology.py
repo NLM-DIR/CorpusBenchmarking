@@ -56,7 +56,9 @@ def _process_term_payload(corpus_name: str, terminology_name: str, tc: dict, ac:
         count = item.get("count", 0) or 0
         depth[d] = {
             "count": count,
+            "annotation_count": item.get("annotation_count", count) or 0,
             "terminology_proportion": item.get("terminology_proportion", 0) or 0,
+            "annotation_proportion": item.get("annotation_proportion", item.get("terminology_proportion", 0)) or 0,
             "total": item.get("terminology_total_count", 0),
         }
         try:

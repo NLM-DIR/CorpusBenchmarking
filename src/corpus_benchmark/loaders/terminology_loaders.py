@@ -13,6 +13,7 @@ from corpus_benchmark.registry import register_terminology_loader
 from utils.download import download_file
 
 logger = logging.getLogger(__name__)
+OBO_LOADER_VERSION = "obo-v3-prefix-filter-clean-parents-declared-roots"
 
 TREETOP_NAMES: Dict[str, str] = {
     "A": "Anatomy",
@@ -158,6 +159,11 @@ def _obo_unquote(value: str) -> str:
     return value
 
 
+def _obo_identifier_ref(value: str) -> str:
+    """Return the bare identifier from an OBO ID reference field."""
+    return value.split("!", 1)[0].strip().split()[0]
+
+
 def _iter_obo_terms(path: pathlib.Path) -> Iterator[dict[str, Any]]:
     current: dict[str, Any] | None = None
     with path.open("r", encoding="utf-8") as fp:
@@ -181,19 +187,67 @@ def _iter_obo_terms(path: pathlib.Path) -> Iterator[dict[str, Any]]:
             key = key.strip()
             value = value.strip()
             if key == "id":
-                current["id"] = value.split(" ! ", 1)[0].strip()
+                current["id"] = _obo_identifier_ref(value)
             elif key == "name":
                 current["name"] = value.split(" ! ", 1)[0].strip()
             elif key == "alt_id":
-                current["alt_id"].append(value.split(" ! ", 1)[0].strip())
+                current["alt_id"].append(_obo_identifier_ref(value))
             elif key == "synonym":
                 current["synonym"].append(_obo_unquote(value))
             elif key == "is_a":
-                current["is_a"].append(value.split(" ! ", 1)[0].strip())
+                current["is_a"].append(_obo_identifier_ref(value))
             elif key == "is_obsolete":
                 current["is_obsolete"] = value.lower() == "true"
         if current:
             yield current
+
+
+def _obo_declared_root_ids(path: pathlib.Path) -> List[str]:
+    root_ids: List[str] = []
+    with path.open("r", encoding="utf-8") as fp:
+        for raw_line in fp:
+            line = raw_line.strip()
+            if line == "[Term]":
+                break
+            if not line.startswith("property_value:"):
+                continue
+            value = line.split(":", 1)[1].strip()
+            parts = value.split(maxsplit=1)
+            if len(parts) < 2 or parts[0] != "IAO:0000700":
+                continue
+            root_id = _obo_identifier_ref(parts[1])
+            if root_id not in root_ids:
+                root_ids.append(root_id)
+    return root_ids
+
+
+def _prune_to_roots(
+    concepts: Dict[str, TerminologyConcept],
+    root_ids: List[str],
+) -> Dict[str, TerminologyConcept]:
+    retained_roots = [root_id for root_id in root_ids if root_id in concepts]
+    if not retained_roots:
+        return concepts
+
+    children_by_parent: Dict[str, List[str]] = collections.defaultdict(list)
+    for concept in concepts.values():
+        for parent_id in concept.parent_ids:
+            if parent_id in concepts:
+                children_by_parent[parent_id].append(concept.ui)
+
+    reachable: set[str] = set()
+    stack = list(retained_roots)
+    while stack:
+        ui = stack.pop()
+        if ui in reachable:
+            continue
+        reachable.add(ui)
+        stack.extend(children_by_parent.get(ui, []))
+
+    pruned_count = len(concepts) - len(reachable)
+    if pruned_count:
+        logger.info("Pruned %s OBO concepts outside declared root component(s)", pruned_count)
+    return {ui: concept for ui, concept in concepts.items() if ui in reachable}
 
 
 @register_terminology_loader("obo")
@@ -202,31 +256,57 @@ def load_obo(workspace_config: WorkspaceConfig, **params) -> TerminologyResource
     url = params.get("url")
     path_param = params.get("path")
     prefix = params.get("prefix")
+    include_imported_terms = bool(params.get("include_imported_terms", False))
     resource_aliases = list(params.get("resource_aliases", [])) or [name]
     include_obsolete = bool(params.get("include_obsolete", False))
+    expected_loader_version = OBO_LOADER_VERSION
 
     terminology_dir = pathlib.Path(workspace_config.terminology_dir)
     terminology_dir.mkdir(parents=True, exist_ok=True)
     cache_path = _cache_path(terminology_dir, name)
     cached = _load_cached(cache_path, name)
     if cached is not None:
-        if _ensure_resource_metadata(cached, resource_aliases=resource_aliases, id_prefix=prefix):
-            _save_cached(cache_path, name, cached)
-        return cached
+        if getattr(cached, "loader_version", None) == expected_loader_version:
+            if _ensure_resource_metadata(cached, resource_aliases=resource_aliases, id_prefix=prefix):
+                cached.loader_version = expected_loader_version
+                _save_cached(cache_path, name, cached)
+            return cached
+        logger.info("Ignoring stale OBO terminology cache %s; loader behavior changed", cache_path)
 
     if path_param:
         obo_path = pathlib.Path(path_param)
     else:
         if not url:
+            if cached is not None:
+                logger.warning("No OBO source path or URL configured; reusing stale cache %s", cache_path)
+                if _ensure_resource_metadata(cached, resource_aliases=resource_aliases, id_prefix=prefix):
+                    cached.loader_version = expected_loader_version
+                    _save_cached(cache_path, name, cached)
+                return cached
             raise ValueError("OBO terminology loader requires either params.path or params.url")
         filename = pathlib.Path(url).name or f"{name}.obo"
         obo_path = terminology_dir / filename
         if not obo_path.exists():
+            if cached is not None:
+                logger.warning("OBO source %s is missing and network may be unavailable; reusing stale cache %s", obo_path, cache_path)
+                if _ensure_resource_metadata(cached, resource_aliases=resource_aliases, id_prefix=prefix):
+                    cached.loader_version = expected_loader_version
+                    _save_cached(cache_path, name, cached)
+                return cached
             logger.info(f"Downloading OBO terminology {url} -> {obo_path}")
             download_file(url, obo_path)
 
+    if cached is not None and not obo_path.exists():
+        if _ensure_resource_metadata(cached, resource_aliases=resource_aliases, id_prefix=prefix):
+            _save_cached(cache_path, name, cached)
+        return cached
+
+    declared_root_ids = _obo_declared_root_ids(obo_path)
+    if prefix and not include_imported_terms:
+        prefix_value = str(prefix).rstrip(":")
+        declared_root_ids = [root_id for root_id in declared_root_ids if root_id.startswith(f"{prefix_value}:")]
+
     concepts: Dict[str, TerminologyConcept] = {}
-    children_by_parent: Dict[str, List[str]] = collections.defaultdict(list)
 
     logger.info(f"Parsing {obo_path}")
     for term in _iter_obo_terms(obo_path):
@@ -236,7 +316,11 @@ def load_obo(workspace_config: WorkspaceConfig, **params) -> TerminologyResource
         term_name = term.get("name")
         if not ui or not term_name:
             continue
+        if prefix and not include_imported_terms and not ui.startswith(f"{str(prefix).rstrip(':')}:"):
+            continue
         parent_ids = [parent for parent in term.get("is_a", []) if parent]
+        if prefix and not include_imported_terms:
+            parent_ids = [parent for parent in parent_ids if parent.startswith(f"{str(prefix).rstrip(':')}:")]
         concepts[ui] = TerminologyConcept(
             ui=ui,
             name=term_name,
@@ -244,11 +328,17 @@ def load_obo(workspace_config: WorkspaceConfig, **params) -> TerminologyResource
             parent_ids=parent_ids,
             alt_ids=list(term.get("alt_id", [])),
         )
-        for parent_id in parent_ids:
-            children_by_parent[parent_id].append(ui)
 
+    concepts = _prune_to_roots(concepts, declared_root_ids)
+    children_by_parent: Dict[str, List[str]] = collections.defaultdict(list)
+    for concept in concepts.values():
+        concept.parent_ids = [parent_id for parent_id in concept.parent_ids if parent_id in concepts]
+        for parent_id in concept.parent_ids:
+            children_by_parent[parent_id].append(concept.ui)
     child_ids = {child for children in children_by_parent.values() for child in children}
-    root_ids = sorted([ui for ui in concepts if ui not in child_ids])
+    root_ids = [root_id for root_id in declared_root_ids if root_id in concepts]
+    if not root_ids:
+        root_ids = sorted([ui for ui in concepts if ui not in child_ids])
     tree_to_ids = {root_id: [root_id] for root_id in root_ids}
     treetop_names = {root_id: concepts[root_id].name for root_id in root_ids}
 
@@ -259,6 +349,8 @@ def load_obo(workspace_config: WorkspaceConfig, **params) -> TerminologyResource
         treetop_names=treetop_names,
         resource_aliases=resource_aliases,
         id_prefix=prefix,
+        root_ids=root_ids,
+        loader_version=expected_loader_version,
     )
     _save_cached(cache_path, name, resource)
     return resource

@@ -802,7 +802,7 @@ def _terminology_profiles(term_data):
                 depth_datasets.append(
                     {
                         "label": entry["display_name"],
-                        "data": [round(entry["depth"].get(str(depth), {}).get("terminology_proportion", 0) * 100, 2) for depth in depth_labels],
+                        "data": [round(entry["depth"].get(str(depth), {}).get("annotation_proportion", 0) * 100, 2) for depth in depth_labels],
                         "borderColor": group_colors[i],
                         "backgroundColor": group_colors[i] + "22",
                         "fill": False,
@@ -816,17 +816,7 @@ def _terminology_profiles(term_data):
                 depth_coverage_datasets.append(
                     {
                         "label": entry["display_name"],
-                        "data": [
-                            round(
-                                entry["depth"].get(str(depth), {}).get("count", 0)
-                                / entry["depth"].get(str(depth), {}).get("total", 0)
-                                * 100,
-                                2,
-                            )
-                            if entry["depth"].get(str(depth), {}).get("total", 0)
-                            else 0
-                            for depth in depth_labels
-                        ],
+                        "data": [round(entry["depth"].get(str(depth), {}).get("terminology_proportion", 0) * 100, 2) for depth in depth_labels],
                         "borderColor": group_colors[i],
                         "backgroundColor": group_colors[i] + "22",
                         "fill": False,
