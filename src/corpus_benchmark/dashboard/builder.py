@@ -935,8 +935,8 @@ def build_terminology_panels(term_data):
         '\n  <button class="tab" data-p="pterm1">Deprecated terms</button>'
         '\n  <button class="tab" data-p="pterm3">Annotation depth coverage</button>'
         '\n  <button class="tab" data-p="pterm6">Terminology depth coverage</button>'
-        '\n  <button class="tab" data-p="pterm4">Terminology topic coverage</button>'
         '\n  <button class="tab" data-p="pterm5">Annotation topic coverage</button>'
+        '\n  <button class="tab" data-p="pterm4">Terminology topic coverage</button>'
     )
     profiles = _terminology_profiles(term_data)
 
@@ -974,17 +974,17 @@ def build_terminology_panels(term_data):
   <p class="note">Terminology depth coverage = unique corpus concept count at depth divided by total terminology concepts at that depth.</p>
 </div>
 
+<div class="panel" id="pterm5">
+  <p class="sec">Annotation topic coverage</p>
+  <div id="termAnnotationCharts"></div>
+  <p class="note">Annotation topic coverage = annotation-weighted branch count divided by annotation instances for that corpus and entity scope.</p>
+</div>
+
 <div class="panel" id="pterm4">
   <p class="sec">Terminology topic coverage</p>
   <div id="termTerminologyCoverageCharts"></div>
   <p class="note">Terminology topic coverage = unique corpus concept count in branch divided by total terminology concepts in that branch.
   Only branches with signal in the selected scope are shown.</p>
-</div>
-
-<div class="panel" id="pterm5">
-  <p class="sec">Annotation topic coverage</p>
-  <div id="termAnnotationCharts"></div>
-  <p class="note">Annotation topic coverage = annotation-weighted branch count ÷ all identifiers for that corpus and entity scope, including deprecated identifiers in the denominator.</p>
 </div>
 
 <script>

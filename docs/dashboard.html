@@ -131,8 +131,8 @@
   <button class="tab" data-p="pterm1">Deprecated terms</button>
   <button class="tab" data-p="pterm3">Annotation depth coverage</button>
   <button class="tab" data-p="pterm6">Terminology depth coverage</button>
-  <button class="tab" data-p="pterm4">Terminology topic coverage</button>
   <button class="tab" data-p="pterm5">Annotation topic coverage</button>
+  <button class="tab" data-p="pterm4">Terminology topic coverage</button>
 </div>
 
 <div class="panel" id="p1">
@@ -380,7 +380,7 @@
 
   const M = {
     jdivLabels:   ["BC2GM", "MedMentions", "BC5CDR", "AnatEM", "JNLPBA", "CellLink", "BioRED", "tmVar", "CHEMDNER", "NLM-Gene", "S1000", "NCBI-Disease", "NLM-Chem", "Linnaeus", "CRAFT", "BioID"],
-    jdivData:     [3136, 2282, 703, 698, 430, 392, 338, 285, 203, 156, 132, 98, 60, 53, 25, 18],
+    jdivData:     [3071, 2282, 703, 698, 430, 392, 338, 285, 203, 156, 132, 98, 60, 53, 25, 18],
     jdivBg:       ["#378ADDcc", "#378ADDcc", "#1D9E75cc", "#7F77DDcc", "#888780cc", "#E24B4Acc", "#639922cc", "#BA7517cc", "#D4537Ecc", "#639922cc", "#D4537Ecc", "#1D9E75cc", "#D85A30cc", "#7F77DDcc", "#BA7517cc", "#D85A30cc"],
     yrLabels:     ["Linnaeus", "BC2GM", "BC5CDR", "BioRED", "AnatEM", "NCBI-Disease", "S1000", "JNLPBA", "BioID", "CRAFT", "NLM-Gene", "tmVar", "NLM-Chem", "CHEMDNER", "MedMentions", "CellLink"],
     yrRanges:     [[1951, 2009], [1964, 2002], [1968, 2016], [1968, 2019], [1971, 2012], [1975, 2000], [1975, 2020], [1978, 2001], [1998, 2017], [2001, 2007], [2002, 2019], [2002, 2012], [2004, 2018], [2013, 2017], [2015, 2021], [2019, 2025]],
@@ -544,17 +544,17 @@
   <p class="note">Terminology depth coverage = unique corpus concept count at depth divided by total terminology concepts at that depth.</p>
 </div>
 
+<div class="panel" id="pterm5">
+  <p class="sec">Annotation topic coverage</p>
+  <div id="termAnnotationCharts"></div>
+  <p class="note">Annotation topic coverage = annotation-weighted branch count divided by annotation instances for that corpus and entity scope.</p>
+</div>
+
 <div class="panel" id="pterm4">
   <p class="sec">Terminology topic coverage</p>
   <div id="termTerminologyCoverageCharts"></div>
   <p class="note">Terminology topic coverage = unique corpus concept count in branch divided by total terminology concepts in that branch.
   Only branches with signal in the selected scope are shown.</p>
-</div>
-
-<div class="panel" id="pterm5">
-  <p class="sec">Annotation topic coverage</p>
-  <div id="termAnnotationCharts"></div>
-  <p class="note">Annotation topic coverage = annotation-weighted branch count ÷ all identifiers for that corpus and entity scope, including deprecated identifiers in the denominator.</p>
 </div>
 
 <script>
